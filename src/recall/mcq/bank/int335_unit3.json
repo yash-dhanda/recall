@@ -3337,6 +3337,466 @@
     "Constraint framing identifies limits before generating ideas."
    ],
    "key": "INT335-U3-145"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "During a brainstorm, a member says 'That is too expensive' about a colleague's idea. Which of Osborn's rules is broken?",
+   "code": "",
+   "options": [
+    "Rule 2, Think Freely, which asks for unusual ideas, taken at face value",
+    "Rule 3, Quantity Matters, which asks for many ideas overall, on balance",
+    "Rule 4, Combine and Improve, which asks teams to build on ideas, in all",
+    "Rule 1, Suspend Judgment, which forbids criticising ideas, in this case"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Rule 1 says never criticise ideas during brainstorming. Calling an idea too expensive is criticism.",
+   "why_wrong": [
+    "Think Freely concerns encouraging unusual ideas.",
+    "Quantity Matters concerns the number of ideas.",
+    "Combine and Improve concerns building on ideas.",
+    ""
+   ],
+   "key": "INT335-U3-146"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A member says 'Building on Riya's idea, we could add a tracking map to her bus app.' Which rule is followed?",
+   "code": "",
+   "options": [
+    "Rule 1, Suspend Judgment, since it holds back criticism, on the facts given",
+    "Rule 2, Think Freely, since it offers a wild suggestion, given the scenario",
+    "Rule 4, Combine and Improve, since it builds on an existing idea, in effect",
+    "Rule 3, Quantity Matters, since it adds one more idea, based on the details"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Rule 4 asks participants to build upon existing ideas.",
+   "why_wrong": [
+    "Suspend Judgment forbids criticism.",
+    "Think Freely encourages unusual ideas.",
+    "",
+    "Quantity Matters is about the number of ideas."
+   ],
+   "key": "INT335-U3-147"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Plastic bottles are reused as garden pots and bird feeders. Which SCAMPER prompt is this?",
+   "code": "",
+   "options": [
+    "Substitute, which replaces a part with an alternative, in the situation described",
+    "Put to another use, which finds new purposes beyond the original function, in all",
+    "Eliminate, which removes unneeded features to simplify, when all is said and done",
+    "Adapt, which borrows ideas from another industry, judged on all the details given"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Put to another use asks who else can use it, what else it can solve and whether another industry can use it.",
+   "why_wrong": [
+    "Substitute replaces a material or component.",
+    "",
+    "Eliminate removes features.",
+    "Adapt borrows from another industry or environment."
+   ],
+   "key": "INT335-U3-148"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Velcro was inspired by plant burrs, and the bullet train by the kingfisher. Which SCAMPER prompt is this?",
+   "code": "",
+   "options": [
+    "Adapt, which borrows from another industry or environment, overall",
+    "Modify, which changes size, shape or features of a product, in all",
+    "Reverse, which changes the order or roles of a process, on balance",
+    "Combine, which merges two or more things into one, on that reading"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Adapt means borrowing or modifying ideas from another industry, product or environment. The unit's examples are Velcro, the bullet train and self-cleaning paint.",
+   "why_wrong": [
+    "",
+    "Modify changes size, shape or features.",
+    "Reverse changes order or roles.",
+    "Combine merges items."
+   ],
+   "key": "INT335-U3-149"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A team removes games, ads, extra settings and themes from an app, keeping chat, news and simple settings. Which SCAMPER prompt is this?",
+   "code": "",
+   "options": [
+    "Combine, which merges extra features into a single app, in effect",
+    "Modify, which makes the app larger or smaller, given the scenario",
+    "Reverse, which changes the order of the screens, in this scenario",
+    "Eliminate, which removes unneeded features to simplify it, in all"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Eliminate removes unnecessary components, features or processes to simplify a product.",
+   "why_wrong": [
+    "Combine merges features.",
+    "Modify changes size, appearance or features.",
+    "Reverse changes order, direction or roles.",
+    ""
+   ],
+   "key": "INT335-U3-150"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Traditional shopping runs visit store, buy, pay, home delivery. Modern shopping runs browse online, order, shipping, home delivery. Which prompt does this show?",
+   "code": "",
+   "options": [
+    "Substitute, which swaps one material for another, on the facts given",
+    "Combine, which joins two services into a single one, on that reading",
+    "Reverse, which rearranges the order or sequence of a process, in all",
+    "Eliminate, which removes every step that is not essential, in effect"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Reverse changes the order, direction, sequence or arrangement of a process to find innovative solutions.",
+   "why_wrong": [
+    "Substitute replaces a part.",
+    "Combine merges items.",
+    "",
+    "Eliminate removes steps."
+   ],
+   "key": "INT335-U3-151"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Foldable smartphones and compact electric cars are examples of which SCAMPER prompt?",
+   "code": "",
+   "options": [
+    "Put to another use, which finds new users for an item, in this situation",
+    "Modify, which changes size, shape, performance or features, as described",
+    "Substitute, which swaps in a different material or process, in this case",
+    "Reverse, which changes the order or roles of a process, in this scenario"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Modify (magnify or minify) changes the size, appearance, shape, performance or features of an existing product.",
+   "why_wrong": [
+    "Put to another use finds new purposes.",
+    "",
+    "Substitute replaces something.",
+    "Reverse changes order or roles."
+   ],
+   "key": "INT335-U3-152"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A team asks 'Why?' repeatedly to reach the root cause before searching for any solution. Which CPS stage is this?",
+   "code": "",
+   "options": [
+    "Clarify, which defines the real problem before ideas, in this scenario",
+    "Ideate, which generates many ideas without judging them, for this team",
+    "Develop, which compares ideas and improves the best ones, as described",
+    "Implement, which builds, tests and launches the solution, in this case"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Clarify identifies the actual problem before searching for solutions, using observation, research and repeated 'Why?' questions.",
+   "why_wrong": [
+    "",
+    "Ideate generates ideas without judging.",
+    "Develop evaluates and improves ideas.",
+    "Implement builds, tests and launches."
+   ],
+   "key": "INT335-U3-153"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "In the Develop example, three ideas are scored out of 25. Which idea is selected and why?",
+   "code": "",
+   "options": [
+    "The Printed Planner, because it is the cheapest and easiest to build, in practice",
+    "The Reminder App, because it is the most innovative of the three, on that reading",
+    "None, because no idea reached full marks of twenty-five points, in this situation",
+    "The AI Study Assistant, with the highest score of 21 and the best balance, in all"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The AI Study Assistant scored 4, 3, 5, 5 and 4, a total of 21 out of 25, and the unit calls it the most innovative and beneficial with the best overall balance.",
+   "why_wrong": [
+    "Cost and ease alone do not decide the matrix.",
+    "The AI Study Assistant, not the Reminder App, scores 5 on innovation.",
+    "Full marks are not required.",
+    ""
+   ],
+   "key": "INT335-U3-154"
+  },
+  {
+   "topic": "Divergent and Convergent Thinking",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A team compares three bridge designs on cost, safety, durability and environmental impact, then selects the steel arch. Which thinking is this?",
+   "code": "",
+   "options": [
+    "Divergent thinking, which generates many ideas without evaluating them, in practice",
+    "Inversion thinking, which asks what to avoid to prevent failure, given the scenario",
+    "Convergent thinking, which evaluates ideas against criteria and selects one, in all",
+    "Constraint framing, which lists the limits that shape a design, taken at face value"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Comparing options against criteria to select one is convergent thinking.",
+   "why_wrong": [
+    "Divergent thinking generates ideas without evaluating them.",
+    "Inversion thinking focuses on avoiding failure.",
+    "",
+    "Constraint framing lists limits and requirements."
+   ],
+   "key": "INT335-U3-155"
+  },
+  {
+   "topic": "Constraint Framing",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "'Medical devices must follow safety regulations' is an example of which type of constraint?",
+   "code": "",
+   "options": [
+    "Financial, since it limits the money available for a project, as framed here",
+    "Legal, since it comes from government rules and standards, in this situation",
+    "Technical, since it reflects technology limits such as poor internet, in all",
+    "Environmental, since it asks for recyclable packaging and reuse, in practice"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Legal constraints are government rules and standards. The unit's other examples: a ₹2 lakh app budget, limited internet, a 30-day prototype and recyclable packaging.",
+   "why_wrong": [
+    "Financial is the ₹2 lakh app example.",
+    "",
+    "Technical is the limited internet example.",
+    "Environmental is the recyclable packaging example."
+   ],
+   "key": "INT335-U3-156"
+  },
+  {
+   "topic": "How Might We Statements",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "In the unit's HMW example, which part is the goal?",
+   "code": "",
+   "options": [
+    "Students submit assignments on time and reduce missed deadlines, overall",
+    "Design a reminder app that sends alerts and tracks due dates, on balance",
+    "High school and college students who forget assignment deadlines, in all",
+    "How might we help students remember assignment deadlines, as framed here"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In the example the action is to design a reminder app, the user is high school and college students, and the goal is on-time submission and fewer missed deadlines.",
+   "why_wrong": [
+    "",
+    "That is the action.",
+    "That is the user.",
+    "That is the HMW question itself."
+   ],
+   "key": "INT335-U3-157"
+  },
+  {
+   "topic": "Mind Mapping",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "In the Smart City mind map, which statement about levels is correct?",
+   "code": "",
+   "options": [
+    "Metro is a main branch, and Transportation is a sub-branch under it, looking at the case overall",
+    "Smart City is a main branch, and Healthcare is the central idea, given everything described here",
+    "Electric buses is a main branch, and Security is its sub-branch, going by what the scenario says",
+    "Transportation is a main branch, and Metro is a sub-branch under it, as far as the scenario goes"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Smart City is the central idea. Transportation is a main branch, and Metro, electric buses and smart parking are sub-branches under it.",
+   "why_wrong": [
+    "That reverses the levels.",
+    "Smart City is the central idea.",
+    "Electric buses sit under Transportation, and Security is a main branch.",
+    ""
+   ],
+   "key": "INT335-U3-158"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "For the problem 'Increase customer satisfaction', which is the reverse question and its reversed solutions?",
+   "code": "",
+   "options": [
+    "'How can we raise profit?', reversed into higher prices and fewer staff, all things considered",
+    "'How can we cut costs?', reversed into cheaper materials and less care, from the details given",
+    "'How can we make customers unhappy?', reversed into faster, better and shorter service, in all",
+    "'How can we make customers happy?', reversed into the same answers again, based on the details"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Reverse thinking asks how to make the problem worse (slow service, poor quality, long waiting), then reverses each answer.",
+   "why_wrong": [
+    "That is not the reverse question in the example.",
+    "That is not the reverse question in the example.",
+    "",
+    "That is not a reverse question."
+   ],
+   "key": "INT335-U3-159"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which order does the inversion process follow?",
+   "code": "",
+   "options": [
+    "Imagine failure, define the goal, reverse the causes, identify them, implement it, on the facts given",
+    "Define the goal, imagine failure, identify causes, reverse them, implement better solutions, in short",
+    "Define the goal, reverse the causes, imagine failure, identify them, implement it, given the scenario",
+    "Implement solutions, define the goal, imagine failure, identify causes, reverse them, on that reading"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The five steps are Define Goal, Imagine Failure, Identify Causes, Reverse the Causes and Implement Better Solutions.",
+   "why_wrong": [
+    "The goal must come first.",
+    "",
+    "Causes must be identified before they are reversed.",
+    "Implementation comes last."
+   ],
+   "key": "INT335-U3-160"
+  },
+  {
+   "topic": "Idea Clustering and Affinity Diagrams",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which order does the unit give for making an affinity diagram?",
+   "code": "",
+   "options": [
+    "Write each idea on a note, group similar ideas, title each group, review, find themes, under the conditions given",
+    "Title each group, write each idea on a note, group similar ideas, find themes, review, as the scenario is set out",
+    "Find themes, write each idea on a note, review, group similar ideas, title groups, looking at the case as a whole",
+    "Group similar ideas, find themes, title each group, write each idea on a note, review, in the situation described"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The five steps are: write each idea on a sticky note, place similar ideas together, give each group a title, review the relationships, then identify major themes.",
+   "why_wrong": [
+    "",
+    "A title cannot come before the notes are grouped.",
+    "Themes are identified last.",
+    "Notes must exist before they are grouped."
+   ],
+   "key": "INT335-U3-161"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A college must decide whether a student portal can be built and deployed within three months. Which feasibility type is this?",
+   "code": "",
+   "options": [
+    "Operational feasibility, which asks whether users will accept the solution, in short",
+    "Legal feasibility, which asks whether it complies with regulations and rules, in all",
+    "Economic feasibility, which asks whether the college can afford it, in this scenario",
+    "Schedule feasibility, which asks whether it can be completed on time, as framed here"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Schedule feasibility asks whether an idea can be completed on time. The unit's example is a student portal deployed in three months.",
+   "why_wrong": [
+    "Operational feasibility asks about user acceptance.",
+    "Legal feasibility asks about regulations.",
+    "Economic feasibility asks about affordability.",
+    ""
+   ],
+   "key": "INT335-U3-162"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A school bus tracking app gives parents real-time updates, while a smart ID card marks attendance on boarding. How does relevance analysis rate them?",
+   "code": "",
+   "options": [
+    "App high (live updates); ID card low (it is costly), all things considered",
+    "Both high, since both reassure parents equally, under the conditions given",
+    "App low (helpful, not critical); ID card high (it improves safety), in all",
+    "Both low, since neither is really workable, looking at the case as a whole"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The tracking app is low relevance because the core safety and attendance problem can still be solved without it. The smart ID card directly improves safety and accountability.",
+   "why_wrong": [
+    "That reverses the unit's ratings.",
+    "The unit rates them differently.",
+    "",
+    "Relevance is not about technical feasibility."
+   ],
+   "key": "INT335-U3-163"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Using the priority matrix, how should a high-value idea that needs significant resources and time be treated?",
+   "code": "",
+   "options": [
+    "As a top priority to implement immediately, since effort is low, given the scenario",
+    "As a strategic, long-term project, since impact is high and effort high too, in all",
+    "As an item to reject, since impact is low and effort is high, all things considered",
+    "As an optional extra, since impact is low and effort is low too, on the facts given"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "High impact with high effort is a strategic priority and a long-term project that needs significant resources and time.",
+   "why_wrong": [
+    "Immediate implementation is for high impact with low effort.",
+    "",
+    "Rejection is for low impact with high effort.",
+    "Optional is for low impact with low effort."
+   ],
+   "key": "INT335-U3-164"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "hardest",
+   "kind": "recall",
+   "q": "An idea is rated 8, 4 and 6 on three criteria weighted 0.5, 0.3 and 0.2. What is its weighted score?",
+   "code": "",
+   "options": [
+    "6.4",
+    "6.0",
+    "5.8",
+    "6.6"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Weighted score = 0.5 × 8 + 0.3 × 4 + 0.2 × 6 = 4.0 + 1.2 + 1.2 = 6.4. A plain average gives 6.0, reversed weights give 5.8, and swapping the last two scores gives 6.6.",
+   "why_wrong": [
+    "",
+    "6.0 is the unweighted average of 8, 4 and 6.",
+    "5.8 comes from reversing the weights.",
+    "6.6 comes from pairing the weights with the wrong scores."
+   ],
+   "key": "INT335-U3-165"
   }
  ]
 }

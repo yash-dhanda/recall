@@ -2900,6 +2900,466 @@
     ""
    ],
    "key": "INT335-U2-127"
+  },
+  {
+   "topic": "Empathy, Sympathy and Compassion",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A team says: 'I'm a student too, so I know what students need. Let's skip the interviews.' Which response follows the unit?",
+   "code": "",
+   "options": [
+    "Trust your own experience, since users are a sample of you, on that reading",
+    "Survey only your close friends, since they share your routine, as described",
+    "Interview only your hostel block, since you live there, taken at face value",
+    "Treat your experience as one hypothesis and check with others, in this case"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit's discipline is to check with people who are not you, so your experience is one hypothesis and not the whole sample.",
+   "why_wrong": [
+    "That is the trap the unit calls 'You Are Not the User'.",
+    "Friends who share your routine repeat the same bias.",
+    "One hostel block repeats the same narrow sample.",
+    ""
+   ],
+   "key": "INT335-U2-128"
+  },
+  {
+   "topic": "Computational Empathy and CoWIN",
+   "difficulty": "hardest",
+   "kind": "recall",
+   "q": "Which pairing of system and empathic behaviour matches the unit's table?",
+   "code": "",
+   "options": [
+    "Netflix monitors a user's well-being over time, given the scenario",
+    "ChatGPT recommends titles to suit the viewer's mood, for this team",
+    "Spotify matches its listening habits to the listener, in this case",
+    "Educational apps match songs to each learner's taste, as described"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit pairs ChatGPT with understanding user intent, Netflix with recommending to suit mood, Spotify with matching listening habits, healthcare apps with monitoring well-being and educational apps with adapting to performance.",
+   "why_wrong": [
+    "Netflix recommends to suit mood; healthcare apps monitor well-being.",
+    "ChatGPT is paired with understanding intent; Netflix recommends to suit mood.",
+    "",
+    "Educational apps adapt to performance."
+   ],
+   "key": "INT335-U2-129"
+  },
+  {
+   "topic": "Computational Empathy and CoWIN",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which CoWIN design choice shows 'design for the least-connected user'?",
+   "code": "",
+   "options": [
+    "One app-only flow with a single language, on the basis of the details",
+    "Assisted pathways: self-service, helpdesk and on-site options, in all",
+    "Paper certificates only, issued at hospitals, on the details provided",
+    "A closed backend with no access for third parties, on the facts given"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "CoWIN offered self, helpdesk and on-site pathways, a common backend with many front-ends, QR-verifiable certificates and slot APIs opened to third parties.",
+   "why_wrong": [
+    "One rigid flow would have excluded millions.",
+    "",
+    "Certificates were QR-verifiable, not paper only.",
+    "Slot APIs were opened to third parties."
+   ],
+   "key": "INT335-U2-130"
+  },
+  {
+   "topic": "Qualitative and Quantitative Research",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A survey shows 38 of 50 day scholars reach their first lecture late each week. The team needs to know why. Which method fits?",
+   "code": "",
+   "options": [
+    "Qualitative interviews and observation, since the need is why, on that reading",
+    "Another survey of five hundred students, since numbers settle it, as described",
+    "An A/B test of two timetable layouts, since testing shows causes, in this case",
+    "Web analytics on the college app, since logs record motives, in this situation"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Qualitative research explores why and how with small samples. The survey has already measured how many; the missing piece is understanding.",
+   "why_wrong": [
+    "",
+    "More numbers would still say how many, not why.",
+    "An A/B test compares designs; it does not explain motives.",
+    "Analytics count behaviour, not reasons."
+   ],
+   "key": "INT335-U2-131"
+  },
+  {
+   "topic": "Qualitative and Quantitative Research",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which plan follows the unit's sequence for combining research methods?",
+   "code": "",
+   "options": [
+    "A survey of two hundred to find insights, then eight interviews to measure them, overall",
+    "Only interviews, because quantitative research is a rival method, from the details given",
+    "Only surveys, because interviews cannot be generalised at all, when all is said and done",
+    "Eight interviews to find insights, then a survey of two hundred to validate them, in all"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Use qualitative research to discover insights, then quantitative research to validate them at scale. They are partners, not rivals.",
+   "why_wrong": [
+    "That reverses the order.",
+    "The unit calls them partners, not rivals.",
+    "The unit uses both, in sequence.",
+    ""
+   ],
+   "key": "INT335-U2-132"
+  },
+  {
+   "topic": "Field Observation and AEIOU",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A researcher notes that the rate card is handwritten and taped at knee height. Which AEIOU letter holds this note?",
+   "code": "",
+   "options": [
+    "A, the Activities, since it describes what people do, in practice",
+    "I, the Interactions, since it describes how users engage, overall",
+    "E, the Environment, since it describes the setting itself, in all",
+    "U, the Users, since it describes who the customers are, in effect"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Environment covers the physical or digital space: layout, noise, lighting and signage. The rate card's placement is part of the setting.",
+   "why_wrong": [
+    "Activities are the tasks users perform.",
+    "Interactions are how users engage with people or systems.",
+    "",
+    "Users describes who the people are."
+   ],
+   "key": "INT335-U2-133"
+  },
+  {
+   "topic": "Field Observation and AEIOU",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "At a photocopy shop the operator asks 'colour or black?' every single time, though a rate card hangs on the wall. Which AEIOU letter fits?",
+   "code": "",
+   "options": [
+    "O, the Objects, since the rate card is a tool people use, in this situation",
+    "I, the Interactions, since it shows how users and the system engage, in all",
+    "E, the Environment, since the noise forces repeats, on the details provided",
+    "A, the Activities, since queueing and paying are the tasks noted, in effect"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A repeated question the rate card fails to answer is an interaction between user and system, and it reveals a usability problem.",
+   "why_wrong": [
+    "Objects are the tools used, such as pen drives and a cash tin.",
+    "",
+    "Environment is the setting, such as noise and layout.",
+    "Activities are the tasks themselves, not how users engage."
+   ],
+   "key": "INT335-U2-134"
+  },
+  {
+   "topic": "Field Observation and AEIOU",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which field note is an observation and not a judgement?",
+   "code": "",
+   "options": [
+    "Four of eleven people left without printing after asking the price, in all",
+    "The shop is badly managed and the operator does not care, in this scenario",
+    "Students are impatient and will leave for any delay, all things considered",
+    "The operator is rude to customers at busy times, when all is said and done"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "An observation records what happened and can be counted. 'Badly managed', 'impatient' and 'rude' are judgements the observer added.",
+   "why_wrong": [
+    "",
+    "That is a judgement; the unit names 'badly managed' as one.",
+    "That is a judgement; the unit names 'impatient' as one.",
+    "That attributes behaviour and motive without evidence."
+   ],
+   "key": "INT335-U2-135"
+  },
+  {
+   "topic": "Research Ethics and Consent",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A student wants to photograph a classmate using the photocopier for observation notes. What does the unit advise?",
+   "code": "",
+   "options": [
+    "Photograph discreetly, since the shop is a public place, on that reading",
+    "Photograph only if the face is hidden from the frame, on the facts given",
+    "Photograph freely and delete the picture once the notes are done, in all",
+    "Do not photograph people; sketch the scene and ask first, as framed here"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit says never to photograph people, to sketch scenes instead, and to get consent before studying an individual.",
+   "why_wrong": [
+    "Public places still do not allow photographing people under the unit's rules.",
+    "The rule is not to photograph people at all.",
+    "Deleting afterwards does not make taking the picture acceptable.",
+    ""
+   ],
+   "key": "INT335-U2-136"
+  },
+  {
+   "topic": "What, How and Why",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "In a food delivery app study, the user scrolls back and forth and re-reads the delivery fees. Which stage is this?",
+   "code": "",
+   "options": [
+    "What: it records the plain actions taken, on the facts given",
+    "Why: it reveals the user's motive and needs, on that reading",
+    "How: it shows the effort and challenge in the task, in short",
+    "None: observation notes cannot include effort at all, in all"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "How explores the way the task is done: actions, effort, emotions and challenges. What records plain actions, and Why infers motivations.",
+   "why_wrong": [
+    "What lists plain actions such as opening the app.",
+    "Why infers motivation, such as wanting good value.",
+    "",
+    "How notes do include effort and emotions."
+   ],
+   "key": "INT335-U2-137"
+  },
+  {
+   "topic": "Interviews and Five Whys",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which interview question breaks the rules by being a hypothetical?",
+   "code": "",
+   "options": [
+    "Tell me about the last time you did your laundry, on that reading",
+    "How much would you pay for a laundry service, taken at face value",
+    "Walk me through your typical Sunday evening in the hostel, in all",
+    "What is frustrating about how you handle it now, in this scenario"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Hypothetical questions ask people to speculate. The unit prefers specific past episodes, walk-throughs and current frustrations.",
+   "why_wrong": [
+    "A specific past episode is encouraged.",
+    "",
+    "A walk-through is the grand tour technique.",
+    "Asking about current experience is encouraged."
+   ],
+   "key": "INT335-U2-138"
+  },
+  {
+   "topic": "Interviews and Five Whys",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "In a Five Whys ladder a student says 'I don't use the library much', then 'It's too crowded'. What does the unit say about these early answers?",
+   "code": "",
+   "options": [
+    "The first Why is almost never the real one, so keep asking, in effect",
+    "Accept 'too crowded' as the cause and design a bigger library, in all",
+    "Stop after two answers so the interview stays neutral, as framed here",
+    "Replace the questions with a survey about library size, for this team"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The ladder moved from crowding to noise, to exam pressure, to a system that tests memorisation, ending at the emotional core. The first Why is almost never the real one.",
+   "why_wrong": [
+    "",
+    "A bigger library answers the symptom, not the cause.",
+    "Stopping early keeps the symptom as the answer.",
+    "A survey replaces the exploration the ladder is for."
+   ],
+   "key": "INT335-U2-139"
+  },
+  {
+   "topic": "Explicit and Implicit Needs, Say-Do Gap",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A user says 'I want more features'. In the unit's table, which implicit need sits behind it?",
+   "code": "",
+   "options": [
+    "A need to feel in control of the process, in practice",
+    "A need for a faster app with a longer battery, in all",
+    "A need for a lower price and cheaper plans, in effect",
+    "A need for simplicity and guidance, in this situation"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit pairs 'I want more features' with a need for simplicity and guidance, and 'I want faster checkout' with a need to feel in control.",
+   "why_wrong": [
+    "Feeling in control pairs with 'faster checkout'.",
+    "Faster app and battery are explicit needs.",
+    "Lower cost is an explicit need.",
+    ""
+   ],
+   "key": "INT335-U2-140"
+  },
+  {
+   "topic": "Explicit and Implicit Needs, Say-Do Gap",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Shoppers said they preferred a lighter roast of coffee, but offered a free cup most reached for the dark. What does the unit conclude?",
+   "code": "",
+   "options": [
+    "Shoppers lied on purpose, so interviews are useless, on the facts given",
+    "Light roast is simply better, so the free cup misled them, in this case",
+    "Stated preference shows self-image, and choices show need, as described",
+    "Free items always change what people choose, in every setting, in short"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "This is the say-do gap. What people say is evidence about self-image, and what they choose is evidence about need.",
+   "why_wrong": [
+    "The unit does not say they lied on purpose.",
+    "The example is not about which roast is better.",
+    "",
+    "The unit makes no claim about free items in general."
+   ],
+   "key": "INT335-U2-141"
+  },
+  {
+   "topic": "Pain Points and Namma Yatri",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A hosteller says 'There is nobody to ask when the mess card fails at the counter.' Which pain-point type is this?",
+   "code": "",
+   "options": [
+    "Process, an inefficient or frustrating procedure, in all",
+    "Support, a lack of help or guidance, taken at face value",
+    "Financial, costing too much money, all things considered",
+    "Productivity, wasting time or energy, given the scenario"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The four types are process, support, financial and productivity. A lack of help when something goes wrong is a support pain point.",
+   "why_wrong": [
+    "Process pain points are about the procedure itself.",
+    "",
+    "Financial pain points are about cost.",
+    "Productivity pain points are about wasted time or effort."
+   ],
+   "key": "INT335-U2-142"
+  },
+  {
+   "topic": "Pain Points and Namma Yatri",
+   "difficulty": "hardest",
+   "kind": "recall",
+   "q": "What did Namma Yatri's research identify as the deepest pain point for auto drivers?",
+   "code": "",
+   "options": [
+    "Powerlessness, with no appeal against algorithm changes, in all",
+    "High fuel prices that cut into their daily earnings, on balance",
+    "Slow app loading on older and cheaper phones, in this situation",
+    "Too few riders on the platform in off-peak hours, for this team"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The unit says the deepest pain point was powerlessness, not price: commission cuts, surge pricing that benefited the platform, unannounced algorithm changes and no route of appeal.",
+   "why_wrong": [
+    "",
+    "Fuel prices are not mentioned in the case.",
+    "App speed is not part of the case.",
+    "Rider numbers are not the issue in the case."
+   ],
+   "key": "INT335-U2-143"
+  },
+  {
+   "topic": "Personas, Archetypes and Empathy Maps",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which persona line should be deleted under the unit's rule that every line must trace to research?",
+   "code": "",
+   "options": [
+    "'I want to learn better and score good grades', from Interview 2, pseudonym R, in all",
+    "'Goal: score good grades', from several interviews, given all the details stated here",
+    "'Challenge: online lectures are hard to follow', seen in two sessions, as framed here",
+    "'Rahul loves cricket and drinks three coffees a day', which nobody said, in this case"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A persona is a research summary. If you cannot point to the interview a line came from, delete it. The cricket and coffee line is decoration.",
+   "why_wrong": [
+    "That quote traces to a named interview.",
+    "That goal traces to several interviews.",
+    "That challenge traces to observed sessions.",
+    ""
+   ],
+   "key": "INT335-U2-144"
+  },
+  {
+   "topic": "Personas, Archetypes and Empathy Maps",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "On an empathy map, a student says 'The app is easy to use' but rewatches the same lecture three times. What does the unit say?",
+   "code": "",
+   "options": [
+    "The gap is a data error, so the Says quadrant should be removed, in all",
+    "The gap proves she lied, so the interview should be discarded, in short",
+    "The Says and Does gap is usually the best opportunity, in this scenario",
+    "The gap is normal and needs no follow-up, with everything stated so far"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Where Says and Does disagree is usually your best opportunity: it points to a need the user does not or cannot state.",
+   "why_wrong": [
+    "The unit treats the gap as insight, not error.",
+    "The unit treats it as something to explore, not lying.",
+    "",
+    "The unit says it deserves follow-up."
+   ],
+   "key": "INT335-U2-145"
+  },
+  {
+   "topic": "Problem Statements and How Might We",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which How Might We question passes the Goldilocks test?",
+   "code": "",
+   "options": [
+    "How might we improve education across the whole college, for this team",
+    "How might we help new students find classrooms without anxiety, in all",
+    "How might we add a map screen to the college app, based on the details",
+    "How might we make students install a navigation app, in this situation"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A good HMW names a real human need and attaches no solution. 'Improve education' is too broad, and the other two embed solutions.",
+   "why_wrong": [
+    "That is the unit's too-broad example.",
+    "",
+    "A map screen is a solution inside the question.",
+    "A specific product is a solution inside the question."
+   ],
+   "key": "INT335-U2-146"
+  },
+  {
+   "topic": "Empathy, Sympathy and Compassion",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A designer says: 'I followed three first-years for a morning. The block numbering resets in each wing.' Which word fits this statement?",
+   "code": "",
+   "options": [
+    "Empathy, since it understands the situation as they live it, in all",
+    "Sympathy, since it feels for them from a distance, in this scenario",
+    "Compassion, since it already includes a decision to act, on balance",
+    "Pity, since it voices concern without any research, on that reading"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Empathy is understanding a situation as the user experiences it. Sympathy feels for someone at a distance, and compassion adds the decision to act.",
+   "why_wrong": [
+    "",
+    "Sympathy would be 'poor first-years, getting lost must be awful'.",
+    "The statement describes observation, not a decision to act.",
+    "Pity produces charity; this statement rests on real observation."
+   ],
+   "key": "INT335-U2-147"
   }
  ]
 }

@@ -2348,6 +2348,443 @@
     "No replacement of the menu took place in the example."
    ],
    "key": "INT335-U1-102"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A student works on a circuit problem for two hours with no progress, walks for twenty minutes, then sees the fix. What best explains this?",
+   "code": "",
+   "options": [
+    "Diffuse mode reorganised the material she had already struggled with, on balance",
+    "Diffuse mode solved a problem she had never worked on before, given the scenario",
+    "Her VARK style shifted toward kinesthetic during the long walk, in this scenario",
+    "Focused mode works best only once the brain has fully rested, on the facts given"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The unit says the diffuse mode does not work on an empty mind: it reorganises material you have already struggled with. Struggle first, then step away.",
+   "why_wrong": [
+    "",
+    "The diffuse mode needs earlier focused effort; it cannot solve a problem never worked on.",
+    "VARK is unrelated to the focused and diffuse rule, and its style claims lack evidence.",
+    "The unit says to alternate the modes; it does not say focused mode needs full rest."
+   ],
+   "key": "INT335-U1-103"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which detail of the Mendeleev story matters for the unit's rule about diffuse thinking?",
+   "code": "",
+   "options": [
+    "He relaxed with no earlier effort and the whole table appeared, for this team",
+    "He tested the table with real users before publishing it, taken at face value",
+    "He asked a group of colleagues to brainstorm possible layouts, as framed here",
+    "He had spent days on the problem in focused mode before the idea came, in all"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The story is said to show dreaming, but only after days of focused work on the problem. Diffuse mode reorganises material already struggled with.",
+   "why_wrong": [
+    "That reverses the story: days of focused work came first.",
+    "Testing with users is not part of the Mendeleev example.",
+    "The example is about individual focused work followed by a dream, not group brainstorming.",
+    ""
+   ],
+   "key": "INT335-U1-104"
+  },
+  {
+   "topic": "VARK and Study Strategies",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which study plan fits the unit's evidence note best?",
+   "code": "",
+   "options": [
+    "Reading notes only, since her VARK result says Reading/Writing, in all",
+    "Watching videos only, since matching style lifts the results, in short",
+    "Retrieval practice, spaced sessions and mixed topics, in this scenario",
+    "Making diagrams only, since visual learners need them, on that reading"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit says matching teaching to a preferred style has repeatedly failed in controlled studies. Retrieval practice, spacing and interleaving are the three strategies that do replicate.",
+   "why_wrong": [
+    "Style matching is the claim that failed to hold up.",
+    "Style matching is the claim that failed to hold up.",
+    "",
+    "Style matching is the claim that failed to hold up."
+   ],
+   "key": "INT335-U1-105"
+  },
+  {
+   "topic": "Functional Fixedness",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A team lists seven uses for a plastic bucket, then stalls. Which move does the unit recommend next?",
+   "code": "",
+   "options": [
+    "Ask more people to name uses until ideas run out, in this scenario",
+    "List the bucket's properties, then find a use for each one, in all",
+    "Pick the best of the seven and prototype it today, on that reading",
+    "Search for the bucket's official intended purposes first, in short"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Most students stall at six or seven uses. Listing properties such as hollow, watertight, rigid, light and handled, then finding a use for each, gave twenty-eight uses in the unit's example.",
+   "why_wrong": [
+    "More guessing at uses keeps the team inside the same fixed view of the object.",
+    "",
+    "Prototyping now skips the exploration that breaks fixedness.",
+    "Intended purposes are exactly what functional fixedness locks people into."
+   ],
+   "key": "INT335-U1-106"
+  },
+  {
+   "topic": "Cognitive Blocks",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "An expert says 'the method we always use has worked every time' and ignores a new proposal. Which block is this?",
+   "code": "",
+   "options": [
+    "The expertise trap, since past solutions crowd out new ones, on balance",
+    "Conformity, since the expert wants to fit in with the others, in effect",
+    "Fear of failure, since the expert fears being criticised, at this stage",
+    "Premature judgment, since the idea was rejected before any test, in all"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The expertise trap is over-reliance on past solutions: the more you know, the more you reach for what worked before.",
+   "why_wrong": [
+    "",
+    "Conformity is following convention in order to fit in with a group.",
+    "Fear of failure is hesitation to propose ideas because of fear of criticism.",
+    "The expert's reason is the old method's record, which is the expertise trap rather than a hasty rejection."
+   ],
+   "key": "INT335-U1-107"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A student patents a new water filter that nobody ever manufactures or uses. Which label fits the unit's definitions best?",
+   "code": "",
+   "options": [
+    "Innovation, since a patent already proves it delivers value, in effect",
+    "Creativity only, since an invention must be sold to count, in practice",
+    "Disruptive innovation, since it is new and has no rivals, as described",
+    "Invention, since it is new but has not yet delivered any value, in all"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Invention is creating something entirely new. It becomes innovation only when it is successfully implemented to create value, which has not happened here.",
+   "why_wrong": [
+    "A patent is not delivered value, so it is not innovation.",
+    "Invention does not require sales; the filter exists as something new.",
+    "Disruption means transforming a market, and nothing has reached any market.",
+    ""
+   ],
+   "key": "INT335-U1-108"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A new charger cable keeps the old connector shape and adds faster charging. How does the unit classify this?",
+   "code": "",
+   "options": [
+    "Disruptive innovation: it transforms markets with a cheaper option, based on the details",
+    "Pure creativity: an original idea that was never actually built, on the details provided",
+    "Incremental invention: a small but meaningful improvement to an existing product, in all",
+    "Functional fixedness: seeing the cable only as a charging tool, with the facts as stated"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Incremental invention is a small but meaningful improvement to an existing product, such as USB to USB Type-C.",
+   "why_wrong": [
+    "Disruptive innovation creates new markets with simpler or cheaper solutions.",
+    "The cable was built, so this is more than an unbuilt idea.",
+    "",
+    "Functional fixedness is a thinking block, not a type of invention."
+   ],
+   "key": "INT335-U1-109"
+  },
+  {
+   "topic": "Kinds of Problems",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Cutting urban air pollution across a state has many linked causes and no single right answer. Which kind of problem is this?",
+   "code": "",
+   "options": [
+    "A well-defined problem with clear goals and one correct answer, on balance",
+    "A wicked problem, judged as better or worse, not right or wrong, in effect",
+    "An ill-defined problem that one smart design could settle for good, in all",
+    "A divergent problem that only brainstorming can ever settle, for this team"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Wicked problems are complex and interconnected, with solutions that are better or worse rather than right or wrong. Climate, poverty and healthcare are the unit's examples.",
+   "why_wrong": [
+    "Well-defined problems have clear goals, constraints and one correct answer.",
+    "",
+    "Ill-defined problems have unclear goals but are not interconnected in the same way, and a single design does not settle a wicked one.",
+    "'Divergent problem' is not one of the unit's three kinds of problem."
+   ],
+   "key": "INT335-U1-110"
+  },
+  {
+   "topic": "History and Definition of Design Thinking",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Team A analyses a vague brief for two weeks before sketching. Team B sketches rough solutions on day one and tests them. Whose mode matches designers in Lawson's experiment?",
+   "code": "",
+   "options": [
+    "Team B, since designers are solution-focused and learn through iteration, at this stage",
+    "Team A, since designers analyse the problem thoroughly before proposing answers, in all",
+    "Neither, since designers mostly copy existing solutions they know, based on the details",
+    "Both, since the mode depends only on how vague the brief is, as the scenario is set out"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Lawson found scientists were problem-focused and designers solution-focused, creating and testing many solutions rapidly.",
+   "why_wrong": [
+    "",
+    "Thorough analysis first is the scientists' pattern.",
+    "The unit does not describe designers as copying existing solutions.",
+    "The experiment contrasts two ways of working, not one that depends on the brief."
+   ],
+   "key": "INT335-U1-111"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which statement about the d.school process is correct?",
+   "code": "",
+   "options": [
+    "Each stage must be fully finished before the next one can begin, in effect",
+    "Prototyping is optional when the first ideas already look strong, in short",
+    "Define comes last because it sums up every other stage, on the facts given",
+    "Testing can send a team back to empathising, so loops are expected, in all"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The dashed arrow in the d.school diagram shows testing feeding back into empathy. The process is iterative, not linear.",
+   "why_wrong": [
+    "That describes the linear waterfall approach.",
+    "Prototype is one of the five stages, and testing needs something to test.",
+    "Define is the second stage, between Empathize and Ideate.",
+    ""
+   ],
+   "key": "INT335-U1-112"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A product is wanted by users and buildable, but costs more than customers will pay. Which IDEO lens fails?",
+   "code": "",
+   "options": [
+    "Desirability, since the people involved do not actually want it, in all",
+    "Feasibility, since the team cannot actually build it properly, in short",
+    "Viability, since the idea is not economically sustainable, as described",
+    "None, since two lenses met are enough for innovation, in this situation"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Viability asks whether an idea is economically sustainable. Wanted and buildable but unaffordable fails the third lens, and all three must overlap for genuine innovation.",
+   "why_wrong": [
+    "The scenario says users want it, so desirability is met.",
+    "The scenario says it is buildable, so feasibility is met.",
+    "",
+    "The unit says meeting only one or two conditions produces a concept that fails in practice."
+   ],
+   "key": "INT335-U1-113"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "A startup builds an affordable, buildable app that works well, but nobody wants it. Which lens is missing?",
+   "code": "",
+   "options": [
+    "Feasibility, since the app cannot be built with today's technology, in all",
+    "Desirability, since people do not actually want what it does, in this case",
+    "Viability, since the app cannot earn enough money, on the details provided",
+    "Iteration, since IDEO's three lenses include a repeat stage, for this team"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Desirability asks whether people want it. The scenario meets feasibility (buildable) and viability (affordable), so desirability is what fails.",
+   "why_wrong": [
+    "The app is already built, so feasibility is met.",
+    "",
+    "The app is affordable, so viability is not the failing lens.",
+    "Iteration is not one of the three IDEO lenses."
+   ],
+   "key": "INT335-U1-114"
+  },
+  {
+   "topic": "Waterfall versus Human-Centred Design",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "What is the main risk when users only see a product at launch?",
+   "code": "",
+   "options": [
+    "Late feedback makes every needed change costly to carry out, in all",
+    "Early feedback slows delivery of the first build, in this situation",
+    "Too many iterations produce a product nobody wants, on that reading",
+    "Prototypes get tested before any user need is known, as framed here"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In waterfall each phase is finished before the next, so user feedback arrives at the end, when changes are costly. Human-centred design brings feedback in throughout.",
+   "why_wrong": [
+    "",
+    "That is a complaint about continuous feedback, the opposite of waterfall's problem.",
+    "Many iterations belong to human-centred design, not waterfall.",
+    "Testing prototypes before knowing needs is not what the unit describes."
+   ],
+   "key": "INT335-U1-115"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "What did Airbnb's direct observation reveal that the booking data could not?",
+   "code": "",
+   "options": [
+    "Listing prices in New York were too high for most guests, under the conditions given",
+    "Hosts were slow to reply, so most guests gave up waiting, in the situation described",
+    "The website loaded too slowly on phones, so guests left, as far as the scenario goes",
+    "Amateur listing photos were putting guests off, and data had not shown why, in short"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The data showed what was happening but not why. Visiting hosts revealed poor amateur photographs, and professional photos then raised bookings.",
+   "why_wrong": [
+    "Prices are not the finding of the case.",
+    "Host replies are not part of the case.",
+    "Page speed is not part of the case.",
+    ""
+   ],
+   "key": "INT335-U1-116"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which outcome best supports the unit's lesson from Google Glass?",
+   "code": "",
+   "options": [
+    "A lower price alone would have made it succeed anyway, as framed here",
+    "Enterprise users rejected it for the same reasons as shoppers, in all",
+    "Strong technology still failed because users did not want it, overall",
+    "Social concerns vanished once the camera was removed, on that reading"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Technical innovation without user desirability fails: Glass sat outside the overlap of the three IDEO lenses. Price was one of several problems, not the only one.",
+   "why_wrong": [
+    "The unit lists social concerns, awkward design and no clear use case alongside price.",
+    "Enterprise Edition succeeded with factory technicians.",
+    "",
+    "The unit does not say removing the camera would end the concerns."
+   ],
+   "key": "INT335-U1-117"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Why did the same Glass technology get a different verdict from factory technicians?",
+   "code": "",
+   "options": [
+    "Their version used cheaper hardware inside the frame, on that reading",
+    "They needed both hands free and did not mind how it looked, in effect",
+    "They were offered a much lower price than shoppers, in this situation",
+    "They had no use for a display, so only voice mattered to them, in all"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Google relaunched Glass Enterprise Edition for warehouse and factory technicians. Same technology, different user, different verdict: a product is good or bad for someone.",
+   "why_wrong": [
+    "The unit does not say the hardware changed.",
+    "",
+    "The unit gives the reason as hands-free need, not price.",
+    "The unit says nothing about voice-only use."
+   ],
+   "key": "INT335-U1-118"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which Aravind feature keeps a surgeon's scarce time from ever sitting idle?",
+   "code": "",
+   "options": [
+    "Assembly-line surgery, with two tables per surgeon and task-shifting, in all",
+    "Cross-subsidy pricing, where payers choose a comfort tier, in this situation",
+    "Vertical integration, through the local lens maker Aurolab, in this scenario",
+    "Outreach camps that screen patients inside villages, on the details provided"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Two operating tables per surgeon and task-shifting to paramedical staff keep the surgeon's time from being idle.",
+   "why_wrong": [
+    "",
+    "Cross-subsidy pricing is how paying patients help fund free care.",
+    "Aurolab is local lens manufacture that cuts cost.",
+    "Outreach camps remove the travel barrier through screening in villages."
+   ],
+   "key": "INT335-U1-119"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which description is ordinary engineering wearing a Design Thinking label?",
+   "code": "",
+   "options": [
+    "We changed the problem statement after three prototypes were rejected, at this stage",
+    "We counted queue times in the mess before we proposed anything, based on the details",
+    "We interviewed six residents and found the real complaint was not food, in this case",
+    "We picked the best technical architecture and began coding in week two, as described"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A solution chosen for its architecture, with coding in week two, skips understanding users. The other descriptions start from observation, interviews or user rejection.",
+   "why_wrong": [
+    "Changing the problem after user rejection is genuine Design Thinking.",
+    "Observing and counting before proposing is genuine Design Thinking.",
+    "Interviewing residents and reframing the complaint is genuine Design Thinking.",
+    ""
+   ],
+   "key": "INT335-U1-120"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hardest",
+   "kind": "situation",
+   "q": "Which Aravind lesson says free and paying patients get the same surgery and the same surgeons?",
+   "code": "",
+   "options": [
+    "The best analogy often comes from a completely unrelated industry, in this case",
+    "Affordability can be designed, as an outcome of process, from the details given",
+    "Dignity is a design requirement, so only the comfort tier differs, as described",
+    "Vertical integration lowers cost, so savings reach patients, on the facts given"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The three lessons are the unrelated-industry analogy, affordability as an outcome of process, and dignity as a design requirement. The same-surgery point supports dignity.",
+   "why_wrong": [
+    "That lesson is about the McDonald's analogy.",
+    "That lesson is about cost being designed through process.",
+    "",
+    "Vertical integration is a feature of the approach, not one of the three lessons."
+   ],
+   "key": "INT335-U1-121"
   }
  ]
 }

@@ -129,6 +129,13 @@ def validate_question(question: dict, *, where: str = "") -> None:
                              f"same answer ({option!r})")
         seen_options[folded] = i
 
+    # The `hardest` tier exists to take the length tell away: students had
+    # learned to click the longest option. Equal length is checked on the text
+    # as written, so a file cannot claim the tier without meeting it.
+    if difficulty == "hardest" and len({len(option) for option in options}) != 1:
+        raise _fail(key, "hardest needs all four options the same length, got "
+                         f"{[len(option) for option in options]}")
+
     correct = question.get("correct")
     if not isinstance(correct, int) or isinstance(correct, bool) \
             or not 0 <= correct < N_OPTIONS:
