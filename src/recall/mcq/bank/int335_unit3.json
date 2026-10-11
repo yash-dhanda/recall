@@ -1106,6 +1106,2237 @@
     ""
    ],
    "key": "INT335-U3-048"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define ideation?",
+   "code": "",
+   "options": [
+    "The process of choosing the single best solution using logic",
+    "The process of generating and exploring creative ideas to solve problems effectively",
+    "The process of launching a finished product to users",
+    "The process of recording what users say in interviews"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Ideation generates and explores creative ideas. Choosing the best solution is convergent thinking or selection, and launching is implementation.",
+   "why_wrong": [
+    "That describes convergent thinking and selection.",
+    "",
+    "That describes implementation.",
+    "That describes research, not ideation."
+   ],
+   "key": "INT335-U3-049"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a characteristic of ideation listed in the unit?",
+   "code": "",
+   "options": [
+    "Judges each idea as soon as it is proposed",
+    "Selects one solution immediately",
+    "Focuses on quantity before quality",
+    "Works best when one expert decides alone"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ideation encourages creativity, generates multiple alternatives, avoids judging ideas during generation, puts quantity before quality and promotes teamwork.",
+   "why_wrong": [
+    "Ideation avoids judging ideas during generation.",
+    "The unit says great solutions begin with many ideas, not the first idea.",
+    "",
+    "The unit stresses collaboration and teamwork."
+   ],
+   "key": "INT335-U3-050"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which line does the unit use to sum up ideation?",
+   "code": "",
+   "options": [
+    "The first idea is usually the best idea",
+    "Great solutions begin by selecting the cheapest idea",
+    "Ideas should be screened before they are written down",
+    "Great solutions begin with generating many ideas, not by choosing the first idea"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit states that great solutions begin with generating many ideas and not by choosing the first one.",
+   "why_wrong": [
+    "The unit says the opposite.",
+    "Cost is a screening criterion, applied later.",
+    "Screening comes after generation.",
+    ""
+   ],
+   "key": "INT335-U3-051"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the unit's plastic waste example, a company wants to reduce plastic waste. What does the design team do first?",
+   "code": "",
+   "options": [
+    "Generate many ideas, such as paper packaging, bamboo, reusable containers, edible packaging and plant-based plastics, instead of selecting one at once",
+    "Pick paper packaging immediately because it is cheapest",
+    "Survey customers on the final product without any options",
+    "Hire an outside firm to choose a material"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Step 1 is to generate many ideas, and Step 2 is to evaluate and select the most practical one using a score table.",
+   "why_wrong": [
+    "",
+    "The team generates ideas first and evaluates later.",
+    "The example starts with idea generation, not a survey on a final product.",
+    "The example has the design team itself generate and evaluate ideas."
+   ],
+   "key": "INT335-U3-052"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the plastic waste example, each option is scored out of 5 on cost, sustainability, feasibility and customer acceptance (maximum 20). Paper packaging scores 4, 4, 5, 4. What is its total, and what does the evaluation conclude?",
+   "code": "",
+   "options": [
+    "16, and reusable containers are the most practical solution",
+    "17, and paper packaging is the most practical solution",
+    "17, but bamboo packaging is the most practical solution",
+    "20, because it is the cheapest option"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Paper packaging totals 4 + 4 + 5 + 4 = 17, the highest of the five. Reusable containers total 16, bamboo 15, plant-based plastics 13 and edible packaging 10.",
+   "why_wrong": [
+    "Reusable containers scored 16, which is second.",
+    "",
+    "Bamboo packaging scored 15.",
+    "The total is 17, not 20, and the criteria include more than cost."
+   ],
+   "key": "INT335-U3-053"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is NOT a benefit of ideation listed in the unit?",
+   "code": "",
+   "options": [
+    "Encourages innovation",
+    "Reduces design risks",
+    "Eliminates the need for testing with users",
+    "Increases customer satisfaction"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit lists encouraging innovation, solving complex problems, improving collaboration, reducing design risks, increasing customer satisfaction and producing user-centred solutions. Ideation does not remove the need for testing.",
+   "why_wrong": [
+    "Encouraging innovation is a listed benefit.",
+    "Reducing design risks is a listed benefit.",
+    "",
+    "Increasing customer satisfaction is a listed benefit."
+   ],
+   "key": "INT335-U3-054"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which companies does the unit say invest heavily in ideation workshops before developing new products?",
+   "code": "",
+   "options": [
+    "Netflix, Uber and Airbnb",
+    "Aravind, CoWIN and Namma Yatri",
+    "McDonald's, IDEO and Stanford",
+    "Google, Apple and Tesla"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit names Google, Apple and Tesla as companies that invest heavily in ideation workshops.",
+   "why_wrong": [
+    "Those are the Unit 1 disruptor examples.",
+    "Those are case studies from Units 1 and 2.",
+    "Those are not named in the unit's ideation line.",
+    ""
+   ],
+   "key": "INT335-U3-055"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the unit's six-step process of turning ideas into solutions, which order is correct?",
+   "code": "",
+   "options": [
+    "Problem, generate ideas, select best ideas, prototype, test, implement",
+    "Problem, prototype, generate ideas, select best ideas, test, implement",
+    "Generate ideas, problem, test, prototype, select best ideas, implement",
+    "Problem, select best ideas, generate ideas, prototype, implement, test"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The study planner example goes from the problem through idea generation, selection, a simple prototype, user testing and launch.",
+   "why_wrong": [
+    "",
+    "A prototype cannot come before the ideas exist.",
+    "The problem comes first.",
+    "Selection comes after generation, and testing comes before implementation."
+   ],
+   "key": "INT335-U3-056"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "What does the unit say idea generation is?",
+   "code": "",
+   "options": [
+    "The process of choosing one solution using weighted scores",
+    "The process of creating, exploring and developing multiple possible solutions to a problem",
+    "The process of studying users in their natural environment",
+    "The process of writing a consent script"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Idea generation creates, explores and develops multiple possible solutions. It involves no immediate judgment and explores different possibilities.",
+   "why_wrong": [
+    "That describes screening.",
+    "",
+    "That describes field observation.",
+    "That is a research ethics step."
+   ],
+   "key": "INT335-U3-057"
+  },
+  {
+   "topic": "Ideation and Idea Generation",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which order does the unit give for the idea generation process?",
+   "code": "",
+   "options": [
+    "Problem, generate ideas, evaluate, research, combine, best solution",
+    "Research, best solution, generate ideas, problem, evaluate, combine",
+    "Problem, research, generate ideas, combine and improve, evaluate, best solution",
+    "Generate ideas, problem, research, evaluate, best solution, combine"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit's six steps are Problem, Research, Generate Ideas, Combine and Improve, Evaluate, then Best Solution.",
+   "why_wrong": [
+    "Evaluation cannot come before research and combining.",
+    "The best solution is chosen last.",
+    "",
+    "The problem is defined first."
+   ],
+   "key": "INT335-U3-058"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What are the four stages of Creative Problem Solving (CPS) in the unit?",
+   "code": "",
+   "options": [
+    "Empathize, Define, Ideate and Test",
+    "Observe, Interview, Map and Frame",
+    "Substitute, Combine, Adapt and Modify",
+    "Clarify, Ideate, Develop and Implement"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "CPS has four stages: Clarify, Ideate, Develop and Implement.",
+   "why_wrong": [
+    "Those are stages of the d.school model, which has five stages.",
+    "Those are Unit 2 pipeline steps.",
+    "Those are the first four SCAMPER letters.",
+    ""
+   ],
+   "key": "INT335-U3-059"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which stage of CPS has the main question 'What is the real problem?'",
+   "code": "",
+   "options": [
+    "Clarify",
+    "Ideate",
+    "Develop",
+    "Implement"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The summary table pairs Clarify with 'What is the real problem?', Ideate with 'What are all the possible solutions?', Develop with 'Which solution works best?' and Implement with 'How can we make it work in practice?'.",
+   "why_wrong": [
+    "",
+    "Ideate asks about all the possible solutions.",
+    "Develop asks which solution works best.",
+    "Implement asks how to make it work in practice."
+   ],
+   "key": "INT335-U3-060"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which stage of CPS has the main question 'Which solution works best?'",
+   "code": "",
+   "options": [
+    "Clarify",
+    "Develop",
+    "Ideate",
+    "Implement"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Develop evaluates and improves ideas to find the most practical and valuable solution.",
+   "why_wrong": [
+    "Clarify asks what the real problem is.",
+    "",
+    "Ideate asks what all the possible solutions are.",
+    "Implement asks how to make it work in practice."
+   ],
+   "key": "INT335-U3-061"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the Clarify stage, which key activity does the unit link to finding the root cause?",
+   "code": "",
+   "options": [
+    "Brainstorming wild ideas",
+    "Building a low-fidelity prototype",
+    "Asking 'Why?' multiple times",
+    "Launching the final product"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Clarify includes identifying the real problem, understanding user needs, collecting facts through observation and research, and asking 'Why?' repeatedly so you solve the root cause and not just the symptoms.",
+   "why_wrong": [
+    "Brainstorming belongs to the Ideate stage.",
+    "Prototyping belongs to the Implement stage.",
+    "",
+    "Launching belongs to the Implement stage."
+   ],
+   "key": "INT335-U3-062"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the unit's example, a team starts with 'Students need a better reminder.' After clarifying, what is the better problem statement?",
+   "code": "",
+   "options": [
+    "Students need a reminder app with push notifications",
+    "The college should buy a bigger notice board",
+    "Students should simply work harder",
+    "Students struggle to organise assignments from multiple courses and often lose track of deadlines"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Clarifying replaces a solution ('a better reminder') with the actual problem: difficulty organising assignments from many courses and losing track of deadlines.",
+   "why_wrong": [
+    "That is still a solution in the statement.",
+    "A notice board is another solution.",
+    "That blames students without evidence.",
+    ""
+   ],
+   "key": "INT335-U3-063"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a key activity of the Ideate stage in CPS?",
+   "code": "",
+   "options": [
+    "Thinking without limitations: setting aside judgements, constraints and limits",
+    "Ranking ideas with a weighted matrix",
+    "Launching the final product",
+    "Collecting facts through observation"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Ideate generates many different ideas without judging them: brainstorm, encourage creativity, think without limitations and build on others' ideas.",
+   "why_wrong": [
+    "",
+    "Ranking belongs to the Develop stage.",
+    "Launching belongs to the Implement stage.",
+    "Fact collection belongs to the Clarify stage."
+   ],
+   "key": "INT335-U3-064"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the unit's Develop example, three ideas are scored out of 25 on feasibility, cost, innovation, user benefit and ease of implementation. Which idea is selected, and why?",
+   "code": "",
+   "options": [
+    "The Printed Planner, because it is the cheapest and easiest",
+    "The AI Study Assistant, with the highest score (21 out of 25) and the best overall balance",
+    "The Reminder App, because it is the most innovative",
+    "No idea, because none scored full marks"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The AI Study Assistant scores 4, 3, 5, 5 and 4, which totals 21 out of 25, and the unit calls it the most innovative and beneficial with the best overall balance.",
+   "why_wrong": [
+    "Cost and ease alone do not decide the matrix.",
+    "",
+    "The AI Study Assistant, not the Reminder App, scores 5 on innovation.",
+    "Full marks are not required; the highest total is selected."
+   ],
+   "key": "INT335-U3-065"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a key activity of the Implement stage?",
+   "code": "",
+   "options": [
+    "Brainstorm as many ideas as possible without judgement",
+    "Ask 'Why?' repeatedly to find the root cause",
+    "Build a prototype, test it with users, collect feedback, improve the solution and launch the final product",
+    "Compare the advantages and disadvantages of each idea"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Implement develops the selected solution, tests it with users and launches it for real-world use.",
+   "why_wrong": [
+    "That is the Ideate stage.",
+    "That is the Clarify stage.",
+    "",
+    "That is the Develop stage."
+   ],
+   "key": "INT335-U3-066"
+  },
+  {
+   "topic": "Creative Problem Solving (CPS)",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "How does the unit define Creative Problem Solving (CPS)?",
+   "code": "",
+   "options": [
+    "An unstructured group chat that produces ideas at random",
+    "A purely analytical method that avoids new ideas",
+    "A method used only after a product has launched",
+    "A structured process combining creativity and analytical thinking to identify problems, generate ideas, evaluate alternatives and implement solutions"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "CPS combines creative and analytical thinking across four stages.",
+   "why_wrong": [
+    "CPS is structured, not random.",
+    "CPS includes generating ideas, so it is not purely analytical.",
+    "CPS is applied before launch, including the launch itself.",
+    ""
+   ],
+   "key": "INT335-U3-067"
+  },
+  {
+   "topic": "Divergent and Convergent Thinking",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define divergent thinking?",
+   "code": "",
+   "options": [
+    "The creative process of generating many different ideas or possible solutions without evaluating them",
+    "Evaluating ideas and selecting the one best solution",
+    "Ranking ideas by weighted scores",
+    "Checking each idea against laws and budgets"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Divergent thinking expands ideas, is creative and exploratory, and focuses on originality. The other options are convergent activities.",
+   "why_wrong": [
+    "",
+    "That is convergent thinking.",
+    "Weighted scoring is a convergent screening method.",
+    "Checking against laws and budgets is feasibility analysis."
+   ],
+   "key": "INT335-U3-068"
+  },
+  {
+   "topic": "Divergent and Convergent Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a characteristic of divergent thinking in the unit?",
+   "code": "",
+   "options": [
+    "Analytical and evidence-based",
+    "Flexible and open-minded, encouraging originality",
+    "Decision-oriented, selecting the best solution",
+    "Focused on accuracy"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Divergent thinking is creative, open-minded, flexible, exploratory and encourages originality. Analytical, evidence-based, decision-oriented and accuracy-focused are the convergent traits.",
+   "why_wrong": [
+    "Analytical and evidence-based are convergent traits.",
+    "",
+    "Decision-oriented is a convergent trait.",
+    "Focused on accuracy is a convergent trait."
+   ],
+   "key": "INT335-U3-069"
+  },
+  {
+   "topic": "Divergent and Convergent Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which row of the convergent-versus-divergent table is correct?",
+   "code": "",
+   "options": [
+    "Convergent expands ideas and is best for idea generation; divergent narrows ideas",
+    "Both are best for decision-making",
+    "Convergent narrows ideas and is best for decision-making; divergent expands ideas and is best for idea generation",
+    "Convergent is brainstorming-based and divergent is evaluation-based"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Convergent thinking selects one best solution by narrowing, and divergent thinking generates many ideas by expanding.",
+   "why_wrong": [
+    "This reverses the two.",
+    "Divergent thinking is best for idea generation.",
+    "",
+    "Divergent is brainstorming-based and convergent is evaluation-based."
+   ],
+   "key": "INT335-U3-070"
+  },
+  {
+   "topic": "Divergent and Convergent Thinking",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A team lists 40 ways to reduce traffic congestion, including smart signals, bicycle lanes, carpooling, metro expansion and drones, without ranking any. Which kind of thinking is this?",
+   "code": "",
+   "options": [
+    "Convergent thinking",
+    "Inversion thinking",
+    "Constraint framing",
+    "Divergent thinking"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Generating many different ideas without evaluating them is divergent thinking. Convergent thinking would then evaluate them and select one.",
+   "why_wrong": [
+    "Convergent thinking evaluates and selects.",
+    "Inversion thinking asks what to avoid.",
+    "Constraint framing lists limits and requirements.",
+    ""
+   ],
+   "key": "INT335-U3-071"
+  },
+  {
+   "topic": "Divergent and Convergent Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a characteristic of convergent thinking in the unit?",
+   "code": "",
+   "options": [
+    "Evidence-based, relying on facts, data and research",
+    "Exploratory, actively seeking new possibilities",
+    "Focused on originality",
+    "Encourages unusual ideas without judgement"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Convergent thinking is analytical, logical, evidence-based, decision-oriented and focused on accuracy.",
+   "why_wrong": [
+    "",
+    "Exploratory is a divergent trait.",
+    "Originality is the divergent focus.",
+    "Unjudged unusual ideas describe divergent thinking and brainstorming."
+   ],
+   "key": "INT335-U3-072"
+  },
+  {
+   "topic": "Divergent and Convergent Thinking",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A team must choose the best bridge design for a new highway by comparing three designs on cost, safety, durability and environmental impact. Which kind of thinking is this, and which design is selected in the unit?",
+   "code": "",
+   "options": [
+    "Divergent thinking, and the concrete girder bridge is selected",
+    "Convergent thinking, and the steel arch bridge is selected for high safety, excellent durability and acceptable cost",
+    "Convergent thinking, and the cable-stayed bridge is selected because it is the cheapest",
+    "Divergent thinking, and no design is selected"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Comparing options against criteria to select one is convergent thinking. The unit selects Design B, the steel arch bridge, for high safety, excellent durability and acceptable cost.",
+   "why_wrong": [
+    "Comparing and selecting is convergent, and the girder bridge is not selected.",
+    "",
+    "Cable-stayed scores highest on cost, but the steel arch is selected for the overall balance.",
+    "A design is selected, and the thinking is convergent."
+   ],
+   "key": "INT335-U3-073"
+  },
+  {
+   "topic": "Divergent and Convergent Thinking",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In the normal ideation sequence, which order of thinking is correct?",
+   "code": "",
+   "options": [
+    "Converge first to choose an idea, then diverge to add variations",
+    "Diverge and converge at the same time on one idea",
+    "Diverge first to generate many ideas, then converge to evaluate and select",
+    "Only converge, since ideas arrive on their own"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ideas are first generated without judgement and then evaluated and narrowed, which is why the unit pairs divergent thinking with brainstorming and convergent thinking with decision-making.",
+   "why_wrong": [
+    "Choosing first ignores the benefit of many options.",
+    "Judging while generating defeats the purpose of divergence.",
+    "",
+    "The unit says great solutions begin with generating many ideas."
+   ],
+   "key": "INT335-U3-074"
+  },
+  {
+   "topic": "Constraint Framing",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define constraint framing?",
+   "code": "",
+   "options": [
+    "Removing every limit so ideas are free",
+    "Choosing the cheapest idea first",
+    "Writing a persona from interview data",
+    "Identifying the limits and requirements that guide effective problem-solving"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Constraint framing identifies the limits and requirements of a problem. It defines scope, prevents unrealistic solutions and encourages focused creativity.",
+   "why_wrong": [
+    "Constraint framing identifies limits; it does not remove them.",
+    "It is not a ranking method.",
+    "A persona belongs to Unit 2.",
+    ""
+   ],
+   "key": "INT335-U3-075"
+  },
+  {
+   "topic": "Constraint Framing",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is NOT one of the common constraints the unit lists?",
+   "code": "",
+   "options": [
+    "Aesthetic taste",
+    "Budget",
+    "Time",
+    "Government regulations"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The common constraints are budget, time, technology, human resources, government regulations and environmental factors.",
+   "why_wrong": [
+    "",
+    "Budget is a listed constraint.",
+    "Time is a listed constraint.",
+    "Government regulations is a listed constraint."
+   ],
+   "key": "INT335-U3-076"
+  },
+  {
+   "topic": "Constraint Framing",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "In the unit's examples of types of constraints, 'Medical devices must follow safety regulations' is which type?",
+   "code": "",
+   "options": [
+    "Financial",
+    "Legal",
+    "Technical",
+    "Environmental"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Legal constraints are government rules and standards, and the medical device example is the unit's illustration.",
+   "why_wrong": [
+    "Financial is the ₹2 lakh app example.",
+    "",
+    "Technical is the limited internet connectivity example.",
+    "Environmental is the recyclable packaging example."
+   ],
+   "key": "INT335-U3-077"
+  },
+  {
+   "topic": "Constraint Framing",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the electric bicycle example, which of these is NOT one of the constraints?",
+   "code": "",
+   "options": [
+    "A budget of ₹25,000",
+    "A battery weight of under 4 kg",
+    "A target of a 60 km/h top speed",
+    "A maximum speed of 25 km/h"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The constraints are a ₹25,000 budget, a battery under 4 kg, a maximum speed of 25 km/h and eco-friendly materials. The goal is a safe, efficient, eco-friendly bicycle within these limits.",
+   "why_wrong": [
+    "The budget is a listed constraint.",
+    "Battery weight is a listed constraint.",
+    "",
+    "The 25 km/h maximum is a listed constraint."
+   ],
+   "key": "INT335-U3-078"
+  },
+  {
+   "topic": "Constraint Framing",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which order does the unit give for moving from constraints to ideas?",
+   "code": "",
+   "options": [
+    "Generate ideas, identify constraints, define the problem, write HMW statements, evaluate, convert constraints",
+    "Identify constraints, generate ideas, evaluate, write HMW statements, define the problem, convert constraints",
+    "Define the problem, generate ideas, evaluate ideas, identify constraints, write HMW statements, convert constraints",
+    "Define the problem, identify all constraints, convert constraints into opportunities, write HMW statements, generate multiple ideas, evaluate the ideas"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The six steps are: define the problem clearly, identify all constraints, convert constraints into opportunities, write How Might We statements, generate multiple ideas and evaluate the ideas.",
+   "why_wrong": [
+    "Ideas come only after constraints and HMW statements.",
+    "The problem must be defined first.",
+    "Constraints are identified before ideas are generated.",
+    ""
+   ],
+   "key": "INT335-U3-079"
+  },
+  {
+   "topic": "Constraint Framing",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a reason the unit gives for constraint framing being important?",
+   "code": "",
+   "options": [
+    "It prevents unrealistic solutions and saves time and resources",
+    "It guarantees the first idea will be the best",
+    "It removes the need for evaluation",
+    "It makes brainstorming unnecessary"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Constraint framing defines the scope, prevents unrealistic solutions, encourages focused creativity, saves time and resources and improves decision-making.",
+   "why_wrong": [
+    "",
+    "It does not make the first idea best.",
+    "Ideas still need evaluation.",
+    "Brainstorming still follows constraint framing."
+   ],
+   "key": "INT335-U3-080"
+  },
+  {
+   "topic": "How Might We Statements",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit describe a How Might We (HMW) statement?",
+   "code": "",
+   "options": [
+    "It lists every limit on a project",
+    "It converts a problem into an open-ended opportunity for innovation",
+    "It ranks ideas by priority",
+    "It records a user's quote exactly"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "An HMW statement frames a problem as an opportunity. It moves from asking 'why' to imagining 'how'.",
+   "why_wrong": [
+    "That describes constraint framing.",
+    "",
+    "That describes a priority matrix.",
+    "That describes an empathy map."
+   ],
+   "key": "INT335-U3-081"
+  },
+  {
+   "topic": "How Might We Statements",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which contrast does the unit draw between traditional thinking and design thinking?",
+   "code": "",
+   "options": [
+    "Traditional thinking asks 'How might we solve this?' and design thinking asks 'Why is this happening?'",
+    "Both ask only 'Why is this happening?'",
+    "Traditional thinking asks 'Why is this happening?' and looks for causes; design thinking asks 'How might we solve this?' and explores possibilities",
+    "Traditional thinking explores possibilities and design thinking looks for blame"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The slide moves from asking why to imagining how, focusing on solutions and possibilities instead of causes.",
+   "why_wrong": [
+    "This reverses the two.",
+    "Design thinking asks how, not just why.",
+    "",
+    "Design thinking does not look for blame."
+   ],
+   "key": "INT335-U3-082"
+  },
+  {
+   "topic": "How Might We Statements",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which four parts make up the structure of an HMW statement in the unit?",
+   "code": "",
+   "options": [
+    "Problem, cause, effect and solution",
+    "Observe, interview, map and frame",
+    "Cost, innovation, feasibility and risk",
+    "How might we, action, user and goal"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The structure has a How might we question framed as an opportunity, an action (what we will do or create), a user (the person or group) and a goal (the change or outcome).",
+   "why_wrong": [
+    "Those are not the four HMW parts.",
+    "Those are Unit 2 pipeline steps.",
+    "Those are screening criteria.",
+    ""
+   ],
+   "key": "INT335-U3-083"
+  },
+  {
+   "topic": "How Might We Statements",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the unit's example, the problem 'Students forget assignments' becomes an HMW. Which option correctly names its goal?",
+   "code": "",
+   "options": [
+    "Students submit assignments on time and reduce missed deadlines",
+    "Design a reminder app that sends alerts and tracks due dates",
+    "High school and college students",
+    "How might we help students remember assignment deadlines"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In the example the action is to design a reminder app that sends alerts and tracks due dates, the user is high school and college students, and the goal is on-time submission and fewer missed deadlines.",
+   "why_wrong": [
+    "",
+    "That is the action.",
+    "That is the user.",
+    "That is the HMW question itself."
+   ],
+   "key": "INT335-U3-084"
+  },
+  {
+   "topic": "How Might We Statements",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "In the HMW activity, what does each group write after choosing one problem such as long queues in cafeterias, water wastage, parking issues or library overcrowding?",
+   "code": "",
+   "options": [
+    "Five HMW statements, three ideas and two best ideas",
+    "Three HMW statements, five possible ideas, and one best idea selected",
+    "One HMW statement, ten ideas and no selection",
+    "Three personas, five empathy maps and one prototype"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The activity asks for three HMW statements, five possible ideas and the selection of one best idea.",
+   "why_wrong": [
+    "These numbers are reversed.",
+    "",
+    "The activity ends with selecting one best idea.",
+    "Those are Unit 2 outputs."
+   ],
+   "key": "INT335-U3-085"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define brainstorming?",
+   "code": "",
+   "options": [
+    "A way of selecting one idea by weighted scoring",
+    "A method for interviewing users one at a time",
+    "A structured group creativity technique used to generate a large number of ideas without criticism or evaluation",
+    "A technique for removing unnecessary features"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Brainstorming's primary objective is quantity before quality. Scoring is screening, interviewing is research and removing features is SCAMPER's Eliminate.",
+   "why_wrong": [
+    "That is the screening matrix.",
+    "That is user research.",
+    "",
+    "That is the E in SCAMPER."
+   ],
+   "key": "INT335-U3-086"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Who introduced the four fundamental brainstorming rules known as Osborn's Rules?",
+   "code": "",
+   "options": [
+    "Bob Eberle",
+    "Charlie Munger",
+    "Herbert Simon",
+    "Alex Osborn"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Alex Osborn introduced the four rules. Bob Eberle developed SCAMPER, Charlie Munger popularised inversion thinking, and Herbert Simon described design as a way of thinking.",
+   "why_wrong": [
+    "Bob Eberle developed SCAMPER.",
+    "Charlie Munger popularised inversion thinking.",
+    "Herbert Simon is part of the Unit 1 history.",
+    ""
+   ],
+   "key": "INT335-U3-087"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which are Osborn's four rules, in the unit's order?",
+   "code": "",
+   "options": [
+    "Suspend judgment, think freely, quantity matters, combine and improve",
+    "Suspend judgment, quantity matters, record ideas, vote early",
+    "Think freely, criticise early, quantity matters, work alone",
+    "Combine and improve, filter early, suspend judgment, limit ideas"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The rules are: 1 Suspend Judgment, 2 Think Freely, 3 Quantity Matters and 4 Combine and Improve.",
+   "why_wrong": [
+    "",
+    "Recording ideas is a guideline, and voting early contradicts the rules.",
+    "Criticising early and working alone contradict the rules.",
+    "Filtering early and limiting ideas contradict the rules."
+   ],
+   "key": "INT335-U3-088"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Under Osborn's Rule 3, 'Quantity Matters', what does the unit say?",
+   "code": "",
+   "options": [
+    "Only the best three ideas should be written down",
+    "The more ideas generated, the greater the chance of finding excellent solutions",
+    "Every idea must be scored when it is proposed",
+    "Quality is judged first and quantity second"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Rule 3 says the more ideas generated, the greater the chance of finding excellent solutions.",
+   "why_wrong": [
+    "Recording every idea is a guideline.",
+    "",
+    "Scoring at proposal time breaks the suspend judgment rule.",
+    "The primary objective is quantity before quality."
+   ],
+   "key": "INT335-U3-089"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "During a brainstorm on campus bus timings, one member says 'That is too expensive' about a colleague's idea. Which of Osborn's rules is being broken?",
+   "code": "",
+   "options": [
+    "Rule 2, Think Freely",
+    "Rule 3, Quantity Matters",
+    "Rule 1, Suspend Judgment",
+    "Rule 4, Combine and Improve"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Rule 1 says never criticise ideas during brainstorming. Judging an idea as too expensive is criticism.",
+   "why_wrong": [
+    "Think Freely concerns encouraging unusual ideas.",
+    "Quantity Matters concerns the number of ideas.",
+    "",
+    "Combine and Improve concerns building on ideas."
+   ],
+   "key": "INT335-U3-090"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A member says: 'Building on Riya's idea, we could add a tracking map to her bus app.' Which rule is being followed?",
+   "code": "",
+   "options": [
+    "Rule 1, Suspend Judgment",
+    "Rule 2, Think Freely",
+    "Rule 3, Quantity Matters",
+    "Rule 4, Combine and Improve"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Building on an existing idea is Rule 4, Combine and Improve, where participants build upon existing ideas.",
+   "why_wrong": [
+    "Suspend Judgment forbids criticism.",
+    "Think Freely encourages unusual ideas.",
+    "Quantity Matters concerns the number of ideas generated.",
+    ""
+   ],
+   "key": "INT335-U3-091"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is NOT among the guidelines for effective brainstorming in the unit?",
+   "code": "",
+   "options": [
+    "Evaluate each idea immediately and discard weak ones",
+    "Encourage every participant",
+    "Record every idea",
+    "Keep discussions focused"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The guidelines are to encourage every participant, allow unusual ideas, focus on quantity, avoid criticism, build on previous ideas, record every idea and keep discussions focused.",
+   "why_wrong": [
+    "",
+    "Encouraging every participant is a guideline.",
+    "Recording every idea is a guideline.",
+    "Keeping discussions focused is a guideline."
+   ],
+   "key": "INT335-U3-092"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which order does the unit give for the brainstorming process?",
+   "code": "",
+   "options": [
+    "Generate ideas, identify the problem, define the objective, select the best solution, record ideas, evaluate, group",
+    "Identify the problem, define the objective, generate ideas, record ideas, group similar ideas, evaluate ideas, select the best solution",
+    "Define the objective, select the best solution, identify the problem, generate ideas, record, group, evaluate",
+    "Identify the problem, generate ideas, evaluate ideas, record ideas, define the objective, group, select"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The seven steps run from identifying the problem and defining the objective to generating, recording, grouping and evaluating ideas, and finally selecting the best solution.",
+   "why_wrong": [
+    "The problem comes first and selection last.",
+    "",
+    "Selection comes after evaluation.",
+    "Evaluation comes after recording and grouping."
+   ],
+   "key": "INT335-U3-093"
+  },
+  {
+   "topic": "Brainstorming and Osborn's Rules",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the Smart College Campus brainstorming challenge, which set of constraints and task details matches the unit?",
+   "code": "",
+   "options": [
+    "Budget of ₹25,000, battery under 4 kg and a 25 km/h speed limit; groups of 4 generate 5 ideas in 10 minutes",
+    "Budget of ₹2 lakh and a 30-day deadline; groups of 3 generate 20 ideas in 5 minutes",
+    "Budget of ₹5 crore, environment friendly, accessible for disabled students and energy efficient; groups of 5 generate 10 ideas in 5 minutes",
+    "No constraints; groups of 10 generate 5 ideas in 20 minutes"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The activity gives four constraints and asks groups of 5 for 10 ideas in 5 minutes, then to categorise them into infrastructure, technology, sustainability and student services.",
+   "why_wrong": [
+    "Those are the electric bicycle constraints.",
+    "Those are the unit's examples of financial and time constraints, not this challenge.",
+    "",
+    "The challenge has four constraints."
+   ],
+   "key": "INT335-U3-094"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Who developed the SCAMPER technique, according to the unit?",
+   "code": "",
+   "options": [
+    "Alex Osborn",
+    "Charlie Munger",
+    "Nigel Cross",
+    "Bob Eberle"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "SCAMPER is a structured creativity technique developed by Bob Eberle that improves existing products, services and processes by asking creative questions.",
+   "why_wrong": [
+    "Alex Osborn introduced the brainstorming rules.",
+    "Charlie Munger popularised inversion thinking.",
+    "Nigel Cross is part of the history of Design Thinking.",
+    ""
+   ],
+   "key": "INT335-U3-095"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What do the seven letters of SCAMPER stand for?",
+   "code": "",
+   "options": [
+    "Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, Reverse",
+    "Simplify, Create, Adapt, Measure, Prototype, Evaluate, Repeat",
+    "Substitute, Collaborate, Analyse, Modify, Present, Eliminate, Review",
+    "Select, Combine, Arrange, Maximise, Plan, Evaluate, Revise"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "SCAMPER stands for Substitute, Combine, Adapt, Modify (magnify or minify), Put to another use, Eliminate and Reverse (rearrange).",
+   "why_wrong": [
+    "",
+    "Those are not the SCAMPER terms.",
+    "Collaborate, Analyse, Present and Review are not SCAMPER letters.",
+    "Select, Arrange, Maximise, Plan and Revise are not SCAMPER letters."
+   ],
+   "key": "INT335-U3-096"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "Replacing plastic shopping bags with cloth bags is an example of which SCAMPER prompt?",
+   "code": "",
+   "options": [
+    "Combine",
+    "Substitute",
+    "Eliminate",
+    "Reverse"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Substitute means replacing a material, component, process, person or technology with an alternative. The unit's examples are cloth bags for plastic bags, electric vehicles for petrol cars and e-books for printed books.",
+   "why_wrong": [
+    "Combine merges two things.",
+    "",
+    "Eliminate removes unnecessary parts.",
+    "Reverse changes order or roles."
+   ],
+   "key": "INT335-U3-097"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "Merging a pen and a USB drive into a pen drive is an example of which SCAMPER prompt?",
+   "code": "",
+   "options": [
+    "Substitute",
+    "Adapt",
+    "Combine",
+    "Put to another use"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Combine means merging two or more products, ideas, features or processes. The unit's examples include smartphone plus camera, headphones plus sunglasses and backpack plus solar charger.",
+   "why_wrong": [
+    "Substitute replaces one thing with another.",
+    "Adapt borrows from another industry or environment.",
+    "",
+    "Put to another use finds new uses for the same item."
+   ],
+   "key": "INT335-U3-098"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Velcro was inspired by plant burrs, and the bullet train was inspired by the kingfisher. Which SCAMPER prompt do these show?",
+   "code": "",
+   "options": [
+    "Modify",
+    "Eliminate",
+    "Reverse",
+    "Adapt"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Adapt means borrowing or modifying ideas from another industry, product or environment. The unit's examples are Velcro from burrs, the bullet train from kingfishers and self-cleaning paint from lotus leaves.",
+   "why_wrong": [
+    "Modify changes size, shape or features of a product.",
+    "Eliminate removes features.",
+    "Reverse changes order or roles.",
+    ""
+   ],
+   "key": "INT335-U3-099"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "Foldable smartphones and compact electric cars are examples of which SCAMPER prompt?",
+   "code": "",
+   "options": [
+    "Modify (magnify or minify)",
+    "Substitute",
+    "Put to another use",
+    "Reverse"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Modify changes the size, appearance, shape, performance or features of an existing product. The unit's examples include foldable smartphones, mini projectors, large-screen tablets and compact electric cars.",
+   "why_wrong": [
+    "",
+    "Substitute replaces a material or technology.",
+    "Put to another use finds new purposes for an item.",
+    "Reverse changes order or roles."
+   ],
+   "key": "INT335-U3-100"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Plastic bottles are reused as garden pots and bird feeders. Which SCAMPER prompt is this?",
+   "code": "",
+   "options": [
+    "Substitute",
+    "Put to another use",
+    "Eliminate",
+    "Adapt"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Put to another use finds new purposes for an existing product beyond its original function, asking who else can use it, what else it can solve and whether another industry can use it.",
+   "why_wrong": [
+    "Substitute replaces a part with another.",
+    "",
+    "Eliminate removes unnecessary features.",
+    "Adapt borrows from another industry."
+   ],
+   "key": "INT335-U3-101"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A team removes games, ads, extra settings and themes from an app and keeps only chat, the news feed and simple settings. Which SCAMPER prompt is this?",
+   "code": "",
+   "options": [
+    "Combine",
+    "Modify",
+    "Eliminate",
+    "Reverse"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Eliminate removes unnecessary components, features or processes to simplify a product. The unit's app example keeps only essential chat, important news feed and simple settings.",
+   "why_wrong": [
+    "Combine adds features together.",
+    "Modify changes size or features.",
+    "",
+    "Reverse changes order or roles."
+   ],
+   "key": "INT335-U3-102"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Traditional shopping runs visit store, buy product, pay at counter, home delivery. Modern shopping runs browse online, order, processing and shipping, home delivery. Which SCAMPER prompt does this illustrate?",
+   "code": "",
+   "options": [
+    "Substitute",
+    "Combine",
+    "Eliminate",
+    "Reverse (rearrange)"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Reverse changes the order, direction, sequence or arrangement of a process to find innovative solutions. The unit uses this shopping comparison as its example.",
+   "why_wrong": [
+    "Substitute replaces a part.",
+    "Combine merges items.",
+    "Eliminate removes steps, which is not the point of this comparison.",
+    ""
+   ],
+   "key": "INT335-U3-103"
+  },
+  {
+   "topic": "SCAMPER Technique",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which pairing of SCAMPER prompt and question is correct?",
+   "code": "",
+   "options": [
+    "Put to another use: what else can it be used for?",
+    "Substitute: what can be removed or simplified?",
+    "Eliminate: what can be replaced?",
+    "Adapt: what can be reversed or rearranged?"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The questions are: Substitute (what can be replaced?), Combine (what can be combined?), Adapt (what can be adapted?), Modify (what can be modified or magnified or minified?), Put to another use (what else can it be used for?), Eliminate (what can be removed or simplified?), Reverse (what can be reversed or rearranged?).",
+   "why_wrong": [
+    "",
+    "Removing or simplifying is Eliminate.",
+    "Replacing is Substitute.",
+    "Reversing or rearranging is Reverse."
+   ],
+   "key": "INT335-U3-104"
+  },
+  {
+   "topic": "Mind Mapping",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define mind mapping?",
+   "code": "",
+   "options": [
+    "A table that scores ideas against weighted criteria",
+    "A visual technique that organises ideas around a central topic to encourage creative thinking",
+    "A list of questions for removing features",
+    "A chart of interview quotes"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Mind maps use keywords, branches, colours, symbols and images to represent information in a structured, easy-to-understand format.",
+   "why_wrong": [
+    "That describes a screening matrix.",
+    "",
+    "That describes the Eliminate prompt.",
+    "That describes an empathy map."
+   ],
+   "key": "INT335-U3-105"
+  },
+  {
+   "topic": "Mind Mapping",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What are the four components of a mind map in the unit?",
+   "code": "",
+   "options": [
+    "Problem, cause, effect and solution",
+    "Says, thinks, does and feels",
+    "Central idea, main branches, sub-branches and keywords",
+    "Activities, environment, interactions and users"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A good mind map has a central idea at the centre, main branches for major categories, sub-branches for additional ideas and keywords, which are short phrases instead of long sentences.",
+   "why_wrong": [
+    "Those are not mind map components.",
+    "Those are the empathy map quadrants.",
+    "",
+    "Those are four of the AEIOU letters."
+   ],
+   "key": "INT335-U3-106"
+  },
+  {
+   "topic": "Mind Mapping",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which keyword rule does the unit give for mind maps?",
+   "code": "",
+   "options": [
+    "Use full sentences so no detail is lost",
+    "Use only images and no words",
+    "Use one colour for the whole map",
+    "Use short phrases such as 'Solar Energy' instead of long sentences"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Keywords are short phrases. The unit contrasts 'Use renewable energy in buildings' (poor) with 'Solar Energy' (good).",
+   "why_wrong": [
+    "The unit prefers short phrases.",
+    "The unit says maps use keywords, branches, colours, symbols and images together.",
+    "Colour is used to show relationships.",
+    ""
+   ],
+   "key": "INT335-U3-107"
+  },
+  {
+   "topic": "Mind Mapping",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the Smart City mind map, which item is a main branch and which is a sub-branch?",
+   "code": "",
+   "options": [
+    "Transportation is a main branch, and Metro is a sub-branch of it",
+    "Metro is a main branch, and Transportation is a sub-branch of it",
+    "Smart City is a main branch, and Healthcare is the central idea",
+    "Electric buses is a main branch, and Security is a sub-branch of it"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Smart City is the central idea. Transportation, healthcare, education, energy and security are main branches, and Metro, electric buses and smart parking are sub-branches under Transportation.",
+   "why_wrong": [
+    "",
+    "This reverses the levels.",
+    "Smart City is the central idea, not a main branch.",
+    "Electric buses is a sub-branch of Transportation, and Security is a main branch."
+   ],
+   "key": "INT335-U3-108"
+  },
+  {
+   "topic": "Mind Mapping",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which order does the unit give for building a multi-branch mind map?",
+   "code": "",
+   "options": [
+    "Create major branches, write the central topic, review, add sub-branches, highlight relationships, expand",
+    "Write the central topic, create major branches, add sub-branches, continue expanding, highlight relationships, review and refine",
+    "Review and refine, write the central topic, add sub-branches, create major branches, expand, highlight",
+    "Add sub-branches, create major branches, write the central topic, highlight, expand, review"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The six steps start from the central topic, then build outward and finish by reviewing and refining.",
+   "why_wrong": [
+    "The central topic comes first.",
+    "",
+    "Review and refine comes last.",
+    "Sub-branches cannot come before the major branches and the central topic."
+   ],
+   "key": "INT335-U3-109"
+  },
+  {
+   "topic": "Mind Mapping",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the Smart Hospital case study, which branch holds telemedicine, emergency services and electronic health records?",
+   "code": "",
+   "options": [
+    "Infrastructure",
+    "Support services",
+    "Patient care",
+    "Security"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Patient care holds electronic health records, telemedicine and emergency services. Technology holds AI, IoT and cloud computing, support services hold food services, housekeeping and maintenance, security holds biometric access and cybersecurity, and infrastructure holds smart beds, robotics and automation.",
+   "why_wrong": [
+    "Infrastructure holds smart beds, robotics and automation.",
+    "Support services hold food services, housekeeping and maintenance.",
+    "",
+    "Security holds biometric access and cybersecurity."
+   ],
+   "key": "INT335-U3-110"
+  },
+  {
+   "topic": "Mind Mapping",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "In the technical fest mind map, which main branch holds 'find sponsors', 'contact and pitch', 'agreements' and 'follow-up'?",
+   "code": "",
+   "options": [
+    "Budget",
+    "Marketing",
+    "Volunteers",
+    "Sponsorship"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Sponsorship holds those four items. Budget holds estimate costs, venue, logistics and contingency. Marketing holds the poster, social media promotion, email campaigns, college announcements and PR. Volunteers hold recruiting, roles, training and coordination.",
+   "why_wrong": [
+    "Budget holds costs, venue, logistics and contingency.",
+    "Marketing holds poster, social media, email, announcements and PR.",
+    "Volunteers hold recruiting, roles, training and coordination.",
+    ""
+   ],
+   "key": "INT335-U3-111"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define reverse thinking?",
+   "code": "",
+   "options": [
+    "Approaching a problem from the opposite direction, such as asking 'How could we make this problem worse?'",
+    "Replacing a material with another alternative",
+    "Grouping ideas into similar themes",
+    "Scoring ideas with weights"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Reverse thinking asks how we could make the problem worse, then reverses the answers to generate innovative solutions.",
+   "why_wrong": [
+    "",
+    "That is the Substitute prompt.",
+    "That is clustering.",
+    "That is a screening matrix."
+   ],
+   "key": "INT335-U3-112"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a reason the unit gives for using reverse thinking?",
+   "code": "",
+   "options": [
+    "It removes the need to generate ideas",
+    "It challenges assumptions and identifies hidden problems",
+    "It guarantees the cheapest solution",
+    "It replaces user research"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Reverse thinking challenges assumptions, encourages unconventional thinking, identifies hidden problems and produces innovative solutions.",
+   "why_wrong": [
+    "It is itself an idea generation technique.",
+    "",
+    "It does not guarantee the cheapest solution.",
+    "It does not replace research."
+   ],
+   "key": "INT335-U3-113"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the unit's example, the problem is 'Increase customer satisfaction'. What is the reverse question, and what are the reversed solutions?",
+   "code": "",
+   "options": [
+    "'How can we increase profit?', reversed to higher prices and fewer staff",
+    "'How can we reduce costs?', reversed to cheaper materials",
+    "'How can we make customers unhappy?' (slow service, poor quality, long waiting time), reversed to faster service, better quality and reduced waiting time",
+    "'How can we make customers happy?', reversed to the same answers"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit turns the problem around, lists the ways to make it worse, and reverses each to find a solution.",
+   "why_wrong": [
+    "That is not the reverse question in the example.",
+    "That is not the reverse question in the example.",
+    "",
+    "That is not a reverse question."
+   ],
+   "key": "INT335-U3-114"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "How does the unit define inversion thinking?",
+   "code": "",
+   "options": [
+    "A method for generating wild ideas without judgement",
+    "A technique for scoring ideas against weights",
+    "A way to arrange ideas in a mind map",
+    "A decision-making approach that focuses on avoiding failure rather than directly pursuing success"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Inversion thinking, popularised by investor Charlie Munger, asks 'What should we avoid?'.",
+   "why_wrong": [
+    "That describes brainstorming.",
+    "That describes a screening matrix.",
+    "That describes mind mapping.",
+    ""
+   ],
+   "key": "INT335-U3-115"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Who popularised inversion thinking, according to the unit?",
+   "code": "",
+   "options": [
+    "The investor Charlie Munger",
+    "Alex Osborn",
+    "Bob Eberle",
+    "Herbert Simon"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The unit credits Charlie Munger with popularising inversion thinking and its question 'What should we avoid?'.",
+   "why_wrong": [
+    "",
+    "Alex Osborn introduced Osborn's rules.",
+    "Bob Eberle developed SCAMPER.",
+    "Herbert Simon is part of Unit 1's history."
+   ],
+   "key": "INT335-U3-116"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which order does the unit give for the inversion process?",
+   "code": "",
+   "options": [
+    "Imagine failure, define the goal, reverse the causes, identify causes, implement",
+    "Define the goal, imagine failure, identify causes, reverse the causes, implement better solutions",
+    "Define the goal, reverse the causes, imagine failure, identify causes, implement",
+    "Implement better solutions, define the goal, imagine failure, identify causes, reverse"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The five steps are Define Goal, Imagine Failure, Identify Causes, Reverse the Causes and Implement Better Solutions.",
+   "why_wrong": [
+    "The goal must be defined first.",
+    "",
+    "Causes must be identified before they are reversed.",
+    "Implementation comes last."
+   ],
+   "key": "INT335-U3-117"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "For the goal 'Build a successful startup', the unit imagines these failures: ignoring customers, poor product quality, weak marketing and high prices. What are the reversed actions?",
+   "code": "",
+   "options": [
+    "Ignore competitors, copy the best product, spend less and raise prices",
+    "Hire more staff, expand quickly, avoid marketing and keep prices high",
+    "Listen to customers, improve quality, build strong marketing and use competitive pricing",
+    "Wait for customers, keep quality the same, advertise once and lower quality"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Reversing each cause of failure gives the better actions, and the unit's result is higher customer satisfaction, a strong brand and sustainable growth.",
+   "why_wrong": [
+    "These do not reverse the four causes.",
+    "These repeat the failures instead of reversing them.",
+    "",
+    "These also repeat the failures."
+   ],
+   "key": "INT335-U3-118"
+  },
+  {
+   "topic": "Reverse and Inversion Thinking",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the café reverse thinking activity, 'cold food and drinks' is a negative idea. What is its reverse solution and benefit in the unit's sheet?",
+   "code": "",
+   "options": [
+    "Serve only cold food, which reduces costs",
+    "Add a bigger menu, which attracts customers",
+    "Train staff to be friendly, which creates a welcoming experience",
+    "Serve fresh, hot food and chilled beverages, which improves food quality and customer loyalty"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The sheet pairs cold food and drinks with serving fresh, hot food and chilled beverages, improving food quality and customer loyalty.",
+   "why_wrong": [
+    "That repeats the problem.",
+    "A wider menu is the reverse of limited menu options.",
+    "Friendly staff is the reverse of rude staff.",
+    ""
+   ],
+   "key": "INT335-U3-119"
+  },
+  {
+   "topic": "Idea Clustering and Affinity Diagrams",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define idea organisation and clustering?",
+   "code": "",
+   "options": [
+    "Arranging and grouping similar ideas into categories so analysis and evaluation are easier",
+    "Choosing one idea and discarding the rest",
+    "Generating as many new ideas as possible",
+    "Interviewing users about their ideas"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Clustering groups similar ideas into categories. It removes duplicates, improves understanding, saves time, identifies common themes and makes evaluation easier.",
+   "why_wrong": [
+    "",
+    "That is selection.",
+    "That is idea generation.",
+    "Clustering organises ideas, not interviews."
+   ],
+   "key": "INT335-U3-120"
+  },
+  {
+   "topic": "Idea Clustering and Affinity Diagrams",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is NOT a clustering method listed in the unit?",
+   "code": "",
+   "options": [
+    "Affinity diagram",
+    "Weighted scoring matrix",
+    "Sticky notes method",
+    "Whiteboard grouping"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The unit lists the affinity diagram, sticky notes method, digital mind maps and whiteboard grouping. A weighted scoring matrix is a screening tool.",
+   "why_wrong": [
+    "The affinity diagram is a listed method.",
+    "",
+    "The sticky notes method is a listed method.",
+    "Whiteboard grouping is a listed method."
+   ],
+   "key": "INT335-U3-121"
+  },
+  {
+   "topic": "Idea Clustering and Affinity Diagrams",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which order does the unit give for making an affinity diagram?",
+   "code": "",
+   "options": [
+    "Give each group a title, write each idea on a note, place similar ideas together, identify themes, review",
+    "Identify major themes, write ideas, review relationships, place similar ideas together, give titles",
+    "Write each idea on a sticky note, place similar ideas together, give each group a title, review the relationships, identify major themes",
+    "Place similar ideas together, identify major themes, give titles, write ideas, review"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The five steps start with one idea per sticky note and end with identifying major themes.",
+   "why_wrong": [
+    "A group title cannot come before the notes exist and are grouped.",
+    "Themes are identified last.",
+    "",
+    "Notes must be written first."
+   ],
+   "key": "INT335-U3-122"
+  },
+  {
+   "topic": "Idea Clustering and Affinity Diagrams",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the unit's campus example, which cluster contains smart parking and bicycle sharing?",
+   "code": "",
+   "options": [
+    "Technology",
+    "Sustainability",
+    "Student services",
+    "Infrastructure"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Smart parking and bicycle sharing form the Infrastructure cluster. Digital library and AI tutor form a Technology cluster, and solar panels sit in Sustainability.",
+   "why_wrong": [
+    "Technology holds the digital library and the AI tutor.",
+    "Sustainability holds solar panels.",
+    "Student services are not one of the clusters in that example.",
+    ""
+   ],
+   "key": "INT335-U3-123"
+  },
+  {
+   "topic": "Idea Clustering and Affinity Diagrams",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "In the unit's clustering process example, which cluster is selected as the best, and why?",
+   "code": "",
+   "options": [
+    "Technology, because it has a high impact on the learning experience and future readiness",
+    "Infrastructure, because it is the cheapest",
+    "Sustainability, because it has the fewest ideas",
+    "No cluster, because clusters cannot be compared"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The five steps are generated ideas, group similar ideas, create categories, review categories and select the best cluster. The Technology cluster is chosen for its learning impact and future readiness.",
+   "why_wrong": [
+    "",
+    "Cost is not given as the reason.",
+    "Having the fewest ideas is not a selection criterion.",
+    "Clusters are reviewed and one is selected."
+   ],
+   "key": "INT335-U3-124"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define feasibility analysis?",
+   "code": "",
+   "options": [
+    "Measuring how well an idea matches market demand",
+    "Determining whether an idea can be successfully implemented with the available resources, technology, budget and time",
+    "Counting how many ideas a team generated",
+    "Ranking ideas by how new they are"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Feasibility analysis asks whether the idea can be done. Relevance analysis asks how well it fits user needs, goals and market demands.",
+   "why_wrong": [
+    "That is relevance analysis.",
+    "",
+    "Counting ideas is not feasibility analysis.",
+    "Novelty is a separate criterion."
+   ],
+   "key": "INT335-U3-125"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pairing of feasibility type and key question is correct in the unit?",
+   "code": "",
+   "options": [
+    "Economic: will users accept the solution?",
+    "Operational: can the organisation afford it?",
+    "Technical: can available technology support the idea?",
+    "Legal: can it be completed on time?"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The five types are technical (can technology support it), economic (can the organisation afford it), operational (will users accept it), legal (does it comply with regulations) and schedule (can it be completed on time).",
+   "why_wrong": [
+    "Will users accept it is the operational question.",
+    "Can it be afforded is the economic question.",
+    "",
+    "Can it be completed on time is the schedule question."
+   ],
+   "key": "INT335-U3-126"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "A biometric attendance system must be checked against privacy laws and regulations. Which type of feasibility is this?",
+   "code": "",
+   "options": [
+    "Technical feasibility",
+    "Economic feasibility",
+    "Schedule feasibility",
+    "Legal feasibility"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Legal feasibility asks whether an idea complies with regulations, and the unit's example is the biometric attendance system.",
+   "why_wrong": [
+    "Technical feasibility asks if technology can support it, with the AI attendance example.",
+    "Economic feasibility asks if it can be afforded, with the smart classroom example.",
+    "Schedule feasibility asks if it can be done on time, with the student portal example.",
+    ""
+   ],
+   "key": "INT335-U3-127"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A college wants to launch a student portal and must decide whether it can be built and deployed within three months. Which type of feasibility is this?",
+   "code": "",
+   "options": [
+    "Schedule feasibility",
+    "Operational feasibility",
+    "Legal feasibility",
+    "Economic feasibility"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Schedule feasibility asks whether the idea can be completed on time, and the unit's example is a student portal deployment in three months.",
+   "why_wrong": [
+    "",
+    "Operational feasibility asks whether users will accept it.",
+    "Legal feasibility asks about regulations.",
+    "Economic feasibility asks about affordability."
+   ],
+   "key": "INT335-U3-128"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What does the unit's key takeaway say about innovative ideas?",
+   "code": "",
+   "options": [
+    "An innovative idea does not need to be practical",
+    "An innovative idea must also be practical and achievable",
+    "Feasibility matters more than whether the idea solves the problem",
+    "Only cheap ideas count as innovative"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The takeaway of feasibility analysis is that innovation has to be practical and achievable as well.",
+   "why_wrong": [
+    "The unit says innovation must also be practical.",
+    "",
+    "Feasibility is not placed above relevance.",
+    "The unit does not limit innovation to cheap ideas."
+   ],
+   "key": "INT335-U3-129"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which of these is a relevance analysis question in the unit?",
+   "code": "",
+   "options": [
+    "Can available technology support it?",
+    "Can it be completed on time?",
+    "Does it solve the real problem?",
+    "Can the organisation afford it?"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Relevance questions are whether it solves the real problem, is valuable for users, supports organisational objectives, has market demand and provides a competitive advantage. The others are feasibility questions.",
+   "why_wrong": [
+    "That is a technical feasibility question.",
+    "That is a schedule feasibility question.",
+    "",
+    "That is an economic feasibility question."
+   ],
+   "key": "INT335-U3-130"
+  },
+  {
+   "topic": "Feasibility and Relevance Analysis",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Parents struggle to track their child's school bus. Idea A is a school bus tracking app that gives real-time updates and ETAs. Idea B is a smart ID card that marks attendance when students board and exit. In the unit's relevance analysis, how are they rated and why?",
+   "code": "",
+   "options": [
+    "Idea A is high relevance because it gives real-time updates; Idea B is low relevance because it is expensive",
+    "Both are high relevance because both help parents",
+    "Both are low relevance because neither is technically feasible",
+    "Idea A is low relevance because it is helpful but not critical; Idea B is high relevance because it directly improves safety and accountability"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit rates the tracking app low because the core safety and attendance problem can still be solved without it, and the smart ID card high because it directly addresses safety and accurate tracking.",
+   "why_wrong": [
+    "This reverses the ratings.",
+    "The unit separates the two ratings.",
+    "Relevance is not about technical feasibility.",
+    ""
+   ],
+   "key": "INT335-U3-131"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define idea screening?",
+   "code": "",
+   "options": [
+    "Evaluating and selecting the best ideas based on feasibility, innovation and value",
+    "Writing every idea on a sticky note",
+    "Generating ideas without judgement",
+    "Observing users in their natural environment"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Idea screening helps focus time and resources on the most promising solutions.",
+   "why_wrong": [
+    "",
+    "That is the first step of an affinity diagram.",
+    "That is divergent thinking and brainstorming.",
+    "That is field observation."
+   ],
+   "key": "INT335-U3-132"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a benefit of idea screening in the unit?",
+   "code": "",
+   "options": [
+    "It lets the loudest voice decide",
+    "It encourages objective decisions by using measurable criteria rather than personal opinions",
+    "It guarantees every idea is built",
+    "It replaces idea generation"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Screening reduces risk, improves resource utilisation, encourages objective decisions and increases the success rate.",
+   "why_wrong": [
+    "The point is to use measurable criteria, not personal opinion.",
+    "",
+    "Screening filters ideas down.",
+    "Screening follows idea generation; it does not replace it."
+   ],
+   "key": "INT335-U3-133"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A company generates 50 ideas for a new smartphone and evaluates them on cost, customer demand, technical feasibility and market potential. How many ideas does the unit say are selected for prototyping?",
+   "code": "",
+   "options": [
+    "Fifty",
+    "Twenty",
+    "Five",
+    "One"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Instead of developing all 50 ideas, the company evaluates each one and selects the best five for prototyping.",
+   "why_wrong": [
+    "Developing all 50 is exactly what screening avoids.",
+    "Twenty is the university example's starting number.",
+    "",
+    "The unit selects five."
+   ],
+   "key": "INT335-U3-134"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A university develops 20 ideas to improve campus life. Which three does the unit's screening select?",
+   "code": "",
+   "options": [
+    "Smart parking, bicycle sharing and solar panels",
+    "AI tutor, VR campus tour and smart parking",
+    "Digital library, bicycle sharing and AI chatbot",
+    "Smart attendance, digital library and green campus initiative"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit's example prioritises smart attendance (tracking and absenteeism), digital library (access) and the green campus initiative (sustainability).",
+   "why_wrong": [
+    "Those are cluster items from another example.",
+    "Those are the prioritisation example's ideas.",
+    "These mix ideas from different examples.",
+    ""
+   ],
+   "key": "INT335-U3-135"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which set of criteria does the unit list for idea screening?",
+   "code": "",
+   "options": [
+    "Feasibility, cost, customer value, innovation, technical complexity and market potential",
+    "Says, thinks, does, feels, quote and persona",
+    "Activities, environment, interactions, objects and users",
+    "Substitute, combine, adapt, modify, eliminate and reverse"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The six screening criteria are feasibility, cost, customer value, innovation, technical complexity and market potential.",
+   "why_wrong": [
+    "",
+    "Those belong to empathy maps and personas.",
+    "Those are the AEIOU letters.",
+    "Those are SCAMPER prompts."
+   ],
+   "key": "INT335-U3-136"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What does an idea screening matrix do?",
+   "code": "",
+   "options": [
+    "Groups similar ideas into clusters",
+    "Compares multiple ideas against predefined evaluation criteria",
+    "Records user quotes in four quadrants",
+    "Reverses a problem to find hidden risks"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The matrix lists criteria, often with weights, and scores each idea against them.",
+   "why_wrong": [
+    "That describes clustering.",
+    "",
+    "That describes an empathy map.",
+    "That describes reverse thinking."
+   ],
+   "key": "INT335-U3-137"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which are common criteria in the unit's idea screening matrix?",
+   "code": "",
+   "options": [
+    "Name, age, location, goal, challenge and quote",
+    "Observe, interview, dig, separate, build and frame",
+    "Cost, innovation, feasibility, user value, risk and sustainability",
+    "Empathise, define, ideate, prototype and test"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The matrix's common criteria are cost, innovation, feasibility, user value, risk and sustainability.",
+   "why_wrong": [
+    "Those are persona fields.",
+    "Those are the Unit 2 capstone steps.",
+    "",
+    "Those are the d.school stages."
+   ],
+   "key": "INT335-U3-138"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the unit's sample matrix the weights are cost 20%, innovation 25%, feasibility 20%, user value 20% and risk 15%. What do the weights add up to, and which idea scores highest?",
+   "code": "",
+   "options": [
+    "100 percent, and Idea B scores highest",
+    "95 percent, and Idea C scores highest",
+    "120 percent, and Idea A scores highest",
+    "100 percent, and Idea A scores highest"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The weights add up to 100 percent. In the sample, Idea A is rated 4, 5, 4, 5 and 4, which gives it the highest weighted total, ahead of Idea C and then Idea B.",
+   "why_wrong": [
+    "Idea B has the lowest weighted score.",
+    "The weights add up to 100 percent, not 95, and Idea C is second.",
+    "The weights do not add up to 120 percent.",
+    ""
+   ],
+   "key": "INT335-U3-139"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which pairing in the unit's priority matrix is correct?",
+   "code": "",
+   "options": [
+    "High impact and low effort is the top priority, to implement immediately",
+    "Low impact and high effort is the top priority",
+    "High impact and high effort should be rejected",
+    "Low impact and low effort is the strategic priority"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The matrix sets high impact with low effort as the top priority, high impact with high effort as a strategic long-term project, low impact with low effort as optional, and low impact with high effort as something to avoid and reject.",
+   "why_wrong": [
+    "",
+    "Low impact with high effort is the one to avoid.",
+    "High impact with high effort is a long-term strategic project.",
+    "Low impact with low effort is optional, low priority."
+   ],
+   "key": "INT335-U3-140"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Using the priority matrix, how should a high-value idea that needs significant resources and time be treated?",
+   "code": "",
+   "options": [
+    "Implement it immediately",
+    "As a long-term, strategic project",
+    "Reject it",
+    "Treat it as optional"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "High impact with high effort is labelled a strategic priority, a long-term project that needs significant resources and time.",
+   "why_wrong": [
+    "Immediate implementation is for high impact with low effort.",
+    "",
+    "Rejection is for low impact with high effort.",
+    "Optional is for low impact with low effort."
+   ],
+   "key": "INT335-U3-141"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "In the unit's example of idea selection and prioritisation, how are the AI tutor, smart parking and VR campus tour ranked?",
+   "code": "",
+   "options": [
+    "AI tutor is low, smart parking is medium and VR campus tour is high",
+    "All three are high priority",
+    "AI tutor is high, smart parking is medium and VR campus tour is low",
+    "Smart parking is high, AI tutor is medium and VR campus tour is low"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The AI tutor has high impact and high value, so it is top priority. Smart parking has moderate impact and effort, and the VR campus tour has low impact and high effort.",
+   "why_wrong": [
+    "This reverses the AI tutor and VR tour.",
+    "Only the AI tutor is rated high.",
+    "",
+    "The AI tutor is the high priority, not smart parking."
+   ],
+   "key": "INT335-U3-142"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "How does the unit distinguish idea selection from prioritisation?",
+   "code": "",
+   "options": [
+    "Selection ranks ideas, while prioritisation generates them",
+    "They are the same thing",
+    "Selection groups ideas, while prioritisation removes duplicates",
+    "Selection chooses the most suitable idea, while prioritisation ranks ideas by importance, urgency, impact and feasibility"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Idea selection is choosing the most suitable idea, and prioritisation ranks ideas by importance, urgency, impact and feasibility.",
+   "why_wrong": [
+    "Generation is a different step.",
+    "The unit distinguishes them.",
+    "Grouping and removing duplicates is clustering.",
+    ""
+   ],
+   "key": "INT335-U3-143"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which seven prioritisation criteria does the unit list?",
+   "code": "",
+   "options": [
+    "Business value, customer benefit, innovation, cost, time, risk and strategic alignment",
+    "Cost, safety, durability, environmental impact, weight, speed and colour",
+    "Says, thinks, does, feels, goals, quotes and needs",
+    "Clarify, ideate, develop, implement, test, launch and review"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The seven criteria are business value, customer benefit, innovation, cost, time, risk and strategic alignment.",
+   "why_wrong": [
+    "",
+    "Those are bridge or bicycle criteria, not prioritisation criteria.",
+    "Those are empathy map and persona items.",
+    "Those are CPS and process stages."
+   ],
+   "key": "INT335-U3-144"
+  },
+  {
+   "topic": "Idea Screening, Matrix and Prioritisation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A team has 30 ideas, wants to avoid developing weak ones, and decides to rate each on feasibility, cost, customer value and innovation, then keep only the top few. Which approach is this?",
+   "code": "",
+   "options": [
+    "Brainstorming, because it generates ideas without judgement",
+    "Idea screening, a convergent step that reduces risk and saves development cost",
+    "Reverse thinking, because it asks how to make the problem worse",
+    "Constraint framing, because it lists the project's limits"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Rating ideas against criteria and keeping the best is idea screening, a convergent activity that filters impractical ideas, saves time and development cost and reduces risk.",
+   "why_wrong": [
+    "Brainstorming does not rate or filter ideas.",
+    "",
+    "Reverse thinking works backward from failure.",
+    "Constraint framing identifies limits before generating ideas."
+   ],
+   "key": "INT335-U3-145"
   }
  ]
 }

@@ -830,6 +830,1524 @@
     ""
    ],
    "key": "INT335-U1-036"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which description fits focused mode?",
+   "code": "",
+   "options": [
+    "Relaxed thinking that makes broad, loose connections between ideas",
+    "Concentrated attention on one specific task, using established neural pathways",
+    "Daydreaming with no task in mind at all",
+    "Generating as many unusual ideas as possible without judging them"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Focused mode is concentrated, logical and sequential thinking on a specific task, such as solving equations, writing code or following a procedure. The relaxed, associative kind of thinking is diffuse mode.",
+   "why_wrong": [
+    "That describes diffuse mode, the opposite of focused mode.",
+    "",
+    "Focused mode is the opposite of an unfocused drift; it is directed at a task.",
+    "Producing many unjudged ideas is divergent brainstorming, not a thinking mode in this unit's sense."
+   ],
+   "key": "INT335-U1-037"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "According to the unit, what should you do when you are stuck on a problem you have already worked hard on?",
+   "code": "",
+   "options": [
+    "Keep pushing in focused mode until it gives way",
+    "Switch to a different VARK learning style",
+    "Take a break so that diffuse processing can work on it",
+    "Ask the group to vote on an answer"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The practical rule is to alternate focused and diffuse modes. When stuck, step away so the diffuse mode can make broader connections among material you have already struggled with.",
+   "why_wrong": [
+    "The unit's rule is to alternate modes, not to grind in one of them.",
+    "Changing learning style is not the unit's advice for being stuck, and VARK has weak evidence behind it.",
+    "",
+    "A vote does not solve a problem the team has not understood yet."
+   ],
+   "key": "INT335-U1-038"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which activity is the best example of diffuse-mode thinking?",
+   "code": "",
+   "options": [
+    "Solving equations step by step",
+    "Analysing a data set by following a set procedure",
+    "Writing code to a fixed specification",
+    "Brainstorming and making unexpected connections between ideas"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Diffuse mode is creative, exploratory and associative, and the unit lists brainstorming, unexpected connections, creative writing and innovative design. Equations, data analysis and coding are focused-mode tasks.",
+   "why_wrong": [
+    "Step-by-step equations are the unit's example of focused mode.",
+    "Following procedures to analyse data is listed under focused mode.",
+    "Writing code is another of the unit's focused-mode examples.",
+    ""
+   ],
+   "key": "INT335-U1-039"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement about the diffuse mode is correct, according to the unit?",
+   "code": "",
+   "options": [
+    "It reorganises material you have already struggled with, so it needs earlier focused work",
+    "It works best on an empty mind, so you should relax before ever studying",
+    "It replaces focused mode once you become an experienced designer",
+    "It can solve a problem you have never looked at, if you only relax enough"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The unit says the diffuse mode does not work on an empty mind. It reorganises material you have already struggled with, so the order is struggle first, then step away.",
+   "why_wrong": [
+    "",
+    "This is the opposite of the unit's rule that diffuse mode needs prior struggle.",
+    "Neither mode replaces the other; effective problem-solving alternates between them.",
+    "A problem you have never worked on gives the diffuse mode nothing to reorganise."
+   ],
+   "key": "INT335-U1-040"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student reads a hard problem once, makes no attempt at it, and goes for a long walk expecting the answer to arrive. Which part of the unit's rule did she skip?",
+   "code": "",
+   "options": [
+    "Walking with a group, since diffuse thinking needs company",
+    "Struggling with the problem in focused mode first, since diffuse mode only reorganises material you have already worked on",
+    "Choosing a walk that matches her VARK style",
+    "Staying in focused mode for the whole session without breaks"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The diffuse mode needs raw material. Because she never struggled with the problem, there is nothing for the break to reorganise. The rule is to struggle first, then step away.",
+   "why_wrong": [
+    "The unit says nothing about needing company for diffuse thinking.",
+    "",
+    "VARK is not part of the focused and diffuse rule.",
+    "The rule actually asks for breaks; refusing them is the opposite mistake."
+   ],
+   "key": "INT335-U1-041"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "The unit says Mendeleev is said to have arranged the periodic table after dreaming about it. Why does the story fit the unit's rule about diffuse mode?",
+   "code": "",
+   "options": [
+    "He solved it purely by dreaming, with no earlier work, which shows diffuse mode alone is enough",
+    "He used a visual learning style to see the table",
+    "He had spent days working on the problem in focused mode before the idea came",
+    "He brainstormed the arrangement with a group"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The story is not an example of effortless inspiration. The unit stresses that he first spent days on the problem in focused mode, and the diffuse processing worked on that material.",
+   "why_wrong": [
+    "The point of the story is the opposite; the days of focused work came first.",
+    "VARK is not mentioned in the Mendeleev example.",
+    "",
+    "The unit presents it as individual focused work followed by a dream, not group brainstorming."
+   ],
+   "key": "INT335-U1-042"
+  },
+  {
+   "topic": "Focused and Diffuse Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What does Activity 1.1 ask you to do?",
+   "code": "",
+   "options": [
+    "Score eight statements from 1 to 5 to find your VARK letters",
+    "List the uses of a plastic bucket by property",
+    "Walk one route across campus and find three well-designed and three badly designed things",
+    "Track for one week where and when your best ideas actually arrive, with your activity, time and mental state"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Activity 1.1 is the idea-tracking activity. The VARK scoring is Activity 1.2, and the campus walk is Activity 1.6. The bucket technique appears as a worked example, not as Activity 1.1.",
+   "why_wrong": [
+    "That is Activity 1.2, the VARK self-assessment.",
+    "The bucket property technique is a worked example about functional fixedness.",
+    "That is Activity 1.6, Design Detective.",
+    ""
+   ],
+   "key": "INT335-U1-043"
+  },
+  {
+   "topic": "VARK and Study Strategies",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In the VARK model, what does the letter R stand for?",
+   "code": "",
+   "options": [
+    "Reading/Writing",
+    "Reflective",
+    "Recall",
+    "Remembering"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "VARK stands for Visual, Auditory, Reading/Writing and Kinesthetic. R is the style that prefers books, notes and written material.",
+   "why_wrong": [
+    "",
+    "Reflective is not one of the four VARK styles.",
+    "Recall is not a VARK style, though retrieval practice is a study strategy.",
+    "Remembering is not a VARK style."
+   ],
+   "key": "INT335-U1-044"
+  },
+  {
+   "topic": "VARK and Study Strategies",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which VARK style prefers diagrams, charts, videos and images?",
+   "code": "",
+   "options": [
+    "Auditory",
+    "Visual",
+    "Reading/Writing",
+    "Kinesthetic"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The Visual style learns through diagrams, charts, videos and images. Auditory prefers listening and discussion, Reading/Writing prefers books and notes, and Kinesthetic prefers practical, hands-on experience.",
+   "why_wrong": [
+    "Auditory learners prefer listening and discussion.",
+    "",
+    "Reading/Writing prefers books, notes and written material.",
+    "Kinesthetic learners prefer practical, hands-on experience."
+   ],
+   "key": "INT335-U1-045"
+  },
+  {
+   "topic": "VARK and Study Strategies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the VARK self-assessment of Activity 1.2, which two statements are added together to score K (Kinesthetic)?",
+   "code": "",
+   "options": [
+    "Statements 1 and 5",
+    "Statements 2 and 6",
+    "Statements 4 and 8",
+    "Statements 3 and 7"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The pairing is V = 1 + 5, A = 2 + 6, R = 3 + 7 and K = 4 + 8.",
+   "why_wrong": [
+    "1 + 5 scores V, the Visual style.",
+    "2 + 6 scores A, the Auditory style.",
+    "",
+    "3 + 7 scores R, the Reading/Writing style."
+   ],
+   "key": "INT335-U1-046"
+  },
+  {
+   "topic": "VARK and Study Strategies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What does the unit say about the claim that being taught in your preferred VARK style improves your results?",
+   "code": "",
+   "options": [
+    "It has been confirmed by every controlled study",
+    "It holds for kinesthetic learners but not for the other three styles",
+    "The unit does not discuss the evidence for it",
+    "The stronger claim has repeatedly failed to hold up in controlled studies"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit calls VARK a useful prompt for reflecting on how you study, but says the claim that teaching in your preferred style improves results has repeatedly failed to hold up in controlled studies.",
+   "why_wrong": [
+    "The unit says the opposite about controlled studies.",
+    "The unit does not single out any style as an exception.",
+    "There is a specific note headed 'A Note on Evidence' on exactly this point.",
+    ""
+   ],
+   "key": "INT335-U1-047"
+  },
+  {
+   "topic": "VARK and Study Strategies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which three study strategies does the unit say do replicate in research?",
+   "code": "",
+   "options": [
+    "Retrieval practice, spacing and interleaving",
+    "Highlighting, re-reading and summarising",
+    "Matching study to a visual, auditory or kinesthetic style",
+    "Focused mode, diffuse mode and brainstorming"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The unit names retrieval practice, spacing and interleaving as the three study strategies that do replicate, in contrast with matching teaching to a learning style.",
+   "why_wrong": [
+    "",
+    "These are not the three strategies the unit names.",
+    "Style matching is exactly the claim that failed to replicate.",
+    "These are thinking modes and an idea technique, not study strategies in the unit's list."
+   ],
+   "key": "INT335-U1-048"
+  },
+  {
+   "topic": "VARK and Study Strategies",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Why does a note on VARK evidence belong in a Design Thinking course, according to the unit?",
+   "code": "",
+   "options": [
+    "VARK is the model designers use to classify users in the Empathize stage",
+    "An idea that is not research-backed can still become very popular, and what people say they want is not always what works",
+    "Designers must teach their users in each user's preferred style",
+    "VARK is proven to improve learning and so supports the design process"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The unit treats the VARK result as a nudge toward self-awareness, not a rule. The deeper lesson is the gap between what people believe or say and what actually works, a theme that returns in Unit 2.",
+   "why_wrong": [
+    "VARK is not an Empathize-stage tool in this course.",
+    "",
+    "The unit makes no such claim about teaching users.",
+    "The unit says the evidence for this claim has repeatedly failed."
+   ],
+   "key": "INT335-U1-049"
+  },
+  {
+   "topic": "VARK and Study Strategies",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Karan scores highest on K, so he decides to study only by building things and to skip notes and self-testing. Which advice fits the unit best?",
+   "code": "",
+   "options": [
+    "Keep to kinesthetic study only, since matching your style improves results",
+    "Ignore the result completely, because VARK has no value at all",
+    "Treat the result as a prompt for self-awareness, but also use retrieval practice, spacing and interleaving",
+    "Retake the questionnaire until the four scores are equal"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit calls VARK a useful prompt but not a rule, and points to three strategies that do replicate. So he can use the result for self-awareness while adding retrieval practice, spacing and interleaving.",
+   "why_wrong": [
+    "The claim that style matching improves results has not held up.",
+    "The unit does say VARK is a useful prompt for reflection, so it is not worthless.",
+    "",
+    "Equal scores are not a goal; the questionnaire is just a self-awareness prompt."
+   ],
+   "key": "INT335-U1-050"
+  },
+  {
+   "topic": "Functional Fixedness",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In the candle problem described in the unit, how can the matchbox be used?",
+   "code": "",
+   "options": [
+    "As a mirror that reflects light onto the wall",
+    "As a wick for the candle",
+    "It cannot be reused, so the candle has to be held by hand",
+    "As a candle holder tacked to the wall"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Most people treat the matchbox only as storage for matches, which is functional fixedness. Seeing it as a holder tacked to the wall breaks that fixedness.",
+   "why_wrong": [
+    "The unit does not describe it as a mirror.",
+    "A matchbox cannot serve as a wick.",
+    "The point is exactly that the matchbox can be reused for a new purpose.",
+    ""
+   ],
+   "key": "INT335-U1-051"
+  },
+  {
+   "topic": "Functional Fixedness",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a non-obvious use of a paper clip given in the unit?",
+   "code": "",
+   "options": [
+    "SIM card ejector",
+    "Pen refill",
+    "Bookbinding thread",
+    "Hair dryer nozzle"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The unit lists a cable organiser, zipper pull, SIM card ejector, reset tool, bookmark and keychain holder as everyday alternative uses of a paper clip.",
+   "why_wrong": [
+    "",
+    "A pen refill is not one of the unit's examples.",
+    "Bookbinding thread is not one of the unit's examples.",
+    "A hair dryer nozzle is not one of the unit's examples."
+   ],
+   "key": "INT335-U1-052"
+  },
+  {
+   "topic": "Functional Fixedness",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What technique does the unit recommend for beating functional fixedness on an object such as a plastic bucket?",
+   "code": "",
+   "options": [
+    "List as many uses as you can until you run out",
+    "Stop thinking about the object and list its properties, then find a use for each property",
+    "Ask users what they want the bucket to do",
+    "Combine the bucket with a second everyday object"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Students usually list six or seven uses and stall. Listing properties such as hollow, watertight, rigid, stackable and handled, then finding a use for each, produced many more uses.",
+   "why_wrong": [
+    "This is the approach that makes people stall after six or seven uses.",
+    "",
+    "Asking users is research, not the property technique.",
+    "Combining objects is not the technique the worked example uses."
+   ],
+   "key": "INT335-U1-053"
+  },
+  {
+   "topic": "Functional Fixedness",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the plastic bucket worked example, how many uses did six properties produce?",
+   "code": "",
+   "options": [
+    "Six",
+    "Twenty",
+    "Twenty-eight",
+    "Forty-two"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit states that six properties produced twenty-eight uses, compared with the six or seven uses most students list before stalling.",
+   "why_wrong": [
+    "Six is the number of properties, not the number of uses.",
+    "Twenty is not the figure the unit gives.",
+    "",
+    "Forty-two is not the figure the unit gives."
+   ],
+   "key": "INT335-U1-054"
+  },
+  {
+   "topic": "Functional Fixedness",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "In the bucket worked example, which property led to the idea of a megaphone?",
+   "code": "",
+   "options": [
+    "It is hollow",
+    "It is watertight",
+    "It has a handle",
+    "It amplifies sound"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit points out that 'megaphone' only appeared once an acoustic property was named, something nobody thinks of when they picture a bucket. That is what breaking fixedness feels like.",
+   "why_wrong": [
+    "Hollow led to uses such as storage, a drum or a plant pot.",
+    "Watertight led to a fish tank, ice bucket or emergency water store.",
+    "A handle led to a carrying frame, hanging planter or tool caddy.",
+    ""
+   ],
+   "key": "INT335-U1-055"
+  },
+  {
+   "topic": "Functional Fixedness",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A team needs a way to reach a high shelf and has only a plastic bucket. Which property from the unit's worked example points to a stool or a step?",
+   "code": "",
+   "options": [
+    "It is rigid and strong",
+    "It is hollow",
+    "It is watertight",
+    "It has a handle"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The rigid and strong property gave the uses stool, step to reach a shelf, wheel chock and table base. Hollow gave storage uses, watertight gave water-holding uses and the handle gave carrying uses.",
+   "why_wrong": [
+    "",
+    "Hollow leads to storage, drum or plant pot, not a step.",
+    "Watertight leads to fish tank, ice bucket or water store.",
+    "A handle leads to carrying frame, hanging planter or tool caddy."
+   ],
+   "key": "INT335-U1-056"
+  },
+  {
+   "topic": "Cognitive Blocks",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of these is one of the four common cognitive blocks named in the unit?",
+   "code": "",
+   "options": [
+    "Information overload",
+    "The expertise trap",
+    "Learning-style mismatch",
+    "Brain dominance"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The four blocks are fear of failure, conformity, premature judgment and the expertise trap.",
+   "why_wrong": [
+    "Information overload is not one of the unit's four blocks.",
+    "",
+    "A learning-style mismatch is not one of the unit's four blocks.",
+    "Brain dominance is not one of the unit's four blocks."
+   ],
+   "key": "INT335-U1-057"
+  },
+  {
+   "topic": "Cognitive Blocks",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "A team member says nothing about her idea because she is sure others will laugh at it. Which cognitive block is this?",
+   "code": "",
+   "options": [
+    "Conformity",
+    "Premature judgment",
+    "Fear of failure",
+    "The expertise trap"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Fear of failure is hesitation to propose ideas because of fear of criticism.",
+   "why_wrong": [
+    "Conformity is following conventional thinking in order to fit in.",
+    "Premature judgment is rejecting ideas before exploring them fully.",
+    "",
+    "The expertise trap is over-reliance on past solutions."
+   ],
+   "key": "INT335-U1-058"
+  },
+  {
+   "topic": "Cognitive Blocks",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which block is described as over-reliance on past solutions, so that the more you know the more you reach for what worked before?",
+   "code": "",
+   "options": [
+    "Fear of failure",
+    "Conformity",
+    "Premature judgment",
+    "The expertise trap"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The expertise trap is the unit's name for leaning on past solutions, and the irony is that knowing more makes it stronger.",
+   "why_wrong": [
+    "Fear of failure is about criticism.",
+    "Conformity is about fitting in.",
+    "Premature judgment is about rejecting ideas too early.",
+    ""
+   ],
+   "key": "INT335-U1-059"
+  },
+  {
+   "topic": "Cognitive Blocks",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a meeting, several people privately think of different ideas but all agree with the first suggestion, because they want to fit in. Which block is at work?",
+   "code": "",
+   "options": [
+    "Conformity",
+    "Premature judgment",
+    "Fear of failure",
+    "The expertise trap"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Conformity is following conventional thinking in order to fit in, which is exactly what agreeing with the first suggestion to avoid standing out amounts to.",
+   "why_wrong": [
+    "",
+    "Nobody is rejecting an idea early; they are agreeing to fit in.",
+    "Fear of failure is about fear of criticism when proposing, not agreeing to fit in.",
+    "The expertise trap is about reaching for earlier solutions, not about group fit."
+   ],
+   "key": "INT335-U1-060"
+  },
+  {
+   "topic": "Cognitive Blocks",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student crosses out her own idea the moment it occurs to her, before writing it down or exploring it. Which block is this?",
+   "code": "",
+   "options": [
+    "Conformity",
+    "Premature judgment",
+    "Fear of failure",
+    "The expertise trap"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Premature judgment is rejecting ideas before exploring them fully, and here she does it to her own idea.",
+   "why_wrong": [
+    "There is no group she is trying to fit in with.",
+    "",
+    "She is not worrying about others' criticism; she judges the idea herself.",
+    "She is not relying on a past solution."
+   ],
+   "key": "INT335-U1-061"
+  },
+  {
+   "topic": "Cognitive Blocks",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "According to the unit, how does Design Thinking break these cognitive blocks?",
+   "code": "",
+   "options": [
+    "By matching each person's work to their VARK learning style",
+    "By keeping experts out of the team",
+    "Through empathy, experimentation, collaboration and structured creative problem-solving",
+    "By staying in focused mode for the whole project"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit's Design Thinking link says empathy, experimentation, collaboration and structured creative problem-solving break the blocks.",
+   "why_wrong": [
+    "VARK matching is not the unit's remedy.",
+    "The unit does not recommend excluding experts.",
+    "",
+    "Focused mode alone would not remove fear of failure or conformity."
+   ],
+   "key": "INT335-U1-062"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of these is the unit's example of an innovation?",
+   "code": "",
+   "options": [
+    "Imagining a drone delivery system",
+    "The first telephone, by A. G. Bell",
+    "A sketch of a flying car that is never built",
+    "The iPhone reshaping the smartphone market"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Innovation is successfully implementing creative ideas to create value, and the iPhone reshaping the smartphone market is the unit's example. Imagining a drone delivery system is creativity, and Bell's telephone is invention.",
+   "why_wrong": [
+    "Imagining a drone delivery system is the unit's example of creativity.",
+    "The first telephone is the unit's example of invention.",
+    "An unbuilt sketch has not been implemented or delivered value, so it is not innovation.",
+    ""
+   ],
+   "key": "INT335-U1-063"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which sentence matches the unit's claim about creativity and innovation?",
+   "code": "",
+   "options": [
+    "Creativity becomes innovation only when it delivers value",
+    "Creativity and innovation mean the same thing",
+    "Innovation is creativity that has been patented",
+    "Innovation requires something entirely new that did not exist before"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The unit's line is that creativity becomes innovation only when it delivers value. Something entirely new is the definition of invention, not innovation.",
+   "why_wrong": [
+    "",
+    "The unit separates the three concepts carefully.",
+    "A patent is not the test; delivering value is.",
+    "That is the definition of invention."
+   ],
+   "key": "INT335-U1-064"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is an example of incremental invention in the unit?",
+   "code": "",
+   "options": [
+    "Netflix replacing DVD rental stores",
+    "USB to USB Type-C",
+    "Uber replacing traditional taxi services",
+    "Airbnb challenging the hotel industry"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Incremental invention is a small but meaningful improvement to an existing product, such as USB to Type-C, mobile phones to smartphones or petrol cars to hybrids. The other three are disruptors.",
+   "why_wrong": [
+    "Netflix is the unit's disruptor of DVD rental stores.",
+    "",
+    "Uber is the unit's disruptor of traditional taxis.",
+    "Airbnb is the unit's disruptor of the hotel industry."
+   ],
+   "key": "INT335-U1-065"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement about disruptive innovation is correct?",
+   "code": "",
+   "options": [
+    "It makes small improvements to an existing product or process",
+    "It protects incumbent firms by supporting their current customers",
+    "It transforms markets with simpler, cheaper or more accessible solutions and focuses on unmet customer needs",
+    "It always starts by inventing something entirely new"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Disruptive innovation is a new product, service or business model that transforms markets with simpler, cheaper or more accessible solutions. It creates new markets and challenges incumbents.",
+   "why_wrong": [
+    "Small improvements describe incremental invention.",
+    "Disruptive innovation challenges incumbents rather than protecting them.",
+    "",
+    "It does not need to be a brand-new invention; it can be a new business model."
+   ],
+   "key": "INT335-U1-066"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which disruptor-and-replaced pairing matches the unit?",
+   "code": "",
+   "options": [
+    "Netflix replaced traditional taxi services",
+    "Airbnb replaced DVD rental stores",
+    "Uber replaced the hotel industry",
+    "Uber replaced traditional taxi services"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The unit pairs Netflix with DVD rental stores, Uber with traditional taxi services and Airbnb with the hotel industry.",
+   "why_wrong": [
+    "Netflix replaced DVD rental stores, not taxis.",
+    "Airbnb replaced the hotel industry, not DVD rentals.",
+    "Uber replaced taxis, not hotels.",
+    ""
+   ],
+   "key": "INT335-U1-067"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which option correctly labels (1) Bell's first telephone, (2) imagining a drone delivery system and (3) the iPhone reshaping the smartphone market?",
+   "code": "",
+   "options": [
+    "Invention, creativity, innovation",
+    "Innovation, invention, creativity",
+    "Creativity, innovation, invention",
+    "Invention, innovation, creativity"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The first telephone is invention because it was entirely new. Imagining drone delivery is creativity, the ability to generate original and useful ideas. The iPhone reshaping the market is innovation because the idea was implemented to create value.",
+   "why_wrong": [
+    "",
+    "This swaps all three labels.",
+    "This labels the telephone as creativity, but it was a new thing that did not exist before.",
+    "This labels the drone idea as innovation, but it was only imagined and not implemented."
+   ],
+   "key": "INT335-U1-068"
+  },
+  {
+   "topic": "Creativity, Invention and Innovation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A company launches a cheaper, simpler product that customers who were once ignored can finally afford, and it slowly begins to challenge the market leaders. What is this?",
+   "code": "",
+   "options": [
+    "Incremental invention",
+    "Disruptive innovation",
+    "Functional fixedness",
+    "Creativity without innovation"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A simpler, cheaper, more accessible solution that creates a new market and challenges incumbents is the unit's definition of disruptive innovation.",
+   "why_wrong": [
+    "Incremental invention is a small improvement to an existing product, not a market-changing model.",
+    "",
+    "Functional fixedness is a cognitive block, not a type of innovation.",
+    "The product is already launched and delivering value, so it has moved beyond creativity alone."
+   ],
+   "key": "INT335-U1-069"
+  },
+  {
+   "topic": "Kinds of Problems",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which kind of problem has clear goals, constraints and one correct answer?",
+   "code": "",
+   "options": [
+    "An ill-defined problem",
+    "A wicked problem",
+    "A well-defined problem",
+    "A divergent problem"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Well-defined problems, such as equations, puzzles and technical fixes, have clear goals and constraints and a single correct answer.",
+   "why_wrong": [
+    "Ill-defined problems have unclear goals or paths and many possible solutions.",
+    "Wicked problems are complex and interconnected, judged better or worse, not right or wrong.",
+    "",
+    "'Divergent problem' is not one of the unit's three kinds of problem."
+   ],
+   "key": "INT335-U1-070"
+  },
+  {
+   "topic": "Kinds of Problems",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is the unit's example of an ill-defined problem?",
+   "code": "",
+   "options": [
+    "Solving a set of equations",
+    "Reducing climate change",
+    "Completing a logic puzzle",
+    "Designing an app or a marketing strategy"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Ill-defined problems have unclear goals or paths and many possible solutions, and the unit gives app design and marketing strategy as examples. Equations and puzzles are well-defined, and climate is wicked.",
+   "why_wrong": [
+    "Equations are the unit's well-defined example.",
+    "Climate is the unit's wicked example.",
+    "Puzzles are well-defined, with one correct answer.",
+    ""
+   ],
+   "key": "INT335-U1-071"
+  },
+  {
+   "topic": "Kinds of Problems",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "How are solutions to wicked problems judged, according to the unit?",
+   "code": "",
+   "options": [
+    "As better or worse, not right or wrong",
+    "As correct or incorrect against a single answer key",
+    "By whether they meet every constraint exactly",
+    "They cannot be judged at all"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Wicked problems are complex and interconnected, and their solutions are better or worse rather than right or wrong. Climate, poverty and healthcare are the unit's examples.",
+   "why_wrong": [
+    "",
+    "A single answer key belongs to well-defined problems.",
+    "Exact constraints are a feature of well-defined problems.",
+    "They can be judged; the scale is just better or worse."
+   ],
+   "key": "INT335-U1-072"
+  },
+  {
+   "topic": "Kinds of Problems",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "Classify these three: (a) a marketing strategy for a new café, (b) reducing climate change, (c) solving 2x + 5 = 11.",
+   "code": "",
+   "options": [
+    "(a) wicked, (b) ill-defined, (c) well-defined",
+    "(a) ill-defined, (b) wicked, (c) well-defined",
+    "(a) well-defined, (b) wicked, (c) ill-defined",
+    "(a) ill-defined, (b) well-defined, (c) wicked"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A marketing strategy has many possible solutions, so it is ill-defined. Climate change is complex and interconnected, so it is wicked. The equation has one correct answer, so it is well-defined.",
+   "why_wrong": [
+    "This swaps the first two kinds.",
+    "",
+    "A marketing strategy has no single correct answer, and an equation is not ill-defined.",
+    "Climate change is not well-defined, and an equation is not wicked."
+   ],
+   "key": "INT335-U1-073"
+  },
+  {
+   "topic": "Kinds of Problems",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Why does the unit say Design Thinking exists?",
+   "code": "",
+   "options": [
+    "Well-defined problems no longer exist in industry",
+    "Engineers lack the technical skills to solve problems",
+    "Engineering training suits well-defined problems, but ill-defined and wicked problems do not yield to the same methods",
+    "Linear methods are slower than iterative ones for every kind of problem"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit says traditional engineering education trains you superbly on well-defined problems, and Design Thinking exists because the other two kinds do not yield to the same methods.",
+   "why_wrong": [
+    "The unit does not say well-defined problems have disappeared.",
+    "The unit praises engineering training for well-defined problems.",
+    "",
+    "The unit makes no such sweeping claim about speed."
+   ],
+   "key": "INT335-U1-074"
+  },
+  {
+   "topic": "History and Definition of Design Thinking",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How does the unit define Design Thinking?",
+   "code": "",
+   "options": [
+    "A linear engineering pipeline in which each phase is finished before the next",
+    "A technique for generating as many ideas as possible without judging them",
+    "A method for measuring how many users do something",
+    "A human-centred approach to innovation and problem-solving that emphasises understanding users' needs and experiences"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Design Thinking is a human-centred approach built on iterative processes and creative methods, putting the user at the centre of every decision.",
+   "why_wrong": [
+    "That describes the waterfall approach it is contrasted with.",
+    "That describes brainstorming, which is one technique within it.",
+    "That describes quantitative research.",
+    ""
+   ],
+   "key": "INT335-U1-075"
+  },
+  {
+   "topic": "History and Definition of Design Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is one of the three beliefs of Design Thinking in the unit?",
+   "code": "",
+   "options": [
+    "Failure early is cheaper than failure late",
+    "Ideas improve by being argued, not tested",
+    "Problems are best understood by experts, not users",
+    "Failure should be avoided at all costs"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The three beliefs are that problems are best understood from the user's side, that ideas improve by being tested and not argued, and that failure early is cheaper than failure late.",
+   "why_wrong": [
+    "",
+    "The unit says ideas improve by being tested, not argued.",
+    "The unit says problems are best understood from the user's side.",
+    "The unit values early, cheap failure."
+   ],
+   "key": "INT335-U1-076"
+  },
+  {
+   "topic": "History and Definition of Design Thinking",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the unit's timeline, who coins the term 'wicked problems' in the mid-1960s?",
+   "code": "",
+   "options": [
+    "Herbert Simon",
+    "Rittel",
+    "Nigel Cross",
+    "Rowe"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The timeline places the design methods movement in the mid-1960s, with Rittel coining 'wicked problems'. Herbert Simon follows in the late 1960s and 1970s with design as a way of thinking.",
+   "why_wrong": [
+    "Herbert Simon is placed later, with design as a way of thinking.",
+    "",
+    "Nigel Cross is placed in 1982 to 87 with Designerly Ways of Knowing.",
+    "Rowe is placed with publishing Design Thinking, not with wicked problems."
+   ],
+   "key": "INT335-U1-077"
+  },
+  {
+   "topic": "History and Definition of Design Thinking",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which statement agrees with the unit's timeline?",
+   "code": "",
+   "options": [
+    "The d.school was established in 1991, before IDEO was founded in 2005",
+    "Rittel coined 'wicked problems' after the d.school was established",
+    "IDEO was founded in 1991, and the Stanford d.school was established in 2005",
+    "Nigel Cross published Designerly Ways of Knowing in the mid-1960s"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "On the timeline, Rittel and the design methods movement come in the mid-1960s, Simon in 1969 to the 1970s, Cross and Rowe in 1982 to 87, IDEO in 1991 and the d.school in 2005.",
+   "why_wrong": [
+    "This reverses the two dates.",
+    "'Wicked problems' were coined in the mid-1960s, long before 2005.",
+    "",
+    "Cross's book is placed in 1982 to 87, not the mid-1960s."
+   ],
+   "key": "INT335-U1-078"
+  },
+  {
+   "topic": "History and Definition of Design Thinking",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "In Lawson's experiment as the unit describes it, how did designers differ from scientists?",
+   "code": "",
+   "options": [
+    "Designers analysed the problem thoroughly before proposing any solution, while scientists tested many solutions rapidly",
+    "Designers worked alone and scientists worked in teams",
+    "Designers copied existing solutions and scientists invented new ones",
+    "Designers were solution-focused, creating and testing many solutions rapidly, while scientists analysed the problem thoroughly before proposing solutions"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Scientists were problem-focused, and designers were solution-focused and learned through iteration.",
+   "why_wrong": [
+    "This reverses the two groups.",
+    "The unit says nothing about solo versus team work.",
+    "The unit says nothing about copying versus inventing.",
+    ""
+   ],
+   "key": "INT335-U1-079"
+  },
+  {
+   "topic": "History and Definition of Design Thinking",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Two teams get the same vague brief. Team A spends two weeks analysing the problem before sketching anything. Team B sketches several rough solutions on day one and tests them with users. Which team works in the mode Lawson's experiment found in designers?",
+   "code": "",
+   "options": [
+    "Team B, because designers are solution-focused and learn through iteration",
+    "Team A, because designers analyse thoroughly before proposing solutions",
+    "Neither, because designers copy existing solutions",
+    "Both, because the mode depends only on the brief"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Lawson found that designers create and test many solutions rapidly, learning as they iterate. Team A is behaving like the problem-focused scientists.",
+   "why_wrong": [
+    "",
+    "Thorough analysis first is the scientists' pattern.",
+    "The unit does not describe designers as copying solutions.",
+    "The experiment contrasts two ways of working, not a single brief-dependent way."
+   ],
+   "key": "INT335-U1-080"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What does the dashed arrow in the d.school diagram show?",
+   "code": "",
+   "options": [
+    "A shortcut that skips the Define stage",
+    "Testing feeds back into earlier stages such as empathy, so the process is iterative and not linear",
+    "The order is fixed and the team may never return to an earlier stage",
+    "The end of the project once testing is finished"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The unit says the dashed arrow is the whole point: testing feeds back into empathy, so the d.school process is iterative and not linear.",
+   "why_wrong": [
+    "The arrow does not skip any stage.",
+    "",
+    "The arrow shows the opposite of a fixed one-way order.",
+    "The arrow shows looping back, not stopping."
+   ],
+   "key": "INT335-U1-081"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which three lenses make up the IDEO human-centred design framework?",
+   "code": "",
+   "options": [
+    "Empathy, ideation and prototyping",
+    "Usability, novelty and price",
+    "Desirability, feasibility and viability",
+    "Desirability, profitability and sustainability"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "IDEO's three overlapping lenses ask whether people want it (desirability), whether it can be built (feasibility) and whether it is economically sustainable (viability).",
+   "why_wrong": [
+    "Those are stages of the d.school process, not IDEO's lenses.",
+    "Those are not the unit's three lenses.",
+    "",
+    "Only desirability is shared; the other two lenses are feasibility and viability."
+   ],
+   "key": "INT335-U1-082"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the IDEO framework, which question does viability ask?",
+   "code": "",
+   "options": [
+    "Do people want this?",
+    "Can we build this?",
+    "Is it new to the market?",
+    "Is it economically sustainable?"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Viability asks whether the idea is economically sustainable. Desirability asks if people want it, and feasibility asks if it can be built.",
+   "why_wrong": [
+    "That is the desirability question.",
+    "That is the feasibility question.",
+    "Novelty is not one of the three lenses.",
+    ""
+   ],
+   "key": "INT335-U1-083"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Where does the unit place genuine innovation in the IDEO diagram?",
+   "code": "",
+   "options": [
+    "Where desirability, feasibility and viability all overlap",
+    "Where any single lens is strongest",
+    "Where desirability and feasibility overlap, even without viability",
+    "Outside the circles, in new territory"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The unit says meeting only one or two conditions produces a concept that fails in practice, and genuine innovation lies where all three overlap.",
+   "why_wrong": [
+    "",
+    "One strong lens is not enough.",
+    "Without viability the idea fails in practice.",
+    "Innovation sits at the centre where the circles overlap."
+   ],
+   "key": "INT335-U1-084"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A team builds a technically brilliant, affordable product that is easy to manufacture, but customers do not want it. Which IDEO lens did the team fail?",
+   "code": "",
+   "options": [
+    "Feasibility",
+    "Desirability",
+    "Viability",
+    "Iteration"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Customers not wanting it is a desirability failure. The product is buildable (feasible) and affordable (viable), so those lenses are met.",
+   "why_wrong": [
+    "It is easy to manufacture, so feasibility is met.",
+    "",
+    "It is affordable, so viability is not the issue described.",
+    "Iteration is not one of the three IDEO lenses."
+   ],
+   "key": "INT335-U1-085"
+  },
+  {
+   "topic": "d.school and IDEO Frameworks",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "How does the unit describe the relationship between the Stanford d.school and IDEO frameworks?",
+   "code": "",
+   "options": [
+    "They are rivals, and the d.school model replaced IDEO's",
+    "They are identical models with different names",
+    "They are complementary lenses, not rivals",
+    "d.school is for products, and IDEO is only for services"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unit's conclusion says the two are complementary lenses. The d.school describes a five-stage iterative process, and IDEO describes three conditions an innovation must meet.",
+   "why_wrong": [
+    "The unit does not present them as rivals.",
+    "They are different models: one describes a process and the other three conditions.",
+    "",
+    "The unit makes no such split between products and services."
+   ],
+   "key": "INT335-U1-086"
+  },
+  {
+   "topic": "Waterfall versus Human-Centred Design",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In a traditional waterfall process, when does user feedback arrive?",
+   "code": "",
+   "options": [
+    "Only at the very start",
+    "Continuously after every phase",
+    "Never, as users are not involved",
+    "At the end, so changes are costly"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "In waterfall each phase is finished before the next, so user feedback comes at the end, when changes are costly. Human-centred design brings in feedback continuously.",
+   "why_wrong": [
+    "The unit says feedback comes at the end, not the start.",
+    "Continuous feedback is the human-centred design approach.",
+    "Users do give feedback in waterfall, just late.",
+    ""
+   ],
+   "key": "INT335-U1-087"
+  },
+  {
+   "topic": "Waterfall versus Human-Centred Design",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which pair correctly contrasts waterfall with human-centred design?",
+   "code": "",
+   "options": [
+    "Waterfall is linear, with Plan, Build, Test and Ship in order, while human-centred design is iterative, with empathy, prototyping and testing in a loop",
+    "Waterfall is iterative and user-focused, while human-centred design is linear",
+    "Both are linear, but human-centred design has more phases",
+    "Waterfall relies on continuous user feedback, while human-centred design collects it at launch"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Waterfall is linear and step-by-step, with feedback late. Human-centred design is iterative and user-focused, with empathy, continuous feedback, prototyping and refinement throughout.",
+   "why_wrong": [
+    "",
+    "This reverses the two approaches.",
+    "Human-centred design is not linear.",
+    "This swaps when each approach gathers feedback."
+   ],
+   "key": "INT335-U1-088"
+  },
+  {
+   "topic": "Waterfall versus Human-Centred Design",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A team plans a hostel complaint app. They spend three months writing specifications, six months building it, and ask students for feedback only at launch. Which approach is this, and what is the main risk?",
+   "code": "",
+   "options": [
+    "Human-centred design; too much feedback slows delivery",
+    "Waterfall; feedback comes at the end, so changes are costly",
+    "Waterfall; it skips the build phase",
+    "Human-centred design; it ignores implicit needs"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Finishing each phase before the next and asking users only at launch is waterfall. The risk is that late feedback makes changes expensive.",
+   "why_wrong": [
+    "Human-centred design asks for feedback throughout, not only at launch.",
+    "",
+    "The team does build; the issue is when feedback arrives.",
+    "This is not human-centred design, since users come in only at the end."
+   ],
+   "key": "INT335-U1-089"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In 2009, Airbnb's bookings were low and revenue was flat. What did the founders do?",
+   "code": "",
+   "options": [
+    "Cut the price of every listing",
+    "Hired a data team to model booking patterns",
+    "Flew to New York, visited hosts and photographed the listings themselves",
+    "Ran a large advertising campaign"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The data showed what was happening but not why. The founders visited hosts, found amateur photographs were discouraging bookings, rented a camera and took professional photos.",
+   "why_wrong": [
+    "Pricing is not part of the case.",
+    "The case is about direct observation, not more data modelling.",
+    "",
+    "Advertising is not part of the case."
+   ],
+   "key": "INT335-U1-090"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What did Airbnb's founders discover when they visited hosts in New York?",
+   "code": "",
+   "options": [
+    "Prices in New York were too high",
+    "Hosts were not replying to messages",
+    "The website was too slow to load",
+    "Listings had poor-quality, amateur photographs that discouraged bookings"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Direct observation revealed the poor listing photographs, which the data alone had not explained.",
+   "why_wrong": [
+    "Prices are not the finding of the case.",
+    "Unanswered messages are not part of the case.",
+    "Website speed is not part of the case.",
+    ""
+   ],
+   "key": "INT335-U1-091"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "The unit says the photography fix 'does not scale', which is exactly why nobody had tried it. What is the lesson?",
+   "code": "",
+   "options": [
+    "A hands-on, empathy-driven intervention can reveal what data cannot, even when it will not scale",
+    "Interventions that do not scale should be avoided",
+    "Data analysis alone is always enough to find the cause",
+    "Professional photographs raise bookings in every market"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The case shows direct observation uncovering a cause the data could not, and the unit points out the fix is simple but does not scale.",
+   "why_wrong": [
+    "",
+    "The case argues the opposite.",
+    "The data said what was happening but not why.",
+    "The unit does not generalise to every market."
+   ],
+   "key": "INT335-U1-092"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is NOT one of the reasons the unit gives for the failure of Google Glass?",
+   "code": "",
+   "options": [
+    "Social concerns about being recorded",
+    "A very short battery life",
+    "No clear use case",
+    "A price of $1,500"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The unit lists social concerns, awkward design, no clear use case and the $1,500 price. Battery life is not mentioned.",
+   "why_wrong": [
+    "Social concerns about recording are listed.",
+    "",
+    "No clear use case is listed.",
+    "The $1,500 price is listed."
+   ],
+   "key": "INT335-U1-093"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Why does the unit mention Glass Enterprise Edition?",
+   "code": "",
+   "options": [
+    "It shows technical innovation alone guarantees success",
+    "It shows consumers eventually accepted Glass",
+    "The same technology worked for a different user, so a product is good or bad for someone",
+    "It shows Google lowered the price to $1,500"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Google relaunched Glass for warehouse and factory technicians who need both hands free and do not mind how it looks. Same technology, different user, different verdict.",
+   "why_wrong": [
+    "The case shows the opposite, that technology without desirability fails.",
+    "The relaunch was for workers, not the consumer market.",
+    "",
+    "$1,500 was the original price that contributed to the failure."
+   ],
+   "key": "INT335-U1-094"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What was the real problem that Aravind Eye Care set out to solve about cataract surgery?",
+   "code": "",
+   "options": [
+    "A new surgical technique had to be invented",
+    "Patients refused to have the surgery",
+    "Artificial lenses did not exist anywhere",
+    "Access: cost, distance and a shortage of surgeons, not the medicine"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Cataract surgery already existed and worked. The unit says the problem was not medical but access, since the surgery cost more than most rural patients earned in months, hospitals were far away and surgeons were scarce.",
+   "why_wrong": [
+    "The surgery already existed and worked.",
+    "The unit does not say patients refused it.",
+    "Lenses were not the issue; Aravind manufactured them locally to cut cost.",
+    ""
+   ],
+   "key": "INT335-U1-095"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which industry did Dr. V study as a design reference for Aravind?",
+   "code": "",
+   "options": [
+    "Fast food, as in McDonald's serving millions of people the same product consistently and cheaply",
+    "Airlines",
+    "Hotels",
+    "Retail banking"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Dr. V asked how McDonald's serves millions the same product consistently, cheaply and anywhere, and studied the assembly line. The unit calls this analogous inspiration.",
+   "why_wrong": [
+    "",
+    "Airlines are not part of the case.",
+    "Hotels are not part of the case.",
+    "Banking is not part of the case."
+   ],
+   "key": "INT335-U1-096"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "In Aravind's model, what is cross-subsidy pricing?",
+   "code": "",
+   "options": [
+    "Free patients are treated by different surgeons from paying patients",
+    "Paying patients choose a tier of comfort, not of surgical quality, and this helps fund free care",
+    "Surgeons are paid by the number of operations they perform",
+    "Donors decide which patients are treated"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Paying patients choose a comfort tier, while the surgery and the surgeons are the same for everyone. The hospital is self-sustaining without donations.",
+   "why_wrong": [
+    "The unit says free patients receive the same surgery and surgeons.",
+    "",
+    "Payment per operation is not described.",
+    "The hospital is financially self-sustaining without donations."
+   ],
+   "key": "INT335-U1-097"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "In Aravind's approach, what is task-shifting?",
+   "code": "",
+   "options": [
+    "Moving surgeons between hospitals every week",
+    "Sending patients to cheaper hospitals",
+    "Training rural young women as paramedical staff so doctors can concentrate on surgery",
+    "Teaching the public to carry out simple operations"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Task-shifting means giving non-surgical tasks to trained paramedical staff, so a surgeon's scarce time is never idle.",
+   "why_wrong": [
+    "The unit does not describe rotating surgeons.",
+    "The unit does not describe sending patients elsewhere.",
+    "",
+    "The unit does not describe laypeople operating."
+   ],
+   "key": "INT335-U1-098"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which Aravind lesson says free patients receive the same surgery and the same surgeons as paying ones, and only the comfort tier differs?",
+   "code": "",
+   "options": [
+    "The best analogy often comes from a completely unrelated industry",
+    "Affordability can be designed",
+    "Vertical integration lowers cost",
+    "Dignity is a design requirement"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The three lessons are the unrelated-industry analogy, affordability as an outcome of process, and dignity as a design requirement. The same-surgery point supports the third.",
+   "why_wrong": [
+    "That lesson refers to the McDonald's analogy.",
+    "That lesson refers to cost coming from process as well as subsidy.",
+    "Vertical integration (Aurolab) is part of the approach, not one of the three lessons.",
+    ""
+   ],
+   "key": "INT335-U1-099"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Which team description is genuine Design Thinking?",
+   "code": "",
+   "options": [
+    "We sat in the mess for two hours counting how long people stood in line before we proposed anything",
+    "We decided to build an attendance app, then surveyed students to find out which features they wanted in it",
+    "We picked the solution with the best technical architecture and started coding in week two",
+    "We copied a competitor's app and shipped it unchanged"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Observing users first, before proposing anything, is the Design Thinking move. In the other options a solution is chosen before the users' problem is understood.",
+   "why_wrong": [
+    "",
+    "The solution (an app) was chosen first, with users asked only about features.",
+    "Technical architecture, not users, drove the choice.",
+    "Copying a product does not involve understanding users."
+   ],
+   "key": "INT335-U1-100"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In Spot the Mistake 1.1, what is the giveaway in: 'We decided to build an attendance app, then surveyed students to find out which features they wanted in it'?",
+   "code": "",
+   "options": [
+    "Surveys cannot be used in Design Thinking",
+    "The solution was chosen before the users' problem was understood",
+    "The team asked too few students",
+    "Attendance is not a real problem"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The giveaway is that the app was decided first and users were consulted only about features. That is ordinary engineering wearing a Design Thinking label.",
+   "why_wrong": [
+    "Surveys can be part of research; the order of events is the problem.",
+    "",
+    "The sample size is not the issue raised.",
+    "The task does not say attendance is not a real problem."
+   ],
+   "key": "INT335-U1-101"
+  },
+  {
+   "topic": "Case Studies: Airbnb, Google Glass, Aravind",
+   "difficulty": "medium",
+   "kind": "situation",
+   "q": "A hostel team interviewed six residents and found the real complaint was not the food but not knowing what would be served. Why is this a good example of Design Thinking?",
+   "code": "",
+   "options": [
+    "The team picked the cheapest solution first",
+    "The team avoided talking to users",
+    "The team reframed the problem from user evidence instead of assuming it",
+    "The team replaced the food menu without testing"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Interviewing users revealed the actual need, and the problem statement followed from evidence. That is the human-centred, user-first approach.",
+   "why_wrong": [
+    "Nothing in the example concerns choosing the cheapest solution.",
+    "The team did talk to users.",
+    "",
+    "No replacement of the menu took place in the example."
+   ],
+   "key": "INT335-U1-102"
   }
  ]
 }
