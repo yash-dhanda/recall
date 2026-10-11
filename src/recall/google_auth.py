@@ -16,9 +16,8 @@ import re
 import sqlite3
 from datetime import datetime, timezone
 
-import httpx
-
 from recall.auth import normalize_email
+from recall.netio import request_json
 from recall.seed import seed_topics
 
 TOKENINFO_URL = "https://oauth2.googleapis.com/tokeninfo"
@@ -33,22 +32,16 @@ def client_id() -> str | None:
     return os.environ.get("GOOGLE_CLIENT_ID", "").strip() or None
 
 
-def verify_id_token(credential: str, *, http: httpx.Client | None = None) -> dict:
+def verify_id_token(credential: str, *, fetch=request_json) -> dict:
     cid = client_id()
     if cid is None:
         raise GoogleAuthError("Google sign-in is not configured")
-    owns = http is None
-    http = http or httpx.Client(timeout=8)
     try:
-        resp = http.get(TOKENINFO_URL, params={"id_token": credential})
-    except httpx.HTTPError as exc:
+        status, info = fetch(TOKENINFO_URL, params={"id_token": credential})
+    except OSError as exc:
         raise GoogleAuthError("could not reach Google") from exc
-    finally:
-        if owns:
-            http.close()
-    if resp.status_code != 200:
+    if status != 200 or not isinstance(info, dict):
         raise GoogleAuthError("Google rejected the sign-in")
-    info = resp.json()
     if info.get("aud") != cid:
         raise GoogleAuthError("token was issued for a different app")
     if info.get("iss") not in _ISSUERS:

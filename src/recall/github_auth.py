@@ -9,8 +9,9 @@ reaches the browser.
 
 import os
 import secrets
+import urllib.parse
 
-import httpx
+from recall.netio import request_json
 
 AUTHORIZE_URL = "https://github.com/login/oauth/authorize"
 TOKEN_URL = "https://github.com/login/oauth/access_token"
@@ -30,37 +31,31 @@ def new_state() -> str:
 
 
 def authorize_url(state: str, redirect_uri: str) -> str:
-    q = httpx.QueryParams({"client_id": os.environ["GITHUB_CLIENT_ID"],
+    q = urllib.parse.urlencode({"client_id": os.environ["GITHUB_CLIENT_ID"],
                            "redirect_uri": redirect_uri, "scope": "read:user user:email",
                            "state": state})
     return f"{AUTHORIZE_URL}?{q}"
 
 
-def fetch_identity(code: str, redirect_uri: str, *, http: httpx.Client | None = None) -> tuple[str, str]:
+def fetch_identity(code: str, redirect_uri: str, *, fetch=request_json) -> tuple[str, str]:
     """(verified primary email, display name) for the account that authorised."""
-    owns = http is None
-    http = http or httpx.Client(timeout=8)
     try:
-        tok = http.post(TOKEN_URL, headers={"Accept": "application/json"}, data={
+        status, tok = fetch(TOKEN_URL, headers={"Accept": "application/json"}, form={
             "client_id": os.environ["GITHUB_CLIENT_ID"],
             "client_secret": os.environ["GITHUB_CLIENT_SECRET"],
             "code": code, "redirect_uri": redirect_uri})
-        access = tok.json().get("access_token") if tok.status_code == 200 else None
+        access = tok.get("access_token") if status == 200 and isinstance(tok, dict) else None
         if not access:
             raise GithubAuthError("GitHub rejected the sign-in")
-        auth = {"Authorization": f"Bearer {access}", "Accept": "application/vnd.github+json"}
-        emails = http.get(f"{API}/user/emails", headers=auth)
-        user = http.get(f"{API}/user", headers=auth)
-    except httpx.HTTPError as exc:
+        auth = {"Authorization": f"Bearer {access}", "Accept": "application/vnd.github+json",
+                "User-Agent": "recall"}
+        e_status, emails = fetch(f"{API}/user/emails", headers=auth)
+        u_status, info = fetch(f"{API}/user", headers=auth)
+    except OSError as exc:
         raise GithubAuthError("could not reach GitHub") from exc
-    finally:
-        if owns:
-            http.close()
-    if emails.status_code != 200 or user.status_code != 200:
+    if e_status != 200 or u_status != 200 or not isinstance(emails, list) or not isinstance(info, dict):
         raise GithubAuthError("could not read the GitHub account")
-    primary = next((e["email"] for e in emails.json()
-                    if e.get("primary") and e.get("verified")), None)
+    primary = next((e["email"] for e in emails if e.get("primary") and e.get("verified")), None)
     if not primary:
         raise GithubAuthError("GitHub account has no verified primary email")
-    info = user.json()
     return primary, info.get("name") or info.get("login") or ""

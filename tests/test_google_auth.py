@@ -1,4 +1,3 @@
-import httpx
 import pytest
 
 from recall import google_auth as g
@@ -6,8 +5,7 @@ from recall.db import connect, init_db
 
 
 def _client(info, status=200):
-    return httpx.Client(transport=httpx.MockTransport(
-        lambda req: httpx.Response(status, json=info)))
+    return lambda url, **kw: (status, info)
 
 
 GOOD = {"aud": "cid", "iss": "https://accounts.google.com",
@@ -16,13 +14,13 @@ GOOD = {"aud": "cid", "iss": "https://accounts.google.com",
 
 def test_verify_checks_audience_issuer_and_verified_email(monkeypatch):
     monkeypatch.setenv("GOOGLE_CLIENT_ID", "cid")
-    assert g.verify_id_token("x" * 20, http=_client(GOOD))["email"] == "Yash@Gmail.com"
+    assert g.verify_id_token("x" * 20, fetch=_client(GOOD))["email"] == "Yash@Gmail.com"
     for bad in ({**GOOD, "aud": "other"}, {**GOOD, "iss": "evil.com"},
                 {**GOOD, "email_verified": "false"}):
         with pytest.raises(g.GoogleAuthError):
-            g.verify_id_token("x" * 20, http=_client(bad))
+            g.verify_id_token("x" * 20, fetch=_client(bad))
     with pytest.raises(g.GoogleAuthError):
-        g.verify_id_token("x" * 20, http=_client({}, status=400))
+        g.verify_id_token("x" * 20, fetch=_client({}, status=400))
 
 
 def test_not_configured_refuses(monkeypatch):
@@ -47,19 +45,16 @@ def test_github_identity_needs_primary_verified_email(monkeypatch):
     from recall import github_auth as gh
     monkeypatch.setenv("GITHUB_CLIENT_ID", "i"); monkeypatch.setenv("GITHUB_CLIENT_SECRET", "s")
 
-    def handler(req):
-        u = str(req.url)
-        if "access_token" in u:
-            return httpx.Response(200, json={"access_token": "t"})
-        if u.endswith("/user/emails"):
-            return httpx.Response(200, json=EMAILS)
-        return httpx.Response(200, json={"login": "yash-dhanda", "name": None})
-
-    http = httpx.Client(transport=httpx.MockTransport(handler))
+    def fetch(url, **kw):
+        if "access_token" in url:
+            return 200, {"access_token": "t"}
+        if url.endswith("/user/emails"):
+            return 200, EMAILS
+        return 200, {"login": "yash-dhanda", "name": None}
     global EMAILS
     EMAILS = [{"email": "a@x.com", "primary": False, "verified": True},
               {"email": "me@x.com", "primary": True, "verified": True}]
-    assert gh.fetch_identity("c", "r", http=http) == ("me@x.com", "yash-dhanda")
+    assert gh.fetch_identity("c", "r", fetch=fetch) == ("me@x.com", "yash-dhanda")
     EMAILS = [{"email": "me@x.com", "primary": True, "verified": False}]
     with pytest.raises(gh.GithubAuthError):
-        gh.fetch_identity("c", "r", http=http)
+        gh.fetch_identity("c", "r", fetch=fetch)
