@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { motion, useReducedMotion } from "motion/react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { errorMessage, postLogin, postRegister } from "@/lib/api";
+import { GITHUB_START, getProviders, postGoogleLogin } from "@/lib/googleAuth";
 
 /**
  * Sign in and sign up are the same screen with one extra field, so they are
@@ -14,6 +15,15 @@ import { errorMessage, postLogin, postRegister } from "@/lib/api";
 
 const MIN_PASSWORD = 8;
 
+type GoogleIdentity = {
+  accounts: {
+    id: {
+      initialize: (o: { client_id: string; callback: (r: { credential: string }) => void }) => void;
+      renderButton: (el: HTMLElement, o: Record<string, unknown>) => void;
+    };
+  };
+};
+
 export function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const reduced = useReducedMotion();
   const [name, setName] = useState("");
@@ -21,6 +31,58 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
   const [password, setPassword] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const googleBtn = useRef<HTMLDivElement>(null);
+  const [googleOn, setGoogleOn] = useState(false);
+  const [githubOn, setGithubOn] = useState(false);
+
+  // Google Identity Services draws its own button into the div. It appears only
+  // when the server reports a client id, so a deployment without one is unchanged.
+  useEffect(() => {
+    let cancelled = false;
+    getProviders().then((p) => {
+      if (cancelled) return;
+      setGithubOn(p.github);
+      if (new URLSearchParams(window.location.search).get("error") === "github")
+        setError("GitHub sign-in failed. Try again.");
+      const clientId = p.google_client_id;
+      if (!clientId) return;
+      const init = () => {
+        const g = (window as unknown as { google?: GoogleIdentity }).google;
+        if (!g || !googleBtn.current) return;
+        g.accounts.id.initialize({
+          client_id: clientId,
+          callback: async (r: { credential: string }) => {
+            setBusy(true);
+            setError(null);
+            try {
+              await postGoogleLogin(r.credential);
+              window.location.replace("/");
+            } catch (err) {
+              setError(errorMessage(err));
+              setBusy(false);
+            }
+          },
+        });
+        g.accounts.id.renderButton(googleBtn.current, {
+          theme: "filled_black",
+          size: "large",
+          width: 314,
+          text: "continue_with",
+        });
+        setGoogleOn(true);
+      };
+      if ((window as unknown as { google?: GoogleIdentity }).google) return init();
+      const tag = document.createElement("script");
+      tag.src = "https://accounts.google.com/gsi/client";
+      tag.async = true;
+      tag.onload = init;
+      document.head.appendChild(tag);
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const signup = mode === "signup";
   const tooShort = signup && password.length > 0 && password.length < MIN_PASSWORD;
@@ -124,6 +186,21 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
                 : "Sign in"}
           </motion.button>
         </form>
+
+        <div className={googleOn || githubOn ? "mt-4" : "hidden"}>
+          <p className="text-center text-[11px] text-fg-3 mb-2">or</p>
+          <div ref={googleBtn} className="flex justify-center" />
+          {githubOn && (
+            <a
+              href={GITHUB_START}
+              className="mt-2 w-full inline-flex items-center justify-center min-h-[40px]
+                px-4 rounded-sm text-[13.5px] font-semibold border border-line
+                hover:border-accent transition-colors duration-[90ms]"
+            >
+              Continue with GitHub
+            </a>
+          )}
+        </div>
 
         <p className="text-center text-[12.5px] text-fg-3 mt-4">
           {signup ? "Already have an account? " : "New here? "}

@@ -14,7 +14,8 @@ scripted credential stuffing.
 
 import os
 
-from fastapi import APIRouter, Cookie, Depends, HTTPException, Response
+from fastapi import APIRouter, Cookie, Depends, HTTPException, Request, Response
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel, EmailStr, Field
 
 from recall.api.deps import (
@@ -26,6 +27,10 @@ from recall.api.deps import (
     hash_token,
 )
 from recall.auth import DuplicateAccount, create_user, normalize_email, verify_password
+from recall import github_auth
+from recall.google_auth import (
+    GoogleAuthError, client_id, user_for_google, user_for_identity, verify_id_token,
+)
 
 router = APIRouter(tags=["auth"])
 
@@ -95,6 +100,65 @@ def login(body: LoginIn, response: Response, conn=Depends(get_conn)):
     token = create_session(conn, row["id"])
     _set_session_cookie(response, token)
     return _public_user(conn, row["id"])
+
+
+class GoogleIn(BaseModel):
+    credential: str = Field(min_length=10, max_length=4096)
+
+
+@router.get("/api/auth/providers")
+def providers():
+    """Which social sign-ins this deployment has switched on. Served at runtime
+    so the web image needs no build-time key. The Google client id is public."""
+    return {"google_client_id": client_id(), "github": github_auth.configured()}
+
+
+@router.post("/api/auth/google")
+def google_login(body: GoogleIn, response: Response, conn=Depends(get_conn)):
+    try:
+        info = verify_id_token(body.credential)
+    except GoogleAuthError as exc:
+        raise HTTPException(status_code=401, detail=str(exc)) from exc
+    user_id = user_for_google(conn, info)
+    token = create_session(conn, user_id)
+    _set_session_cookie(response, token)
+    return _public_user(conn, user_id)
+
+
+_STATE_COOKIE = "recall_gh_state"
+
+
+def _callback_url(request: Request) -> str:
+    base = os.environ.get("RECALL_PUBLIC_URL", "").rstrip("/") or str(request.base_url).rstrip("/")
+    return f"{base}/api/auth/github/callback"
+
+
+@router.get("/api/auth/github/start")
+def github_start(request: Request):
+    if not github_auth.configured():
+        raise HTTPException(status_code=404, detail="GitHub sign-in is not configured")
+    state = github_auth.new_state()
+    resp = RedirectResponse(github_auth.authorize_url(state, _callback_url(request)))
+    resp.set_cookie(_STATE_COOKIE, state, httponly=True, secure=_cookie_secure(),
+                    samesite="lax", max_age=600, path="/api/auth/github")
+    return resp
+
+
+@router.get("/api/auth/github/callback")
+def github_callback(request: Request, code: str = "", state: str = "",
+                    conn=Depends(get_conn)):
+    saved = request.cookies.get(_STATE_COOKIE, "")
+    if not github_auth.configured() or not code or not saved or saved != state:
+        return RedirectResponse("/login?error=github", status_code=303)
+    try:
+        email, name = github_auth.fetch_identity(code, _callback_url(request))
+    except github_auth.GithubAuthError:
+        return RedirectResponse("/login?error=github", status_code=303)
+    user_id = user_for_identity(conn, email, name)
+    resp = RedirectResponse("/", status_code=303)
+    _set_session_cookie(resp, create_session(conn, user_id))
+    resp.delete_cookie(_STATE_COOKIE, path="/api/auth/github")
+    return resp
 
 
 @router.post("/api/auth/logout")
