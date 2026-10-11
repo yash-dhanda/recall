@@ -3054,7 +3054,7 @@ const MCQ_MIN_LENGTH = 5;
 const MCQ_MAX_LENGTH = 200;
 
 /** The ladder, in order. */
-const MCQ_DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max"];
+const MCQ_DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest"];
 
 interface MockMcqItem {
   position: number;

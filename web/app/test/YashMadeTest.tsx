@@ -41,13 +41,14 @@ const LENGTH_PRESETS: McqLength[] = [10, 20, 30, 60, "full"];
 
 /** The ladder, in order. `null` is Mixed — a draw across all four, which is
  *  its own selection and its own board, not a merge of them. */
-const DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max"];
+const DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest"];
 
 const DIFFICULTY_LABEL: Record<McqDifficulty, string> = {
   easy: "Easy",
   medium: "Medium",
   hard: "Hard",
   max: "Max",
+  hardest: "Hardest",
 };
 
 /** Where the last subject chosen is remembered, per browser. */
@@ -101,6 +102,7 @@ function tierCountsOf(
     medium: 0,
     hard: 0,
     max: 0,
+    hardest: 0,
   };
   let known = false;
   for (const u of subject?.units ?? []) {
@@ -854,7 +856,7 @@ export function YashMadeTest() {
               </div>
               <p className={s.note}>
                 Easy: straight definitions. Medium: telling similar things
-                apart. Hard: work out which idea applies. Max: the tricky ones.
+                apart. Hard: work out which idea applies. Max: the tricky ones. Hardest: every option is the same length.
               </p>
             </div>
           </div>

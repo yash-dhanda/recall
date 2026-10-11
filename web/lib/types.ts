@@ -535,7 +535,7 @@ export type McqKind = "recall" | "situation";
  * `null` wherever a difficulty is optional means **Mixed** — drawn across all
  * four tiers — which is its own selection, not a merge of the four.
  */
-export type McqDifficulty = "easy" | "medium" | "hard" | "max";
+export type McqDifficulty = "easy" | "medium" | "hard" | "max" | "hardest";
 
 export interface McqUnit {
   /** The unit number printed on the lecture deck, 1-based. */
