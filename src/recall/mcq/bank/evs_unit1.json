@@ -1,0 +1,3687 @@
+{
+ "subject_code": "EVS",
+ "unit": 1,
+ "unit_label": "Introduction and Natural Resources",
+ "questions": [
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The word 'environment' is derived from the French word 'environner'. What does it mean?",
+   "code": "",
+   "options": [
+    "To protect",
+    "To produce",
+    "To consume",
+    "To encircle"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Environment comes from the French 'environner', meaning to encircle or surround. It refers to everything that surrounds a living organism.",
+   "why_wrong": [
+    "Environner does not mean to protect.",
+    "It has no sense of producing anything.",
+    "It has no sense of consuming anything.",
+    ""
+   ],
+   "key": "EVS-U1-001"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following best defines the environment?",
+   "code": "",
+   "options": [
+    "Only the plants and animals of a forest, according to some views",
+    "Only human-made structures in a city, under usual conditions",
+    "Only the climate of a region, as is often assumed",
+    "The sum total of all living and non-living things around an organism"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The environment is the total of biotic and abiotic surroundings that influence an organism. It is not limited to one part such as climate or forests.",
+   "why_wrong": [
+    "This leaves out non-living components such as air, water and soil.",
+    "Environment includes natural surroundings too, not just built ones.",
+    "Climate is just one part of the environment.",
+    ""
+   ],
+   "key": "EVS-U1-002"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Who coined the term 'ecology' in 1866?",
+   "code": "",
+   "options": [
+    "Charles Darwin",
+    "Eduard Suess",
+    "Rachel Carson",
+    "Ernst Haeckel"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Ernst Haeckel, a German biologist, coined 'oekologie' in 1866. It is the study of relationships between organisms and their surroundings.",
+   "why_wrong": [
+    "Darwin is known for natural selection, not for coining ecology.",
+    "Suess is credited with the term biosphere.",
+    "Carson wrote Silent Spring much later, in 1962.",
+    ""
+   ],
+   "key": "EVS-U1-003"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In which year was the Environment (Protection) Act enacted in India?",
+   "code": "",
+   "options": [
+    "1972",
+    "1986",
+    "1992",
+    "2002"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The Environment (Protection) Act was passed in 1986, after the Bhopal gas tragedy of 1984. It is the umbrella law for environmental protection in India.",
+   "why_wrong": [
+    "1972 was the Stockholm Conference, and the Wildlife Protection Act year, not the EPA.",
+    "",
+    "1992 was the Rio Earth Summit year.",
+    "The Biological Diversity Act came in 2002, not the EPA."
+   ],
+   "key": "EVS-U1-004"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "On which date is World Environment Day observed every year?",
+   "code": "",
+   "options": [
+    "22 April",
+    "16 September",
+    "5 June",
+    "22 March"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "World Environment Day is observed on 5 June, as started by the UN after the 1972 Stockholm Conference. It aims to encourage awareness and action for the environment.",
+   "why_wrong": [
+    "This is Earth Day.",
+    "This is World Ozone Day.",
+    "",
+    "This is World Water Day."
+   ],
+   "key": "EVS-U1-005"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The UN Conference on the Human Environment, the first major global environment conference, was held in which city in 1972?",
+   "code": "",
+   "options": [
+    "Rio de Janeiro",
+    "Kyoto",
+    "Paris",
+    "Stockholm"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The 1972 UN Conference on the Human Environment took place in Stockholm, Sweden. It led to the creation of UNEP and to World Environment Day.",
+   "why_wrong": [
+    "Rio hosted the Earth Summit in 1992.",
+    "Kyoto is linked to the 1997 climate protocol.",
+    "Paris is linked to the 2015 climate agreement.",
+    ""
+   ],
+   "key": "EVS-U1-006"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The study of the interaction between living organisms and their physical surroundings is called what?",
+   "code": "",
+   "options": [
+    "Ecology",
+    "Geology",
+    "Meteorology",
+    "Anthropology"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Ecology deals with the relationship between organisms and their environment. It is the basic science underlying environmental studies.",
+   "why_wrong": [
+    "",
+    "Geology studies the Earth's solid structure and rocks.",
+    "Meteorology studies weather and the atmosphere.",
+    "Anthropology studies human societies and cultures."
+   ],
+   "key": "EVS-U1-007"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is a NATURAL part of the environment rather than a human-made one?",
+   "code": "",
+   "options": [
+    "A river",
+    "A highway",
+    "A dam",
+    "A power plant"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Rivers exist without human construction and are part of the natural environment. Highways, dams and power plants belong to the built environment.",
+   "why_wrong": [
+    "",
+    "A highway is built by humans.",
+    "A dam is a human-made structure.",
+    "A power plant is a human-made structure."
+   ],
+   "key": "EVS-U1-008"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pair correctly matches an environmental event with its year?",
+   "code": "",
+   "options": [
+    "Stockholm Conference - 1992",
+    "Bhopal gas tragedy - 1972",
+    "Environment (Protection) Act - 1972",
+    "Earth Summit at Rio de Janeiro - 1992"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The Earth Summit (UNCED) was held in Rio in 1992, and gave Agenda 21. The other pairs mix up the years.",
+   "why_wrong": [
+    "Stockholm was held in 1972.",
+    "Bhopal happened in 1984.",
+    "The EPA was enacted in 1986.",
+    ""
+   ],
+   "key": "EVS-U1-009"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement correctly separates 'environment' from 'ecology'?",
+   "code": "",
+   "options": [
+    "They are exactly the same thing with different spellings, according to some views",
+    "Ecology is the surroundings; environment is the science of studying them, under usual conditions",
+    "Environment refers only to humans; ecology refers only to plants, as is often assumed",
+    "Environment is the surroundings; ecology is the study of how organisms relate to those surroundings"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Environment is what surrounds an organism, while ecology is the science of the interactions between organisms and that surrounding. Mixing them up is a common error.",
+   "why_wrong": [
+    "One is the surroundings, the other is a branch of science.",
+    "This reverses the two definitions.",
+    "Both terms cover all organisms, not just one group.",
+    ""
+   ],
+   "key": "EVS-U1-010"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which one of these is NOT an example of the 'built' or man-made environment?",
+   "code": "",
+   "options": [
+    "A railway network",
+    "A skyscraper",
+    "A canal for irrigation",
+    "A coral reef"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A coral reef is a natural ecosystem formed by living coral polyps. Railways, skyscrapers and canals are products of human construction.",
+   "why_wrong": [
+    "Railways are constructed by people.",
+    "Skyscrapers are human-built.",
+    "Irrigation canals are dug by people.",
+    ""
+   ],
+   "key": "EVS-U1-011"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The Environment (Protection) Act of 1986 was passed in India mainly in the aftermath of which event?",
+   "code": "",
+   "options": [
+    "The Bhopal gas tragedy",
+    "The Chernobyl accident",
+    "The Chipko movement",
+    "The Silent Valley protest"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The Bhopal gas leak of December 1984 exposed the lack of a strong environmental law. The EPA 1986 was enacted to provide one under Article 253 of the Constitution.",
+   "why_wrong": [
+    "",
+    "Chernobyl happened in Ukraine, not India.",
+    "Chipko was a forest-protection movement of the 1970s.",
+    "That was a conservation movement, not the trigger for this Act."
+   ],
+   "key": "EVS-U1-012"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Living components of the environment, such as plants and animals, are called what?",
+   "code": "",
+   "options": [
+    "Abiotic components",
+    "Physical components",
+    "Chemical components",
+    "Biotic components"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Biotic components include all living organisms: plants, animals and microbes. Non-living parts such as air, water and soil are abiotic.",
+   "why_wrong": [
+    "Abiotic means non-living.",
+    "Physical is not the standard term for living parts.",
+    "This refers to non-living substances.",
+    ""
+   ],
+   "key": "EVS-U1-013"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of these is an abiotic component of the environment?",
+   "code": "",
+   "options": [
+    "Sunlight",
+    "Bacteria",
+    "Fungi",
+    "Earthworm"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Sunlight is a non-living physical factor, so it is abiotic. Bacteria, fungi and earthworms are all biotic.",
+   "why_wrong": [
+    "",
+    "Bacteria are living organisms.",
+    "Fungi are living organisms.",
+    "Earthworms are living animals."
+   ],
+   "key": "EVS-U1-014"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Green plants are called producers because they do what?",
+   "code": "",
+   "options": [
+    "They eat other organisms",
+    "They decompose dead matter",
+    "They absorb food made by animals",
+    "They make food by photosynthesis"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Producers (autotrophs) prepare food from sunlight, water and carbon dioxide through photosynthesis. All other organisms depend on them directly or indirectly.",
+   "why_wrong": [
+    "That describes consumers.",
+    "That is the role of decomposers.",
+    "Plants make their own food.",
+    ""
+   ],
+   "key": "EVS-U1-015"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Organisms that break down dead plants and animals into simple substances are called what?",
+   "code": "",
+   "options": [
+    "Producers",
+    "Primary consumers",
+    "Decomposers",
+    "Carnivores"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Decomposers such as bacteria and fungi break down dead organic matter and return nutrients to the soil. This completes nutrient cycling.",
+   "why_wrong": [
+    "Producers make food by photosynthesis.",
+    "They eat plants.",
+    "",
+    "They eat other animals."
+   ],
+   "key": "EVS-U1-016"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is an example of a primary consumer?",
+   "code": "",
+   "options": [
+    "A lion",
+    "A grasshopper",
+    "A mushroom",
+    "A grass plant"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Primary consumers are herbivores that feed directly on producers. A grasshopper eating leaves fits this role.",
+   "why_wrong": [
+    "A lion is a secondary or tertiary consumer.",
+    "",
+    "A mushroom is a decomposer.",
+    "Grass is a producer."
+   ],
+   "key": "EVS-U1-017"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Temperature, light, water and soil are examples of which type of factors?",
+   "code": "",
+   "options": [
+    "Biotic factors",
+    "Trophic factors",
+    "Abiotic factors",
+    "Genetic factors"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Temperature, light, water and soil are non-living physical factors, so they are called abiotic. They determine which organisms can live in a place.",
+   "why_wrong": [
+    "Biotic means living.",
+    "Trophic relates to feeding levels.",
+    "",
+    "These relate to inheritance."
+   ],
+   "key": "EVS-U1-018"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is an energy source for almost all ecosystems on Earth?",
+   "code": "",
+   "options": [
+    "The Moon",
+    "The Sun",
+    "Wind",
+    "Soil"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The Sun supplies the energy that producers capture through photosynthesis. Nearly all food chains begin with this solar energy.",
+   "why_wrong": [
+    "The Moon does not supply usable energy to ecosystems.",
+    "",
+    "Wind itself is driven by solar heating.",
+    "Soil holds nutrients but is not the primary energy source."
+   ],
+   "key": "EVS-U1-019"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following lists contains ONLY abiotic components?",
+   "code": "",
+   "options": [
+    "Air, fungi, rainfall, soil",
+    "Air, rock, rainfall, temperature",
+    "Water, bacteria, sunlight, sand",
+    "Soil, algae, wind, humidity"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Air, rock, rainfall and temperature are all non-living. Each of the other lists contains an organism such as fungi, bacteria or algae.",
+   "why_wrong": [
+    "Fungi are living.",
+    "",
+    "Bacteria are living.",
+    "Algae are living."
+   ],
+   "key": "EVS-U1-020"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which one is the odd one out among these ecosystem components?",
+   "code": "",
+   "options": [
+    "Mushroom",
+    "Wheat",
+    "Mango tree",
+    "Grass"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A mushroom is a fungus and a decomposer, whereas wheat, mango and grass are producers. This makes it the odd one out.",
+   "why_wrong": [
+    "",
+    "Wheat is a producer.",
+    "A mango tree is a producer.",
+    "Grass is a producer."
+   ],
+   "key": "EVS-U1-021"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement best describes the role of decomposers in the environment?",
+   "code": "",
+   "options": [
+    "They are the main source of energy for the ecosystem",
+    "They recycle nutrients from dead matter back into the soil",
+    "They only feed on living plants",
+    "They convert sunlight into chemical energy"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Decomposers release nutrients locked in dead organisms so that producers can use them again. Without them, nutrients would stay locked in dead matter.",
+   "why_wrong": [
+    "Energy comes from the Sun through producers.",
+    "",
+    "Decomposers act on dead organic matter.",
+    "This is photosynthesis, done by producers."
+   ],
+   "key": "EVS-U1-022"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which is a correct match of a component to its type?",
+   "code": "",
+   "options": [
+    "Earthworm - abiotic",
+    "Soil moisture - biotic",
+    "Humidity - abiotic",
+    "Algae - abiotic"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Humidity is a non-living atmospheric factor. Earthworms and algae are living and therefore biotic.",
+   "why_wrong": [
+    "Earthworms are living, so they are biotic.",
+    "Soil moisture is non-living.",
+    "",
+    "Algae are living, so they are biotic."
+   ],
+   "key": "EVS-U1-023"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is correctly classified as a heterotroph?",
+   "code": "",
+   "options": [
+    "A rice plant",
+    "A cow",
+    "A cyanobacterium",
+    "A Spirogyra alga"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Heterotrophs depend on other organisms for food, and a cow feeds on plants. The others are autotrophs that perform photosynthesis.",
+   "why_wrong": [
+    "Rice makes its own food.",
+    "",
+    "Cyanobacteria photosynthesise, so they are autotrophs.",
+    "Spirogyra is a photosynthetic alga."
+   ],
+   "key": "EVS-U1-024"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In which respect do abiotic components differ from biotic ones?",
+   "code": "",
+   "options": [
+    "They are non-living factors that influence living organisms",
+    "They are all capable of reproduction, in most situations",
+    "They are produced by decomposers only, according to some views",
+    "They always form the food chain, under usual conditions"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Abiotic components are non-living and set the conditions for life, such as light, water and minerals. They do not reproduce or form the food chain.",
+   "why_wrong": [
+    "",
+    "Only living things reproduce.",
+    "Abiotic factors are not produced by decomposers.",
+    "Food chains consist of living organisms."
+   ],
+   "key": "EVS-U1-025"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which sphere of the Earth consists of rocks, soil and minerals?",
+   "code": "",
+   "options": [
+    "Hydrosphere",
+    "Lithosphere",
+    "Atmosphere",
+    "Biosphere"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The lithosphere is the solid outer shell of the Earth, comprising the crust and the uppermost mantle. It holds rocks, soil and minerals.",
+   "why_wrong": [
+    "The hydrosphere is made of water.",
+    "",
+    "The atmosphere is the layer of gases.",
+    "The biosphere is the zone of life."
+   ],
+   "key": "EVS-U1-026"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The hydrosphere includes which of the following?",
+   "code": "",
+   "options": [
+    "Only the oceans",
+    "Only rainwater",
+    "Only the water in living cells",
+    "All water bodies on Earth"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The hydrosphere is the total water of the Earth in liquid, solid and vapour forms. It covers oceans, lakes, rivers, groundwater and glaciers.",
+   "why_wrong": [
+    "It also includes rivers, lakes, groundwater and ice.",
+    "Rain is just one part of the water cycle.",
+    "It covers all water on Earth, not just within organisms.",
+    ""
+   ],
+   "key": "EVS-U1-027"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The envelope of gases surrounding the Earth is called what?",
+   "code": "",
+   "options": [
+    "Lithosphere",
+    "Hydrosphere",
+    "Biosphere",
+    "Atmosphere"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The atmosphere is the blanket of gases held around the Earth by gravity. It supplies air, protects from harmful radiation and moderates temperature.",
+   "why_wrong": [
+    "This is the rocky part.",
+    "This is the water part.",
+    "This is the living part.",
+    ""
+   ],
+   "key": "EVS-U1-028"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The zone of the Earth where life exists is called what?",
+   "code": "",
+   "options": [
+    "Stratosphere",
+    "Biosphere",
+    "Lithosphere",
+    "Exosphere"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The biosphere is the part of the Earth where living organisms are found. It overlaps the lithosphere, hydrosphere and atmosphere.",
+   "why_wrong": [
+    "This is a layer of the atmosphere.",
+    "",
+    "This is the solid part of the Earth.",
+    "This is the outermost layer of the atmosphere."
+   ],
+   "key": "EVS-U1-029"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which gas makes up the largest portion of dry air in the atmosphere?",
+   "code": "",
+   "options": [
+    "Oxygen",
+    "Carbon dioxide",
+    "Argon",
+    "Nitrogen"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Nitrogen forms roughly 78 percent of dry air, with oxygen at about 21 percent. The rest is argon, carbon dioxide and other trace gases.",
+   "why_wrong": [
+    "Oxygen is second, at about 21 percent.",
+    "Carbon dioxide is only a trace gas.",
+    "Argon is present in under 1 percent.",
+    ""
+   ],
+   "key": "EVS-U1-030"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In which layer of the atmosphere does most weather occur?",
+   "code": "",
+   "options": [
+    "Stratosphere",
+    "Mesosphere",
+    "Troposphere",
+    "Thermosphere"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The troposphere is the lowest layer, holding most of the air's mass and water vapour. Clouds, rain and storms occur there.",
+   "why_wrong": [
+    "This holds the ozone layer and has little weather.",
+    "This is a higher, cold layer where meteors burn up.",
+    "",
+    "This is a very high layer with auroras and satellites."
+   ],
+   "key": "EVS-U1-031"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The ozone layer is found in which layer of the atmosphere?",
+   "code": "",
+   "options": [
+    "Troposphere",
+    "Stratosphere",
+    "Mesosphere",
+    "Exosphere"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The ozone layer lies in the stratosphere and absorbs most of the Sun's harmful ultraviolet radiation. It protects life on the surface.",
+   "why_wrong": [
+    "This is the lowest layer, where weather occurs.",
+    "",
+    "This is above the stratosphere.",
+    "This is the outermost layer."
+   ],
+   "key": "EVS-U1-032"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement about the water of the hydrosphere is correct?",
+   "code": "",
+   "options": [
+    "Most of Earth's water is fresh and found in rivers, in most situations",
+    "Most fresh water is stored in the atmosphere, according to some views",
+    "Most of Earth's water is in lakes, under usual conditions",
+    "Most water is saline ocean water; most fresh water is in ice and glaciers"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "About 97 percent of the water is saline ocean water. Of the small fresh water share, most is stored as ice caps and glaciers.",
+   "why_wrong": [
+    "Rivers hold a tiny fraction of the total.",
+    "The atmosphere holds very little water.",
+    "Lakes hold only a small share.",
+    ""
+   ],
+   "key": "EVS-U1-033"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Arrange the atmospheric layers from the ground upwards.",
+   "code": "",
+   "options": [
+    "Stratosphere, troposphere, mesosphere, thermosphere",
+    "Troposphere, mesosphere, stratosphere, thermosphere",
+    "Thermosphere, mesosphere, stratosphere, troposphere",
+    "Troposphere, stratosphere, mesosphere, thermosphere"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The layers rise as troposphere, stratosphere, mesosphere, thermosphere, then the exosphere. The ozone layer lies in the stratosphere.",
+   "why_wrong": [
+    "Troposphere is the lowest layer, not the second.",
+    "Stratosphere comes before the mesosphere.",
+    "This lists them from the top down.",
+    ""
+   ],
+   "key": "EVS-U1-034"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a part of the lithosphere?",
+   "code": "",
+   "options": [
+    "Ocean water",
+    "Ozone gas",
+    "Water vapour",
+    "Soil"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Soil is formed from weathered rock and belongs to the lithosphere. Water bodies fall under the hydrosphere and gases under the atmosphere.",
+   "why_wrong": [
+    "Ocean water belongs to the hydrosphere.",
+    "Ozone belongs to the atmosphere.",
+    "Water vapour belongs to the atmosphere.",
+    ""
+   ],
+   "key": "EVS-U1-035"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why is the biosphere often described as an overlap zone rather than a separate layer?",
+   "code": "",
+   "options": [
+    "Because it lies entirely above the atmosphere, as is often assumed",
+    "Because it contains no non-living matter, in most situations",
+    "Life exists in parts of the lithosphere, hydrosphere and atmosphere",
+    "Because it is composed only of the oceans, according to some views"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Living organisms are found in soil, water and air, so the biosphere spans portions of all three spheres. It is where the realms interact.",
+   "why_wrong": [
+    "The biosphere is not above the atmosphere.",
+    "It involves non-living matter too, as organisms depend on it.",
+    "",
+    "It covers land and air as well as water."
+   ],
+   "key": "EVS-U1-036"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Match the sphere to its main content: which pairing is correct?",
+   "code": "",
+   "options": [
+    "Atmosphere - gases such as nitrogen and oxygen",
+    "Hydrosphere - rocks and minerals, in most situations",
+    "Lithosphere - clouds and winds, according to some views",
+    "Biosphere - the ozone layer, under usual conditions"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The atmosphere is made of gases such as nitrogen and oxygen. Rocks go with the lithosphere and living things with the biosphere.",
+   "why_wrong": [
+    "",
+    "Rocks belong to the lithosphere.",
+    "Clouds and winds belong to the atmosphere.",
+    "Ozone is part of the atmosphere."
+   ],
+   "key": "EVS-U1-037"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT a layer of the atmosphere?",
+   "code": "",
+   "options": [
+    "Asthenosphere",
+    "Mesosphere",
+    "Stratosphere",
+    "Exosphere"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The asthenosphere is a part of the Earth's upper mantle below the lithosphere. Mesosphere, stratosphere and exosphere are atmospheric layers.",
+   "why_wrong": [
+    "",
+    "This is a layer of the atmosphere.",
+    "This is a layer of the atmosphere.",
+    "This is a layer of the atmosphere."
+   ],
+   "key": "EVS-U1-038"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Rain falling and filling a river is an interaction between which two spheres?",
+   "code": "",
+   "options": [
+    "Lithosphere and biosphere only",
+    "Atmosphere and hydrosphere",
+    "Biosphere and lithosphere only",
+    "Stratosphere and mesosphere"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Water vapour condenses in the atmosphere and falls as rain into the hydrosphere. This is one part of the water cycle linking the realms.",
+   "why_wrong": [
+    "Rain originates from atmosphere and ends in water bodies.",
+    "",
+    "Neither of these starts the process.",
+    "These are layers of the same sphere, not two spheres."
+   ],
+   "key": "EVS-U1-039"
+  },
+  {
+   "topic": "Realms of earth",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The word 'biosphere' was first introduced by which scientist?",
+   "code": "",
+   "options": [
+    "Ernst Haeckel",
+    "Charles Elton",
+    "Eduard Suess",
+    "Aldo Leopold"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The Austrian geologist Eduard Suess introduced the term biosphere in 1875. Vladimir Vernadsky later developed the concept.",
+   "why_wrong": [
+    "Haeckel coined 'ecology'.",
+    "Elton is known for work on food chains and niches.",
+    "",
+    "Leopold is known for land ethic ideas."
+   ],
+   "key": "EVS-U1-040"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Environmental studies is described as multidisciplinary because it does what?",
+   "code": "",
+   "options": [
+    "It is taught in only one department, in most situations",
+    "It draws on many subjects, such as biology and economics",
+    "It deals only with plants, according to some views",
+    "It ignores social sciences, under usual conditions"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Environmental problems have physical, biological and social aspects, so the subject uses many disciplines together. This is what multidisciplinary means.",
+   "why_wrong": [
+    "This contradicts multidisciplinarity.",
+    "",
+    "It covers far more than plants.",
+    "It includes social science and economics."
+   ],
+   "key": "EVS-U1-041"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the main aim of environmental awareness?",
+   "code": "",
+   "options": [
+    "To increase industrial output, according to some views",
+    "To discourage the use of science, under usual conditions",
+    "To create concern and encourage responsible action",
+    "To promote the use of more resources, as is often assumed"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Awareness helps people understand the environment and act responsibly. It underpins sustainable use of resources.",
+   "why_wrong": [
+    "This is not the aim of awareness.",
+    "Science is used in solving environmental problems.",
+    "",
+    "Awareness promotes careful use."
+   ],
+   "key": "EVS-U1-042"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which subject is MOST directly linked with studying pollutants and their reactions in air and water?",
+   "code": "",
+   "options": [
+    "History",
+    "Music",
+    "Literature",
+    "Chemistry"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Chemistry helps to understand pollutants and their reactions. It is one of the contributing disciplines of environmental studies.",
+   "why_wrong": [
+    "History does not analyse pollutants.",
+    "Music has no link with pollutant analysis.",
+    "Literature does not analyse pollutants.",
+    ""
+   ],
+   "key": "EVS-U1-043"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is a scope of environmental studies?",
+   "code": "",
+   "options": [
+    "Printing of textbooks only",
+    "Stock market prediction",
+    "Designing fashion",
+    "Conservation of natural resources"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The scope includes natural resources and their conservation, ecosystems, biodiversity and pollution. It also includes social issues related to the environment.",
+   "why_wrong": [
+    "This is not a scope of EVS.",
+    "This is unrelated.",
+    "This is unrelated.",
+    ""
+   ],
+   "key": "EVS-U1-044"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of these is an important reason for studying environmental studies?",
+   "code": "",
+   "options": [
+    "To avoid learning science",
+    "To increase waste generation",
+    "Understanding human impact on nature",
+    "To ignore natural resources"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Environmental studies helps us see the impact of human actions on land, water and air. It guides us to make sustainable choices.",
+   "why_wrong": [
+    "EVS is science-based.",
+    "EVS aims to reduce waste.",
+    "",
+    "EVS teaches careful use of resources."
+   ],
+   "key": "EVS-U1-045"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pairing of discipline and its contribution to environmental studies is correct?",
+   "code": "",
+   "options": [
+    "Economics - valuing resources and costs of environmental damage",
+    "Geology - studying human laws, according to some views",
+    "Sociology - studying atmospheric layers, under usual conditions",
+    "Mathematics - classifying plants, as is often assumed"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Economics helps in valuing resources and weighing the costs of environmental damage. Geology studies the Earth's materials and sociology studies society.",
+   "why_wrong": [
+    "",
+    "Law is not studied in geology.",
+    "Atmospheric layers belong to physical sciences.",
+    "Plant classification belongs to botany."
+   ],
+   "key": "EVS-U1-046"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A town plans a new factory. Which discipline helps predict the effect of its waste water on local fish?",
+   "code": "",
+   "options": [
+    "Astronomy alone",
+    "Linguistics alone",
+    "Ecology with chemistry",
+    "Music theory"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ecology explains effects on organisms and chemistry explains the pollutants. This shows why the subject needs many disciplines.",
+   "why_wrong": [
+    "Astronomy does not address this.",
+    "Linguistics does not address this.",
+    "",
+    "Music theory does not address this."
+   ],
+   "key": "EVS-U1-047"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT an objective of environmental education?",
+   "code": "",
+   "options": [
+    "Developing awareness",
+    "Building skills to solve environmental problems",
+    "Encouraging participation in protecting the environment",
+    "Increasing the exploitation of natural resources without limit"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Environmental education aims at awareness, knowledge, attitude, skills and participation. Unlimited exploitation of resources goes against its aims.",
+   "why_wrong": [
+    "Awareness is a key objective.",
+    "Skills are an objective.",
+    "Participation is an objective.",
+    ""
+   ],
+   "key": "EVS-U1-048"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement shows the importance of environmental studies for engineers?",
+   "code": "",
+   "options": [
+    "It helps design projects that cause less harm to the environment",
+    "It removes the need for safety rules, in most situations",
+    "It makes technology unnecessary, according to some views",
+    "It only concerns forest officers, under usual conditions"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Engineers shape industry, buildings and infrastructure, so EVS helps them reduce impact. It is relevant across professions.",
+   "why_wrong": [
+    "",
+    "It supports rules, not removes them.",
+    "It does not reject technology.",
+    "It concerns every profession."
+   ],
+   "key": "EVS-U1-049"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The multidisciplinary nature of environmental studies is BEST shown by which example?",
+   "code": "",
+   "options": [
+    "Air pollution needs chemistry, health science, law and economics",
+    "Air pollution needs only physics, according to some views",
+    "Air pollution concerns only lawyers, under usual conditions",
+    "Air pollution is studied only in geography, as is often assumed"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Air pollution has chemical causes, health effects, legal controls and economic costs. Several disciplines are needed together.",
+   "why_wrong": [
+    "",
+    "It needs far more than one subject.",
+    "Many fields are involved.",
+    "Geography alone is not enough."
+   ],
+   "key": "EVS-U1-050"
+  },
+  {
+   "topic": "Scope and importance of environmental studies",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is a correct statement about the scope of environmental studies?",
+   "code": "",
+   "options": [
+    "It covers only wildlife photography, under usual conditions",
+    "It covers only industrial design, as is often assumed",
+    "It covers only space research, in most situations",
+    "It covers natural resources, ecosystems, biodiversity and pollution"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The scope covers natural resources, ecosystems, biodiversity, pollution control and related social issues. It is broad and multi-field.",
+   "why_wrong": [
+    "Its scope is much wider.",
+    "Its scope is wider.",
+    "It is not about space research.",
+    ""
+   ],
+   "key": "EVS-U1-051"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is sustainability?",
+   "code": "",
+   "options": [
+    "Using all resources quickly for present benefit, as is often assumed",
+    "Meeting present needs without harming the needs of future generations",
+    "Stopping all human development, in most situations",
+    "Depending only on non-renewable resources, according to some views"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Sustainability balances present needs with those of future generations. It follows the Brundtland definition of sustainable development.",
+   "why_wrong": [
+    "This ignores future needs.",
+    "",
+    "Sustainability does not mean stopping development.",
+    "Non-renewable resources run out."
+   ],
+   "key": "EVS-U1-052"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which report, published in 1987, popularised the idea of sustainable development?",
+   "code": "",
+   "options": [
+    "Silent Spring",
+    "The Limits to Growth",
+    "The Brundtland Report",
+    "Agenda 21"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Our Common Future, by the Brundtland Commission, defined sustainable development in 1987. It is the standard source of the definition.",
+   "why_wrong": [
+    "Silent Spring (1962) was about pesticides.",
+    "That was published in 1972 by the Club of Rome.",
+    "",
+    "This was an action plan adopted in 1992."
+   ],
+   "key": "EVS-U1-053"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The three pillars of sustainability are environmental, economic and what else?",
+   "code": "",
+   "options": [
+    "Social",
+    "Technological",
+    "Cultural only",
+    "Industrial"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The standard pillars are environment, economy and society. They are often shown as overlapping circles.",
+   "why_wrong": [
+    "",
+    "Technology is not one of the three pillars.",
+    "This is not the standard third pillar.",
+    "This is not the standard third pillar."
+   ],
+   "key": "EVS-U1-054"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The 'triple bottom line' refers to which three Ps?",
+   "code": "",
+   "options": [
+    "Plants, Pollution, Population",
+    "Power, Politics, Production",
+    "People, Planet, Profit",
+    "Price, Product, Place"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The triple bottom line measures social (people), environmental (planet) and economic (profit) performance. It mirrors the three pillars.",
+   "why_wrong": [
+    "These are not the three Ps.",
+    "These are not the three Ps.",
+    "",
+    "These are marketing Ps, not the triple bottom line."
+   ],
+   "key": "EVS-U1-055"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is a renewable resource?",
+   "code": "",
+   "options": [
+    "Coal",
+    "Solar energy",
+    "Petroleum",
+    "Natural gas"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Solar energy is renewable because it is continually available. Coal, petroleum and natural gas are non-renewable.",
+   "why_wrong": [
+    "Coal takes millions of years to form.",
+    "",
+    "Petroleum is a fossil fuel.",
+    "Natural gas is a fossil fuel."
+   ],
+   "key": "EVS-U1-056"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The economic pillar of sustainability is mainly concerned with what?",
+   "code": "",
+   "options": [
+    "Fair, lasting economic growth",
+    "Protection of rocks only",
+    "Increasing air pollution",
+    "Banning all trade"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The economic pillar means growth that supports livelihoods and can continue over time. It must not damage the environment or society.",
+   "why_wrong": [
+    "",
+    "This is not an economic aim.",
+    "This is not an aim.",
+    "This is not an aim."
+   ],
+   "key": "EVS-U1-057"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following actions mainly supports the SOCIAL pillar of sustainability?",
+   "code": "",
+   "options": [
+    "Planting trees on a barren hill",
+    "Raising the profit of a company",
+    "Equal access to education",
+    "Switching to solar panels"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The social pillar deals with equity, health, education and wellbeing. Tree planting and solar panels are environmental, and company profit is economic.",
+   "why_wrong": [
+    "This mainly supports the environmental pillar.",
+    "This mainly supports the economic pillar.",
+    "",
+    "This mainly supports the environmental pillar."
+   ],
+   "key": "EVS-U1-058"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A development project makes high profit but destroys a forest and displaces villagers. Which statement is correct?",
+   "code": "",
+   "options": [
+    "It fails sustainability because it ignores environmental and social pillars",
+    "It is fully sustainable because profit is high, under usual conditions",
+    "It is sustainable since the economy grows, as is often assumed",
+    "Sustainability does not apply to projects, in most situations"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Sustainable development needs balance among economy, environment and society. A project that satisfies only the economic pillar is not sustainable.",
+   "why_wrong": [
+    "",
+    "Sustainability needs all three pillars.",
+    "Economic growth alone is not enough.",
+    "It applies to all development."
+   ],
+   "key": "EVS-U1-059"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement distinguishes renewable from non-renewable resources correctly?",
+   "code": "",
+   "options": [
+    "Renewable resources can never be used up under any use, as is often assumed",
+    "Non-renewable resources form quickly, in most situations",
+    "Renewables are replenished naturally in human time; non-renewables are not",
+    "Both types regenerate at the same rate, according to some views"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Renewables like wind, sunlight and forests regenerate naturally, though overuse can deplete some. Non-renewables such as coal form over geological time.",
+   "why_wrong": [
+    "Overuse can still deplete them, such as forests or fish.",
+    "They take millions of years.",
+    "",
+    "Their rates differ greatly."
+   ],
+   "key": "EVS-U1-060"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which one of these is NOT a feature of sustainable development?",
+   "code": "",
+   "options": [
+    "Fairness between present and future generations",
+    "Conservation of natural resources for later use",
+    "Conservation of resources",
+    "Maintaining the balance of ecosystems and nature"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Sustainable development takes the future into account. Using resources with no regard for future generations is the opposite.",
+   "why_wrong": [
+    "Intergenerational equity is a core feature.",
+    "",
+    "Conservation is a core feature.",
+    "This is a core feature."
+   ],
+   "key": "EVS-U1-061"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pairing of pillar and example is correct?",
+   "code": "",
+   "options": [
+    "Environmental pillar - protecting biodiversity and reducing pollution",
+    "Economic pillar - protecting wetlands, according to some views",
+    "Social pillar - extracting more coal, under usual conditions",
+    "Environmental pillar - increasing company dividends, as is often assumed"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Protecting biodiversity and controlling pollution belongs to the environmental pillar. Dividends belong to the economic pillar.",
+   "why_wrong": [
+    "",
+    "Wetland protection is an environmental aim.",
+    "Coal extraction is not a social aim.",
+    "Dividends are economic."
+   ],
+   "key": "EVS-U1-062"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is meant by 'intergenerational equity'?",
+   "code": "",
+   "options": [
+    "Equal wages for all workers today, under usual conditions",
+    "Equal rainfall in all regions, as is often assumed",
+    "Fairness between present and future generations",
+    "Equal population in all countries, in most situations"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Intergenerational equity means present generations should leave the environment in a condition that allows future ones to meet their needs. It underlies the Brundtland definition.",
+   "why_wrong": [
+    "This is about current economic fairness.",
+    "This has nothing to do with the concept.",
+    "",
+    "This has nothing to do with the concept."
+   ],
+   "key": "EVS-U1-063"
+  },
+  {
+   "topic": "Sustainability and pillars",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is a sustainable practice for managing a forest?",
+   "code": "",
+   "options": [
+    "Clear-felling the whole forest at once",
+    "Burning the forest for quick farmland",
+    "Cutting only what regrows",
+    "Selling all timber in one year"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Sustainable yield means harvesting no more than the forest can regenerate. Replanting keeps the resource available for the future.",
+   "why_wrong": [
+    "This destroys the resource.",
+    "This causes loss of habitat and soil.",
+    "",
+    "This does not allow regrowth."
+   ],
+   "key": "EVS-U1-064"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What does 'carrying capacity' mean?",
+   "code": "",
+   "options": [
+    "The total weight a truck can carry",
+    "The minimum number of organisms in an area",
+    "The number of species on Earth",
+    "Maximum population an area supports"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Carrying capacity is the largest population of a species that an environment can sustain without being degraded. It is set by the availability of resources.",
+   "why_wrong": [
+    "This is not the ecological meaning.",
+    "It is a maximum, not a minimum.",
+    "This is a biodiversity measure.",
+    ""
+   ],
+   "key": "EVS-U1-065"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Carrying capacity is usually denoted by which letter?",
+   "code": "",
+   "options": [
+    "R",
+    "K",
+    "N",
+    "T"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "In population models, K stands for carrying capacity. In the logistic growth curve, growth levels off at K.",
+   "why_wrong": [
+    "Lowercase r is used for growth rate in some models.",
+    "",
+    "N is the population size.",
+    "T is not the symbol for carrying capacity."
+   ],
+   "key": "EVS-U1-066"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following can limit the carrying capacity of an area?",
+   "code": "",
+   "options": [
+    "The colour of the soil",
+    "The name of the region",
+    "The number of roads built",
+    "Availability of food and water"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Food, water, space and other resources limit how many individuals can survive. These are the limiting factors that set K.",
+   "why_wrong": [
+    "This is not a limit by itself.",
+    "This has no effect.",
+    "This is not a direct limit on resources.",
+    ""
+   ],
+   "key": "EVS-U1-067"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What happens if a population exceeds the carrying capacity of its environment?",
+   "code": "",
+   "options": [
+    "The environment grows larger automatically",
+    "Resources increase",
+    "The population always rises further",
+    "Resources deplete and numbers fall"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Beyond K, resources are used faster than they regenerate. This causes starvation and decline of the population.",
+   "why_wrong": [
+    "The environment does not grow.",
+    "They become scarce instead.",
+    "It usually crashes after overshoot.",
+    ""
+   ],
+   "key": "EVS-U1-068"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The S-shaped growth curve of a population levels off near which value?",
+   "code": "",
+   "options": [
+    "Carrying capacity",
+    "Birth rate",
+    "Death rate",
+    "Zero"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In logistic growth, the population rises and then levels near K. This forms the S-shaped curve.",
+   "why_wrong": [
+    "",
+    "Birth rate is a rate, not the limit.",
+    "Death rate is a rate, not the limit.",
+    "Population does not level off at zero."
+   ],
+   "key": "EVS-U1-069"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of these is a limiting factor for a deer population in a forest?",
+   "code": "",
+   "options": [
+    "Shortage of food",
+    "The colour of leaves",
+    "The brand of local products",
+    "The shape of rocks"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Food shortage reduces the number of deer the forest can support. Limiting factors set the carrying capacity.",
+   "why_wrong": [
+    "",
+    "This is not limiting.",
+    "This is unrelated.",
+    "This is not limiting."
+   ],
+   "key": "EVS-U1-070"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement about the carrying capacity of an ecosystem is correct?",
+   "code": "",
+   "options": [
+    "It can change if resources or conditions change",
+    "It is fixed forever for every species",
+    "It depends only on birth rate",
+    "It is the same for all species in an area"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Carrying capacity depends on resource supply, climate and technology, so it can rise or fall. A drought, for example, lowers it.",
+   "why_wrong": [
+    "",
+    "It changes with conditions.",
+    "Resource availability matters too.",
+    "It differs between species."
+   ],
+   "key": "EVS-U1-071"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A pasture can sustain 100 cattle. A farmer puts 250 on it. What is the most likely outcome?",
+   "code": "",
+   "options": [
+    "The pasture grows faster",
+    "Nothing changes",
+    "Overgrazing and degradation of the pasture",
+    "The carrying capacity becomes 250 permanently"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Exceeding capacity leads to overgrazing and soil damage. The pasture may then support fewer animals than before.",
+   "why_wrong": [
+    "Overgrazing does not speed growth.",
+    "Resources will be depleted.",
+    "",
+    "The land gets degraded and capacity may fall."
+   ],
+   "key": "EVS-U1-072"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which factor is most likely to RAISE the carrying capacity for humans in an area?",
+   "code": "",
+   "options": [
+    "Prolonged drought",
+    "Better irrigation technology",
+    "Soil erosion",
+    "Loss of fresh water"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Better farming and irrigation increase food output, supporting more people. Drought, erosion and water loss reduce it.",
+   "why_wrong": [
+    "This lowers capacity.",
+    "",
+    "This lowers capacity.",
+    "This lowers capacity."
+   ],
+   "key": "EVS-U1-073"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Ecological footprint is best described as what?",
+   "code": "",
+   "options": [
+    "Land and water area needed to support one person's lifestyle",
+    "The number of footprints left on a trail, according to some views",
+    "The number of species in a forest, under usual conditions",
+    "The weight of a person, as is often assumed"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The ecological footprint measures human demand on nature. It is compared with the planet's biocapacity to judge sustainability.",
+   "why_wrong": [
+    "",
+    "This is not the ecological concept.",
+    "This is biodiversity.",
+    "This is unrelated."
+   ],
+   "key": "EVS-U1-074"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "If an island's food supply is halved by a cyclone, what happens to its carrying capacity for a deer population?",
+   "code": "",
+   "options": [
+    "It doubles",
+    "It falls",
+    "It remains the same",
+    "It becomes infinite"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Carrying capacity depends on resources, so reduced food lowers it. The deer population will tend to decline to match it.",
+   "why_wrong": [
+    "Food halved reduces capacity.",
+    "",
+    "Capacity depends on food supply.",
+    "No environment has infinite capacity."
+   ],
+   "key": "EVS-U1-075"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How many Sustainable Development Goals (SDGs) were adopted by the United Nations?",
+   "code": "",
+   "options": [
+    "17",
+    "8",
+    "12",
+    "20"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The UN adopted 17 SDGs in 2015 as part of the 2030 Agenda. They replaced the 8 Millennium Development Goals.",
+   "why_wrong": [
+    "",
+    "Eight was the number of Millennium Development Goals.",
+    "The UN adopted more than 12.",
+    "There are not 20 goals."
+   ],
+   "key": "EVS-U1-076"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "By which year are the SDGs meant to be achieved?",
+   "code": "",
+   "options": [
+    "2020",
+    "2025",
+    "2030",
+    "2050"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The SDGs are part of the 2030 Agenda for Sustainable Development. The target year is 2030.",
+   "why_wrong": [
+    "The target is later than this.",
+    "The target is later than this.",
+    "",
+    "The target is earlier than this."
+   ],
+   "key": "EVS-U1-077"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "SDG 1 aims at which of the following?",
+   "code": "",
+   "options": [
+    "Zero hunger",
+    "No poverty",
+    "Quality education",
+    "Climate action"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "SDG 1 is 'No Poverty', which seeks to end poverty everywhere. Zero hunger is SDG 2.",
+   "why_wrong": [
+    "This is SDG 2.",
+    "",
+    "This is SDG 4.",
+    "This is SDG 13."
+   ],
+   "key": "EVS-U1-078"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which SDG is about clean water and sanitation?",
+   "code": "",
+   "options": [
+    "SDG 6",
+    "SDG 4",
+    "SDG 7",
+    "SDG 13"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "SDG 6 deals with clean water and sanitation for all. Energy is SDG 7 and climate action is SDG 13.",
+   "why_wrong": [
+    "",
+    "SDG 4 is quality education.",
+    "SDG 7 is affordable and clean energy.",
+    "SDG 13 is climate action."
+   ],
+   "key": "EVS-U1-079"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "SDG 13 is concerned with which theme?",
+   "code": "",
+   "options": [
+    "Life below water",
+    "Climate action",
+    "Gender equality",
+    "Zero hunger"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "SDG 13 calls for urgent action to combat climate change and its impacts. Life below water is SDG 14.",
+   "why_wrong": [
+    "This is SDG 14.",
+    "",
+    "This is SDG 5.",
+    "This is SDG 2."
+   ],
+   "key": "EVS-U1-080"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The SDGs were adopted by the UN General Assembly in which year?",
+   "code": "",
+   "options": [
+    "1992",
+    "2000",
+    "2015",
+    "2022"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The UN General Assembly adopted the 2030 Agenda and its 17 SDGs in September 2015.",
+   "why_wrong": [
+    "This is the Rio Earth Summit year.",
+    "The Millennium Development Goals were set around 2000.",
+    "",
+    "This is much later than the adoption."
+   ],
+   "key": "EVS-U1-081"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which SDG focuses on 'Life on Land'?",
+   "code": "",
+   "options": [
+    "SDG 14",
+    "SDG 12",
+    "SDG 11",
+    "SDG 15"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "SDG 15 aims to protect and restore terrestrial ecosystems, forests and biodiversity. SDG 14 covers life below water.",
+   "why_wrong": [
+    "SDG 14 is life below water.",
+    "SDG 12 is responsible consumption and production.",
+    "SDG 11 is sustainable cities and communities.",
+    ""
+   ],
+   "key": "EVS-U1-082"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pairing of SDG number and theme is correct?",
+   "code": "",
+   "options": [
+    "SDG 7 - quality education for all",
+    "SDG 14 - action on climate change",
+    "SDG 7 - affordable and clean energy",
+    "SDG 12 - life on land and forests"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "SDG 7 stands for affordable and clean energy. The other options mismatch numbers and themes.",
+   "why_wrong": [
+    "Education is SDG 4.",
+    "Climate action is SDG 13.",
+    "",
+    "Life on land is SDG 15."
+   ],
+   "key": "EVS-U1-083"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which SDG is concerned with responsible consumption and production?",
+   "code": "",
+   "options": [
+    "SDG 9",
+    "SDG 12",
+    "SDG 10",
+    "SDG 16"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "SDG 12 promotes sustainable consumption and production patterns, including waste reduction. SDG 9 relates to industry and infrastructure.",
+   "why_wrong": [
+    "SDG 9 is industry, innovation and infrastructure.",
+    "",
+    "SDG 10 is reduced inequalities.",
+    "SDG 16 is peace, justice and strong institutions."
+   ],
+   "key": "EVS-U1-084"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The SDGs replaced which earlier set of global goals?",
+   "code": "",
+   "options": [
+    "Kyoto Protocol targets",
+    "Agenda 21 principles",
+    "Millennium Development Goals",
+    "Montreal Protocol schedules"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The SDGs followed the 8 Millennium Development Goals, which ran to 2015. The SDGs are broader and cover environmental issues more fully.",
+   "why_wrong": [
+    "Kyoto set emission targets, not development goals.",
+    "Agenda 21 was an earlier action plan.",
+    "",
+    "Montreal concerns ozone-depleting substances."
+   ],
+   "key": "EVS-U1-085"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which one of these is NOT one of the 17 SDG themes?",
+   "code": "",
+   "options": [
+    "Ban on international travel",
+    "Gender equality",
+    "Reduced inequalities",
+    "Partnerships for the goals"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Gender equality (5), reduced inequalities (10) and partnerships for the goals (17) are SDGs. A ban on travel is not a goal.",
+   "why_wrong": [
+    "",
+    "This is SDG 5.",
+    "This is SDG 10.",
+    "This is SDG 17."
+   ],
+   "key": "EVS-U1-086"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A village builds a solar mini-grid for homes and a school. Which SDG is MOST directly served?",
+   "code": "",
+   "options": [
+    "SDG 14 - life below water",
+    "SDG 2 - zero hunger",
+    "SDG 7 - affordable and clean energy",
+    "SDG 16 - peace and justice"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A solar mini-grid provides clean energy, directly serving SDG 7. It may help other goals indirectly.",
+   "why_wrong": [
+    "The project does not address marine life.",
+    "It does not directly address food supply.",
+    "",
+    "It does not directly address institutions or justice."
+   ],
+   "key": "EVS-U1-087"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which SDG is most closely linked to protecting oceans and marine resources?",
+   "code": "",
+   "options": [
+    "SDG 6",
+    "SDG 14",
+    "SDG 13",
+    "SDG 15"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "SDG 14 is 'Life Below Water', which concerns conservation of oceans, seas and marine resources.",
+   "why_wrong": [
+    "SDG 6 is clean water and sanitation.",
+    "",
+    "SDG 13 is climate action.",
+    "SDG 15 is life on land."
+   ],
+   "key": "EVS-U1-088"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement about the SDGs is correct?",
+   "code": "",
+   "options": [
+    "They are universal, applying to all countries, and are integrated and indivisible",
+    "They apply only to developing countries, in most situations",
+    "They deal only with environmental issues, according to some views",
+    "They are legally binding treaties with penalties, under usual conditions"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The SDGs apply to every nation and link economic, social and environmental concerns. They are not legally binding.",
+   "why_wrong": [
+    "",
+    "They apply to all countries.",
+    "They cover social and economic goals too.",
+    "They are voluntary goals, not binding treaties."
+   ],
+   "key": "EVS-U1-089"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Match the SDG to its theme: which is correct?",
+   "code": "",
+   "options": [
+    "SDG 2 - no poverty",
+    "SDG 2 - zero hunger",
+    "SDG 3 - quality education",
+    "SDG 5 - clean energy"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "SDG 2 is zero hunger, whereas SDG 1 is no poverty and SDG 4 is quality education.",
+   "why_wrong": [
+    "No poverty is SDG 1.",
+    "",
+    "Quality education is SDG 4.",
+    "Gender equality is SDG 5."
+   ],
+   "key": "EVS-U1-090"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A town planner describes the 'environment' of her city as the lake, the factory, the slum and the temple festival crowd together. Which view of environment does this reflect?",
+   "code": "",
+   "options": [
+    "Only the untouched natural surroundings in most cases",
+    "Only the living organisms of an area in most cases",
+    "Only air, water and soil",
+    "All natural and human-made surroundings"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Environment is the total of everything that surrounds and influences an organism, so it is not limited to nature alone.",
+   "why_wrong": [
+    "A factory and a slum are human-made, so excluding them narrows environment wrongly.",
+    "Living things are just the biotic part; surroundings also include non-living and human-made elements.",
+    "These are physical components only and leave out biological and social dimensions.",
+    ""
+   ],
+   "key": "EVS-U1-101"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A factory discharges effluent into a river, fish die, and farmers downstream lose yield. Which idea about the environment does this chain best show?",
+   "code": "",
+   "options": [
+    "Each component of the environment works in isolation",
+    "Only human activities form part of the environment",
+    "Disturbance in one part spreads to others",
+    "Water pollution affects only the aquatic organisms"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Components of the environment are interconnected, so pollution of water affects organisms and then human livelihoods.",
+   "why_wrong": [
+    "If components were isolated, downstream farmers would not be affected.",
+    "The river, fish and soil are natural parts too, so this is incorrect.",
+    "",
+    "Irrigation with polluted water also hurts crops, so effects are not confined to fish."
+   ],
+   "key": "EVS-U1-102"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement correctly separates 'environment' from 'ecosystem'?",
+   "code": "",
+   "options": [
+    "Ecosystem is a functional system; environment is the surroundings",
+    "They are exact synonyms with no difference",
+    "Environment contains only biotic parts and ecosystem only abiotic parts",
+    "Ecosystem is limited to one species' habitat while environment covers the whole biosphere"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Environment refers to the external conditions around an organism, whereas an ecosystem is the interacting system of living and non-living parts with energy flow and nutrient cycling.",
+   "why_wrong": [
+    "",
+    "They differ in scope: one is surroundings, the other a functional system.",
+    "Both involve living and non-living parts; neither is restricted to one type.",
+    "An ecosystem involves many species and can be any scale, so this reverses the idea."
+   ],
+   "key": "EVS-U1-103"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A village replaces mud huts and open fields with concrete houses, roads and a power plant. Which type of environment has expanded?",
+   "code": "",
+   "options": [
+    "Natural environment",
+    "Only the biotic environment",
+    "Only the atmospheric environment",
+    "Built (human-made) environment"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Houses, roads and power plants are constructed by humans, forming the built or human-made environment.",
+   "why_wrong": [
+    "Natural environment consists of features not created by people, such as forests and rivers.",
+    "Concrete structures are non-living, so they are not biotic.",
+    "Roads and buildings are not part of the air envelope.",
+    ""
+   ],
+   "key": "EVS-U1-104"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "The term 'ecology' was coined in 1866 by a German biologist. Who was he, and what does the Greek root 'oikos' mean?",
+   "code": "",
+   "options": [
+    "Charles Elton; the study of nature",
+    "A. G. Tansley; energy",
+    "Ernst Haeckel; house or home",
+    "Eugene Odum; water"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ernst Haeckel coined 'ecology' from the Greek oikos (house/home) and logos (study), meaning study of organisms in their home.",
+   "why_wrong": [
+    "Elton was a later ecologist, and oikos means house, not study.",
+    "Tansley coined 'ecosystem' in 1935, and oikos does not mean energy.",
+    "",
+    "Odum wrote on ecosystem ecology but did not coin the term, and oikos is not water."
+   ],
+   "key": "EVS-U1-105"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A surveyor listing features of a coastal district sorts them into natural and human-made. Which item belongs to the human-made group?",
+   "code": "",
+   "options": [
+    "An irrigation canal cut across the delta",
+    "A mangrove swamp at the river mouth under normal conditions",
+    "The monsoon wind from the sea under normal conditions",
+    "A coral reef offshore"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A canal is constructed by people, whereas the other features occur without human construction.",
+   "why_wrong": [
+    "",
+    "Mangroves grow naturally, so they are part of the natural environment.",
+    "Wind is an atmospheric phenomenon, not human-made.",
+    "Reefs are built by living corals, so they are natural."
+   ],
+   "key": "EVS-U1-106"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which description matches the legal definition of environment in India's Environment (Protection) Act, 1986?",
+   "code": "",
+   "options": [
+    "Only air, water and land as physical media, excluding living beings",
+    "Water, air, land and their links with living things and property",
+    "Only the flora and fauna of notified protected forests",
+    "Only natural resources used for commercial purposes"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The Act defines environment broadly as water, air and land plus the inter-relationship between them and all living beings and property.",
+   "why_wrong": [
+    "The Act explicitly includes living creatures, plants and micro-organisms and their inter-relationships.",
+    "",
+    "The definition is not limited to protected forests or to biological components.",
+    "The Act does not restrict environment to commercially used resources."
+   ],
+   "key": "EVS-U1-107"
+  },
+  {
+   "topic": "Introduction to environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A delayed monsoon raises vegetable prices in city markets and forces farmers to sow late. This shows that",
+   "code": "",
+   "options": [
+    "nature influences social and economic systems",
+    "social systems operate independently of nature",
+    "only man-made factors determine prices",
+    "economic systems influence rainfall directly"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Rainfall is a natural factor, and its change affects agriculture, markets and household budgets.",
+   "why_wrong": [
+    "",
+    "The price rise shows dependence on rainfall, not independence.",
+    "The monsoon is a natural factor that clearly altered prices.",
+    "Here rainfall influenced the economy, not the reverse."
+   ],
+   "key": "EVS-U1-108"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a paddy field an ecologist notes Azolla, dissolved oxygen, frogs, soil pH and sunlight. How many of these are abiotic factors?",
+   "code": "",
+   "options": [
+    "Two",
+    "Four in most cases",
+    "Five",
+    "Three"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Dissolved oxygen, soil pH and sunlight are non-living, while Azolla (a plant) and frogs are living.",
+   "why_wrong": [
+    "A third non-living item remains: dissolved oxygen, soil pH and sunlight are all abiotic.",
+    "Azolla and frogs are living, so only three items are abiotic.",
+    "Two of the five are living organisms, so not all are abiotic.",
+    ""
+   ],
+   "key": "EVS-U1-109"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A botanist records soil pH, soil texture, rainfall and wind speed. Which two are edaphic factors?",
+   "code": "",
+   "options": [
+    "Rainfall and wind speed",
+    "Soil pH and soil texture",
+    "Soil pH and rainfall",
+    "Soil texture and wind speed"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Edaphic factors relate to soil, so pH and texture qualify; rainfall and wind are climatic.",
+   "why_wrong": [
+    "These are climatic factors, not soil factors.",
+    "",
+    "Rainfall is climatic, so this pair mixes types.",
+    "Wind speed is climatic, so this pair mixes types."
+   ],
+   "key": "EVS-U1-110"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "After a week of heavy cloud, algae in a village pond release much less oxygen. Which abiotic component is limiting?",
+   "code": "",
+   "options": [
+    "Light, the energy source for photosynthesis",
+    "Soil texture",
+    "The number of herbivores for the most part as a general rule",
+    "Pond bed rock type for the most part as a general rule"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Reduced sunlight lowers photosynthesis, which lowers oxygen output by algae.",
+   "why_wrong": [
+    "",
+    "Soil texture does not control photosynthetic oxygen release in a pond within a week.",
+    "Herbivores are biotic, and the cause here is the cloud cover.",
+    "Rock type does not change with cloud cover."
+   ],
+   "key": "EVS-U1-111"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "In a grassland food chain of grass, grasshopper, frog, snake and hawk, which statement is correct?",
+   "code": "",
+   "options": [
+    "The grasshopper is a secondary consumer",
+    "The hawk is a tertiary consumer",
+    "The snake is a tertiary consumer",
+    "The frog is a primary consumer"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Grasshopper is primary, frog secondary, snake tertiary and hawk quaternary consumer.",
+   "why_wrong": [
+    "It feeds on grass, a producer, so it is a primary consumer.",
+    "The hawk is one level beyond the snake, making it a quaternary consumer.",
+    "",
+    "The frog eats grasshoppers, so it is a secondary consumer."
+   ],
+   "key": "EVS-U1-112"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Cow dung dropped in a field is gradually broken down and its nutrients return to the soil. Which group is mainly responsible?",
+   "code": "",
+   "options": [
+    "Producers such as grasses",
+    "Decomposers such as fungi and bacteria",
+    "Primary consumers such as grasshoppers in most cases",
+    "Tertiary consumers such as snakes in most cases"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Decomposers break down dead and waste organic matter and release nutrients for producers.",
+   "why_wrong": [
+    "Producers make food by photosynthesis and do not break down dung.",
+    "",
+    "Primary consumers eat plants, not dung decomposition products as a main role.",
+    "Predators feed on animals and do not recycle dung nutrients."
+   ],
+   "key": "EVS-U1-113"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "An algal bloom depletes dissolved oxygen in a lake and fish die. Which description of the components involved is accurate?",
+   "code": "",
+   "options": [
+    "Only abiotic components interacted under normal conditions for the most part",
+    "Only biotic components interacted",
+    "No component interacted; it was a random event under normal conditions",
+    "Biotic change altered an abiotic factor, which hit other biotic life"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Algae (biotic) lowered oxygen (abiotic) and the fish (biotic) suffered, showing interactions among components.",
+   "why_wrong": [
+    "Algae and fish are living, so biotic components were involved.",
+    "Dissolved oxygen is an abiotic factor that carried the effect.",
+    "The sequence shows linked cause and effect among components.",
+    ""
+   ],
+   "key": "EVS-U1-114"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A meteorologist records humidity, temperature, wind and precipitation at a hill station. These belong to which group of factors?",
+   "code": "",
+   "options": [
+    "Edaphic biotic factors",
+    "Biotic climatic factors",
+    "Climatic abiotic factors",
+    "Topographic biotic factors"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "They are non-living atmospheric conditions that together describe climate.",
+   "why_wrong": [
+    "Edaphic means soil-related and these are neither biotic nor soil factors.",
+    "Biotic means living, and these are non-living.",
+    "",
+    "They are not about land shape and are not living."
+   ],
+   "key": "EVS-U1-115"
+  },
+  {
+   "topic": "Components of environment",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Earthworms and fungi both act on dead matter. Which statement distinguishes them correctly?",
+   "code": "",
+   "options": [
+    "Earthworms ingest and fragment detritus; fungi digest it externally",
+    "Both are producers that fix carbon",
+    "Fungi ingest detritus and earthworms digest it externally as a general rule",
+    "Earthworms are decomposers and fungi are detritivores as a general rule"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Detritivores swallow organic debris; decomposers secrete enzymes outside the body and absorb the products.",
+   "why_wrong": [
+    "",
+    "Neither is a producer; both feed on organic matter.",
+    "This reverses their modes of feeding.",
+    "The labels are swapped."
+   ],
+   "key": "EVS-U1-116"
+  },
+  {
+   "topic": "Lithosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A geologist explains that India's tectonic plate is a rigid slab moving over a softer layer. The slab corresponds to which realm?",
+   "code": "",
+   "options": [
+    "The asthenosphere in most cases under normal conditions",
+    "The troposphere in most cases under normal conditions",
+    "The lithosphere (crust plus rigid upper mantle)",
+    "The outer core"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Tectonic plates are pieces of the lithosphere, which rides over the weaker asthenosphere.",
+   "why_wrong": [
+    "This is the weaker layer beneath the plates, not the plate itself.",
+    "This is the lowest layer of the atmosphere.",
+    "",
+    "This is a liquid layer deep inside the Earth, not a plate."
+   ],
+   "key": "EVS-U1-117"
+  },
+  {
+   "topic": "Lithosphere",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about the lithosphere is correct?",
+   "code": "",
+   "options": [
+    "It consists of the crust only",
+    "Crust plus the rigid uppermost mantle",
+    "It includes the whole mantle down to the outer core",
+    "It is the gaseous envelope above the crust"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The lithosphere is the strong outer shell of Earth including crust and top mantle.",
+   "why_wrong": [
+    "It also includes the rigid uppermost mantle.",
+    "",
+    "Only the top rigid part of the mantle is included.",
+    "That describes the atmosphere."
+   ],
+   "key": "EVS-U1-118"
+  },
+  {
+   "topic": "Lithosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Rain and lichens slowly break a granite outcrop in the Western Ghats into soil. What does this show about Earth's realms?",
+   "code": "",
+   "options": [
+    "All four realms interact in soil formation",
+    "The realms are completely independent for the most part",
+    "Only the lithosphere is involved for the most part",
+    "Only the biosphere acts on rock"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Rock (lithosphere), water, air and organisms jointly drive weathering.",
+   "why_wrong": [
+    "",
+    "Weathering needs inputs from several realms.",
+    "Rain and lichens are from other realms.",
+    "Water and air also weather rock."
+   ],
+   "key": "EVS-U1-119"
+  },
+  {
+   "topic": "Lithosphere",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A seismologist notes an abrupt change in seismic wave speed at the Mohorovicic discontinuity. Which two layers does it separate?",
+   "code": "",
+   "options": [
+    "Mantle and outer core",
+    "Outer core and inner core",
+    "Crust and mantle",
+    "Lithosphere and atmosphere"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The Moho is the boundary between the Earth's crust and the mantle below.",
+   "why_wrong": [
+    "That boundary is the Gutenberg discontinuity.",
+    "That boundary is the Lehmann discontinuity.",
+    "",
+    "The Moho is inside the solid Earth, not at the surface."
+   ],
+   "key": "EVS-U1-120"
+  },
+  {
+   "topic": "Hydrosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Villages below a Himalayan glacier depend on its melt. Which store holds the largest share of Earth's fresh water, of which this glacier is a tiny part?",
+   "code": "",
+   "options": [
+    "Ice caps and glaciers",
+    "Rivers and lakes",
+    "Groundwater",
+    "Atmospheric water vapour"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Most fresh water is locked in polar ice caps and glaciers rather than lakes, rivers or groundwater.",
+   "why_wrong": [
+    "",
+    "These hold only a very small fraction of fresh water.",
+    "It is large but smaller than the ice store.",
+    "It is a tiny fraction of fresh water."
+   ],
+   "key": "EVS-U1-121"
+  },
+  {
+   "topic": "Hydrosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student claims most of Earth's water is fresh and easily usable. Which correction is accurate?",
+   "code": "",
+   "options": [
+    "About 97 percent of the hydrosphere is fresh river water under normal conditions",
+    "Oceans hold only about 10 percent of Earth's water under normal conditions",
+    "Groundwater makes up most of the hydrosphere",
+    "About 97 percent of the hydrosphere is saline ocean water"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Most water is saline, and most of the small fresh share is frozen, so little is readily usable.",
+   "why_wrong": [
+    "Rivers hold a tiny share and most water is saline.",
+    "Oceans hold the vast majority.",
+    "Groundwater is a small share compared to oceans.",
+    ""
+   ],
+   "key": "EVS-U1-122"
+  },
+  {
+   "topic": "Hydrosphere",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Rain falls on a field, soaks into the soil surface, and later reaches the water table. Which processes occur in order?",
+   "code": "",
+   "options": [
+    "Runoff, then evaporation",
+    "Infiltration, then percolation",
+    "Transpiration, then condensation",
+    "Percolation, then infiltration"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Water first enters the soil surface (infiltration) and then moves downward through soil and rock (percolation).",
+   "why_wrong": [
+    "Runoff is flow over the surface, which does not describe soaking in.",
+    "",
+    "These involve water going into the air, not downward.",
+    "This reverses the correct order."
+   ],
+   "key": "EVS-U1-123"
+  },
+  {
+   "topic": "Hydrosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Farmers in Punjab pump borewells faster than the monsoon refills them. Which hydrosphere store is being depleted?",
+   "code": "",
+   "options": [
+    "Polar ice caps",
+    "Atmospheric vapour as a general rule",
+    "Ocean surface water as a general rule",
+    "Groundwater in aquifers"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Borewells draw from groundwater, and extraction beyond recharge lowers the water table.",
+   "why_wrong": [
+    "Borewells do not tap polar ice.",
+    "Pumping does not remove water vapour from the air.",
+    "Borewells draw from aquifers, not the open ocean.",
+    ""
+   ],
+   "key": "EVS-U1-124"
+  },
+  {
+   "topic": "Atmosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A pilot climbs above storm clouds to a smoother cruising altitude. In which layer do clouds and storms normally occur?",
+   "code": "",
+   "options": [
+    "Stratosphere",
+    "Mesosphere",
+    "Thermosphere",
+    "Troposphere"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Weather such as clouds, rain and storms occurs in the lowest layer, the troposphere.",
+   "why_wrong": [
+    "This layer lies above and is relatively calm.",
+    "This layer is far higher and has no usual weather.",
+    "This is very high and contains the ionosphere, not clouds.",
+    ""
+   ],
+   "key": "EVS-U1-125"
+  },
+  {
+   "topic": "Atmosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A news report on thinning of the ozone layer over Antarctica refers to ozone mainly located in which layer?",
+   "code": "",
+   "options": [
+    "Troposphere under normal conditions",
+    "Mesosphere",
+    "Exosphere",
+    "Stratosphere"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The ozone layer is concentrated in the stratosphere, where it absorbs harmful UV radiation.",
+   "why_wrong": [
+    "Ozone here is a pollutant, not the protective layer.",
+    "Ozone is minimal at this height.",
+    "This is the outermost layer and has no ozone layer.",
+    ""
+   ],
+   "key": "EVS-U1-126"
+  },
+  {
+   "topic": "Atmosphere",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Temperature rises with height in the stratosphere. What is the main reason?",
+   "code": "",
+   "options": [
+    "Ozone absorbs ultraviolet radiation and releases heat",
+    "It is closer to the heat of the Earth's surface for the most part",
+    "Meteors burn there continuously for the most part as a general rule",
+    "Clouds trap heat there"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Absorption of UV by ozone heats the upper stratosphere.",
+   "why_wrong": [
+    "",
+    "The troposphere is closer to the surface, and the stratosphere is farther.",
+    "Meteors burn mostly in the mesosphere and do not explain the trend.",
+    "Clouds are in the troposphere."
+   ],
+   "key": "EVS-U1-127"
+  },
+  {
+   "topic": "Atmosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student says that air is mostly oxygen. Which correction about dry air by volume is right?",
+   "code": "",
+   "options": [
+    "Oxygen is about 78 percent and nitrogen about 21 percent as a general rule",
+    "Carbon dioxide is about 78 percent as a general rule in most cases",
+    "Nitrogen is about 78 percent and oxygen about 21 percent",
+    "Argon is about 78 percent"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Nitrogen is the most abundant gas, followed by oxygen at roughly one fifth.",
+   "why_wrong": [
+    "The values are swapped.",
+    "CO2 is a trace gas.",
+    "",
+    "Argon is under 1 percent."
+   ],
+   "key": "EVS-U1-128"
+  },
+  {
+   "topic": "Atmosphere",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "The ionosphere, which reflects radio waves, is mainly located in which layer?",
+   "code": "",
+   "options": [
+    "Troposphere",
+    "Stratosphere in most cases",
+    "Thermosphere",
+    "Exosphere"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ionisation by solar radiation produces charged particles in the thermosphere that reflect radio waves.",
+   "why_wrong": [
+    "Weather occurs here, not the ionosphere.",
+    "Ozone is dominant here.",
+    "",
+    "The ionosphere does not mainly lie in this outermost layer."
+   ],
+   "key": "EVS-U1-129"
+  },
+  {
+   "topic": "Biosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Bacteria thrive at deep-sea vents and birds fly several kilometres above ground. What does this show about the biosphere?",
+   "code": "",
+   "options": [
+    "It is a separate layer apart from other realms under normal conditions",
+    "It is limited to land surfaces",
+    "A thin zone overlapping the other three realms",
+    "It is the same as the atmosphere under normal conditions"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Life exists wherever conditions allow across the other three realms.",
+   "why_wrong": [
+    "It overlaps the others.",
+    "Life exists in water and air as well.",
+    "",
+    "The biosphere includes more than the atmosphere."
+   ],
+   "key": "EVS-U1-130"
+  },
+  {
+   "topic": "Biosphere",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about the biosphere is NOT true?",
+   "code": "",
+   "options": [
+    "It is the zone of Earth where life exists",
+    "It overlaps the lithosphere, hydrosphere and atmosphere",
+    "It receives no energy from outside Earth",
+    "Matter is largely recycled within it"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The biosphere depends on solar energy from outside, so it is an open system for energy.",
+   "why_wrong": [
+    "This is the standard definition.",
+    "This is correct.",
+    "",
+    "Nutrients cycle within the biosphere."
+   ],
+   "key": "EVS-U1-131"
+  },
+  {
+   "topic": "Biosphere",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A mangrove leaf in the Sundarbans photosynthesises. Which two realms exchange carbon first in this process?",
+   "code": "",
+   "options": [
+    "Atmosphere and biosphere",
+    "Lithosphere and atmosphere",
+    "Hydrosphere and lithosphere",
+    "Hydrosphere and atmosphere"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The leaf takes carbon dioxide from air and fixes it into organic matter.",
+   "why_wrong": [
+    "",
+    "Carbon enters the plant from air, and rock is not the direct exchange.",
+    "Neither is the first exchange in leaf photosynthesis.",
+    "Photosynthesis in a living leaf links the atmosphere with the biosphere first."
+   ],
+   "key": "EVS-U1-132"
+  },
+  {
+   "topic": "Multidisciplinary nature and scope",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A flood management project needs hydrologists, economists, sociologists and lawyers. This best illustrates",
+   "code": "",
+   "options": [
+    "its dependence on a single branch of biology in most cases",
+    "the multidisciplinary nature of environmental studies",
+    "its restriction to laboratory work in most cases under normal conditions",
+    "its limitation to legal studies"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Environmental problems involve science, society, economics and law, so many disciplines must work together.",
+   "why_wrong": [
+    "The team spans many fields.",
+    "",
+    "Flood management goes beyond labs.",
+    "Law is only one of the disciplines involved."
+   ],
+   "key": "EVS-U1-133"
+  },
+  {
+   "topic": "Multidisciplinary nature and scope",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which pairing of discipline and contribution to environmental studies is correct?",
+   "code": "",
+   "options": [
+    "Chemistry: mapping species distribution under normal conditions",
+    "Economics: valuing costs and benefits of decisions",
+    "Sociology: measuring soil pH",
+    "Law: calculating population growth rate under normal conditions"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Economics helps price ecosystem services and weigh costs against benefits.",
+   "why_wrong": [
+    "Mapping species is biology and geography.",
+    "",
+    "Soil pH is measured by soil science or chemistry.",
+    "Population rates are demographic."
+   ],
+   "key": "EVS-U1-134"
+  },
+  {
+   "topic": "Multidisciplinary nature and scope",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A panchayat starts fining littering after a village awareness campaign. Which objective of environmental studies is served?",
+   "code": "",
+   "options": [
+    "Maximising short-term industrial profit for the most part",
+    "Replacing all social sciences with natural science for the most part",
+    "Removing the need for any laws",
+    "Awareness and attitude change to protect the environment"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Awareness leads to attitude and behaviour change.",
+   "why_wrong": [
+    "This is not an objective of environmental studies.",
+    "Environmental studies is multidisciplinary.",
+    "Fines show laws remain in use.",
+    ""
+   ],
+   "key": "EVS-U1-135"
+  },
+  {
+   "topic": "Multidisciplinary nature and scope",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A councillor says technology alone can fix a city's air pollution. What is the best counterpoint?",
+   "code": "",
+   "options": [
+    "Pollution has social and behavioural causes too",
+    "Technology has no role in solving environmental problems",
+    "Air pollution has only natural causes",
+    "Only governments, never citizens, can act"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Environmental problems need policy, awareness and lifestyle change together with technology.",
+   "why_wrong": [
+    "",
+    "Technology helps but is not enough alone.",
+    "Human activity contributes heavily.",
+    "Citizen behaviour matters."
+   ],
+   "key": "EVS-U1-136"
+  },
+  {
+   "topic": "Multidisciplinary nature and scope",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A forest is protected because it has intrinsic value apart from any use to humans. Which ethical view does this reflect?",
+   "code": "",
+   "options": [
+    "Anthropocentric view",
+    "Ecocentric view",
+    "Purely commercial view",
+    "Industrial view"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Ecocentrism assigns value to ecosystems and nature for their own sake.",
+   "why_wrong": [
+    "This values nature only for human benefit.",
+    "",
+    "It values nature only as a commodity.",
+    "It prioritises production over protection."
+   ],
+   "key": "EVS-U1-137"
+  },
+  {
+   "topic": "Multidisciplinary nature and scope",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A B.Tech student says EVS is only for biology majors. Which rebuttal is most appropriate?",
+   "code": "",
+   "options": [
+    "Engineering never affects the environment under normal conditions",
+    "Only biologists can be affected by pollution under normal conditions",
+    "EVS contains no science",
+    "Designs affect resource use, so engineers need this knowledge"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Engineers design systems that consume resources and create waste, so they need environmental understanding.",
+   "why_wrong": [
+    "Engineered projects often affect it greatly.",
+    "Pollution affects everyone.",
+    "It includes science and social aspects.",
+    ""
+   ],
+   "key": "EVS-U1-138"
+  },
+  {
+   "topic": "Multidisciplinary nature and scope",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about the scope of environmental studies is accurate?",
+   "code": "",
+   "options": [
+    "Resources, ecosystems, biodiversity, pollution and society",
+    "It is restricted to wildlife protection for the most part as a general rule",
+    "It is restricted to measuring pollution for the most part",
+    "It is restricted to climate science"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The scope is broad, spanning resources, ecology, pollution and social dimensions.",
+   "why_wrong": [
+    "",
+    "It covers far more than wildlife.",
+    "Measurement is one small part.",
+    "Climate is only one topic."
+   ],
+   "key": "EVS-U1-139"
+  },
+  {
+   "topic": "Multidisciplinary nature and scope",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A mangrove restoration team includes a botanist, an economist and local fisherfolk who describe how the community uses the coast. Which dimension does the fisherfolk input mainly add?",
+   "code": "",
+   "options": [
+    "A purely chemical dimension",
+    "The social and cultural dimension",
+    "A purely geological dimension as a general rule",
+    "A purely astronomical dimension as a general rule"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Local communities supply knowledge of use, dependence and values, which natural science alone cannot.",
+   "why_wrong": [
+    "Fisherfolk testimony is not chemical analysis.",
+    "",
+    "It does not concern rock formation.",
+    "It is unrelated to astronomy."
+   ],
+   "key": "EVS-U1-140"
+  },
+  {
+   "topic": "Concept of sustainability",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A council allows harvest of forest produce only at a rate that lets the forest regrow for its grandchildren. Which concept does this match?",
+   "code": "",
+   "options": [
+    "Meeting present needs without harming future generations",
+    "Unlimited growth",
+    "Complete ban on resource use in most cases under normal conditions",
+    "Maximum short-term extraction in most cases under normal conditions"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "This matches the Brundtland definition.",
+   "why_wrong": [
+    "",
+    "It ignores future needs and resource limits.",
+    "Sustainable development allows use within limits.",
+    "It exhausts the resource for the future."
+   ],
+   "key": "EVS-U1-141"
+  },
+  {
+   "topic": "Concept of sustainability",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "The widely used definition of sustainable development was popularised by a UN commission chaired by whom?",
+   "code": "",
+   "options": [
+    "Gro Harlem Brundtland",
+    "Rachel Carson",
+    "Maurice Strong under normal conditions",
+    "Wangari Maathai under normal conditions"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The commission's 1987 report Our Common Future popularised the definition.",
+   "why_wrong": [
+    "",
+    "She wrote Silent Spring and did not chair this commission.",
+    "He led the Stockholm and Rio conferences, not this commission.",
+    "She founded the Green Belt Movement, not this commission."
+   ],
+   "key": "EVS-U1-142"
+  },
+  {
+   "topic": "Concept of sustainability",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A company burns coal for most of its power but adds a small solar plant and claims to be sustainable. What is the best critique?",
+   "code": "",
+   "options": [
+    "Any small solar plant makes a firm fully sustainable for the most part",
+    "Coal is renewable",
+    "Coal is non-renewable and polluting, whatever the solar share",
+    "Sustainability concerns only profit for the most part as a general rule"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Heavy coal use depletes a finite resource and emits pollutants.",
+   "why_wrong": [
+    "A token plant does not offset the main impact.",
+    "Coal takes millions of years to form.",
+    "",
+    "It also concerns society and the environment."
+   ],
+   "key": "EVS-U1-143"
+  },
+  {
+   "topic": "Concept of sustainability",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "How does sustainability differ from sustainable development?",
+   "code": "",
+   "options": [
+    "They are identical in every respect",
+    "Sustainability is the goal; sustainable development is the process",
+    "Sustainable development is the goal and sustainability is a policy as a general rule",
+    "Sustainability applies only to economics as a general rule in most cases"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Sustainability is the end state, and sustainable development is the pathway.",
+   "why_wrong": [
+    "They are related but not identical.",
+    "",
+    "This reverses them.",
+    "It applies to environment and society too."
+   ],
+   "key": "EVS-U1-144"
+  },
+  {
+   "topic": "Concept of sustainability",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Fishers in Kerala observe a seasonal trawling ban during the monsoon breeding season. Which principle is applied?",
+   "code": "",
+   "options": [
+    "Harvesting as much as possible at all times in most cases",
+    "Harvesting no faster than the stock regenerates",
+    "Ignoring breeding seasons",
+    "Switching to non-living resources only in most cases"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The ban lets fish stocks breed and recover.",
+   "why_wrong": [
+    "This depletes stocks.",
+    "",
+    "The ban exists because of breeding.",
+    "The aim is to manage renewable stocks."
+   ],
+   "key": "EVS-U1-145"
+  },
+  {
+   "topic": "Concept of sustainability",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A policy compensates villagers displaced by a dam, treating today's affected poor fairly. Which equity does this represent?",
+   "code": "",
+   "options": [
+    "Intergenerational equity under normal conditions",
+    "Intragenerational equity",
+    "Inter-species equity under normal conditions",
+    "Industrial equity"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "It concerns fairness among people living in the present generation.",
+   "why_wrong": [
+    "This concerns fairness between present and future generations.",
+    "",
+    "This concerns fairness between species.",
+    "This is not a standard sustainability concept."
+   ],
+   "key": "EVS-U1-146"
+  },
+  {
+   "topic": "Concept of sustainability",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A municipal planner refers to the global action plan for sustainable development adopted at the 1992 Rio Earth Summit. Which plan is meant?",
+   "code": "",
+   "options": [
+    "Kyoto Protocol",
+    "Montreal Protocol",
+    "Ramsar Convention",
+    "Agenda 21"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Agenda 21 was the action plan adopted at the 1992 Rio Summit.",
+   "why_wrong": [
+    "It deals with greenhouse gas reduction, adopted in 1997.",
+    "It concerns ozone-depleting substances.",
+    "It concerns wetlands.",
+    ""
+   ],
+   "key": "EVS-U1-147"
+  },
+  {
+   "topic": "Pillars of sustainability",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A solar plant in Gujarat cuts emissions, employs local people and lowers electricity cost. Which pillars does it serve?",
+   "code": "",
+   "options": [
+    "Environmental only as a general rule",
+    "Environmental, social and economic",
+    "Economic only",
+    "Environmental and technological as a general rule"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "It reduces emissions (environmental), gives jobs (social) and saves cost (economic).",
+   "why_wrong": [
+    "It also gives jobs and lowers cost.",
+    "",
+    "It also reduces emissions and creates jobs.",
+    "Technological is not one of the three standard pillars."
+   ],
+   "key": "EVS-U1-148"
+  },
+  {
+   "topic": "Pillars of sustainability",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A profitable factory employs many workers but dumps untreated effluent in a river. Which pillar is neglected and what follows?",
+   "code": "",
+   "options": [
+    "Economic; it is unprofitable in most cases under normal conditions",
+    "Social; it has no workers",
+    "Environmental; the project is unsustainable in the long run",
+    "None; all three are served in most cases under normal conditions"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ignoring the environmental pillar degrades resources that the economy and society depend on.",
+   "why_wrong": [
+    "The factory is profitable, so the economic pillar is served.",
+    "It employs many workers.",
+    "",
+    "The effluent shows the environment is neglected."
+   ],
+   "key": "EVS-U1-149"
+  },
+  {
+   "topic": "Pillars of sustainability",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A firm's report uses the 'people, planet, profit' framework. Which pillar does 'planet' stand for?",
+   "code": "",
+   "options": [
+    "Social",
+    "Economic under normal conditions",
+    "Environmental",
+    "Technological under normal conditions"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Planet corresponds to the environmental pillar.",
+   "why_wrong": [
+    "People corresponds to the social pillar.",
+    "Profit corresponds to the economic pillar.",
+    "",
+    "It is not a standard pillar."
+   ],
+   "key": "EVS-U1-150"
+  },
+  {
+   "topic": "Pillars of sustainability",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In the Venn diagram of sustainability, the overlap of the environmental and economic pillars is called",
+   "code": "",
+   "options": [
+    "Bearable",
+    "Equitable",
+    "Viable",
+    "Unsustainable"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Environmental plus economic gives viable, social plus economic gives equitable, and environmental plus social gives bearable.",
+   "why_wrong": [
+    "This is environmental plus social.",
+    "This is social plus economic.",
+    "",
+    "It is not a standard overlap label."
+   ],
+   "key": "EVS-U1-151"
+  },
+  {
+   "topic": "Pillars of sustainability",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A leather town has a clean river and strong profits but widespread child labour and no safety nets. Which pillar is weak?",
+   "code": "",
+   "options": [
+    "Social",
+    "Environmental",
+    "Economic",
+    "Technological"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Child labour and lack of protection indicate a weak social pillar.",
+   "why_wrong": [
+    "",
+    "The river is clean.",
+    "Profits are strong.",
+    "It is not a standard pillar."
+   ],
+   "key": "EVS-U1-152"
+  },
+  {
+   "topic": "Pillars of sustainability",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In the nested model of sustainability, how are the pillars arranged?",
+   "code": "",
+   "options": [
+    "Environment sits within the economy",
+    "Three unrelated circles with no overlap",
+    "Economy at the centre with environment as an externality",
+    "Economy within society within the environment"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The nested model shows dependence on the environment as the base.",
+   "why_wrong": [
+    "This reverses dependence.",
+    "The nested model shows nesting.",
+    "This is not the nested model's view.",
+    ""
+   ],
+   "key": "EVS-U1-153"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "The deer population on an island rises quickly, then levels off near a constant number. What does this plateau represent?",
+   "code": "",
+   "options": [
+    "Biotic potential",
+    "Exponential phase",
+    "Carrying capacity",
+    "Extinction threshold"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The plateau is the maximum population the environment can support.",
+   "why_wrong": [
+    "This is the maximum growth rate, not the plateau.",
+    "This is the rapid growth stage.",
+    "",
+    "It is not a plateau."
+   ],
+   "key": "EVS-U1-154"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about carrying capacity is correct?",
+   "code": "",
+   "options": [
+    "It is fixed for all time",
+    "It changes with resources, technology and consumption",
+    "It is the same for all species for the most part as a general rule",
+    "It depends only on birth rate for the most part as a general rule"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Carrying capacity is not fixed.",
+   "why_wrong": [
+    "It varies.",
+    "",
+    "It differs by species.",
+    "It depends on resources and environment."
+   ],
+   "key": "EVS-U1-155"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A Rajasthan pasture supports 100 cattle sustainably, but the owner keeps 180. What is the likely long-term outcome?",
+   "code": "",
+   "options": [
+    "The pasture's carrying capacity rises as a general rule",
+    "Overgrazing degrades pasture and lowers its capacity",
+    "Nothing changes",
+    "The cattle number can grow without limit as a general rule"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Stocking beyond the limit damages vegetation and soil.",
+   "why_wrong": [
+    "Overuse reduces capacity.",
+    "",
+    "Excess grazing causes damage.",
+    "Resources are finite."
+   ],
+   "key": "EVS-U1-156"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In logistic growth, the population growth rate is highest when population size N is",
+   "code": "",
+   "options": [
+    "Close to zero in most cases",
+    "Equal to K in most cases",
+    "Double K",
+    "About half of K"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Growth rate is greatest at the midpoint of the curve.",
+   "why_wrong": [
+    "Growth is small.",
+    "Growth stops at K.",
+    "Population beyond K declines.",
+    ""
+   ],
+   "key": "EVS-U1-157"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A city consumes resources from an area ten times larger than itself, beyond what the planet regenerates. This is called",
+   "code": "",
+   "options": [
+    "Ecological overshoot",
+    "Demographic transition",
+    "Biomagnification",
+    "Ecological succession"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Overshoot means demand on nature exceeds its regenerative capacity.",
+   "why_wrong": [
+    "",
+    "This describes birth and death rate change.",
+    "This is the buildup of toxins along food chains.",
+    "This is the change of communities over time."
+   ],
+   "key": "EVS-U1-158"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "After wolves are removed, deer on an island boom, overgraze, and then crash. Which describes this sequence?",
+   "code": "",
+   "options": [
+    "It stayed below carrying capacity throughout for the most part",
+    "Carrying capacity rose permanently for the most part",
+    "It overshot K, damaged resources, then declined",
+    "Wolves had no effect"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Overshoot degrades resources and causes a crash.",
+   "why_wrong": [
+    "The crash shows overshoot.",
+    "Overgrazing lowered capacity.",
+    "",
+    "Removal of predators caused the boom."
+   ],
+   "key": "EVS-U1-159"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A pond holds abundant food but fish numbers are capped by low dissolved oxygen. Which principle explains this?",
+   "code": "",
+   "options": [
+    "Abundant food always sets the limit",
+    "Carrying capacity is unrelated to resources as a general rule",
+    "Fish numbers are limited by food only as a general rule",
+    "A limiting factor sets K (Liebig's law of the minimum)"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The scarcest resource limits population size.",
+   "why_wrong": [
+    "Oxygen is the limiting item here.",
+    "It is determined by resources.",
+    "Oxygen limits them here.",
+    ""
+   ],
+   "key": "EVS-U1-160"
+  },
+  {
+   "topic": "Carrying capacity",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Why is carrying capacity harder to define for humans than for other animals?",
+   "code": "",
+   "options": [
+    "Humans do not need resources in most cases under normal conditions",
+    "Humans are unaffected by environmental limits in most cases",
+    "Humans change the limit through technology and trade",
+    "Human numbers never change"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Humans can raise or lower the limit through technology and consumption.",
+   "why_wrong": [
+    "Humans depend on resources.",
+    "Limits still apply.",
+    "",
+    "Human numbers change."
+   ],
+   "key": "EVS-U1-161"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student writes that the SDGs number 8 and end in 2015. What is the correct count and target year?",
+   "code": "",
+   "options": [
+    "8 goals, by 2015",
+    "17 goals, by 2050 under normal conditions",
+    "10 goals, by 2030 under normal conditions",
+    "17 goals, to be achieved by 2030"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The 17 SDGs adopted in 2015 aim at 2030; the 8 goals of 2015 were the MDGs.",
+   "why_wrong": [
+    "These refer to the earlier MDGs.",
+    "The target year is 2030.",
+    "There are 17 goals.",
+    ""
+   ],
+   "key": "EVS-U1-162"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A village installs a community water purifier and toilets. Which SDG is most directly served?",
+   "code": "",
+   "options": [
+    "SDG 6: Clean water and sanitation",
+    "SDG 2: Zero hunger",
+    "SDG 14: Life below water",
+    "SDG 7: Affordable and clean energy"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The project provides clean water and sanitation.",
+   "why_wrong": [
+    "",
+    "Not the focus here.",
+    "This concerns oceans.",
+    "This concerns energy."
+   ],
+   "key": "EVS-U1-163"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A scheme gives remote villages cheap, reliable electricity. Which SDG is most directly addressed?",
+   "code": "",
+   "options": [
+    "SDG 7: Affordable and clean energy",
+    "SDG 1: No poverty",
+    "SDG 4: Quality education as a general rule",
+    "SDG 10: Reduced inequalities as a general rule"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "It targets access to affordable, reliable energy.",
+   "why_wrong": [
+    "",
+    "Not the direct focus.",
+    "Not the focus.",
+    "Not the direct focus."
+   ],
+   "key": "EVS-U1-164"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which goal concerns conserving oceans, seas and marine resources?",
+   "code": "",
+   "options": [
+    "SDG 15: Life on land",
+    "SDG 6: Clean water and sanitation",
+    "SDG 12: Responsible consumption and production",
+    "SDG 14: Life below water"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "SDG 14 addresses marine conservation.",
+   "why_wrong": [
+    "It concerns terrestrial ecosystems.",
+    "It concerns freshwater and sanitation.",
+    "It concerns consumption and production patterns.",
+    ""
+   ],
+   "key": "EVS-U1-165"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A campaign halves food waste and promotes recycling. Which SDG is most directly addressed?",
+   "code": "",
+   "options": [
+    "SDG 12: Responsible consumption and production",
+    "SDG 8: Decent work and economic growth under normal conditions",
+    "SDG 16: Peace, justice and strong institutions under normal conditions",
+    "SDG 10: Reduced inequalities"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "SDG 12 covers sustainable consumption and reduction of food waste.",
+   "why_wrong": [
+    "",
+    "Not the direct focus.",
+    "Not the focus.",
+    "Not the focus."
+   ],
+   "key": "EVS-U1-166"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Pune expands its bus network and builds affordable housing. Which SDG is most directly served?",
+   "code": "",
+   "options": [
+    "SDG 3: Good health and well-being for the most part",
+    "SDG 11: Sustainable cities and communities",
+    "SDG 15: Life on land",
+    "SDG 14: Life below water for the most part"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "It targets inclusive, safe and sustainable cities.",
+   "why_wrong": [
+    "Not the direct focus.",
+    "",
+    "Not the focus.",
+    "Not the focus."
+   ],
+   "key": "EVS-U1-167"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Governments, NGOs and companies share finance and technology to implement the SDGs. Which goal does this reflect?",
+   "code": "",
+   "options": [
+    "SDG 16: Peace, justice and strong institutions",
+    "SDG 17: Partnerships for the goals",
+    "SDG 10: Reduced inequalities",
+    "SDG 9: Industry, innovation and infrastructure"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "SDG 17 emphasises global partnerships.",
+   "why_wrong": [
+    "It concerns justice.",
+    "",
+    "It concerns inequality.",
+    "It concerns infrastructure."
+   ],
+   "key": "EVS-U1-168"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which pairing of goal number and title is correct?",
+   "code": "",
+   "options": [
+    "SDG 14: Climate action",
+    "SDG 15: Life below water",
+    "SDG 12: Affordable and clean energy",
+    "SDG 13: Climate action"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "SDG 13 is Climate action.",
+   "why_wrong": [
+    "SDG 14 is Life below water.",
+    "SDG 15 is Life on land.",
+    "SDG 12 is Responsible consumption and production.",
+    ""
+   ],
+   "key": "EVS-U1-169"
+  },
+  {
+   "topic": "Sustainable Development Goals",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student asks which body adopted the SDGs in 2015. What is correct?",
+   "code": "",
+   "options": [
+    "The World Trade Organization",
+    "The UN General Assembly",
+    "The World Bank",
+    "The Paris climate conference"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The SDGs were adopted at the UN General Assembly in September 2015.",
+   "why_wrong": [
+    "It deals with trade.",
+    "",
+    "It did not adopt them.",
+    "It produced the Paris Agreement, not the SDGs."
+   ],
+   "key": "EVS-U1-170"
+  }
+ ]
+}

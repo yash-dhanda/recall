@@ -1,0 +1,3687 @@
+{
+ "subject_code": "EVS",
+ "unit": 2,
+ "unit_label": "Natural Resources and Ecosystem",
+ "questions": [
+  {
+   "topic": "Natural resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What are materials and energy sources obtained from nature and used by humans called?",
+   "code": "",
+   "options": [
+    "Natural resources",
+    "Man-made resources",
+    "Synthetic resources",
+    "Industrial resources"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Natural resources are the materials, organisms and energy sources provided by nature that people use to meet their needs. Air, water, soil, minerals and forests all belong to this group.",
+   "why_wrong": [
+    "",
+    "Man-made resources are manufactured by humans, not obtained directly from nature.",
+    "Synthetic resources are produced artificially in laboratories or factories.",
+    "Industrial resources is a loose term for factory inputs, not the name for what nature provides."
+   ],
+   "key": "EVS-U2-001"
+  },
+  {
+   "topic": "Natural resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is a biotic natural resource?",
+   "code": "",
+   "options": [
+    "Minerals",
+    "Sunlight",
+    "Forests",
+    "Fresh water"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Biotic resources come from the living world, and forests are made of living organisms. Minerals, sunlight and water are non-living.",
+   "why_wrong": [
+    "Minerals are non-living and therefore abiotic.",
+    "Sunlight is a non-living energy source and therefore abiotic.",
+    "",
+    "Water is a non-living physical resource and therefore abiotic."
+   ],
+   "key": "EVS-U2-002"
+  },
+  {
+   "topic": "Natural resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of these is an abiotic natural resource?",
+   "code": "",
+   "options": [
+    "Fish from rivers",
+    "Timber from trees",
+    "Wheat from fields",
+    "Soil minerals"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Abiotic resources are non-living components of the environment such as minerals, air, water and sunlight. Soil minerals are non-living.",
+   "why_wrong": [
+    "Fish are living organisms, so they are biotic.",
+    "Timber is obtained from living trees, so it is biotic.",
+    "Wheat is a living crop plant, so it is biotic.",
+    ""
+   ],
+   "key": "EVS-U2-003"
+  },
+  {
+   "topic": "Natural resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT a natural resource?",
+   "code": "",
+   "options": [
+    "Groundwater",
+    "A computer",
+    "Sunlight",
+    "Fertile soil"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A computer is manufactured by humans from processed materials. Groundwater, sunlight and soil are provided directly by nature.",
+   "why_wrong": [
+    "Groundwater occurs naturally underground and is a natural resource.",
+    "",
+    "Sunlight is a naturally occurring energy resource.",
+    "Fertile soil forms naturally and is a basic natural resource."
+   ],
+   "key": "EVS-U2-004"
+  },
+  {
+   "topic": "Natural resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement best describes the aim of sustainable use of natural resources?",
+   "code": "",
+   "options": [
+    "Using every resource as fast as possible for economic growth",
+    "Stopping all use of natural resources completely",
+    "Using only imported resources and saving local ones for export",
+    "Meeting today's needs without harming future generations' needs"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Sustainable use means using resources in a way that lets future generations meet their own needs too. This is the standard definition of sustainable development.",
+   "why_wrong": [
+    "Rapid use depletes resources and ignores future needs.",
+    "Total prohibition is neither practical nor what sustainability means.",
+    "Sustainability concerns how resources are used, not where they are sourced.",
+    ""
+   ],
+   "key": "EVS-U2-005"
+  },
+  {
+   "topic": "Natural resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which factor is the most important driver of overexploitation of natural resources?",
+   "code": "",
+   "options": [
+    "Rising population and higher consumption",
+    "A steady decrease in the demand for energy",
+    "A shrinking of industries across the world",
+    "An increase in the area of protected forests"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "More people consuming more per head puts pressure on land, water, forests and energy. This growing demand is the root of overexploitation.",
+   "why_wrong": [
+    "",
+    "Falling demand would ease, not increase, exploitation.",
+    "Fewer industries would reduce resource use, not raise it.",
+    "Protected forests reduce exploitation."
+   ],
+   "key": "EVS-U2-006"
+  },
+  {
+   "topic": "Natural resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "On what basis are natural resources classified into renewable and non-renewable?",
+   "code": "",
+   "options": [
+    "Their colour and physical state at room temperature",
+    "Their rate of replenishment compared with the rate of use",
+    "The country or region in which they are found",
+    "Whether they are bought and sold in markets"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A resource is renewable if nature can replenish it at least as fast as it is used, and non-renewable if replenishment takes geological time. This is the basis of the classification.",
+   "why_wrong": [
+    "Colour and state have no role in this classification.",
+    "",
+    "Location does not decide whether a resource is renewable.",
+    "Market trade does not determine renewability."
+   ],
+   "key": "EVS-U2-007"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is a renewable energy resource?",
+   "code": "",
+   "options": [
+    "Coal",
+    "Petroleum",
+    "Solar energy",
+    "Natural gas"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Solar energy is continuously supplied by the Sun and is not used up. Coal, petroleum and natural gas are fossil fuels that take millions of years to form.",
+   "why_wrong": [
+    "Coal is a fossil fuel and non-renewable.",
+    "Petroleum is a fossil fuel and non-renewable.",
+    "",
+    "Natural gas is a fossil fuel and non-renewable."
+   ],
+   "key": "EVS-U2-008"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is a non-renewable resource?",
+   "code": "",
+   "options": [
+    "Coal",
+    "Wind",
+    "Biomass",
+    "Solar radiation"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Coal formed over millions of years and cannot be replaced within human timescales. Wind, biomass and sunlight are replenished naturally.",
+   "why_wrong": [
+    "",
+    "Wind is continuously renewed by atmospheric processes.",
+    "Biomass can be regrown within a short time.",
+    "Solar radiation is supplied continuously by the Sun."
+   ],
+   "key": "EVS-U2-009"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Fossil fuels such as coal and petroleum were formed from which of the following?",
+   "code": "",
+   "options": [
+    "Volcanic ash settled over land",
+    "Rainwater stored deep in rocks",
+    "Buried remains of ancient organisms",
+    "Salts deposited by evaporating seawater"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Over millions of years, heat and pressure acting on buried organic remains converted them into coal, oil and gas. That is why they are called fossil fuels.",
+   "why_wrong": [
+    "Volcanic ash does not make fuels.",
+    "Stored rainwater is groundwater, not fuel.",
+    "",
+    "Seawater salts form salt deposits, not fuels."
+   ],
+   "key": "EVS-U2-010"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which one is the odd one out in this list?",
+   "code": "",
+   "options": [
+    "Wind energy",
+    "Solar energy",
+    "Biomass energy",
+    "Natural gas"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Natural gas is a fossil fuel and non-renewable, while the other three are renewable. It is therefore the odd one out.",
+   "why_wrong": [
+    "Wind energy is renewable like the others in the rest of the list.",
+    "Solar energy is renewable like the others in the rest of the list.",
+    "Biomass energy is renewable, so it is not the odd one out.",
+    ""
+   ],
+   "key": "EVS-U2-011"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why can groundwater behave like a non-renewable resource in some regions?",
+   "code": "",
+   "options": [
+    "It is chemically classed as a mineral",
+    "It is pumped out much faster than it is recharged",
+    "It cannot be used for crop irrigation",
+    "It never takes part in the water cycle at all"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Aquifers recharge slowly through rainfall percolation. When extraction exceeds recharge for long periods, the resource is effectively mined and depleted.",
+   "why_wrong": [
+    "Water is not a mineral, and the issue is the rate of use.",
+    "",
+    "Groundwater is widely used for irrigation.",
+    "Groundwater is recharged through the water cycle."
+   ],
+   "key": "EVS-U2-012"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pair is correctly matched as renewable and non-renewable resources respectively?",
+   "code": "",
+   "options": [
+    "Uranium and timber",
+    "Coal and wind",
+    "Petroleum and sunlight",
+    "Timber and uranium"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Timber can be regrown by planting trees, while uranium ore is a finite mineral. The pair is therefore in the order renewable then non-renewable.",
+   "why_wrong": [
+    "This reverses the correct order.",
+    "Coal is non-renewable and wind is renewable, so this order is reversed.",
+    "Petroleum is non-renewable and sunlight is renewable, so this order is reversed.",
+    ""
+   ],
+   "key": "EVS-U2-013"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A renewable resource like fish can effectively become non-renewable when",
+   "code": "",
+   "options": [
+    "it is harvested faster than it can reproduce",
+    "it is harvested slowly and carefully",
+    "its breeding grounds are protected",
+    "only mature fish are caught seasonally"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Renewability depends on regeneration keeping pace with use. Overfishing can push stocks below recovery level, leading to collapse.",
+   "why_wrong": [
+    "",
+    "Slow, careful harvest allows regeneration.",
+    "Protecting breeding grounds supports renewal.",
+    "Seasonal harvest of mature fish allows stocks to recover."
+   ],
+   "key": "EVS-U2-014"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The removal of the fertile top layer of soil by wind or running water is called",
+   "code": "",
+   "options": [
+    "soil formation",
+    "soil erosion",
+    "soil fertilisation",
+    "soil ploughing"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Soil erosion is the wearing away and transport of top soil by wind or water. It removes the nutrient-rich layer needed for crops.",
+   "why_wrong": [
+    "Soil formation is the slow build-up of soil.",
+    "",
+    "Fertilisation adds nutrients to soil.",
+    "Ploughing is tilling of land by farmers."
+   ],
+   "key": "EVS-U2-015"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The process by which fertile land turns into desert-like land is called",
+   "code": "",
+   "options": [
+    "afforestation",
+    "urbanisation",
+    "desertification",
+    "eutrophication"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Desertification is the degradation of fertile land in dry regions into desert, caused by drought, overgrazing and poor farming. It reduces productivity of the land.",
+   "why_wrong": [
+    "Afforestation is planting trees on non-forest land.",
+    "Urbanisation is the growth of cities.",
+    "",
+    "Eutrophication is nutrient enrichment of water bodies."
+   ],
+   "key": "EVS-U2-016"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The build-up of salts in the soil due to excessive irrigation is called",
+   "code": "",
+   "options": [
+    "salinisation",
+    "erosion",
+    "leaching",
+    "succession"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Irrigation water contains dissolved salts, which are left behind as water evaporates, especially with poor drainage. Over time the soil becomes saline and unfit for crops.",
+   "why_wrong": [
+    "",
+    "Erosion is removal of soil, not accumulation of salts.",
+    "Leaching is washing of soluble nutrients down the soil.",
+    "Succession is the replacement of one community by another."
+   ],
+   "key": "EVS-U2-017"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which farming method on hill slopes best reduces soil erosion?",
+   "code": "",
+   "options": [
+    "Ploughing up and down the slope",
+    "Clearing all vegetation",
+    "Terrace farming",
+    "Overgrazing the slope"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Terraces convert a slope into steps that slow runoff and hold soil. This method is widely used in hilly regions.",
+   "why_wrong": [
+    "Ploughing along the slope speeds up runoff and erosion.",
+    "Clearing vegetation exposes soil to erosion.",
+    "",
+    "Overgrazing removes the protective plant cover."
+   ],
+   "key": "EVS-U2-018"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Rows of trees planted at the edge of fields to reduce wind erosion are called",
+   "code": "",
+   "options": [
+    "terraces",
+    "check dams",
+    "contour bunds",
+    "shelterbelts"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Shelterbelts break the force of wind and so protect the soil and crops. They are a standard remedy for wind erosion in dry regions.",
+   "why_wrong": [
+    "Terraces are steps built on slopes to control water erosion.",
+    "Check dams are small barriers across streams or gullies.",
+    "Contour bunds are earth ridges that hold water on slopes.",
+    ""
+   ],
+   "key": "EVS-U2-019"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT a cause of land degradation?",
+   "code": "",
+   "options": [
+    "Overgrazing",
+    "Afforestation with suitable native trees",
+    "Mining without restoration",
+    "Excessive use of chemical fertilisers"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Planting suitable native trees protects and restores land. The other three damage soil structure and fertility.",
+   "why_wrong": [
+    "Overgrazing strips vegetation and causes erosion.",
+    "",
+    "Mining without restoration leaves scarred, barren land.",
+    "Excess fertilisers harm soil life and cause salinity."
+   ],
+   "key": "EVS-U2-020"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Waterlogging of agricultural land is mainly caused by",
+   "code": "",
+   "options": [
+    "very low rainfall and sparse irrigation",
+    "deep ploughing alone",
+    "planting deep-rooted trees",
+    "excess irrigation combined with poor drainage"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "When too much water is applied and drainage is poor, the water table rises to the root zone. Roots then lack oxygen and crop yields fall.",
+   "why_wrong": [
+    "Little water cannot cause waterlogging.",
+    "Deep ploughing alone does not raise the water table.",
+    "Deep-rooted trees lower the water table rather than raise it.",
+    ""
+   ],
+   "key": "EVS-U2-021"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which sector is the largest user of fresh water worldwide?",
+   "code": "",
+   "options": [
+    "Agriculture",
+    "Domestic use",
+    "Industry",
+    "Recreation"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Irrigation of crops takes the largest share of fresh water withdrawals globally. Domestic and industrial uses are smaller.",
+   "why_wrong": [
+    "",
+    "Domestic use is smaller than agricultural use.",
+    "Industry uses less than agriculture overall.",
+    "Recreation uses very little fresh water."
+   ],
+   "key": "EVS-U2-022"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "An underground layer of rock or sediment that holds and yields groundwater is called",
+   "code": "",
+   "options": [
+    "a watershed",
+    "an aquifer",
+    "a lagoon",
+    "a delta"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "An aquifer stores water in its pores and fractures and can be tapped by wells. It is the main groundwater reservoir.",
+   "why_wrong": [
+    "A watershed is the land area draining into a river.",
+    "",
+    "A lagoon is a shallow coastal water body.",
+    "A delta is a landform at a river mouth."
+   ],
+   "key": "EVS-U2-023"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Collecting and storing rainwater for later use is known as",
+   "code": "",
+   "options": [
+    "desalination",
+    "eutrophication",
+    "rainwater harvesting",
+    "water logging"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Rainwater harvesting captures rain from roofs or land and stores it or recharges groundwater. It is a key water conservation method.",
+   "why_wrong": [
+    "Desalination removes salts from seawater.",
+    "Eutrophication is nutrient enrichment of water bodies.",
+    "",
+    "Waterlogging is saturation of soil with water."
+   ],
+   "key": "EVS-U2-024"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Heavy pumping of groundwater in excess of its recharge leads to",
+   "code": "",
+   "options": [
+    "a falling water table",
+    "a rising water table",
+    "more rainfall",
+    "less evaporation"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "When withdrawal exceeds recharge, the level of groundwater drops and wells run dry. This is a widespread problem in parts of India.",
+   "why_wrong": [
+    "",
+    "A rising water table results from excess recharge.",
+    "Pumping does not alter rainfall.",
+    "Pumping has no bearing on the evaporation rate."
+   ],
+   "key": "EVS-U2-025"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is a major social problem associated with large dams?",
+   "code": "",
+   "options": [
+    "A rise in the price of cement",
+    "An increase in the area of desert",
+    "Displacement of people by submergence",
+    "A permanent loss of all river flow"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Reservoirs submerge villages and farmland, so people lose homes and livelihoods and need rehabilitation. This is a well-known issue of big dams.",
+   "why_wrong": [
+    "Cement price is unrelated to the social problem of dams.",
+    "Dams do not increase desert area.",
+    "",
+    "Dams regulate flow but do not stop the river permanently."
+   ],
+   "key": "EVS-U2-026"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The Cauvery river water dispute is mainly between which states?",
+   "code": "",
+   "options": [
+    "Punjab and Haryana",
+    "Gujarat and Rajasthan",
+    "Assam and West Bengal",
+    "Karnataka and Tamil Nadu"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The Cauvery dispute over sharing river water is a well-known inter-state water conflict between Karnataka and Tamil Nadu. It illustrates conflicts over water resources.",
+   "why_wrong": [
+    "Punjab and Haryana have disputes over the Sutlej-Yamuna link canal.",
+    "Gujarat and Rajasthan are not the parties in the Cauvery dispute.",
+    "Assam and West Bengal are not the parties in the Cauvery dispute.",
+    ""
+   ],
+   "key": "EVS-U2-027"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Excess fluoride in drinking water causes which health problem?",
+   "code": "",
+   "options": [
+    "Scurvy",
+    "Fluorosis",
+    "Goitre",
+    "Rickets"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Long-term intake of fluoride-rich groundwater damages teeth and bones, a condition called fluorosis. It is common in parts of Rajasthan and Andhra Pradesh.",
+   "why_wrong": [
+    "Scurvy results from vitamin C deficiency.",
+    "",
+    "Goitre results from iodine deficiency.",
+    "Rickets results from vitamin D deficiency."
+   ],
+   "key": "EVS-U2-028"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The large-scale cutting down and clearing of forests is called",
+   "code": "",
+   "options": [
+    "afforestation",
+    "reforestation",
+    "forestation by nature",
+    "deforestation"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Deforestation is the permanent removal of forest cover for timber, farming, mining or settlements. It leads to loss of biodiversity and soil.",
+   "why_wrong": [
+    "Afforestation is planting trees on non-forest land.",
+    "Reforestation is replanting where forest was cut.",
+    "This is not a recognised term for clearing forests.",
+    ""
+   ],
+   "key": "EVS-U2-029"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Planting trees on land that was not previously forested is called",
+   "code": "",
+   "options": [
+    "afforestation",
+    "deforestation",
+    "desertification",
+    "eutrophication"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Afforestation creates forest in an area that had no forest cover recently. It helps restore soil and absorb carbon dioxide.",
+   "why_wrong": [
+    "",
+    "Deforestation is clearing of forest.",
+    "Desertification is degradation into desert.",
+    "Eutrophication concerns water bodies."
+   ],
+   "key": "EVS-U2-030"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which gas do forests absorb from the atmosphere during photosynthesis?",
+   "code": "",
+   "options": [
+    "Nitrogen only",
+    "Carbon dioxide",
+    "Methane",
+    "Carbon monoxide"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Green plants take in carbon dioxide and release oxygen in photosynthesis. This is why forests act as carbon sinks.",
+   "why_wrong": [
+    "Plants do not absorb atmospheric nitrogen for photosynthesis.",
+    "",
+    "Methane is not what photosynthesis consumes.",
+    "Carbon monoxide is not used in photosynthesis."
+   ],
+   "key": "EVS-U2-031"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The Chipko movement in India was started to",
+   "code": "",
+   "options": [
+    "build new dams on rivers",
+    "promote mining in forests",
+    "protect trees from being cut",
+    "expand cities into forests"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Villagers, many of them women, hugged trees to prevent felling in the Himalayan region. It became a symbol of community forest protection.",
+   "why_wrong": [
+    "Chipko opposed felling, not dam building.",
+    "Chipko opposed forest exploitation, not mining expansion.",
+    "",
+    "Chipko was about forests, not city growth."
+   ],
+   "key": "EVS-U2-032"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT a cause of deforestation?",
+   "code": "",
+   "options": [
+    "Social forestry programmes",
+    "Shifting cultivation",
+    "Mining operations",
+    "Construction of large dams"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Social forestry plants trees and so restores cover. The other three clear forest land.",
+   "why_wrong": [
+    "",
+    "Shifting cultivation clears forests by slash and burn.",
+    "Mining operations clear forest areas.",
+    "Large dams submerge forests."
+   ],
+   "key": "EVS-U2-033"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why does shifting (jhum) cultivation contribute to deforestation?",
+   "code": "",
+   "options": [
+    "Trees are planted in every plot",
+    "Only dead wood is collected by farmers",
+    "Plots are cleared, burnt, then abandoned",
+    "Crops are grown under canopy without clearing"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "In jhum, plots are cleared by burning and abandoned when fertility falls, so new forest is cleared repeatedly. Short fallow periods prevent regrowth.",
+   "why_wrong": [
+    "Planting trees would not cause deforestation.",
+    "Collecting only dead wood does not clear forest.",
+    "",
+    "Growing under canopy without clearing does not remove forest."
+   ],
+   "key": "EVS-U2-034"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In Joint Forest Management (JFM), what is the role of local communities?",
+   "code": "",
+   "options": [
+    "They are removed from the forest areas",
+    "They are given full ownership of all forests",
+    "They are only allowed to sell the timber",
+    "They help protect forests and share the benefits"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "JFM involves villagers with the forest department in protecting forest and sharing forest produce. It aims to link conservation with livelihood.",
+   "why_wrong": [
+    "JFM involves the communities rather than removing them.",
+    "JFM does not hand over full ownership of forests.",
+    "JFM is about protection and sharing of benefits, not just timber sale.",
+    ""
+   ],
+   "key": "EVS-U2-035"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Energy obtained from the heat inside the Earth is called",
+   "code": "",
+   "options": [
+    "tidal energy",
+    "geothermal energy",
+    "wind energy",
+    "biogas energy"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Geothermal energy comes from hot rocks and steam below the surface. It is used for heating and for generating electricity.",
+   "why_wrong": [
+    "Tidal energy comes from the rise and fall of the sea.",
+    "",
+    "Wind energy comes from moving air.",
+    "Biogas comes from decomposing organic waste."
+   ],
+   "key": "EVS-U2-036"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Devices that convert sunlight directly into electricity are called",
+   "code": "",
+   "options": [
+    "fuel cells that burn hydrogen",
+    "dry cells used in torches",
+    "dynamos on bicycle wheels",
+    "photovoltaic cells"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Photovoltaic or solar cells use semiconductors to turn light into electric current. They are the basis of solar panels.",
+   "why_wrong": [
+    "Fuel cells convert chemical energy of a fuel.",
+    "Dry cells store chemical energy.",
+    "Dynamos convert mechanical energy to electricity.",
+    ""
+   ],
+   "key": "EVS-U2-037"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The main constituent of biogas and natural gas is",
+   "code": "",
+   "options": [
+    "methane",
+    "oxygen",
+    "hydrogen sulphide",
+    "carbon monoxide"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Methane (CH4) makes up the bulk of both natural gas and biogas. It burns with a clean flame.",
+   "why_wrong": [
+    "",
+    "Oxygen is not a fuel gas.",
+    "Hydrogen sulphide is only a minor impurity.",
+    "Carbon monoxide is not a main component."
+   ],
+   "key": "EVS-U2-038"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which element is the main fuel used in nuclear power plants?",
+   "code": "",
+   "options": [
+    "Sulphur",
+    "Uranium",
+    "Copper",
+    "Calcium"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Uranium-235 undergoes fission and releases large amounts of heat used to make steam. It is the chief nuclear fuel.",
+   "why_wrong": [
+    "Sulphur is not a nuclear fuel.",
+    "",
+    "Copper is a conductor, not a nuclear fuel.",
+    "Calcium is not a nuclear fuel."
+   ],
+   "key": "EVS-U2-039"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which is a main drawback of nuclear energy?",
+   "code": "",
+   "options": [
+    "Emission of large amounts of soot",
+    "Dependence on rainfall",
+    "Disposal of radioactive waste",
+    "Need for large wind speeds"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Spent nuclear fuel stays radioactive for a very long time and needs safe storage. Nuclear plants also carry accident risk.",
+   "why_wrong": [
+    "Soot is a problem of coal, not of nuclear power.",
+    "Nuclear plants do not depend on rainfall for fuel.",
+    "",
+    "Wind speed is relevant to wind power, not nuclear."
+   ],
+   "key": "EVS-U2-040"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Biogas is produced mainly by which process?",
+   "code": "",
+   "options": [
+    "Anaerobic digestion of organic waste",
+    "Burning of dry wood in a stove",
+    "Compression of crude petroleum",
+    "Nuclear fission of radioactive waste"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Microbes digest organic matter in the absence of oxygen and release methane-rich gas. Gobar gas plants in Indian villages use this process.",
+   "why_wrong": [
+    "",
+    "Burning wood gives heat and smoke, not biogas.",
+    "Petroleum compression gives no biogas.",
+    "Nuclear fission is unrelated to biogas."
+   ],
+   "key": "EVS-U2-041"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which one is the odd one out among the following energy sources?",
+   "code": "",
+   "options": [
+    "Tidal energy",
+    "Wind energy",
+    "Nuclear fission",
+    "Geothermal energy"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Nuclear fission uses limited uranium and is classed as non-renewable, while the others are renewable. It is therefore the odd one out.",
+   "why_wrong": [
+    "Tidal energy is renewable like the rest of the list.",
+    "Wind energy is renewable like the rest of the list.",
+    "",
+    "Geothermal energy is renewable, so it is not the odd one."
+   ],
+   "key": "EVS-U2-042"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What do the three R's of waste management stand for?",
+   "code": "",
+   "options": [
+    "Remove, Recover, Rebuild",
+    "Reject, Repair, Resell",
+    "Refill, Rebuild, Return",
+    "Reduce, Reuse, Recycle"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The three R's are Reduce, Reuse and Recycle, a basic guide to lowering waste. Individuals can apply them in daily life.",
+   "why_wrong": [
+    "Remove, Recover and Rebuild are not the accepted three R's of waste management.",
+    "Reject, Repair and Resell is not the standard three R's formula.",
+    "Refill, Rebuild and Return is not the standard three R's formula.",
+    ""
+   ],
+   "key": "EVS-U2-043"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which habit helps an individual conserve water?",
+   "code": "",
+   "options": [
+    "Washing the car daily with a hose",
+    "Closing the tap while brushing teeth",
+    "Letting taps drip",
+    "Running a half-empty washing machine"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Turning off the tap when not needed saves many litres a day. Small habits add up when practised by many people.",
+   "why_wrong": [
+    "Daily hose washing wastes a lot of water.",
+    "",
+    "Dripping taps waste water.",
+    "Half loads waste water and energy."
+   ],
+   "key": "EVS-U2-044"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Switching off unused lights and fans helps to",
+   "code": "",
+   "options": [
+    "increase pollution",
+    "waste fuel",
+    "raise electricity bills",
+    "conserve electrical energy"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Using less electricity reduces the fossil fuel burnt at power stations. It also lowers the bill.",
+   "why_wrong": [
+    "Saving energy reduces pollution.",
+    "Saving energy reduces fuel use.",
+    "Saving energy lowers bills.",
+    ""
+   ],
+   "key": "EVS-U2-045"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which individual action most directly cuts fossil fuel use in daily travel?",
+   "code": "",
+   "options": [
+    "Using public transport or carpooling",
+    "Buying a second private car",
+    "Idling the engine at red lights",
+    "Driving alone for short trips"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Sharing rides or using public transport means fewer vehicles burn fuel for the same journeys. It also lowers emissions.",
+   "why_wrong": [
+    "",
+    "A second car increases fuel use.",
+    "Idling wastes fuel.",
+    "Solo short trips use more fuel per person."
+   ],
+   "key": "EVS-U2-046"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the waste hierarchy, which of the three R's is given the highest priority?",
+   "code": "",
+   "options": [
+    "Reuse",
+    "Reduce",
+    "Recycle",
+    "All are exactly equal"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Reducing consumption prevents waste at the source and saves the most resources. Reuse comes next, and recycling, which needs energy, comes last.",
+   "why_wrong": [
+    "Reuse is the second priority.",
+    "",
+    "Recycling is the third priority and needs energy.",
+    "The three R's are ranked, with reduce first."
+   ],
+   "key": "EVS-U2-047"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT a good conservation practice?",
+   "code": "",
+   "options": [
+    "Carrying a cloth bag for shopping",
+    "Repairing old items instead of discarding",
+    "Using single-use plastic and throwing it away",
+    "Refilling a reusable water bottle daily"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Single-use plastic wastes resources and creates long-lasting waste. The other practices follow reduce and reuse.",
+   "why_wrong": [
+    "Cloth bags reduce plastic use.",
+    "Repairing extends the life of goods.",
+    "",
+    "Refilling reduces bottle waste."
+   ],
+   "key": "EVS-U2-048"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Composting kitchen waste at home helps conservation mainly by",
+   "code": "",
+   "options": [
+    "returning nutrients to soil and cutting landfill waste",
+    "producing plastic that can be reused at home",
+    "increasing the use of chemical fertilisers in gardens",
+    "adding to the total volume of household garbage"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Compost enriches soil with nutrients and diverts wet waste from landfills. It supports soil conservation.",
+   "why_wrong": [
+    "",
+    "Composting does not produce plastic.",
+    "Compost reduces the need for chemical fertilisers.",
+    "Composting reduces garbage volume."
+   ],
+   "key": "EVS-U2-049"
+  },
+  {
+   "topic": "Structure and function of ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Who coined the term 'ecosystem'?",
+   "code": "",
+   "options": [
+    "Charles Elton",
+    "Ernst Haeckel",
+    "A. G. Tansley",
+    "Eugene Odum"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Arthur G. Tansley introduced the term ecosystem in 1935. It describes living organisms and their physical environment acting together.",
+   "why_wrong": [
+    "Charles Elton is known for food chains and pyramids.",
+    "Ernst Haeckel coined the term ecology.",
+    "",
+    "Eugene Odum is known as a pioneer of ecosystem ecology but did not coin the term."
+   ],
+   "key": "EVS-U2-050"
+  },
+  {
+   "topic": "Structure and function of ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which organisms form the producers of an ecosystem?",
+   "code": "",
+   "options": [
+    "Herbivores",
+    "Carnivores",
+    "Bacteria only",
+    "Green plants"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Green plants and algae make food by photosynthesis and so are the producers. All other organisms depend on them.",
+   "why_wrong": [
+    "Herbivores are consumers.",
+    "Carnivores are consumers.",
+    "Decomposing bacteria are decomposers, not the producers.",
+    ""
+   ],
+   "key": "EVS-U2-051"
+  },
+  {
+   "topic": "Structure and function of ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which organisms break down dead organic matter in an ecosystem?",
+   "code": "",
+   "options": [
+    "Producers",
+    "Decomposers",
+    "Primary consumers",
+    "Secondary consumers"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Bacteria and fungi decompose dead matter and release nutrients back into the soil. They complete nutrient recycling.",
+   "why_wrong": [
+    "Producers make food from sunlight.",
+    "",
+    "Primary consumers eat plants.",
+    "Secondary consumers eat herbivores."
+   ],
+   "key": "EVS-U2-052"
+  },
+  {
+   "topic": "Structure and function of ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is a functional aspect, not a structural component, of an ecosystem?",
+   "code": "",
+   "options": [
+    "Producers",
+    "Decomposers",
+    "Soil and water",
+    "Energy flow"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Structure refers to the components present, while function refers to processes such as energy flow and nutrient cycling. Energy flow is a function.",
+   "why_wrong": [
+    "Producers are a biotic structural component.",
+    "Decomposers are a biotic structural component.",
+    "Soil and water are abiotic structural components.",
+    ""
+   ],
+   "key": "EVS-U2-053"
+  },
+  {
+   "topic": "Structure and function of ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the chain grass, grasshopper, frog, the frog is a",
+   "code": "",
+   "options": [
+    "secondary consumer",
+    "producer",
+    "primary consumer",
+    "decomposer"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The grasshopper eats grass and is the primary consumer, so the frog that eats it is a secondary consumer. Position depends on what the organism eats.",
+   "why_wrong": [
+    "",
+    "Producers are plants.",
+    "The primary consumer here is the grasshopper.",
+    "A decomposer feeds on dead matter, which a frog catching prey does not."
+   ],
+   "key": "EVS-U2-054"
+  },
+  {
+   "topic": "Structure and function of ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which organism is a detritivore?",
+   "code": "",
+   "options": [
+    "Mushroom",
+    "Earthworm",
+    "Rhizobium",
+    "Bacillus"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Earthworms ingest and fragment dead organic matter, making it easier for decomposers to act. Mushrooms and bacteria decompose chemically.",
+   "why_wrong": [
+    "Mushrooms are fungal decomposers.",
+    "",
+    "Rhizobium is a nitrogen-fixing bacterium.",
+    "Bacillus is a decomposing bacterium."
+   ],
+   "key": "EVS-U2-055"
+  },
+  {
+   "topic": "Structure and function of ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT an abiotic component of an ecosystem?",
+   "code": "",
+   "options": [
+    "Temperature",
+    "Soil",
+    "Fungi",
+    "Sunlight"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Fungi are living organisms and so are biotic. Temperature, soil and sunlight are non-living factors.",
+   "why_wrong": [
+    "Temperature is abiotic.",
+    "Soil is abiotic.",
+    "",
+    "Sunlight is abiotic."
+   ],
+   "key": "EVS-U2-056"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Camels and cacti are typically found in which ecosystem?",
+   "code": "",
+   "options": [
+    "Desert",
+    "Estuary",
+    "Coral reef",
+    "Mangrove swamp"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Both are adapted to scarce water and high temperatures of a desert. Camels store fat and cacti store water.",
+   "why_wrong": [
+    "",
+    "An estuary is a water-rich river mouth.",
+    "Coral reefs are marine ecosystems.",
+    "Mangroves grow in tidal coasts."
+   ],
+   "key": "EVS-U2-057"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A pond is an example of which type of ecosystem?",
+   "code": "",
+   "options": [
+    "Terrestrial ecosystem",
+    "Artificial desert",
+    "Aquatic ecosystem",
+    "Grassland"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A pond is a small body of fresh water and its organisms, which makes it a freshwater aquatic ecosystem.",
+   "why_wrong": [
+    "Terrestrial ecosystems are on land.",
+    "A pond is not a desert.",
+    "",
+    "Grasslands are land ecosystems."
+   ],
+   "key": "EVS-U2-058"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The partly enclosed area where a river meets the sea and fresh water mixes with salt water is called",
+   "code": "",
+   "options": [
+    "a tundra",
+    "an oasis",
+    "a savanna",
+    "an estuary"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Estuaries have brackish water and are productive nursery grounds for many fish.",
+   "why_wrong": [
+    "Tundra is a cold treeless biome.",
+    "An oasis is a desert water source.",
+    "Savanna is a tropical grassland.",
+    ""
+   ],
+   "key": "EVS-U2-059"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A crop field is an example of which kind of ecosystem?",
+   "code": "",
+   "options": [
+    "Natural forest ecosystem",
+    "Man-made (artificial) ecosystem",
+    "Marine ecosystem",
+    "Polar ecosystem"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Humans design and maintain crop fields, so they are artificial ecosystems.",
+   "why_wrong": [
+    "Forests are natural.",
+    "",
+    "Marine ecosystems are in oceans.",
+    "Polar ecosystems are cold natural regions."
+   ],
+   "key": "EVS-U2-060"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which one is the odd one out?",
+   "code": "",
+   "options": [
+    "Pond",
+    "Lake",
+    "River",
+    "Desert"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Desert is a terrestrial ecosystem while the others are freshwater aquatic ecosystems.",
+   "why_wrong": [
+    "Pond is aquatic.",
+    "Lake is aquatic.",
+    "River is aquatic.",
+    ""
+   ],
+   "key": "EVS-U2-061"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is a lotic (flowing water) ecosystem?",
+   "code": "",
+   "options": [
+    "River",
+    "Pond",
+    "Lake",
+    "Swamp pool"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Lotic systems have moving water, as in rivers and streams. Ponds and lakes are lentic (still water).",
+   "why_wrong": [
+    "",
+    "Ponds are still water.",
+    "Lakes are still water.",
+    "Swamp pools are still water."
+   ],
+   "key": "EVS-U2-062"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which ecosystem is characterised by permafrost and a short growing season?",
+   "code": "",
+   "options": [
+    "Tropical rainforest",
+    "Tundra",
+    "Savanna",
+    "Mangrove"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Tundra has a permanently frozen subsoil called permafrost and mostly mosses and lichens.",
+   "why_wrong": [
+    "Rainforests are warm and wet.",
+    "",
+    "Savannas are warm grasslands.",
+    "Mangroves are tropical coasts."
+   ],
+   "key": "EVS-U2-063"
+  },
+  {
+   "topic": "Energy flow in an ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the ultimate source of energy for almost all ecosystems?",
+   "code": "",
+   "options": [
+    "Wind",
+    "Soil",
+    "The Sun",
+    "Water"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Producers capture solar energy by photosynthesis, supporting all other organisms.",
+   "why_wrong": [
+    "Wind is not a source of energy for living things.",
+    "Soil is a nutrient source, not an energy source.",
+    "",
+    "Water is not an energy source for organisms."
+   ],
+   "key": "EVS-U2-064"
+  },
+  {
+   "topic": "Energy flow in an ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Energy flow in an ecosystem is",
+   "code": "",
+   "options": [
+    "unidirectional",
+    "cyclic",
+    "bidirectional",
+    "random"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Energy moves one way from the Sun to producers to consumers and is lost as heat. It cannot be reused.",
+   "why_wrong": [
+    "",
+    "Nutrients, not energy, cycle.",
+    "Energy does not flow back.",
+    "Energy flow follows trophic levels."
+   ],
+   "key": "EVS-U2-065"
+  },
+  {
+   "topic": "Energy flow in an ecosystem",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "According to Lindeman's ten percent law, how much energy passes from one trophic level to the next?",
+   "code": "",
+   "options": [
+    "About 90 percent",
+    "About 50 percent",
+    "About 10 percent",
+    "About 100 percent"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Roughly one tenth of energy is stored at the next level, the rest is lost.",
+   "why_wrong": [
+    "90 percent is the amount lost.",
+    "50 percent is far too high.",
+    "",
+    "100 percent would mean no loss."
+   ],
+   "key": "EVS-U2-066"
+  },
+  {
+   "topic": "Energy flow in an ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Most energy at each trophic level is lost mainly as heat through",
+   "code": "",
+   "options": [
+    "photosynthesis",
+    "transpiration",
+    "pollination",
+    "respiration"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Organisms use energy in metabolism, releasing heat. Hence little is left for the next level.",
+   "why_wrong": [
+    "Photosynthesis captures energy.",
+    "Transpiration is water loss from plants.",
+    "Pollination is transfer of pollen.",
+    ""
+   ],
+   "key": "EVS-U2-067"
+  },
+  {
+   "topic": "Energy flow in an ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why do food chains rarely have more than four or five trophic levels?",
+   "code": "",
+   "options": [
+    "Plants cannot grow beyond four or five levels",
+    "Too little energy remains after repeated losses",
+    "Carnivores refuse to eat other carnivores",
+    "Sunlight stops reaching the Earth's surface"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Because only about 10 percent passes on, little energy remains at the top.",
+   "why_wrong": [
+    "Plants do not set the limit.",
+    "",
+    "Carnivores can eat each other; energy is the limit.",
+    "Sunlight continues to reach Earth."
+   ],
+   "key": "EVS-U2-068"
+  },
+  {
+   "topic": "Energy flow in an ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "If producers store 10000 J of energy, how much is available to secondary consumers by the ten percent law?",
+   "code": "",
+   "options": [
+    "1000 J",
+    "10 J",
+    "5000 J",
+    "100 J"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Producers to primary consumers gives 1000 J, then to secondary consumers 100 J.",
+   "why_wrong": [
+    "1000 J reaches primary consumers.",
+    "10 J would be the tertiary level.",
+    "5000 J ignores the law.",
+    ""
+   ],
+   "key": "EVS-U2-069"
+  },
+  {
+   "topic": "Energy flow in an ecosystem",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement about energy and nutrients in an ecosystem is correct?",
+   "code": "",
+   "options": [
+    "Nutrients are recycled whereas energy flows one way",
+    "Both are recycled",
+    "Energy is recycled but nutrients flow one way",
+    "Neither moves between organisms"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Matter cycles between organisms and the environment, but energy is lost as heat.",
+   "why_wrong": [
+    "",
+    "Energy is not recycled.",
+    "It is nutrients that cycle.",
+    "Both move between organisms."
+   ],
+   "key": "EVS-U2-070"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A series of organisms in which each eats the one before it is called a",
+   "code": "",
+   "options": [
+    "food pyramid",
+    "food chain",
+    "food web",
+    "food cycle"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A food chain shows a linear transfer of energy from producers to consumers.",
+   "why_wrong": [
+    "Pyramids show numbers, biomass or energy.",
+    "",
+    "A web is many interlinked chains.",
+    "Food cycle is not the standard term."
+   ],
+   "key": "EVS-U2-071"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A network of many interconnected food chains is called a",
+   "code": "",
+   "options": [
+    "food chain",
+    "trophic cycle",
+    "food web",
+    "biome"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Most organisms eat several foods, so chains interlink to form a web.",
+   "why_wrong": [
+    "A chain is a single line.",
+    "Trophic cycle is not the standard term.",
+    "",
+    "A biome is a large ecological region."
+   ],
+   "key": "EVS-U2-072"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Each step of a food chain is called a",
+   "code": "",
+   "options": [
+    "trophic level",
+    "niche",
+    "habitat",
+    "community"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Producers form the first trophic level, herbivores the second, and so on.",
+   "why_wrong": [
+    "",
+    "A niche is the role of a species.",
+    "A habitat is a place.",
+    "A community is all populations in an area."
+   ],
+   "key": "EVS-U2-073"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In grass, grasshopper, frog, snake, which organism is the tertiary consumer?",
+   "code": "",
+   "options": [
+    "Grass",
+    "Grasshopper",
+    "Snake",
+    "Frog"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Grass is the producer, grasshopper the primary, frog the secondary and snake the tertiary consumer.",
+   "why_wrong": [
+    "Grass is the producer.",
+    "Grasshopper is the primary consumer.",
+    "",
+    "Frog is the secondary consumer."
+   ],
+   "key": "EVS-U2-074"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is a detritus food chain?",
+   "code": "",
+   "options": [
+    "Grass, deer, tiger",
+    "Phytoplankton, zooplankton, fish",
+    "Grass, grasshopper, frog",
+    "Dead leaves, earthworm, bird"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A detritus food chain begins with dead organic matter.",
+   "why_wrong": [
+    "Begins with living grass, so it is a grazing chain.",
+    "Begins with living phytoplankton, so it is grazing.",
+    "Begins with living grass, so it is grazing.",
+    ""
+   ],
+   "key": "EVS-U2-075"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why is a food web more stable than a single food chain?",
+   "code": "",
+   "options": [
+    "It has fewer organisms in total",
+    "Consumers have alternative foods if one is lost",
+    "It contains only producers and no consumers",
+    "It has a single path for energy flow"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "With many alternative paths, loss of one species does not collapse the system.",
+   "why_wrong": [
+    "Webs have more, not fewer, organisms.",
+    "",
+    "Webs include consumers.",
+    "A single path makes a chain fragile."
+   ],
+   "key": "EVS-U2-076"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which organism is likely to carry the highest DDT concentration in a food chain?",
+   "code": "",
+   "options": [
+    "Phytoplankton in the water",
+    "A grasshopper eating the grass",
+    "The grass growing in the field",
+    "A top carnivore such as an eagle"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "DDT is not broken down and builds up at higher trophic levels, called biomagnification.",
+   "why_wrong": [
+    "Producers have the lowest concentration.",
+    "Herbivores carry less than top carnivores.",
+    "Producers have the lowest concentration.",
+    ""
+   ],
+   "key": "EVS-U2-077"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The ecological pyramid concept was introduced by",
+   "code": "",
+   "options": [
+    "Charles Elton",
+    "Lindeman",
+    "Tansley",
+    "Odum"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Charles Elton described pyramids of numbers in 1927.",
+   "why_wrong": [
+    "",
+    "Lindeman gave the ten percent law.",
+    "Tansley coined the term ecosystem.",
+    "Odum popularised ecosystem ecology."
+   ],
+   "key": "EVS-U2-078"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is placed at the base of an ecological pyramid?",
+   "code": "",
+   "options": [
+    "Decomposers",
+    "Producers",
+    "Top carnivores",
+    "Herbivores"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Producers support all higher trophic levels, so form the base.",
+   "why_wrong": [
+    "Decomposers are not placed at the base.",
+    "",
+    "Top carnivores occupy the apex.",
+    "Herbivores are the second level."
+   ],
+   "key": "EVS-U2-079"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which ecological pyramid is always upright?",
+   "code": "",
+   "options": [
+    "Pyramid of numbers",
+    "Pyramid of biomass",
+    "Pyramid of energy",
+    "Pyramid of age"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Energy decreases at each level because of losses, so the pyramid is always upright.",
+   "why_wrong": [
+    "Numbers can be inverted.",
+    "Biomass can be inverted in aquatic systems.",
+    "",
+    "Pyramid of age is not one of the standard pyramids."
+   ],
+   "key": "EVS-U2-080"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The pyramid of numbers is inverted in which ecosystem?",
+   "code": "",
+   "options": [
+    "A tree ecosystem",
+    "A grassland ecosystem",
+    "A pond ecosystem",
+    "A desert ecosystem"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "One large tree supports many insects, so the top level has more individuals.",
+   "why_wrong": [
+    "",
+    "Grassland pyramid of numbers is upright.",
+    "Pond is the standard example for biomass.",
+    "Desert is not the standard example."
+   ],
+   "key": "EVS-U2-081"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The pyramid of biomass is typically inverted in which ecosystem?",
+   "code": "",
+   "options": [
+    "A grassland",
+    "A forest",
+    "A pond or ocean",
+    "A cropland"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Phytoplankton have small biomass but reproduce rapidly, so zooplankton and fish can outweigh them.",
+   "why_wrong": [
+    "Grassland biomass is upright.",
+    "Forest biomass is upright.",
+    "",
+    "Cropland biomass is upright."
+   ],
+   "key": "EVS-U2-082"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why is the pyramid of energy always upright?",
+   "code": "",
+   "options": [
+    "Producers have the fewest organisms",
+    "Energy is added at each level",
+    "Consumers produce their own energy",
+    "Energy is lost at each trophic level"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "As energy is lost as heat, each level has less than the one below.",
+   "why_wrong": [
+    "Number of organisms does not decide it.",
+    "Energy is not added at each level.",
+    "Consumers do not produce energy.",
+    ""
+   ],
+   "key": "EVS-U2-083"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which two pyramids can be inverted in some ecosystems?",
+   "code": "",
+   "options": [
+    "Pyramid of energy and numbers",
+    "Pyramid of numbers and biomass",
+    "Pyramid of energy only",
+    "Pyramid of energy and biomass"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Numbers and biomass can be inverted, but energy never.",
+   "why_wrong": [
+    "The energy pyramid is never inverted, so this pair is wrong.",
+    "",
+    "The energy pyramid is never inverted, so naming it alone is wrong.",
+    "The energy pyramid is never inverted, so this pair is wrong."
+   ],
+   "key": "EVS-U2-084"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The gradual and orderly replacement of one community by another is called",
+   "code": "",
+   "options": [
+    "biomagnification",
+    "eutrophication",
+    "adaptive radiation",
+    "ecological succession"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Succession is the sequential change in community until a stable stage is reached.",
+   "why_wrong": [
+    "Biomagnification is the build-up of toxins.",
+    "Eutrophication is nutrient enrichment.",
+    "Adaptive radiation is evolutionary diversification.",
+    ""
+   ],
+   "key": "EVS-U2-085"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The first species to colonise a bare area are called",
+   "code": "",
+   "options": [
+    "pioneer species",
+    "climax species",
+    "keystone species",
+    "endemic species"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Pioneers such as lichens start succession.",
+   "why_wrong": [
+    "",
+    "Climax species belong to the final stage.",
+    "Keystone species have large effects on community.",
+    "Endemic species are restricted to a region."
+   ],
+   "key": "EVS-U2-086"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The final, stable community of a succession is called the",
+   "code": "",
+   "options": [
+    "pioneer community",
+    "climax community",
+    "seral community",
+    "edge community"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The climax community is in balance with the environment.",
+   "why_wrong": [
+    "Pioneer is the first stage.",
+    "",
+    "Seral communities are the intermediate stages.",
+    "An edge community lies at habitat boundaries."
+   ],
+   "key": "EVS-U2-087"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Primary succession begins on",
+   "code": "",
+   "options": [
+    "abandoned farmland",
+    "a recently burnt forest",
+    "bare rock with no soil",
+    "a cleared forest with soil"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "No soil exists at the start, so it proceeds slowly.",
+   "why_wrong": [
+    "Abandoned farmland has soil, so succession is secondary.",
+    "Burnt forest has soil, so secondary.",
+    "",
+    "Cleared forest with soil leads to secondary."
+   ],
+   "key": "EVS-U2-088"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which organisms are usually the pioneers on bare rock?",
+   "code": "",
+   "options": [
+    "Lichens",
+    "Large trees",
+    "Grasses",
+    "Shrubs"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Lichens secrete acids that break the rock and help form soil.",
+   "why_wrong": [
+    "",
+    "Trees come at a late stage.",
+    "Grasses follow after soil forms.",
+    "Shrubs come after grasses."
+   ],
+   "key": "EVS-U2-089"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why is secondary succession usually faster than primary succession?",
+   "code": "",
+   "options": [
+    "No organisms exist at the start",
+    "It starts on bare rock",
+    "Soil and seeds are already present",
+    "It needs no sunlight at all"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Soil with seed bank allows rapid regrowth.",
+   "why_wrong": [
+    "Succession needs organisms to begin.",
+    "Bare rock marks primary succession.",
+    "",
+    "Sunlight is needed."
+   ],
+   "key": "EVS-U2-090"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A village in Rajasthan pumps groundwater much faster than rainfall recharges the aquifer. How is the groundwater best described?",
+   "code": "",
+   "options": [
+    "A non-renewable resource, because groundwater can never be replenished by rain",
+    "An inexhaustible resource, because rain falls every year",
+    "A fossil resource formed over millions of years",
+    "A renewable resource being used beyond its replenishment rate"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Groundwater is renewable because the water cycle recharges it, but it is exhaustible when withdrawal exceeds recharge. Renewability depends on the rate of use versus the rate of renewal.",
+   "why_wrong": [
+    "Groundwater is recharged by rain and seepage, so it is renewable in principle.",
+    "Rain is variable and recharge is limited, so the supply is not inexhaustible.",
+    "Groundwater is not a fossil fuel and is not formed over geological ages.",
+    ""
+   ],
+   "key": "EVS-U2-101"
+  },
+  {
+   "topic": "Renewable and non-renewable resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A state plans to base its electricity on coal for the next century. Which property of coal makes this plan unsustainable?",
+   "code": "",
+   "options": [
+    "It forms over millions of years, far slower than it is consumed",
+    "It is formed only in tropical regions and is quickly replaced there by new swamps",
+    "It cannot be burnt without water",
+    "It is produced only from living animals"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Coal formed from buried plant matter over geological time, so its formation rate is negligible against consumption. This is what defines a non-renewable resource.",
+   "why_wrong": [
+    "",
+    "Coal occurs in many regions, and location does not decide renewability.",
+    "Coal burns in air and needs no water for combustion.",
+    "Coal arises mainly from buried plant matter, not from animals."
+   ],
+   "key": "EVS-U2-102"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Farmers on steep hill slopes in Uttarakhand lose topsoil every monsoon. Which measure best reduces this loss?",
+   "code": "",
+   "options": [
+    "Ploughing straight up and down the slope and leaving the furrows open",
+    "Clearing the remaining trees for more fields",
+    "Building terraces and planting vegetation cover",
+    "Leaving the soil bare after harvest"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Terraces break the slope and slow runoff, and plant roots bind the soil. Together they reduce erosion on steep land.",
+   "why_wrong": [
+    "Ploughing along the slope direction channels water and speeds erosion.",
+    "Removing trees removes the roots that hold soil.",
+    "",
+    "Bare soil is exposed to raindrop impact and runoff."
+   ],
+   "key": "EVS-U2-103"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "After years of canal irrigation, a farm in Punjab shows a white salt crust on the surface and falling crop yield. Which problem and remedy match?",
+   "code": "",
+   "options": [
+    "Desertification of dry land; plant more shelterbelts and reduce all irrigation",
+    "Salinisation and waterlogging; improve drainage and use salt-tolerant crops",
+    "Soil erosion by wind; add more canal water",
+    "Landslide; build retaining walls"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Excess irrigation with poor drainage raises the water table and brings salts to the surface. Drainage and tolerant crops are the standard remedies.",
+   "why_wrong": [
+    "Desertification involves loss of vegetation in dry areas, and shelterbelts do not remove salts.",
+    "",
+    "More water would worsen waterlogging and salt build-up.",
+    "Landslides occur on slopes, not on flat irrigated fields."
+   ],
+   "key": "EVS-U2-104"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Goats and cattle graze a dry rangeland in western India all year, leaving little vegetation and loose soil. Which is the most suitable remedy?",
+   "code": "",
+   "options": [
+    "Controlled, rotational grazing with planted grasses and shelterbelts",
+    "Increasing the herd size so that all the available grass is used up each year",
+    "Burning the remaining grass to speed regrowth",
+    "Ploughing the land to plant a single crop"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Overgrazing strips cover and invites erosion and desertification. Regulating grazing and restoring cover lets the land recover.",
+   "why_wrong": [
+    "",
+    "More animals would intensify the damage.",
+    "Burning removes the remaining cover and exposes soil.",
+    "Ploughing dry loose land increases wind erosion."
+   ],
+   "key": "EVS-U2-105"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An opencast coal mine in Jharkhand has left deep pits and barren heaps of overburden. Which step is the correct remedial measure?",
+   "code": "",
+   "options": [
+    "Abandon the site completely so that nature heals it unaided in a few seasons",
+    "Fill the pits with industrial effluent",
+    "Build houses directly on the loose overburden",
+    "Backfill the pits and reclaim the land by afforestation"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Mine reclamation restores the land through backfilling, levelling and planting. This reduces erosion and returns the land to productive use.",
+   "why_wrong": [
+    "Abandoned spoil heaps stay barren and keep eroding for decades.",
+    "Effluent would pollute soil and groundwater.",
+    "Loose overburden is unstable for construction.",
+    ""
+   ],
+   "key": "EVS-U2-106"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "The water table in a growing city falls every year while paved area increases. Which intervention directly targets this problem?",
+   "code": "",
+   "options": [
+    "Drilling deeper borewells to reach older water below the falling water table",
+    "Rainwater harvesting with recharge pits and permeable surfaces",
+    "Building more concrete roads",
+    "Importing bottled water for residents"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Recharge structures let rain percolate into the aquifer and offset withdrawal. Deeper borewells only speed up depletion.",
+   "why_wrong": [
+    "Deeper wells lower the table further and do not add water.",
+    "",
+    "Concrete prevents infiltration and reduces recharge.",
+    "Bottled water does not restore the aquifer."
+   ],
+   "key": "EVS-U2-107"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A big dam on a river submerges several tribal villages and their farmland. Which problem is this?",
+   "code": "",
+   "options": [
+    "Salt build-up in the reservoir water because of continuous evaporation",
+    "Rapid growth of downstream silt",
+    "Displacement of people and the need for rehabilitation",
+    "Depletion of the ozone layer"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Submergence forces families to relocate, which is a major social problem of large dams. Compensation and rehabilitation are often inadequate.",
+   "why_wrong": [
+    "Reservoir salinity is not the problem described here.",
+    "Dams trap silt, so downstream silt actually falls.",
+    "",
+    "Ozone depletion is caused by CFCs, not dams."
+   ],
+   "key": "EVS-U2-108"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a coastal town, heavy groundwater pumping leaves wells yielding salty water. What has most likely happened?",
+   "code": "",
+   "options": [
+    "Rainwater has dissolved the topsoil and washed its salts into the wells",
+    "The wells have been recharged too much",
+    "The river has deposited extra silt",
+    "Seawater has intruded into the depleted freshwater aquifer"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Over-extraction lowers freshwater pressure in coastal aquifers, letting seawater move inland. The wells then draw saline water.",
+   "why_wrong": [
+    "Rain recharges freshwater and does not salinate wells.",
+    "Too much recharge would dilute, not salinate, the water.",
+    "Silt deposits do not make groundwater salty.",
+    ""
+   ],
+   "key": "EVS-U2-109"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "After heavy rain, a river floods a valley whose upstream hills were recently deforested. Why did deforestation worsen the flood?",
+   "code": "",
+   "options": [
+    "Less infiltration and more surface runoff reached the river quickly",
+    "Trees normally add extra water to the river through their roots during storms",
+    "Roots increase the speed of surface flow",
+    "Deforestation raises groundwater storage"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Forest litter and roots absorb rain and slow runoff. Without them, more water reaches the river fast and the peak flow is higher.",
+   "why_wrong": [
+    "",
+    "Trees do not add water to rivers; they hold and release it slowly.",
+    "Roots slow flow and hold soil.",
+    "Reduced infiltration lowers groundwater storage."
+   ],
+   "key": "EVS-U2-110"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Villagers drinking from tubewells in parts of West Bengal develop skin lesions over years. Which groundwater contaminant is most commonly responsible?",
+   "code": "",
+   "options": [
+    "Chlorine",
+    "Oxygen",
+    "Arsenic",
+    "Calcium carbonate"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Arsenic occurs naturally in some alluvial aquifers of the Ganga delta. Long-term intake causes skin lesions and other disease.",
+   "why_wrong": [
+    "Chlorine is added to disinfect water and does not cause such lesions.",
+    "Dissolved oxygen is harmless.",
+    "",
+    "Calcium carbonate causes hardness, not skin lesions."
+   ],
+   "key": "EVS-U2-111"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Village women hug trees to stop a contractor from felling them. Which movement does this describe?",
+   "code": "",
+   "options": [
+    "Narmada Bachao Andolan",
+    "Chipko movement",
+    "Silent Valley movement",
+    "Green Revolution"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Chipko began in the Himalayan region of Uttarakhand as a non-violent protest where villagers embraced trees. It is a well-known example of community action for forests.",
+   "why_wrong": [
+    "Narmada Bachao Andolan opposed big dams on the Narmada.",
+    "",
+    "Silent Valley concerned a hydroelectric project in Kerala.",
+    "The Green Revolution was about high-yield crop varieties."
+   ],
+   "key": "EVS-U2-112"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A new highway cuts through a continuous forest and splits it into two blocks. Which is the most direct ecological consequence?",
+   "code": "",
+   "options": [
+    "Habitat fragmentation that isolates animal populations",
+    "Increase in the total forest area because of the new road corridor",
+    "Faster ozone formation",
+    "Higher groundwater recharge"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Roads divide habitats and restrict movement and gene flow. Smaller isolated patches support fewer and weaker populations.",
+   "why_wrong": [
+    "",
+    "Clearing a road reduces, not increases, forest area.",
+    "Ozone formation is unrelated to forest fragmentation.",
+    "Reducing forest cover tends to lower recharge."
+   ],
+   "key": "EVS-U2-113"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Tribal farmers in the north-east shorten the fallow period of jhum cultivation from many years to two. What is the likely result?",
+   "code": "",
+   "options": [
+    "Soil becomes more fertile with each cycle because ash is added repeatedly",
+    "Forest cover expands faster",
+    "Biodiversity increases",
+    "Soil fertility and forest regrowth cannot recover between cycles"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Shifting cultivation is sustainable only with long fallows. Short cycles exhaust the soil and prevent regrowth, causing degradation.",
+   "why_wrong": [
+    "Shorter fallow gives less time for nutrients to rebuild.",
+    "Less regrowth time reduces forest recovery.",
+    "Repeated clearing reduces species.",
+    ""
+   ],
+   "key": "EVS-U2-114"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A state forest department lets villagers collect fuelwood and minor produce in return for protecting the forest. What is this arrangement called?",
+   "code": "",
+   "options": [
+    "Clear felling, where all trees of an area are cut at one time",
+    "Joint Forest Management",
+    "Social distancing between forest guards and nearby village residents",
+    "Monoculture plantation of a single timber species"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Joint Forest Management involves local communities in protecting forests and shares benefits with them. It links livelihood with conservation.",
+   "why_wrong": [
+    "Clear felling removes all trees in an area.",
+    "",
+    "Social distancing is unrelated to forest management.",
+    "Monoculture plantation means growing a single species."
+   ],
+   "key": "EVS-U2-115"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A household replaces all its incandescent bulbs with LED bulbs. Which conservation principle does this show?",
+   "code": "",
+   "options": [
+    "Switching over to a non-renewable source of electricity at the power station",
+    "Increasing fossil fuel consumption",
+    "Improving energy efficiency to cut demand",
+    "Storing energy as nuclear waste"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "LEDs give the same light for much less electricity. Using less energy for the same service reduces fuel burnt at power stations.",
+   "why_wrong": [
+    "LEDs do not change the source type of the grid.",
+    "Lower demand reduces fossil fuel use.",
+    "",
+    "Nuclear waste is not an energy storage method."
+   ],
+   "key": "EVS-U2-116"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A remote farming village has plenty of cattle dung but no grid supply. Which energy option best suits it?",
+   "code": "",
+   "options": [
+    "A coal-fired thermal plant",
+    "A large nuclear reactor",
+    "An offshore wind farm",
+    "A biogas plant"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Biogas plants digest dung anaerobically to give methane-rich fuel and nutrient-rich slurry. They suit rural areas with livestock.",
+   "why_wrong": [
+    "A coal plant needs mined coal and transport infrastructure.",
+    "Reactors are unsuitable for small isolated villages.",
+    "Offshore wind needs a sea coast and a grid link, which a remote farming village lacks.",
+    ""
+   ],
+   "key": "EVS-U2-117"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A desert region with strong sunlight and large barren land plans a power plant. Which choice is the best fit?",
+   "code": "",
+   "options": [
+    "A solar photovoltaic or solar thermal plant",
+    "A tidal power station",
+    "A geothermal plant that runs on energy from the sea waves",
+    "A hydroelectric dam without any river"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Deserts have high solar radiation and ample low-value land. Solar plants emit no greenhouse gases during operation.",
+   "why_wrong": [
+    "",
+    "Tidal power requires a coast with strong tides.",
+    "Sea waves are not a geothermal source.",
+    "A dam requires a river and a reservoir."
+   ],
+   "key": "EVS-U2-118"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A country expands nuclear power to cut carbon emissions. Which problem still needs a long-term solution?",
+   "code": "",
+   "options": [
+    "Emission of large amounts of carbon dioxide",
+    "Dependence on coal mining",
+    "Safe disposal of radioactive waste",
+    "Acid rain from sulphur dioxide"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Nuclear plants emit little CO2 in operation but produce long-lived radioactive waste. Its safe storage remains a major challenge.",
+   "why_wrong": [
+    "Nuclear generation does not burn fuel to emit CO2.",
+    "Nuclear plants do not use coal.",
+    "",
+    "Acid rain comes mainly from fossil fuel burning."
+   ],
+   "key": "EVS-U2-119"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A college canteen throws away thousands of plastic cups daily. Which action should come first in the 3R order of priority?",
+   "code": "",
+   "options": [
+    "Recycle the cups after they are dumped together with other waste",
+    "Reduce use by shifting to steel tumblers",
+    "Reuse by melting for road tar",
+    "Dispose into the nearby drain"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The 3R hierarchy places reduce first, then reuse, then recycle. Preventing waste is more effective than managing it later.",
+   "why_wrong": [
+    "Recycling is the last of the three and still consumes energy.",
+    "",
+    "Melting for road tar is a later-stage handling step, not prevention.",
+    "Dumping into a drain pollutes and is not a conservation action."
+   ],
+   "key": "EVS-U2-120"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student collects kitchen peels and garden leaves into a pit to make compost for her plants. Which two conservation goals does this serve?",
+   "code": "",
+   "options": [
+    "Reducing waste and returning nutrients to the soil",
+    "Increasing landfill load and also raising the salinity of the soil",
+    "Reducing biodiversity and water retention",
+    "Raising fossil fuel use and air pollution"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Composting diverts organic waste from landfill and returns nutrients and organic matter to the soil. It improves soil structure and water retention.",
+   "why_wrong": [
+    "",
+    "Composting lowers landfill load and does not salinate soil.",
+    "Compost improves soil life and water retention.",
+    "Composting uses no fossil fuel."
+   ],
+   "key": "EVS-U2-121"
+  },
+  {
+   "topic": "Structure of ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Fungi grow on a dead fish lying at the edge of a pond. In ecosystem terms, what is the role of the fungi?",
+   "code": "",
+   "options": [
+    "Producers that fix carbon dioxide using energy from sunlight",
+    "Primary consumers feeding on algae",
+    "Abiotic components of the pond",
+    "Decomposers that break down dead organic matter"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Fungi secrete enzymes that digest dead matter and release nutrients back to the environment. They are saprotrophic decomposers.",
+   "why_wrong": [
+    "Fungi lack chlorophyll and cannot photosynthesise.",
+    "They feed on dead matter, not on living algae.",
+    "Fungi are living, so they are biotic.",
+    ""
+   ],
+   "key": "EVS-U2-122"
+  },
+  {
+   "topic": "Function of ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a grassland, the total energy fixed by plants is 1000 units and plants use 400 units in respiration. What is the net primary production?",
+   "code": "",
+   "options": [
+    "1400 units",
+    "600 units",
+    "400 units",
+    "1000 units"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Net primary production equals gross primary production minus respiration loss. Here 1000 - 400 = 600 units, which is available to consumers.",
+   "why_wrong": [
+    "Adding respiration to GPP is incorrect.",
+    "",
+    "400 units is the respiration loss, not the net production.",
+    "1000 units is the gross production before respiration."
+   ],
+   "key": "EVS-U2-123"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A wheat field in Haryana is ploughed, sown, irrigated and harvested by farmers. How is this ecosystem classified?",
+   "code": "",
+   "options": [
+    "A natural aquatic ecosystem",
+    "A natural forest ecosystem",
+    "An artificial ecosystem maintained by humans",
+    "A self-regulating natural climax ecosystem needing no human input"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Crop fields are man-made and depend on human inputs such as seeds, water and fertiliser. They do not self-regulate like natural ecosystems.",
+   "why_wrong": [
+    "A wheat field is a terrestrial system.",
+    "It has no forest structure.",
+    "",
+    "It would not persist without continuous human management."
+   ],
+   "key": "EVS-U2-124"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "The Sundarbans lie where rivers meet the Bay of Bengal, with fluctuating salinity and salt-tolerant trees. Which ecosystem type is this?",
+   "code": "",
+   "options": [
+    "Hot desert ecosystem with very little water",
+    "Alpine tundra ecosystem with permafrost",
+    "Freshwater pond ecosystem with no tides at all",
+    "Estuarine mangrove ecosystem"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Mangroves grow in tidal estuaries where fresh and sea water mix. The Sundarbans is a classic Indian example.",
+   "why_wrong": [
+    "Deserts are dry with little water.",
+    "Tundra is cold and treeless.",
+    "Pond water is still freshwater without tidal salinity.",
+    ""
+   ],
+   "key": "EVS-U2-125"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a large lake, a fish lives in the open water far from shore where sunlight penetrates. Which zone is this?",
+   "code": "",
+   "options": [
+    "Limnetic zone",
+    "Littoral zone",
+    "Profundal zone",
+    "Benthic zone"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The limnetic zone is the open, well-lit water away from the shore. The littoral zone is shallow near the shore, the profundal is deep and dark, and the benthic is the bottom.",
+   "why_wrong": [
+    "",
+    "The littoral zone is near the shore.",
+    "The profundal zone is deep and lacks light.",
+    "The benthic zone is the lake bottom."
+   ],
+   "key": "EVS-U2-126"
+  },
+  {
+   "topic": "Energy flow in ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the chain grass, grasshopper, frog, snake, the grass holds 10000 J. Applying the ten percent law, how much energy reaches the snake?",
+   "code": "",
+   "options": [
+    "1000 J",
+    "100 J",
+    "10 J",
+    "1 J"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Each transfer keeps about 10 percent: grass 10000, grasshopper 1000, frog 100, snake 10 J. The snake is the third consumer.",
+   "why_wrong": [
+    "1000 J is the energy at the grasshopper.",
+    "100 J is the energy at the frog.",
+    "",
+    "That would be one step too many."
+   ],
+   "key": "EVS-U2-127"
+  },
+  {
+   "topic": "Energy flow in ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A naturalist notes that no food chain in a forest has more than five links. What best explains this?",
+   "code": "",
+   "options": [
+    "Predators dislike eating other predators, so chains simply stop there by choice",
+    "Large energy loss at each trophic level leaves too little for further levels",
+    "Sunlight is absent at higher levels",
+    "Decomposers eat the top predators first"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Only about ten percent of energy passes on, so after a few steps the amount left cannot support another level.",
+   "why_wrong": [
+    "Feeding behaviour is not the limit on chain length.",
+    "",
+    "Sunlight is needed only by producers.",
+    "Decomposers act on dead matter and do not limit chain length."
+   ],
+   "key": "EVS-U2-128"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Dead leaves on a forest floor are eaten by earthworms, which are eaten by birds. What kind of food chain is this?",
+   "code": "",
+   "options": [
+    "Detritus food chain",
+    "Grazing food chain",
+    "Parasitic food chain",
+    "Photosynthetic chain"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A detritus chain starts from dead organic matter rather than living producers. Earthworms are detritivores feeding on it.",
+   "why_wrong": [
+    "",
+    "A grazing chain begins with living green plants.",
+    "A parasitic chain depends on host organisms.",
+    "There is no such standard chain type."
+   ],
+   "key": "EVS-U2-129"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a field, insects are eaten by frogs and frogs by snakes. If snakes are removed by hunting, what is the most likely effect?",
+   "code": "",
+   "options": [
+    "Frog numbers fall and insect numbers rise as the snakes are gone",
+    "Both frogs and insects increase",
+    "Both frogs and insects vanish immediately",
+    "Frog numbers rise and insect numbers fall"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Removing the predator reduces predation on frogs, so they increase and eat more insects. Insects therefore decline.",
+   "why_wrong": [
+    "Frogs would not fall without their predator.",
+    "More frogs would eat more insects, not let them increase.",
+    "Immediate disappearance is not expected.",
+    ""
+   ],
+   "key": "EVS-U2-130"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Which of the following correctly shows a grazing food chain?",
+   "code": "",
+   "options": [
+    "Dead leaf, earthworm, bird",
+    "Grass, deer, tiger",
+    "Tiger, deer, grass",
+    "Deer, grass, tiger"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A grazing chain starts with a green plant, followed by a herbivore and then a carnivore. Grass to deer to tiger follows this order.",
+   "why_wrong": [
+    "That chain starts with dead matter, so it is a detritus chain.",
+    "",
+    "That reverses the direction of energy flow.",
+    "A herbivore cannot precede the plant it eats."
+   ],
+   "key": "EVS-U2-131"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In the ocean, tiny phytoplankton support a larger mass of zooplankton at a given moment. Which pyramid is inverted in this situation?",
+   "code": "",
+   "options": [
+    "Pyramid of energy",
+    "Pyramid of biomass",
+    "Pyramid of energy and biomass both",
+    "None of the pyramids"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Phytoplankton reproduce very fast and are consumed quickly, so their standing biomass can be smaller than that of the consumers. Pyramids of energy remain upright.",
+   "why_wrong": [
+    "Energy pyramids are never inverted.",
+    "",
+    "Energy pyramids are always upright, so naming both is wrong.",
+    "The standing biomass pyramid is inverted here."
+   ],
+   "key": "EVS-U2-132"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Why is the pyramid of energy always upright in every ecosystem?",
+   "code": "",
+   "options": [
+    "Producers are always fewer in number than the herbivores above them",
+    "Consumers are always larger in body size",
+    "Decomposers store all the energy",
+    "Energy is lost as heat at each trophic level"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Much of the energy at each level is lost in respiration and as heat, so less is available at successive levels.",
+   "why_wrong": [
+    "Producers are not necessarily fewer, and that concerns numbers.",
+    "Body size does not govern energy transfer.",
+    "Decomposers do not store the energy.",
+    ""
+   ],
+   "key": "EVS-U2-133"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "One large mango tree supports hundreds of insects that feed on it. What is the shape of the pyramid of numbers for the tree and the insects?",
+   "code": "",
+   "options": [
+    "Inverted, since one producer supports many herbivores",
+    "Perfectly upright, because there are many producers at the base",
+    "Upright, since producers are always the most numerous in every ecosystem and nothing else",
+    "Impossible to draw"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A single large producer supports many insects, so the base is narrower than the next level. The number pyramid is therefore inverted, not upright.",
+   "why_wrong": [
+    "",
+    "There is only one producer, so it is not upright with many producers.",
+    "That is a different kind of pyramid.",
+    "It can be drawn."
+   ],
+   "key": "EVS-U2-134"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Fresh lava cools to bare rock. Lichens arrive first and slowly form soil. What is this process called?",
+   "code": "",
+   "options": [
+    "Secondary succession",
+    "Climax regression",
+    "Primary succession",
+    "Biomagnification"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Primary succession starts on a surface with no soil or life. Lichens are pioneer species that begin soil formation.",
+   "why_wrong": [
+    "Secondary succession starts where soil already exists.",
+    "Climax regression is not the process described.",
+    "",
+    "Biomagnification is the build-up of toxins up a food chain."
+   ],
+   "key": "EVS-U2-135"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An abandoned farm field in Haryana turns into grass, then shrubs, then trees over some years. Why is this faster than succession on bare rock?",
+   "code": "",
+   "options": [
+    "It has no soil at all, so succession is much slower",
+    "Soil and a seed bank already exist",
+    "It lacks any seeds",
+    "It has no sunlight"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "This is secondary succession, which begins on land that still has soil and seeds. Primary succession must first create soil.",
+   "why_wrong": [
+    "The field has soil, which is the key difference.",
+    "",
+    "Seeds in the soil help regrowth.",
+    "Sunlight is available."
+   ],
+   "key": "EVS-U2-136"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A shallow pond fills with silt over decades and finally turns into a meadow and then forest. What is this type of succession called?",
+   "code": "",
+   "options": [
+    "Hydrarch succession",
+    "Xerarch succession, which starts on dry bare surfaces",
+    "Lithosere, which starts on bare rock",
+    "Climax regression, which reverses succession"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Hydrarch succession begins in water and proceeds towards land through submerged, floating and reed-swamp stages.",
+   "why_wrong": [
+    "",
+    "Xerarch succession begins on dry areas.",
+    "A lithosere starts on bare rock.",
+    "Climax regression is not a recognised stage of this type."
+   ],
+   "key": "EVS-U2-137"
+  },
+  {
+   "topic": "Structure of ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Where a forest meets a grassland, a biologist records more species than in either interior. What explains this?",
+   "code": "",
+   "options": [
+    "Biomagnification of toxins in the food chain",
+    "Eutrophication of the nearby water body",
+    "Bioaccumulation of toxins inside one organism",
+    "The edge effect in the ecotone"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "An ecotone shares species of both neighbouring communities and its own, giving higher diversity. This is the edge effect.",
+   "why_wrong": [
+    "Biomagnification concerns toxins in food chains.",
+    "Eutrophication is nutrient enrichment of water.",
+    "Bioaccumulation is toxin build-up in an organism.",
+    ""
+   ],
+   "key": "EVS-U2-138"
+  },
+  {
+   "topic": "Natural resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which of the following is a non-renewable resource that is NOT a fossil fuel?",
+   "code": "",
+   "options": [
+    "Natural gas",
+    "Uranium",
+    "Coal",
+    "Petroleum"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Uranium is a mineral fuel for nuclear reactors and cannot be replaced once mined. Coal, petroleum and natural gas are fossil fuels formed from ancient organisms.",
+   "why_wrong": [
+    "Natural gas is a fossil fuel.",
+    "",
+    "Coal is a fossil fuel.",
+    "Petroleum is a fossil fuel."
+   ],
+   "key": "EVS-U2-139"
+  },
+  {
+   "topic": "Natural resources",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A forest is harvested exactly as fast as it regrows. Which statement best describes the use of this resource?",
+   "code": "",
+   "options": [
+    "Overexploitation of a non-renewable resource",
+    "Irreversible depletion",
+    "Sustainable use of a renewable resource",
+    "Conversion into a fossil resource"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Renewable resources stay available when the harvest does not exceed the regeneration rate. That is the meaning of sustainable use.",
+   "why_wrong": [
+    "Forests are renewable, not non-renewable.",
+    "If harvest equals regrowth, the stock is not depleted.",
+    "",
+    "Forests do not convert into fossil resources by this practice."
+   ],
+   "key": "EVS-U2-140"
+  },
+  {
+   "topic": "Energy flow in ecosystem",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement correctly joins energy flow and nutrient cycling in an ecosystem?",
+   "code": "",
+   "options": [
+    "Both energy and nutrients are recycled endlessly within the ecosystem",
+    "Energy is recycled by decomposers while nutrients flow one way and are never reused",
+    "Neither energy nor nutrients are lost from the system",
+    "Energy flows one way and is lost as heat, while nutrients are recycled"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Energy enters as sunlight, passes along trophic levels and is dissipated as heat, so it cannot be reused. Nutrients circulate between organisms and the environment.",
+   "why_wrong": [
+    "Energy is not recycled.",
+    "The roles are reversed in this statement.",
+    "Energy is steadily lost as heat.",
+    ""
+   ],
+   "key": "EVS-U2-141"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about ecological pyramids is INCORRECT?",
+   "code": "",
+   "options": [
+    "The pyramid of energy can be inverted in a pond",
+    "The pyramid of biomass can be inverted in the ocean",
+    "The pyramid of numbers can be inverted in a parasitic chain",
+    "The pyramid of energy is always upright"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Energy pyramids are never inverted because energy is lost at each step. Biomass and number pyramids can be inverted in some ecosystems.",
+   "why_wrong": [
+    "",
+    "This is true because of fast-growing phytoplankton.",
+    "This is true because one host can carry many parasites.",
+    "This is a correct statement."
+   ],
+   "key": "EVS-U2-142"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a parasitic food chain, such as one tree hosting many insects that carry many parasites, what is the usual shape of the pyramid of numbers?",
+   "code": "",
+   "options": [
+    "Always upright",
+    "Always rectangular",
+    "Inverted",
+    "Always spindle-shaped with a sharp tip"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Each level has more individuals than the one below it, as parasites outnumber hosts. This gives an inverted number pyramid.",
+   "why_wrong": [
+    "Numbers increase upward here, so it is not upright.",
+    "Rectangular would mean equal numbers.",
+    "",
+    "Numbers do not narrow to a tip in this chain."
+   ],
+   "key": "EVS-U2-143"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "As succession moves towards the climax community, how does the ratio of gross production to community respiration (P/R) generally change?",
+   "code": "",
+   "options": [
+    "It rises well above one",
+    "It approaches one",
+    "It falls to zero",
+    "It remains much greater than ten"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "In young communities production exceeds respiration. At climax, production and respiration balance, giving a ratio close to one.",
+   "why_wrong": [
+    "A ratio far above one marks the early stages, not the climax.",
+    "",
+    "Zero would mean no production.",
+    "A high ratio is characteristic of immature communities."
+   ],
+   "key": "EVS-U2-144"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about succession is correct?",
+   "code": "",
+   "options": [
+    "Secondary succession begins on land that has lost its community but kept soil",
+    "Primary succession begins on land that already has rich soil and seeds",
+    "Pioneer species appear last in a succession, after the climax community has formed",
+    "The climax community is the first stage"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Secondary succession occurs after disturbance such as fire or abandonment, where soil survives. Primary succession starts on bare surfaces.",
+   "why_wrong": [
+    "",
+    "Primary succession starts on bare rock or similar sites without soil.",
+    "Pioneer species are the first colonisers.",
+    "The climax community is the final stage."
+   ],
+   "key": "EVS-U2-145"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "The Aral Sea shrank greatly mainly because its feeder rivers were diverted. For what purpose was most of the water diverted?",
+   "code": "",
+   "options": [
+    "Cooling nuclear reactors",
+    "Washing coal",
+    "Producing hydrogen fuel",
+    "Irrigation of crops"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Water from the Amu Darya and Syr Darya was diverted for large-scale irrigation, mostly of cotton. It is a standard example of surface water overuse.",
+   "why_wrong": [
+    "The main diversion was not for reactor cooling.",
+    "Coal washing did not use most of the river flow.",
+    "Hydrogen production was not the reason.",
+    ""
+   ],
+   "key": "EVS-U2-146"
+  },
+  {
+   "topic": "Water resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which of the following is NOT a typical effect of a large dam?",
+   "code": "",
+   "options": [
+    "Submergence of land, forest and farmland under the reservoir",
+    "Greater silt delivery to the downstream delta",
+    "Displacement of local people",
+    "Reservoir-induced seismic activity"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Dams trap sediment in the reservoir, so less silt reaches the delta. The other options are recognised effects.",
+   "why_wrong": [
+    "Submergence of land is a standard effect.",
+    "",
+    "Displacement is a major social impact.",
+    "Reservoir-induced seismicity is a recognised concern."
+   ],
+   "key": "EVS-U2-147"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which of the following is a soil conservation method and NOT a cause of soil erosion?",
+   "code": "",
+   "options": [
+    "Overgrazing",
+    "Deforestation",
+    "Contour ploughing",
+    "Ploughing up and down a slope"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Contour ploughing follows the slope's contours and slows runoff. The other options expose soil or speed water flow.",
+   "why_wrong": [
+    "Overgrazing removes ground cover.",
+    "Deforestation removes protective roots.",
+    "",
+    "This lets water run straight downhill."
+   ],
+   "key": "EVS-U2-148"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A city covers its land with roads and buildings. Which two resources are affected together?",
+   "code": "",
+   "options": [
+    "Wind energy and tidal energy of the nearby coast",
+    "Uranium and thorium reserves of the area",
+    "Biogas and coal gas production",
+    "Land use and groundwater recharge"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Impervious surfaces cut infiltration, which lowers groundwater recharge while changing land use. It links land and water resources.",
+   "why_wrong": [
+    "Paved surfaces do not directly change wind or tidal energy.",
+    "Mineral fuels are not affected by paving.",
+    "Gas fuels are unrelated to paving.",
+    ""
+   ],
+   "key": "EVS-U2-149"
+  },
+  {
+   "topic": "Land resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which pair correctly matches a land degradation process with a condition that causes it?",
+   "code": "",
+   "options": [
+    "Waterlogging and salinity with over-irrigation and poor drainage",
+    "Desertification with heavy rainfall over dense, undisturbed forest cover",
+    "Landslide on flat arid land with sparse vegetation",
+    "Soil erosion with thick plant cover"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Too much irrigation without drainage lifts the water table and brings salts up. The other pairs are mismatched.",
+   "why_wrong": [
+    "",
+    "Desertification occurs where vegetation is lost in dry areas.",
+    "Landslides occur on steep slopes.",
+    "Thick plant cover protects soil from erosion."
+   ],
+   "key": "EVS-U2-150"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Deforestation of a large catchment affects both rainfall and the atmosphere. Which pair of effects is correct?",
+   "code": "",
+   "options": [
+    "More transpiration and a lower level of carbon dioxide",
+    "More groundwater recharge and more oxygen",
+    "Less transpiration and a rise in atmospheric carbon dioxide",
+    "Higher humidity and less carbon dioxide in the air above the catchment"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Fewer trees mean less water vapour returned to the air and less carbon absorbed, while burning and decay release carbon dioxide.",
+   "why_wrong": [
+    "Fewer trees reduce transpiration and carbon uptake.",
+    "Deforestation reduces infiltration and photosynthetic oxygen.",
+    "",
+    "Humidity falls and carbon dioxide does not."
+   ],
+   "key": "EVS-U2-151"
+  },
+  {
+   "topic": "Forest resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Why can a monoculture timber plantation not fully replace a natural forest?",
+   "code": "",
+   "options": [
+    "It produces more oxygen than any natural forest can ever give",
+    "It supports far fewer species and ecosystem functions",
+    "It recharges groundwater more than natural forest",
+    "It needs no management"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Single-species plantations lack the layers and diversity of natural forests. Their wildlife support and resilience are lower.",
+   "why_wrong": [
+    "There is no basis for that claim.",
+    "",
+    "Natural forests generally regulate water better.",
+    "Plantations usually need intensive management."
+   ],
+   "key": "EVS-U2-152"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "What is the main combustible component of biogas?",
+   "code": "",
+   "options": [
+    "Methane",
+    "Carbon monoxide",
+    "Hydrogen sulphide",
+    "Ammonia"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Biogas from anaerobic digestion of organic waste is mostly methane with carbon dioxide. Methane gives it fuel value.",
+   "why_wrong": [
+    "",
+    "Carbon monoxide is not the main component.",
+    "Hydrogen sulphide is only a minor impurity.",
+    "Ammonia is not the main gas."
+   ],
+   "key": "EVS-U2-153"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "How does a solar photovoltaic cell differ from a solar thermal collector?",
+   "code": "",
+   "options": [
+    "Both only store heat in water tanks and neither produces any electricity at all",
+    "The photovoltaic cell works only at night",
+    "The collector turns sunlight directly into electricity, while the cell only gathers heat",
+    "The cell turns sunlight directly into electricity; the collector gathers heat"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Photovoltaic cells use the photoelectric effect to produce electric current. Thermal collectors absorb solar radiation as heat.",
+   "why_wrong": [
+    "Photovoltaic cells produce electricity, not stored heat.",
+    "Photovoltaic cells need light and do not work at night.",
+    "The roles are reversed in this statement.",
+    ""
+   ],
+   "key": "EVS-U2-154"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Ocean thermal energy conversion works by exploiting which difference?",
+   "code": "",
+   "options": [
+    "The difference in salinity between rivers and deserts of the region",
+    "The temperature difference between warm surface water and cold deep water",
+    "The speed of wind over land",
+    "The difference in height between high and low tide"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "OTEC uses warm surface water to vaporise a working fluid and cold deep water to condense it, driving a turbine.",
+   "why_wrong": [
+    "Salinity differences are not what OTEC uses.",
+    "",
+    "Wind speed is for wind turbines.",
+    "Tidal height is used in tidal power."
+   ],
+   "key": "EVS-U2-155"
+  },
+  {
+   "topic": "Energy resources",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Firewood is renewable, yet a hill district runs short of fuelwood. What best explains this apparent contradiction?",
+   "code": "",
+   "options": [
+    "Wood stops being a biological resource once it is cut and collected",
+    "Trees convert to coal quickly",
+    "Harvesting is faster than regrowth, so the renewable stock declines",
+    "Fuelwood is a non-renewable mineral resource like coal that cannot regrow"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A renewable resource can be exhausted if its use exceeds natural renewal. Fuelwood is renewable only when the rate of cutting is below regrowth.",
+   "why_wrong": [
+    "Wood remains a biological resource.",
+    "Coal forms over millions of years, not quickly.",
+    "",
+    "Wood is not a mineral."
+   ],
+   "key": "EVS-U2-156"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Which individual habit helps conserve both water and energy at once?",
+   "code": "",
+   "options": [
+    "Leaving taps running while brushing and using a geyser for long periods",
+    "Running geyser all day",
+    "Washing half loads in machines",
+    "Using a bucket and taking shorter showers with a solar heater"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Using less hot water saves the water itself and the energy used to heat it. The other habits waste one or both.",
+   "why_wrong": [
+    "Running taps wastes water.",
+    "An always-on geyser wastes energy.",
+    "Half loads waste both water and power.",
+    ""
+   ],
+   "key": "EVS-U2-157"
+  },
+  {
+   "topic": "Structure of ecosystem",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which organisms at deep-sea hydrothermal vents act as producers although there is no sunlight?",
+   "code": "",
+   "options": [
+    "Chemosynthetic bacteria",
+    "Photosynthetic algae using sunlight",
+    "Fungi feeding on dead matter",
+    "Zooplankton feeding on algae"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "These bacteria oxidise chemicals such as hydrogen sulphide to make food. Producers therefore include chemosynthetic as well as photosynthetic organisms.",
+   "why_wrong": [
+    "",
+    "Algae need sunlight to photosynthesise.",
+    "Fungi are decomposers.",
+    "Zooplankton are consumers."
+   ],
+   "key": "EVS-U2-158"
+  },
+  {
+   "topic": "Structure of ecosystem",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which organism physically fragments dead leaves, making them easier for decomposers to act on?",
+   "code": "",
+   "options": [
+    "Fungus, a decomposer",
+    "Grass, a producer",
+    "Earthworm, a detritivore",
+    "Hawk, a tertiary consumer"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Detritivores ingest and break dead matter into smaller pieces, increasing surface area for microbial decomposition. Fungi then digest it chemically.",
+   "why_wrong": [
+    "Fungi decompose chemically by secreting enzymes rather than fragmenting physically.",
+    "Grass is a producer.",
+    "",
+    "A hawk does not feed on leaf litter."
+   ],
+   "key": "EVS-U2-159"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which pair correctly classifies the ecosystem types?",
+   "code": "",
+   "options": [
+    "River is lentic and pond is lotic",
+    "River is lotic and pond is lentic",
+    "Both river and pond are lentic",
+    "Both river and pond are lotic ecosystems"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Lotic ecosystems have running water, such as rivers and streams, while lentic ones have still water, such as ponds and lakes.",
+   "why_wrong": [
+    "The terms are reversed here.",
+    "",
+    "A river has running water so it is not lentic.",
+    "A pond has standing water so it is not lotic."
+   ],
+   "key": "EVS-U2-160"
+  },
+  {
+   "topic": "Types of ecosystem",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Per unit area, which of these ecosystems typically has the lowest productivity?",
+   "code": "",
+   "options": [
+    "Open ocean",
+    "Tropical rainforest",
+    "Estuary",
+    "Coral reef"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Nutrient-poor open ocean has low productivity per unit area. Rainforests, estuaries and reefs are among the most productive.",
+   "why_wrong": [
+    "",
+    "Tropical rainforest is highly productive.",
+    "Estuaries are very productive.",
+    "Coral reefs are very productive."
+   ],
+   "key": "EVS-U2-161"
+  },
+  {
+   "topic": "Energy flow in ecosystem",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "With about ten percent transfer between levels, what fraction of the producer energy reaches the fifth trophic level?",
+   "code": "",
+   "options": [
+    "About 0.1 percent of it",
+    "About 1 percent of it",
+    "About 10 percent of it",
+    "About 0.01 percent"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "There are four transfers from level one to level five, so the fraction is 0.1 to the power four, which is 0.0001 or 0.01 percent.",
+   "why_wrong": [
+    "0.1 percent would be three transfers.",
+    "1 percent would be two transfers.",
+    "10 percent would be a single transfer.",
+    ""
+   ],
+   "key": "EVS-U2-162"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Pesticide residue is found in a hawk at a far higher concentration than in the grass and insects below it. Which process explains this?",
+   "code": "",
+   "options": [
+    "Ecological succession over time",
+    "Biomagnification along the food chain",
+    "Photosynthesis in the grass that feeds the insects",
+    "Nitrogen fixation in the soil"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Persistent toxins accumulate in tissues and increase in concentration at each trophic level. Top predators carry the highest amounts.",
+   "why_wrong": [
+    "Succession is a change in community over time.",
+    "",
+    "Photosynthesis makes food and does not concentrate toxins.",
+    "Nitrogen fixation makes nitrogen available to plants."
+   ],
+   "key": "EVS-U2-163"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Why is a food web generally more stable than a single food chain?",
+   "code": "",
+   "options": [
+    "Each consumer eats only one species, so a loss has no knock-on effect",
+    "Energy is recycled between levels",
+    "Consumers have alternative food sources if one species declines",
+    "It has fewer species and fewer feeding links than a single chain"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Many cross-links let predators switch prey, so the loss of one species does not collapse the system.",
+   "why_wrong": [
+    "Single-prey dependence would make the web fragile.",
+    "Energy is not recycled.",
+    "",
+    "Webs have more species and links."
+   ],
+   "key": "EVS-U2-164"
+  },
+  {
+   "topic": "Energy flow in ecosystem",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In the Y-shaped energy flow model, what do the two arms of the Y represent?",
+   "code": "",
+   "options": [
+    "Producers and decomposers only",
+    "Aquatic and terrestrial ecosystems",
+    "Biotic and abiotic components of the ecosystem, respectively",
+    "The grazing and detritus food chains"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Energy from the sun enters and then splits into the grazing chain and the detritus chain, which begin from living and dead matter respectively.",
+   "why_wrong": [
+    "The two arms are food chains and not just those groups.",
+    "The model describes chains within an ecosystem.",
+    "The arms describe pathways of energy flow.",
+    ""
+   ],
+   "key": "EVS-U2-165"
+  },
+  {
+   "topic": "Ecological pyramids",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a typical grassland, what is the usual shape of the pyramid of numbers?",
+   "code": "",
+   "options": [
+    "Upright",
+    "Inverted",
+    "Spindle-shaped",
+    "Rectangular"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Many grass plants support fewer herbivores, which support still fewer carnivores. This produces an upright pyramid.",
+   "why_wrong": [
+    "",
+    "Inverted shapes arise with a single large producer or parasites.",
+    "Spindle shapes arise in some tree ecosystems.",
+    "Numbers clearly decrease up the levels."
+   ],
+   "key": "EVS-U2-166"
+  },
+  {
+   "topic": "Role of individual in conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A hostel resident notices that the corridor lights and fans stay on all night in empty rooms. Which individual action best conserves energy?",
+   "code": "",
+   "options": [
+    "Leaving them on so that they do not wear out from repeated switching",
+    "Replacing them with higher-wattage appliances",
+    "Switching off lights and fans when leaving a room",
+    "Writing a complaint but changing no habits"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Energy saved at the point of use directly lowers demand on power stations. Small habits repeated by many individuals add up to large savings.",
+   "why_wrong": [
+    "Running appliances unnecessarily wastes electricity and does not protect them.",
+    "Higher wattage raises consumption.",
+    "",
+    "Complaining alone saves no energy."
+   ],
+   "key": "EVS-U2-167"
+  },
+  {
+   "topic": "Function of ecosystem",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A pond has abundant algae but its bottom is full of dead leaves that are not decaying because the bacteria and fungi were killed by a chemical spill. What is the most likely result?",
+   "code": "",
+   "options": [
+    "Nutrient cycling speeds up",
+    "Nutrients stay locked in dead matter and recycling slows",
+    "Energy begins to flow in a cycle",
+    "Producers gain extra minerals from the dead leaves at once"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Decomposers release nutrients from dead matter for reuse by producers. Without them, nutrients stay tied up and cycling slows.",
+   "why_wrong": [
+    "Cycling slows when decomposers die.",
+    "",
+    "Energy flow is one-way and never cyclic.",
+    "Dead leaves cannot supply minerals unless decomposed."
+   ],
+   "key": "EVS-U2-168"
+  },
+  {
+   "topic": "Ecological succession",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about the climax community is correct?",
+   "code": "",
+   "options": [
+    "It is relatively stable and in balance with the climate of the area",
+    "It is the first stage of succession and has the lowest species diversity",
+    "It always has more annual herbs than trees",
+    "It keeps changing quickly into the pioneer stage"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The climax is the final, self-perpetuating stage of succession, in equilibrium with climate. It remains stable unless disturbed.",
+   "why_wrong": [
+    "",
+    "The pioneer community is the first stage.",
+    "Climax communities in forest regions are typically dominated by trees.",
+    "Rapid change is characteristic of early stages."
+   ],
+   "key": "EVS-U2-169"
+  },
+  {
+   "topic": "Food chains and food webs",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which is the correct statement about trophic levels?",
+   "code": "",
+   "options": [
+    "Each species occupies only one fixed trophic level in every chain",
+    "Producers are always at the top trophic level",
+    "Decomposers always form the first trophic level in every ecosystem and chain",
+    "A species may occupy different trophic levels in different food chains"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Omnivores such as humans can be primary consumers in one chain and secondary in another. So the trophic level depends on the chain.",
+   "why_wrong": [
+    "Many omnivores change level between chains.",
+    "Producers occupy the first level.",
+    "Producers, not decomposers, form the first level.",
+    ""
+   ],
+   "key": "EVS-U2-170"
+  }
+ ]
+}

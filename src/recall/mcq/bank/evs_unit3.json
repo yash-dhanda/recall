@@ -1,0 +1,3733 @@
+{
+ "subject_code": "EVS",
+ "unit": 3,
+ "unit_label": "Biodiversity and Conservation",
+ "questions": [
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which statement best defines biodiversity?",
+   "code": "",
+   "options": [
+    "The variety of life from genes to ecosystems",
+    "The total count of individual animals living in a forest",
+    "The scientific study of how organisms interact with climate",
+    "The number of protected areas legally notified in a country"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Biodiversity is the total variety of living organisms and the ecosystems they form, including the genetic variation within species.",
+   "why_wrong": [
+    "",
+    "That is population size, not variety of life.",
+    "That describes ecology, not the variety of life itself.",
+    "Protected areas are a conservation tool, not the definition."
+   ],
+   "key": "EVS-U3-001"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Variation of genes within a single species is called",
+   "code": "",
+   "options": [
+    "species diversity",
+    "ecosystem diversity",
+    "genetic diversity",
+    "landscape uniformity"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Genetic diversity is the variation in genes among individuals and populations of one species, such as the many varieties of rice.",
+   "why_wrong": [
+    "Species diversity is the variety of different species, not genes within one species.",
+    "Ecosystem diversity is the variety of habitats and ecosystems.",
+    "",
+    "This is not a recognised level of biodiversity."
+   ],
+   "key": "EVS-U3-002"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The variety of different species in a region is known as",
+   "code": "",
+   "options": [
+    "genetic diversity",
+    "species diversity",
+    "ecosystem diversity",
+    "cultural diversity"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Species diversity covers how many different species live in a region and how evenly they are represented.",
+   "why_wrong": [
+    "Genetic diversity is variation within a species.",
+    "",
+    "Ecosystem diversity is variety of habitat types, not species.",
+    "Cultural diversity concerns human societies, not species."
+   ],
+   "key": "EVS-U3-003"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Forests, grasslands, wetlands and deserts occurring in one country illustrate which level of biodiversity?",
+   "code": "",
+   "options": [
+    "Genetic diversity",
+    "Species diversity",
+    "Molecular diversity",
+    "Ecosystem diversity"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Ecosystem diversity refers to the variety of habitats, communities and ecological processes in an area.",
+   "why_wrong": [
+    "Genetic diversity refers to gene variation within a species.",
+    "Species diversity counts different species, not habitat types.",
+    "This is not one of the three standard levels.",
+    ""
+   ],
+   "key": "EVS-U3-004"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The term 'biodiversity' was popularised by which scientist?",
+   "code": "",
+   "options": [
+    "Charles Darwin",
+    "Rachel Carson",
+    "E. O. Wilson",
+    "Norman Myers"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "E. O. Wilson popularised the word after the 1986 National Forum on BioDiversity and his 1988 book of the same name.",
+   "why_wrong": [
+    "Darwin proposed natural selection and did not use the word biodiversity.",
+    "Carson wrote Silent Spring about pesticides.",
+    "",
+    "Myers proposed the hotspot concept, not the term biodiversity."
+   ],
+   "key": "EVS-U3-005"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Species diversity generally reaches its highest value in which region of the world?",
+   "code": "",
+   "options": [
+    "The tropics",
+    "The poles",
+    "Temperate grasslands",
+    "Hot deserts"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Warm, stable and productive tropical climates have supported more species than temperate or polar regions.",
+   "why_wrong": [
+    "",
+    "Polar regions have very few species due to extreme cold.",
+    "These have moderate diversity, lower than the tropics.",
+    "Deserts have low diversity because water is scarce."
+   ],
+   "key": "EVS-U3-006"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Pollination of crops by bees is an example of a(n)",
+   "code": "",
+   "options": [
+    "ecological hazard",
+    "invasive process",
+    "genetic bottleneck",
+    "ecosystem service"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Pollinators provide a service that supports crop production and natural plant reproduction without human payment.",
+   "why_wrong": [
+    "Pollination benefits ecosystems and people, it is not a hazard.",
+    "Invasion refers to alien species spreading, not pollination.",
+    "A bottleneck is a sharp drop in population variation.",
+    ""
+   ],
+   "key": "EVS-U3-007"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Food, fuelwood, fibre and fresh water supplied by ecosystems are called",
+   "code": "",
+   "options": [
+    "regulating services",
+    "provisioning services",
+    "cultural services",
+    "supporting services"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Provisioning services are the products people obtain directly from ecosystems.",
+   "why_wrong": [
+    "Regulating services control processes like climate, floods and disease.",
+    "",
+    "Cultural services are non-material benefits such as recreation.",
+    "Supporting services such as nutrient cycling underpin all other services."
+   ],
+   "key": "EVS-U3-008"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The enjoyment people get from the beauty of forests, flowers and wildlife reflects which value of biodiversity?",
+   "code": "",
+   "options": [
+    "Aesthetic value",
+    "Consumptive value",
+    "Productive value",
+    "Option value"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Aesthetic value is the appreciation of natural beauty, which also drives nature tourism.",
+   "why_wrong": [
+    "",
+    "Consumptive value involves using resources directly, such as fuelwood.",
+    "Productive value comes from marketed products.",
+    "Option value is the potential future use of a resource."
+   ],
+   "key": "EVS-U3-009"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Using biodiversity for scientific research, education and monitoring of environmental change is its",
+   "code": "",
+   "options": [
+    "consumptive value",
+    "aesthetic value",
+    "informational value",
+    "commercial value"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Species and ecosystems are sources of knowledge for science, teaching and bioindication.",
+   "why_wrong": [
+    "Consumptive value means local direct use for subsistence.",
+    "Aesthetic value relates to beauty and enjoyment.",
+    "",
+    "Commercial value relates to trade, not knowledge."
+   ],
+   "key": "EVS-U3-010"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is a direct economic benefit of forest biodiversity?",
+   "code": "",
+   "options": [
+    "Absorption of carbon dioxide",
+    "Timber and medicinal plants",
+    "Prevention of soil erosion",
+    "Scenic beauty"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Timber, medicines, resins and fruits are harvested and sold, giving direct economic value.",
+   "why_wrong": [
+    "This is an indirect regulating benefit.",
+    "",
+    "This is an indirect ecological benefit.",
+    "This is an aesthetic value, not a harvested product."
+   ],
+   "key": "EVS-U3-011"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Nutrient cycling and soil formation are examples of which value or service of biodiversity?",
+   "code": "",
+   "options": [
+    "Aesthetic value of beauty",
+    "Recreational value for visitors",
+    "Commercial value from trade",
+    "Ecological (supporting) service"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "They maintain the basic processes on which ecosystems and all other services depend.",
+   "why_wrong": [
+    "Aesthetic value concerns beauty, not ecosystem processes.",
+    "Recreation is a cultural benefit.",
+    "These processes are not directly traded in markets.",
+    ""
+   ],
+   "key": "EVS-U3-012"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Who introduced the concept of biodiversity hotspots in 1988?",
+   "code": "",
+   "options": [
+    "E. O. Wilson",
+    "Charles Elton",
+    "Norman Myers",
+    "Robert Whittaker"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Norman Myers identified regions rich in endemic species and under severe threat.",
+   "why_wrong": [
+    "Wilson popularised the term biodiversity.",
+    "Elton is known for food webs and ecological niche work.",
+    "",
+    "Whittaker defined alpha, beta and gamma diversity."
+   ],
+   "key": "EVS-U3-013"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A biodiversity hotspot is an area that has",
+   "code": "",
+   "options": [
+    "many endemics and serious threat",
+    "only common and widespread species",
+    "no human presence or settlement at all",
+    "only marine species and coral reefs"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A hotspot holds many endemic species and has lost most of its original habitat.",
+   "why_wrong": [
+    "",
+    "Hotspots are defined by rare, endemic species.",
+    "Many hotspots are densely populated and threatened by people.",
+    "Hotspots include land regions as well."
+   ],
+   "key": "EVS-U3-014"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is a biodiversity hotspot in India?",
+   "code": "",
+   "options": [
+    "Thar Desert",
+    "Gangetic Plain",
+    "Deccan Plateau interior",
+    "Western Ghats"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The Western Ghats, with Sri Lanka, form a recognised global hotspot.",
+   "why_wrong": [
+    "The Thar is an arid zone, not a recognised hotspot.",
+    "The plain is largely cultivated and is not a hotspot.",
+    "This is not a recognised hotspot.",
+    ""
+   ],
+   "key": "EVS-U3-015"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Species found only in a particular geographic area and nowhere else are called",
+   "code": "",
+   "options": [
+    "exotic species",
+    "endemic species",
+    "cosmopolitan species",
+    "keystone species"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Endemism is the restriction of a species to a defined region.",
+   "why_wrong": [
+    "Exotic species are introduced from other regions.",
+    "",
+    "Cosmopolitan species occur widely across the world.",
+    "Keystone species have a large ecological effect, regardless of range."
+   ],
+   "key": "EVS-U3-016"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "To qualify as a hotspot, a region must have lost at least what portion of its original habitat?",
+   "code": "",
+   "options": [
+    "70 percent",
+    "10 percent",
+    "30 percent",
+    "50 percent"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Along with 1,500 endemic plant species, a hotspot must have lost at least 70 percent of its primary vegetation.",
+   "why_wrong": [
+    "",
+    "Too low for a hotspot threshold.",
+    "Too low for a hotspot threshold.",
+    "This is below the accepted 70 percent threshold."
+   ],
+   "key": "EVS-U3-017"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which organisation is best known for identifying and updating the global list of hotspots?",
+   "code": "",
+   "options": [
+    "World Trade Organization",
+    "International Monetary Fund",
+    "Conservation International",
+    "Food and Agriculture Organization"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "It adopted and refined Myers' hotspot concept and maintains the list.",
+   "why_wrong": [
+    "The WTO deals with trade rules.",
+    "The IMF deals with finance.",
+    "",
+    "The FAO focuses on agriculture and food, not the hotspot list."
+   ],
+   "key": "EVS-U3-018"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is generally considered the greatest threat to biodiversity worldwide?",
+   "code": "",
+   "options": [
+    "Natural volcanic eruptions",
+    "Habitat loss and degradation",
+    "Celestial radiation",
+    "Seasonal rainfall"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Clearing, fragmentation and degradation of habitats affect more species than any other pressure.",
+   "why_wrong": [
+    "These are local events with minor global effect.",
+    "",
+    "Not a significant cause of biodiversity loss.",
+    "A normal climate pattern, not a threat."
+   ],
+   "key": "EVS-U3-019"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Illegal hunting and trading of wild animals is called",
+   "code": "",
+   "options": [
+    "grazing",
+    "afforestation",
+    "bioprospecting",
+    "poaching"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Poaching is the unlawful killing or capturing of wildlife.",
+   "why_wrong": [
+    "Grazing means animals feeding on vegetation.",
+    "Afforestation is planting trees.",
+    "Bioprospecting is searching for useful biological material.",
+    ""
+   ],
+   "key": "EVS-U3-020"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A species that is introduced into a new area and spreads harmfully there is known as",
+   "code": "",
+   "options": [
+    "an endemic species",
+    "a keystone species",
+    "an invasive alien species",
+    "a flagship species"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Such species lack natural enemies and outcompete native ones.",
+   "why_wrong": [
+    "Endemics are native and restricted to their region.",
+    "Keystone species are important in their own native ecosystems.",
+    "",
+    "Flagship species are used to attract public conservation support."
+   ],
+   "key": "EVS-U3-021"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which aquatic plant, called the 'Terror of Bengal', is a notorious invasive species in India?",
+   "code": "",
+   "options": [
+    "Water hyacinth",
+    "Lotus",
+    "Hydrilla native pondweed",
+    "Mangrove"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Eichhornia crassipes chokes water bodies and depletes oxygen.",
+   "why_wrong": [
+    "",
+    "Lotus is native and not considered an invasive threat.",
+    "Not the plant given this nickname.",
+    "Mangrove forests are native coastal vegetation."
+   ],
+   "key": "EVS-U3-022"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Conflict between people and wild animals over space and resources is called",
+   "code": "",
+   "options": [
+    "commensalism",
+    "symbiosis",
+    "biomagnification",
+    "human-wildlife conflict"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "It occurs when wildlife damages crops, livestock or lives, and people retaliate.",
+   "why_wrong": [
+    "Commensalism is an ecological interaction where one benefits and the other is unaffected.",
+    "Symbiosis is a mutually beneficial interaction.",
+    "Biomagnification is the build-up of toxins up the food chain.",
+    ""
+   ],
+   "key": "EVS-U3-023"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Breaking of a large continuous habitat into small isolated patches is known as",
+   "code": "",
+   "options": [
+    "habitat restoration",
+    "habitat fragmentation",
+    "habitat succession",
+    "habitat enrichment"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Roads, farmland and dams often split habitats and isolate populations.",
+   "why_wrong": [
+    "Restoration means repairing damaged habitats.",
+    "",
+    "Succession is the natural change in community structure over time.",
+    "Enrichment means improving habitat quality."
+   ],
+   "key": "EVS-U3-024"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The fine shahtoosh wool, whose trade drives poaching, comes from which animal?",
+   "code": "",
+   "options": [
+    "Tibetan antelope",
+    "Pashmina goat",
+    "Domestic yak",
+    "Merino sheep"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Chiru are killed for their under-fur, which is illegal to trade.",
+   "why_wrong": [
+    "",
+    "Pashmina is shorn from domestic goats and is legal.",
+    "Yaks are domesticated for milk and hair.",
+    "Merino wool is from domestic sheep."
+   ],
+   "key": "EVS-U3-025"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Ivory, a major target of poachers, is obtained from the tusks of",
+   "code": "",
+   "options": [
+    "rhinoceroses",
+    "musk deer",
+    "elephants",
+    "leopards"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ivory trade has caused severe population declines in elephants.",
+   "why_wrong": [
+    "Rhinos are poached for their horn, not ivory.",
+    "Musk deer are killed for the musk gland.",
+    "",
+    "Leopards are hunted for skin and claws."
+   ],
+   "key": "EVS-U3-026"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A species of which no living individual remains anywhere is called",
+   "code": "",
+   "options": [
+    "endangered",
+    "extinct",
+    "vulnerable",
+    "rare"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Extinct means the last individual has died.",
+   "why_wrong": [
+    "Endangered species still have living members but are at high risk.",
+    "",
+    "Vulnerable species still survive in the wild.",
+    "Rare species still exist."
+   ],
+   "key": "EVS-U3-027"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of these birds is a well-known extinct species?",
+   "code": "",
+   "options": [
+    "Great Indian Bustard",
+    "Indian peacock",
+    "Sarus crane",
+    "Dodo"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The dodo of Mauritius was driven extinct in the 1600s by hunting and introduced animals.",
+   "why_wrong": [
+    "Still survives, though critically endangered.",
+    "Common and widespread.",
+    "Still survives in India.",
+    ""
+   ],
+   "key": "EVS-U3-028"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A species facing a very high risk of extinction in the near future is classified as",
+   "code": "",
+   "options": [
+    "extinct",
+    "least concern",
+    "endangered",
+    "vulnerable"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Endangered species are in danger of extinction if factors causing decline continue.",
+   "why_wrong": [
+    "No living individuals remain in that case.",
+    "Least concern species are not at significant risk.",
+    "",
+    "Vulnerable species face a lower risk than endangered ones."
+   ],
+   "key": "EVS-U3-029"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Species likely to become endangered if present threats continue are called",
+   "code": "",
+   "options": [
+    "vulnerable species",
+    "extinct species",
+    "common species",
+    "exotic species"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Vulnerable species are facing high risk of extinction in the wild in the medium term.",
+   "why_wrong": [
+    "",
+    "Extinct species have no survivors.",
+    "Common species are abundant.",
+    "Exotic means introduced from elsewhere."
+   ],
+   "key": "EVS-U3-030"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Species with small populations that are not yet endangered or vulnerable but are at risk are called",
+   "code": "",
+   "options": [
+    "extinct species",
+    "keystone species",
+    "pest species",
+    "rare species"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Rare species are localised or thinly spread and could become threatened.",
+   "why_wrong": [
+    "No living individuals remain.",
+    "Keystone refers to ecological importance, not population size.",
+    "Pests are species harmful to human interests.",
+    ""
+   ],
+   "key": "EVS-U3-031"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "EDGE species stands for",
+   "code": "",
+   "options": [
+    "Ecologically Diverse and Geographically Established species",
+    "Evolutionarily Distinct and Globally Endangered species",
+    "Endemic, Dominant, Genetically Elite species",
+    "Exotic and Dangerous Global Entities"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "These are threatened species with few close relatives, so their loss removes unique evolutionary history.",
+   "why_wrong": [
+    "This expansion is invented.",
+    "",
+    "Not the meaning of EDGE.",
+    "Not the meaning of EDGE."
+   ],
+   "key": "EVS-U3-032"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Conserving species in their natural habitat is called",
+   "code": "",
+   "options": [
+    "in-situ conservation",
+    "ex-situ conservation",
+    "bioprospecting",
+    "biomagnification"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In-situ means 'on site'; the species is protected where it lives.",
+   "why_wrong": [
+    "",
+    "Ex-situ means off-site conservation.",
+    "Bioprospecting is the search for valuable biological products.",
+    "Biomagnification is toxin accumulation in food chains."
+   ],
+   "key": "EVS-U3-033"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Conservation of species outside their natural habitat is known as",
+   "code": "",
+   "options": [
+    "in-situ conservation",
+    "in-vivo conservation",
+    "ex-situ conservation",
+    "habitat conservation"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ex-situ means 'off site', as in zoos and gene banks.",
+   "why_wrong": [
+    "In-situ is conservation within the natural habitat.",
+    "Not the term used for habitat-based conservation types.",
+    "",
+    "This is in-situ conservation."
+   ],
+   "key": "EVS-U3-034"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is an in-situ conservation measure?",
+   "code": "",
+   "options": [
+    "Zoological garden",
+    "National park",
+    "Seed bank",
+    "Botanical garden"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "National parks protect wildlife and habitats where they naturally occur.",
+   "why_wrong": [
+    "A zoo is an ex-situ facility.",
+    "",
+    "Seed banks store germplasm outside natural habitats.",
+    "Botanical gardens are ex-situ."
+   ],
+   "key": "EVS-U3-035"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which of the following is an ex-situ conservation facility?",
+   "code": "",
+   "options": [
+    "Wildlife sanctuary",
+    "Biosphere reserve",
+    "Sacred grove",
+    "Botanical garden"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Plants are grown outside their natural habitat for conservation and study.",
+   "why_wrong": [
+    "Sanctuaries protect wildlife in their natural habitat.",
+    "Biosphere reserves are in-situ.",
+    "Sacred groves protect species where they naturally occur.",
+    ""
+   ],
+   "key": "EVS-U3-036"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Storing seeds, sperm or tissues at very low temperature for long-term preservation is part of",
+   "code": "",
+   "options": [
+    "a wildlife corridor",
+    "a national park",
+    "a gene bank",
+    "a sacred grove"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Gene banks preserve genetic resources outside the habitat.",
+   "why_wrong": [
+    "Corridors link habitats on the ground.",
+    "A park conserves species in situ.",
+    "",
+    "Sacred groves are in-situ, community protected."
+   ],
+   "key": "EVS-U3-037"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Project Tiger, India's flagship conservation programme for tigers, was launched in",
+   "code": "",
+   "options": [
+    "1973",
+    "1947",
+    "1992",
+    "2005"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "It was started in 1973 with a set of tiger reserves.",
+   "why_wrong": [
+    "",
+    "This was India's independence year.",
+    "Not the year of Project Tiger.",
+    "Not the year of Project Tiger."
+   ],
+   "key": "EVS-U3-038"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Patches of forest protected by local communities on religious grounds are called",
+   "code": "",
+   "options": [
+    "botanical gardens",
+    "game reserves",
+    "seed banks",
+    "sacred groves"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "They are traditional in-situ conservation sites in many parts of India.",
+   "why_wrong": [
+    "These are managed ex-situ collections.",
+    "These are managed for hunting, not religious protection.",
+    "These store seeds artificially.",
+    ""
+   ],
+   "key": "EVS-U3-039"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In a biosphere reserve, the innermost, strictly protected area is the",
+   "code": "",
+   "options": [
+    "buffer zone",
+    "core zone",
+    "transition zone",
+    "tourism zone"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The core zone holds undisturbed ecosystems with minimum human activity.",
+   "why_wrong": [
+    "The buffer surrounds the core and allows limited activities.",
+    "",
+    "The transition zone is the outermost area with human settlement.",
+    "Not an official zone of the biosphere reserve model."
+   ],
+   "key": "EVS-U3-040"
+  },
+  {
+   "topic": "Biogeographic zones and mega-diversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How many biogeographic zones are recognised in India?",
+   "code": "",
+   "options": [
+    "10",
+    "3",
+    "6",
+    "14"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "India has ten zones, including Trans-Himalaya, Desert and Islands.",
+   "why_wrong": [
+    "",
+    "Too few for the classification.",
+    "Too few for the classification.",
+    "Too many for the classification."
+   ],
+   "key": "EVS-U3-041"
+  },
+  {
+   "topic": "Biogeographic zones and mega-diversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "India is regarded as a",
+   "code": "",
+   "options": [
+    "mono-diversity nation",
+    "low-diversity nation",
+    "mega-diversity nation",
+    "hotspot-free nation"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "India is one of the roughly seventeen countries holding most of the world's biodiversity.",
+   "why_wrong": [
+    "This is not a real category.",
+    "India's species wealth is among the highest.",
+    "",
+    "India contains several global hotspots."
+   ],
+   "key": "EVS-U3-042"
+  },
+  {
+   "topic": "Biogeographic zones and mega-diversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which is the largest of India's biogeographic zones?",
+   "code": "",
+   "options": [
+    "Trans-Himalaya",
+    "Deccan Peninsula",
+    "Islands",
+    "Coasts"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "It covers a very large part of peninsular India.",
+   "why_wrong": [
+    "This is a high, cold zone with a smaller area.",
+    "",
+    "Islands cover a small area.",
+    "Coasts form a narrow belt."
+   ],
+   "key": "EVS-U3-043"
+  },
+  {
+   "topic": "Biogeographic zones and mega-diversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The Thar and Kutch region belongs to which biogeographic zone?",
+   "code": "",
+   "options": [
+    "Gangetic Plain",
+    "Western Ghats",
+    "North-East zone",
+    "Desert zone"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "It includes arid and semi-arid regions of Rajasthan and Kutch.",
+   "why_wrong": [
+    "This lies in the fertile plain of north India.",
+    "This is a humid hill range in the west.",
+    "This is a high-rainfall hill region.",
+    ""
+   ],
+   "key": "EVS-U3-044"
+  },
+  {
+   "topic": "Biogeographic zones and mega-diversity",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The Andaman and Nicobar group and Lakshadweep belong to which biogeographic zone?",
+   "code": "",
+   "options": [
+    "Coasts",
+    "Desert",
+    "Islands",
+    "Trans-Himalaya"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "These island groups form the Islands zone of India.",
+   "why_wrong": [
+    "The Coasts zone covers mainland coastline.",
+    "Not related to islands.",
+    "",
+    "This is a high mountain cold desert zone."
+   ],
+   "key": "EVS-U3-045"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The existence of hundreds of mango varieties in India best illustrates",
+   "code": "",
+   "options": [
+    "genetic diversity",
+    "species diversity",
+    "ecosystem diversity",
+    "landscape diversity"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The varieties belong to one species, so the variation is within-species gene variation.",
+   "why_wrong": [
+    "",
+    "That would need many different species.",
+    "That would involve different habitats.",
+    "This is not a standard level."
+   ],
+   "key": "EVS-U3-046"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT one of the three recognised levels of biodiversity?",
+   "code": "",
+   "options": [
+    "Genetic diversity",
+    "Species diversity",
+    "Ecosystem diversity",
+    "Climatic diversity"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The three standard levels are genetic, species and ecosystem diversity.",
+   "why_wrong": [
+    "It is a recognised level.",
+    "It is a recognised level.",
+    "It is a recognised level.",
+    ""
+   ],
+   "key": "EVS-U3-047"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In Whittaker's scheme, beta diversity measures",
+   "code": "",
+   "options": [
+    "the count of species within one habitat",
+    "species change between habitats",
+    "the total species in an entire region",
+    "the gene variation within one species"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Beta diversity compares how different the species sets are between habitats along a gradient.",
+   "why_wrong": [
+    "This is alpha diversity.",
+    "",
+    "This is gamma diversity.",
+    "This is genetic diversity, not beta diversity."
+   ],
+   "key": "EVS-U3-048"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Species richness refers to",
+   "code": "",
+   "options": [
+    "the number of different species in an area",
+    "how evenly individuals are spread among species",
+    "the total number of individuals",
+    "the number of ecosystems in a region"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "It is a simple count of species, ignoring how many individuals each has.",
+   "why_wrong": [
+    "",
+    "That is species evenness.",
+    "That is abundance.",
+    "That is ecosystem diversity."
+   ],
+   "key": "EVS-U3-049"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following explains why tropical regions hold more species than polar ones?",
+   "code": "",
+   "options": [
+    "Fewer predators and parasites in the tropics",
+    "Lower annual rainfall than elsewhere",
+    "Warm stable climate over long time",
+    "A much smaller total land area"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Constant warmth and high productivity allowed species to accumulate and persist.",
+   "why_wrong": [
+    "This is not a general explanation.",
+    "Tropical areas generally have high rainfall.",
+    "",
+    "The tropics are very large."
+   ],
+   "key": "EVS-U3-050"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pair correctly matches a level of diversity with an example?",
+   "code": "",
+   "options": [
+    "Genetic diversity - forests, deserts and wetlands together",
+    "Species diversity - many species in a rainforest",
+    "Ecosystem diversity - many varieties of one crop",
+    "Genetic diversity - number of national parks in India"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Species diversity describes the variety of species living together.",
+   "why_wrong": [
+    "That example is ecosystem diversity.",
+    "",
+    "That example is genetic diversity.",
+    "Not an example of genes within a species."
+   ],
+   "key": "EVS-U3-051"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Wetlands absorbing floodwater and reducing flood damage is an example of a",
+   "code": "",
+   "options": [
+    "provisioning service",
+    "cultural service",
+    "supporting service",
+    "regulating service"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Regulating services moderate natural processes such as floods, climate and water quality.",
+   "why_wrong": [
+    "Provisioning gives products such as food and water.",
+    "Cultural benefits are recreational or spiritual.",
+    "Supporting services cover basic processes like soil formation.",
+    ""
+   ],
+   "key": "EVS-U3-052"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is a supporting ecosystem service?",
+   "code": "",
+   "options": [
+    "Supply of timber and fuelwood",
+    "Spiritual enrichment and recreation",
+    "Nutrient cycling and soil formation",
+    "Climate regulation and flood control"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Supporting services underlie all other services.",
+   "why_wrong": [
+    "This is a provisioning service.",
+    "This is a cultural service.",
+    "",
+    "This is a regulating service."
+   ],
+   "key": "EVS-U3-053"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Pilgrimage to sacred rivers and recreation in national parks are examples of",
+   "code": "",
+   "options": [
+    "cultural services",
+    "provisioning services",
+    "regulating services",
+    "supporting services"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "These are non-material benefits such as spiritual and recreational value.",
+   "why_wrong": [
+    "",
+    "They do not supply material products.",
+    "They do not regulate natural processes.",
+    "They are not basic ecosystem processes."
+   ],
+   "key": "EVS-U3-054"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT a benefit that ecosystems provide to people?",
+   "code": "",
+   "options": [
+    "Water purification",
+    "Crop pollination",
+    "Fisheries and food",
+    "Ozone layer depletion"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Ozone depletion is a harm caused by human pollutants.",
+   "why_wrong": [
+    "It is a regulating benefit.",
+    "It is a regulating and supporting benefit.",
+    "It is a provisioning benefit.",
+    ""
+   ],
+   "key": "EVS-U3-055"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The anticancer drug vincristine obtained from the rosy periwinkle illustrates the",
+   "code": "",
+   "options": [
+    "aesthetic value of biodiversity and beauty",
+    "medicinal value of biodiversity",
+    "ethical value of all living species",
+    "regulating value of climate and water"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Species can supply drugs of great economic value, so loss of species means losing potential medicines.",
+   "why_wrong": [
+    "Aesthetic value concerns beauty.",
+    "",
+    "Ethical value says all species have a right to exist.",
+    "Not related to drug production."
+   ],
+   "key": "EVS-U3-056"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The view that all species have an inherent right to exist, regardless of their usefulness to humans, is the",
+   "code": "",
+   "options": [
+    "ethical value of biodiversity",
+    "commercial value of marketed products",
+    "consumptive value of local direct use",
+    "option value of future potential benefits"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "It treats species as valuable in themselves.",
+   "why_wrong": [
+    "",
+    "Commercial value depends on market use.",
+    "Consumptive value is about direct use.",
+    "Option value is about future possible benefits."
+   ],
+   "key": "EVS-U3-057"
+  },
+  {
+   "topic": "Importance of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Protection of sacred groves by villagers mainly demonstrates which value?",
+   "code": "",
+   "options": [
+    "Purely commercial value",
+    "Industrial value",
+    "Social and cultural value",
+    "Military value"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The groves are protected because of community beliefs and traditions.",
+   "why_wrong": [
+    "They are not protected for trade.",
+    "They are not protected for industry.",
+    "",
+    "They have no defence role."
+   ],
+   "key": "EVS-U3-058"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pair contains hotspots that lie wholly or partly in India?",
+   "code": "",
+   "options": [
+    "Madagascar and Cerrado",
+    "Himalaya and Indo-Burma",
+    "Tropical Andes and Caribbean Islands",
+    "California Floristic Province and Mediterranean Basin"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Both regions extend into India, along with the Western Ghats and Sundaland (Nicobar).",
+   "why_wrong": [
+    "Neither lies in India.",
+    "",
+    "Neither lies in India.",
+    "Neither lies in India."
+   ],
+   "key": "EVS-U3-059"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Besides habitat loss of at least 70 percent, a region must contain at least how many endemic vascular plant species to qualify as a hotspot?",
+   "code": "",
+   "options": [
+    "150",
+    "15,000",
+    "500",
+    "1,500"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "This is the plant endemism threshold, roughly 0.5 percent of global plant species.",
+   "why_wrong": [
+    "Far too low for the criterion.",
+    "Far too high for the criterion.",
+    "Not the accepted threshold.",
+    ""
+   ],
+   "key": "EVS-U3-060"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Conservation efforts focus on hotspots because",
+   "code": "",
+   "options": [
+    "they have almost no human population living there",
+    "they contain only commercially useful species and crops",
+    "they hold many endemic species in little area",
+    "they are completely free from any serious threat"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Protecting a small area can save a large number of otherwise irreplaceable species.",
+   "why_wrong": [
+    "Many hotspots are densely populated.",
+    "The selection is based on endemism and threat.",
+    "",
+    "Being threatened is a defining criterion."
+   ],
+   "key": "EVS-U3-061"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The Western Ghats hotspot is combined with which neighbouring country's land?",
+   "code": "",
+   "options": [
+    "Sri Lanka",
+    "Bangladesh",
+    "Nepal",
+    "Pakistan"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The hotspot is known as the Western Ghats and Sri Lanka.",
+   "why_wrong": [
+    "",
+    "Not part of that hotspot.",
+    "Not part of that hotspot.",
+    "Not part of that hotspot."
+   ],
+   "key": "EVS-U3-062"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "An exotic species differs from an endemic species in that an exotic species",
+   "code": "",
+   "options": [
+    "is found nowhere else on earth at all",
+    "is always extinct in its original homeland",
+    "is always harmless to native species",
+    "is introduced from outside the area"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Exotics originate elsewhere, whereas endemics are native and restricted to the area.",
+   "why_wrong": [
+    "That describes an endemic species.",
+    "Not a definition of exotic species.",
+    "Exotics can be invasive and harmful.",
+    ""
+   ],
+   "key": "EVS-U3-063"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT a criterion for a region to be called a hotspot?",
+   "code": "",
+   "options": [
+    "Exceptional plant endemism",
+    "Presence of a national park",
+    "Loss of most original vegetation",
+    "Serious threat to its biodiversity"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Parks are management tools and not part of the hotspot criteria.",
+   "why_wrong": [
+    "This is a hotspot criterion.",
+    "",
+    "This is a hotspot criterion.",
+    "This is a hotspot criterion."
+   ],
+   "key": "EVS-U3-064"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT a cause of habitat loss?",
+   "code": "",
+   "options": [
+    "Establishing a protected area",
+    "Construction of highways through forests",
+    "Conversion of wetlands to farmland",
+    "Open-cast mining"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Protected areas shield habitat from loss.",
+   "why_wrong": [
+    "",
+    "Roads destroy and fragment habitat.",
+    "Drainage destroys wetland habitat.",
+    "Mining removes habitat."
+   ],
+   "key": "EVS-U3-065"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT an invasive alien species in India?",
+   "code": "",
+   "options": [
+    "Lantana camara",
+    "Parthenium",
+    "Sal (Shorea robusta)",
+    "Water hyacinth"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Sal is a native forest tree of India.",
+   "why_wrong": [
+    "Introduced ornamental that spreads in forests.",
+    "Introduced weed that spreads in fields and wastelands.",
+    "",
+    "Introduced aquatic weed."
+   ],
+   "key": "EVS-U3-066"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The introduction of Nile perch into Lake Victoria is a classic example of",
+   "code": "",
+   "options": [
+    "successful biological conservation of native fish",
+    "native fish loss due to an invasive predator",
+    "natural migration of fish into the lake",
+    "genetic enrichment of native cichlid fish"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Nile perch preyed on and competed with native cichlids, causing many to disappear.",
+   "why_wrong": [
+    "It harmed native biodiversity.",
+    "",
+    "The fish was deliberately introduced.",
+    "It caused losses of cichlids rather than enrichment."
+   ],
+   "key": "EVS-U3-067"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Invasive alien species spread rapidly in new areas mainly because",
+   "code": "",
+   "options": [
+    "they cannot reproduce quickly in new areas",
+    "native species protect them from harm",
+    "they need very specific narrow habitats",
+    "they have no natural enemies there"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Without checks from their home ecosystem, populations expand and displace natives.",
+   "why_wrong": [
+    "Rapid reproduction aids invasion.",
+    "Native species usually compete with them.",
+    "Invaders are usually tolerant generalists.",
+    ""
+   ],
+   "key": "EVS-U3-068"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Elephants raiding crops in villages near forests is most directly linked to",
+   "code": "",
+   "options": [
+    "too much forest area left for them",
+    "a lack of crops in the whole region",
+    "shrinking habitat and blocked corridors",
+    "complete absence of humans nearby"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Fragmentation pushes elephants into farmland in search of food.",
+   "why_wrong": [
+    "Habitat is shrinking rather than expanding.",
+    "Crops attract elephants when forests lack food.",
+    "",
+    "Conflict occurs where people and elephants overlap."
+   ],
+   "key": "EVS-U3-069"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which animal is persistently poached for its horn?",
+   "code": "",
+   "options": [
+    "One-horned rhinoceros",
+    "Asiatic elephant",
+    "Royal Bengal tiger",
+    "Himalayan snow leopard"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Its horn is illegally traded, so Kaziranga guards it heavily.",
+   "why_wrong": [
+    "",
+    "Elephants are poached for ivory.",
+    "Tigers are poached for skin and bones.",
+    "Poached for pelts and bones."
+   ],
+   "key": "EVS-U3-070"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Poaching differs from legal wildlife use mainly because it is",
+   "code": "",
+   "options": [
+    "done only at night by trained hunters",
+    "done only for food by hungry villagers",
+    "done only by local tribal communities",
+    "illegal under wildlife law"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Poaching violates law, such as the Wildlife Protection Act, 1972.",
+   "why_wrong": [
+    "Timing does not define poaching.",
+    "Many poachers target trophies or trade, not food.",
+    "Poachers can be anyone.",
+    ""
+   ],
+   "key": "EVS-U3-071"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which measure helps reduce human-wildlife conflict?",
+   "code": "",
+   "options": [
+    "Removing all forests near every village",
+    "Corridors and early-warning systems",
+    "Feeding wild animals inside villages",
+    "Encouraging encroachment into reserves and forests"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Corridors give animals safe passage and early warnings keep people safe.",
+   "why_wrong": [
+    "This increases habitat loss and worsens conflict.",
+    "",
+    "This makes animals depend on people and increases conflict.",
+    "This increases overlap and conflict."
+   ],
+   "key": "EVS-U3-072"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the Sundarbans, human-tiger conflict is highest for people who",
+   "code": "",
+   "options": [
+    "enter the mangroves to fish or collect honey",
+    "live in distant big cities far away",
+    "work in offices in nearby towns",
+    "stay on boats in the open sea only"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "They work inside tiger territory, so attacks occur.",
+   "why_wrong": [
+    "",
+    "They are not exposed to tigers.",
+    "They have no tiger encounters.",
+    "The risk is mainly for those entering the forest."
+   ],
+   "key": "EVS-U3-073"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which sequence correctly lists IUCN threat categories from higher to lower risk?",
+   "code": "",
+   "options": [
+    "Vulnerable, Endangered, Critically Endangered, Near Threatened",
+    "Near Threatened, Vulnerable, Endangered, Critically Endangered",
+    "Critically Endangered, Endangered, Vulnerable, Near Threatened",
+    "Endangered, Critically Endangered, Near Threatened, Vulnerable"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Critically endangered species face the highest risk, followed by endangered and vulnerable.",
+   "why_wrong": [
+    "This reverses the correct order.",
+    "This is the exact reverse.",
+    "",
+    "Mixed up order."
+   ],
+   "key": "EVS-U3-074"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which large cat was declared extinct in India in 1952?",
+   "code": "",
+   "options": [
+    "Asiatic lion",
+    "Cheetah",
+    "Snow leopard",
+    "Clouded leopard"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The Asiatic cheetah vanished in India due to hunting and habitat loss.",
+   "why_wrong": [
+    "Still survives in Gir.",
+    "",
+    "Survives in high Himalayan areas.",
+    "Survives in north-eastern India."
+   ],
+   "key": "EVS-U3-075"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A species surviving only in captivity or cultivation is classed as",
+   "code": "",
+   "options": [
+    "extinct",
+    "vulnerable",
+    "data deficient",
+    "extinct in the wild"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "It no longer lives naturally in the wild but still has captive individuals.",
+   "why_wrong": [
+    "Extinct means no living individuals anywhere.",
+    "Vulnerable species still live in the wild.",
+    "This means insufficient information, not captivity.",
+    ""
+   ],
+   "key": "EVS-U3-076"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why are EDGE species given special conservation priority?",
+   "code": "",
+   "options": [
+    "They are common and widespread across many regions",
+    "They are all large mammals found in forests",
+    "They are threatened and have few close relatives",
+    "They are all invasive species of wetlands"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The unique evolutionary history of such species cannot be replaced by relatives.",
+   "why_wrong": [
+    "Common species are not a conservation priority.",
+    "EDGE includes birds, reptiles, amphibians and others.",
+    "",
+    "They are native and threatened."
+   ],
+   "key": "EVS-U3-077"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The IUCN Red Data Book is best described as",
+   "code": "",
+   "options": [
+    "a list of species and threat status",
+    "a catalogue of all national parks",
+    "a guide to managing zoo animals",
+    "a list of common species only"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "It documents the conservation status of species.",
+   "why_wrong": [
+    "",
+    "Parks are listed elsewhere.",
+    "Not its purpose.",
+    "It concerns threatened species."
+   ],
+   "key": "EVS-U3-078"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is NOT an extinct species?",
+   "code": "",
+   "options": [
+    "Dodo",
+    "Passenger pigeon",
+    "Thylacine",
+    "Snow leopard"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The snow leopard survives in the Himalayas.",
+   "why_wrong": [
+    "It is extinct.",
+    "It is extinct since 1914.",
+    "It is extinct, the last known one died in 1936.",
+    ""
+   ],
+   "key": "EVS-U3-079"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The main difference between endangered and vulnerable species is that",
+   "code": "",
+   "options": [
+    "vulnerable species are already extinct today",
+    "endangered species face a higher extinction risk",
+    "endangered species are always invasive aliens",
+    "vulnerable species live only inside zoos"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Vulnerable species face a lower, medium-term risk.",
+   "why_wrong": [
+    "Extinct species are a separate category.",
+    "",
+    "Invasiveness is unrelated to threat status.",
+    "Vulnerable species live in the wild."
+   ],
+   "key": "EVS-U3-080"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "How does a national park differ from a wildlife sanctuary?",
+   "code": "",
+   "options": [
+    "A national park bans human activities like grazing",
+    "A national park allows regulated hunting inside",
+    "A sanctuary is an ex-situ site like a zoo",
+    "A national park is always smaller in area"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Sanctuaries may allow some activities while national parks are strictly protected.",
+   "why_wrong": [
+    "",
+    "Hunting is prohibited in national parks.",
+    "Sanctuaries are in-situ sites.",
+    "Size is not the distinguishing factor."
+   ],
+   "key": "EVS-U3-081"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT an ex-situ conservation method?",
+   "code": "",
+   "options": [
+    "Zoological park",
+    "Cryopreservation of gametes",
+    "Biosphere reserve",
+    "Seed gene bank"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Biosphere reserves protect ecosystems in their natural place.",
+   "why_wrong": [
+    "A zoo is ex-situ.",
+    "This is ex-situ.",
+    "",
+    "This is ex-situ."
+   ],
+   "key": "EVS-U3-082"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Preserving sperm, embryos or plant tissue in liquid nitrogen is called",
+   "code": "",
+   "options": [
+    "pasteurisation",
+    "cryopreservation",
+    "vernalisation",
+    "bioremediation"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Very low temperature stops biological activity, so material can be stored for years.",
+   "why_wrong": [
+    "A heat treatment for milk.",
+    "",
+    "Cold treatment to induce flowering.",
+    "Using organisms to clean up pollution."
+   ],
+   "key": "EVS-U3-083"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which national park is the protected home of the Asiatic lion?",
+   "code": "",
+   "options": [
+    "Kaziranga National Park",
+    "Keoladeo National Park",
+    "Jim Corbett National Park",
+    "Gir National Park"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Gir in Gujarat is the last natural habitat of the Asiatic lion.",
+   "why_wrong": [
+    "Known for the one-horned rhino.",
+    "Known for water birds.",
+    "Known for tigers and was India's first national park.",
+    ""
+   ],
+   "key": "EVS-U3-084"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Captive breeding followed by reintroduction into the wild is a strategy of",
+   "code": "",
+   "options": [
+    "in-situ conservation only",
+    "pest control programmes",
+    "ex-situ conservation",
+    "industrial farming systems"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Individuals are bred outside and released to rebuild wild populations.",
+   "why_wrong": [
+    "Captive breeding takes place outside the natural habitat.",
+    "Not designed for pests.",
+    "",
+    "Not designed for commercial farming."
+   ],
+   "key": "EVS-U3-085"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The correct order of zones in a biosphere reserve from the centre outward is",
+   "code": "",
+   "options": [
+    "core, buffer, transition",
+    "buffer, core, transition",
+    "transition, buffer, core",
+    "core, transition, buffer"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The core is strictly protected, the buffer allows compatible activity, and the transition area allows settlement.",
+   "why_wrong": [
+    "",
+    "The core lies at the centre.",
+    "This reverses the order.",
+    "The buffer lies between core and transition."
+   ],
+   "key": "EVS-U3-086"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A key advantage of in-situ over ex-situ conservation is that in-situ conservation",
+   "code": "",
+   "options": [
+    "can be carried out only inside zoos and parks",
+    "needs no land set aside or legal protection",
+    "guarantees complete freedom from all threats",
+    "keeps species evolving within their natural habitat"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Species remain within their ecosystem interactions and adaptive processes.",
+   "why_wrong": [
+    "Zoos are ex-situ.",
+    "It requires protected land.",
+    "Threats can still occur in protected areas.",
+    ""
+   ],
+   "key": "EVS-U3-087"
+  },
+  {
+   "topic": "Conservation of biodiversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement correctly distinguishes a seed bank from a botanical garden?",
+   "code": "",
+   "options": [
+    "A seed bank is in-situ while a botanical garden is ex-situ",
+    "A seed bank stores seeds cold; a garden grows live plants",
+    "A seed bank grows whole trees inside natural forests",
+    "A botanical garden stores only animal tissue samples"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Both are ex-situ methods but differ in how plants are maintained.",
+   "why_wrong": [
+    "Both are ex-situ.",
+    "",
+    "Seed banks store seeds, not forests.",
+    "They hold plants, not animal tissue."
+   ],
+   "key": "EVS-U3-088"
+  },
+  {
+   "topic": "Biogeographic zones and mega-diversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which biogeographic zone includes the Malabar coast hill forests of Kerala and Karnataka?",
+   "code": "",
+   "options": [
+    "Western Ghats",
+    "Trans-Himalaya",
+    "Gangetic Plain",
+    "Semi-arid zone"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The zone is a rainy chain of hills along the west coast.",
+   "why_wrong": [
+    "",
+    "A cold arid high-altitude zone.",
+    "A fertile alluvial plain in the north.",
+    "A dry zone from Punjab through Gujarat."
+   ],
+   "key": "EVS-U3-089"
+  },
+  {
+   "topic": "Biogeographic zones and mega-diversity",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "India qualifies as a mega-diversity nation chiefly because it",
+   "code": "",
+   "options": [
+    "has the largest land area of any country in the world",
+    "contains no endangered species at all anywhere",
+    "holds many species, endemics and several hotspots",
+    "has only tropical rainforests across its whole area"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Its varied climates and landscapes support rich life and many endemics.",
+   "why_wrong": [
+    "India is not the world's largest country.",
+    "India has many threatened species.",
+    "",
+    "India has deserts, mountains, wetlands and many other ecosystems."
+   ],
+   "key": "EVS-U3-090"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A botanist in Uttar Pradesh catalogues 30 distinct varieties of mango, all belonging to Mangifera indica, each differing in taste, size and ripening time. Which level of biodiversity does this variation represent?",
+   "code": "",
+   "options": [
+    "Species diversity",
+    "Ecosystem diversity",
+    "Genetic diversity",
+    "Beta diversity"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Variation among individuals and varieties within a single species is genetic diversity, and the mango varieties are all one species.",
+   "why_wrong": [
+    "All the varieties belong to one species, so the number of species is unchanged.",
+    "No variety of habitats or ecosystems is being compared here.",
+    "",
+    "Beta diversity measures change in species composition between habitats, not variation inside one species."
+   ],
+   "key": "EVS-U3-101"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Two forest patches each contain 4 tree species. In patch A each species has 100 individuals; in patch B one species has 385 individuals and the other three have 5 each. Which statement is correct?",
+   "code": "",
+   "options": [
+    "Patch B has higher species richness because one species dominates",
+    "Patch A has higher richness because it has more individuals",
+    "Both have equal species richness, but patch A has greater evenness",
+    "Both patches have identical species diversity in every sense"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Richness counts species only, so both equal 4; species diversity also considers relative abundance, and patch A is far more even.",
+   "why_wrong": [
+    "Dominance by one species does not raise richness; richness is just the species count.",
+    "Richness does not depend on the number of individuals.",
+    "",
+    "Their relative abundances differ, so evenness and overall diversity differ."
+   ],
+   "key": "EVS-U3-102"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "While surveying a coastal state, a student compares a mangrove swamp, a coral reef, a sand-dune scrub and an inland grassland. The variety she is recording is best called",
+   "code": "",
+   "options": [
+    "Ecosystem diversity",
+    "Genetic diversity",
+    "Species richness",
+    "Alpha diversity"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Variety of habitats, communities and ecological processes in a region is ecosystem diversity.",
+   "why_wrong": [
+    "",
+    "She is not comparing gene variation within a species.",
+    "Richness counts species, whereas she is comparing different habitat types.",
+    "Alpha diversity is species diversity within one habitat, not across habitat types."
+   ],
+   "key": "EVS-U3-103"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Walking up a Himalayan slope from the foothills to the alpine meadows, a trekker notices the set of species changes sharply every few hundred metres. This turnover of species between habitats along the gradient is",
+   "code": "",
+   "options": [
+    "Alpha diversity",
+    "Gamma diversity",
+    "Beta diversity",
+    "Genetic diversity"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Beta diversity measures the change in species composition from one habitat to another along a gradient.",
+   "why_wrong": [
+    "Alpha diversity is the species diversity within a single habitat, not change between habitats.",
+    "Gamma diversity is the total diversity of a whole landscape or region.",
+    "",
+    "This concerns species composition, not variation inside a species."
+   ],
+   "key": "EVS-U3-104"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A large, continuous population of an Indian tiger subspecies is reduced to a few isolated groups. Species count in the region is unchanged, yet inbreeding depression appears. Which level of biodiversity has declined?",
+   "code": "",
+   "options": [
+    "Species diversity",
+    "Ecosystem diversity",
+    "Gamma diversity",
+    "Genetic diversity"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Isolation and small population size reduce heterozygosity and cause inbreeding, which is loss of genetic diversity even though species richness is unchanged.",
+   "why_wrong": [
+    "The number of species in the region has not changed.",
+    "The ecosystems themselves are intact; only variation within the species is lost.",
+    "Gamma diversity is regional species diversity, which is unchanged here.",
+    ""
+   ],
+   "key": "EVS-U3-105"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "The Green Revolution replaced thousands of traditional rice landraces with a handful of high-yielding varieties across Indian fields. This loss of allelic variety is called",
+   "code": "",
+   "options": [
+    "Species extinction",
+    "Habitat fragmentation",
+    "Ecological succession",
+    "Genetic erosion"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Genetic erosion is the loss of genetic variation in a crop or species, here from replacing many landraces with few uniform varieties.",
+   "why_wrong": [
+    "The species Oryza sativa remains; only its varieties were lost.",
+    "This describes breaking of habitat, not loss of crop varieties.",
+    "Succession is directional change in community structure over time, unrelated to losing varieties.",
+    ""
+   ],
+   "key": "EVS-U3-106"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A landscape has many different habitats, each habitat holding only a few species, but almost no species overlap between habitats. Which combination describes it?",
+   "code": "",
+   "options": [
+    "Low alpha, high beta, high gamma diversity",
+    "High alpha, low beta, low gamma diversity",
+    "High alpha, high beta, low gamma diversity",
+    "Low alpha, low beta, low gamma diversity"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Few species per habitat means low alpha, little overlap means high beta, and the many habitats together give high gamma diversity.",
+   "why_wrong": [
+    "",
+    "Alpha is low here because each habitat has few species.",
+    "Alpha is low, and high beta across many habitats makes gamma high, not low.",
+    "Little overlap between habitats means beta is high, not low."
+   ],
+   "key": "EVS-U3-107"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A student surveys birds along a transect from the cold desert of Ladakh to the Western Ghats of Kerala. Following the general latitudinal gradient, species richness is expected to",
+   "code": "",
+   "options": [
+    "Be higher in the lower-latitude, tropical end",
+    "Be higher in the cold desert end",
+    "Remain equal at both ends",
+    "Be highest midway at the Deccan plateau only"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Species richness generally increases from the poles toward the equator, so the tropical southern end is richer.",
+   "why_wrong": [
+    "",
+    "Harsh cold deserts support fewer species, not more.",
+    "The latitudinal gradient predicts a clear increase towards the tropics.",
+    "The gradient is not a peak at mid-latitude; tropical regions hold the greatest richness."
+   ],
+   "key": "EVS-U3-108"
+  },
+  {
+   "topic": "Levels of biodiversity",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Under the Convention on Biological Diversity definition, which of the following is NOT itself a component of biological diversity?",
+   "code": "",
+   "options": [
+    "Diversity found within each species",
+    "Rainfall and temperature variation",
+    "Diversity found between species",
+    "Diversity of whole ecosystems"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The CBD covers diversity within species, between species and of ecosystems; abiotic climate variation is not biodiversity itself.",
+   "why_wrong": [
+    "This is genetic diversity, explicitly part of the definition.",
+    "",
+    "This is species diversity, explicitly part of the definition.",
+    "This is ecosystem diversity, explicitly part of the definition."
+   ],
+   "key": "EVS-U3-109"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A city wetland absorbs monsoon floodwater and filters pollutants, while nearby villagers also catch fish from it. Which pair correctly classifies these benefits?",
+   "code": "",
+   "options": [
+    "Flood control is a regulating service; fish catch is a provisioning service",
+    "Flood control is a provisioning service; fish catch is a cultural service",
+    "Flood control is a cultural service; fish catch is a regulating service",
+    "Both are supporting services"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Regulating services moderate natural processes like floods, while provisioning services supply products like food.",
+   "why_wrong": [
+    "",
+    "Flood control is regulation, and fish are a material product, not a cultural benefit.",
+    "Neither benefit is cultural or regulating in that way.",
+    "Supporting services are basic processes like nutrient cycling, not these end benefits."
+   ],
+   "key": "EVS-U3-110"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A pharmaceutical firm screens rainforest plants and fungi for chemical compounds that could become new drugs. The value of biodiversity being exploited is mainly its",
+   "code": "",
+   "options": [
+    "Aesthetic value",
+    "Existence value",
+    "Informational value",
+    "Recreational value"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Genetic and chemical information in organisms, used in bioprospecting and research, is informational value.",
+   "why_wrong": [
+    "The firm is not valuing beauty or recreation.",
+    "Existence value is worth placed on a species merely existing, without use.",
+    "",
+    "Nobody is visiting for leisure here."
+   ],
+   "key": "EVS-U3-111"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Villagers in the Western Ghats refuse to cut a grove of ancient trees, even though the timber is valuable, because it is dedicated to a local deity. This reflects the",
+   "code": "",
+   "options": [
+    "Social and cultural value",
+    "Consumptive use value",
+    "Productive use value",
+    "Informational value"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Spiritual and cultural attachment to nature, such as sacred groves, is a social value of biodiversity.",
+   "why_wrong": [
+    "",
+    "Consumptive use means harvesting resources, which villagers are refusing to do.",
+    "Productive use involves selling harvested goods, which is not the motive.",
+    "They are not valuing the grove for research or genetic information."
+   ],
+   "key": "EVS-U3-112"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "After pesticide spraying kills most wild bees near an orchard, fruit set drops sharply. Which ecosystem service has been impaired?",
+   "code": "",
+   "options": [
+    "Water purification",
+    "Soil formation",
+    "Carbon sequestration",
+    "Pollination"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Wild bees pollinate flowers, a regulating service, and fruit set depends directly on it.",
+   "why_wrong": [
+    "Bees play no direct role in purifying water.",
+    "Soil formation is a supporting process not driven by bee loss.",
+    "Carbon storage is by plant biomass, not by pollinators.",
+    ""
+   ],
+   "key": "EVS-U3-113"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A small town earns income from tourists who visit a national park only to watch and photograph wildlife, without removing anything. This is best described as",
+   "code": "",
+   "options": [
+    "Consumptive use value",
+    "Existence value",
+    "Non-consumptive use value",
+    "Bequest value"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Benefits gained without harvesting or destroying the resource, like wildlife tourism, are non-consumptive use values.",
+   "why_wrong": [
+    "Nothing is harvested or consumed locally.",
+    "Existence value involves no use at all, but tourists are using the park.",
+    "",
+    "Bequest value concerns preservation for future generations, not present income."
+   ],
+   "key": "EVS-U3-114"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A multinational patents the wound-healing use of turmeric, long known to Indian households, with no consent or benefit sharing for the knowledge holders. This is an example of",
+   "code": "",
+   "options": [
+    "Bioremediation",
+    "Biopiracy",
+    "Bioprospecting with consent",
+    "Biomagnification"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Biopiracy is commercial exploitation or patenting of biological resources or traditional knowledge without consent or fair benefit sharing.",
+   "why_wrong": [
+    "Bioremediation is using organisms to clean pollution.",
+    "",
+    "The scenario involves no consent or benefit sharing.",
+    "Biomagnification is the increase of toxins up the food chain."
+   ],
+   "key": "EVS-U3-115"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A donor funds protection of a rare Himalayan orchid, hoping its compounds might prove medically useful someday, even though no use is known today. This is",
+   "code": "",
+   "options": [
+    "Existence value",
+    "Bequest value",
+    "Option value",
+    "Consumptive use value"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Option value is the worth of keeping a resource available for possible future use.",
+   "why_wrong": [
+    "Existence value has no expectation of any use.",
+    "Bequest value is about passing the resource to future generations, not a specific hoped-for use.",
+    "",
+    "No present harvesting is involved."
+   ],
+   "key": "EVS-U3-116"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Under the four-way ecosystem service classification, nutrient cycling in a forest soil belongs to which category?",
+   "code": "",
+   "options": [
+    "Provisioning services",
+    "Supporting services",
+    "Regulating services",
+    "Cultural services"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Supporting services, such as nutrient cycling and primary production, underpin all other services.",
+   "why_wrong": [
+    "Provisioning services are tangible products like food and timber.",
+    "",
+    "Regulating services moderate climate, floods and disease, not underlying processes.",
+    "Cultural services are non-material benefits like recreation and spirituality."
+   ],
+   "key": "EVS-U3-117"
+  },
+  {
+   "topic": "Importance and ecosystem services",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Villagers of the Sundarbans collect honey from mangroves, while the same mangroves blunt cyclone surges and local people also revere Bonbibi. Which of these is the PROVISIONING service?",
+   "code": "",
+   "options": [
+    "Cyclone surge buffering",
+    "Honey collection",
+    "Reverence for Bonbibi",
+    "Nutrient recycling in mangrove mud"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Honey is a material product obtained from the ecosystem, which is a provisioning service.",
+   "why_wrong": [
+    "This is a regulating service.",
+    "",
+    "This is a cultural service.",
+    "This is a supporting service."
+   ],
+   "key": "EVS-U3-118"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Four regions are assessed. Which one qualifies as a biodiversity hot spot?",
+   "code": "",
+   "options": [
+    "A region with 2500 endemic plant species but only 20% habitat lost",
+    "A region with 900 endemic plant species and 85% habitat lost",
+    "A region with 1800 endemic plants and 75% of vegetation lost",
+    "A region with 1600 endemic plant species and 40% habitat lost"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A hot spot needs at least 1500 endemic vascular plants and at least 70% habitat loss.",
+   "why_wrong": [
+    "It has high endemism but is not sufficiently threatened.",
+    "It is threatened but lacks the 1500 endemics required.",
+    "",
+    "Endemism is enough but habitat loss falls short of 70%."
+   ],
+   "key": "EVS-U3-119"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A biologist studying the lion-tailed macaque and the Nilgiri tahr is working in which Indian hot spot?",
+   "code": "",
+   "options": [
+    "Himalaya hot spot",
+    "Western Ghats and Sri Lanka",
+    "Indo-Burma hot spot",
+    "Sundaland hot spot"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Both are endemic to the Western Ghats, part of the Western Ghats and Sri Lanka hot spot.",
+   "why_wrong": [
+    "These species are not Himalayan.",
+    "",
+    "Indo-Burma covers north-eastern India and Southeast Asia, not these species' range.",
+    "Sundaland in India covers only the Nicobar Islands."
+   ],
+   "key": "EVS-U3-120"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A survey team is sent to Great Nicobar Island to document endemic plants. Which hot spot does Nicobar belong to?",
+   "code": "",
+   "options": [
+    "Sundaland",
+    "Indo-Burma",
+    "Western Ghats and Sri Lanka",
+    "Himalaya"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The Nicobar Islands are the Indian part of the Sundaland hot spot.",
+   "why_wrong": [
+    "",
+    "Indo-Burma covers the Andaman Islands rather than Nicobar.",
+    "This lies on the western side of peninsular India.",
+    "This is a mountain hot spot, far from the Nicobar Islands."
+   ],
+   "key": "EVS-U3-121"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A conservation trust has funds to protect only a few areas and wants maximum protection of species per rupee. Following the hot spot approach, it should prioritise regions with",
+   "code": "",
+   "options": [
+    "Large area and low human population",
+    "Many tourist visitors each year",
+    "Low endemism but good protection",
+    "High endemism and severe habitat loss"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The hot spot strategy targets places holding many irreplaceable endemic species that are under greatest threat.",
+   "why_wrong": [
+    "Size and low population do not indicate endemism or threat.",
+    "Tourism does not indicate biodiversity value.",
+    "Such areas hold few irreplaceable species and are already safe.",
+    ""
+   ],
+   "key": "EVS-U3-122"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A frog found only in the streams of the Western Ghats and nowhere else on Earth is described as",
+   "code": "",
+   "options": [
+    "Cosmopolitan",
+    "Invasive",
+    "Endemic",
+    "Keystone"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Endemic species are restricted to one defined geographical area.",
+   "why_wrong": [
+    "Cosmopolitan species occur almost worldwide.",
+    "Invasive species are introduced and spread harmfully outside their native range.",
+    "",
+    "Keystone species have outsized effects on their ecosystem, unrelated to range restriction."
+   ],
+   "key": "EVS-U3-123"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "The Andaman Islands fall within which biodiversity hot spot?",
+   "code": "",
+   "options": [
+    "Sundaland",
+    "Indo-Burma",
+    "Western Ghats and Sri Lanka",
+    "Himalaya"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The Andaman group is included in the Indo-Burma hot spot, while the Nicobar group belongs to Sundaland.",
+   "why_wrong": [
+    "Only the Nicobar Islands are in Sundaland.",
+    "",
+    "This hot spot lies on peninsular India's west.",
+    "The Himalaya hot spot does not include the Andaman Islands."
+   ],
+   "key": "EVS-U3-124"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A report calls Indo-Burma a hot spot, and another calls Brazil a megadiversity country. Which statement correctly links the two terms?",
+   "code": "",
+   "options": [
+    "Both terms are defined only by national borders",
+    "A hot spot must lie entirely within one megadiversity country",
+    "A hot spot can cross borders; megadiversity applies to whole countries",
+    "Megadiversity depends on habitat loss exceeding 70% of vegetation"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Hot spots are defined by biological regions of endemism and threat, whereas megadiversity ranks countries by total diversity.",
+   "why_wrong": [
+    "Hot spots follow biological regions, not borders.",
+    "Indo-Burma spans several countries.",
+    "",
+    "The 70% loss criterion is for hot spots, not megadiversity countries."
+   ],
+   "key": "EVS-U3-125"
+  },
+  {
+   "topic": "Hot spots of biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A region has 3000 endemic vascular plant species, but about 60% of its original natural vegetation remains. Why is it not classified as a hot spot?",
+   "code": "",
+   "options": [
+    "Its endemic plant count exceeds the hot spot limit",
+    "Hot spots are defined only by animal endemism",
+    "Hot spots cannot contain more than 1500 endemics",
+    "It does not meet the threshold of at least 70% habitat loss"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Hot spot status requires both high plant endemism and loss of at least 70% of primary vegetation.",
+   "why_wrong": [
+    "There is no upper limit; 3000 easily meets the 1500 minimum.",
+    "Hot spot criteria use endemic vascular plants.",
+    "No such upper limit exists.",
+    ""
+   ],
+   "key": "EVS-U3-126"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A new highway cuts through a continuous forest, splitting a tiger habitat into two small patches. The most likely long-term consequence for the species is",
+   "code": "",
+   "options": [
+    "Reduced gene flow and higher local extinction risk",
+    "Increased genetic diversity from separation",
+    "Larger home ranges for each tiger",
+    "Unaffected population since the total area is the same"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Fragmentation isolates populations, causing inbreeding, edge effects and local extinction risk.",
+   "why_wrong": [
+    "",
+    "Isolation lowers gene flow and diversity.",
+    "Smaller patches restrict, not enlarge, ranges.",
+    "Fragmentation lowers viable habitat and connectivity even if area is similar."
+   ],
+   "key": "EVS-U3-127"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Customs officers seize hundreds of shawls made from the wool of the Tibetan antelope (chiru). The activity behind this seizure is",
+   "code": "",
+   "options": [
+    "Poaching for illegal trade",
+    "Biological invasion",
+    "Habitat fragmentation",
+    "Human-wildlife conflict"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Chiru are killed for shahtoosh wool, driving poaching for illicit trade.",
+   "why_wrong": [
+    "",
+    "No introduced species is involved.",
+    "The animals are being killed directly, not losing habitat.",
+    "This is commercial killing, not clashes over crops or safety."
+   ],
+   "key": "EVS-U3-128"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Water hyacinth, native to South America, now chokes lakes and ponds in India, depleting oxygen and killing native fish. Its rapid spread is mainly because it",
+   "code": "",
+   "options": [
+    "Is a native Indian species",
+    "Lacks natural enemies in its new range",
+    "Needs very specific soil conditions",
+    "Has a very slow reproduction rate"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Introduced species often spread fast when predators, pests and competitors from their native range are absent.",
+   "why_wrong": [
+    "It is native to South America.",
+    "",
+    "It floats on water and spreads freely, not soil limited.",
+    "It reproduces quickly, which is why it spreads."
+   ],
+   "key": "EVS-U3-129"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Wild elephants from a forest fragment in Assam repeatedly raid sugarcane fields at its edge. Which measure best addresses the root cause?",
+   "code": "",
+   "options": [
+    "Securing forest corridors to reconnect fragments",
+    "Culling the whole herd",
+    "Capturing and keeping them in zoos",
+    "Clearing the remaining forest for more farms"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Connecting habitats lets elephants move without entering farms, reducing conflict at its source.",
+   "why_wrong": [
+    "",
+    "Culling is unlawful for a protected species and does not fix the cause.",
+    "Elephants in zoos does not address habitat loss and cannot absorb large herds.",
+    "This would worsen habitat loss and conflict."
+   ],
+   "key": "EVS-U3-130"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A large dam will submerge a forested river valley that hosts several endemic species. This threat to biodiversity is chiefly",
+   "code": "",
+   "options": [
+    "Poaching",
+    "Biological invasion",
+    "Overpollination",
+    "Habitat loss"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Inundating the valley removes the habitat that the species depend on.",
+   "why_wrong": [
+    "No hunting is involved.",
+    "No alien species is introduced.",
+    "This is not a recognised biodiversity threat.",
+    ""
+   ],
+   "key": "EVS-U3-131"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "After forest cover shrinks to small remnants, tigers and other large carnivores vanish before small herbivores do. The best explanation is that large carnivores",
+   "code": "",
+   "options": [
+    "Reproduce faster than small animals",
+    "Are more resistant to edge effects",
+    "Depend on a single plant species",
+    "Need large ranges and occur at low density"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Fragments are too small to sustain viable populations of animals needing big territories.",
+   "why_wrong": [
+    "Large carnivores reproduce slowly.",
+    "They are particularly vulnerable to fragmentation.",
+    "Their need is space and prey, not one plant.",
+    ""
+   ],
+   "key": "EVS-U3-132"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Both African elephants killed for ivory and Indian rhinos killed for horn recover very slowly even after poaching stops. This is mainly because these species",
+   "code": "",
+   "options": [
+    "Breed several times a year with large litters",
+    "Are r-selected with rapid growth",
+    "Mature late, gestate long and produce few young",
+    "Have no natural habitat requirements"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Slow life histories give low population growth, so losses are slow to rebuild.",
+   "why_wrong": [
+    "The opposite is true.",
+    "They are K-selected, slow to recover.",
+    "",
+    "They need large habitats."
+   ],
+   "key": "EVS-U3-133"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Wheat is introduced from abroad and grown across Indian fields but never spreads into forests. Why is it generally NOT considered an invasive alien species?",
+   "code": "",
+   "options": [
+    "It is a native plant of the Indian subcontinent",
+    "It does not form self-sustaining populations harming natives",
+    "Invasive species must always be animals, never plants",
+    "Every introduced species is automatically invasive everywhere"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "An introduced species is invasive only if it establishes, spreads and harms native biodiversity or the economy.",
+   "why_wrong": [
+    "Wheat is not native to India.",
+    "",
+    "Plants can be invasive, like Lantana.",
+    "Most introduced species never become invasive."
+   ],
+   "key": "EVS-U3-134"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Farmers in a village adjoining an Indian forest install beehive fences along their fields to deter elephants. This approach is best described as",
+   "code": "",
+   "options": [
+    "An ex-situ conservation measure",
+    "A cause of forest habitat loss",
+    "A form of biological invasion",
+    "A human-wildlife conflict measure"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Elephants avoid bees, so the fence reduces crop raiding without harming the animals.",
+   "why_wrong": [
+    "Animals are not being kept outside their habitat.",
+    "Beehive fences do not remove habitat.",
+    "Honeybees here are used as a deterrent, not an invading species.",
+    ""
+   ],
+   "key": "EVS-U3-135"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A fig wasp depends entirely on one species of fig to breed. If the fig is lost from a forest, the wasp is likely to go extinct. This chain of loss is called",
+   "code": "",
+   "options": [
+    "Genetic drift",
+    "Island effect",
+    "Biological magnification",
+    "Co-extinction"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Co-extinction is the loss of a dependent species when its host or partner species disappears.",
+   "why_wrong": [
+    "Genetic drift is random change in allele frequency.",
+    "This is not the term for dependent loss.",
+    "Biomagnification is toxin build-up up the food chain.",
+    ""
+   ],
+   "key": "EVS-U3-136"
+  },
+  {
+   "topic": "Threats to biodiversity",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A district official notes compensation for crop damage by wildlife is paid after years, so villagers poison leopards in retaliation. Which feature of this problem makes it a human-wildlife conflict rather than poaching?",
+   "code": "",
+   "options": [
+    "Animals are killed for fur in international trade",
+    "An alien species has been introduced",
+    "The killing is retaliation for losses, not commercial gain",
+    "The leopards are kept in captivity"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Human-wildlife conflict arises from competition and damage to people, while poaching is killing for trade or profit.",
+   "why_wrong": [
+    "That describes poaching for trade, not retaliation.",
+    "No alien species is involved.",
+    "",
+    "The leopards are wild, not captive."
+   ],
+   "key": "EVS-U3-137"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A species no longer survives anywhere in the wild, though a few individuals live in a zoo breeding centre. Its IUCN status is",
+   "code": "",
+   "options": [
+    "Extinct in the Wild",
+    "Extinct",
+    "Critically Endangered",
+    "Vulnerable"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Extinct in the Wild applies when survivors exist only in captivity or cultivation.",
+   "why_wrong": [
+    "",
+    "Extinct requires that no individual survives anywhere.",
+    "This is for wild populations at extreme risk.",
+    "This is a lower risk category for living wild populations."
+   ],
+   "key": "EVS-U3-138"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A species has a small total population and is not currently endangered or vulnerable, but is at risk because of its restricted range. In the older Red Data Book scheme it is",
+   "code": "",
+   "options": [
+    "Extinct",
+    "Endangered",
+    "Least Concern",
+    "Rare"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Rare species have small populations in restricted areas and may quickly become endangered.",
+   "why_wrong": [
+    "The species still survives.",
+    "It is not yet at that level of risk.",
+    "It is at risk due to restricted range.",
+    ""
+   ],
+   "key": "EVS-U3-139"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A crocodilian is the sole surviving member of an ancient family, with no close living relatives, and it is critically endangered worldwide. Conservation planners would flag it as",
+   "code": "",
+   "options": [
+    "A keystone species",
+    "An invasive species",
+    "An EDGE species",
+    "A cosmopolitan species"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "EDGE means Evolutionarily Distinct and Globally Endangered, applying to unique lineages that are also threatened.",
+   "why_wrong": [
+    "Keystone species have a big ecological impact, a different idea.",
+    "It is native and threatened, not invasive.",
+    "",
+    "It is far from widespread."
+   ],
+   "key": "EVS-U3-140"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A conservationist wants an authoritative document listing threatened species with their risk categories. She should consult",
+   "code": "",
+   "options": [
+    "The Ramsar list",
+    "The IUCN Red Data Book / Red List",
+    "A census of human population",
+    "The Montreal Protocol schedule"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The IUCN Red List documents the extinction-risk status of species.",
+   "why_wrong": [
+    "This lists wetlands of international importance.",
+    "",
+    "This concerns people, not species status.",
+    "This lists ozone-depleting substances."
+   ],
+   "key": "EVS-U3-141"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A single large carnivore is protected on the expectation that safeguarding its vast forest range will also shelter many other species living there. Such a species is called",
+   "code": "",
+   "options": [
+    "An invasive species",
+    "An umbrella species",
+    "An extinct species",
+    "A pioneer species"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Umbrella species have large habitat needs, so protecting them protects many co-occurring species.",
+   "why_wrong": [
+    "It is native, not invasive.",
+    "",
+    "It is still living.",
+    "Pioneer species are early colonisers of bare ground."
+   ],
+   "key": "EVS-U3-142"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In the EDGE approach, when two species are equally endangered, priority goes to the one with",
+   "code": "",
+   "options": [
+    "The larger overall body size",
+    "Greater evolutionary distinctness",
+    "The greater economic value to people",
+    "The wider current geographic range"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "EDGE ranks species by combining evolutionary distinctiveness with threat status.",
+   "why_wrong": [
+    "Size is not a criterion.",
+    "",
+    "Economic value is not part of EDGE.",
+    "Range is not the ranking factor."
+   ],
+   "key": "EVS-U3-143"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which sequence lists IUCN categories in increasing order of extinction risk?",
+   "code": "",
+   "options": [
+    "Endangered, Vulnerable, Near Threatened, Critically Endangered",
+    "Near Threatened, Vulnerable, Endangered, Critically Endangered",
+    "Vulnerable, Near Threatened, Critically Endangered, Endangered",
+    "Critically Endangered, Endangered, Vulnerable, Near Threatened"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The risk rises from Near Threatened to Vulnerable to Endangered to Critically Endangered.",
+   "why_wrong": [
+    "Endangered is higher risk than Vulnerable, so the order is wrong.",
+    "",
+    "Near Threatened is lower than Vulnerable, and Endangered precedes Critically Endangered.",
+    "This is decreasing order of risk."
+   ],
+   "key": "EVS-U3-144"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A newly described frog is known from a single specimen, with no information on its numbers or range. Which IUCN category fits best?",
+   "code": "",
+   "options": [
+    "Least Concern",
+    "Extinct",
+    "Vulnerable",
+    "Data Deficient"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Data Deficient applies when information is inadequate to assess extinction risk.",
+   "why_wrong": [
+    "Least Concern requires evidence of low risk.",
+    "Nothing shows the species is gone.",
+    "Vulnerable requires evidence of a qualifying threat.",
+    ""
+   ],
+   "key": "EVS-U3-145"
+  },
+  {
+   "topic": "Species of conservation concern",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "The cheetah vanished from India, officially declared extinct there in 1952, yet still survives in other countries. For India, the cheetah's status is best called",
+   "code": "",
+   "options": [
+    "Globally extinct",
+    "Locally extinct (extirpated)",
+    "Extinct in the Wild",
+    "Endemic"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A species lost from one region but alive elsewhere is locally extinct or extirpated.",
+   "why_wrong": [
+    "The species survives elsewhere.",
+    "",
+    "Wild populations exist elsewhere.",
+    "It is not found only in India."
+   ],
+   "key": "EVS-U3-146"
+  },
+  {
+   "topic": "In-situ conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A reserve allows villagers to graze cattle and collect fuelwood in limited areas while wildlife is protected. Which kind of protected area is this?",
+   "code": "",
+   "options": [
+    "A national park",
+    "A wildlife sanctuary",
+    "The core zone of a biosphere reserve",
+    "A botanical garden"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Sanctuaries permit certain human activities, whereas national parks prohibit grazing and forestry.",
+   "why_wrong": [
+    "National parks prohibit grazing and forestry.",
+    "",
+    "Core zones are strictly protected.",
+    "A botanical garden is an ex-situ facility."
+   ],
+   "key": "EVS-U3-147"
+  },
+  {
+   "topic": "In-situ conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a biosphere reserve, the legally protected zone where only research and monitoring are allowed, with no human disturbance, is the",
+   "code": "",
+   "options": [
+    "Core zone",
+    "Buffer zone",
+    "Transition zone",
+    "Manipulation zone"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The core zone is strictly protected and undisturbed.",
+   "why_wrong": [
+    "",
+    "The buffer zone allows limited research, education and tourism.",
+    "The outer transition zone includes settlements and sustainable activity.",
+    "This is an outer area where managed activities occur."
+   ],
+   "key": "EVS-U3-148"
+  },
+  {
+   "topic": "In-situ conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Villagers in the Western Ghats protect a grove dedicated to a local deity, forbidding tree felling and hunting inside it. This is an example of",
+   "code": "",
+   "options": [
+    "In-situ conservation by tradition",
+    "Ex-situ conservation in a garden",
+    "Captive breeding in a zoo",
+    "Seed banking in a cold vault"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Sacred groves conserve species in their natural habitat, which is in-situ conservation.",
+   "why_wrong": [
+    "",
+    "Species remain in their natural habitat.",
+    "No animals are bred in captivity.",
+    "No seeds are being stored."
+   ],
+   "key": "EVS-U3-149"
+  },
+  {
+   "topic": "In-situ conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A wildlife photographer wants to see the Indian one-horned rhinoceros in its natural habitat. Which protected area should she visit?",
+   "code": "",
+   "options": [
+    "Gir National Park",
+    "Keoladeo National Park",
+    "Kaziranga National Park",
+    "Ranthambore National Park"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Kaziranga in Assam is famous for the one-horned rhinoceros.",
+   "why_wrong": [
+    "Gir is known for the Asiatic lion.",
+    "Keoladeo is known for waterbirds.",
+    "",
+    "Ranthambore is known for tigers."
+   ],
+   "key": "EVS-U3-150"
+  },
+  {
+   "topic": "In-situ conservation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Which advantage belongs uniquely to in-situ conservation as opposed to ex-situ?",
+   "code": "",
+   "options": [
+    "Species keep evolving in their natural ecosystem",
+    "Individuals can be protected from all disease",
+    "Population numbers can be controlled in closed enclosures",
+    "Seeds can be stored for decades"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Natural habitats preserve ecological interactions and evolutionary processes.",
+   "why_wrong": [
+    "",
+    "No approach offers complete protection.",
+    "This is a feature of ex-situ management.",
+    "This is a feature of ex-situ gene banks."
+   ],
+   "key": "EVS-U3-151"
+  },
+  {
+   "topic": "In-situ conservation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "How does a biosphere reserve differ from a national park?",
+   "code": "",
+   "options": [
+    "It has zones including settlements and sustainable use",
+    "It prohibits all human presence in every zone",
+    "It is created only in marine areas and oceans",
+    "It is an ex-situ facility like a zoo or garden"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Biosphere reserves have core, buffer and transition zones, with people in the transition zone.",
+   "why_wrong": [
+    "",
+    "This describes the core zone only.",
+    "Biosphere reserves exist on land and coast.",
+    "It protects ecosystems in situ."
+   ],
+   "key": "EVS-U3-152"
+  },
+  {
+   "topic": "In-situ conservation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Community reserves under India's wildlife law are best described as areas",
+   "code": "",
+   "options": [
+    "Where community or private land is protected willingly",
+    "Declared only on government forest land without consent",
+    "Where all human use is banned",
+    "Located inside zoological gardens"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Community reserves are created on community or private land with local consent.",
+   "why_wrong": [
+    "",
+    "They need local willingness.",
+    "They permit community use.",
+    "Zoos are ex-situ."
+   ],
+   "key": "EVS-U3-153"
+  },
+  {
+   "topic": "Ex-situ conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A botanist stores seeds of endangered wild rice relatives in a low-temperature vault at a national gene bank. This is",
+   "code": "",
+   "options": [
+    "In-situ conservation",
+    "Habitat restoration",
+    "Ecotourism",
+    "Ex-situ conservation"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Conserving species outside their natural habitat, such as in seed banks, is ex-situ conservation.",
+   "why_wrong": [
+    "The seeds are away from their natural habitat.",
+    "No habitat is being restored.",
+    "No tourism is involved.",
+    ""
+   ],
+   "key": "EVS-U3-154"
+  },
+  {
+   "topic": "Ex-situ conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Sperm and eggs of an endangered animal are frozen in liquid nitrogen at about minus 196 degrees Celsius for future breeding. This technique is",
+   "code": "",
+   "options": [
+    "Cryopreservation",
+    "Biomagnification",
+    "Micropropagation",
+    "Bioremediation"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Cryopreservation stores gametes or tissue at ultra-low temperatures.",
+   "why_wrong": [
+    "",
+    "This is toxin accumulation.",
+    "Micropropagation is tissue culture growth of plants.",
+    "This is pollution clean-up."
+   ],
+   "key": "EVS-U3-155"
+  },
+  {
+   "topic": "Ex-situ conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Gharial hatchlings are raised in a captive centre and later released into the Chambal river. This combines",
+   "code": "",
+   "options": [
+    "Poaching for illegal trade",
+    "Sacred grove protection",
+    "Habitat fragmentation by roads",
+    "Captive breeding and release"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Animals bred in captivity and released into the wild is reintroduction.",
+   "why_wrong": [
+    "This is illegal killing.",
+    "This protects in-situ habitat.",
+    "This is a threat, not a method.",
+    ""
+   ],
+   "key": "EVS-U3-156"
+  },
+  {
+   "topic": "Ex-situ conservation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "The last forest of a critically endangered species is destroyed by mining, leaving only a dozen animals. The most appropriate immediate action is",
+   "code": "",
+   "options": [
+    "Leave them in place and wait",
+    "Capture them for ex-situ captive breeding",
+    "Declare the area a national park",
+    "Introduce an alien predator"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "With habitat gone, ex-situ breeding is the remaining way to keep the species.",
+   "why_wrong": [
+    "They would die without habitat.",
+    "",
+    "The habitat is already destroyed.",
+    "This would worsen the situation."
+   ],
+   "key": "EVS-U3-157"
+  },
+  {
+   "topic": "Ex-situ conservation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Zoos that breed endangered animals face a genetic problem in the long run. Which is a genuine limitation of captive populations?",
+   "code": "",
+   "options": [
+    "Captive animals gain unlimited genetic diversity over time",
+    "Captivity removes every disease risk from the animals",
+    "Captive breeding preserves natural ecological roles",
+    "Small founder groups lose variation and adapt poorly to the wild"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Small captive groups face inbreeding and genetic drift, and captive adaptation can reduce survival after release.",
+   "why_wrong": [
+    "Diversity tends to decline.",
+    "Disease can still occur.",
+    "The ecological role happens only in the wild.",
+    ""
+   ],
+   "key": "EVS-U3-158"
+  },
+  {
+   "topic": "Ex-situ conservation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Why can seed banks NOT conserve all plant species, such as many tropical trees like jackfruit?",
+   "code": "",
+   "options": [
+    "Recalcitrant seeds lose viability when dried or frozen",
+    "Their seeds are too large to be catalogued properly",
+    "They never produce any viable seeds",
+    "Seed banks only hold animal tissue samples"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Recalcitrant seeds cannot tolerate drying or freezing, so conventional seed banking fails.",
+   "why_wrong": [
+    "",
+    "Size is not the issue.",
+    "Jackfruit produces seeds.",
+    "Seed banks hold seeds."
+   ],
+   "key": "EVS-U3-159"
+  },
+  {
+   "topic": "Biogeographic zones of India",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A researcher studying the snow leopard, Tibetan wolf and chiru in the cold arid highlands of Ladakh is working in which Indian biogeographic zone?",
+   "code": "",
+   "options": [
+    "Desert",
+    "Gangetic Plain",
+    "Trans-Himalaya",
+    "Coasts"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The cold, arid region north of the main Himalaya is the Trans-Himalayan zone.",
+   "why_wrong": [
+    "The Desert zone is the hot Thar region.",
+    "The Gangetic Plain is a fertile lowland.",
+    "",
+    "The Coasts zone is the shoreline."
+   ],
+   "key": "EVS-U3-160"
+  },
+  {
+   "topic": "Biogeographic zones of India",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A team monitoring the Great Indian Bustard among dune scrub and sparse grassland in Rajasthan is working in which biogeographic zone?",
+   "code": "",
+   "options": [
+    "Western Ghats",
+    "Islands",
+    "North-East",
+    "Desert"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The Thar region of Rajasthan lies in the Desert zone.",
+   "why_wrong": [
+    "The Western Ghats zone is a humid forest range.",
+    "The Islands zone is Andaman and Lakshadweep.",
+    "The North-East is a humid hill region.",
+    ""
+   ],
+   "key": "EVS-U3-161"
+  },
+  {
+   "topic": "Biogeographic zones of India",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A primatologist studying hoolock gibbons in the humid forests of Assam and neighbouring states works in which zone?",
+   "code": "",
+   "options": [
+    "Semi-Arid",
+    "North-East",
+    "Trans-Himalaya",
+    "Deccan Peninsula"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The hoolock gibbon lives in the humid forests of north-eastern India.",
+   "why_wrong": [
+    "The Semi-Arid zone is dry.",
+    "",
+    "The Trans-Himalaya is cold and arid.",
+    "The Deccan holds dry and moist deciduous forests, not hoolock gibbons."
+   ],
+   "key": "EVS-U3-162"
+  },
+  {
+   "topic": "Biogeographic zones of India",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student studies the Nilgiri tahr and lion-tailed macaque, both limited to the humid forests along India's west. Which zone applies?",
+   "code": "",
+   "options": [
+    "Desert",
+    "Gangetic Plain",
+    "Western Ghats",
+    "Trans-Himalaya"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "These species are endemic to the Western Ghats zone.",
+   "why_wrong": [
+    "The Desert zone is arid.",
+    "The Gangetic Plain is a lowland plain.",
+    "",
+    "The Trans-Himalaya is cold and arid."
+   ],
+   "key": "EVS-U3-163"
+  },
+  {
+   "topic": "Biogeographic zones of India",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Which of the following is NOT one of the ten biogeographic zones of India recognised by Rodgers and Panwar?",
+   "code": "",
+   "options": [
+    "Semi-Arid",
+    "Gangetic Plain",
+    "Deccan Peninsula",
+    "Sundaland"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Sundaland is a hot spot, not an Indian biogeographic zone.",
+   "why_wrong": [
+    "This is one of the ten zones.",
+    "This is one of the ten zones.",
+    "This is one of the ten zones.",
+    ""
+   ],
+   "key": "EVS-U3-164"
+  },
+  {
+   "topic": "Biogeographic zones of India",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which is the largest of India's biogeographic zones by area?",
+   "code": "",
+   "options": [
+    "Trans-Himalaya",
+    "Islands",
+    "Western Ghats",
+    "Deccan Peninsula"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The Deccan Peninsula is the largest zone, covering a large part of peninsular India.",
+   "why_wrong": [
+    "It is a cold high-altitude zone and not the largest.",
+    "The Islands zone is the smallest in area.",
+    "This is a narrow strip along the coast.",
+    ""
+   ],
+   "key": "EVS-U3-165"
+  },
+  {
+   "topic": "Biogeographic zones of India",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Rodgers and Panwar's classification subdivides India's biogeographic zones into how many biotic provinces?",
+   "code": "",
+   "options": [
+    "10",
+    "36",
+    "25",
+    "5"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The classification recognises 10 zones, further subdivided into 25 biotic provinces.",
+   "why_wrong": [
+    "Ten is the number of zones.",
+    "This is the global number of hot spots.",
+    "",
+    "The classification has many more provinces."
+   ],
+   "key": "EVS-U3-166"
+  },
+  {
+   "topic": "India as a mega-diversity nation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "India has only about 2.4 percent of the world's land area yet holds a disproportionately large share of recorded species. Which best explains this?",
+   "code": "",
+   "options": [
+    "Varied climates and topography, from peaks to islands",
+    "A uniform climate across the whole subcontinent",
+    "Absence of human settlement across the country",
+    "Having no forests or wetlands at all"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Wide ranges of altitude, climate and habitat produce many ecological niches.",
+   "why_wrong": [
+    "",
+    "India's climate is highly varied.",
+    "India is densely populated.",
+    "India has varied forests."
+   ],
+   "key": "EVS-U3-167"
+  },
+  {
+   "topic": "India as a mega-diversity nation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Which crop has its centre of origin and diversity in the Indian region?",
+   "code": "",
+   "options": [
+    "Potato",
+    "Brinjal",
+    "Maize",
+    "Tomato"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Brinjal is among crops originating in the Indian region.",
+   "why_wrong": [
+    "The potato originates in the Andes.",
+    "",
+    "Maize originates in Mesoamerica.",
+    "The tomato originates in South America."
+   ],
+   "key": "EVS-U3-168"
+  },
+  {
+   "topic": "India as a mega-diversity nation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A company wishes to obtain a medicinal plant from an Indian forest for commercial use. Which body's approval is required under the Biological Diversity Act, 2002?",
+   "code": "",
+   "options": [
+    "The Reserve Bank of India",
+    "The Election Commission of India",
+    "National Biodiversity Authority",
+    "The Survey of India (mapping)"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The NBA regulates access to biological resources and ensures benefit sharing.",
+   "why_wrong": [
+    "It regulates currency and banking.",
+    "It conducts elections.",
+    "",
+    "It maps territory."
+   ],
+   "key": "EVS-U3-169"
+  },
+  {
+   "topic": "India as a mega-diversity nation",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which feature is among the criteria for a country to be regarded as megadiversity?",
+   "code": "",
+   "options": [
+    "A coastline longer than 1000 km",
+    "Population over 100 million",
+    "High level of endemism",
+    "Absence of hot spots"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Megadiversity countries have high species richness and high endemism.",
+   "why_wrong": [
+    "Coastline is not a criterion.",
+    "Population is not a criterion.",
+    "",
+    "Many megadiversity countries contain hot spots."
+   ],
+   "key": "EVS-U3-170"
+  },
+  {
+   "topic": "India as a mega-diversity nation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Which historical factor contributed to the mixing of biota in the Indian region?",
+   "code": "",
+   "options": [
+    "Isolation from all other land masses for millions of years",
+    "A single uniform climate throughout the region",
+    "The complete absence of mountain ranges",
+    "Northward drift of the Indian plate and collision with Eurasia"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The drift and collision allowed Gondwanan and Eurasian elements to mix.",
+   "why_wrong": [
+    "The collision with Eurasia ended isolation.",
+    "India's climates vary.",
+    "India has the Himalaya.",
+    ""
+   ],
+   "key": "EVS-U3-171"
+  },
+  {
+   "topic": "India as a mega-diversity nation",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about India's share of world biodiversity is accurate?",
+   "code": "",
+   "options": [
+    "India has about 25 percent of the world's land area",
+    "India has 2.4 percent of world land but 7 to 8 percent of species",
+    "India holds under 1 percent of the world's recorded species",
+    "India has no endemic species at all, only widespread ones"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "India is a megadiversity country, with a high share of species relative to its area.",
+   "why_wrong": [
+    "India has far less.",
+    "",
+    "India holds much more.",
+    "India has many endemics."
+   ],
+   "key": "EVS-U3-172"
+  }
+ ]
+}
