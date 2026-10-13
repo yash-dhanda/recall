@@ -718,3 +718,30 @@
   gap: 0.5rem;
   padding: 0.75rem 0.85rem;
 }
+
+/* --- mode and source --------------------------------------------------------
+   Two cards side by side where they fit, stacked where they do not — the
+   unit cards' object language with a round mark, because exactly one is
+   chosen. The note under each is a sentence, so it wears the interface face
+   rather than the unit counter's mono. */
+
+.choiceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.4rem;
+}
+
+.choiceNote {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--fg-2);
+}
+
+/* The board's place when there is no board: a plain sentence, not an empty
+   state — nothing is missing, it is simply not ranked. */
+.boardNote {
+  padding: 0.75rem 0.9rem;
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--fg-2);
+}

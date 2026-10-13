@@ -34,7 +34,7 @@ from recall.lpu import SUBJECTS as _LPU_SUBJECTS
 #: code that disappears from lpu.py should fail this import loudly rather than
 #: quietly drop a subject — and its attempts' labels — off the picker.
 MCQ_SUBJECTS: tuple = ("MTH165", "CSE111", "INT108", "INT335", "MEC103",
-                       "CSE326")
+                       "CSE326", "EVS")
 
 #: Subjects whose MCQ units do NOT follow lpu.py. See the module docstring.
 _OWN_UNITS: dict[str, dict] = {
@@ -43,6 +43,16 @@ _OWN_UNITS: dict[str, dict] = {
         "units": {
             1: "Computational Thinking & Computing Environment",
             2: "Version Control & Cyber Security Basics",
+        },
+    },
+    # Not in recall.lpu (not on the Sem-1 timetable), so written out. Unit
+    # names are the ones on the course slides.
+    "EVS": {
+        "label": "Environmental Studies",
+        "units": {
+            1: "Introduction and Natural Resources",
+            2: "Natural Resources and Ecosystem",
+            3: "Biodiversity and Conservation",
         },
     },
 }
@@ -94,6 +104,30 @@ LENGTHS: tuple = (30, 60, "full")
 LENGTH_MIN = 5
 LENGTH_MAX = 200
 
+#: How a sitting is run. `practice` reveals each answer the moment it is
+#: clicked, and the first click is final — it is how the bank teaches. `exam`
+#: is the CA: timed, answers changeable until submit, and nothing about
+#: correctness leaves the server before the paper is closed. First is the
+#: default, and it is what every attempt drawn before exams existed was.
+MODES: tuple = ("practice", "exam")
+
+#: Where an attempt's questions come from. `bank` is the ordinary draw from the
+#: selection; `mistakes` draws only questions this user's most recent revealed
+#: answer got wrong. First is the default. A `mistakes` sitting is never ranked:
+#: every student's pool is different, so a board of them compares nothing.
+SOURCES: tuple = ("bank", "mistakes")
+
+#: An exam's clock: one minute per question actually drawn, so a 30-question
+#: paper is 30:00 and a 12-question one — asked for 30 out of a unit of 12 —
+#: is 12:00, not a paper with eighteen minutes of nothing in it.
+EXAM_SECONDS_PER_QUESTION = 60
+
+#: How long after the limit an answer is still accepted. Covers the request
+#: that left the phone at 29:59 and reached the server at 30:02, not a paused
+#: tab: past this, answering is refused and only submitting remains.
+EXAM_GRACE_S = 30
+
 
 __all__ = ["MCQ_SUBJECTS", "MCQ_UNITS", "LENGTHS", "LENGTH_MIN", "LENGTH_MAX",
-           "DIFFICULTIES"]
+           "DIFFICULTIES", "MODES", "SOURCES", "EXAM_SECONDS_PER_QUESTION",
+           "EXAM_GRACE_S"]

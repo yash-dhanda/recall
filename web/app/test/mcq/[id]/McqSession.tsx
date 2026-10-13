@@ -9,9 +9,12 @@ import {
   ApiError,
   errorMessage,
   getMcqAttempt,
+  isRevealed,
   postMcqAnswer,
+  postMcqExamAnswer,
   submitMcqAttempt,
 } from "@/lib/api";
+import { plural } from "@/lib/format";
 import { hasModifier, isTypingTarget } from "@/lib/keys";
 import type { McqAttempt, McqFeedback, McqResult } from "@/lib/types";
 import { McqCode, McqResultView, optionTextClass } from "./McqResultView";
@@ -30,13 +33,60 @@ const TICK_LIMIT = 60;
 /** What the strip shows for one drawn question. */
 type TickState = "correct" | "wrong" | "pending";
 
-/** Feedback for every position the server has already recorded. */
+/** Feedback for every position the server has already revealed. An open
+ *  exam's answers carry no verdict and are never read as feedback. */
 function recorded(attempt: McqAttempt): Record<number, McqFeedback> {
   const out: Record<number, McqFeedback> = {};
   for (const q of attempt.questions) {
-    if (q.answer) out[q.position] = q.answer;
+    if (isRevealed(q.answer)) out[q.position] = q.answer;
   }
   return out;
+}
+
+/**
+ * The clock turns amber when a fifth of the paper's time is left and the
+ * wrong-red at a twentieth — the same thresholds as Recall's own exam screen.
+ * Colour and weight only: a countdown that pulses is an invigilator tapping
+ * the desk.
+ */
+const WARN_FRACTION = 0.2;
+const DANGER_FRACTION = 0.05;
+
+/** mm:ss — h:mm:ss only for a paper over an hour (a 200-question exam). */
+function clock(ms: number): string {
+  const total = Math.max(0, Math.ceil(ms / 1000));
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const sec = total % 60;
+  const mm = String(m).padStart(2, "0");
+  const ss = String(sec).padStart(2, "0");
+  return h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
+}
+
+/**
+ * Where an open exam's clock stands, fixed at the moment the attempt was read.
+ *
+ * `seconds_left` is measured by the server, so a phone whose own clock is
+ * minutes out still counts down the server's time; `started_at +
+ * time_limit_s` is the fallback. Either way it comes from the attempt, never
+ * from when this page happened to open — a reload does not restart the paper.
+ */
+interface ExamClock {
+  /** Epoch ms at which the limit is reached, on this device's clock. */
+  deadline: number | null;
+  /** Epoch ms when the attempt was read — the countdown's first "now". */
+  readAt: number;
+}
+
+function examClock(a: McqAttempt, readAt: number): ExamClock {
+  if (typeof a.seconds_left === "number") {
+    return { deadline: readAt + a.seconds_left * 1000, readAt };
+  }
+  const started = Date.parse(a.started_at);
+  if (a.time_limit_s && !Number.isNaN(started)) {
+    return { deadline: started + a.time_limit_s * 1000, readAt };
+  }
+  return { deadline: null, readAt };
 }
 
 /**
@@ -47,6 +97,10 @@ function recorded(attempt: McqAttempt): Record<number, McqFeedback> {
  * and the note under it are the whole interaction — the first click is the
  * answer and the server refuses a second, which is what makes the score
  * honest.
+ *
+ * That is PRACTICE. An attempt sat in exam mode loads here and is then handed
+ * to <ExamSitting> below, which has the clock and the palette and reveals
+ * nothing until the paper is submitted.
  */
 export function McqSession({ id }: { id: number }) {
   const reduced = useReducedMotion();
@@ -63,6 +117,10 @@ export function McqSession({ id }: { id: number }) {
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [result, setResult] = useState<McqResult | null>(null);
+  /** An open exam's clock, anchored when the attempt was read. */
+  const [examAnchor, setExamAnchor] = useState<ExamClock | null>(null);
+  /** True when an exam was collected by its clock rather than submitted. */
+  const [timedOut, setTimedOut] = useState(false);
 
   /** A submitted attempt is scored once on open; the server hands back what
    *  it stored rather than re-scoring, so this is safe — but asking twice
@@ -76,6 +134,11 @@ export function McqSession({ id }: { id: number }) {
         if (!live) return;
         setAttempt(a);
         setAnswers(recorded(a));
+        setExamAnchor(
+          a.mode === "exam" && a.submitted_at === null
+            ? examClock(a, Date.now())
+            : null,
+        );
         const open = a.questions.findIndex((q) => !q.answer);
         setIdx(open >= 0 ? open : 0);
         setLoadError(null);
@@ -101,6 +164,10 @@ export function McqSession({ id }: { id: number }) {
       live = false;
     };
   }, [id, reloadNonce]);
+
+  /** An exam is sat by <ExamSitting>; nothing in this component may answer
+   *  one, because the practice path reads every answer as a reveal. */
+  const exam = attempt?.mode === "exam";
 
   const questions = useMemo(() => attempt?.questions ?? [], [attempt]);
   const total = questions.length;
@@ -131,7 +198,7 @@ export function McqSession({ id }: { id: number }) {
 
   const answer = useCallback(
     (chosen: number) => {
-      if (!question || result || busy) return;
+      if (!question || result || busy || exam) return;
       if (answers[question.position]) return;
       const position = question.position;
       setBusy(true);
@@ -158,7 +225,7 @@ export function McqSession({ id }: { id: number }) {
         })
         .finally(() => setBusy(false));
     },
-    [id, question, answers, result, busy],
+    [id, question, answers, result, busy, exam],
   );
 
   const finish = useCallback(() => {
@@ -175,7 +242,7 @@ export function McqSession({ id }: { id: number }) {
   }, [id, attempt, result, submitting]);
 
   useEffect(() => {
-    if (result || !question) return;
+    if (result || !question || exam) return;
     function onKey(e: KeyboardEvent) {
       // Never while the focus is in a field: the picker has a number box, and
       // "typing 3 answers question 3" is the classic bug on this screen.
@@ -230,7 +297,7 @@ export function McqSession({ id }: { id: number }) {
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [answer, answers, finish, goNext, goPrev, question, result]);
+  }, [answer, answers, exam, finish, goNext, goPrev, question, result]);
 
   /* --- states ---------------------------------------------------------- */
 
@@ -291,7 +358,9 @@ export function McqSession({ id }: { id: number }) {
   }
 
   if (result && attempt) {
-    return <McqResultView result={result} attempt={attempt} />;
+    return (
+      <McqResultView result={result} attempt={attempt} timedOut={timedOut} />
+    );
   }
 
   if (attempt && attempt.submitted_at !== null) {
@@ -321,6 +390,22 @@ export function McqSession({ id }: { id: number }) {
           </div>
         </div>
       </main>
+    );
+  }
+
+  if (exam) {
+    return (
+      <ExamSitting
+        // A fresh read of the attempt is a fresh sitting state.
+        key={`${attempt.attempt_id}:${reloadNonce}`}
+        attempt={attempt}
+        anchor={examAnchor ?? { deadline: null, readAt: 0 }}
+        onResult={(r, byClock) => {
+          askedResult.current = true;
+          setTimedOut(byClock);
+          setResult(r);
+        }}
+      />
     );
   }
 
@@ -648,5 +733,661 @@ function ProgressStrip({
         />
       ))}
     </div>
+  );
+}
+
+/* --- exam mode ------------------------------------------------------------ */
+
+/**
+ * An exam: timed, every question reachable from the palette, answers
+ * changeable until submit, and not one word about correctness until then.
+ *
+ * The sealed property is the server's — an open exam's answer response and
+ * its GET carry the choice and nothing else — and this component is built so
+ * it could not show a verdict even if one arrived: it holds choices as bare
+ * numbers, reads only `chosen` off a recorded answer, and never renders the
+ * reveal. The result screen reveals everything at once.
+ *
+ * Answers go to the server one at a time, in the order they were clicked,
+ * so the last choice made is the one stored. A choice superseded before its
+ * turn is never sent at all, and submitting waits for the queue to drain.
+ */
+function ExamSitting({
+  attempt,
+  anchor,
+  onResult,
+}: {
+  attempt: McqAttempt;
+  anchor: ExamClock;
+  /** `byClock` is true when the paper was collected by its clock. */
+  onResult: (result: McqResult, byClock: boolean) => void;
+}) {
+  const id = attempt.attempt_id;
+  const reduced = useReducedMotion();
+  const questions = attempt.questions;
+  const total = questions.length;
+
+  /** Position -> chosen option, shown order. Read off the recorded answers by
+   *  `chosen` ALONE: whatever else an answer object holds is not looked at. */
+  const [choices, setChoices] = useState<Record<number, number>>(() => {
+    const out: Record<number, number> = {};
+    for (const q of questions) {
+      if (q.answer && typeof q.answer.chosen === "number") {
+        out[q.position] = q.answer.chosen;
+      }
+    }
+    return out;
+  });
+  const [idx, setIdx] = useState(() => {
+    const open = questions.findIndex((q) => !q.answer);
+    return open >= 0 ? open : 0;
+  });
+  const [now, setNow] = useState(anchor.readAt);
+  const [inFlight, setInFlight] = useState(0);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const [confirming, setConfirming] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
+  /** The answer queue: each post waits for the one before it. */
+  const chain = useRef<Promise<void>>(Promise.resolve());
+  /** Per position, the sequence number of the newest click. */
+  const latest = useRef<Record<number, number>>({});
+  const seq = useRef(0);
+  /** Per position, the choice the server last confirmed. */
+  const saved = useRef<Record<number, number>>({ ...choices });
+  /** One submit at a time; cleared again only if the submit fails. */
+  const submittingRef = useRef(false);
+  /** The clock collects the paper once, ever — a failed auto-submit is
+   *  retried by hand, never by the next tick. */
+  const autoFired = useRef(false);
+
+  const deadline = anchor.deadline;
+  const limitMs = (attempt.time_limit_s ?? 0) * 1000;
+  const remainingMs =
+    deadline === null ? null : Math.min(limitMs || Infinity, deadline - now);
+  const timeUp = remainingMs !== null && remainingMs <= 0;
+  const frac =
+    remainingMs !== null && limitMs > 0
+      ? Math.max(0, Math.min(1, remainingMs / limitMs))
+      : null;
+  const danger = frac !== null && frac <= DANGER_FRACTION;
+  const warn = frac !== null && frac <= WARN_FRACTION;
+
+  /** Nothing more can be chosen: the paper is going in, or its time is up. */
+  const closed = submitting || timeUp;
+
+  const question = questions[idx] ?? questions[0];
+  const chosen = choices[question.position] ?? null;
+  const answeredCount = Object.keys(choices).length;
+  const onLast = idx >= total - 1;
+
+  const finish = useCallback(
+    (byClock: boolean) => {
+      if (submittingRef.current) return;
+      submittingRef.current = true;
+      setSubmitting(true);
+      setConfirming(false);
+      setSubmitError(null);
+      // After every answer already clicked has landed: the server takes an
+      // answer until the limit plus its grace, so the last click counts.
+      chain.current
+        .then(() => submitMcqAttempt(id))
+        .then((r) => onResult(r, byClock))
+        .catch((err: unknown) => {
+          submittingRef.current = false;
+          setSubmitting(false);
+          setSubmitError(errorMessage(err));
+        });
+    },
+    [id, onResult],
+  );
+
+  // The clock, and the one thing it does: at zero it collects the paper as
+  // it stands, exactly once. A paper opened after its time already ran out
+  // is collected on the first tick.
+  useEffect(() => {
+    if (deadline === null || submitting) return;
+    const t = setInterval(() => {
+      const at = Date.now();
+      setNow(at);
+      if (at >= deadline && !autoFired.current) {
+        autoFired.current = true;
+        finish(true);
+      }
+    }, 250);
+    return () => clearInterval(t);
+  }, [deadline, submitting, finish]);
+
+  const choose = useCallback(
+    (option: number) => {
+      if (closed) return;
+      const position = question.position;
+      if (choices[position] === option) return;
+      setChoices((prev) => ({ ...prev, [position]: option }));
+      setSaveError(null);
+
+      const mine = ++seq.current;
+      latest.current[position] = mine;
+      setInFlight((n) => n + 1);
+      chain.current = chain.current
+        .then(async () => {
+          // Superseded before its turn: the newer click will say it.
+          if (latest.current[position] !== mine) return;
+          const res = await postMcqExamAnswer(id, position, option);
+          saved.current[position] = res.chosen;
+        })
+        .catch((err: unknown) => {
+          // 409: the time is up (limit plus grace) or the paper was closed
+          // elsewhere. Either way nothing more can be answered — collect it.
+          if (err instanceof ApiError && err.status === 409) {
+            finish(/time/i.test(err.message) || Date.now() >= (deadline ?? Infinity));
+            return;
+          }
+          if (latest.current[position] !== mine) return;
+          // Put the palette and the option back to what the server holds, so
+          // the screen never claims an answer that was not recorded.
+          setChoices((prev) => {
+            const next = { ...prev };
+            const was = saved.current[position];
+            if (was === undefined) delete next[position];
+            else next[position] = was;
+            return next;
+          });
+          setSaveError(
+            `Question ${position}: your answer was not saved — ${errorMessage(err)}. Choose it again.`,
+          );
+        })
+        .finally(() => setInFlight((n) => n - 1));
+    },
+    [closed, question.position, choices, id, finish, deadline],
+  );
+
+  const goTo = useCallback(
+    (i: number) => setIdx(Math.max(0, Math.min(total - 1, i))),
+    [total],
+  );
+
+  // The keyboard: 1-4 or a-d choose (and change), the arrows and Enter move,
+  // f asks to submit. Never from a field, never with a modifier, and never
+  // from inside the code block — a focused snippet keeps every key to itself.
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (isTypingTarget(e) || hasModifier(e)) return;
+      if (e.target instanceof Element && e.target.closest("[data-mcq-code]")) {
+        return;
+      }
+
+      if (confirming) {
+        if (e.key === "Escape") {
+          e.preventDefault();
+          setConfirming(false);
+        } else if (e.key === "Enter") {
+          e.preventDefault();
+          finish(deadline !== null && Date.now() >= deadline);
+        }
+        return;
+      }
+
+      // One character only: an empty key would otherwise match index 0.
+      if (e.key.length === 1) {
+        const n = "1234".indexOf(e.key);
+        const letter = "abcd".indexOf(e.key.toLowerCase());
+        const option = n >= 0 ? n : letter;
+        if (option >= 0) {
+          e.preventDefault();
+          choose(option);
+          return;
+        }
+      }
+
+      if (e.key === "Enter" || e.key === "ArrowRight") {
+        e.preventDefault();
+        goTo(idx + 1);
+        return;
+      }
+      if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        goTo(idx - 1);
+        return;
+      }
+      if (e.key.toLowerCase() === "f" && !submittingRef.current) {
+        e.preventDefault();
+        setConfirming(true);
+      }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [confirming, choose, deadline, finish, goTo, idx]);
+
+  const clockClass = `${s.clock} ${danger ? s.clockDanger : warn ? s.clockWarn : ""}`;
+  const timeWord = danger
+    ? "almost out of time"
+    : warn
+      ? "a fifth of the time left"
+      : "time left";
+
+  return (
+    <main className={s.screen}>
+      {/* --- the invigilator's line ----------------------------------------- */}
+
+      <header className={s.column}>
+        <div className={s.examBar}>
+          <p className="telemetry text-[11.5px] text-fg-3">
+            <span className="font-semibold tracking-[0.06em] text-fg-2">
+              {attempt.subject_code}
+            </span>
+            <span className="mx-1.5">·</span>
+            <span className="font-semibold tracking-[0.06em] text-fg-2">
+              EXAM
+            </span>
+            <span className="mx-1.5">·</span>
+            <span className="tnum font-medium text-fg">Q{idx + 1}</span>
+            <span className="tnum"> / {total}</span>
+            <span className="mx-1.5">·</span>
+            <span className="tnum">{answeredCount}</span> answered
+          </p>
+
+          {remainingMs !== null ? (
+            <span
+              className={clockClass}
+              role="timer"
+              aria-live="off"
+              aria-label={`${clock(remainingMs)} ${timeWord}`}
+              title={`${clock(remainingMs)} left of ${clock(limitMs)}`}
+            >
+              <span className={s.clockLabel} aria-hidden="true">
+                {timeUp ? "time" : "left"}
+              </span>
+              <span aria-hidden="true">{clock(remainingMs)}</span>
+            </span>
+          ) : null}
+        </div>
+
+        <ExamPalette
+          questions={questions.map((q) => q.position)}
+          choices={choices}
+          current={idx}
+          onJump={goTo}
+        />
+
+        <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 mt-1">
+          <p className={s.paletteLegend}>
+            <span className={s.legendItem}>
+              <span className={`${s.swatch} ${s.swatchAnswered}`} aria-hidden="true" />
+              <span className="tnum">{answeredCount}</span> answered
+            </span>
+            <span className={s.legendItem}>
+              <span className={s.swatch} aria-hidden="true" />
+              <span className="tnum">{total - answeredCount}</span> unanswered
+            </span>
+          </p>
+          <Link
+            href="/test"
+            className="text-[11.5px] text-fg-3 hover:text-fg-2 transition-colors duration-[90ms]"
+          >
+            leave — answers are saved, the clock keeps running
+          </Link>
+        </div>
+
+        {/* Crossing a threshold is said once, politely; the clock itself is
+            not a live region — reading every second aloud is noise. */}
+        <p className="sr-only" role="status" aria-live="polite">
+          {timeUp
+            ? "Time is up. The paper is being collected."
+            : danger
+              ? "Almost out of time."
+              : warn
+                ? "A fifth of the time is left."
+                : ""}
+        </p>
+      </header>
+
+      {/* --- the question -------------------------------------------------- */}
+
+      <div className={s.stage}>
+        <motion.article
+          key={question.position}
+          className={`${s.column} ${s.card}`}
+          initial={reduced ? false : { opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", stiffness: 420, damping: 34, mass: 0.9 }}
+        >
+          <div className={s.chipRow}>
+            <span className={s.chip}>{question.topic}</span>
+            <span className={s.chipMuted}>{question.difficulty}</span>
+            {question.kind === "situation" ? (
+              <span className={s.chipMuted}>scenario</span>
+            ) : null}
+          </div>
+
+          <h1 className={`k-question ${s.question}`}>{question.question}</h1>
+
+          <McqCode code={question.code} />
+
+          <div
+            className={s.optionList}
+            role="group"
+            aria-label={`Options for question ${question.position}`}
+          >
+            {question.options.map((option, i) => {
+              const on = chosen === i;
+              return (
+                <motion.button
+                  key={i}
+                  type="button"
+                  disabled={closed}
+                  aria-pressed={on}
+                  onClick={() => choose(i)}
+                  whileTap={reduced || closed ? undefined : { scale: 0.995 }}
+                  transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                  aria-label={`${LETTERS[i]}. ${option}${on ? " — your answer" : ""}`}
+                  className={`${s.option} ${on ? s.isChosen : ""}`}
+                >
+                  <span className={s.optionLetter} aria-hidden="true">
+                    {LETTERS[i]}
+                  </span>
+                  <span className={optionTextClass(question.options_mono)}>
+                    {option}
+                  </span>
+                  {on ? (
+                    <span className={s.optionMark} aria-hidden="true">
+                      your answer
+                    </span>
+                  ) : null}
+                </motion.button>
+              );
+            })}
+          </div>
+
+          {/* Saved, saving, or how to change it — never a verdict. */}
+          <p className={s.examStatus} role="status" aria-live="polite">
+            {timeUp
+              ? "Time is up — the paper is being collected as it stands."
+              : chosen === null
+                ? "Choose one. You can change it until you submit."
+                : inFlight > 0
+                  ? "Saving…"
+                  : `${LETTERS[chosen]} saved. You can change it until you submit.`}
+          </p>
+
+          {saveError && (
+            <div className="mt-2">
+              <ErrorState message={saveError} />
+            </div>
+          )}
+
+          <div className={s.hint}>
+            <span className={s.hintGroup}>
+              <Kbd>1</Kbd>
+              <span aria-hidden="true">–</span>
+              <Kbd>4</Kbd>
+            </span>
+            <span>or</span>
+            <span className={s.hintGroup}>
+              <Kbd>a</Kbd>
+              <span aria-hidden="true">–</span>
+              <Kbd>d</Kbd>
+            </span>
+            <span>choose or change</span>
+            <span className={s.hintSep} aria-hidden="true">
+              ·
+            </span>
+            <span className={s.hintGroup}>
+              <Kbd>&larr;</Kbd>
+              <Kbd>&rarr;</Kbd>
+              <span>move</span>
+            </span>
+            <span className={s.hintSep} aria-hidden="true">
+              ·
+            </span>
+            <span className={s.hintGroup}>
+              <Kbd>f</Kbd>
+              <span>submit</span>
+            </span>
+          </div>
+        </motion.article>
+      </div>
+
+      {/* --- moving on, and handing it in ----------------------------------- */}
+
+      <footer className={`${s.column} ${s.actionsDock}`}>
+        {submitError && (
+          <div className="mb-3">
+            <ErrorState message={submitError} onRetry={() => finish(timeUp)} />
+          </div>
+        )}
+
+        <div className={s.actions}>
+          {!onLast ? (
+            <motion.button
+              onClick={() => goTo(idx + 1)}
+              whileTap={reduced ? undefined : { scale: 0.98 }}
+              transition={{ type: "spring", stiffness: 500, damping: 30 }}
+              className={
+                chosen !== null
+                  ? "accent-grad glow-accent-hover inline-flex items-center gap-2.5 h-11 px-4 rounded-sm text-[13px] font-semibold border border-accent"
+                  : "inline-flex items-center gap-2.5 h-11 px-4 rounded-sm text-[13px] font-medium border border-line bg-surface text-fg-2 hover:border-line-strong hover:bg-surface-hover hover:text-fg transition-colors duration-[90ms]"
+              }
+            >
+              Next question
+              <Kbd>&crarr;</Kbd>
+            </motion.button>
+          ) : null}
+
+          <button
+            onClick={() => setConfirming(true)}
+            disabled={submitting}
+            className={`inline-flex items-center gap-2 h-11 px-4 rounded-sm text-[13px]
+              font-medium border bg-surface transition-colors duration-[90ms]
+              disabled:opacity-50 disabled:pointer-events-none ${
+                onLast || answeredCount === total
+                  ? "border-accent text-accent hover:bg-accent-quiet"
+                  : "border-line hover:border-line-strong hover:bg-surface-hover"
+              }`}
+          >
+            {submitting
+              ? "Collecting…"
+              : `Submit exam (${answeredCount} of ${total} answered)`}
+            <Kbd>f</Kbd>
+          </button>
+
+          <p className="text-[12px] text-fg-3">
+            Nothing is marked until you submit. Unanswered questions score 0.
+          </p>
+        </div>
+      </footer>
+
+      {confirming && (
+        <ExamSubmitConfirm
+          answered={answeredCount}
+          total={total}
+          remainingMs={remainingMs}
+          saving={inFlight > 0}
+          onCancel={() => setConfirming(false)}
+          onSubmit={() => finish(timeUp)}
+        />
+      )}
+    </main>
+  );
+}
+
+/**
+ * Every question as a cell to jump to: answered or not, and where you are.
+ * Nothing here knows a verdict — there is none to know until submit.
+ */
+function ExamPalette({
+  questions,
+  choices,
+  current,
+  onJump,
+}: {
+  /** Positions, in draw order. */
+  questions: number[];
+  choices: Record<number, number>;
+  /** Index into `questions`. */
+  current: number;
+  onJump: (index: number) => void;
+}) {
+  const box = useRef<HTMLDivElement>(null);
+
+  // Keep the current cell in view inside the palette's own scroller — by
+  // moving that box only. scrollIntoView would scroll the page as well, and
+  // an arrow key must never yank the question out from under the student.
+  useEffect(() => {
+    const el = box.current;
+    const cell = el?.children[current] as HTMLElement | undefined;
+    if (!el || !cell) return;
+    const left = cell.offsetLeft - el.offsetLeft;
+    const top = cell.offsetTop - el.offsetTop;
+    if (left < el.scrollLeft) el.scrollLeft = left - 4;
+    else if (left + cell.offsetWidth > el.scrollLeft + el.clientWidth) {
+      el.scrollLeft = left + cell.offsetWidth - el.clientWidth + 4;
+    }
+    if (top < el.scrollTop) el.scrollTop = top - 2;
+    else if (top + cell.offsetHeight > el.scrollTop + el.clientHeight) {
+      el.scrollTop = top + cell.offsetHeight - el.clientHeight + 2;
+    }
+  }, [current]);
+
+  return (
+    <div
+      ref={box}
+      className={s.palette}
+      role="group"
+      aria-label="Question palette"
+    >
+      {questions.map((position, i) => {
+        const answered = choices[position] !== undefined;
+        const isCurrent = i === current;
+        return (
+          <button
+            key={position}
+            type="button"
+            onClick={() => onJump(i)}
+            aria-current={isCurrent ? "true" : undefined}
+            aria-label={`Question ${position}, ${answered ? "answered" : "unanswered"}`}
+            className={`${s.paletteCell} ${answered ? s.paletteAnswered : ""} ${
+              isCurrent ? s.paletteCurrent : ""
+            }`}
+          >
+            {position}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+/** "Submit this exam?" — what is answered, what is not, and that it is final. */
+function ExamSubmitConfirm({
+  answered,
+  total,
+  remainingMs,
+  saving,
+  onCancel,
+  onSubmit,
+}: {
+  answered: number;
+  total: number;
+  remainingMs: number | null;
+  saving: boolean;
+  onCancel: () => void;
+  onSubmit: () => void;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const reduced = useReducedMotion();
+  const left = total - answered;
+
+  useEffect(() => {
+    ref.current?.focus({ preventScroll: true });
+  }, []);
+
+  return (
+    <motion.div
+      className={s.dialogBackdrop}
+      initial={reduced ? false : { opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.15, ease: "easeOut" }}
+      onMouseDown={(e) => {
+        if (e.target === e.currentTarget) onCancel();
+      }}
+    >
+      <motion.div
+        ref={ref}
+        tabIndex={-1}
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="mcq-submit-title"
+        initial={reduced ? false : { opacity: 0, y: 8, scale: 0.98 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ type: "spring", stiffness: 420, damping: 34, mass: 0.9 }}
+        className={`glass ${s.dialog}`}
+      >
+        <header className="px-3 h-9 border-b border-line bg-sunken flex items-center">
+          <h2 id="mcq-submit-title" className="label">
+            Submit this exam
+          </h2>
+        </header>
+
+        <div className="px-3.5 py-3">
+          <p className="text-[15px] font-semibold">
+            You have answered <span className="tnum">{answered}</span> of{" "}
+            <span className="tnum">{total}</span>.
+          </p>
+
+          <dl className={`${s.dialogRows} mt-2.5`}>
+            <dt>Answered</dt>
+            <dd>
+              {answered} of {total}
+            </dd>
+            <dt>Unanswered — score 0</dt>
+            <dd>{left}</dd>
+            {remainingMs !== null && (
+              <>
+                <dt>Still on the clock</dt>
+                <dd>{clock(remainingMs)}</dd>
+              </>
+            )}
+          </dl>
+
+          <p className="text-[12.5px] text-fg-2 mt-3 pt-2.5 border-t border-line leading-snug">
+            {left > 0 ? (
+              <>
+                <span className="font-semibold text-fg">
+                  {left} {plural(left, "question")} unanswered
+                </span>{" "}
+                will score 0.{" "}
+              </>
+            ) : null}
+            Your score, and every answer with its explanation, appear once you
+            submit. Nothing can be changed after that.
+            {saving ? " Your last answer is still saving — it goes in first." : ""}
+          </p>
+        </div>
+
+        <footer className="px-3.5 py-2.5 border-t border-line flex flex-wrap items-center gap-2">
+          <motion.button
+            onClick={onSubmit}
+            whileTap={reduced ? undefined : { scale: 0.98 }}
+            transition={{ type: "spring", stiffness: 500, damping: 30 }}
+            className="accent-grad glow-accent-hover inline-flex items-center gap-2.5 h-9 px-4
+              rounded-sm text-[13px] font-semibold border border-accent"
+          >
+            Submit and see the result
+            <Kbd>&crarr;</Kbd>
+          </motion.button>
+          <button
+            onClick={onCancel}
+            className="inline-flex items-center gap-2 h-9 px-3 rounded-sm text-[13px] font-medium
+              border border-line bg-surface hover:border-line-strong hover:bg-surface-hover
+              transition-colors duration-[90ms]"
+          >
+            Keep going
+            <Kbd>Esc</Kbd>
+          </button>
+        </footer>
+      </motion.div>
+    </motion.div>
   );
 }

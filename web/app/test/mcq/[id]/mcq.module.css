@@ -590,3 +590,278 @@
   background: var(--bg);
 }
 
+
+/* --- exam mode -------------------------------------------------------------
+   The same sitting, sealed. Nothing below may carry a verdict colour until
+   the paper is submitted: a chosen option wears the accent — the student's
+   own act, the same light the picker spends on a selection — and the only
+   verdict tokens on this screen belong to the clock, which is a verdict on
+   the time and not on the answers. */
+
+/* The line that holds the clock stays on screen while a long question
+   scrolls: a countdown you have to scroll up to read is not a countdown. */
+.examBar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
+  margin-bottom: 0.6rem;
+  padding-block: 0.45rem;
+  background: var(--bg);
+}
+
+/* Below md the app's menu button floats at the top-left corner (8px in,
+   32px square, above this bar). Once the bar sticks, that corner is where
+   the subject code would sit — so the bar leaves it free. */
+@media (max-width: 767.98px) {
+  .examBar {
+    padding-left: 2.5rem;
+  }
+}
+
+/* mm:ss in tabular figures, so the digits never jitter as they count down.
+   Drawn as a chip so the warning states have an edge to colour as well as
+   the ink — the colour is never the only change: the weight steps up too. */
+.clock {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 4px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  background: var(--surface);
+  color: var(--fg-2);
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  transition:
+    color 400ms ease-out,
+    border-color 400ms ease-out,
+    background-color 400ms ease-out;
+}
+
+.clockLabel {
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+
+.clockWarn {
+  border-color: var(--g-hard);
+  background: var(--g-hard-bg);
+  color: var(--g-hard);
+  font-weight: 600;
+}
+
+.clockDanger {
+  border-color: var(--g-again);
+  background: var(--g-again-bg);
+  color: var(--g-again);
+  font-weight: 600;
+}
+
+.clockWarn .clockLabel,
+.clockDanger .clockLabel {
+  color: inherit;
+}
+
+/* Chosen, not judged. The accent edge and tint, the letter in the accent,
+   and the word "your answer" beside it — never green, never red. */
+.option.isChosen {
+  border-color: var(--accent);
+  background: var(--accent-quiet);
+  color: var(--fg);
+  box-shadow: none;
+}
+
+@media (hover: hover) {
+  .option.isChosen:not(:disabled):hover {
+    border-color: var(--accent);
+    background: var(--accent-quiet);
+    box-shadow: none;
+  }
+
+  .option.isChosen:not(:disabled):hover .optionLetter {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+.option.isChosen .optionLetter {
+  border-color: var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
+
+.option.isChosen .optionMark {
+  color: var(--accent);
+}
+
+/* The quiet line under the options: saved, saving, or how to change it.
+   Never a verdict. */
+.examStatus {
+  min-height: 1.4rem;
+  margin-top: 0.9rem;
+  font-size: 12.5px;
+  line-height: 1.5;
+  color: var(--fg-2);
+}
+
+/* --- the palette -------------------------------------------------------------
+   Every question as a numbered cell you can jump to: answered cells filled in
+   the accent tint, unanswered left open, the one you are on ringed. On a
+   phone it is a single row that scrolls sideways — a grid of thirty cells
+   would push the question below the fold; wider, it wraps and scrolls
+   inside itself past three rows. */
+
+.palette {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+  padding: 2px 2px 6px;
+}
+
+@media (min-width: 640px) {
+  .palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(2.25rem, 1fr));
+    max-height: calc(3 * 2.25rem + 2 * 4px + 8px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    padding-bottom: 2px;
+  }
+}
+
+.paletteCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xs);
+  background: var(--surface);
+  color: var(--fg-3);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  transition:
+    background-color 120ms ease-out,
+    border-color 120ms ease-out,
+    color 120ms ease-out;
+}
+
+@media (hover: hover) {
+  .paletteCell:hover {
+    border-color: var(--fg-3);
+    color: var(--fg);
+  }
+}
+
+.paletteCell:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.paletteAnswered {
+  border-color: var(--line-strong);
+  background: var(--accent-quiet);
+  color: var(--fg-2);
+}
+
+/* Steady, never animated: the ring is simply on the cell you are on. */
+.paletteCurrent {
+  box-shadow: inset 0 0 0 2px var(--accent);
+  color: var(--fg);
+  font-weight: 600;
+}
+
+.paletteLegend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.9rem;
+  margin-top: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg-3);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: var(--surface);
+}
+
+.swatchAnswered {
+  border-color: var(--line-strong);
+  background: var(--accent-quiet);
+}
+
+.swatchCurrent {
+  box-shadow: inset 0 0 0 2px var(--accent);
+  border-color: var(--accent);
+}
+
+/* --- the submit dialog ------------------------------------------------------ */
+
+.dialogBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--bg) 93%, transparent);
+}
+
+.dialog {
+  width: 100%;
+  max-width: 28rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  outline: none;
+}
+
+.dialogRows {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.25rem 0.75rem;
+  font-size: 13px;
+}
+
+.dialogRows dt {
+  color: var(--fg-2);
+}
+
+.dialogRows dd {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}

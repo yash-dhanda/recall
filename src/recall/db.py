@@ -162,6 +162,24 @@ def _migrate(conn: sqlite3.Connection) -> None:
         conn.execute("ALTER TABLE mcq_questions ADD COLUMN options_mono INTEGER"
                      " NOT NULL DEFAULT 0")
 
+    # mcq_attempts.mode / .source / .time_limit_s (2026-09-23, exam mode and
+    # "practise my mistakes"). The live table holds real users' attempts, so
+    # ADD COLUMN and never a rebuild; none carries a CHECK — the values are
+    # validated in recall.mcq.service against registry.MODES and SOURCES. The
+    # two DEFAULTs backfill every existing row as a practice sitting drawn from
+    # the bank, which is exactly what each one was, so every old attempt stays
+    # on the board it was already on. time_limit_s is NULL for all of them: a
+    # practice sitting has no clock. `mcqa_cols` was read before the
+    # difficulty ALTER above, which adds none of these.
+    if mcqa_cols and "mode" not in mcqa_cols:
+        conn.execute("ALTER TABLE mcq_attempts ADD COLUMN mode TEXT"
+                     " NOT NULL DEFAULT 'practice'")
+    if mcqa_cols and "source" not in mcqa_cols:
+        conn.execute("ALTER TABLE mcq_attempts ADD COLUMN source TEXT"
+                     " NOT NULL DEFAULT 'bank'")
+    if mcqa_cols and "time_limit_s" not in mcqa_cols:
+        conn.execute("ALTER TABLE mcq_attempts ADD COLUMN time_limit_s INTEGER")
+
     # tests.kind CHECK gained 'mte40'. SQLite cannot alter a CHECK, so rebuild —
     # and the ORDER MATTERS: renaming the OLD table away rewrites every foreign
     # key that pointed at it (test_questions ended up referencing "tests_old"),

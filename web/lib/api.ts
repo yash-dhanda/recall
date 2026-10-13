@@ -19,10 +19,14 @@ import type {
   McqAttempt,
   McqAttemptSummary,
   McqDifficulty,
+  McqExamAnswer,
   McqFeedback,
   McqLeaderboardRow,
   McqLength,
+  McqMistakeSummary,
+  McqMode,
   McqResult,
+  McqSource,
   McqSubject,
   PendingResponse,
   QueueResponse,
@@ -309,6 +313,28 @@ export function abandonTest(id: number): Promise<{ ok: true }> {
  * scoped to them by the server, exactly like the rest of the app.
  */
 
+/**
+ * The fixture backend never goes through `request`, so it never invalidates
+ * the read cache the way a real write does. The MCQ writes route through this
+ * in mock mode so the picker's attempts list and mistakes count are as fresh
+ * after a sitting offline as they are against the server.
+ */
+function mockWrite<T>(p: Promise<T>): Promise<T> {
+  return p.then((v) => {
+    invalidate();
+    return v;
+  });
+}
+
+/** True when an answer carries its verdict: a practice answer, or any answer
+ *  of a submitted exam. An open exam's answers never do — they are
+ *  McqExamAnswer, the choice alone. */
+export function isRevealed(
+  answer: McqFeedback | McqExamAnswer | null | undefined,
+): answer is McqFeedback {
+  return !!answer && "is_correct" in answer;
+}
+
 /** GET /api/mcq/subjects — every subject in the registry, with a per-unit
  *  count of active questions. A unit with 0 still comes back: it is waiting
  *  for material, not missing. */
@@ -321,7 +347,9 @@ export function getMcqSubjects(): Promise<McqSubject[]> {
  * POST /api/mcq/attempts — draw a fresh sample and shuffle it.
  *
  * 422 for an unknown subject, a unit the registry does not have, a bad
- * length, or a selection that holds no questions at all.
+ * length, or a selection that holds no questions at all — and, for
+ * `source: "mistakes"`, a selection in which this user has no mistakes to
+ * practise yet.
  */
 export function createMcqAttempt(
   subjectCode: string,
@@ -333,9 +361,17 @@ export function createMcqAttempt(
   /** One rung of the ladder, or null for Mixed — a draw across all four,
    *  which is its own selection and its own board. */
   difficulty: McqDifficulty | null = null,
+  /** "practice" reveals every answer on the click; "exam" is timed at a
+   *  minute per question drawn and reveals nothing until submit. */
+  mode: McqMode = "practice",
+  /** "bank" is the ordinary draw; "mistakes" draws only from this user's
+   *  pending mistakes in the same selection, and is never ranked. */
+  source: McqSource = "bank",
 ): Promise<McqAttempt> {
   if (MOCK)
-    return mock.createMcqAttempt(subjectCode, units, length, difficulty);
+    return mockWrite(
+      mock.createMcqAttempt(subjectCode, units, length, difficulty, mode, source),
+    );
   return request<McqAttempt>("/api/mcq/attempts", {
     method: "POST",
     body: JSON.stringify({
@@ -343,8 +379,17 @@ export function createMcqAttempt(
       units,
       length,
       difficulty,
+      mode,
+      source,
     }),
   });
+}
+
+/** GET /api/mcq/mistakes — this user's pending mistakes, per subject, for
+ *  "Practise my mistakes (N)". Subjects with none are not listed. */
+export function getMcqMistakes(): Promise<McqMistakeSummary[]> {
+  if (MOCK) return mock.getMcqMistakes();
+  return request<McqMistakeSummary[]>("/api/mcq/mistakes");
 }
 
 /** GET /api/mcq/attempts/{id} — the same draw with its recorded answers, for
@@ -355,27 +400,53 @@ export function getMcqAttempt(id: number): Promise<McqAttempt> {
 }
 
 /**
- * POST /api/mcq/attempts/{id}/answer — one call per question, and the first
- * click is the answer: a second answer to the same position is a 409, never
- * an overwrite. `chosen` is a position in the shown option order.
+ * POST /api/mcq/attempts/{id}/answer on a PRACTICE attempt — one call per
+ * question, and the first click is the answer: a second answer to the same
+ * position is a 409, never an overwrite. `chosen` is a position in the shown
+ * option order. An exam attempt goes through `postMcqExamAnswer` instead.
  */
 export function postMcqAnswer(
   id: number,
   position: number,
   chosen: number,
 ): Promise<McqFeedback> {
-  if (MOCK) return mock.postMcqAnswer(id, position, chosen);
+  if (MOCK) return mockWrite(mock.postMcqAnswer(id, position, chosen));
   return request<McqFeedback>(`/api/mcq/attempts/${id}/answer`, {
     method: "POST",
     body: JSON.stringify({ position, chosen }),
   });
 }
 
+/**
+ * POST /api/mcq/attempts/{id}/answer on an EXAM attempt — record or change
+ * the choice. The answer can be changed until submit, and the response says
+ * nothing about correctness: `{position, chosen, answered}` only.
+ *
+ * The object handed back is rebuilt from those three fields, so even a server
+ * that sent more could not put a verdict into the sitting's state. 409 once
+ * the clock plus its grace has run out, or once the paper is submitted — the
+ * sitting submits on either.
+ */
+export async function postMcqExamAnswer(
+  id: number,
+  position: number,
+  chosen: number,
+): Promise<McqExamAnswer> {
+  const raw: McqExamAnswer = MOCK
+    ? await mockWrite(mock.postMcqExamAnswer(id, position, chosen))
+    : await request<McqExamAnswer>(`/api/mcq/attempts/${id}/answer`, {
+        method: "POST",
+        body: JSON.stringify({ position, chosen }),
+      });
+  return { position: raw.position, chosen: raw.chosen, answered: raw.answered };
+}
+
 /** POST /api/mcq/attempts/{id}/submit — closes the attempt and scores it.
  *  Idempotent: a submitted attempt hands back the result it already stored,
- *  which is what makes reopening a finished attempt safe. */
+ *  which is what makes reopening a finished attempt safe. Never refused on
+ *  time, so an exam whose clock has run out can always be closed. */
 export function submitMcqAttempt(id: number): Promise<McqResult> {
-  if (MOCK) return mock.submitMcqAttempt(id);
+  if (MOCK) return mockWrite(mock.submitMcqAttempt(id));
   return request<McqResult>(`/api/mcq/attempts/${id}/submit`, {
     method: "POST",
   });
@@ -384,7 +455,7 @@ export function submitMcqAttempt(id: number): Promise<McqResult> {
 /** DELETE /api/mcq/attempts/{id} — drop an open attempt. 409 once it has
  *  been submitted: that is a result, not clutter. */
 export function abandonMcqAttempt(id: number): Promise<{ ok: true }> {
-  if (MOCK) return mock.abandonMcqAttempt(id);
+  if (MOCK) return mockWrite(mock.abandonMcqAttempt(id));
   return request<{ ok: true }>(`/api/mcq/attempts/${id}`, { method: "DELETE" });
 }
 
@@ -395,23 +466,27 @@ export function getMcqAttempts(): Promise<McqAttemptSummary[]> {
 }
 
 /** GET /api/mcq/leaderboard — one row per user, their best submitted attempt
- *  for exactly this subject + units + length + difficulty. `difficulty` is
- *  sent only when a tier is chosen; its absence IS the Mixed board, which is
- *  a board of its own rather than the four tiers merged. */
+ *  for exactly this subject + units + length + difficulty + mode.
+ *  `difficulty` is sent only when a tier is chosen; its absence IS the Mixed
+ *  board, which is a board of its own rather than the four tiers merged.
+ *  `mode` picks the practice or the exam board — the two never share one. A
+ *  "mistakes" sitting is on neither, so there is no source parameter. */
 export function getMcqLeaderboard(
   subjectCode: string,
   units: number[],
   length: McqLength,
   difficulty: McqDifficulty | null = null,
+  mode: McqMode = "practice",
 ): Promise<McqLeaderboardRow[]> {
   if (MOCK)
-    return mock.getMcqLeaderboard(subjectCode, units, length, difficulty);
+    return mock.getMcqLeaderboard(subjectCode, units, length, difficulty, mode);
   return request<McqLeaderboardRow[]>(
     `/api/mcq/leaderboard${qs({
       subject_code: subjectCode,
       units: units.join(","),
       length: String(length),
       difficulty: difficulty ?? undefined,
+      mode,
     })}`,
   );
 }

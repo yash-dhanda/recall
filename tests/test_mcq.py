@@ -17,6 +17,7 @@ import json
 import random
 import shutil
 import threading
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import pytest
@@ -337,8 +338,8 @@ def test_a_retired_question_comes_back_if_it_returns_to_the_json(tmp_path):
 
 def test_subjects_lists_every_unit_with_its_live_count(client):
     body = client.get("/api/mcq/subjects").json()
-    # All six registered; CSE111 first because it is the one with questions.
-    assert len(body) == 6
+    # All seven registered; CSE111 first because it is the one with questions.
+    assert len(body) == 7
     assert body[0]["subject_code"] == "CSE111"
     subject = body[0]
     assert subject["label"] == "Orientation to Computing"
@@ -2042,13 +2043,15 @@ def test_a_database_without_the_code_columns_migrates_and_still_grades(
 
 # --- six subjects ----------------------------------------------------------
 
-SIX = ("MTH165", "CSE111", "INT108", "INT335", "MEC103", "CSE326")
+SIX = ("MTH165", "CSE111", "INT108", "INT335", "MEC103", "CSE326", "EVS")
 
 
 def test_the_registry_lists_all_six_subjects():
     from recall.lpu import SUBJECTS
     assert registry.MCQ_SUBJECTS == SIX
-    assert set(registry.MCQ_UNITS) == set(SIX) == set(SUBJECTS)
+    # EVS is not on the Sem-1 timetable in lpu.py; the other six are.
+    assert set(registry.MCQ_UNITS) == set(SIX)
+    assert set(SIX) - {"EVS"} == set(SUBJECTS)
 
 
 def test_the_order_does_not_depend_on_dict_insertion(db_path, monkeypatch):
@@ -2060,7 +2063,7 @@ def test_the_order_does_not_depend_on_dict_insertion(db_path, monkeypatch):
     monkeypatch.setitem(registry.MCQ_UNITS, "MTH165", entry)
     assert list(registry.MCQ_UNITS)[-1] == "MTH165"
     assert subject_order(db_path) == ["CSE111", "MTH165", "INT108", "INT335",
-                                      "MEC103", "CSE326"]
+                                      "MEC103", "CSE326", "EVS"]
 
 
 def test_cse111_keeps_its_own_ca1_units():
@@ -2075,7 +2078,7 @@ def test_cse111_keeps_its_own_ca1_units():
     }
 
 
-@pytest.mark.parametrize("code", [c for c in SIX if c != "CSE111"])
+@pytest.mark.parametrize("code", [c for c in SIX if c not in ("CSE111", "EVS")])
 def test_the_other_five_are_derived_from_lpu(code):
     from recall.lpu import SUBJECTS
     entry = registry.MCQ_UNITS[code]
@@ -2090,8 +2093,9 @@ def test_a_subject_with_no_bank_files_is_listed_with_every_count_zero(client):
             client.get("/api/mcq/subjects").json()}
     assert set(body) == set(SIX)
     zero = {"easy": 0, "medium": 0, "hard": 0, "max": 0, "hardest": 0}
+    assert [u["unit"] for u in body["EVS"]["units"]] == [1, 2, 3]
     for code in SIX:
-        if code == "CSE111":
+        if code in ("CSE111", "EVS"):
             continue
         subject = body[code]
         assert subject["label"] == SUBJECTS[code]["full_name"]
@@ -2128,7 +2132,7 @@ def subject_order(path: str) -> list[str]:
 def test_subjects_with_questions_come_first(db_path):
     # CSE111 holds the only questions; the rest wait in registry order.
     assert subject_order(db_path) == ["CSE111", "MTH165", "INT108", "INT335",
-                                      "MEC103", "CSE326"]
+                                      "MEC103", "CSE326", "EVS"]
 
 
 def test_subjects_are_ordered_by_how_many_questions_they_hold(tmp_path):
@@ -2137,12 +2141,12 @@ def test_subjects_are_ordered_by_how_many_questions_they_hold(tmp_path):
     # INT108 (4) then CSE326 (1) — CSE326 jumps MTH165, CSE111, INT335 and
     # MEC103, which all come before it in the registry but hold nothing.
     assert subject_order(only_code) == ["INT108", "CSE326", "MTH165",
-                                        "CSE111", "INT335", "MEC103"]
+                                        "CSE111", "INT335", "MEC103", "EVS"]
 
     both = str(tmp_path / "both.db")
     make_db(both, combined_bank(tmp_path))
     assert subject_order(both) == ["CSE111", "INT108", "CSE326", "MTH165",
-                                   "INT335", "MEC103"]
+                                   "INT335", "MEC103", "EVS"]
 
 
 def test_a_tie_keeps_registry_order(tmp_path):
@@ -2173,7 +2177,7 @@ def test_questions_nobody_can_sit_do_not_lift_a_subject(tmp_path):
     path = str(tmp_path / "stray.db")
     make_db(path, bank_dir)
     assert subject_order(path) == ["MEC103", "MTH165", "CSE111", "INT108",
-                                   "INT335", "CSE326"]
+                                   "INT335", "CSE326", "EVS"]
 
 
 def test_retired_questions_do_not_count_toward_the_order(tmp_path):
@@ -2340,4 +2344,591 @@ def test_the_real_pre_code_schema_migrates_and_its_attempts_still_work(
     board = service.leaderboard(conn, "CSE111", [1], 30)
     assert [(row["name"], row["score"]) for row in board] == \
         [("owner", 2), ("rival", 1)]
+    conn.close()
+
+
+# --- round 2: exam mode and "practise my mistakes" -------------------------
+#
+# Time is frozen, never slept on: `service.clock` is the module's one source
+# of "now", and `frozen` swaps it for a clock the test moves by hand.
+
+T0 = datetime(2026, 9, 23, 10, 0, 0, tzinfo=timezone.utc)
+
+
+class FrozenClock:
+    def __init__(self, at: datetime):
+        self.at = at
+
+    def __call__(self) -> datetime:
+        return self.at
+
+    def tick(self, seconds: float) -> None:
+        self.at += timedelta(seconds=seconds)
+
+
+@pytest.fixture
+def frozen(monkeypatch) -> FrozenClock:
+    clock = FrozenClock(T0)
+    monkeypatch.setattr(service, "clock", clock)
+    return clock
+
+
+#: Keys that carry a verdict. None may appear in an exam before submit — as a
+#: key anywhere in the JSON, checked on the raw response text.
+VERDICT_KEYS = ("correct", "correct_index", "is_correct", "correct_so_far",
+                "explain", "why_wrong")
+
+
+def assert_sealed(text: str) -> None:
+    """Nothing in this raw JSON says what is right. Checks the keys, and the
+    teaching text itself, so a leak under a new name is caught too."""
+    for key in VERDICT_KEYS:
+        assert f'"{key}":' not in text, f"{key} leaked: {text[:300]}"
+    for source in BY_TEXT.values():
+        assert json.dumps(source["explain"]) not in text, "an explain leaked"
+        for note in source["why_wrong"]:
+            if note:
+                assert json.dumps(note) not in text, "a why_wrong leaked"
+
+
+def key_of(question: dict) -> str:
+    return BY_TEXT[question["question"]]["key"]
+
+
+def by_key(attempt: dict) -> dict:
+    return {key_of(q): q for q in attempt["questions"]}
+
+
+def answer_key(client: TestClient, attempt: dict, key: str, right: bool):
+    question = by_key(attempt)[key]
+    return client.post(
+        f"/api/mcq/attempts/{attempt['attempt_id']}/answer",
+        json={"position": question["position"],
+              "chosen": correct_shown(question) if right
+              else wrong_shown(question)})
+
+
+def begin(client: TestClient, units=(1, 2), length="full", difficulty=None,
+          mode=None, source=None):
+    body = {"subject_code": "CSE111", "units": list(units), "length": length}
+    for name, value in (("difficulty", difficulty), ("mode", mode),
+                        ("source", source)):
+        if value is not None:
+            body[name] = value
+    return client.post("/api/mcq/attempts", json=body)
+
+
+def exam(client: TestClient, **kwargs) -> dict:
+    r = begin(client, mode="exam", **kwargs)
+    assert r.status_code == 200, r.text
+    return r.json()
+
+
+def practice(client: TestClient, **kwargs) -> dict:
+    r = begin(client, **kwargs)
+    assert r.status_code == 200, r.text
+    return r.json()
+
+
+def submit(client: TestClient, attempt: dict) -> dict:
+    r = client.post(f"/api/mcq/attempts/{attempt['attempt_id']}/submit")
+    assert r.status_code == 200, r.text
+    return r.json()
+
+
+def pending(client: TestClient) -> dict:
+    r = client.get("/api/mcq/mistakes")
+    assert r.status_code == 200, r.text
+    return {row["subject_code"]: row for row in r.json()}
+
+
+def pool_keys(client: TestClient, **kwargs) -> set | None:
+    """The keys a mistakes sitting draws with length "full", or None on the
+    422 an empty pool is."""
+    r = begin(client, source="mistakes", **kwargs)
+    if r.status_code == 422:
+        assert "no mistakes to practise" in r.json()["detail"], r.text
+        return None
+    assert r.status_code == 200, r.text
+    return {key_of(q) for q in r.json()["questions"]}
+
+
+# exam mode --------------------------------------------------------------
+
+def test_an_exam_carries_a_minute_per_question_drawn(client, frozen):
+    attempt = exam(client, units=[1], length=30)       # 30 asked, 12 exist
+    assert (attempt["mode"], attempt["source"]) == ("exam", "bank")
+    assert attempt["total"] == 12
+    assert attempt["time_limit_s"] == 12 * registry.EXAM_SECONDS_PER_QUESTION
+    assert attempt["seconds_left"] == 720
+    frozen.tick(100)
+    again = client.get(f"/api/mcq/attempts/{attempt['attempt_id']}").json()
+    assert again["seconds_left"] == 620
+    assert_sealed(json.dumps(attempt))
+
+    plain = practice(client, units=[1], length=5)
+    assert (plain["mode"], plain["source"]) == ("practice", "bank")
+    assert plain["time_limit_s"] is None and plain["seconds_left"] is None
+
+
+def test_an_exam_answer_says_what_was_chosen_and_nothing_else(client, frozen):
+    attempt = exam(client, units=[1])
+    for right, key in ((False, "CSE111-U1-001"), (True, "CSE111-U1-002")):
+        r = answer_key(client, attempt, key, right)
+        assert r.status_code == 200, r.text
+        assert_sealed(r.text)
+        question = by_key(attempt)[key]
+        assert set(r.json()) == {"position", "chosen", "answered"}
+        assert r.json()["position"] == question["position"]
+
+
+def test_an_open_exam_read_back_reveals_nothing(client, frozen):
+    attempt = exam(client, units=[1, 2])
+    aid = attempt["attempt_id"]
+    answer_key(client, attempt, "CSE111-U1-001", right=False)
+    answer_key(client, attempt, "CSE111-U1-005", right=True)
+    answer_key(client, attempt, "CSE111-U2-002", right=False)
+
+    r = client.get(f"/api/mcq/attempts/{aid}")
+    assert r.status_code == 200
+    assert_sealed(r.text)
+    answers = {key_of(q): q["answer"] for q in r.json()["questions"]}
+    wanted = by_key(attempt)["CSE111-U1-005"]
+    assert answers["CSE111-U1-005"] == {
+        "position": wanted["position"], "chosen": correct_shown(wanted),
+        "answered": 3}
+    assert sum(a is not None for a in answers.values()) == 3
+
+    # The history list is not a side door either: no score while it is open.
+    row = client.get("/api/mcq/attempts").json()[0]
+    assert (row["mode"], row["score"], row["answered"]) == ("exam", None, 3)
+    assert_sealed(json.dumps(row))
+
+    # Nor is the time running out: an expired, unsubmitted paper is sealed.
+    frozen.tick(60 * 60 * 5)
+    r = client.get(f"/api/mcq/attempts/{aid}")
+    assert_sealed(r.text)
+    assert r.json()["seconds_left"] == 0
+
+
+def test_an_exam_answer_can_change_and_the_last_one_is_graded(client, frozen):
+    attempt = exam(client, units=[1])
+    aid = attempt["attempt_id"]
+    # Right then wrong, and wrong then right: only the last choice counts.
+    for right in (True, False):
+        assert answer_key(client, attempt, "CSE111-U1-001", right).status_code == 200
+    for right in (False, False, True):
+        r = answer_key(client, attempt, "CSE111-U1-002", right)
+        assert r.status_code == 200 and r.json()["answered"] == 2
+
+    result = submit(client, attempt)
+    assert (result["score"], result["answered"]) == (1, 2)
+    graded = client.get(f"/api/mcq/attempts/{aid}").json()
+    answers = {key_of(q): q["answer"] for q in graded["questions"]}
+    assert answers["CSE111-U1-001"]["is_correct"] is False
+    assert answers["CSE111-U1-002"]["is_correct"] is True
+
+
+def test_one_row_per_position_however_often_it_changes(db_path, frozen):
+    conn = connect(db_path)
+    attempt = service.create_attempt(conn, OWNER, "CSE111", [1], "full",
+                                     mode="exam", rng=random.Random(2))
+    aid = attempt["attempt_id"]
+    for chosen in (0, 1, 2, 3, 1):
+        out = service.answer_attempt(conn, OWNER, aid, 1, chosen)
+        assert out == {"position": 1, "chosen": chosen, "answered": 1}
+    rows = conn.execute("SELECT chosen FROM mcq_answers WHERE attempt_id = ?",
+                        (aid,)).fetchall()
+    assert [r["chosen"] for r in rows] == [1]
+    conn.close()
+
+
+def test_an_exam_submit_reveals_everything_at_once(client, frozen):
+    attempt = exam(client, units=[1])
+    aid = attempt["attempt_id"]
+    answer_key(client, attempt, "CSE111-U1-001", right=True)
+    answer_key(client, attempt, "CSE111-U1-002", right=False)
+    frozen.tick(90)
+    result = submit(client, attempt)
+    assert (result["score"], result["total"], result["answered"]) == (1, 12, 2)
+    assert result["duration_s"] == 90
+    assert len(result["missed"]) == 11
+    missed = {BY_TEXT[m["question"]]["key"]: m for m in result["missed"]}
+    wrong = missed["CSE111-U1-002"]
+    source = BY_TEXT[wrong["question"]]
+    assert wrong["options"][wrong["correct_index"]] == \
+        source["options"][source["correct"]]
+    assert wrong["explain"] == source["explain"] and wrong["why_wrong"]
+    assert result["rank"] == {"position": 1, "of": 1}
+
+    graded = client.get(f"/api/mcq/attempts/{aid}").json()
+    feedback = by_key(graded)["CSE111-U1-001"]["answer"]
+    assert feedback["is_correct"] is True and "correct_index" in feedback
+    assert graded["seconds_left"] is None
+
+
+def test_answers_after_the_limit_and_grace_are_409_but_submit_works(
+        client, frozen):
+    attempt = exam(client, units=[1])                  # 12 questions, 12:00
+    aid = attempt["attempt_id"]
+    answer_key(client, attempt, "CSE111-U1-001", right=True)
+
+    frozen.tick(720 + registry.EXAM_GRACE_S)           # the last legal second
+    assert answer_key(client, attempt, "CSE111-U1-002", True).status_code == 200
+    frozen.tick(1)
+    r = answer_key(client, attempt, "CSE111-U1-005", right=True)
+    assert r.status_code == 409 and "time is up" in r.json()["detail"]
+    # Changing an answer already given is refused the same way.
+    r = answer_key(client, attempt, "CSE111-U1-001", right=False)
+    assert r.status_code == 409 and "time is up" in r.json()["detail"]
+
+    frozen.tick(60 * 60 * 9)                           # the tab left overnight
+    result = submit(client, attempt)
+    assert (result["score"], result["answered"]) == (2, 2)
+    assert result["duration_s"] == 720 + registry.EXAM_GRACE_S, \
+        "the clock stopped when answering did"
+    r = answer_key(client, attempt, "CSE111-U1-005", right=True)
+    assert r.status_code == 409 and "submitted" in r.json()["detail"]
+
+
+def test_a_practice_sitting_has_no_clock(client, frozen):
+    attempt = practice(client, units=[1])
+    frozen.tick(60 * 60 * 24)
+    r = answer_key(client, attempt, "CSE111-U1-001", right=True)
+    assert r.status_code == 200 and r.json()["is_correct"] is True
+    assert answer_key(client, attempt, "CSE111-U1-001",
+                      right=True).status_code == 409, "first click still final"
+
+
+@pytest.mark.parametrize("field,value", [
+    ("mode", "quiz"), ("mode", ""), ("mode", "Exam"),
+    ("source", "wrong"), ("source", ""),
+])
+def test_an_unknown_mode_or_source_is_422_naming_the_choices(client, field,
+                                                             value):
+    r = begin(client, units=[1], **{field: value})
+    assert r.status_code == 422, r.text
+    assert f"{field} must be one of" in r.json()["detail"]
+
+
+def test_history_carries_mode_source_and_clock(client, frozen):
+    practice(client, units=[1], length=5)
+    frozen.tick(1)
+    exam(client, units=[1], length=5)
+    rows = client.get("/api/mcq/attempts").json()
+    assert [(r["mode"], r["source"], r["time_limit_s"]) for r in rows] == \
+        [("exam", "bank", 300), ("practice", "bank", None)]
+
+
+# boards -----------------------------------------------------------------
+
+def test_practice_and_exam_are_separate_boards(db_path, frozen):
+    owner, rival = client_as(db_path, OWNER), client_as(db_path, INTRUDER)
+    mine = practice(owner, units=[1], length=5)
+    for q in mine["questions"]:
+        owner.post(f"/api/mcq/attempts/{mine['attempt_id']}/answer",
+                   json={"position": q["position"], "chosen": correct_shown(q)})
+    assert submit(owner, mine)["rank"] == {"position": 1, "of": 1}
+
+    theirs = exam(rival, units=[1], length=5)
+    first = theirs["questions"][0]
+    rival.post(f"/api/mcq/attempts/{theirs['attempt_id']}/answer",
+               json={"position": 1, "chosen": correct_shown(first)})
+    assert submit(rival, theirs)["rank"] == {"position": 1, "of": 1}, \
+        "ranked on the exam board, where it is alone"
+
+    params = {"subject_code": "CSE111", "units": "1", "length": "5"}
+    names = lambda r: [row["name"] for row in r.json()]  # noqa: E731
+    assert names(owner.get("/api/mcq/leaderboard", params=params)) == ["owner"]
+    assert names(owner.get("/api/mcq/leaderboard",
+                           params={**params, "mode": ""})) == ["owner"]
+    assert names(owner.get("/api/mcq/leaderboard",
+                           params={**params, "mode": "exam"})) == ["intruder"]
+    r = owner.get("/api/mcq/leaderboard", params={**params, "mode": "timed"})
+    assert r.status_code == 422 and "mode must be one of" in r.json()["detail"]
+
+
+def test_a_mistakes_sitting_is_on_no_board(client, frozen):
+    miss = practice(client, units=[1])                  # 12, all wrong
+    for q in miss["questions"]:
+        client.post(f"/api/mcq/attempts/{miss['attempt_id']}/answer",
+                    json={"position": q["position"], "chosen": wrong_shown(q)})
+    submit(client, miss)
+    frozen.tick(5)
+    ordinary = practice(client, units=[1], length=5)    # the same selection
+    first = ordinary["questions"][0]
+    client.post(f"/api/mcq/attempts/{ordinary['attempt_id']}/answer",
+                json={"position": 1, "chosen": wrong_shown(first)})
+    assert submit(client, ordinary)["rank"] == {"position": 1, "of": 1}
+    frozen.tick(5)
+    for mode in ("practice", "exam"):
+        r = begin(client, units=[1], length=5, source="mistakes", mode=mode)
+        assert r.status_code == 200, r.text
+        sitting = r.json()
+        assert sitting["source"] == "mistakes"
+        for q in sitting["questions"]:
+            client.post(f"/api/mcq/attempts/{sitting['attempt_id']}/answer",
+                        json={"position": q["position"],
+                              "chosen": correct_shown(q)})
+        result = submit(client, sitting)
+        assert result["score"] == 5 and result["rank"] is None
+        frozen.tick(5)
+    for mode in ("practice", "exam"):
+        rows = client.get("/api/mcq/leaderboard", params={
+            "subject_code": "CSE111", "units": "1", "length": "5",
+            "mode": mode}).json()
+        assert [row["score"] for row in rows] == \
+            ([0] if mode == "practice" else []), \
+            "only the ordinary bank sitting is ranked, and only on its board"
+
+
+# practise my mistakes ---------------------------------------------------
+
+def test_a_wrong_answer_enters_the_pool_and_a_right_one_takes_it_out(
+        client, frozen):
+    assert pending(client) == {}
+    assert pool_keys(client) is None, "nothing answered, nothing to practise"
+
+    attempt = practice(client)                          # all 16, unanswered
+    answer_key(client, attempt, "CSE111-U1-001", right=False)
+    answer_key(client, attempt, "CSE111-U1-002", right=True)
+    frozen.tick(1)
+    assert pool_keys(client) == {"CSE111-U1-001"}, \
+        "14 unanswered never enter; the right answer never did"
+    assert pending(client)["CSE111"]["total"] == 1
+
+    frozen.tick(60)
+    retry = practice(client, units=[1], source="mistakes")
+    assert [key_of(q) for q in retry["questions"]] == ["CSE111-U1-001"]
+    assert answer_key(client, retry, "CSE111-U1-001", True).status_code == 200
+    assert pool_keys(client) is None
+    assert pending(client) == {}
+
+    frozen.tick(60)                                     # and back in again
+    again = practice(client, units=[1])
+    answer_key(client, again, "CSE111-U1-001", right=False)
+    assert pool_keys(client) == {"CSE111-U1-001"}
+
+
+def test_an_unsubmitted_exam_answer_is_not_evidence_either_way(client, frozen):
+    paper = exam(client)
+    answer_key(client, paper, "CSE111-U1-003", right=False)
+    assert pool_keys(client) is None, "an open exam has revealed nothing"
+    assert pending(client) == {}
+
+    # A practice mistake is not cleared by a right answer nobody was shown.
+    frozen.tick(10)
+    drill = practice(client, units=[1])
+    answer_key(client, drill, "CSE111-U1-004", right=False)
+    frozen.tick(10)
+    answer_key(client, paper, "CSE111-U1-004", right=True)
+    assert pool_keys(client) == {"CSE111-U1-004"}
+
+    frozen.tick(10)
+    submit(client, paper)                               # now both are revealed
+    assert pool_keys(client) == {"CSE111-U1-003"}
+
+
+def test_the_most_recently_revealed_answer_decides(client, frozen):
+    """An exam answer is revealed at submit, not when it was clicked. Wrong in
+    an exam at t1, right in practice at t2, the exam submitted at t3: the
+    student last LEARNT they were wrong, so the question is pending."""
+    paper = exam(client, units=[1])
+    answer_key(client, paper, "CSE111-U1-006", right=False)
+    frozen.tick(10)
+    drill = practice(client, units=[1])
+    answer_key(client, drill, "CSE111-U1-006", right=True)
+    frozen.tick(10)
+    submit(client, paper)
+    assert pool_keys(client) == {"CSE111-U1-006"}
+
+
+def test_the_pool_is_filtered_like_any_selection(client, frozen):
+    attempt = practice(client)
+    wrong = ("CSE111-U1-001", "CSE111-U1-009", "CSE111-U1-003",
+             "CSE111-U1-004", "CSE111-U2-001", "CSE111-U2-004")
+    for key in wrong:
+        answer_key(client, attempt, key, right=False)
+    answer_key(client, attempt, "CSE111-U1-010", right=True)
+    frozen.tick(1)
+
+    summary = pending(client)
+    assert set(summary) == {"CSE111"}, "subjects with nothing are omitted"
+    assert summary["CSE111"] == {
+        "subject_code": "CSE111", "total": 6,
+        "by_unit": {"1": 4, "2": 2},
+        "by_difficulty": {"easy": 3, "medium": 0, "hard": 2, "max": 1, "hardest": 0}}
+
+    assert pool_keys(client) == set(wrong)
+    assert pool_keys(client, units=[2]) == {"CSE111-U2-001", "CSE111-U2-004"}
+    assert pool_keys(client, units=[1], difficulty="easy") == \
+        {"CSE111-U1-001", "CSE111-U1-009"}
+    assert pool_keys(client, difficulty="hard") == \
+        {"CSE111-U1-003", "CSE111-U2-004"}
+    assert pool_keys(client, units=[1], difficulty="medium") is None
+    assert pool_keys(client, units=[2], difficulty="max") is None
+
+    # Still min(length, available), and still shuffled per attempt.
+    r = begin(client, length=5, source="mistakes")
+    assert r.status_code == 200 and r.json()["total"] == 5
+    assert r.json()["length"] == 5
+
+    r = client.post("/api/mcq/attempts", json={
+        "subject_code": "INT108", "units": [1], "length": 30,
+        "source": "mistakes"})
+    assert r.status_code == 422
+    assert "no mistakes to practise in that selection yet" in r.json()["detail"]
+
+
+def test_the_pool_and_its_summary_are_yours_alone(db_path, frozen):
+    owner, rival = client_as(db_path, OWNER), client_as(db_path, INTRUDER)
+    attempt = practice(owner, units=[1])
+    answer_key(owner, attempt, "CSE111-U1-007", right=False)
+    answer_key(owner, attempt, "CSE111-U1-008", right=False)
+    theirs = practice(rival, units=[1])
+    answer_key(rival, theirs, "CSE111-U1-011", right=False)
+    answer_key(rival, theirs, "CSE111-U1-007", right=True)
+    frozen.tick(1)
+
+    assert pending(owner)["CSE111"]["total"] == 2
+    assert pending(rival)["CSE111"]["total"] == 1
+    assert pool_keys(owner) == {"CSE111-U1-007", "CSE111-U1-008"}, \
+        "the rival's right answer does not clear the owner's mistake"
+    assert pool_keys(rival) == {"CSE111-U1-011"}
+
+    conn = connect(db_path)
+    conn.execute("INSERT INTO users (id, name) VALUES (3, 'newcomer')")
+    conn.commit()
+    conn.close()
+    newcomer = client_as(db_path, 3)
+    assert pending(newcomer) == {}
+    assert pool_keys(newcomer) is None
+
+
+def test_a_retired_question_leaves_the_pool(tmp_path, frozen):
+    bank_dir = bank_copy(tmp_path)
+    path = str(tmp_path / "retire.db")
+    make_db(path, bank_dir)
+    client = client_as(path, OWNER)
+    attempt = practice(client, units=[1])
+    answer_key(client, attempt, "CSE111-U1-001", right=False)
+    answer_key(client, attempt, "CSE111-U1-002", right=False)
+    drop_key(bank_dir, "cse111_unit1.json", "CSE111-U1-002")
+    conn = connect(path)
+    seed_mcq_bank(conn, bank_dir)
+    conn.close()
+    assert pool_keys(client) == {"CSE111-U1-001"}
+    assert pending(client)["CSE111"]["total"] == 1
+
+
+def test_the_mistakes_route_is_on_the_app():
+    paths = create_app().openapi()["paths"]
+    assert "get" in paths["/api/mcq/mistakes"]
+
+
+# the live database --------------------------------------------------------
+
+#: The schema exactly as it stood before exam mode and mistakes: difficulty
+#: and code questions landed, mode/source/time_limit_s had not.
+_SCHEMA_BEFORE_EXAM = (Path(__file__).resolve().parent / "fixtures"
+                       / "schema_before_exam_mode.sql")
+
+
+def test_the_pre_exam_schema_migrates_and_every_old_attempt_still_works(
+        tmp_path, frozen):
+    path = str(tmp_path / "live.db")
+    conn = connect(path)
+    conn.executescript(_SCHEMA_BEFORE_EXAM.read_text())
+    assert "mode" not in {r["name"] for r in
+                          conn.execute("PRAGMA table_info(mcq_attempts)")}
+    for uid, name in ((OWNER, "owner"), (INTRUDER, "rival")):
+        conn.execute("INSERT INTO users (id, name) VALUES (?,?)", (uid, name))
+        conn.execute("INSERT INTO settings (user_id) VALUES (?)", (uid,))
+    for q in load_questions(FIXTURES):
+        conn.execute(_PRE_CODE_INSERT, (
+            q["key"], q["subject_code"], q["unit"], q["topic"], q["kind"],
+            q["difficulty"], q["question"], json.dumps(q["options"]),
+            q["correct"], q["explain"], json.dumps(q["why_wrong"]),
+            "2026-09-22T00:00:00+00:00"))
+    by_id = {r["id"]: dict(r) for r in conn.execute("SELECT * FROM mcq_questions")}
+    ids = [i for i, r in sorted(by_id.items()) if r["unit"] == 1][:5]
+    orders = [[3, 1, 0, 2], [0, 1, 2, 3], [2, 3, 1, 0], [1, 0, 3, 2],
+              [0, 2, 1, 3]]
+
+    def right(position):
+        return orders[position - 1].index(by_id[ids[position - 1]]["correct"])
+
+    def sitting(user_id, difficulty, submitted, score):
+        cur = conn.execute(
+            "INSERT INTO mcq_attempts (user_id, subject_code, units_json,"
+            " length, difficulty, question_ids_json, option_orders_json,"
+            " total, started_at, submitted_at, duration_s, score)"
+            " VALUES (?,'CSE111','[1]','5',?,?,?,5,"
+            " '2026-09-22T00:00:00+00:00',?,?,?)",
+            (user_id, difficulty, json.dumps(ids), json.dumps(orders),
+             "2026-09-22T00:04:00+00:00" if submitted else None,
+             240 if submitted else None, score))
+        return int(cur.lastrowid)
+
+    def record(aid, position, chosen, at="2026-09-22T00:01:00+00:00"):
+        is_right = chosen == right(position)
+        conn.execute(
+            "INSERT INTO mcq_answers (attempt_id, position, question_id,"
+            " chosen, is_correct, answered_at) VALUES (?,?,?,?,?,?)",
+            (aid, position, ids[position - 1], chosen, 1 if is_right else 0,
+             at))
+
+    rival = sitting(INTRUDER, None, submitted=True, score=1)
+    record(rival, 1, right(1))
+    tiered = sitting(INTRUDER, "easy", submitted=True, score=0)
+    mine = sitting(OWNER, None, submitted=False, score=None)
+    record(mine, 1, right(1))
+    record(mine, 2, (right(2) + 1) % 4)
+    conn.commit()
+    attempts_before = [dict(r) for r in conn.execute(
+        "SELECT * FROM mcq_attempts ORDER BY id")]
+
+    init_db(conn)                                  # the migration under test
+    init_db(conn)                                  # idempotent
+
+    cols = {r["name"]: r for r in conn.execute("PRAGMA table_info(mcq_attempts)")}
+    assert cols["mode"]["notnull"] == 1 and cols["source"]["notnull"] == 1
+    assert cols["time_limit_s"]["notnull"] == 0
+    after = [dict(r) for r in conn.execute("SELECT * FROM mcq_attempts ORDER BY id")]
+    assert [{k: r[k] for k in attempts_before[0]} for r in after] == \
+        attempts_before, "no rebuild: every row and id kept"
+    assert {(r["mode"], r["source"], r["time_limit_s"]) for r in after} == \
+        {("practice", "bank", None)}
+    assert seed_mcq_bank(conn, FIXTURES)["retired"] == 0   # the boot seed
+
+    # Readable: the open sitting resumes with its reveals, as practice.
+    resumed = service.get_attempt(conn, OWNER, mine)
+    assert (resumed["mode"], resumed["source"]) == ("practice", "bank")
+    assert [q["answer"]["is_correct"] if q["answer"] else None
+            for q in resumed["questions"]] == [True, False, None, None, None]
+    assert resumed["questions"][1]["answer"]["correct_index"] == right(2)
+    with pytest.raises(McqConflict):              # still the first click
+        service.answer_attempt(conn, OWNER, mine, 2, right(2))
+
+    # Its pre-migration wrong answer was revealed, so it is a mistake now.
+    assert service.mistakes_summary(conn, OWNER)[0]["total"] == 1
+    assert service.mistakes_summary(conn, INTRUDER) == []
+
+    # Gradable and ranked on the practice board, never on the exam one.
+    service.answer_attempt(conn, OWNER, mine, 3, right(3))
+    result = service.submit_attempt(conn, OWNER, mine)
+    assert (result["score"], result["total"], result["answered"]) == (2, 5, 3)
+    assert result["rank"] == {"position": 1, "of": 2}
+    board = service.leaderboard(conn, "CSE111", [1], 5)
+    assert [(row["name"], row["score"]) for row in board] == \
+        [("owner", 2), ("rival", 1)]
+    assert service.leaderboard(conn, "CSE111", [1], 5, mode="exam") == []
+    assert [row["score"] for row in service.leaderboard(
+        conn, "CSE111", [1], 5, "easy")] == [0]
+    # And an old submitted sitting re-submits to the result it already had.
+    assert service.submit_attempt(conn, INTRUDER, rival)["score"] == 1
+    assert service.submit_attempt(conn, INTRUDER, tiered)["rank"] is None
+    history = service.list_attempts(conn, INTRUDER)
+    assert {(h["mode"], h["source"], h["time_limit_s"]) for h in history} == \
+        {("practice", "bank", None)}
     conn.close()

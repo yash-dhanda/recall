@@ -341,14 +341,28 @@ CREATE TABLE IF NOT EXISTS mcq_attempts (
   started_at        TEXT NOT NULL,
   submitted_at      TEXT,
   duration_s        INTEGER,
-  score             INTEGER
+  score             INTEGER,
+  -- 'practice' | 'exam' (registry.MODES). Practice reveals each answer on the
+  -- click; exam reveals nothing until submit. Part of the leaderboard key:
+  -- exam scores are only comparable with exam scores.
+  mode              TEXT NOT NULL DEFAULT 'practice',
+  -- 'bank' | 'mistakes' (registry.SOURCES). A 'mistakes' sitting drew from
+  -- this user's own wrong answers and is never on any board.
+  source            TEXT NOT NULL DEFAULT 'bank',
+  -- An exam's clock in seconds, 60 per question drawn; NULL for practice.
+  time_limit_s      INTEGER
+  -- All three reach a live database through db.py's _migrate as guarded
+  -- ADD COLUMNs, and their DEFAULTs are what make every attempt drawn before
+  -- them a practice sitting from the bank — which is what each one was.
 );
 CREATE INDEX IF NOT EXISTS idx_mcq_attempts_user
   ON mcq_attempts(user_id, started_at);
 
--- One answer. The first click is the answer: UNIQUE(attempt_id, position) is
--- what makes a second one a 409 rather than an overwrite, including when two
--- of them arrive at once.
+-- One answer. In PRACTICE the first click is the answer: UNIQUE(attempt_id,
+-- position) is what makes a second one a 409 rather than an overwrite,
+-- including when two of them arrive at once. In an EXAM the same constraint is
+-- the ON CONFLICT target of an upsert — the choice can change until submit,
+-- and there is still exactly one row per position to grade.
 --
 -- OWNERSHIP: attempt_id -> mcq_attempts.user_id. Every read and write here
 -- arrives through an attempt row already filtered by user_id.

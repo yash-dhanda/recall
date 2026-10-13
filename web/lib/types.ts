@@ -535,7 +535,32 @@ export type McqKind = "recall" | "situation";
  * `null` wherever a difficulty is optional means **Mixed** — drawn across all
  * four tiers — which is its own selection, not a merge of the four.
  */
-export type McqDifficulty = "easy" | "medium" | "hard" | "max";
+export type McqDifficulty = "easy" | "medium" | "hard" | "max" | "hardest";
+
+/**
+ * How an attempt is sat.
+ *
+ * - `practice` — each answer is revealed the moment it is clicked, with the
+ *   teaching note, and the first click is final. How the bank teaches.
+ * - `exam`     — the CA: timed at a minute per question drawn, answers can be
+ *   changed until submit, and nothing about correctness leaves the server
+ *   before the paper is closed. The result reveals everything at once.
+ *
+ * Every attempt drawn before exams existed is `practice`. Part of the
+ * leaderboard key: exam scores are only comparable with exam scores.
+ */
+export type McqMode = "practice" | "exam";
+
+/**
+ * Where an attempt's questions come from.
+ *
+ * - `bank`     — the ordinary draw from the selection.
+ * - `mistakes` — only questions whose most recent REVEALED answer by this user
+ *   was wrong (a practice answer is revealed on the click, an exam answer at
+ *   submit; an open exam has revealed nothing). Answer one right later and it
+ *   leaves the pool. Never on any leaderboard: every student's pool differs.
+ */
+export type McqSource = "bank" | "mistakes";
 
 export interface McqUnit {
   /** The unit number printed on the lecture deck, 1-based. */
@@ -585,6 +610,25 @@ export interface McqFeedback {
   correct_so_far: number;
 }
 
+/**
+ * An exam answer, as the server records it before the paper is submitted:
+ * what was chosen and how many positions hold a choice — and NOTHING else.
+ * No verdict, no correct index, no explanation, no note, no running score.
+ *
+ * Its own type, not a partial McqFeedback, so a sitting that holds one cannot
+ * read correctness from it by accident: there is no field to read.
+ *
+ * POST /api/mcq/attempts/{id}/answer on an exam, and McqQuestion.answer on an
+ * exam that is still open.
+ */
+export interface McqExamAnswer {
+  position: number;
+  /** 0-3 in the shown order. Can change until submit. */
+  chosen: number;
+  /** How many positions of the attempt hold a choice now. */
+  answered: number;
+}
+
 export interface McqQuestion {
   position: number;
   topic: string;
@@ -611,8 +655,14 @@ export interface McqQuestion {
   options_mono?: boolean;
   /** Exactly four, already shuffled for this attempt. */
   options: string[];
-  /** null until answered. */
-  answer: McqFeedback | null;
+  /**
+   * null until answered. A full McqFeedback once the verdict has been
+   * revealed — on the click in practice, at submit in an exam. While an exam
+   * is still open it is an McqExamAnswer: the choice alone. Tell them apart
+   * with `isRevealed` (lib/api.ts), never by reading a field that might not
+   * be there.
+   */
+  answer: McqFeedback | McqExamAnswer | null;
 }
 
 /** POST /api/mcq/attempts and GET /api/mcq/attempts/{id} */
@@ -625,6 +675,20 @@ export interface McqAttempt {
    *  selection, so it is what a retake repeats and what the board is keyed
    *  by. */
   difficulty: McqDifficulty | null;
+  /** How it is sat. Every attempt from before exams existed is "practice". */
+  mode: McqMode;
+  /** Where its questions came from. "mistakes" is never ranked. */
+  source: McqSource;
+  /** An exam's clock in seconds — 60 per question DRAWN. null in practice. */
+  time_limit_s: number | null;
+  /**
+   * OPTIONAL / ADDITIVE. Whole seconds left on an open exam's clock, measured
+   * by the SERVER when this response was built (grace not included, never
+   * below 0); null for practice and once submitted. The countdown anchors on
+   * it so a client whose own clock is wrong still counts down the server's
+   * time; `started_at + time_limit_s` is the fallback.
+   */
+  seconds_left?: number | null;
   total: number;
   started_at: string;
   submitted_at: string | null;
@@ -692,6 +756,10 @@ export interface McqAttemptSummary {
   length: McqLength;
   /** The tier it was drawn from; `null` is Mixed. */
   difficulty: McqDifficulty | null;
+  mode: McqMode;
+  source: McqSource;
+  /** An exam's clock in seconds; null in practice. */
+  time_limit_s: number | null;
   total: number;
   answered: number;
   /** null while the attempt is still open. */
@@ -702,8 +770,9 @@ export interface McqAttemptSummary {
 }
 
 /** GET /api/mcq/leaderboard — one row per user, their best submitted attempt
- *  for exactly this selection: subject + units + length + difficulty. Easy/30
- *  and Hard/30 are different boards, and Mixed is its own. */
+ *  for exactly this selection: subject + units + length + difficulty + mode.
+ *  Easy/30 and Hard/30 are different boards, Mixed is its own, and practice
+ *  and exam never share one. A "mistakes" sitting is on no board at all. */
 export interface McqLeaderboardRow {
   user_id: number;
   name: string;
@@ -712,4 +781,21 @@ export interface McqLeaderboardRow {
   percent: number;
   duration_s: number;
   submitted_at: string;
+}
+
+/**
+ * GET /api/mcq/mistakes — this user's pending mistakes in one subject: every
+ * question whose most recent revealed answer was wrong. Only subjects with at
+ * least one are listed.
+ *
+ * `by_unit` and `by_difficulty` are two separate splits of `total`, not a
+ * cross-tab: `by_unit` is keyed by the unit number as a string (a JSON
+ * object's keys always are) and lists every unit of the subject, 0 included;
+ * `by_difficulty` always carries all four tiers.
+ */
+export interface McqMistakeSummary {
+  subject_code: string;
+  total: number;
+  by_unit: Record<string, number>;
+  by_difficulty: Record<McqDifficulty, number>;
 }

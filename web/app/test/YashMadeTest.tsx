@@ -19,6 +19,7 @@ import {
   errorMessage,
   getMcqAttempts,
   getMcqLeaderboard,
+  getMcqMistakes,
   getMcqSubjects,
 } from "@/lib/api";
 import { daysAgo, formatDuration, mediumDate, plural } from "@/lib/format";
@@ -26,6 +27,9 @@ import type {
   McqAttemptSummary,
   McqDifficulty,
   McqLength,
+  McqMistakeSummary,
+  McqMode,
+  McqSource,
   McqSubject,
 } from "@/lib/types";
 import { useResource } from "@/lib/useResource";
@@ -41,14 +45,67 @@ const LENGTH_PRESETS: McqLength[] = [10, 20, 30, 60, "full"];
 
 /** The ladder, in order. `null` is Mixed — a draw across all four, which is
  *  its own selection and its own board, not a merge of them. */
-const DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max"];
+const DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest"];
 
 const DIFFICULTY_LABEL: Record<McqDifficulty, string> = {
   easy: "Easy",
   medium: "Medium",
   hard: "Hard",
   max: "Max",
+  hardest: "Hardest",
 };
+
+/** An exam's clock: one minute per question drawn. The server sets it; this
+ *  is only what the picker prints before the draw. */
+const EXAM_SECONDS_PER_QUESTION = 60;
+
+const MODE_LABEL: Record<McqMode, string> = {
+  practice: "Practice",
+  exam: "Exam",
+};
+
+/** mm:ss, or h:mm:ss for a paper over an hour. */
+function clockText(seconds: number): string {
+  const total = Math.max(0, Math.round(seconds));
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const sec = total % 60;
+  const mm = String(m).padStart(2, "0");
+  const ss = String(sec).padStart(2, "0");
+  return h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`;
+}
+
+/**
+ * How many pending mistakes a selection holds. The server splits a subject's
+ * mistakes by unit and by tier separately, not as a cross-tab, so with a tier
+ * AND a subset of units chosen the count is only known to lie in a range:
+ * never more than either split allows, never fewer than the tier's mistakes
+ * that cannot be in the units left out. `low === high` is an exact count —
+ * which it is for Mixed, and for a tier across every unit that has any.
+ */
+function mistakesIn(
+  summary: McqMistakeSummary | null,
+  units: number[],
+  difficulty: McqDifficulty | null,
+): { low: number; high: number } {
+  if (!summary) return { low: 0, high: 0 };
+  const inUnits = units.reduce(
+    (n, u) => n + (summary.by_unit[String(u)] ?? 0),
+    0,
+  );
+  if (difficulty === null) return { low: inUnits, high: inUnits };
+  const tier = summary.by_difficulty[difficulty] ?? 0;
+  const outside = Math.max(0, summary.total - inUnits);
+  return {
+    low: Math.max(0, tier - outside),
+    high: Math.min(inUnits, tier),
+  };
+}
+
+/** "7", or "up to 7" when the count is a bound rather than a fact. */
+function upTo(n: number, exact: boolean): string {
+  return exact ? String(n) : `up to ${n}`;
+}
 
 /** Where the last subject chosen is remembered, per browser. */
 const SUBJECT_KEY = "recall.mcq.subject";
@@ -101,6 +158,7 @@ function tierCountsOf(
     medium: 0,
     hard: 0,
     max: 0,
+    hardest: 0,
   };
   let known = false;
   for (const u of subject?.units ?? []) {
@@ -229,6 +287,44 @@ function UnitCard({
 }
 
 /**
+ * One of two ways to do something — how to sit the paper, or where to draw it
+ * from. A round mark, because exactly one is chosen; otherwise the unit card's
+ * object language, so the builder reads as one instrument.
+ */
+function ChoiceCard({
+  on,
+  disabled,
+  onClick,
+  title,
+  note,
+  label,
+}: {
+  on: boolean;
+  disabled?: boolean;
+  onClick: () => void;
+  title: string;
+  note: string;
+  label?: string;
+}) {
+  return (
+    <button
+      type="button"
+      aria-pressed={on}
+      aria-label={label ?? `${title} — ${note}`}
+      disabled={disabled}
+      onClick={onClick}
+      className={`${s.press} ${s.unit} ${on ? s.on : ""}`}
+    >
+      <Mark round on={on} />
+      <span className={s.unitBody}>
+        <span className={s.unitName}>{title}</span>
+        <span className={s.choiceNote}>{note}</span>
+      </span>
+    </button>
+  );
+}
+
+/**
  * The count under a rung. Five rungs share one row at every width, so the
  * rung can be as narrow as 52px — where "544 questions" bleeds through the
  * card edge. The number is its own span and the word is its own span, and
@@ -328,6 +424,12 @@ function AttemptRow({
         <span className={m.chipMuted}>{unitList(attempt.units)}</span>
         <span className={m.chipMuted}>{difficultyLabel(attempt.difficulty)}</span>
         <span className={m.chipMuted}>{lengthLabel(attempt.length)}</span>
+        {/* Only what differs from the default sitting is named, so a row of
+            ordinary practice reads exactly as it always has. */}
+        {attempt.mode === "exam" ? <span className={m.chipMuted}>exam</span> : null}
+        {attempt.source === "mistakes" ? (
+          <span className={m.chipMuted}>my mistakes</span>
+        ) : null}
       </span>
 
       {open ? (
@@ -405,6 +507,9 @@ export function YashMadeTest() {
   const reduced = useReducedMotion();
   const subjectsRes = useResource<McqSubject[]>("mcq-subjects", getMcqSubjects);
   const attemptsRes = useResource("mcq-attempts", getMcqAttempts);
+  /** This user's pending mistakes per subject. A failure here costs only the
+   *  "Practise my mistakes" option — the bank is still sat normally. */
+  const mistakesRes = useResource("mcq-mistakes", getMcqMistakes);
 
   /** The subject this browser last chose, read once. Only ever consulted
    *  after the subject list has arrived from the network, so the server
@@ -434,6 +539,12 @@ export function YashMadeTest() {
   const [pickedDifficulty, setPickedDifficulty] = useState<McqDifficulty | null>(
     null,
   );
+  /** Practice reveals each answer; an exam is timed and reveals at the end. */
+  const [mode, setMode] = useState<McqMode>("practice");
+  /** The source the student picked. What is drawn from is derived below: a
+   *  mistakes pool that has emptied for this selection falls back to the
+   *  bank, the same rule a tier that holds nothing follows. */
+  const [pickedSource, setPickedSource] = useState<McqSource>("bank");
   const [starting, setStarting] = useState(false);
   const [startError, setStartError] = useState<string | null>(null);
 
@@ -518,8 +629,35 @@ export function YashMadeTest() {
     return countOf(pickedDifficulty) > 0 ? pickedDifficulty : null;
   }, [pickedDifficulty, countOf]);
 
-  /** Questions the selection holds — units AND tier. */
-  const selectable = countOf(difficulty);
+  /** This subject's pending mistakes, or null when it has none. */
+  const mistakeSummary = useMemo(
+    () =>
+      (mistakesRes.data ?? []).find(
+        (x) => subject !== null && x.subject_code === subject.subject_code,
+      ) ?? null,
+    [mistakesRes.data, subject],
+  );
+  const hasMistakes = (mistakeSummary?.total ?? 0) > 0;
+
+  /** Pending mistakes in the current units and tier — a range, see
+   *  `mistakesIn`. */
+  const mistakes = useMemo(
+    () => mistakesIn(mistakeSummary, units, difficulty),
+    [mistakeSummary, units, difficulty],
+  );
+  const mistakesExact = mistakes.low === mistakes.high;
+
+  /** Where the draw comes from, in force: mistakes only while this selection
+   *  can hold one. */
+  const source: McqSource =
+    pickedSource === "mistakes" && mistakes.high > 0 ? "mistakes" : "bank";
+
+  /** Questions the selection holds — units AND tier, from the source in
+   *  force. For mistakes this is the upper bound. */
+  const bankSelectable = countOf(difficulty);
+  const selectable = source === "mistakes" ? mistakes.high : bankSelectable;
+  /** False only when the mistakes count is a bound, not a fact. */
+  const exact = source === "bank" || mistakesExact;
 
   /** Presets, plus anything else this subject suggests, "Full" last. */
   const lengths: McqLength[] = useMemo(() => {
@@ -608,21 +746,31 @@ export function YashMadeTest() {
     [subject, difficulty],
   );
 
-  // A selection is subject + units + length + difficulty, and that whole
-  // tuple keys the board: Easy/30 and Hard/30 are different boards, and
-  // Mixed is its own.
-  const boardKey = subject
-    ? `mcq-board:${subject.subject_code}:${units.join(",")}:${length}:${
-        difficulty ?? "mixed"
-      }`
-    : "mcq-board:none";
+  // A selection is subject + units + length + difficulty + mode, and that
+  // whole tuple keys the board: Easy/30 and Hard/30 are different boards,
+  // Mixed is its own, and exam scores rank only against exam scores. A
+  // mistakes sitting has no board at all, so nothing is fetched for one.
+  const boardKey =
+    subject && source === "bank"
+      ? `mcq-board:${subject.subject_code}:${units.join(",")}:${length}:${
+          difficulty ?? "mixed"
+        }:${mode}`
+      : "mcq-board:none";
 
   const fetchBoard = useCallback(() => {
-    if (!subject || units.length === 0) return Promise.resolve([]);
-    return getMcqLeaderboard(subject.subject_code, units, length, difficulty);
+    if (!subject || units.length === 0 || source !== "bank") {
+      return Promise.resolve([]);
+    }
+    return getMcqLeaderboard(
+      subject.subject_code,
+      units,
+      length,
+      difficulty,
+      mode,
+    );
     // The key carries the selection, so the fetcher is allowed to close over
     // it: useResource refetches whenever the key changes.
-  }, [subject, units, length, difficulty]);
+  }, [subject, units, length, difficulty, mode, source]);
 
   const boardRes = useResource(boardKey, fetchBoard);
 
@@ -630,13 +778,30 @@ export function YashMadeTest() {
     if (!subject || starting || selectable === 0) return;
     setStarting(true);
     setStartError(null);
-    createMcqAttempt(subject.subject_code, units, length, difficulty)
+    createMcqAttempt(
+      subject.subject_code,
+      units,
+      length,
+      difficulty,
+      mode,
+      source,
+    )
       .then((a) => router.push(`/test/mcq/${a.attempt_id}`))
       .catch((err: unknown) => {
         setStartError(errorMessage(err));
         setStarting(false);
       });
-  }, [subject, units, length, difficulty, selectable, starting, router]);
+  }, [
+    subject,
+    units,
+    length,
+    difficulty,
+    mode,
+    source,
+    selectable,
+    starting,
+    router,
+  ]);
 
   const attempts = useMemo(() => attemptsRes.data ?? [], [attemptsRes.data]);
   const drawn = length === "full" ? selectable : Math.min(length, selectable);
@@ -655,6 +820,7 @@ export function YashMadeTest() {
     for (const a of attempts) {
       if (a.submitted_at === null || a.score === null) continue;
       if (a.subject_code !== subject.subject_code) continue;
+      if (a.mode !== mode || a.source !== "bank") continue;
       if (String(a.length) !== String(length)) continue;
       if ((a.difficulty ?? null) !== difficulty) continue;
       if (
@@ -666,7 +832,7 @@ export function YashMadeTest() {
       keys.add(`${a.submitted_at}|${a.score}`);
     }
     return keys;
-  }, [attempts, subject, units, length, difficulty]);
+  }, [attempts, subject, units, length, difficulty, mode]);
 
   if (subjectsRes.loading && !subjectsRes.data) {
     return (
@@ -716,11 +882,35 @@ export function YashMadeTest() {
   const drawLine =
     selectable === 0
       ? "nothing in this selection yet"
-      : length === "full"
-        ? `full — all ${selectable} of them`
-        : length > selectable
-          ? `only ${selectable} available — you will get ${selectable}`
-          : `${drawn} of ${selectable} available · any number ${MIN_COUNT}–${MAX_COUNT}`;
+      : source === "mistakes"
+        ? length === "full"
+          ? `full — all ${upTo(selectable, exact)} of your mistakes`
+          : length > selectable
+            ? `only ${upTo(selectable, exact)} ${plural(selectable, "mistake")} — you will get ${exact ? "" : "up to "}${selectable}`
+            : `${drawn} of ${upTo(selectable, exact)} ${plural(selectable, "mistake")} · any number ${MIN_COUNT}–${MAX_COUNT}`
+        : length === "full"
+          ? `full — all ${selectable} of them`
+          : length > selectable
+            ? `only ${selectable} available — you will get ${selectable}`
+            : `${drawn} of ${selectable} available · any number ${MIN_COUNT}–${MAX_COUNT}`;
+
+  /** What Start says: how many, and — for an exam — how long. The practice
+   *  wording from the bank is unchanged. */
+  const examClock = clockText(drawn * EXAM_SECONDS_PER_QUESTION);
+  const lead = exact ? "" : "up to ";
+  const startLabel =
+    source === "mistakes"
+      ? mode === "exam"
+        ? `Start ${lead}${drawn}-question exam of your mistakes · ${examClock}`
+        : `Practise ${lead}${drawn} ${plural(drawn, "mistake")}`
+      : mode === "exam"
+        ? `Start ${drawn}-question${difficulty ? ` ${difficulty}` : ""} exam · ${examClock}`
+        : `Start ${drawn}${difficulty ? ` ${difficulty}` : ""} ${plural(
+            drawn,
+            "question",
+          )}`;
+
+  const mistakesTitle = `Practise my mistakes (${upTo(mistakes.high, mistakesExact)})`;
 
   return (
     <div className={s.wrap}>
@@ -854,10 +1044,50 @@ export function YashMadeTest() {
               </div>
               <p className={s.note}>
                 Easy: straight definitions. Medium: telling similar things
-                apart. Hard: work out which idea applies. Max: the tricky ones.
+                apart. Hard: work out which idea applies. Max: the tricky ones. Hardest: every option is the same length.
               </p>
             </div>
           </div>
+
+          {/* --- where from ----------------------------------------------
+              Only once this subject has mistakes to practise: a student who
+              has never answered wrongly has nothing to choose between. */}
+
+          {hasMistakes && (
+            <div className={s.group} role="group" aria-labelledby="ymt-source">
+              <h2 id="ymt-source" className={`label ${s.groupLabel}`}>
+                From
+              </h2>
+              <div className={s.groupBody}>
+                <div className={s.choiceGrid}>
+                  <ChoiceCard
+                    on={source === "bank"}
+                    onClick={() => setPickedSource("bank")}
+                    title="The whole bank"
+                    note={`${bankSelectable} ${plural(bankSelectable, "question")} in this selection`}
+                  />
+                  <ChoiceCard
+                    on={source === "mistakes"}
+                    disabled={mistakes.high === 0}
+                    onClick={() => setPickedSource("mistakes")}
+                    title={mistakesTitle}
+                    note={
+                      mistakes.high === 0
+                        ? difficulty === null
+                          ? "none in these units — pick another unit"
+                          : `none at ${difficulty} in these units — pick another tier`
+                        : "questions you last got wrong"
+                    }
+                  />
+                </div>
+                <p className={s.note}>
+                  Your mistakes are every question whose last answer you were
+                  shown was wrong. Get one right and it leaves the list;
+                  questions you skipped never join it.
+                </p>
+              </div>
+            </div>
+          )}
 
           {/* --- how many ------------------------------------------------ */}
 
@@ -936,6 +1166,30 @@ export function YashMadeTest() {
             </div>
           </div>
 
+          {/* --- how it is sat --------------------------------------------- */}
+
+          <div className={s.group} role="group" aria-labelledby="ymt-mode">
+            <h2 id="ymt-mode" className={`label ${s.groupLabel}`}>
+              Mode
+            </h2>
+            <div className={s.groupBody}>
+              <div className={s.choiceGrid}>
+                <ChoiceCard
+                  on={mode === "practice"}
+                  onClick={() => setMode("practice")}
+                  title="Practice"
+                  note="instant answer and explanation after every question"
+                />
+                <ChoiceCard
+                  on={mode === "exam"}
+                  onClick={() => setMode("exam")}
+                  title="Exam"
+                  note="timed, one minute a question, score only at the end"
+                />
+              </div>
+            </div>
+          </div>
+
           {/* --- start ---------------------------------------------------- */}
 
           {startError && <ErrorState message={startError} />}
@@ -950,18 +1204,17 @@ export function YashMadeTest() {
                 h-11 px-4 rounded-sm text-[13px] font-semibold border border-accent
                 disabled:opacity-40 disabled:pointer-events-none"
             >
-              {starting
-                ? "Shuffling…"
-                : `Start ${drawn}${difficulty ? ` ${difficulty}` : ""} ${plural(
-                    drawn,
-                    "question",
-                  )}`}
+              {starting ? "Shuffling…" : startLabel}
             </motion.button>
             {selectable === 0 ? (
               <p className={s.startNote}>
                 {difficulty === null
                   ? "Pick a unit that has questions."
                   : `No ${difficulty} questions in these units yet — pick another tier.`}
+              </p>
+            ) : mode === "exam" ? (
+              <p className={s.startNote}>
+                The clock starts at once. Nothing is marked until you submit.
               </p>
             ) : (
               <p className={s.startNote}>
@@ -989,7 +1242,9 @@ export function YashMadeTest() {
                   <p className={`${s.meta} mt-1.5`}>
                     {selectable === 0
                       ? "nothing in this selection yet"
-                      : `drawn from ${selectable} in this selection`}
+                      : source === "mistakes"
+                        ? `drawn from ${upTo(selectable, exact)} of your mistakes`
+                        : `drawn from ${selectable} in this selection`}
                   </p>
                 </div>
 
@@ -1017,12 +1272,37 @@ export function YashMadeTest() {
                       ? "Full — everything in the selection"
                       : `${length} ${plural(Number(length), "question")}`}
                   </dd>
+
+                  <dt className={`label ${s.specKey}`}>From</dt>
+                  <dd className={s.specValue}>
+                    {source === "mistakes"
+                      ? "Your mistakes — not ranked"
+                      : "The whole bank"}
+                  </dd>
+
+                  <dt className={`label ${s.specKey}`}>Mode</dt>
+                  <dd className={s.specValue}>
+                    {mode === "exam"
+                      ? "Exam — score only at the end"
+                      : "Practice — answer after every question"}
+                  </dd>
+
+                  {mode === "exam" && (
+                    <>
+                      <dt className={`label ${s.specKey}`}>Time</dt>
+                      <dd className={`${s.specValue} tnum`}>
+                        {exact ? "" : "up to "}
+                        {examClock} — one minute a question
+                      </dd>
+                    </>
+                  )}
                 </dl>
 
                 <p className={s.summaryNote}>
-                  The questions are drawn fresh and the four options are
-                  shuffled again every attempt, so two sittings never look the
-                  same. Unanswered questions score 0 against the whole draw.
+                  {mode === "exam"
+                    ? "Timed like the CA: nothing is marked until you submit, and you can change an answer until then. At 00:00 the paper is collected as it stands."
+                    : "The questions are drawn fresh and the four options are shuffled again every attempt, so two sittings never look the same."}{" "}
+                  Unanswered questions score 0 against the whole draw.
                 </p>
               </div>
             </Panel>
@@ -1031,9 +1311,15 @@ export function YashMadeTest() {
           <Reveal index={1}>
             <Panel
               title="Leaderboard"
-              aside={`${subject.subject_code} · ${lengthLabel(length)} · ${difficultyLabel(difficulty)}`}
+              aside={`${subject.subject_code} · ${lengthLabel(length)} · ${difficultyLabel(difficulty)} · ${MODE_LABEL[mode]}`}
             >
-              {boardRes.error && !boardRes.data ? (
+              {source === "mistakes" ? (
+                <p className={s.boardNote}>
+                  Practising your own mistakes isn&rsquo;t ranked — every
+                  student&rsquo;s list is different, so there is nothing to
+                  compare.
+                </p>
+              ) : boardRes.error && !boardRes.data ? (
                 <ErrorState message={boardRes.error} onRetry={boardRes.reload} />
               ) : boardRes.loading && !boardRes.data ? (
                 <div className={s.skeletonRows}>

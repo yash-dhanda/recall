@@ -33,6 +33,12 @@ class AttemptIn(BaseModel):
     #: the default sitting — the one a student who has not thought about tiers
     #: gets, and the one every attempt drawn before the ladder existed was.
     difficulty: str | None = None
+    #: "practice" | "exam"; absent/null is practice. Validated in the service
+    #: for the same reason as `difficulty`, so a bad value is a 422 that names
+    #: the choices rather than a pydantic union dump.
+    mode: str | None = None
+    #: "bank" | "mistakes"; absent/null is the bank.
+    source: str | None = None
 
 
 class AnswerIn(BaseModel):
@@ -73,6 +79,12 @@ def _int_or_422(length: str) -> int:
         ) from exc
 
 
+def _mode_param(mode: str | None) -> str | None:
+    """`mode=exam`, or absent/empty for the practice board — the same rule,
+    for the same reason, as an empty `difficulty=` meaning Mixed."""
+    return mode or None
+
+
 def _difficulty_param(difficulty: str | None) -> str | None:
     """`difficulty=hard`, or absent/empty for the Mixed board.
 
@@ -97,9 +109,17 @@ def create_attempt(body: AttemptIn, user_id: int = Depends(get_current_user),
     try:
         return service.create_attempt(conn, user_id, body.subject_code,
                                       body.units, body.length,
-                                      body.difficulty)
+                                      body.difficulty, mode=body.mode,
+                                      source=body.source)
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
+
+
+@router.get("/api/mcq/mistakes")
+def mistakes(user_id: int = Depends(get_current_user), conn=Depends(get_conn)):
+    """This user's pending mistakes per subject, for "Practise my mistakes
+    (N)". Yours only: the pool is built from your own answers."""
+    return service.mistakes_summary(conn, user_id)
 
 
 @router.get("/api/mcq/attempts")
@@ -114,15 +134,19 @@ def leaderboard(subject_code: str,
                 length: str = Query(..., description="5-200 or full"),
                 difficulty: str | None = Query(
                     None, description="easy|medium|hard|max; omit for Mixed"),
+                mode: str | None = Query(
+                    None, description="practice|exam; omit for practice"),
                 user_id: int = Depends(get_current_user),
                 conn=Depends(get_conn)):
-    """One board per (subject, units, length, difficulty). Omitting difficulty
-    asks for the MIXED board, not for all of them at once — there is no board
-    that merges the tiers, because nobody ever sat it."""
+    """One board per (subject, units, length, difficulty, mode). Omitting
+    difficulty asks for the MIXED board, not for all of them at once — there is
+    no board that merges the tiers, because nobody ever sat it. Omitting mode
+    asks for the practice board; exam scores rank only against exam scores."""
     try:
         return service.leaderboard(conn, subject_code, _units_param(units),
                                    _length_param(length),
-                                   _difficulty_param(difficulty))
+                                   _difficulty_param(difficulty),
+                                   mode=_mode_param(mode))
     except ValueError as exc:
         raise HTTPException(status_code=422, detail=str(exc)) from exc
 
@@ -140,8 +164,11 @@ def get_attempt(attempt_id: int, user_id: int = Depends(get_current_user),
 def answer_attempt(attempt_id: int, body: AnswerIn,
                    user_id: int = Depends(get_current_user),
                    conn=Depends(get_conn)):
-    """Record one answer and reveal it. A second answer to the same position is
-    409, never an overwrite — the first click is the answer."""
+    """Practice: record one answer and reveal it. A second answer to the same
+    position is 409, never an overwrite — the first click is the answer.
+
+    Exam: record or change the choice and reveal nothing — `{position, chosen,
+    answered}` only. 409 once time is up (limit + grace) or once submitted."""
     try:
         return service.answer_attempt(conn, user_id, attempt_id, body.position,
                                       body.chosen)
@@ -156,7 +183,8 @@ def answer_attempt(attempt_id: int, body: AnswerIn,
 @router.post("/api/mcq/attempts/{attempt_id}/submit")
 def submit_attempt(attempt_id: int, user_id: int = Depends(get_current_user),
                    conn=Depends(get_conn)):
-    """Close and score. Submitting twice returns the stored result unchanged."""
+    """Close and score. Submitting twice returns the stored result unchanged.
+    Never refused on time: an expired exam can always be closed and read."""
     try:
         return service.submit_attempt(conn, user_id, attempt_id)
     except LookupError as exc:

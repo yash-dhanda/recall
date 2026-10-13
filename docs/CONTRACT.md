@@ -299,7 +299,11 @@ revealed one question at a time, in green or red, with a teaching note.
 
 A sitting is chosen along three axes — which units, **which difficulty**, and
 **how many questions** — and all three together are what a leaderboard is keyed
-by.
+by. Two more choices say how it is sat and what it draws from: the **mode**
+(`practice`, the reveal-as-you-go sitting above, or `exam`, timed and sealed
+until submit) and the **source** (`bank`, or `mistakes` — only the questions
+you last got wrong). Both default to what every attempt before them was:
+practice, from the bank.
 
 ### The bank is shared — the one deliberate exception to the user_id rule
 
@@ -485,9 +489,9 @@ the **query string**, which has no way to write null at all, an empty
 bookmarked board URL must not 422 because a `<select>` serialised its blank
 option.
 
-Answering is one call per question, idempotent by refusal: a second answer to
-the same position is **409**, never overwritten — the first click is the
-answer. An answered question is revealed immediately: correct or not, which
+In **practice**, answering is one call per question, idempotent by refusal: a
+second answer to the same position is **409**, never overwritten — the first
+click is the answer. An answered question is revealed immediately: correct or not, which
 option was right, the explanation, and the `why_wrong` note for the option
 that was picked (empty when it was right).
 
@@ -498,22 +502,121 @@ the loser of a race re-reads the stored result. **Unanswered questions score
 of questions drawn, so a 12/30 read after twelve questions is an honest 12/30.
 Nothing here feeds the scheduler: these are not cards.
 
+### Exam mode — the paper that does not teach until it is over
+
+The real CA is timed and you learn your score at the end. Practice mode
+teaches mid-paper — every click is marked and explained — which is how it
+teaches, and exactly why it cannot tell a student where they stand: by
+question twenty they have been told nineteen answers. `mode: "exam"` is the
+sitting that can.
+
+- **Timed.** `time_limit_s` is **60 seconds per question drawn** — 30
+  questions is 30:00, and 30 asked for out of a unit of 12 is 12:00, because
+  the clock belongs to the paper the student actually has. It is stored on the
+  attempt at creation; practice attempts carry `null`.
+- **Sealed until submit.** Answering an open exam records the choice and
+  returns `{position, chosen, answered}` — **nothing else**: no `is_correct`,
+  no `correct_index`, no `explain`, no `why_wrong`, no running score. GET of
+  the attempt carries each question's recorded choice in that same shape and
+  no feedback of any kind; the history list has `score: null` like any open
+  sitting.
+- **Answers can change until submit.** The same `UNIQUE(attempt_id,
+  position)` that makes a second practice click a 409 is, for an exam, the
+  target of an upsert: the last choice is the one graded, and there is still
+  one row per position.
+- **The clock is enforced by the server.** An answer after `started_at +
+  time_limit_s` plus a **30-second grace** is **409** ("time is up") — the
+  grace covers a request in flight at 29:59, not a paused tab. Submitting is
+  never refused on time: an expired paper can always be closed and read.
+  An exam's `duration_s` stops at the limit plus the grace, because nothing
+  could be answered after that.
+- **Submit reveals everything at once** — the same full `McqResult` as
+  practice, and from then on GET of the attempt carries full `McqFeedback`
+  like any submitted sitting.
+
+**Why sealing is the whole feature.** Because an exam answer can be changed,
+any verdict that leaves the server before submit is an oracle: click option A,
+read the verdict, click B, read again, and keep the one the server liked. A
+single `is_correct` in one response — or in GET of the attempt, which is the
+second door onto the same rows — turns every exam into four free guesses per
+question, and a score that means nothing on the board it is ranked on. So the
+sealed shape is built by its own query that never selects `is_correct`, not by
+dropping fields from the practice one, and the tests assert on the raw JSON
+that none of `correct`, `correct_index`, `is_correct`, `explain` or
+`why_wrong` — nor any explanation's text — appears before submit.
+
+**Boards split by mode.** A practice score was earned with every answer
+explained on the way and no clock; an exam score was not. Ranking one against
+the other would reward whichever paper was easier to sit. So a board is a
+selection **sat one way**: `mode` joins the key, `?mode=exam` asks for the exam
+board, and absent (or empty, like `difficulty=`) is practice — which is where
+every attempt drawn before exams existed already is, by the column's default.
+A submit ranks the attempt on the board of its **own stored** mode.
+
+The migration is three guarded `ALTER TABLE mcq_attempts ADD COLUMN`s in
+`_migrate()` — `mode TEXT NOT NULL DEFAULT 'practice'`, `source TEXT NOT NULL
+DEFAULT 'bank'`, `time_limit_s INTEGER` — never a rebuild: the live table holds
+real users' attempts, and the defaults make every one of them exactly what it
+was, readable, gradable and on the board it was already on.
+
+### Practise my mistakes
+
+`source: "mistakes"` draws only from the questions this student currently has
+wrong. The pool is **every question whose most recent revealed answer by this
+user was wrong**:
+
+- An answer counts once its correctness has been **revealed** to the student —
+  on the click in practice, at submit in an exam. An open exam has revealed
+  nothing, so its answers are not evidence either way: they neither add a
+  mistake nor clear one.
+- "Most recent" is by the moment of the reveal: a practice answer's own time,
+  an exam answer's submit time.
+- Answer a pooled question right later — in a mistakes sitting or any other —
+  and it **leaves the pool**. The list shrinks as the student learns, which is
+  the point. It is computed from the answers on every read and never stored, so
+  there is nothing to keep in step.
+- **Unanswered questions never enter it.** Not attempting is not evidence of
+  not knowing.
+- Only active questions, in units the registry declares — the ones a draw can
+  reach. Abandoning a sitting deletes its answers, and they leave the history
+  with it.
+
+It is filtered by subject, units and difficulty exactly like a normal
+selection, still shuffled, still `min(length, available)`, and it combines
+with either mode. An empty pool for the selection is **422** saying there are
+no mistakes to practise in that selection yet — not "no questions", which
+would be false when the bank holds forty of them.
+
+**A mistakes sitting is never on any board**, in either mode. Every student's
+pool is different, and the same student's is different next week, so two
+mistakes sittings with the same subject, units and length are not the same
+paper; ranking them would compare nothing. `submit` gives it `rank: null`,
+and the board query admits `source = 'bank'` only.
+
+`GET /api/mcq/mistakes` is the per-subject summary the picker needs to print
+"Practise my mistakes (N)": this user's pending count per subject, by unit and
+by tier. Mine only — it is built from my own answers — and subjects with
+nothing pending are omitted.
+
 ### Endpoints
 
 | Method | Path | Request | Response |
 |---|---|---|---|
 | GET | `/api/mcq/subjects` | — | `[McqSubject]` — every subject in `MCQ_UNITS`, each unit with its `count` of active questions and a per-tier breakdown; subjects with questions first (most first), then the rest in semester order |
-| POST | `/api/mcq/attempts` | `{subject_code, units: [1], length, difficulty?}` | `McqAttempt`. **422** for an unknown subject, a unit not in the registry, a length outside 5–200, an unknown difficulty, or a selection with zero questions |
+| POST | `/api/mcq/attempts` | `{subject_code, units: [1], length, difficulty?, mode?, source?}` | `McqAttempt`. **422** for an unknown subject, a unit not in the registry, a length outside 5–200, an unknown difficulty, mode or source, a selection with zero questions, or (`source: "mistakes"`) an empty mistakes pool |
 | GET | `/api/mcq/attempts/{id}` | — | `McqAttempt` with recorded answers, for resuming. **404** if not yours |
-| POST | `/api/mcq/attempts/{id}/answer` | `{position, chosen}` | `McqFeedback`. **409** if that position is already answered or the attempt is submitted; **422** if position or chosen is out of range |
-| POST | `/api/mcq/attempts/{id}/submit` | — | `McqResult` |
+| POST | `/api/mcq/attempts/{id}/answer` | `{position, chosen}` | Practice: `McqFeedback`; **409** if that position is already answered. Exam: `McqExamChoice`, and re-answering overwrites; **409** once time is up (limit + 30 s). Both: **409** once submitted, **422** if position or chosen is out of range |
+| POST | `/api/mcq/attempts/{id}/submit` | — | `McqResult` — never refused on time |
 | DELETE | `/api/mcq/attempts/{id}` | — | `{ok: true}`. **409** once submitted, **404** if not yours |
 | GET | `/api/mcq/attempts` | — | `[McqAttemptSummary]`, newest first, mine only |
-| GET | `/api/mcq/leaderboard?subject_code=&units=1,2&length=30&difficulty=hard` | — | `[McqLeaderboardRow]` — each user's **best submitted** attempt for exactly that selection, ranked by percent then shorter duration, top 25. Omitting `difficulty` — or sending it **empty** — asks for the **Mixed** board, not for all of them |
+| GET | `/api/mcq/mistakes` | — | `[McqMistakes]` — my pending mistakes per subject, semester order, subjects with none omitted |
+| GET | `/api/mcq/leaderboard?subject_code=&units=1,2&length=30&difficulty=hard&mode=exam` | — | `[McqLeaderboardRow]` — each user's **best submitted** bank attempt for exactly that selection and mode, ranked by percent then shorter duration, top 25. Omitting `difficulty` — or sending it **empty** — asks for the **Mixed** board, not for all of them; omitting `mode` (or empty) asks for **practice**. Mistakes sittings are on no board |
 
 ```
 McqLength         = number (5-200) | "full"
 McqDifficulty     = "easy" | "medium" | "hard" | "max"
+McqMode           = "practice" | "exam"             // absent/null = practice
+McqSource         = "bank" | "mistakes"             // absent/null = bank
 McqTierCounts     = {easy, medium, hard, max}       // always all four keys
 McqSubject        = {subject_code, label,
                      units: [{unit, label, count, difficulties: McqTierCounts}],
@@ -524,10 +627,16 @@ McqQuestion       = {position, topic, kind, difficulty, question,
                      code: string | null,          // exact snippet; null = none
                      options_mono: boolean,        // options are code: monospace
                      options: [string ×4],                        // shown order
-                     answer: McqFeedback | null}
+                     answer: McqFeedback       // practice, or a submitted exam
+                           | McqExamChoice     // an exam not yet submitted
+                           | null}             // unanswered
 McqAttempt        = {attempt_id, subject_code, units, length,
                      difficulty: McqDifficulty | null,   // null = Mixed
+                     mode: McqMode, source: McqSource,
+                     time_limit_s: number | null,  // exam: 60 × total; practice: null
+                     seconds_left: number | null,  // open exam: server's count, ≥ 0
                      total, started_at, submitted_at, questions: [McqQuestion]}
+McqExamChoice     = {position, chosen, answered}   // NOTHING else, ever
 McqFeedback       = {position, chosen, correct_index, is_correct,
                      explain, why_wrong,            // why_wrong is "" when correct
                      answered, correct_so_far}
@@ -537,13 +646,24 @@ McqResult         = {attempt_id, score, total, answered, percent, duration_s,
                      missed: [{position, topic, question, code, options_mono,
                                options, chosen | null,
                                correct_index, explain, why_wrong}],
-                     rank: {position, of} | null}    // on the leaderboard for this selection
+                     rank: {position, of} | null}    // on its own mode's board; null for mistakes
 McqAttemptSummary = {id, subject_code, units, length,
                      difficulty: McqDifficulty | null,
+                     mode: McqMode, source: McqSource,
+                     time_limit_s: number | null,
                      total, answered, score,
                      started_at, submitted_at, duration_s}
 McqLeaderboardRow = {user_id, name, score, total, percent, duration_s, submitted_at}
+McqMistakes       = {subject_code, total,
+                     by_unit: {"1": n, ...},       // every registry unit, 0 included
+                     by_difficulty: McqTierCounts} // always all four keys
 ```
+
+`McqExamChoice.answered` is how many positions of the attempt hold a choice
+now. `seconds_left` excludes the grace and is `null` for practice and for a
+submitted paper; it is there so a phone whose clock is wrong still counts down
+the server's time. `by_unit` keys are unit numbers as JSON object keys, which
+is to say strings.
 
 `percent` is `round(100 * score / total)`; the client still derives what it
 prints from `score` and `total`. `missed` lists every question that was

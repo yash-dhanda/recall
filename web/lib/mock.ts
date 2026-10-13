@@ -27,12 +27,16 @@ import type {
   McqAttemptSummary,
   McqDifficulty,
   McqDifficultyScore,
+  McqExamAnswer,
   McqFeedback,
   McqKind,
   McqLeaderboardRow,
   McqLength,
   McqMissed,
+  McqMistakeSummary,
+  McqMode,
   McqResult,
+  McqSource,
   McqSubject,
   McqTopicScore,
   PendingCard,
@@ -3054,7 +3058,26 @@ const MCQ_MIN_LENGTH = 5;
 const MCQ_MAX_LENGTH = 200;
 
 /** The ladder, in order. */
-const MCQ_DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max"];
+const MCQ_DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest"];
+
+const MCQ_MODES: McqMode[] = ["practice", "exam"];
+const MCQ_SOURCES: McqSource[] = ["bank", "mistakes"];
+
+/** An exam's clock: one minute per question actually drawn. */
+const MCQ_EXAM_SECONDS_PER_QUESTION = 60;
+/** How long past the limit an exam answer is still accepted — the request
+ *  that left at 29:59 and landed at 30:02, not a paused tab. */
+const MCQ_EXAM_GRACE_S = 30;
+
+/**
+ * "Now" for everything time-sensitive in the MCQ fixture. `Date.now()` rather
+ * than `new Date()`, so a test that moves the page's clock forward (by
+ * replacing Date.now) moves the fixture server's clock with it — which is how
+ * an exam's expiry is simulated offline without waiting thirty minutes.
+ */
+function mcqNow(): number {
+  return Date.now();
+}
 
 interface MockMcqItem {
   position: number;
@@ -3063,6 +3086,9 @@ interface MockMcqItem {
   order: number[];
   /** Shown index, or null while unanswered. */
   chosen: number | null;
+  /** When the current choice was recorded — a practice answer is revealed at
+   *  this instant, which is what orders it in the mistakes pool. */
+  answeredMs: number | null;
 }
 
 interface MockMcqAttempt {
@@ -3072,12 +3098,58 @@ interface MockMcqAttempt {
   length: McqLength;
   /** null is Mixed — drawn across the whole ladder. */
   difficulty: McqDifficulty | null;
+  mode: McqMode;
+  source: McqSource;
+  /** 60 per question drawn for an exam; null in practice. */
+  time_limit_s: number | null;
   startedMs: number;
   started_at: string;
   submitted_at: string | null;
+  /** When it was submitted — an exam's answers are revealed at this instant. */
+  submittedMs: number | null;
   items: MockMcqItem[];
   /** Stored at submit, so a second submit is the same result, not a re-score. */
   result: McqResult | null;
+}
+
+/** Nothing about correctness may leave the fixture: an unsubmitted exam. */
+function mcqSealed(t: MockMcqAttempt): boolean {
+  return t.mode === "exam" && t.submitted_at === null;
+}
+
+/** An exam's deadline in ms, before the grace; null for practice. */
+function mcqDeadline(t: MockMcqAttempt): number | null {
+  return t.time_limit_s === null ? null : t.startedMs + t.time_limit_s * 1000;
+}
+
+/**
+ * The bank keys whose most recent REVEALED answer by this user was wrong —
+ * the "Practise my mistakes" pool, computed from the attempts every time it is
+ * read, exactly as the server computes it from the answer rows.
+ *
+ * A practice answer is revealed on the click (its `answeredMs`); an exam
+ * answer when the paper is submitted (`submittedMs`); an open exam has
+ * revealed nothing and contributes nothing. Unanswered questions never enter:
+ * not attempting is not evidence of not knowing. Ties fall to the later
+ * attempt.
+ */
+function mcqPendingMistakes(): Set<string> {
+  const latest = new Map<string, { at: number; seq: number; wrong: boolean }>();
+  for (const t of mcqAttempts.values()) {
+    if (mcqSealed(t)) continue;
+    for (const item of t.items) {
+      if (item.chosen === null) continue;
+      const at =
+        t.mode === "exam" ? (t.submittedMs ?? 0) : (item.answeredMs ?? 0);
+      const seq = t.id * 1000 + item.position;
+      const prev = latest.get(item.q.key);
+      if (prev && (prev.at > at || (prev.at === at && prev.seq > seq))) continue;
+      latest.set(item.q.key, { at, seq, wrong: !mcqIsCorrect(item) });
+    }
+  }
+  const out = new Set<string>();
+  for (const [key, v] of latest) if (v.wrong) out.add(key);
+  return out;
 }
 
 const mcqAttempts = new Map<number, MockMcqAttempt>();
@@ -3118,6 +3190,16 @@ function mcqIsCorrect(item: MockMcqItem): boolean {
   return item.chosen !== null && item.chosen === mcqCorrectShown(item);
 }
 
+/** An open exam's answer: the choice and the count, and nothing else. */
+function mcqExamAnswer(t: MockMcqAttempt, item: MockMcqItem): McqExamAnswer | null {
+  if (item.chosen === null) return null;
+  return {
+    position: item.position,
+    chosen: item.chosen,
+    answered: t.items.filter((i) => i.chosen !== null).length,
+  };
+}
+
 function mcqFeedback(t: MockMcqAttempt, item: MockMcqItem): McqFeedback | null {
   if (item.chosen === null) return null;
   const correct_index = mcqCorrectShown(item);
@@ -3135,12 +3217,21 @@ function mcqFeedback(t: MockMcqAttempt, item: MockMcqItem): McqFeedback | null {
 }
 
 function toMcqAttempt(t: MockMcqAttempt): McqAttempt {
+  const sealed = mcqSealed(t);
+  const deadline = mcqDeadline(t);
   return {
     attempt_id: t.id,
     subject_code: t.subject_code,
     units: [...t.units],
     length: t.length,
     difficulty: t.difficulty,
+    mode: t.mode,
+    source: t.source,
+    time_limit_s: t.time_limit_s,
+    seconds_left:
+      deadline === null || t.submitted_at !== null
+        ? null
+        : Math.max(0, Math.floor((deadline - mcqNow()) / 1000)),
     total: t.items.length,
     started_at: t.started_at,
     submitted_at: t.submitted_at,
@@ -3153,29 +3244,35 @@ function toMcqAttempt(t: MockMcqAttempt): McqAttempt {
       code: item.q.code ?? null,
       options_mono: item.q.options_mono ?? false,
       options: mcqShownOptions(item),
-      answer: mcqFeedback(t, item),
+      // A sealed exam's GET is a second door onto the answers: it carries the
+      // choice alone, never the verdict, or changing an answer and re-reading
+      // would probe all four options.
+      answer: sealed ? mcqExamAnswer(t, item) : mcqFeedback(t, item),
     })),
   };
 }
 
-/** A selection is subject + units + length + difficulty, and that tuple is
- *  what a board is keyed by: Easy/30 and Hard/30 are different boards, and
- *  Mixed is its own rather than the four merged. */
+/** A selection is subject + units + length + difficulty + mode, and that
+ *  tuple is what a board is keyed by: Easy/30 and Hard/30 are different
+ *  boards, Mixed is its own rather than the four merged, and an exam never
+ *  shares a board with practice. */
 function mcqSelectionKey(
   subjectCode: string,
   units: number[],
   length: McqLength,
   difficulty: McqDifficulty | null,
+  mode: McqMode,
 ): string {
   return `${subjectCode}|${[...units]
     .sort((a, b) => a - b)
-    .join(",")}|${length}|${difficulty ?? "mixed"}`;
+    .join(",")}|${length}|${difficulty ?? "mixed"}|${mode}`;
 }
 
 /**
- * Three classmates who have already sat the CSE111 unit-1 **Mixed** board.
- * Every other selection — every single-tier board included — starts empty, so
- * the "be first" state is reachable in the fixture too.
+ * Three classmates who have already sat the CSE111 unit-1 **Mixed** practice
+ * board. Every other selection — every single-tier board and every exam board
+ * included — starts empty, so the "be first" state is reachable in the
+ * fixture too.
  */
 const MCQ_BOARD: McqLeaderboardRow[] = [
   {
@@ -3212,20 +3309,27 @@ function mcqBoardFor(
   units: number[],
   length: McqLength,
   difficulty: McqDifficulty | null,
+  mode: McqMode = "practice",
 ): McqLeaderboardRow[] {
   const seeded =
-    subjectCode === "CSE111" && units.includes(1) && difficulty === null
+    subjectCode === "CSE111" &&
+    units.includes(1) &&
+    difficulty === null &&
+    mode === "practice"
       ? MCQ_BOARD
       : [];
 
   // The user's own best submitted attempt for exactly this selection, which
-  // is what the server ranks: one row per user, not one per attempt.
-  const key = mcqSelectionKey(subjectCode, units, length, difficulty);
+  // is what the server ranks: one row per user, not one per attempt. A
+  // mistakes sitting is on no board: every student's pool is different.
+  const key = mcqSelectionKey(subjectCode, units, length, difficulty, mode);
   let mine: McqLeaderboardRow | null = null;
   for (const t of mcqAttempts.values()) {
     if (!t.result || t.submitted_at === null) continue;
+    if (t.source !== "bank") continue;
     if (
-      mcqSelectionKey(t.subject_code, t.units, t.length, t.difficulty) !== key
+      mcqSelectionKey(t.subject_code, t.units, t.length, t.difficulty, t.mode) !==
+      key
     )
       continue;
     const row: McqLeaderboardRow = {
@@ -3295,6 +3399,8 @@ export async function createMcqAttempt(
   units: number[],
   length: McqLength,
   difficulty: McqDifficulty | null = null,
+  mode: McqMode = "practice",
+  source: McqSource = "bank",
 ): Promise<McqAttempt> {
   await delay(280);
   const path = "/api/mcq/attempts";
@@ -3328,8 +3434,35 @@ export async function createMcqAttempt(
   if (difficulty !== null && !MCQ_DIFFICULTIES.includes(difficulty)) {
     throw new ApiError(422, path, `no such difficulty '${difficulty}'`);
   }
+  if (!MCQ_MODES.includes(mode)) {
+    throw new ApiError(422, path, `mode must be one of practice, exam, got '${mode}'`);
+  }
+  if (!MCQ_SOURCES.includes(source)) {
+    throw new ApiError(
+      422,
+      path,
+      `source must be one of bank, mistakes, got '${source}'`,
+    );
+  }
 
-  const pool = mcqPool(subjectCode, units, difficulty);
+  let pool = mcqPool(subjectCode, units, difficulty);
+  if (source === "mistakes") {
+    const pending = mcqPendingMistakes();
+    pool = pool.filter((q) => pending.has(q.key));
+    if (pool.length === 0) {
+      // Not "have no questions": the bank may hold forty of them. What is
+      // empty is this student's pool.
+      throw new ApiError(
+        422,
+        path,
+        `no mistakes to practise in that selection yet (${subjectCode} unit${
+          units.length > 1 ? "s" : ""
+        } ${[...units].sort((a, b) => a - b).join(", ")}${
+          difficulty ? `, ${difficulty}` : ""
+        })`,
+      );
+    }
+  }
   if (pool.length === 0) {
     throw new ApiError(
       422,
@@ -3341,7 +3474,7 @@ export async function createMcqAttempt(
   }
 
   const id = nextMcqAttemptId++;
-  const now = Date.now();
+  const now = mcqNow();
   // Seeded per attempt, so two sittings of the same selection genuinely
   // differ — the point of the feature, and the thing a fixture usually fakes.
   const rand = lcg(id * 2654435761 + (now & 0xffff));
@@ -3354,14 +3487,21 @@ export async function createMcqAttempt(
     units: [...units].sort((a, b) => a - b),
     length,
     difficulty,
+    mode,
+    source,
+    // Per question DRAWN: asked for 30 out of a unit of 12 is a 12:00 paper.
+    time_limit_s:
+      mode === "exam" ? MCQ_EXAM_SECONDS_PER_QUESTION * drawn.length : null,
     startedMs: now,
     started_at: new Date(now).toISOString(),
     submitted_at: null,
+    submittedMs: null,
     items: drawn.map((q, i) => ({
       position: i + 1,
       q,
       order: mcqShuffle([0, 1, 2, 3], rand),
       chosen: null,
+      answeredMs: null,
     })),
     result: null,
   });
@@ -3376,17 +3516,32 @@ export async function getMcqAttempt(id: number): Promise<McqAttempt> {
   return toMcqAttempt(t);
 }
 
-export async function postMcqAnswer(
+/**
+ * POST /api/mcq/attempts/{id}/answer — ONE endpoint on the server, whose
+ * response depends on the attempt's mode: practice reveals, an exam does not.
+ * The client splits it into two typed functions; this is the endpoint itself.
+ */
+async function mcqAnswer(
   id: number,
   position: number,
   chosen: number,
-): Promise<McqFeedback> {
+): Promise<McqFeedback | McqExamAnswer> {
   await delay(70);
   const path = `/api/mcq/attempts/${id}/answer`;
   const t = mcqAttempts.get(id);
   if (!t) throw new ApiError(404, path, "no such attempt");
   if (t.submitted_at !== null) {
     throw new ApiError(409, path, "this attempt has already been submitted");
+  }
+  // A paused tab must not keep answering a paper whose time is up. Submitting
+  // is never refused on time, so the paper can always be closed.
+  const deadline = mcqDeadline(t);
+  if (deadline !== null && mcqNow() > deadline + MCQ_EXAM_GRACE_S * 1000) {
+    throw new ApiError(
+      409,
+      path,
+      `time is up for attempt ${id}; submit it to see your score`,
+    );
   }
   const item = t.items.find((i) => i.position === position);
   if (!item) {
@@ -3395,13 +3550,52 @@ export async function postMcqAnswer(
   if (!Number.isInteger(chosen) || chosen < 0 || chosen > 3) {
     throw new ApiError(422, path, `chosen must be 0–3, got ${chosen}`);
   }
-  // The first click is the answer: refusal, never an overwrite.
+
+  if (t.mode === "exam") {
+    // Changeable until submit, and the response carries no verdict at all.
+    item.chosen = chosen;
+    item.answeredMs = mcqNow();
+    return mcqExamAnswer(t, item)!;
+  }
+
+  // Practice: the first click is the answer — refusal, never an overwrite.
   if (item.chosen !== null) {
     throw new ApiError(409, path, `question ${position} is already answered`);
   }
-
   item.chosen = chosen;
+  item.answeredMs = mcqNow();
   return mcqFeedback(t, item)!;
+}
+
+/** The practice half of the answer endpoint. Called on an exam it fails
+ *  loudly: that would be the sitting reading an exam answer as a reveal,
+ *  which is exactly the leak the split exists to make impossible. */
+export async function postMcqAnswer(
+  id: number,
+  position: number,
+  chosen: number,
+): Promise<McqFeedback> {
+  if (mcqAttempts.get(id)?.mode === "exam") {
+    throw new Error(
+      `fixture: postMcqAnswer called on exam attempt ${id} — use postMcqExamAnswer`,
+    );
+  }
+  return (await mcqAnswer(id, position, chosen)) as McqFeedback;
+}
+
+/** The exam half of the answer endpoint: the choice and the count only. */
+export async function postMcqExamAnswer(
+  id: number,
+  position: number,
+  chosen: number,
+): Promise<McqExamAnswer> {
+  const t = mcqAttempts.get(id);
+  if (t && t.mode !== "exam") {
+    throw new Error(
+      `fixture: postMcqExamAnswer called on practice attempt ${id} — use postMcqAnswer`,
+    );
+  }
+  return (await mcqAnswer(id, position, chosen)) as McqExamAnswer;
 }
 
 export async function submitMcqAttempt(id: number): Promise<McqResult> {
@@ -3415,7 +3609,13 @@ export async function submitMcqAttempt(id: number): Promise<McqResult> {
   const total = t.items.length;
   const score = t.items.filter(mcqIsCorrect).length;
   const answered = t.items.filter((i) => i.chosen !== null).length;
-  const duration_s = Math.max(1, Math.round((Date.now() - t.startedMs) / 1000));
+  const submittedMs = mcqNow();
+  let duration_s = Math.max(1, Math.round((submittedMs - t.startedMs) / 1000));
+  // Nothing could be answered after the limit plus the grace, so a tab left
+  // open overnight did not take nine hours over a thirty-minute paper.
+  if (t.time_limit_s !== null) {
+    duration_s = Math.min(duration_s, t.time_limit_s + MCQ_EXAM_GRACE_S);
+  }
 
   const topics = new Map<string, McqTopicScore>();
   for (const item of t.items) {
@@ -3455,7 +3655,8 @@ export async function submitMcqAttempt(id: number): Promise<McqResult> {
         item.chosen === null ? "" : item.q.why_wrong[item.order[item.chosen]],
     }));
 
-  t.submitted_at = new Date().toISOString();
+  t.submitted_at = new Date(submittedMs).toISOString();
+  t.submittedMs = submittedMs;
   const result: McqResult = {
     attempt_id: t.id,
     score,
@@ -3470,8 +3671,15 @@ export async function submitMcqAttempt(id: number): Promise<McqResult> {
   };
   t.result = result;
 
-  if (answered > 0) {
-    const board = mcqBoardFor(t.subject_code, t.units, t.length, t.difficulty);
+  // A mistakes sitting is on no board, so it is given no place on one.
+  if (answered > 0 && t.source === "bank") {
+    const board = mcqBoardFor(
+      t.subject_code,
+      t.units,
+      t.length,
+      t.difficulty,
+      t.mode,
+    );
     const at = board.findIndex(
       (r) => r.user_id === MOCK_USER.id && r.duration_s === duration_s,
     );
@@ -3502,6 +3710,9 @@ export async function getMcqAttempts(): Promise<McqAttemptSummary[]> {
       units: [...t.units],
       length: t.length,
       difficulty: t.difficulty,
+      mode: t.mode,
+      source: t.source,
+      time_limit_s: t.time_limit_s,
       total: t.items.length,
       answered: t.items.filter((i) => i.chosen !== null).length,
       score: t.result ? t.result.score : null,
@@ -3517,7 +3728,36 @@ export async function getMcqLeaderboard(
   units: number[],
   length: McqLength,
   difficulty: McqDifficulty | null = null,
+  mode: McqMode = "practice",
 ): Promise<McqLeaderboardRow[]> {
   await delay();
-  return mcqBoardFor(subjectCode, units, length, difficulty);
+  return mcqBoardFor(subjectCode, units, length, difficulty, mode);
+}
+
+/** GET /api/mcq/mistakes — pending mistakes per subject, subjects with none
+ *  left out. `by_unit` lists every registry unit (0 included) keyed by the
+ *  unit number as a string, as the server's JSON object does. */
+export async function getMcqMistakes(): Promise<McqMistakeSummary[]> {
+  await delay();
+  const pending = mcqPendingMistakes();
+  const out: McqMistakeSummary[] = [];
+  for (const subject of MCQ_UNITS) {
+    const by_unit: Record<string, number> = {};
+    for (const u of subject.units) by_unit[String(u.unit)] = 0;
+    const by_difficulty = Object.fromEntries(
+      MCQ_DIFFICULTIES.map((d) => [d, 0]),
+    ) as Record<McqDifficulty, number>;
+    for (const q of MCQ_BANK) {
+      if (q.subject_code !== subject.subject_code || !pending.has(q.key)) continue;
+      const key = String(q.unit);
+      if (!(key in by_unit)) continue;
+      by_unit[key] += 1;
+      by_difficulty[q.difficulty] += 1;
+    }
+    const total = Object.values(by_unit).reduce((n, v) => n + v, 0);
+    if (total > 0) {
+      out.push({ subject_code: subject.subject_code, total, by_unit, by_difficulty });
+    }
+  }
+  return out;
 }

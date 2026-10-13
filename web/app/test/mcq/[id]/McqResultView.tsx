@@ -14,7 +14,7 @@ import s from "./mcq.module.css";
 const LETTERS = ["A", "B", "C", "D"];
 
 /** The ladder, in order — how a difficulty breakdown is always printed. */
-const DIFFICULTY_ORDER: McqDifficulty[] = ["easy", "medium", "hard", "max"];
+const DIFFICULTY_ORDER: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest"];
 
 /** One line, and it has to be worth reading: what to do next, not praise. */
 function verdict(percent: number): string {
@@ -95,9 +95,12 @@ export function McqCode({
 export function McqResultView({
   result,
   attempt,
+  timedOut = false,
 }: {
   result: McqResult;
   attempt: McqAttempt;
+  /** True when an exam was collected by its clock, not submitted by hand. */
+  timedOut?: boolean;
 }) {
   const router = useRouter();
   const reduced = useReducedMotion();
@@ -111,11 +114,15 @@ export function McqResultView({
     if (retaking) return;
     setRetaking(true);
     setRetakeError(null);
+    // The same selection, sat the same way, from the same source: an exam
+    // retakes as an exam, and "my mistakes" draws from what is still wrong.
     createMcqAttempt(
       attempt.subject_code,
       attempt.units,
       attempt.length,
       attempt.difficulty,
+      attempt.mode,
+      attempt.source,
     )
       .then((a) => router.push(`/test/mcq/${a.attempt_id}`))
       .catch((err: unknown) => {
@@ -160,6 +167,12 @@ export function McqResultView({
                 {attempt.units.join(", ")}
               </span>
               <span className={s.chipMuted}>{attempt.difficulty ?? "mixed"}</span>
+              <span className={s.chipMuted}>
+                {attempt.mode === "exam" ? "exam" : "practice"}
+              </span>
+              <span className={s.chipMuted}>
+                {attempt.source === "mistakes" ? "my mistakes" : "whole bank"}
+              </span>
             </div>
 
             <div className="flex items-center gap-4 sm:gap-6 mt-4">
@@ -184,6 +197,13 @@ export function McqResultView({
                 <span className="tnum text-[17px] font-semibold">{percent}%</span>
               </ProgressRing>
             </div>
+
+            {timedOut && (
+              <p className="text-[12.5px] leading-[1.6] text-fg-2 mt-4 pl-3 border-l-2 border-l-line-strong max-w-prose">
+                Time ran out, so the paper was collected as it stood — every
+                answer you had chosen counts.
+              </p>
+            )}
 
             {result.answered < result.total && (
               <p className="text-[12.5px] leading-[1.6] text-fg-2 mt-4 pl-3 border-l-2 border-l-line-strong max-w-prose">
@@ -419,7 +439,13 @@ export function McqResultView({
               text-[13px] font-semibold border border-accent
               disabled:opacity-40 disabled:pointer-events-none"
           >
-            {retaking ? "Shuffling…" : "Retake (reshuffled)"}
+            {retaking
+              ? "Shuffling…"
+              : attempt.source === "mistakes"
+                ? "Practise the rest again"
+                : attempt.mode === "exam"
+                  ? "Retake the exam (reshuffled)"
+                  : "Retake (reshuffled)"}
           </motion.button>
 
           <Link
@@ -432,7 +458,9 @@ export function McqResultView({
           </Link>
 
           <p className="text-[12px] text-fg-3">
-            A retake draws the same selection, reshuffled.
+            {attempt.source === "mistakes"
+              ? "Draws from the mistakes still left — the ones you got right just now are gone."
+              : "A retake draws the same selection, reshuffled."}
           </p>
         </div>
       </div>
