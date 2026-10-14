@@ -1,0 +1,3687 @@
+{
+ "subject_code": "PHY",
+ "unit": 3,
+ "unit_label": "Introduction to Number System and Logic Gates",
+ "questions": [
+  {
+   "topic": "Number system conversion",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the base (radix) of the octal number system?",
+   "code": "",
+   "options": [
+    "8",
+    "2",
+    "10",
+    "16"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Octal uses digits 0 to 7, so its radix is 8.",
+   "why_wrong": [
+    "",
+    "Base 2 is binary.",
+    "Base 10 is decimal.",
+    "Base 16 is hexadecimal."
+   ],
+   "key": "PHY-U3-001"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which hexadecimal symbol represents the decimal value 12?",
+   "code": "",
+   "options": [
+    "A",
+    "C",
+    "B",
+    "D"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Hex digits A to F stand for 10 to 15 in order, so 12 is C.",
+   "why_wrong": [
+    "A stands for decimal 10.",
+    "",
+    "B stands for decimal 11.",
+    "D stands for decimal 13."
+   ],
+   "key": "PHY-U3-002"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the binary equivalent of decimal 13?",
+   "code": "",
+   "options": [
+    "1011",
+    "1110",
+    "1101",
+    "1001"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "13 = 8 + 4 + 1, giving bits 1101.",
+   "why_wrong": [
+    "1011 is decimal 11.",
+    "1110 is decimal 14.",
+    "",
+    "1001 is decimal 9."
+   ],
+   "key": "PHY-U3-003"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the decimal value of the binary number 1010?",
+   "code": "",
+   "options": [
+    "12",
+    "5",
+    "8",
+    "10"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "1010 = 1x8 + 0x4 + 1x2 + 0x1 = 10.",
+   "why_wrong": [
+    "12 is binary 1100.",
+    "5 is binary 0101, the reversed bit order.",
+    "8 is binary 1000; the 2s place was ignored.",
+    ""
+   ],
+   "key": "PHY-U3-004"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How many binary bits correspond to one octal digit?",
+   "code": "",
+   "options": [
+    "3",
+    "2",
+    "4",
+    "8"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Octal digits go from 0 to 7, which need exactly 3 bits (2^3 = 8).",
+   "why_wrong": [
+    "",
+    "Two bits only reach 0 to 3, not 0 to 7.",
+    "Four bits correspond to one hexadecimal digit.",
+    "Eight bits make a byte, not an octal digit."
+   ],
+   "key": "PHY-U3-005"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In the Gray code, consecutive code words differ in how many bit positions?",
+   "code": "",
+   "options": [
+    "Exactly two",
+    "Exactly one",
+    "Exactly four",
+    "It varies with the number"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Gray code is a unit-distance code, so each step changes a single bit.",
+   "why_wrong": [
+    "Two-bit changes occur in ordinary binary counting, not in Gray code.",
+    "",
+    "Four changes would be the complement of the word, not a successive step.",
+    "The Gray code guarantees a fixed single-bit change."
+   ],
+   "key": "PHY-U3-006"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Gray code is an example of which type of code?",
+   "code": "",
+   "options": [
+    "Weighted code",
+    "Alphanumeric code",
+    "Unit-distance code",
+    "Error-correcting code"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Because adjacent words differ in one bit, Gray code is a unit-distance, non-weighted code.",
+   "why_wrong": [
+    "Gray code bit positions have no fixed weights.",
+    "Alphanumeric codes such as ASCII represent characters.",
+    "",
+    "Gray code can not correct errors; it only limits bit changes."
+   ],
+   "key": "PHY-U3-007"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "When converting binary to Gray code, the MSB of the Gray code is",
+   "code": "",
+   "options": [
+    "The complement of the binary MSB",
+    "XOR of the two highest binary bits",
+    "Always 0",
+    "Same as the binary MSB"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The first Gray bit is copied directly from the binary MSB.",
+   "why_wrong": [
+    "The MSB is copied, not inverted.",
+    "That rule gives the second Gray bit.",
+    "The MSB follows the binary MSB and can be 1.",
+    ""
+   ],
+   "key": "PHY-U3-008"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the Gray code of the 2-bit binary number 10?",
+   "code": "",
+   "options": [
+    "11",
+    "10",
+    "01",
+    "00"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "G1 = B1 = 1 and G0 = B1 XOR B0 = 1 XOR 0 = 1, giving 11.",
+   "why_wrong": [
+    "",
+    "The bits are unchanged, but the second bit is 1 XOR 0 = 1.",
+    "The MSB must be copied as 1, not inverted.",
+    "The MSB must be copied as 1, so the result cannot be 00."
+   ],
+   "key": "PHY-U3-009"
+  },
+  {
+   "topic": "Excess-3 code",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Excess-3 code of a decimal digit is obtained by adding what to its BCD code?",
+   "code": "",
+   "options": [
+    "2 (0010)",
+    "3 (0011)",
+    "6 (0110)",
+    "9 (1001)"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Excess-3 means the 8421 BCD value plus 3.",
+   "why_wrong": [
+    "The excess is 3, not 2.",
+    "",
+    "6 is the BCD addition correction, not the excess.",
+    "9 is the complement base, not the excess."
+   ],
+   "key": "PHY-U3-010"
+  },
+  {
+   "topic": "Excess-3 code",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Excess-3 is classified as which kind of code?",
+   "code": "",
+   "options": [
+    "Unit-distance",
+    "Error-correcting",
+    "Self-complementing",
+    "Weighted 8421"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The 1's complement of an excess-3 word gives the code of the 9's complement digit.",
+   "why_wrong": [
+    "That is the Gray code.",
+    "Excess-3 has no correction ability.",
+    "",
+    "Excess-3 is an unweighted code."
+   ],
+   "key": "PHY-U3-011"
+  },
+  {
+   "topic": "Excess-3 code",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the excess-3 code of decimal 0?",
+   "code": "",
+   "options": [
+    "0000",
+    "0101",
+    "1100",
+    "0011"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "0 + 3 = 3, which is 0011.",
+   "why_wrong": [
+    "That is BCD for 0.",
+    "That is excess-3 of 2.",
+    "That is excess-3 of 9.",
+    ""
+   ],
+   "key": "PHY-U3-012"
+  },
+  {
+   "topic": "Excess-3 code",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the excess-3 code of decimal 5?",
+   "code": "",
+   "options": [
+    "1000",
+    "0101",
+    "0011",
+    "1100"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "5 + 3 = 8, which is 1000.",
+   "why_wrong": [
+    "",
+    "That is plain BCD for 5.",
+    "That is excess-3 of 0.",
+    "That is excess-3 of 9."
+   ],
+   "key": "PHY-U3-013"
+  },
+  {
+   "topic": "BCD",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the BCD code of decimal 9?",
+   "code": "",
+   "options": [
+    "0111",
+    "1001",
+    "1000",
+    "1111"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "BCD encodes each digit by its 4-bit binary value, and 9 = 1001.",
+   "why_wrong": [
+    "0111 is BCD for 7.",
+    "",
+    "1000 is BCD for 8.",
+    "1111 is not a valid BCD digit."
+   ],
+   "key": "PHY-U3-014"
+  },
+  {
+   "topic": "BCD",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How many bits does BCD use to encode one decimal digit?",
+   "code": "",
+   "options": [
+    "3",
+    "8",
+    "4",
+    "10"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Digits 0 to 9 need four bits, so BCD uses 4 bits per digit.",
+   "why_wrong": [
+    "Three bits only reach 7.",
+    "Eight bits is packed or ASCII style storage.",
+    "",
+    "Ten is the number of digits, not bits."
+   ],
+   "key": "PHY-U3-015"
+  },
+  {
+   "topic": "BCD",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What are the bit weights in 8421 BCD, from MSB to LSB?",
+   "code": "",
+   "options": [
+    "1, 2, 3, 4",
+    "4, 3, 2, 1",
+    "2, 4, 6, 8",
+    "8, 4, 2, 1"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The name 8421 gives the weights directly.",
+   "why_wrong": [
+    "The weights are powers of two, not consecutive integers.",
+    "These are not the BCD weights.",
+    "These are not the BCD weights.",
+    ""
+   ],
+   "key": "PHY-U3-016"
+  },
+  {
+   "topic": "BCD",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which 4-bit pattern is NOT a valid BCD digit?",
+   "code": "",
+   "options": [
+    "1010",
+    "1001",
+    "0111",
+    "0000"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "BCD only uses 0000 to 1001, so 1010 to 1111 are invalid.",
+   "why_wrong": [
+    "",
+    "This is BCD for 9.",
+    "This is BCD for 7.",
+    "This is BCD for 0."
+   ],
+   "key": "PHY-U3-017"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the 1's complement of the binary number 1010?",
+   "code": "",
+   "options": [
+    "0110",
+    "0101",
+    "1010",
+    "1011"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The 1's complement flips every bit, so 1010 becomes 0101.",
+   "why_wrong": [
+    "This inverts only some bits, which is not the 1's complement.",
+    "",
+    "This is the original number.",
+    "This is the number plus 1."
+   ],
+   "key": "PHY-U3-018"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How is the 2's complement of a binary number obtained?",
+   "code": "",
+   "options": [
+    "Subtract 1 from its 1's complement",
+    "Reverse the order of its bits",
+    "Add 1 to its 1's complement",
+    "Add 1 to the number itself"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "2's complement = 1's complement + 1.",
+   "why_wrong": [
+    "This is the wrong direction.",
+    "Reversal is not complementing.",
+    "",
+    "That is just incrementing, not complementing."
+   ],
+   "key": "PHY-U3-019"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the 1's complement of the 4-bit number 0000?",
+   "code": "",
+   "options": [
+    "0000",
+    "0001",
+    "1000",
+    "1111"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Flipping all four bits gives 1111.",
+   "why_wrong": [
+    "The bits must all be flipped.",
+    "This is the 2's complement attempt without flipping.",
+    "Only the MSB was flipped.",
+    ""
+   ],
+   "key": "PHY-U3-020"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In a signed 2's complement number, an MSB of 1 indicates that the number is",
+   "code": "",
+   "options": [
+    "Negative",
+    "Positive",
+    "Zero",
+    "Overflowed"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The MSB is the sign bit and 1 means negative.",
+   "why_wrong": [
+    "",
+    "A positive number has MSB 0.",
+    "Zero is all 0 bits.",
+    "Overflow is a result condition, not a property of the MSB."
+   ],
+   "key": "PHY-U3-021"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the range of a 4-bit signed 2's complement number?",
+   "code": "",
+   "options": [
+    "-7 to +7",
+    "-8 to +7",
+    "-8 to +8",
+    "0 to 15"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "n-bit 2's complement spans -2^(n-1) to 2^(n-1)-1, i.e. -8 to +7.",
+   "why_wrong": [
+    "That is the 1's complement and sign-magnitude range.",
+    "",
+    "+8 needs 5 bits.",
+    "That is the unsigned range."
+   ],
+   "key": "PHY-U3-022"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the binary sum 1 + 1?",
+   "code": "",
+   "options": [
+    "11",
+    "0",
+    "10",
+    "2"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "1 + 1 gives sum 0 and carry 1, which reads 10.",
+   "why_wrong": [
+    "11 is 1+1+1.",
+    "The carry is lost; the sum is 0 with carry 1.",
+    "",
+    "2 is not a binary digit."
+   ],
+   "key": "PHY-U3-023"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the binary sum 1 + 1 + 1?",
+   "code": "",
+   "options": [
+    "10",
+    "01",
+    "111",
+    "11"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Three ones sum to 3, which is 11 in binary.",
+   "why_wrong": [
+    "That is only two ones.",
+    "That ignores the carry.",
+    "That is not an addition result.",
+    ""
+   ],
+   "key": "PHY-U3-024"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "To compute A - B using 2's complement, we add A to what?",
+   "code": "",
+   "options": [
+    "The 2's complement of B",
+    "The 1's complement of A",
+    "B itself",
+    "The 2's complement of A"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A - B = A + (2's complement of B).",
+   "why_wrong": [
+    "",
+    "The subtrahend is complemented, not the minuend.",
+    "That would compute A + B.",
+    "The subtrahend B is complemented, not A."
+   ],
+   "key": "PHY-U3-025"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In 2's complement subtraction, an end carry out of the MSB tells us the result is",
+   "code": "",
+   "options": [
+    "Negative; carry kept",
+    "Positive; carry dropped",
+    "Zero always",
+    "Invalid; redo the sum"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "With an end carry, the result is positive and the carry is dropped.",
+   "why_wrong": [
+    "A negative result gives no end carry.",
+    "",
+    "Zero is not the only case.",
+    "The end carry is normal in valid subtraction."
+   ],
+   "key": "PHY-U3-026"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A 2-input AND gate gives output 1 only when",
+   "code": "",
+   "options": [
+    "Either input is 1",
+    "Inputs are different",
+    "Both inputs are 1",
+    "Both inputs are 0"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "AND is the product operation, so it is high only for all inputs high.",
+   "why_wrong": [
+    "That describes OR.",
+    "That describes XOR.",
+    "",
+    "That describes NOR."
+   ],
+   "key": "PHY-U3-027"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which logic gate performs the inversion (complement) of a single input?",
+   "code": "",
+   "options": [
+    "AND",
+    "OR",
+    "XOR",
+    "NOT"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The NOT gate (inverter) outputs the complement of its input.",
+   "why_wrong": [
+    "AND combines two or more inputs.",
+    "OR combines two or more inputs.",
+    "XOR compares two inputs.",
+    ""
+   ],
+   "key": "PHY-U3-028"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which two gates are called universal gates?",
+   "code": "",
+   "options": [
+    "NAND and NOR",
+    "AND and OR",
+    "XOR and XNOR",
+    "NOT and OR"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "NAND and NOR can each realise any Boolean function.",
+   "why_wrong": [
+    "",
+    "These cannot produce inversion alone.",
+    "These cannot build every function alone.",
+    "This pair is not universal individually as a single gate."
+   ],
+   "key": "PHY-U3-029"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A 2-input XOR gate outputs 1 when its inputs are",
+   "code": "",
+   "options": [
+    "Both 1",
+    "Different",
+    "Both 0",
+    "Identical"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "XOR is the inequality gate: high when inputs differ.",
+   "why_wrong": [
+    "XOR gives 0 here.",
+    "",
+    "XOR gives 0 here.",
+    "That describes XNOR."
+   ],
+   "key": "PHY-U3-030"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A 2-input OR gate outputs 0 only when",
+   "code": "",
+   "options": [
+    "Both inputs are 1",
+    "Inputs are different",
+    "Both inputs are 0",
+    "Either input is 1"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "OR gives 1 if any input is 1, so 0 only when all are 0.",
+   "why_wrong": [
+    "OR outputs 1 here.",
+    "OR outputs 1 here.",
+    "",
+    "OR outputs 1 here."
+   ],
+   "key": "PHY-U3-031"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In Boolean algebra, A + 0 equals",
+   "code": "",
+   "options": [
+    "0",
+    "1",
+    "A'",
+    "A"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "0 is the identity for OR, so A + 0 = A.",
+   "why_wrong": [
+    "0 would be A.0.",
+    "1 would be A + 1.",
+    "Complement is not involved.",
+    ""
+   ],
+   "key": "PHY-U3-032"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In Boolean algebra, A . A' equals",
+   "code": "",
+   "options": [
+    "0",
+    "1",
+    "A",
+    "A'"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A variable and its complement can never both be 1, so the AND is 0.",
+   "why_wrong": [
+    "",
+    "A + A' equals 1.",
+    "A.A equals A.",
+    "Not an identity here."
+   ],
+   "key": "PHY-U3-033"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "According to De Morgan's theorem, NOT(A.B) equals",
+   "code": "",
+   "options": [
+    "A'.B'",
+    "A' + B'",
+    "A + B",
+    "A.B"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "De Morgan: complement of a product is the sum of the complements.",
+   "why_wrong": [
+    "That is NOT(A+B).",
+    "",
+    "No complement applied.",
+    "No complement applied."
+   ],
+   "key": "PHY-U3-034"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In Boolean algebra, A + 1 equals",
+   "code": "",
+   "options": [
+    "A",
+    "0",
+    "1",
+    "A'"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "OR with 1 always gives 1.",
+   "why_wrong": [
+    "That is A.1.",
+    "That is A.0.",
+    "",
+    "Not an identity."
+   ],
+   "key": "PHY-U3-035"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The double complement NOT(NOT A) equals",
+   "code": "",
+   "options": [
+    "A'",
+    "0",
+    "1",
+    "A"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Inverting twice restores the original value.",
+   "why_wrong": [
+    "A single complement gives this.",
+    "Not valid.",
+    "Not valid.",
+    ""
+   ],
+   "key": "PHY-U3-036"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A Sum-of-Products (SOP) expression is",
+   "code": "",
+   "options": [
+    "An OR of AND terms",
+    "An AND of OR terms",
+    "A single XOR of all variables",
+    "An AND of NAND terms"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "SOP ORs together product (AND) terms.",
+   "why_wrong": [
+    "",
+    "That is POS.",
+    "That is parity form.",
+    "That is not the definition."
+   ],
+   "key": "PHY-U3-037"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The minterm m0 of three variables A, B, C is",
+   "code": "",
+   "options": [
+    "A + B + C",
+    "A'.B'.C'",
+    "A.B.C",
+    "A' + B' + C'"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "m0 corresponds to 000, so every variable is complemented in a product.",
+   "why_wrong": [
+    "That is the maxterm M0.",
+    "",
+    "That is minterm m7.",
+    "That is the maxterm M7."
+   ],
+   "key": "PHY-U3-038"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "When writing SOP from a truth table, we pick the rows where the output is",
+   "code": "",
+   "options": [
+    "0",
+    "Don't care",
+    "1",
+    "Equal to the input"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Each output-1 row gives one minterm that is ORed into the SOP.",
+   "why_wrong": [
+    "Those rows give the POS form.",
+    "Don't cares are optional, not defined.",
+    "",
+    "No such rule exists."
+   ],
+   "key": "PHY-U3-039"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A Product-of-Sums (POS) expression is",
+   "code": "",
+   "options": [
+    "An OR of AND terms",
+    "An OR of XOR terms",
+    "A single NOR gate",
+    "An AND of OR terms"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "POS ANDs together sum (OR) terms.",
+   "why_wrong": [
+    "That is SOP.",
+    "Not the definition.",
+    "Not the definition.",
+    ""
+   ],
+   "key": "PHY-U3-040"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How many cells does a 3-variable K-map have?",
+   "code": "",
+   "options": [
+    "8",
+    "4",
+    "6",
+    "16"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A K-map has 2^n cells, so 2^3 = 8.",
+   "why_wrong": [
+    "",
+    "4 cells is a 2-variable map.",
+    "Not a power of 2.",
+    "16 cells is a 4-variable map."
+   ],
+   "key": "PHY-U3-041"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How many cells does a 4-variable K-map have?",
+   "code": "",
+   "options": [
+    "8",
+    "16",
+    "4",
+    "32"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "2^4 = 16 cells.",
+   "why_wrong": [
+    "8 cells is a 3-variable map.",
+    "",
+    "4 cells is a 2-variable map.",
+    "32 cells is a 5-variable map."
+   ],
+   "key": "PHY-U3-042"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Along the sides of a K-map, the row/column labels are arranged in which order?",
+   "code": "",
+   "options": [
+    "Binary counting order",
+    "Random order",
+    "Gray code order",
+    "Decimal order"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Labels follow 00, 01, 11, 10 so adjacent cells differ in one variable.",
+   "why_wrong": [
+    "Binary order would put two bit changes between neighbours.",
+    "The order is fixed.",
+    "",
+    "Not used."
+   ],
+   "key": "PHY-U3-043"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Groups of adjacent 1s in a K-map must contain how many cells?",
+   "code": "",
+   "options": [
+    "Any number",
+    "An odd number",
+    "A multiple of 3",
+    "A power of 2"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Valid groups are 1, 2, 4, 8 or 16 cells.",
+   "why_wrong": [
+    "Only power of 2 groups are valid.",
+    "Odd groups can not be simplified.",
+    "Not a valid grouping size.",
+    ""
+   ],
+   "key": "PHY-U3-044"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Cells in the leftmost and rightmost columns of a K-map are",
+   "code": "",
+   "options": [
+    "Adjacent (wrap-around)",
+    "Not adjacent",
+    "Always 0",
+    "Don't-care cells"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The edges wrap, so groups can cross them.",
+   "why_wrong": [
+    "",
+    "The map wraps around.",
+    "Cell values are independent of position.",
+    "Position does not decide don't care."
+   ],
+   "key": "PHY-U3-045"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the decimal value of the hexadecimal number 2F?",
+   "code": "",
+   "options": [
+    "35",
+    "47",
+    "32",
+    "30"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "2F = 2x16 + 15 = 47.",
+   "why_wrong": [
+    "This treats the 2 as 2x10 + 15.",
+    "",
+    "This forgets to add F (15).",
+    "This multiplies 2 by 15 instead of 16."
+   ],
+   "key": "PHY-U3-046"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Convert binary 110101 to octal.",
+   "code": "",
+   "options": [
+    "53",
+    "56",
+    "65",
+    "67"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Group in threes: 110 = 6, 101 = 5, so 65.",
+   "why_wrong": [
+    "This is the decimal value of the number.",
+    "The two groups were swapped.",
+    "",
+    "The group 101 was misread as 7."
+   ],
+   "key": "PHY-U3-047"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is decimal 0.625 in binary?",
+   "code": "",
+   "options": [
+    "0.110",
+    "0.011",
+    "0.100",
+    "0.101"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "0.625 = 0.5 + 0.125 = 2^-1 + 2^-3, which is 0.101.",
+   "why_wrong": [
+    "This equals 0.75.",
+    "This equals 0.375.",
+    "This equals 0.5.",
+    ""
+   ],
+   "key": "PHY-U3-048"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Convert hexadecimal B7 to binary.",
+   "code": "",
+   "options": [
+    "1011 0111",
+    "1011 0011",
+    "1101 0111",
+    "0111 1011"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "B = 1011 and 7 = 0111, so B7 = 1011 0111.",
+   "why_wrong": [
+    "",
+    "The second nibble should be 7 = 0111.",
+    "B = 1011, not 1101.",
+    "The nibbles are swapped."
+   ],
+   "key": "PHY-U3-049"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Convert decimal 45 to hexadecimal.",
+   "code": "",
+   "options": [
+    "2B",
+    "2D",
+    "D2",
+    "2E"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "45 = 2x16 + 13, and 13 is D.",
+   "why_wrong": [
+    "2B equals 43.",
+    "",
+    "The digits are reversed (210).",
+    "2E equals 46."
+   ],
+   "key": "PHY-U3-050"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the Gray code of binary 1011?",
+   "code": "",
+   "options": [
+    "1111",
+    "1001",
+    "1110",
+    "0110"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "G3 = 1; G2 = 1^0 = 1; G1 = 0^1 = 1; G0 = 1^1 = 0, giving 1110.",
+   "why_wrong": [
+    "The XORs were skipped for the last bit.",
+    "This is not the XOR chain.",
+    "",
+    "The MSB was complemented."
+   ],
+   "key": "PHY-U3-051"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the binary equivalent of the Gray code 1101?",
+   "code": "",
+   "options": [
+    "1101",
+    "1011",
+    "0010",
+    "1001"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "B3 = 1; B2 = 1^1 = 0; B1 = 0^0 = 0; B0 = 0^1 = 1, so 1001.",
+   "why_wrong": [
+    "The Gray bits were copied without converting.",
+    "The XOR chain was wrongly applied.",
+    "The chain was wrongly started.",
+    ""
+   ],
+   "key": "PHY-U3-052"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the 4-bit Gray code of decimal 7?",
+   "code": "",
+   "options": [
+    "0100",
+    "0111",
+    "0110",
+    "1000"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "7 = 0111: G3 = 0, G2 = 0^1 = 1, G1 = 1^1 = 0, G0 = 1^1 = 0, so 0100.",
+   "why_wrong": [
+    "",
+    "This is the plain binary of 7.",
+    "This is the Gray code of 4.",
+    "This is the Gray code of 15."
+   ],
+   "key": "PHY-U3-053"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "How many bit positions differ between the Gray codes of decimal 7 and decimal 8?",
+   "code": "",
+   "options": [
+    "4",
+    "1",
+    "2",
+    "3"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Gray(7) = 0100 and Gray(8) = 1100, which differ in only the MSB.",
+   "why_wrong": [
+    "That is how many binary bits change, 0111 to 1000.",
+    "",
+    "Two would break the unit-distance rule.",
+    "Three would break the unit-distance rule."
+   ],
+   "key": "PHY-U3-054"
+  },
+  {
+   "topic": "Excess-3 code",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the excess-3 code of decimal 47?",
+   "code": "",
+   "options": [
+    "0100 0111",
+    "0111 0011",
+    "0111 1010",
+    "1010 0111"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "4 + 3 = 7 = 0111 and 7 + 3 = 10 = 1010.",
+   "why_wrong": [
+    "This is plain BCD.",
+    "Only the first digit had 3 added.",
+    "",
+    "The digit codes are swapped."
+   ],
+   "key": "PHY-U3-055"
+  },
+  {
+   "topic": "Excess-3 code",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What decimal number does the excess-3 code 1001 0110 represent?",
+   "code": "",
+   "options": [
+    "96",
+    "66",
+    "93",
+    "63"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "1001 = 9, minus 3 = 6; 0110 = 6, minus 3 = 3, so 63.",
+   "why_wrong": [
+    "This reads the code as plain BCD.",
+    "3 was subtracted only from the first group.",
+    "3 was subtracted only from the second group.",
+    ""
+   ],
+   "key": "PHY-U3-056"
+  },
+  {
+   "topic": "Excess-3 code",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these 4-bit patterns is NOT a valid excess-3 code word?",
+   "code": "",
+   "options": [
+    "0010",
+    "0011",
+    "0111",
+    "1100"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Valid excess-3 words span 0011 to 1100, so 0010 is invalid.",
+   "why_wrong": [
+    "",
+    "This is excess-3 of 0.",
+    "This is excess-3 of 4.",
+    "This is excess-3 of 9."
+   ],
+   "key": "PHY-U3-057"
+  },
+  {
+   "topic": "Excess-3 code",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Taking the 1's complement of the excess-3 code of decimal 6 gives the excess-3 code of which digit?",
+   "code": "",
+   "options": [
+    "4",
+    "3",
+    "6",
+    "9"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "6 is 1001, whose complement 0110 is excess-3 of 3, the 9's complement of 6.",
+   "why_wrong": [
+    "This is not the 9's complement of 6.",
+    "",
+    "This reads the complemented word as BCD.",
+    "9 is the complement base, not the result."
+   ],
+   "key": "PHY-U3-058"
+  },
+  {
+   "topic": "BCD",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the BCD representation of decimal 259?",
+   "code": "",
+   "options": [
+    "0001 0000 0011",
+    "0101 1000 1100",
+    "0010 0101 1001",
+    "0010 0101 1000"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Encode digits 2, 5, 9 as 0010, 0101, 1001.",
+   "why_wrong": [
+    "This is a binary conversion.",
+    "This is the excess-3 code of 259, not its plain BCD.",
+    "",
+    "9 was coded wrongly as 1000."
+   ],
+   "key": "PHY-U3-059"
+  },
+  {
+   "topic": "BCD",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What decimal number is represented by the BCD 0111 0100 0011?",
+   "code": "",
+   "options": [
+    "1859",
+    "14",
+    "347",
+    "743"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "0111 = 7, 0100 = 4, 0011 = 3.",
+   "why_wrong": [
+    "This reads the nibbles as hexadecimal.",
+    "This sums the digits.",
+    "The digits are reversed.",
+    ""
+   ],
+   "key": "PHY-U3-060"
+  },
+  {
+   "topic": "BCD",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "How many bits are needed to store a 4-digit decimal number in BCD?",
+   "code": "",
+   "options": [
+    "16",
+    "14",
+    "12",
+    "8"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "4 digits x 4 bits each = 16 bits.",
+   "why_wrong": [
+    "",
+    "14 is the pure binary requirement for 9999.",
+    "Only three digits would fit.",
+    "Only two digits would fit."
+   ],
+   "key": "PHY-U3-061"
+  },
+  {
+   "topic": "BCD",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In BCD addition, a digit sum greater than 9 is corrected by adding",
+   "code": "",
+   "options": [
+    "0011",
+    "0110",
+    "1001",
+    "1010"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Six invalid states skip, so adding 6 (0110) restores BCD.",
+   "why_wrong": [
+    "This is the excess-3 offset.",
+    "",
+    "This is 9, which is wrong.",
+    "This is 10, which is wrong."
+   ],
+   "key": "PHY-U3-062"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the 2's complement of the 5-bit number 01101?",
+   "code": "",
+   "options": [
+    "10010",
+    "10100",
+    "10011",
+    "01101"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "1's complement = 10010; adding 1 gives 10011.",
+   "why_wrong": [
+    "This is the 1's complement without adding 1.",
+    "This is the 2's complement of 01100.",
+    "",
+    "This is the original number."
+   ],
+   "key": "PHY-U3-063"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the 8-bit 2's complement representation of -5?",
+   "code": "",
+   "options": [
+    "11111010",
+    "10000101",
+    "00000101",
+    "11111011"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "+5 = 00000101; invert to 11111010; add 1 for 11111011.",
+   "why_wrong": [
+    "This is the 1's complement; no 1 was added.",
+    "This is the sign-magnitude form.",
+    "This is +5.",
+    ""
+   ],
+   "key": "PHY-U3-064"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What decimal value does the 4-bit 2's complement number 1011 represent?",
+   "code": "",
+   "options": [
+    "-5",
+    "-3",
+    "-4",
+    "+11"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Invert to 0100, add 1 to get 0101 = 5, so the value is -5.",
+   "why_wrong": [
+    "",
+    "This reads sign-magnitude.",
+    "This reads the 1's complement.",
+    "This reads unsigned."
+   ],
+   "key": "PHY-U3-065"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Using the copy-up-to-first-1 shortcut, the 2's complement of 10100 is",
+   "code": "",
+   "options": [
+    "01011",
+    "01100",
+    "10100",
+    "01101"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Copy 100, invert the leftmost two bits (10 becomes 01) to get 01100.",
+   "why_wrong": [
+    "This is the 1's complement; no 1 was added.",
+    "",
+    "This is the original number.",
+    "This added 2 instead of 1."
+   ],
+   "key": "PHY-U3-066"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is the smallest number of bits that can hold -20 in 2's complement?",
+   "code": "",
+   "options": [
+    "5",
+    "7",
+    "6",
+    "8"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "5 bits span -16 to +15 and 6 bits span -32 to +31, so 6 are needed.",
+   "why_wrong": [
+    "5 bits only reach -16.",
+    "7 bits is more than needed.",
+    "",
+    "8 bits is more than needed."
+   ],
+   "key": "PHY-U3-067"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is 1011 + 0110 in binary?",
+   "code": "",
+   "options": [
+    "10000",
+    "1111",
+    "10101",
+    "10001"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "11 + 6 = 17 = 10001.",
+   "why_wrong": [
+    "This equals 16.",
+    "The carry out was dropped.",
+    "This equals 21.",
+    ""
+   ],
+   "key": "PHY-U3-068"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "What is 10110 + 1011 in binary?",
+   "code": "",
+   "options": [
+    "100001",
+    "100011",
+    "11111",
+    "100000"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "22 + 11 = 33 = 100001.",
+   "why_wrong": [
+    "",
+    "This equals 35.",
+    "The end carry was dropped.",
+    "This equals 32."
+   ],
+   "key": "PHY-U3-069"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Compute 1101 - 0101 using 2's complement addition (discard the end carry).",
+   "code": "",
+   "options": [
+    "0111",
+    "1000",
+    "11000",
+    "0010"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "2's complement of 0101 is 1011; 1101 + 1011 = 11000, drop carry to get 1000 = 8.",
+   "why_wrong": [
+    "The 1's complement was used without +1.",
+    "",
+    "The end carry was not discarded.",
+    "The numbers were added: 13 + 5 = 18."
+   ],
+   "key": "PHY-U3-070"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Compute 0101 - 1001 in 4-bit 2's complement; what is the result?",
+   "code": "",
+   "options": [
+    "0100",
+    "1011",
+    "1100",
+    "0111"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "2's complement of 1001 is 0111; 0101 + 0111 = 1100 (no carry) so it is -4.",
+   "why_wrong": [
+    "The negative sign was ignored.",
+    "The 1's complement was used without +1.",
+    "",
+    "Only the 2's complement of the subtrahend was taken."
+   ],
+   "key": "PHY-U3-071"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Adding 0111 and 0101 in 4-bit 2's complement gives 1100. This indicates",
+   "code": "",
+   "options": [
+    "The correct answer of -4",
+    "Underflow",
+    "An end-around carry",
+    "Overflow"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "7 + 5 = 12 exceeds +7, so the sign flipped due to overflow.",
+   "why_wrong": [
+    "7 + 5 = 12, not -4; the pattern 1100 is just 12 wrapped around in 4 bits.",
+    "Underflow is for negative operands.",
+    "No carry out of the MSB occurred.",
+    ""
+   ],
+   "key": "PHY-U3-072"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The XNOR gate is also known as the",
+   "code": "",
+   "options": [
+    "Equivalence gate",
+    "Inequality gate",
+    "Universal gate",
+    "Buffer gate"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "XNOR outputs 1 when inputs are equal.",
+   "why_wrong": [
+    "",
+    "That describes XOR.",
+    "XNOR is not universal.",
+    "A buffer has one input."
+   ],
+   "key": "PHY-U3-073"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A 3-input XOR gate outputs 1 when",
+   "code": "",
+   "options": [
+    "All inputs are 1 only",
+    "An odd number of inputs are 1",
+    "An even number of inputs are 1",
+    "At least one input is 1"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "XOR extends to parity: output 1 for an odd number of ones.",
+   "why_wrong": [
+    "Odd count also includes 1 or 3 ones.",
+    "",
+    "This is the XNOR behaviour.",
+    "This is OR behaviour."
+   ],
+   "key": "PHY-U3-074"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Both inputs of a 2-input NAND gate are connected to A. The output is",
+   "code": "",
+   "options": [
+    "A",
+    "0",
+    "NOT A",
+    "1"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "NAND(A,A) = (A.A)' = A'.",
+   "why_wrong": [
+    "This would be a buffer.",
+    "This is a constant.",
+    "",
+    "This is a constant."
+   ],
+   "key": "PHY-U3-075"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "If one input of a 2-input OR gate is held at 1, the output is",
+   "code": "",
+   "options": [
+    "Equal to the other input",
+    "The complement of the other input",
+    "Always 0",
+    "Always 1"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A + 1 = 1 whatever the other input is.",
+   "why_wrong": [
+    "That would be if the fixed input was 0.",
+    "OR does not invert.",
+    "OR with 1 is never 0.",
+    ""
+   ],
+   "key": "PHY-U3-076"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "How many rows does the truth table of a 4-input gate have?",
+   "code": "",
+   "options": [
+    "16",
+    "4",
+    "8",
+    "32"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "n inputs give 2^n = 16 combinations for n = 4.",
+   "why_wrong": [
+    "",
+    "That is 2^2.",
+    "That is 2^3.",
+    "That is 2^5."
+   ],
+   "key": "PHY-U3-077"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The identity A + B.C = (A + B).(A + C) is known as the",
+   "code": "",
+   "options": [
+    "Absorption law",
+    "Distributive law",
+    "Associative law",
+    "Commutative law"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "OR distributes over AND just as AND distributes over OR.",
+   "why_wrong": [
+    "Absorption is A + A.B = A.",
+    "",
+    "Associative law only regroups the same operation.",
+    "Commutative law only swaps operand order."
+   ],
+   "key": "PHY-U3-078"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Simplify A + A'.B.",
+   "code": "",
+   "options": [
+    "A",
+    "A'.B",
+    "A + B",
+    "A.B"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A + A'B = (A + A')(A + B) = A + B.",
+   "why_wrong": [
+    "B was lost.",
+    "A was lost.",
+    "",
+    "Wrong operation."
+   ],
+   "key": "PHY-U3-079"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Simplify A.(A + B).",
+   "code": "",
+   "options": [
+    "A + B",
+    "A.B",
+    "B",
+    "A"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A.A + A.B = A + A.B = A.",
+   "why_wrong": [
+    "This confuses it with a different law.",
+    "Wrong operation.",
+    "A was lost.",
+    ""
+   ],
+   "key": "PHY-U3-080"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The dual of the expression A + B.C is",
+   "code": "",
+   "options": [
+    "A.(B + C)",
+    "A'.(B' + C')",
+    "A + (B + C)",
+    "A'+ B'.C'"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The dual swaps + and . without complementing variables.",
+   "why_wrong": [
+    "",
+    "The variables were also complemented.",
+    "Only the AND was swapped.",
+    "The variables were complemented without swapping."
+   ],
+   "key": "PHY-U3-081"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Simplify A.B + A.B' + A'.B.",
+   "code": "",
+   "options": [
+    "A.B",
+    "A + B",
+    "A'.B'",
+    "A XOR B"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A.B + A.B' = A, then A + A'.B = A + B.",
+   "why_wrong": [
+    "Terms were lost.",
+    "",
+    "Wrong complement.",
+    "XOR omits the A.B case."
+   ],
+   "key": "PHY-U3-082"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "For variables A, B, C (A is MSB), the minterm m5 is",
+   "code": "",
+   "options": [
+    "A'.B.C'",
+    "A + B' + C",
+    "A.B'.C",
+    "A.B.C'"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "5 = 101, so A is true, B complemented, C true.",
+   "why_wrong": [
+    "This is m2 (010).",
+    "This is the maxterm M5.",
+    "",
+    "This is m6 (110)."
+   ],
+   "key": "PHY-U3-083"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "For variables A, B, C (A is MSB), the maxterm M3 is",
+   "code": "",
+   "options": [
+    "A' + B + C",
+    "A'.B.C",
+    "A + B + C'",
+    "A + B' + C'"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "3 = 011; maxterms use the complement for each 1 bit, giving A + B' + C'.",
+   "why_wrong": [
+    "This is M4.",
+    "This is minterm m3.",
+    "This is M1.",
+    ""
+   ],
+   "key": "PHY-U3-084"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "F(A,B,C) = Σm(0,2,7). Its POS form is",
+   "code": "",
+   "options": [
+    "ΠM(1,3,4,5,6)",
+    "ΠM(0,2,7)",
+    "ΠM(1,3,5)",
+    "ΠM(3,4,5,6)"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The maxterms come from the minterm indices that are absent.",
+   "why_wrong": [
+    "",
+    "The same indices were reused.",
+    "Only odd numbers were taken.",
+    "Index 1 was missed."
+   ],
+   "key": "PHY-U3-085"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A 3-variable function has 3 minterms in its SOP. How many maxterms are in its POS?",
+   "code": "",
+   "options": [
+    "3",
+    "5",
+    "8",
+    "6"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Total 8 - 3 = 5.",
+   "why_wrong": [
+    "Equal to the SOP count by mistake.",
+    "",
+    "This is the total number of cells.",
+    "Not a valid count."
+   ],
+   "key": "PHY-U3-086"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Simplify F(A,B,C) = Σm(0,1,2,3) with A as MSB.",
+   "code": "",
+   "options": [
+    "B'",
+    "C'",
+    "A'",
+    "1"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Minterms 0 to 3 all have A = 0 with B and C taking all values, leaving A'.",
+   "why_wrong": [
+    "The wrong variable was eliminated.",
+    "The wrong variable was eliminated.",
+    "",
+    "The function is not constant."
+   ],
+   "key": "PHY-U3-087"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Simplify F(A,B,C,D) = Σm(0,2,8,10).",
+   "code": "",
+   "options": [
+    "A'.C'",
+    "B.D",
+    "A'.D'",
+    "B'.D'"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "0000, 0010, 1000, 1010 all have B = 0 and D = 0.",
+   "why_wrong": [
+    "The wrong variables were kept.",
+    "The variables are not complemented.",
+    "The wrong variables were kept.",
+    ""
+   ],
+   "key": "PHY-U3-088"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A group of 8 adjacent 1s in a 4-variable K-map gives a product term of how many literals?",
+   "code": "",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Octet eliminates 3 variables, leaving 1 literal.",
+   "why_wrong": [
+    "",
+    "Octets eliminate 3 variables, not 2.",
+    "Octets eliminate 3 variables, leaving only 1.",
+    "No variable would be eliminated."
+   ],
+   "key": "PHY-U3-089"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Simplify F(A,B,C,D) = Σm(5,7,13,15).",
+   "code": "",
+   "options": [
+    "B.C",
+    "B.D",
+    "A.D",
+    "B'.D"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "0101, 0111, 1101, 1111 all have B = 1 and D = 1.",
+   "why_wrong": [
+    "The wrong variable was kept.",
+    "",
+    "The wrong variable was kept.",
+    "One literal was complemented."
+   ],
+   "key": "PHY-U3-090"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student reads the hex value 3A7.C from a debugger and needs its decimal value. What is it?",
+   "code": "",
+   "options": [
+    "935.12",
+    "919.75",
+    "1955.75",
+    "935.75"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "3A7 = 3x256 + 10x16 + 7 = 935, and the fraction C/16 = 12/16 = 0.75. So 3A7.C = 935.75.",
+   "why_wrong": [
+    "Treats the fractional hex digit C as the decimal digits 12 instead of 12/16 = 0.75.",
+    "Uses 9 for the hex digit A (A = 10), giving 3x256 + 9x16 + 7 = 919.",
+    "Reverses the weights of the integer digits (3x1 + 10x16 + 7x256).",
+    ""
+   ],
+   "key": "PHY-U3-101"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A firmware log prints a register as octal 7345, but the datasheet lists values in hex. What is the hex value?",
+   "code": "",
+   "options": [
+    "1CB1",
+    "3813",
+    "EE5",
+    "F25"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Octal 7345 = 111 011 100 101 in binary. Regroup in fours: 1110 1110 0101 = E E 5, so the hex value is EE5.",
+   "why_wrong": [
+    "Reads 7345 as a decimal number and converts that to hex.",
+    "Stops at the decimal value (7345 octal = 3813) and forgets to convert it into hex.",
+    "",
+    "Writes the octal digit 3 as 100 instead of 011 when expanding to binary."
+   ],
+   "key": "PHY-U3-102"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A DAC needs the fraction 0.6875 as a binary fraction. Which bit pattern is correct?",
+   "code": "",
+   "options": [
+    "0.1101",
+    "0.1011",
+    "0.1001",
+    "0.1110"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Repeated doubling: 0.6875x2=1.375 (1), 0.375x2=0.75 (0), 0.75x2=1.5 (1), 0.5x2=1.0 (1). Reading the carries in order gives 0.1011 = 1/2 + 1/8 + 1/16 = 0.6875.",
+   "why_wrong": [
+    "Reads the bits in reverse order (0.1101 = 0.8125).",
+    "",
+    "Equals 0.5625; the 1/4 place was skipped during repeated doubling.",
+    "Equals 0.875; the last doubling step was misread."
+   ],
+   "key": "PHY-U3-103"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A technician sees the hex value 0x26B in a microcontroller register and needs the decimal value. Which is it?",
+   "code": "",
+   "options": [
+    "619",
+    "620",
+    "618",
+    "19"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "0x26B = 2x256 + 6x16 + 11 = 512 + 96 + 11 = 619.",
+   "why_wrong": [
+    "",
+    "Takes the hex digit B as 12 instead of 11.",
+    "Takes the hex digit B as 10 instead of 11.",
+    "Simply adds the digit values 2 + 6 + 11 without using powers of 16."
+   ],
+   "key": "PHY-U3-104"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 10-bit ADC outputs 1101101101. The panel meter shows readings in octal. What does it display?",
+   "code": "",
+   "options": [
+    "6664",
+    "877",
+    "1355",
+    "1555"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Group from the right in threes: 1 | 101 | 101 | 101 = 1 5 5 5. So the octal reading is 1555 (decimal 877).",
+   "why_wrong": [
+    "Groups the bits in threes from the left (110 110 110 1) and pads the last group on the right as 100, giving 6664.",
+    "Gives the decimal value instead of the octal representation.",
+    "Writes one group (101) as 011 while converting the middle digit.",
+    ""
+   ],
+   "key": "PHY-U3-105"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In which number base does the product 3 x 4 equal 10?",
+   "code": "",
+   "options": [
+    "Base 7",
+    "Base 10",
+    "Base 12",
+    "Base 16"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "3 x 4 = 12 in decimal. The numeral 10 in base b means b, so b = 12.",
+   "why_wrong": [
+    "Confuses the sum 3 + 4 = 7 with the product.",
+    "In base 10 the product 3 x 4 is written 12, not 10.",
+    "",
+    "In base 16 the product 12 is written C, not 10."
+   ],
+   "key": "PHY-U3-106"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Convert the hex number FF.8 into octal.",
+   "code": "",
+   "options": [
+    "377.4",
+    "377.8",
+    "377.2",
+    "773.4"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "FF.8 = 1111 1111 . 1000 in binary. Regroup in threes: 011 111 111 . 100 = 377.4 (decimal 255.5).",
+   "why_wrong": [
+    "",
+    "8 is not a legal octal digit; the hex fraction digit was copied across.",
+    "Equals 377.25; the fraction .5 was mapped to digit 2 instead of 4.",
+    "Reverses the order of the integer digits."
+   ],
+   "key": "PHY-U3-107"
+  },
+  {
+   "topic": "Number system conversion",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "If (121) in some base x equals decimal 36, what is x?",
+   "code": "",
+   "options": [
+    "6",
+    "5",
+    "7",
+    "4"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "(121)_x = x^2 + 2x + 1 = (x + 1)^2 = 36, so x + 1 = 6 and x = 5. Check: 25 + 10 + 1 = 36.",
+   "why_wrong": [
+    "Takes the square root of 36; but 121 in base 6 is 36 + 12 + 1 = 49.",
+    "",
+    "Gives 121 in base 7 = 49 + 14 + 1 = 64, not 36.",
+    "Gives 121 in base 4 = 16 + 8 + 1 = 25, not 36."
+   ],
+   "key": "PHY-U3-108"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An encoder designer must convert the binary word 1011 to Gray code. Which is the Gray word?",
+   "code": "",
+   "options": [
+    "1101",
+    "1110",
+    "1001",
+    "1111"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The Gray MSB equals the binary MSB (1). Each next bit is the XOR of adjacent binary bits: 1^0 = 1, 0^1 = 1, 1^1 = 0. So the Gray word is 1110.",
+   "why_wrong": [
+    "Applies the XOR between each bit and the bit on its right instead of its left neighbour.",
+    "",
+    "Uses XNOR instead of XOR between adjacent bits.",
+    "Uses OR instead of XOR between adjacent bits."
+   ],
+   "key": "PHY-U3-109"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A rotary encoder outputs the Gray word 1101. What is the equivalent binary count?",
+   "code": "",
+   "options": [
+    "1011",
+    "1111",
+    "1001",
+    "1100"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Binary MSB = Gray MSB = 1. Each next binary bit = previous binary bit XOR current Gray bit: 1^1 = 0, 0^0 = 0, 0^1 = 1. So the binary word is 1001 (decimal 9).",
+   "why_wrong": [
+    "Applies the binary-to-Gray rule to 1101 instead of the Gray-to-binary rule.",
+    "Uses OR instead of XOR when chaining the bits.",
+    "",
+    "Uses XNOR instead of XOR when chaining the bits."
+   ],
+   "key": "PHY-U3-110"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 4-bit Gray-code position sensor currently shows 0111. The shaft moves exactly one step forward in the counting direction. What does the sensor show next?",
+   "code": "",
+   "options": [
+    "1000",
+    "0110",
+    "0100",
+    "0101"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "0111 is the Gray code of 5 and the next count 6 has Gray code 6 XOR 3 = 0101. Only one bit changes (the second bit), as required.",
+   "why_wrong": [
+    "Adds 1 in ordinary binary (0111 + 1), which is not how Gray code counts.",
+    "This is the previous code in the sequence, one step backward.",
+    "This is the code two steps forward, not one.",
+    ""
+   ],
+   "key": "PHY-U3-111"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A shaft encoder moves from position 7 to position 8. How many output bits change in a 4-bit binary encoder and in a 4-bit Gray encoder?",
+   "code": "",
+   "options": [
+    "4 in binary, 1 in Gray",
+    "1 in binary, 4 in Gray",
+    "3 in binary, 1 in Gray",
+    "4 in binary, 2 in Gray"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Binary 0111 to 1000 flips all four bits. Gray 0100 to 1100 flips only the MSB. This single-bit change is why Gray code is used to avoid glitches in encoders.",
+   "why_wrong": [
+    "",
+    "Swaps the two cases.",
+    "Counts only the three bits that fall to 0 and forgets that the new MSB also changes.",
+    "Assumes two Gray bits change; Gray code always changes exactly one bit per step."
+   ],
+   "key": "PHY-U3-112"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A counter's 8-bit binary value is decimal 100 (01100100). What Gray word should be sent to the Gray-coded display driver?",
+   "code": "",
+   "options": [
+    "01110110",
+    "01010110",
+    "10101001",
+    "10101100"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Gray = B XOR (B >> 1) = 01100100 XOR 00110010 = 01010110. The MSB stays 0 and each other bit is the XOR of two adjacent binary bits.",
+   "why_wrong": [
+    "Uses OR instead of XOR between adjacent bits.",
+    "",
+    "Uses XNOR instead of XOR between adjacent bits.",
+    "XORs with the left-shifted word instead of the right-shifted word."
+   ],
+   "key": "PHY-U3-113"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "How many bit positions differ between the 4-bit Gray codes of decimal 15 and decimal 0?",
+   "code": "",
+   "options": [
+    "1",
+    "4",
+    "2",
+    "3"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Gray(15) = 1000 and Gray(0) = 0000, so only the MSB differs. Gray code is cyclic: the last code differs from the first in one bit.",
+   "why_wrong": [
+    "",
+    "This is the difference between their binary codes 1111 and 0000.",
+    "Gray code never changes two bits between neighbouring counts, and 15 to 0 is a neighbouring pair.",
+    "Counts the bits that differ in 1111 versus 0001; not a valid comparison."
+   ],
+   "key": "PHY-U3-114"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A 4-bit Gray word 1010 is received. What is the corresponding decimal count?",
+   "code": "",
+   "options": [
+    "10",
+    "15",
+    "9",
+    "12"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Gray-to-binary: b3 = 1, b2 = 1^0 = 1, b1 = 1^1 = 0, b0 = 0^0 = 0, so the binary word is 1100 = 12.",
+   "why_wrong": [
+    "Reads the Gray word directly as an ordinary binary number.",
+    "Applies the binary-to-Gray rule to 1010 (giving 1111) instead of Gray-to-binary.",
+    "Uses XNOR instead of XOR in the Gray-to-binary chain (giving 1001).",
+    ""
+   ],
+   "key": "PHY-U3-115"
+  },
+  {
+   "topic": "Gray code",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which of these 4-bit Gray words belongs to an odd decimal count?",
+   "code": "",
+   "options": [
+    "0110",
+    "1100",
+    "1101",
+    "1010"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Each Gray step flips exactly one bit, so the number of 1s alternates between even and odd. Count 0 has weight 0, so odd counts have odd weight: only 1101 (Gray code of 9) has an odd number of 1s.",
+   "why_wrong": [
+    "This is the Gray code of the even count 4.",
+    "This is the Gray code of the even count 8.",
+    "",
+    "This is the Gray code of the even count 12."
+   ],
+   "key": "PHY-U3-116"
+  },
+  {
+   "topic": "Excess-3 and BCD",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A display driver needs the excess-3 code for decimal 47. Which code should be sent?",
+   "code": "",
+   "options": [
+    "0100 0111",
+    "0101 0000",
+    "0111 1010",
+    "0111 0111"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Excess-3 adds 3 to each decimal digit separately: 4+3 = 7 = 0111 and 7+3 = 10 = 1010. So 47 is 0111 1010.",
+   "why_wrong": [
+    "This is plain BCD of 47; the 3 was never added to each digit.",
+    "Adds 3 to the whole number first (47 + 3 = 50) and then encodes it in BCD.",
+    "",
+    "Adds 3 only to the first digit and leaves the second digit as plain BCD."
+   ],
+   "key": "PHY-U3-117"
+  },
+  {
+   "topic": "Excess-3 and BCD",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A BCD adder adds the digits 6 (0110) and 7 (0111). What is the correctly adjusted BCD result?",
+   "code": "",
+   "options": [
+    "0001 0011",
+    "1101",
+    "0001 0000",
+    "0001 0100"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "0110 + 0111 = 1101 (13), which is above 9, so add the correction 0110: 1101 + 0110 = 1 0011. The BCD result is 0001 0011 = 13.",
+   "why_wrong": [
+    "",
+    "The raw binary sum, which is an invalid BCD digit and has not been corrected.",
+    "Adds the correction 0011 instead of 0110.",
+    "Adds 0111 instead of 0110 as the correction."
+   ],
+   "key": "PHY-U3-118"
+  },
+  {
+   "topic": "Excess-3 and BCD",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A meter sends two excess-3 digits 1000 0101. What decimal reading does it represent?",
+   "code": "",
+   "options": [
+    "85",
+    "133",
+    "82",
+    "52"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Subtract 3 from each nibble: 1000 - 0011 = 0101 = 5 and 0101 - 0011 = 0010 = 2. So the reading is 52.",
+   "why_wrong": [
+    "Reads the nibbles as plain BCD without subtracting 3.",
+    "Reads the 8 bits as one ordinary binary number (10000101 = 133).",
+    "Subtracts 3 from the second digit only.",
+    ""
+   ],
+   "key": "PHY-U3-119"
+  },
+  {
+   "topic": "Excess-3 and BCD",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In an excess-3 decimal system, decimal digit 2 is stored as 0101. Without any arithmetic, which excess-3 word represents its 9's complement digit?",
+   "code": "",
+   "options": [
+    "0111",
+    "1010",
+    "1001",
+    "1011"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Excess-3 is self-complementing: inverting every bit gives the code of the 9's complement digit. 9 - 2 = 7, and the inverse of 0101 is 1010, which is excess-3 of 7.",
+   "why_wrong": [
+    "This is plain BCD of 7, the 9's complement digit, not its excess-3 code.",
+    "",
+    "This is the excess-3 code of 6, not 7.",
+    "This is the excess-3 code of 8, not 7."
+   ],
+   "key": "PHY-U3-120"
+  },
+  {
+   "topic": "Excess-3 and BCD",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Add the BCD numbers 0111 1001 (79) and 0011 0101 (35). What is the correct BCD result?",
+   "code": "",
+   "options": [
+    "0001 0001 0100",
+    "0001 0000 0100",
+    "1011 0100",
+    "1010 1110"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Low digit: 1001 + 0101 = 1110 > 9, add 0110 = 1 0100 (digit 4, carry 1). High digit: 0111 + 0011 + 1 = 1011 > 9, add 0110 = 1 0001 (digit 1, carry 1). Result 0001 0001 0100 = 114.",
+   "why_wrong": [
+    "",
+    "Forgets to add the carry from the corrected low digit into the high digit.",
+    "Corrects the low digit but never corrects the invalid high digit 1011.",
+    "The raw 8-bit binary sum with no BCD correction at all."
+   ],
+   "key": "PHY-U3-121"
+  },
+  {
+   "topic": "Excess-3 and BCD",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Two excess-3 digits 0101 (decimal 2) and 0110 (decimal 3) are added. What is the correct excess-3 sum digit?",
+   "code": "",
+   "options": [
+    "1011",
+    "1110",
+    "1000",
+    "0101"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "0101 + 0110 = 1011 with no carry out. In excess-3 addition, subtract 0011 when there is no carry: 1011 - 0011 = 1000, which is excess-3 of 5.",
+   "why_wrong": [
+    "The raw binary sum, left uncorrected.",
+    "Adds 0011 as if there were a carry, instead of subtracting it.",
+    "",
+    "This is plain BCD of 5, not the excess-3 code."
+   ],
+   "key": "PHY-U3-122"
+  },
+  {
+   "topic": "Excess-3 and BCD",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Decimal 2025 is stored in BCD and, separately, as a plain binary number. How many more bits does the BCD form use?",
+   "code": "",
+   "options": [
+    "4",
+    "5",
+    "6",
+    "16"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "BCD uses 4 bits per digit, so 4 digits need 16 bits. Plain binary needs 11 bits because 1024 <= 2025 < 2048. The difference is 16 - 11 = 5.",
+   "why_wrong": [
+    "Assumes the binary form needs 12 bits.",
+    "",
+    "Assumes the binary form needs only 10 bits, but 2025 is above 1023.",
+    "Counts only the BCD bits and ignores the binary form."
+   ],
+   "key": "PHY-U3-123"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A DSP stores -108 by negating the 8-bit value 01101100. What is the 2's complement pattern?",
+   "code": "",
+   "options": [
+    "10010011",
+    "01101101",
+    "10010101",
+    "10010100"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Invert 01101100 to get 10010011, then add 1 to get 10010100. Check: 01101100 + 10010100 = 1 00000000, so the sum is 0 in 8 bits.",
+   "why_wrong": [
+    "This is only the 1's complement; the +1 step was skipped.",
+    "Adds 1 to the original number without inverting it first.",
+    "Adds the 1 in the second bit position instead of the least significant bit.",
+    ""
+   ],
+   "key": "PHY-U3-124"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An 8-bit register in 2's complement holds 11010110. What signed value does it represent?",
+   "code": "",
+   "options": [
+    "+214",
+    "-41",
+    "-86",
+    "-42"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The sign bit is 1, so the number is negative. Invert 11010110 to 00101001 and add 1 to get 00101010 = 42, so the value is -42 (equivalently 214 - 256).",
+   "why_wrong": [
+    "Reads the pattern as an unsigned binary number.",
+    "Uses the 1's complement interpretation (invert only, no +1).",
+    "Uses a sign-magnitude interpretation (sign bit 1, magnitude 1010110).",
+    ""
+   ],
+   "key": "PHY-U3-125"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A sensor reports temperatures between -100 and +90 (whole units). What is the minimum number of bits needed to store every reading in 2's complement?",
+   "code": "",
+   "options": [
+    "7",
+    "9",
+    "8",
+    "6"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "An n-bit 2's complement number covers -2^(n-1) to 2^(n-1) - 1. For 7 bits that is -64..63 (too small); for 8 bits it is -128..127, which covers -100..+90.",
+   "why_wrong": [
+    "A 7-bit 2's complement field only covers -64 to +63.",
+    "Works, but 8 bits already cover -128 to +127, so 9 is not the minimum.",
+    "",
+    "A 6-bit field only covers -32 to +31."
+   ],
+   "key": "PHY-U3-126"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A hex byte 0xB4 is a signed 8-bit 2's complement value. A routine negates it by taking the 2's complement. What hex byte results?",
+   "code": "",
+   "options": [
+    "4C",
+    "4B",
+    "4D",
+    "CB"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "B4 = 1011 0100. Invert to 0100 1011 (4B) and add 1 to get 0100 1100 = 4C. Check: B4 + 4C = 100 hex, which is 0 in 8 bits.",
+   "why_wrong": [
+    "",
+    "This is the 1's complement of B4; the +1 step was skipped.",
+    "Adds 1 after the inversion and then adds one more.",
+    "Swaps nibbles of the hex digits, which is unrelated to complementing."
+   ],
+   "key": "PHY-U3-127"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a 4-bit 2's complement system, the 2's complement of 1000 (which is -8) is taken. What is the result?",
+   "code": "",
+   "options": [
+    "0111",
+    "1000",
+    "0000",
+    "1001"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Invert 1000 to 0111, add 1 to get 1000. +8 cannot be represented in 4 bits (max +7), so the most negative number is its own negation and the operation overflows.",
+   "why_wrong": [
+    "This is the 1's complement; adding 1 gives 1000 again.",
+    "",
+    "Assumes -(-8) must wrap to zero, which it does not.",
+    "Adds 1 to 1000 without inverting first."
+   ],
+   "key": "PHY-U3-128"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In an 8-bit system, the pattern 11111111 is interpreted first in 1's complement and then in 2's complement. What values result?",
+   "code": "",
+   "options": [
+    "-0 and -1",
+    "-1 and -0",
+    "-127 and -1",
+    "-0 and -127"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In 1's complement, all-ones is the inverse of all-zeros, i.e. -0. In 2's complement, invert to 00000000 and add 1 to get 1, so the value is -1.",
+   "why_wrong": [
+    "",
+    "Swaps the two interpretations.",
+    "Takes sign-magnitude for the first interpretation (1 then 1111111).",
+    "Gives the right 1's complement reading but uses sign-magnitude for the second."
+   ],
+   "key": "PHY-U3-129"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "The 4-bit 2's complement number 1010 is stored into an 8-bit register by sign extension. What 8-bit pattern results?",
+   "code": "",
+   "options": [
+    "00001010",
+    "10001010",
+    "11111010",
+    "11110101"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "4-bit 1010 = 10 - 16 = -6. Sign extension copies the sign bit into the new high bits to preserve the value: 1111 1010, which is -128+64+32+16+8+2 = -6.",
+   "why_wrong": [
+    "Zero-extends the word, changing the value from -6 to +10.",
+    "Sign-magnitude style extension, which reads as -10.",
+    "",
+    "This is the 1's complement of 00001010 and represents -11."
+   ],
+   "key": "PHY-U3-130"
+  },
+  {
+   "topic": "Complements",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "For 5-bit numbers, what is the most negative value that can be represented in 1's complement and in 2's complement respectively?",
+   "code": "",
+   "options": [
+    "-16 and -16",
+    "-15 and -15",
+    "-16 and -15",
+    "-15 and -16"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "1's complement has two zeros, so its range is -(2^4 - 1) to +(2^4 - 1) = -15..+15. 2's complement has a single zero, so its range is -16..+15.",
+   "why_wrong": [
+    "Assumes 1's complement also has an extra negative value; it does not.",
+    "Assumes 2's complement loses its extra negative value.",
+    "Swaps the two systems.",
+    ""
+   ],
+   "key": "PHY-U3-131"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An 8-bit ALU subtracts 42 from 25 using 2's complement addition. What is the 8-bit result?",
+   "code": "",
+   "options": [
+    "11101110",
+    "11101111",
+    "00010001",
+    "10010001"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "25 = 00011001 and 2's complement of 42 (00101010) is 11010110. Their sum is 11101111 with no carry out, so the result is negative: invert and add 1 gives 17, i.e. -17.",
+   "why_wrong": [
+    "Adds the 1's complement of 42 and forgets the final +1.",
+    "",
+    "Shows the magnitude +17 instead of the signed result -17.",
+    "Writes -17 in sign-magnitude instead of 2's complement."
+   ],
+   "key": "PHY-U3-132"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Two signed 8-bit 2's complement numbers, +105 and +78, are added. How is the 8-bit result 10110111 read?",
+   "code": "",
+   "options": [
+    "-73",
+    "+183",
+    "-72",
+    "-55"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "105 + 78 = 183, which is above +127, so the 8-bit sum is 183 - 256 = -73 (10110111). Two positive operands gave a negative result, which signals overflow.",
+   "why_wrong": [
+    "",
+    "Treats the result as unsigned, ignoring that the sign bit is part of the number.",
+    "Reads it in 1's complement (invert only, no +1).",
+    "Reads it in sign-magnitude form (sign bit 1, magnitude 0110111)."
+   ],
+   "key": "PHY-U3-133"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 4-bit calculator evaluates 1101 - 0111 using 2's complement addition. What is the 4-bit result?",
+   "code": "",
+   "options": [
+    "0101",
+    "0100",
+    "1001",
+    "0110"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "2's complement of 0111 is 1001. Then 1101 + 1001 = 1 0110; drop the carry to get 0110 = 6, matching 13 - 7.",
+   "why_wrong": [
+    "Adds the 1's complement of 0111 and forgets the +1.",
+    "Adds 0111 instead of subtracting it.",
+    "Adds only the 2's complement of the subtrahend and forgets to add 1101.",
+    ""
+   ],
+   "key": "PHY-U3-134"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 4-bit unsigned accumulator holds 1011 (11). The program adds 1101 (13) twice, and any carry out is discarded. What does the accumulator hold at the end?",
+   "code": "",
+   "options": [
+    "1000",
+    "1101",
+    "0101",
+    "10101"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "11 + 13 = 24, which wraps to 24 - 16 = 8 (1000). Then 8 + 13 = 21, which wraps to 21 - 16 = 5 (0101).",
+   "why_wrong": [
+    "This is the value after only the first addition (24 mod 16 = 8).",
+    "Ignores the additions and shows only the operand.",
+    "",
+    "Keeps the carried bits as if the register were 5 bits wide."
+   ],
+   "key": "PHY-U3-135"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In 4-bit 2's complement arithmetic, which addition produces a signed overflow?",
+   "code": "",
+   "options": [
+    "1100 + 1101",
+    "0110 + 0011",
+    "0101 + 0010",
+    "1011 + 0100"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "0110 + 0011 is 6 + 3 = 9, which exceeds +7, giving 1001 (-7): two positives yield a negative result, so overflow. A carry out alone does not mean signed overflow.",
+   "why_wrong": [
+    "(-4) + (-3) = -7 fits; the carry out is 1 but no signed overflow occurs.",
+    "",
+    "5 + 2 = 7 fits within the range -8 to +7.",
+    "(-5) + 4 = -1; operands of different signs can never overflow."
+   ],
+   "key": "PHY-U3-136"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A 4-bit unsigned subtraction 0101 - 1001 is done by adding the 2's complement of 1001. What are the 4-bit result and the carry out?",
+   "code": "",
+   "options": [
+    "1100, carry out 1",
+    "1100, carry out 0",
+    "0100, carry out 0",
+    "0100, carry out 1"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "2's complement of 1001 is 0111. 0101 + 0111 = 01100: 4-bit result 1100 and carry out 0. For subtraction a carry out of 0 signals a borrow, i.e. the answer is negative (1100 = -4).",
+   "why_wrong": [
+    "Carry out 1 would mean no borrow, which only happens when the minuend is the larger value.",
+    "",
+    "Writes the magnitude 4 instead of the actual 4-bit result -4 = 1100.",
+    "Writes the magnitude and also claims no borrow."
+   ],
+   "key": "PHY-U3-137"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A 4-bit adder adds 1111 and 1111, producing 1110 with carry out 1. Which statement is correct?",
+   "code": "",
+   "options": [
+    "Signed overflow occurred, because the carry out is 1 here",
+    "The result is 1111 and no carry is produced",
+    "Signed -1 + -1 = -2 is valid; carry is unsigned only",
+    "As signed numbers the result is +14, which is valid"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "1111 + 1111 = 1 1110. In 2's complement 1111 = -1, so the sum is -2 (1110), a valid result with no signed overflow. In unsigned terms 15 + 15 = 30 does not fit, so the carry flags unsigned overflow.",
+   "why_wrong": [
+    "Signed overflow depends on the sign bits, not on the carry out.",
+    "Misstates the sum; 15 + 15 = 30 = 1 1110.",
+    "",
+    "1110 in 2's complement is -2, not +14."
+   ],
+   "key": "PHY-U3-138"
+  },
+  {
+   "topic": "Binary arithmetic",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "An 8-bit 2's complement adder adds 10011100 and 01110100. What is the 8-bit result?",
+   "code": "",
+   "options": [
+    "00010000",
+    "100010000",
+    "11110000",
+    "00010001"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "10011100 = -100 and 01110100 = +116. Their binary sum is 1 0001 0000; the carry out is discarded, leaving 00010000 = +16, which is -100 + 116.",
+   "why_wrong": [
+    "",
+    "Keeps the carry as a ninth bit; the 8-bit register holds only the lower eight bits.",
+    "Gives -16, with the wrong sign for the answer.",
+    "Adds one extra unit from a mistaken carry."
+   ],
+   "key": "PHY-U3-139"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A prototype board has only 2-input NAND gates. What is the minimum number of these gates needed to build a 2-input OR gate?",
+   "code": "",
+   "options": [
+    "2",
+    "4",
+    "5",
+    "3"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A + B = NAND(A', B'). Each input inverter is a NAND with tied inputs (2 gates) and the third NAND combines them, so 3 gates in total.",
+   "why_wrong": [
+    "Not enough: two NANDs can only make AND/NOT combinations, not an OR.",
+    "This is the minimum for building an XOR gate, not an OR.",
+    "More than needed; OR needs just inverters on both inputs and one NAND.",
+    ""
+   ],
+   "key": "PHY-U3-140"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A parity unit uses a 4-input XOR (cascaded 2-input XOR gates). For how many of the 16 input combinations is its output 1?",
+   "code": "",
+   "options": [
+    "4",
+    "6",
+    "15",
+    "8"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A cascaded XOR outputs 1 when an odd number of inputs are 1. In 4 bits: 4 with one 1 plus 4 with three 1s = 8 combinations.",
+   "why_wrong": [
+    "Counts only the combinations with exactly one 1 input.",
+    "Counts only the combinations with exactly two 1 inputs.",
+    "Counts every non-zero combination, which is how a 4-input OR behaves.",
+    ""
+   ],
+   "key": "PHY-U3-141"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A circuit feeds A and B into a NAND gate and into a NOR gate, then combines both outputs in a final NAND gate. Which single gate does it act like?",
+   "code": "",
+   "options": [
+    "XOR",
+    "OR",
+    "NAND",
+    "XNOR"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Y = NOT[(A.B)' . (A+B)'] = (A.B) + (A+B) = A + B. Truth table: 00 gives 0, and 01, 10, 11 all give 1, which is OR.",
+   "why_wrong": [
+    "XOR would give 0 for A = B = 1, but this circuit gives 1.",
+    "",
+    "NAND would give 1 for A = B = 0, but this circuit gives 0.",
+    "XNOR would give 1 for A = B = 0, but this circuit gives 0."
+   ],
+   "key": "PHY-U3-142"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A technician applies logic 1 to both inputs of six separate gates: AND, OR, NAND, NOR, XOR and XNOR. How many of them give a high output?",
+   "code": "",
+   "options": [
+    "2",
+    "4",
+    "3",
+    "5"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "With inputs 11: AND = 1, OR = 1, NAND = 0, NOR = 0, XOR = 0, XNOR = 1. So three gates (AND, OR, XNOR) are high.",
+   "why_wrong": [
+    "Misses the XNOR, which gives 1 when both inputs are equal.",
+    "Wrongly counts the XOR, which gives 0 when both inputs are equal.",
+    "",
+    "Wrongly counts the NAND and XOR, which both give 0 for inputs 11."
+   ],
+   "key": "PHY-U3-143"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A gate acts as an AND gate in positive logic. What function does the same hardware perform in negative logic?",
+   "code": "",
+   "options": [
+    "OR",
+    "NAND",
+    "NOR",
+    "AND"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The hardware gives a high output only when both inputs are high. In negative logic high means 0 and low means 1, so the output is logic 1 (low) when at least one input is logic 1 (low). That is OR.",
+   "why_wrong": [
+    "",
+    "Inverting the logic assignment does not invert the output; it only swaps AND and OR.",
+    "NOR would require inverting the output in addition to swapping the logic levels.",
+    "The function changes: AND and OR swap when the logic convention is reversed."
+   ],
+   "key": "PHY-U3-144"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which of the following sets of gates is NOT functionally complete (cannot build every Boolean function)?",
+   "code": "",
+   "options": [
+    "NAND only",
+    "AND and OR only",
+    "NOR only",
+    "AND and NOT"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A set is complete if it can make NOT. AND and OR are both monotone: with inputs all 1 they can only output 1, so they can never produce an inverter.",
+   "why_wrong": [
+    "NAND alone is universal; it can build NOT, AND and OR.",
+    "",
+    "NOR alone is universal; it can build NOT, OR and AND.",
+    "With AND and NOT, De Morgan gives OR, so this set is complete."
+   ],
+   "key": "PHY-U3-145"
+  },
+  {
+   "topic": "Logic gates",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "An XNOR gate has one input tied to logic 1 and the other input carries signal A. How does it behave?",
+   "code": "",
+   "options": [
+    "As an inverter, output = A'",
+    "Output stuck at 0",
+    "As a buffer, output = A",
+    "Output stuck at 1"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "XNOR(A, 1) = A.1 + A'.0 = A. With the fixed input at 1 the XNOR passes A unchanged, whereas an XOR with the same tie would invert it.",
+   "why_wrong": [
+    "This describes XOR with one input tied high, not XNOR.",
+    "The output depends on A, so it cannot be stuck.",
+    "",
+    "The output depends on A, so it cannot be stuck."
+   ],
+   "key": "PHY-U3-146"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A designer's circuit implements Y = A.B + A.B' + A'.B. Which simplified expression gives the same output with the fewest gates?",
+   "code": "",
+   "options": [
+    "A + B",
+    "A.B",
+    "A' + B'",
+    "A + B'"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A.B + A.B' = A(B + B') = A. Then A + A'.B = A + B by the absorption identity X + X'Y = X + Y.",
+   "why_wrong": [
+    "",
+    "Drops the terms A.B' and A'.B, which are also 1 for some inputs.",
+    "This is the NAND function; it differs when A = B = 1.",
+    "Fails for A = 0, B = 1 where the original gives 1."
+   ],
+   "key": "PHY-U3-147"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A student must simplify Y = (A + B)(A + C) to reduce the gate count. Which is the correct result?",
+   "code": "",
+   "options": [
+    "A.B + A.C",
+    "A + B + C",
+    "A.(B + C)",
+    "A + B.C"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Expanding: (A + B)(A + C) = AA + AC + AB + BC = A + AC + AB + BC = A(1 + C + B) + BC = A + BC. This is the distributive law X + YZ = (X + Y)(X + Z).",
+   "why_wrong": [
+    "Equals A(B + C), which is 0 when A = 0 and B = C = 1 whereas Y is 1.",
+    "Treats the product as a sum; Y is 0 when A = 0 and B = 1, C = 0.",
+    "Is 0 whenever A = 0, but Y is 1 for A = 0, B = C = 1.",
+    ""
+   ],
+   "key": "PHY-U3-148"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A logic designer finds a circuit with Y = A.B + A'.C + B.C. Which expression is the minimal form of Y?",
+   "code": "",
+   "options": [
+    "A.B + B.C",
+    "A'.C + B.C",
+    "A.B + A'.C",
+    "A.B + A'.C + B.C"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "B.C is the consensus of A.B and A'.C. By the consensus theorem XY + X'Z + YZ = XY + X'Z, so B.C can be removed.",
+   "why_wrong": [
+    "Fails for A = 0, B = 0, C = 1 where Y = 1.",
+    "Fails for A = 1, B = 1, C = 0 where Y = 1.",
+    "",
+    "Equivalent but not minimal; B.C is redundant (consensus term)."
+   ],
+   "key": "PHY-U3-149"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A designer must realise Y = NOT(A.B + C) using only inverters, OR and AND gates in the simplest way. Which expression is correct?",
+   "code": "",
+   "options": [
+    "A'.B' + C'",
+    "(A' + B').C'",
+    "A'.B'.C'",
+    "A' + B' + C'"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "By De Morgan, NOT(X + Z) = X'.Z' with X = A.B and Z = C. NOT(A.B) = A' + B', so Y = (A' + B').C'.",
+   "why_wrong": [
+    "Complements AB incorrectly (it should become A' + B') and uses OR instead of AND.",
+    "",
+    "Complements each variable without changing AND/OR properly; the AB term must become A' + B'.",
+    "Changes the AND to OR throughout; the outer term should remain a product."
+   ],
+   "key": "PHY-U3-150"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A truth table shows Y = 1 for exactly the four rows where C = 1, written as A'B'C + A'BC + AB'C + ABC. What is Y after simplification?",
+   "code": "",
+   "options": [
+    "C",
+    "A.B.C",
+    "A + C",
+    "1"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Factor C: C(A'B' + A'B + AB' + AB) = C(A'(B' + B) + A(B' + B)) = C(A' + A) = C.",
+   "why_wrong": [
+    "",
+    "Only the last of the four terms; Y is 1 for other rows with C = 1.",
+    "Is 1 for rows where C = 0 and A = 1, which are not in the list.",
+    "Y is 0 for rows where C = 0, so it is not constant."
+   ],
+   "key": "PHY-U3-151"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which of the following Boolean identities is NOT valid?",
+   "code": "",
+   "options": [
+    "A + A'.B = A + B",
+    "A.(A' + B) = A.B",
+    "A + A.B = A",
+    "A.(A + B) = B"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A.(A + B) = A.A + A.B = A + A.B = A (absorption), not B. For A = 1, B = 0 the left side is 1 but the right side is 0.",
+   "why_wrong": [
+    "This is a valid absorption-type identity.",
+    "This is valid: A.A' = 0, leaving A.B.",
+    "This is the absorption law and is valid.",
+    ""
+   ],
+   "key": "PHY-U3-152"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Simplify (A XOR B) XOR (A XNOR B).",
+   "code": "",
+   "options": [
+    "1",
+    "0",
+    "A",
+    "A XOR B"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Let X = A XOR B. Then A XNOR B = X', and X XOR X' = X.X + X'.X' = X + X' = 1, so the output is always 1.",
+   "why_wrong": [
+    "",
+    "A XOR X' is 1, not 0; the two inputs are always opposite.",
+    "The result does not depend on A; the inputs are always complementary.",
+    "This is just one of the two inner terms, not the combined output."
+   ],
+   "key": "PHY-U3-153"
+  },
+  {
+   "topic": "Boolean algebra",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Simplify Y = (A + B).(A' + C).(B + C) to a minimal expression.",
+   "code": "",
+   "options": [
+    "A.B + A'.C",
+    "A.C + A'.B",
+    "B + A.C",
+    "A.B.C"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "(B + C) is the consensus factor of (A + B) and (A' + C) and is redundant. (A + B)(A' + C) = AC + A'B + BC = AC + A'B by the consensus theorem.",
+   "why_wrong": [
+    "Swaps the roles of B and C; fails for A = 1, B = 1, C = 0 where Y = 0.",
+    "",
+    "Fails for A = 1, B = 1, C = 0 where Y = 0.",
+    "Too restrictive; Y is also 1 for A = 0, B = 1, C = 0."
+   ],
+   "key": "PHY-U3-154"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 2-input function is specified as F = A + B'. How is F written in canonical SOP form?",
+   "code": "",
+   "options": [
+    "Sum of m(1, 2, 3)",
+    "Sum of m(0, 1, 3)",
+    "Sum of m(0, 2, 3)",
+    "Sum of m(0, 1, 2)"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "F = A(B + B') + B'(A + A') = AB + AB' + A'B' = m3 + m2 + m0. So F = sum of m(0, 2, 3).",
+   "why_wrong": [
+    "This is A + B (OR), not A + B'.",
+    "This is A' + B... A'B' + A'B + AB = A' + B, not A + B'.",
+    "",
+    "This is the NAND function A' + B', not A + B'."
+   ],
+   "key": "PHY-U3-155"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 3-input odd-parity detector has F = sum of m(1, 2, 4, 7). Which canonical POS form describes it?",
+   "code": "",
+   "options": [
+    "Product of M(1, 2, 4, 7)",
+    "Product of M(0, 1, 2, 4)",
+    "Product of M(3, 5, 6, 7)",
+    "Product of M(0, 3, 5, 6)"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A canonical POS uses the maxterms for rows where F = 0. F = 1 on rows 1, 2, 4, 7, so F = 0 on 0, 3, 5, 6. Therefore F = product of M(0, 3, 5, 6).",
+   "why_wrong": [
+    "Reuses the minterm indices as maxterm indices; maxterms cover the rows where F = 0.",
+    "Lists indices that are not the zero rows of F.",
+    "Lists indices that mix zero rows and one rows.",
+    ""
+   ],
+   "key": "PHY-U3-156"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A comparator circuit has F = (A + B').(A' + B). Which SOP expression is equal to F?",
+   "code": "",
+   "options": [
+    "A.B' + A'.B",
+    "A + B",
+    "A.B",
+    "A.B + A'.B'"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A + B' is 0 only at A = 0, B = 1 and A' + B is 0 only at A = 1, B = 0. So F is 1 at 00 and 11, which is the XNOR: A.B + A'.B'.",
+   "why_wrong": [
+    "This is XOR, the complement of F.",
+    "F is 0 for A = 1, B = 0 whereas A + B is 1.",
+    "Misses the row A = 0, B = 0 where F = 1.",
+    ""
+   ],
+   "key": "PHY-U3-157"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "For a 3-variable function A, B, C, which expression is the maxterm M5?",
+   "code": "",
+   "options": [
+    "A + B' + C",
+    "A'.B.C'",
+    "A' + B + C'",
+    "A + B' + C'"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "5 = 101. A maxterm uses the variable complemented when its bit is 1 and un-complemented when 0, joined by OR: A' + B + C'.",
+   "why_wrong": [
+    "Complements the wrong variables; this is M2 (010).",
+    "This is the minterm m5, a product rather than the maxterm.",
+    "",
+    "Complements B and C; this is M3 (011)."
+   ],
+   "key": "PHY-U3-158"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An alarm circuit follows F = A.B + C for three inputs. For how many of the 8 input combinations is F = 1?",
+   "code": "",
+   "options": [
+    "5",
+    "3",
+    "4",
+    "6"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A.B is 1 for 110, 111. C is 1 for 001, 011, 101, 111. The union is {001, 011, 101, 110, 111}, with 111 counted once: 5 rows.",
+   "why_wrong": [
+    "",
+    "Counts only the two rows of A.B plus one row of C.",
+    "Counts only the rows where C = 1.",
+    "Adds 2 rows of A.B and 4 rows of C without removing the overlap at 111."
+   ],
+   "key": "PHY-U3-159"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A function F(A, B, C) is given as the product of M(0, 1, 2). Which is its minimal SOP expression?",
+   "code": "",
+   "options": [
+    "A.B + C",
+    "A + B.C",
+    "A + B + C",
+    "A.B.C"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "F = 0 on rows 0, 1, 2, so F = 1 on 3, 4, 5, 6, 7. Rows 4-7 are A; rows 3 and 7 are B.C. Minimal SOP: A + B.C.",
+   "why_wrong": [
+    "This is 1 for m1 and m3 where F = 0 or not at m4.",
+    "",
+    "This is the product M(0) only, which has just one zero.",
+    "This is only minterm m7 and misses m3, m4, m5, m6."
+   ],
+   "key": "PHY-U3-160"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A 3-variable function is given as the product of M(0, 5). How many minterms appear in its canonical SOP form?",
+   "code": "",
+   "options": [
+    "2",
+    "8",
+    "6",
+    "4"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A 3-variable function has 8 rows. Two maxterms (rows 0 and 5) mean F = 0 there, so F = 1 on the remaining 8 - 2 = 6 rows.",
+   "why_wrong": [
+    "These are the zero rows (maxterms), not the minterms.",
+    "All 8 rows would be minterms only for the constant function 1.",
+    "",
+    "Halves the table instead of removing the two zero rows."
+   ],
+   "key": "PHY-U3-161"
+  },
+  {
+   "topic": "SOP and POS",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Expand F = A.B + A'.C into canonical SOP over the variables A, B and C. Which minterm list is correct?",
+   "code": "",
+   "options": [
+    "Sum of m(5, 6, 7)",
+    "Sum of m(1, 3, 6, 7)",
+    "Sum of m(0, 2, 6, 7)",
+    "Sum of m(2, 3, 5, 7)"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A.B = A.B.(C + C') = m6 + m7. A'.C = A'.C.(B + B') = A'B'C + A'BC = m1 + m3. Union: m(1, 3, 6, 7).",
+   "why_wrong": [
+    "Forgets to complement A in the A'.C term (uses A.C instead).",
+    "",
+    "Complements C instead of keeping it, expanding A'.C as A'.C'.",
+    "Uses A'.B + A.C, swapping where the complement bar goes."
+   ],
+   "key": "PHY-U3-162"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A K-map for F(A,B,C,D) has 1s at minterms 0, 1, 4 and 5 only. What is the minimal SOP?",
+   "code": "",
+   "options": [
+    "A'.C'",
+    "A'.D'",
+    "B'.C'",
+    "A'.B'"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Minterms 0000, 0001, 0100, 0101 form a 2x2 block in which only B and D vary. A = 0 and C = 0 are constant, so F = A'.C'.",
+   "why_wrong": [
+    "",
+    "Covers minterms 0, 2, 4, 6, not 0, 1, 4, 5.",
+    "Covers minterms 0, 1, 8, 9, not 0, 1, 4, 5.",
+    "Covers only minterms 0-3, which includes 2 and 3 where F is 0."
+   ],
+   "key": "PHY-U3-163"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A K-map shows 1s at minterms 1, 3, 9 and 11 only. Which is the minimal SOP for F(A,B,C,D)?",
+   "code": "",
+   "options": [
+    "B.D",
+    "B'.D'",
+    "A'.D",
+    "B'.D"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "1 = 0001, 3 = 0011, 9 = 1001, 11 = 1011. A and C vary, while B = 0 and D = 1 stay fixed. So F = B'.D.",
+   "why_wrong": [
+    "Covers minterms 5, 7, 13, 15, not 1, 3, 9, 11.",
+    "Covers minterms 0, 2, 8, 10, the other column.",
+    "Covers minterms 1, 3, 5, 7, which includes 5 and 7 where F is 0.",
+    ""
+   ],
+   "key": "PHY-U3-164"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A safety interlock output is 1 at minterms 0, 1, 2, 5, 8, 9 and 10 of (A, B, C, D) and 0 elsewhere. Which is its minimal SOP?",
+   "code": "",
+   "options": [
+    "B'.D' + B'.C'",
+    "B'.D' + B'.C' + A'.D",
+    "B'.D' + B'.C' + A'.C'.D",
+    "B'.D' + B'.C' + C'.D"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Corners 0, 2, 8, 10 give B'.D'; 0, 1, 8, 9 give B'.C'. Minterm 5 (0101) can only pair with 1 (0001), giving A'.C'.D. Together: B'.D' + B'.C' + A'.C'.D.",
+   "why_wrong": [
+    "Leaves out the 1 at minterm 5 (0101), which neither pair covers.",
+    "A'.D also covers 3 and 7, where F is 0.",
+    "",
+    "C'.D also covers minterm 13, where F is 0."
+   ],
+   "key": "PHY-U3-165"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A controller output is 1 for minterms 4, 5, 6, 7, 12 and is a don't-care for minterms 13, 14, 15; it is 0 elsewhere. Using the don't-cares, what is the minimal SOP?",
+   "code": "",
+   "options": [
+    "B",
+    "A'.B",
+    "B.C'",
+    "A.B"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Cells 4, 5, 6, 7, 12, 13, 14, 15 (the whole B = 1 row-block) form a group of 8 when the don't-cares are used. Only B is constant, so F = B.",
+   "why_wrong": [
+    "",
+    "Misses minterm 12, which must be covered.",
+    "Misses minterms 6 and 7, which must be covered.",
+    "Misses minterms 4-7, which must be covered."
+   ],
+   "key": "PHY-U3-166"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A 4-variable K-map has 1s at minterms 0, 2, 5, 7, 8, 10, 13 and 15. What is the minimal SOP?",
+   "code": "",
+   "options": [
+    "B.D' + B'.D",
+    "B'.D' + B.D'",
+    "A'.B'.D' + A.B.D",
+    "B'.D' + B.D"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Corner cells 0, 2, 8, 10 give B'.D'. The central block 5, 7, 13, 15 gives B.D. So F = B'.D' + B.D, the XNOR of B and D.",
+   "why_wrong": [
+    "This is B XOR D, the complement of F.",
+    "Reduces to D', which is 1 on rows where F is 0.",
+    "Only two of the four cells in each group are covered; this is not minimal.",
+    ""
+   ],
+   "key": "PHY-U3-167"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In a 4-variable K-map, a valid group of 8 adjacent 1s yields a product term with how many literals?",
+   "code": "",
+   "options": [
+    "3",
+    "1",
+    "2",
+    "4"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Each doubling of the group removes one variable. 8 cells = 2^3 remove 3 of the 4 variables, leaving a single literal.",
+   "why_wrong": [
+    "Three variables are eliminated, not kept.",
+    "",
+    "This would come from a group of 4 cells.",
+    "This would be a single isolated minterm."
+   ],
+   "key": "PHY-U3-168"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a 4-variable K-map, which set of minterms forms a single valid group of 4 (using wrap-around adjacency)?",
+   "code": "",
+   "options": [
+    "0, 2, 8, 10",
+    "0, 5, 10, 15",
+    "1, 6, 11, 12",
+    "3, 5, 10, 12"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The four corners 0000, 0010, 1000, 1010 are adjacent by wrap-around in both directions. B = 0 and D = 0 stay constant, giving B'.D'.",
+   "why_wrong": [
+    "",
+    "These cells are not adjacent in a block; no two variables stay constant.",
+    "These cells are scattered; no two variables stay constant.",
+    "These cells are scattered; no two variables stay constant."
+   ],
+   "key": "PHY-U3-169"
+  },
+  {
+   "topic": "K-map",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A 4-variable function is given as the product of M(5, 7, 13, 15). Grouping the 0s in the K-map, what is the minimal POS?",
+   "code": "",
+   "options": [
+    "B + D",
+    "B' + D'",
+    "B'.D'",
+    "B' + D"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Zeros at 0101, 0111, 1101, 1111 have B = 1 and D = 1 constant, so F' = B.D. By De Morgan, F = B' + D'.",
+   "why_wrong": [
+    "Uses un-complemented variables; the zeros have B = 1 and D = 1, so each literal is complemented.",
+    "",
+    "Gives a product instead of a sum; POS terms are OR terms.",
+    "Complements only one of the two variables."
+   ],
+   "key": "PHY-U3-170"
+  }
+ ]
+}

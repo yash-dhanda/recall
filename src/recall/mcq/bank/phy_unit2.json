@@ -1,0 +1,3687 @@
+{
+ "subject_code": "PHY",
+ "unit": 2,
+ "unit_label": "Fundamentals of Electricity and Devices",
+ "questions": [
+  {
+   "topic": "Ohm's law",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which equation represents Ohm's law?",
+   "code": "",
+   "options": [
+    "V = I x R",
+    "V = I / R",
+    "I = V x R",
+    "R = V x I"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Ohm's law says the voltage across a conductor is directly proportional to the current, V = I x R.",
+   "why_wrong": [
+    "",
+    "This divides current by resistance, which gives nothing physical.",
+    "Current is V / R, not the product V x R.",
+    "Resistance is V / I; multiplying V and I gives power."
+   ],
+   "key": "PHY-U2-001"
+  },
+  {
+   "topic": "Ohm's law",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What is the SI unit of electrical resistance?",
+   "code": "",
+   "options": [
+    "siemens",
+    "ohm",
+    "henry",
+    "farad"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Resistance is measured in ohms, the volt per ampere.",
+   "why_wrong": [
+    "Siemens is the unit of conductance, the reciprocal of resistance.",
+    "",
+    "Henry is the unit of inductance.",
+    "Farad is the unit of capacitance."
+   ],
+   "key": "PHY-U2-002"
+  },
+  {
+   "topic": "Ohm's law",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Ohm's law is obeyed by a metallic conductor only if which quantity is kept constant?",
+   "code": "",
+   "options": [
+    "current in the wire",
+    "voltage across the wire",
+    "temperature",
+    "power loss in the wire"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Resistance of a metal rises with temperature, so V/I stays constant only if temperature is constant.",
+   "why_wrong": [
+    "If current were held fixed there would be no V-I relation to test.",
+    "If voltage were held fixed there would be no V-I relation to test.",
+    "",
+    "Power changes with V and I; holding it fixed does not keep R constant."
+   ],
+   "key": "PHY-U2-003"
+  },
+  {
+   "topic": "Ohm's law",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A 4 kohm resistor has 12 V across it. What current flows through it?",
+   "code": "",
+   "options": [
+    "0.33 mA",
+    "48 mA",
+    "8 mA",
+    "3 mA"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "I = V/R = 12 V / 4 kohm = 3 mA.",
+   "why_wrong": [
+    "This inverts the formula (R/V).",
+    "This multiplies V and R instead of dividing.",
+    "This subtracts R from V instead of dividing.",
+    ""
+   ],
+   "key": "PHY-U2-004"
+  },
+  {
+   "topic": "Ohm's law",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following does NOT obey Ohm's law, i.e. has a non-linear V-I curve?",
+   "code": "",
+   "options": [
+    "PN junction diode",
+    "Carbon resistor at constant temperature",
+    "Copper wire at constant temperature",
+    "Nichrome wire at constant temperature"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A diode's current rises exponentially with voltage, so V/I is not constant; the others are linear (ohmic) at constant temperature.",
+   "why_wrong": [
+    "",
+    "A resistor at constant temperature has a straight-line V-I curve.",
+    "Copper at constant temperature is ohmic.",
+    "Nichrome at constant temperature is ohmic."
+   ],
+   "key": "PHY-U2-005"
+  },
+  {
+   "topic": "Kirchhoff's laws",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What does Kirchhoff's current law (KCL) state?",
+   "code": "",
+   "options": [
+    "The algebraic sum of voltages in a loop is zero",
+    "The algebraic sum of currents at a node is zero",
+    "Current is proportional to voltage",
+    "Total power in a node is zero"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "KCL states that the current entering a node equals the current leaving it, so the algebraic sum is zero.",
+   "why_wrong": [
+    "That is Kirchhoff's voltage law, not KCL.",
+    "",
+    "That is Ohm's law.",
+    "KCL concerns currents, not power."
+   ],
+   "key": "PHY-U2-006"
+  },
+  {
+   "topic": "Kirchhoff's laws",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "What does Kirchhoff's voltage law (KVL) state?",
+   "code": "",
+   "options": [
+    "The sum of currents at a node is zero",
+    "Voltage is proportional to current",
+    "Voltages around a loop sum to zero",
+    "The sum of resistances around a loop is zero"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "KVL says the rises and drops of potential around any closed loop add up to zero.",
+   "why_wrong": [
+    "That is KCL.",
+    "That is Ohm's law.",
+    "",
+    "KVL concerns voltages, not a sum of resistances."
+   ],
+   "key": "PHY-U2-007"
+  },
+  {
+   "topic": "Kirchhoff's laws",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "KCL is applied at which part of a circuit?",
+   "code": "",
+   "options": [
+    "a closed loop",
+    "a single resistor only",
+    "the battery only",
+    "a node (junction)"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "KCL deals with currents meeting at a junction, called a node.",
+   "why_wrong": [
+    "Closed loops are where KVL is applied.",
+    "KCL is not limited to one resistor; it applies at junctions.",
+    "KCL applies wherever branches meet, not just at a source.",
+    ""
+   ],
+   "key": "PHY-U2-008"
+  },
+  {
+   "topic": "Kirchhoff's laws",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which pairing of law and conservation principle is correct?",
+   "code": "",
+   "options": [
+    "KCL - charge; KVL - energy",
+    "KCL - energy; KVL - charge",
+    "KCL - momentum; KVL - charge",
+    "KCL - mass; KVL - power"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Charge cannot accumulate at a node (KCL), and energy gained around a loop equals energy lost (KVL).",
+   "why_wrong": [
+    "",
+    "This reverses the two principles.",
+    "Momentum conservation is not behind either law.",
+    "Mass is not what KCL conserves, and KVL is about energy, not power."
+   ],
+   "key": "PHY-U2-009"
+  },
+  {
+   "topic": "Kirchhoff's laws",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "At a node, 5 A and 3 A enter and 2 A plus an unknown current I leave. Find I.",
+   "code": "",
+   "options": [
+    "10 A",
+    "6 A",
+    "16 A",
+    "4 A"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "By KCL, in = out: 5 + 3 = 2 + I, so I = 6 A.",
+   "why_wrong": [
+    "This adds the 2 A to the incoming current instead of subtracting.",
+    "",
+    "This multiplies the currents, which KCL never does.",
+    "This takes 8/2, dividing instead of subtracting."
+   ],
+   "key": "PHY-U2-010"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Two resistors R1 and R2 are in series across V. The voltage across R2 is:",
+   "code": "",
+   "options": [
+    "V x R1 / (R1 + R2)",
+    "V x (R1 + R2) / R2",
+    "V x R2 / (R1 + R2)",
+    "V x R2 / R1"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The same current flows through both, so each gets a share of V proportional to its resistance: V2 = V x R2/(R1+R2).",
+   "why_wrong": [
+    "This is the voltage across R1, not R2.",
+    "This inverts the ratio and would exceed V.",
+    "",
+    "The denominator must be the total resistance R1 + R2."
+   ],
+   "key": "PHY-U2-011"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The voltage division rule applies to resistors connected in:",
+   "code": "",
+   "options": [
+    "parallel",
+    "a bridge only",
+    "a loop with no source only",
+    "series"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "In series the same current flows, so voltage divides in proportion to resistance.",
+   "why_wrong": [
+    "In parallel the voltage is the same across each; current divides instead.",
+    "A voltage divider is a series arrangement, not specifically a bridge.",
+    "A divider needs a source to divide.",
+    ""
+   ],
+   "key": "PHY-U2-012"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In a series voltage divider, which resistor gets the largest voltage drop?",
+   "code": "",
+   "options": [
+    "the one with the largest resistance",
+    "the one with the smallest resistance",
+    "the one nearest the source",
+    "all get equal drops"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "V = I x R with the same I, so the largest R drops the most voltage.",
+   "why_wrong": [
+    "",
+    "The smallest resistance drops the least voltage.",
+    "Position in the chain does not matter.",
+    "Drops are equal only when the resistances are equal."
+   ],
+   "key": "PHY-U2-013"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A 10 V source feeds R1 = 2 kohm and R2 = 3 kohm in series. What is the voltage across R2?",
+   "code": "",
+   "options": [
+    "4 V",
+    "6 V",
+    "5 V",
+    "15 V"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "V2 = 10 x 3/(2+3) = 6 V.",
+   "why_wrong": [
+    "That is the drop across R1.",
+    "",
+    "That assumes an equal split, but R2 is larger.",
+    "This divides by R1 alone instead of R1 + R2."
+   ],
+   "key": "PHY-U2-014"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A 12 V source drives 1 kohm, 2 kohm and 3 kohm in series. What is the voltage across the 3 kohm resistor?",
+   "code": "",
+   "options": [
+    "2 V",
+    "4 V",
+    "6 V",
+    "12 V"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Total R = 6 kohm, so V3 = 12 x 3/6 = 6 V.",
+   "why_wrong": [
+    "That is the drop across the 1 kohm resistor.",
+    "That is the drop across the 2 kohm resistor.",
+    "",
+    "This ignores the other resistors, but they share the voltage."
+   ],
+   "key": "PHY-U2-015"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Two resistors R1 and R2 are in parallel and carry total current I. The current through R1 is:",
+   "code": "",
+   "options": [
+    "I x R1 / (R1 + R2)",
+    "I x (R1 + R2) / R2",
+    "I x R1 x R2",
+    "I x R2 / (R1 + R2)"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "In parallel the current through a branch is the total times the OTHER resistor over the sum.",
+   "why_wrong": [
+    "This is the current through R2.",
+    "This inverts the ratio and exceeds I.",
+    "A product of resistances is not a divider ratio.",
+    ""
+   ],
+   "key": "PHY-U2-016"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The current division rule applies to resistors connected in:",
+   "code": "",
+   "options": [
+    "parallel",
+    "series",
+    "no particular arrangement",
+    "a single branch"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In parallel the same voltage is across every branch and the total current splits.",
+   "why_wrong": [
+    "",
+    "In series the same current flows, so there is nothing to divide.",
+    "The rule needs branches that share both end nodes.",
+    "A single branch carries the whole current."
+   ],
+   "key": "PHY-U2-017"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In two parallel branches, the larger current flows through the branch with:",
+   "code": "",
+   "options": [
+    "the larger resistance",
+    "the smaller resistance",
+    "the longer wire",
+    "the same current in both always"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "With equal voltage, I = V/R is larger for the smaller R.",
+   "why_wrong": [
+    "Larger resistance carries less current.",
+    "",
+    "Wire length matters only through resistance.",
+    "Currents are equal only if the resistances are equal."
+   ],
+   "key": "PHY-U2-018"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A total current of 9 mA splits between 1 kohm (R1) and 2 kohm (R2) in parallel. Find the current through R1.",
+   "code": "",
+   "options": [
+    "3 mA",
+    "4.5 mA",
+    "6 mA",
+    "18 mA"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "I1 = 9 x R2/(R1+R2) = 9 x 2/3 = 6 mA.",
+   "why_wrong": [
+    "That is the current in R2.",
+    "This assumes an equal split, ignoring the resistor values.",
+    "",
+    "This multiplies by R2 without dividing by the sum."
+   ],
+   "key": "PHY-U2-019"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A 12 mA current enters three identical 6 kohm resistors in parallel. Each resistor carries:",
+   "code": "",
+   "options": [
+    "12 mA",
+    "6 mA",
+    "36 mA",
+    "4 mA"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Identical branches share equally: 12/3 = 4 mA each.",
+   "why_wrong": [
+    "That would be the whole current in each branch.",
+    "This divides by 2, as if there were only two branches.",
+    "This multiplies by 3 instead of dividing.",
+    ""
+   ],
+   "key": "PHY-U2-020"
+  },
+  {
+   "topic": "PN junction diode: working",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A PN junction is formed by joining:",
+   "code": "",
+   "options": [
+    "a p-type and an n-type crystal",
+    "two p-type semiconductor crystals",
+    "two n-type semiconductor crystals",
+    "a metal and an insulating oxide"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A PN junction is the interface between p-type and n-type material in one crystal.",
+   "why_wrong": [
+    "",
+    "Two p-type pieces form no junction.",
+    "Two n-type pieces form no junction.",
+    "A metal-insulator contact is not a PN junction."
+   ],
+   "key": "PHY-U2-021"
+  },
+  {
+   "topic": "PN junction diode: working",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The depletion region of a PN junction contains:",
+   "code": "",
+   "options": [
+    "only free electrons and no ions",
+    "fixed ions with few free carriers",
+    "only free holes and no ions",
+    "a dense cloud of free carriers"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Diffusing carriers recombine near the junction, leaving fixed donor and acceptor ions.",
+   "why_wrong": [
+    "Free electrons diffuse out and recombine there.",
+    "",
+    "Holes also diffuse across and recombine.",
+    "The region is 'depleted' of carriers, hence its name."
+   ],
+   "key": "PHY-U2-022"
+  },
+  {
+   "topic": "PN junction diode: working",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The majority charge carriers in n-type semiconductor are:",
+   "code": "",
+   "options": [
+    "holes",
+    "protons",
+    "electrons",
+    "positive ions"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Donor doping supplies extra free electrons, which are the majority carriers.",
+   "why_wrong": [
+    "Holes are the majority carriers in p-type.",
+    "Protons are fixed in nuclei and do not conduct.",
+    "",
+    "Ions are fixed in the lattice."
+   ],
+   "key": "PHY-U2-023"
+  },
+  {
+   "topic": "PN junction diode: working",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "When a PN junction is forward biased, the depletion region:",
+   "code": "",
+   "options": [
+    "becomes wider",
+    "stays unchanged",
+    "disappears completely always",
+    "becomes narrower"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The forward voltage opposes the barrier potential, so the depletion region shrinks and current flows.",
+   "why_wrong": [
+    "Widening happens under reverse bias.",
+    "Bias changes the width.",
+    "The region only shrinks, it does not always vanish.",
+    ""
+   ],
+   "key": "PHY-U2-024"
+  },
+  {
+   "topic": "PN junction diode: working",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement about a reverse-biased PN junction is NOT true?",
+   "code": "",
+   "options": [
+    "A large current flows due to majority carriers",
+    "The depletion region widens",
+    "A small leakage current flows due to minority carriers",
+    "The barrier potential increases"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Reverse bias blocks majority carriers; only a tiny minority-carrier current flows.",
+   "why_wrong": [
+    "",
+    "That is true: reverse bias widens the region.",
+    "That is true: this is the reverse saturation current.",
+    "That is true: the barrier height is raised by the reverse bias."
+   ],
+   "key": "PHY-U2-025"
+  },
+  {
+   "topic": "Diode characteristics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The approximate cut-in (knee) voltage of a silicon diode is:",
+   "code": "",
+   "options": [
+    "0.3 V",
+    "0.7 V",
+    "1.5 V",
+    "5 V"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Silicon diodes start conducting appreciably at about 0.7 V.",
+   "why_wrong": [
+    "0.3 V is the value for germanium.",
+    "",
+    "1.5 V is well above the silicon knee.",
+    "5 V is not a knee value for silicon."
+   ],
+   "key": "PHY-U2-026"
+  },
+  {
+   "topic": "Diode characteristics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The approximate cut-in voltage of a germanium diode is:",
+   "code": "",
+   "options": [
+    "0.7 V",
+    "1.1 V",
+    "0.3 V",
+    "3 V"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Germanium's smaller band gap gives a knee near 0.3 V.",
+   "why_wrong": [
+    "0.7 V is the value for silicon.",
+    "1.1 V is not a knee value; 1.1 eV is silicon's band gap, a different quantity.",
+    "",
+    "3 V is far too high for a Ge knee."
+   ],
+   "key": "PHY-U2-027"
+  },
+  {
+   "topic": "Diode characteristics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which diode is designed to operate in the reverse breakdown region?",
+   "code": "",
+   "options": [
+    "Rectifier diode",
+    "Point-contact diode",
+    "Tunnel diode only in forward bias",
+    "Zener diode"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A Zener diode is built to break down at a sharp, stable reverse voltage and hold it.",
+   "why_wrong": [
+    "A rectifier diode is damaged by breakdown.",
+    "Point-contact diodes are not meant for breakdown operation.",
+    "Tunnel diodes work in forward bias, not for reverse regulation.",
+    ""
+   ],
+   "key": "PHY-U2-028"
+  },
+  {
+   "topic": "Diode characteristics",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A silicon diode (0.7 V drop) is in series with a 5 V source and a 430 ohm resistor, forward biased. What is the current?",
+   "code": "",
+   "options": [
+    "10 mA",
+    "11.6 mA",
+    "13.3 mA",
+    "1.63 mA"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "I = (5 - 0.7)/430 = 4.3/430 = 10 mA.",
+   "why_wrong": [
+    "",
+    "This ignores the 0.7 V diode drop.",
+    "This adds the diode drop instead of subtracting it.",
+    "This uses only the 0.7 V instead of the 4.3 V across the resistor."
+   ],
+   "key": "PHY-U2-029"
+  },
+  {
+   "topic": "Diode characteristics",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The reverse saturation current of a diode roughly doubles for every temperature rise of about:",
+   "code": "",
+   "options": [
+    "1 degree C",
+    "10 degrees C",
+    "50 degrees C",
+    "100 degrees C"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Minority-carrier generation rises quickly with temperature; the standard rule is a doubling per 10 C.",
+   "why_wrong": [
+    "1 C is far too small a step for doubling.",
+    "",
+    "50 C is too large; the current would grow far more than twofold.",
+    "100 C is much too large."
+   ],
+   "key": "PHY-U2-030"
+  },
+  {
+   "topic": "Rectifiers",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A rectifier is a circuit that converts:",
+   "code": "",
+   "options": [
+    "DC into AC",
+    "low voltage into high voltage",
+    "AC into DC",
+    "DC into a higher DC"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A rectifier uses diodes to pass current in one direction, turning AC into pulsating DC.",
+   "why_wrong": [
+    "That is an inverter's job.",
+    "Changing voltage level is done by a transformer.",
+    "",
+    "Boosting DC is a converter's job."
+   ],
+   "key": "PHY-U2-031"
+  },
+  {
+   "topic": "Rectifiers",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "How many diodes are used in a bridge rectifier?",
+   "code": "",
+   "options": [
+    "1",
+    "2",
+    "6",
+    "4"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A bridge rectifier uses four diodes in a bridge configuration.",
+   "why_wrong": [
+    "One diode makes a half-wave rectifier.",
+    "Two diodes make a centre-tapped full-wave rectifier.",
+    "Six diodes are used in three-phase bridges.",
+    ""
+   ],
+   "key": "PHY-U2-032"
+  },
+  {
+   "topic": "Rectifiers",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A half-wave rectifier conducts during:",
+   "code": "",
+   "options": [
+    "one half of each cycle",
+    "both halves of each full cycle",
+    "only at the negative peak",
+    "the whole input cycle"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "With a single diode, only one polarity of the input passes.",
+   "why_wrong": [
+    "",
+    "That describes a full-wave rectifier.",
+    "It conducts on the half it is biased for, not just one peak.",
+    "It blocks the opposite half cycle."
+   ],
+   "key": "PHY-U2-033"
+  },
+  {
+   "topic": "Rectifiers",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A full-wave rectifier is fed from 50 Hz mains. What is the ripple frequency of its output?",
+   "code": "",
+   "options": [
+    "50 Hz",
+    "100 Hz",
+    "25 Hz",
+    "200 Hz"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A full-wave rectifier produces two output pulses per input cycle, so ripple frequency is 2 x 50 = 100 Hz.",
+   "why_wrong": [
+    "50 Hz is the ripple of a half-wave rectifier.",
+    "",
+    "25 Hz would arise by halving the frequency.",
+    "200 Hz would need four pulses per cycle."
+   ],
+   "key": "PHY-U2-034"
+  },
+  {
+   "topic": "Rectifiers",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "An ideal half-wave rectifier has peak input 10 V. What is its average DC output?",
+   "code": "",
+   "options": [
+    "6.37 V",
+    "7.07 V",
+    "3.18 V",
+    "5.00 V"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Vdc = Vm/pi = 10/3.1416 = 3.18 V.",
+   "why_wrong": [
+    "That is the average of a full-wave rectifier.",
+    "That is the RMS of the sine input, not the rectified average.",
+    "",
+    "Vm/2 is not the half-wave average; the correct divisor is pi."
+   ],
+   "key": "PHY-U2-035"
+  },
+  {
+   "topic": "Diode as a switch",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A forward-biased diode (above cut-in) behaves like:",
+   "code": "",
+   "options": [
+    "an open-circuit switch",
+    "a charged capacitor",
+    "an ideal inductor",
+    "a closed switch"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "It conducts with only a small drop, like a closed switch.",
+   "why_wrong": [
+    "An open switch is the reverse-bias behaviour.",
+    "A capacitor stores charge rather than acting as a switch.",
+    "An inductor stores energy in a magnetic field.",
+    ""
+   ],
+   "key": "PHY-U2-036"
+  },
+  {
+   "topic": "Diode as a switch",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A reverse-biased diode behaves like:",
+   "code": "",
+   "options": [
+    "an open switch",
+    "a closed switch",
+    "a battery",
+    "a short circuit"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Only a tiny leakage current flows, so it is essentially an open switch.",
+   "why_wrong": [
+    "",
+    "A closed switch is the forward-bias case.",
+    "It does not supply energy.",
+    "A short circuit would carry large current."
+   ],
+   "key": "PHY-U2-037"
+  },
+  {
+   "topic": "Diode as a switch",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "For a silicon diode to switch ON, the forward voltage must exceed about:",
+   "code": "",
+   "options": [
+    "0.3 V",
+    "0.7 V",
+    "7 V",
+    "0 V exactly"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The forward bias must overcome the barrier potential of about 0.7 V for silicon.",
+   "why_wrong": [
+    "0.3 V is the germanium figure.",
+    "",
+    "7 V is not the cut-in voltage of silicon.",
+    "A real diode needs the knee voltage, not just any positive value."
+   ],
+   "key": "PHY-U2-038"
+  },
+  {
+   "topic": "Diode as a switch",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A silicon diode is connected in reverse across a 5 V source in series with a 1 kohm load. The load current is approximately:",
+   "code": "",
+   "options": [
+    "about 4.3 mA",
+    "about 5 mA",
+    "0 mA (only leakage)",
+    "about 5.7 mA"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The diode blocks, so only nanoamp leakage flows and the load sees almost no current.",
+   "why_wrong": [
+    "4.3 mA would flow if the diode were forward biased.",
+    "5 mA would need an ideal conducting diode.",
+    "",
+    "5.7 mA adds the diode drop wrongly and also ignores blocking."
+   ],
+   "key": "PHY-U2-039"
+  },
+  {
+   "topic": "Diode as a switch",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which is a limitation of a real diode as a switch compared with an ideal switch?",
+   "code": "",
+   "options": [
+    "it conducts with infinite resistance",
+    "it needs no bias",
+    "it has zero reverse current at all temperatures",
+    "a forward voltage drop (about 0.7 V for Si)"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A real diode drops about 0.7 V when ON and has small leakage when OFF.",
+   "why_wrong": [
+    "An ON diode has low resistance, not infinite.",
+    "A diode needs correct bias to switch.",
+    "Reverse leakage exists and rises with temperature.",
+    ""
+   ],
+   "key": "PHY-U2-040"
+  },
+  {
+   "topic": "BJT basics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The three terminals of a BJT are:",
+   "code": "",
+   "options": [
+    "emitter, base, collector",
+    "source, gate and drain terminals",
+    "anode, cathode and gate terminals",
+    "input, output and ground pins"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A BJT has an emitter, a base and a collector.",
+   "why_wrong": [
+    "",
+    "Source, gate and drain are MOSFET terminals.",
+    "Anode, cathode and gate are thyristor terminals.",
+    "Those are generic circuit terms, not BJT terminals."
+   ],
+   "key": "PHY-U2-041"
+  },
+  {
+   "topic": "BJT basics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The two basic types of BJT are:",
+   "code": "",
+   "options": [
+    "NMOS and PMOS",
+    "NPN and PNP",
+    "PIN and NIP only",
+    "JFET and MOSFET"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "BJTs come as NPN or PNP depending on the doping sequence.",
+   "why_wrong": [
+    "NMOS and PMOS are MOSFET types.",
+    "",
+    "PIN is a photodiode structure.",
+    "JFET and MOSFET are different transistor families."
+   ],
+   "key": "PHY-U2-042"
+  },
+  {
+   "topic": "BJT basics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which region of a BJT is made thinnest and lightly doped?",
+   "code": "",
+   "options": [
+    "emitter",
+    "collector",
+    "base",
+    "substrate"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A thin, lightly doped base lets most carriers pass through to the collector.",
+   "why_wrong": [
+    "The emitter is heavily doped.",
+    "The collector is moderately doped and the widest.",
+    "",
+    "A BJT has no substrate region in this sense."
+   ],
+   "key": "PHY-U2-043"
+  },
+  {
+   "topic": "BJT basics",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "For a BJT in the active region, the junctions are biased as:",
+   "code": "",
+   "options": [
+    "both forward",
+    "both reverse",
+    "emitter-base reverse, collector-base forward",
+    "emitter-base forward, collector-base reverse"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Active operation, used for amplification, needs EB forward and CB reverse.",
+   "why_wrong": [
+    "Both forward is saturation.",
+    "Both reverse is cut-off.",
+    "That is the reverse-active mode, not normal operation.",
+    ""
+   ],
+   "key": "PHY-U2-044"
+  },
+  {
+   "topic": "BJT basics",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A BJT has current gain beta = 100 and base current 40 uA. What is the collector current?",
+   "code": "",
+   "options": [
+    "4 mA",
+    "0.4 mA",
+    "40 mA",
+    "4.04 mA"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "IC = beta x IB = 100 x 40 uA = 4 mA.",
+   "why_wrong": [
+    "",
+    "This is off by a factor of ten in the conversion.",
+    "This is off by a factor of ten in the opposite direction.",
+    "That is the emitter current (beta+1) x IB, not IC."
+   ],
+   "key": "PHY-U2-045"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "CMOS stands for:",
+   "code": "",
+   "options": [
+    "Common Metal Oxide Semiconductor",
+    "Complementary Metal Oxide Semiconductor",
+    "Complementary Memory Operating System",
+    "Controlled Metal Oxide Switch unit"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "CMOS combines complementary NMOS and PMOS transistors.",
+   "why_wrong": [
+    "The first word is 'complementary', not 'common'.",
+    "",
+    "It is not a memory or operating-system term.",
+    "'Controlled' is not part of the name."
+   ],
+   "key": "PHY-U2-046"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A CMOS gate is built using pairs of:",
+   "code": "",
+   "options": [
+    "NPN and PNP transistors",
+    "diodes and resistors in pairs",
+    "NMOS and PMOS pairs",
+    "JFETs and thyristors only"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Complementary means n-channel and p-channel MOSFETs work as a pair.",
+   "why_wrong": [
+    "NPN and PNP are BJTs.",
+    "CMOS gates use transistors, not diode-resistor logic.",
+    "",
+    "JFETs are not the basis of CMOS."
+   ],
+   "key": "PHY-U2-047"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why does a CMOS inverter dissipate very little static power?",
+   "code": "",
+   "options": [
+    "Both of its transistors are always on",
+    "It is built without any transistors",
+    "It has a large resistor to ground",
+    "One of its two transistors is always off"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "With one transistor off, there is no DC path from supply to ground.",
+   "why_wrong": [
+    "Both on would short the supply to ground.",
+    "The inverter is made from transistors.",
+    "No resistor is needed; the off transistor blocks the path.",
+    ""
+   ],
+   "key": "PHY-U2-048"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In a CMOS inverter, when the input is logic HIGH:",
+   "code": "",
+   "options": [
+    "NMOS is ON, PMOS is OFF, and the output is LOW",
+    "PMOS is ON, NMOS is OFF, and the output is HIGH",
+    "both are ON and the output is LOW",
+    "both are OFF and the output is HIGH"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A high input turns on the NMOS and turns off the PMOS, pulling the output to ground.",
+   "why_wrong": [
+    "",
+    "This is the input-LOW case.",
+    "Both on would create a supply-to-ground short.",
+    "Both off would leave the output floating."
+   ],
+   "key": "PHY-U2-049"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which is NOT an advantage of CMOS technology?",
+   "code": "",
+   "options": [
+    "very low static power dissipation",
+    "high static power drain",
+    "good noise immunity",
+    "high packing density"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "CMOS is valued for LOW static power, so high static dissipation is not an advantage.",
+   "why_wrong": [
+    "This is a real advantage of CMOS.",
+    "",
+    "High noise immunity is a real advantage.",
+    "CMOS scales well, giving high packing density."
+   ],
+   "key": "PHY-U2-050"
+  },
+  {
+   "topic": "RAM",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "RAM is a type of ______ memory.",
+   "code": "",
+   "options": [
+    "non-volatile",
+    "read-only",
+    "volatile",
+    "optical"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "RAM loses its contents when power is removed.",
+   "why_wrong": [
+    "Non-volatile memory keeps data without power.",
+    "RAM can be both read and written.",
+    "",
+    "RAM is semiconductor memory, not optical."
+   ],
+   "key": "PHY-U2-051"
+  },
+  {
+   "topic": "RAM",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "RAM stands for:",
+   "code": "",
+   "options": [
+    "Read Always Memory",
+    "Rapid Access Module",
+    "Registered Array Memory",
+    "Random Access Memory"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Any location can be accessed in about the same time, hence random access.",
+   "why_wrong": [
+    "'Read Always Memory' is invented; the R means random.",
+    "'Rapid Access Module' is not the standard term.",
+    "'Registered Array Memory' is not the standard term.",
+    ""
+   ],
+   "key": "PHY-U2-052"
+  },
+  {
+   "topic": "RAM",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A DRAM cell stores a bit as:",
+   "code": "",
+   "options": [
+    "charge on a capacitor",
+    "magnetic polarity",
+    "charge trapped in a floating gate",
+    "light intensity"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A DRAM cell uses one transistor and one capacitor, whose charge must be refreshed.",
+   "why_wrong": [
+    "",
+    "Magnetic storage is used in hard disks.",
+    "Floating-gate storage is used in flash memory.",
+    "Light is used in optical media."
+   ],
+   "key": "PHY-U2-053"
+  },
+  {
+   "topic": "RAM",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement correctly contrasts SRAM with DRAM?",
+   "code": "",
+   "options": [
+    "SRAM is slower and needs refresh",
+    "SRAM is faster, needs no refresh",
+    "SRAM stores each bit on a capacitor",
+    "SRAM is cheaper per bit than DRAM"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "SRAM uses flip-flop cells, so it is faster, needs no refresh, but costs more per bit.",
+   "why_wrong": [
+    "SRAM does not need refresh and is faster.",
+    "",
+    "The capacitor-per-bit cell belongs to DRAM.",
+    "SRAM is more expensive per bit because each cell uses about six transistors."
+   ],
+   "key": "PHY-U2-054"
+  },
+  {
+   "topic": "RAM",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "CPU cache memory is typically built from:",
+   "code": "",
+   "options": [
+    "DRAM",
+    "flash",
+    "SRAM",
+    "magnetic tape"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Cache needs high speed with no refresh, which suits SRAM.",
+   "why_wrong": [
+    "DRAM is used for main memory.",
+    "Flash is too slow for cache.",
+    "",
+    "Tape is far too slow."
+   ],
+   "key": "PHY-U2-055"
+  },
+  {
+   "topic": "SSD",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A solid-state drive has:",
+   "code": "",
+   "options": [
+    "a spinning platter",
+    "a moving read head",
+    "a rotating motor",
+    "no moving parts"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "SSDs store data in semiconductor chips, so nothing moves.",
+   "why_wrong": [
+    "Spinning platters are in hard disks.",
+    "Read heads are in hard disks.",
+    "Motors are in hard disks.",
+    ""
+   ],
+   "key": "PHY-U2-056"
+  },
+  {
+   "topic": "SSD",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "SSDs mainly use which type of memory?",
+   "code": "",
+   "options": [
+    "NAND flash",
+    "SRAM",
+    "magnetic core",
+    "optical disc"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "SSDs store data in non-volatile NAND flash chips.",
+   "why_wrong": [
+    "",
+    "SRAM is volatile.",
+    "Core memory is obsolete.",
+    "Optical discs are different media."
+   ],
+   "key": "PHY-U2-057"
+  },
+  {
+   "topic": "SSD",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Compared with an HDD, an SSD generally has:",
+   "code": "",
+   "options": [
+    "higher access latency",
+    "lower access latency",
+    "a mechanical seek time",
+    "lower resistance to shock"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "With no head movement, SSD random access is much faster.",
+   "why_wrong": [
+    "HDD latency is higher because of seek and rotation.",
+    "",
+    "Seek time belongs to HDDs.",
+    "SSDs are more shock resistant."
+   ],
+   "key": "PHY-U2-058"
+  },
+  {
+   "topic": "SSD",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT true of an SSD?",
+   "code": "",
+   "options": [
+    "It is a non-volatile store",
+    "It uses flash memory cells",
+    "It spins magnetic platters",
+    "It has no moving parts at all"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Spinning magnetic platters describe an HDD, not an SSD.",
+   "why_wrong": [
+    "True: data survives power-off.",
+    "True: SSDs use flash cells.",
+    "",
+    "True: SSDs are fully electronic."
+   ],
+   "key": "PHY-U2-059"
+  },
+  {
+   "topic": "SSD",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A flash memory cell stores a bit by:",
+   "code": "",
+   "options": [
+    "charging a leaky capacitor",
+    "magnetising a tiny domain",
+    "reflecting a laser beam",
+    "trapping charge in a gate"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Charge trapped on the floating gate changes the transistor's threshold voltage and stays without power.",
+   "why_wrong": [
+    "That describes DRAM.",
+    "That describes a hard disk.",
+    "That describes optical discs.",
+    ""
+   ],
+   "key": "PHY-U2-060"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The TPU is an AI accelerator developed by:",
+   "code": "",
+   "options": [
+    "Google",
+    "Intel",
+    "AMD",
+    "Samsung"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "TPU stands for Tensor Processing Unit and was made by Google.",
+   "why_wrong": [
+    "",
+    "Intel does not make the TPU.",
+    "AMD does not make the TPU.",
+    "Samsung does not make the TPU."
+   ],
+   "key": "PHY-U2-061"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "NPU stands for:",
+   "code": "",
+   "options": [
+    "Network Power Unit",
+    "Neural Processing Unit",
+    "Numeric Print Unit",
+    "Node Programming Unit"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "An NPU is a chip designed to run neural-network workloads.",
+   "why_wrong": [
+    "Nothing like a 'Network Power Unit' exists as an AI chip class.",
+    "",
+    "'Numeric Print Unit' is not a real chip class.",
+    "'Node Programming Unit' is not a real chip class."
+   ],
+   "key": "PHY-U2-062"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "AI accelerators are optimised mainly for which operation?",
+   "code": "",
+   "options": [
+    "text editing",
+    "file compression only",
+    "matrix multiplication",
+    "disk scheduling"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Neural networks are dominated by large matrix multiplications.",
+   "why_wrong": [
+    "Not a core workload for accelerators.",
+    "Compression is not what they are optimised for.",
+    "",
+    "Disk scheduling is an OS task."
+   ],
+   "key": "PHY-U2-063"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of these is NOT an AI accelerator?",
+   "code": "",
+   "options": [
+    "Google TPU unit",
+    "Mobile NPU chip",
+    "GPU Tensor Core",
+    "a router chip"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A router forwards packets; it does not accelerate neural-network math.",
+   "why_wrong": [
+    "TPU is an AI accelerator.",
+    "An NPU is an AI accelerator.",
+    "Tensor Cores accelerate matrix math for AI.",
+    ""
+   ],
+   "key": "PHY-U2-064"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why do many AI accelerators use low-precision numbers such as INT8 or FP16?",
+   "code": "",
+   "options": [
+    "Higher throughput per watt, little accuracy loss",
+    "They always give mathematically exact results",
+    "They need much more memory per stored value",
+    "Every CPU instruction set requires them"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Smaller numbers use less energy and memory, and inference tolerates it.",
+   "why_wrong": [
+    "",
+    "Low precision is approximate, not exact.",
+    "Lower precision needs less memory.",
+    "No CPU rule requires it."
+   ],
+   "key": "PHY-U2-065"
+  },
+  {
+   "topic": "Sensors in IoT",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A sensor is a device that converts:",
+   "code": "",
+   "options": [
+    "an electrical signal into sound",
+    "a physical quantity into a signal",
+    "AC power into DC power",
+    "data files into text"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Sensors measure physical quantities such as temperature or light and output electrical signals.",
+   "why_wrong": [
+    "That would be a speaker.",
+    "",
+    "That is a rectifier.",
+    "That is not what a sensor does."
+   ],
+   "key": "PHY-U2-066"
+  },
+  {
+   "topic": "Sensors in IoT",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which sensor is used to measure temperature?",
+   "code": "",
+   "options": [
+    "LDR",
+    "PIR sensor",
+    "thermistor",
+    "ultrasonic sensor"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A thermistor's resistance changes with temperature.",
+   "why_wrong": [
+    "LDR senses light.",
+    "PIR senses infrared motion.",
+    "",
+    "Ultrasonic senses distance."
+   ],
+   "key": "PHY-U2-067"
+  },
+  {
+   "topic": "Sensors in IoT",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A PIR sensor is used to detect:",
+   "code": "",
+   "options": [
+    "humidity in the air",
+    "gas leakage in a room",
+    "magnetic fields nearby",
+    "motion of warm bodies"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "It detects changes in infrared radiation from moving warm bodies.",
+   "why_wrong": [
+    "That needs a humidity sensor.",
+    "That needs a gas sensor.",
+    "That needs a Hall sensor.",
+    ""
+   ],
+   "key": "PHY-U2-068"
+  },
+  {
+   "topic": "Sensors in IoT",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The resistance of an LDR (light dependent resistor):",
+   "code": "",
+   "options": [
+    "falls as light intensity rises",
+    "rises as light intensity rises",
+    "stays constant in light",
+    "depends only on temperature"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Light creates carriers in the LDR material, lowering its resistance.",
+   "why_wrong": [
+    "",
+    "It falls, not rises, with more light.",
+    "Resistance changes with light.",
+    "Light is its main influence."
+   ],
+   "key": "PHY-U2-069"
+  },
+  {
+   "topic": "Sensors in IoT",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "An ultrasonic sensor receives an echo 10 ms after emitting a pulse. If sound travels at 343 m/s, the distance to the object is:",
+   "code": "",
+   "options": [
+    "3.43 m",
+    "1.72 m",
+    "0.86 m",
+    "34.3 m"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The pulse travels there and back, so d = 343 x 0.010 / 2 = 1.72 m.",
+   "why_wrong": [
+    "This forgets that the time is for a round trip.",
+    "",
+    "This halves twice.",
+    "This has a wrong power of ten."
+   ],
+   "key": "PHY-U2-070"
+  },
+  {
+   "topic": "Computer networks",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "LAN stands for:",
+   "code": "",
+   "options": [
+    "Long Access Network",
+    "Large Area Node",
+    "Local Area Network",
+    "Linked Address Network"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A LAN covers a small area such as a room or building.",
+   "why_wrong": [
+    "'Long Access Network' is not the term; LANs are local.",
+    "'Large Area Node' contradicts the local scope of a LAN.",
+    "",
+    "'Linked Address Network' is not the standard expansion."
+   ],
+   "key": "PHY-U2-071"
+  },
+  {
+   "topic": "Computer networks",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "An IP address is used to:",
+   "code": "",
+   "options": [
+    "store files on a disk",
+    "amplify a weak signal",
+    "encrypt a whole disk",
+    "identify a host on a network"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "An IP address uniquely identifies a host on a network.",
+   "why_wrong": [
+    "Storing files is done by storage devices, not addresses.",
+    "Amplifying signals is a repeater's job.",
+    "Disk encryption is a software feature unrelated to IP.",
+    ""
+   ],
+   "key": "PHY-U2-072"
+  },
+  {
+   "topic": "Computer networks",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In which topology are all nodes connected to a central hub or switch?",
+   "code": "",
+   "options": [
+    "star",
+    "bus",
+    "ring",
+    "mesh"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A star has a central device connecting every node.",
+   "why_wrong": [
+    "",
+    "A bus uses a single shared cable.",
+    "A ring connects nodes in a circle.",
+    "A mesh connects nodes to many others."
+   ],
+   "key": "PHY-U2-073"
+  },
+  {
+   "topic": "Computer networks",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which device forwards data packets between different networks?",
+   "code": "",
+   "options": [
+    "repeater",
+    "router",
+    "hub",
+    "modem only"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A router uses IP addresses to move packets between networks.",
+   "why_wrong": [
+    "A repeater only regenerates signals.",
+    "",
+    "A hub broadcasts to all ports.",
+    "A modem converts signals, but does not route."
+   ],
+   "key": "PHY-U2-074"
+  },
+  {
+   "topic": "Computer networks",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "How does a WAN differ from a LAN?",
+   "code": "",
+   "options": [
+    "A WAN is always smaller",
+    "A WAN never uses routers",
+    "A WAN covers a much larger area",
+    "A WAN works only without cables"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A WAN spans cities or countries, while a LAN spans a small area.",
+   "why_wrong": [
+    "It is the larger one.",
+    "WANs rely on routers.",
+    "",
+    "WANs use cables, fibre and wireless links."
+   ],
+   "key": "PHY-U2-075"
+  },
+  {
+   "topic": "Optical fiber",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "An optical fibre carries information in the form of:",
+   "code": "",
+   "options": [
+    "electric current",
+    "sound waves",
+    "magnetic flux",
+    "light pulses"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Information is sent as light signals through glass or plastic.",
+   "why_wrong": [
+    "Electric current is used in copper cables.",
+    "Sound is mechanical.",
+    "Magnetic flux is not used.",
+    ""
+   ],
+   "key": "PHY-U2-076"
+  },
+  {
+   "topic": "Optical fiber",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Light is guided in an optical fibre by:",
+   "code": "",
+   "options": [
+    "total internal reflection",
+    "diffraction at edges",
+    "polarisation of light",
+    "the photoelectric effect"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Rays reflect at the core-cladding boundary through total internal reflection.",
+   "why_wrong": [
+    "",
+    "Diffraction spreads light.",
+    "Polarisation does not guide light.",
+    "The photoelectric effect releases electrons."
+   ],
+   "key": "PHY-U2-077"
+  },
+  {
+   "topic": "Optical fiber",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Total internal reflection occurs when light travels from:",
+   "code": "",
+   "options": [
+    "a rarer to a denser medium at any angle",
+    "a denser to a rarer medium above the critical angle",
+    "a denser to a rarer medium below the critical angle",
+    "one medium to an identical one"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Both a denser-to-rarer path and an angle greater than the critical angle are needed.",
+   "why_wrong": [
+    "TIR cannot occur going to a denser medium.",
+    "",
+    "Below the critical angle part of the light refracts out.",
+    "No boundary means no reflection."
+   ],
+   "key": "PHY-U2-078"
+  },
+  {
+   "topic": "Optical fiber",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In an optical fibre, the core has ______ refractive index than the cladding.",
+   "code": "",
+   "options": [
+    "a lower",
+    "the same",
+    "a higher",
+    "a zero"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The higher core index allows total internal reflection at the boundary.",
+   "why_wrong": [
+    "A lower core index would let light escape.",
+    "Equal indices give no guiding.",
+    "",
+    "A refractive index cannot be zero."
+   ],
+   "key": "PHY-U2-079"
+  },
+  {
+   "topic": "Optical fiber",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Single-mode fibre is preferred over multimode fibre for:",
+   "code": "",
+   "options": [
+    "very short links only",
+    "low-cost short wiring",
+    "carrying electric power",
+    "long, high-bandwidth links"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Its small core allows one mode, cutting dispersion over long distances.",
+   "why_wrong": [
+    "Multimode is typical for short links.",
+    "Multimode is cheaper for short runs.",
+    "Fibres carry light, not power.",
+    ""
+   ],
+   "key": "PHY-U2-080"
+  },
+  {
+   "topic": "Wireless communication",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Wireless communication transmits information using:",
+   "code": "",
+   "options": [
+    "electromagnetic waves",
+    "copper wires only",
+    "optical fibre cables",
+    "water pipes"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Radio and microwave signals travel as EM waves through space.",
+   "why_wrong": [
+    "",
+    "Copper wires are wired.",
+    "Fibre is a guided wired medium.",
+    "Not a medium."
+   ],
+   "key": "PHY-U2-081"
+  },
+  {
+   "topic": "Wireless communication",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which frequency band is commonly used by Wi-Fi?",
+   "code": "",
+   "options": [
+    "50 Hz",
+    "2.4 GHz",
+    "2.4 kHz",
+    "240 THz"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Wi-Fi uses the 2.4 GHz and 5 GHz bands.",
+   "why_wrong": [
+    "50 Hz is mains frequency.",
+    "",
+    "2.4 kHz is far too low.",
+    "240 THz is about optical frequency."
+   ],
+   "key": "PHY-U2-082"
+  },
+  {
+   "topic": "Wireless communication",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which technology is meant for short-range wireless links of roughly 10 m?",
+   "code": "",
+   "options": [
+    "Satellite link",
+    "Cellular 5G macro cell",
+    "Bluetooth",
+    "Microwave relay"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Bluetooth is a personal-area technology with a typical range of about 10 m.",
+   "why_wrong": [
+    "Satellite covers huge distances.",
+    "A macro cell covers kilometres.",
+    "",
+    "Microwave relays cover tens of km."
+   ],
+   "key": "PHY-U2-083"
+  },
+  {
+   "topic": "Wireless communication",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A Wi-Fi signal has frequency 2.4 GHz. Its wavelength in air is about (c = 3 x 10^8 m/s):",
+   "code": "",
+   "options": [
+    "1.25 cm",
+    "125 cm",
+    "1.25 m",
+    "12.5 cm"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Wavelength = c/f = 3e8 / 2.4e9 = 0.125 m = 12.5 cm.",
+   "why_wrong": [
+    "This has a decimal slip by a factor of ten.",
+    "This is a factor of ten too big.",
+    "That is c/f with 240 MHz instead of 2.4 GHz.",
+    ""
+   ],
+   "key": "PHY-U2-084"
+  },
+  {
+   "topic": "Wireless communication",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which technology allows contactless data exchange over a few centimetres?",
+   "code": "",
+   "options": [
+    "NFC",
+    "Wi-Fi",
+    "LTE",
+    "GPS"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Near Field Communication works over about 4 cm, e.g. contactless payment.",
+   "why_wrong": [
+    "",
+    "Wi-Fi covers tens of metres.",
+    "LTE is a cellular technology.",
+    "GPS receives satellite signals."
+   ],
+   "key": "PHY-U2-085"
+  },
+  {
+   "topic": "CPU vs GPU",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A GPU typically has:",
+   "code": "",
+   "options": [
+    "only one complex core",
+    "thousands of simple cores",
+    "no cores",
+    "a few very complex cores only"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "GPUs use many small cores for parallel work.",
+   "why_wrong": [
+    "That describes older CPUs.",
+    "",
+    "Every processor has cores.",
+    "That describes CPUs."
+   ],
+   "key": "PHY-U2-086"
+  },
+  {
+   "topic": "CPU vs GPU",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A CPU typically has:",
+   "code": "",
+   "options": [
+    "thousands of tiny cores",
+    "no cache",
+    "a few powerful cores",
+    "only vector units"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "CPUs have a small number of strong cores with large caches.",
+   "why_wrong": [
+    "That describes GPUs.",
+    "CPUs have caches.",
+    "",
+    "CPUs have general-purpose units."
+   ],
+   "key": "PHY-U2-087"
+  },
+  {
+   "topic": "CPU vs GPU",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which workload suits a GPU best?",
+   "code": "",
+   "options": [
+    "a long sequential task with many branches",
+    "running an operating-system scheduler",
+    "handling hardware interrupts",
+    "a massively parallel task like matrix products"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The same operation applied to large data sets maps well to thousands of GPU cores.",
+   "why_wrong": [
+    "Branch-heavy sequential work suits a CPU.",
+    "OS scheduling suits a CPU.",
+    "Interrupts are handled by CPUs.",
+    ""
+   ],
+   "key": "PHY-U2-088"
+  },
+  {
+   "topic": "CPU vs GPU",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which task is better suited to a CPU than to a GPU?",
+   "code": "",
+   "options": [
+    "branch-heavy sequential logic",
+    "rendering millions of pixels",
+    "training a neural network",
+    "video frame processing"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "CPUs have strong single-thread performance and handle complex control flow.",
+   "why_wrong": [
+    "",
+    "Pixels are parallel, so GPUs excel.",
+    "Training is parallel, so GPUs excel.",
+    "Frames are parallel work, suited to GPUs."
+   ],
+   "key": "PHY-U2-089"
+  },
+  {
+   "topic": "CPU vs GPU",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A CPU is generally designed to minimise ______ while a GPU is designed to maximise ______.",
+   "code": "",
+   "options": [
+    "throughput; latency",
+    "latency; overall throughput",
+    "power; clock speed",
+    "cost; core count"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "CPUs optimise single-task latency; GPUs optimise total work completed per second.",
+   "why_wrong": [
+    "This reverses the two goals.",
+    "",
+    "Power and clock speed are design constraints, not the core CPU-vs-GPU goals.",
+    "Cost and core count are not the defining design goals."
+   ],
+   "key": "PHY-U2-090"
+  },
+  {
+   "topic": "Ohm and Kirchhoff laws",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 24 V supply drives 1 kohm, 3 kohm and 8 kohm resistors in series. What is the voltage across the 3 kohm resistor?",
+   "code": "",
+   "options": [
+    "18 V",
+    "9 V",
+    "12 V",
+    "6 V"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Total R = 1+3+8 = 12 kohm, so I = 24/12 = 2 mA. The drop across 3 kohm is 2 mA x 3 kohm = 6 V.",
+   "why_wrong": [
+    "Ignores the 8 kohm resistor, using 24 x 3/(1+3).",
+    "Uses 24 x 3/8, treating the 8 kohm resistor as the whole circuit.",
+    "Assumes the supply splits equally between two resistors.",
+    ""
+   ],
+   "key": "PHY-U2-101"
+  },
+  {
+   "topic": "Ohm and Kirchhoff laws",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "At a node, 8 mA flows in through wire 1, 3 mA flows out through wire 2, and 2 mA flows in through wire 3. A fourth wire carries the remaining current away from the node. What is its current?",
+   "code": "",
+   "options": [
+    "13 mA",
+    "7 mA",
+    "3 mA",
+    "9 mA"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "By KCL, current in = current out: 8 + 2 = 10 mA in, 3 mA out through wire 2, so the fourth wire carries 10 - 3 = 7 mA away.",
+   "why_wrong": [
+    "Adds all three currents without regard to direction.",
+    "",
+    "Subtracts both 3 mA and 2 mA from 8 mA, treating the 2 mA inflow as an outflow.",
+    "Adds 8 and 3 and subtracts 2, treating the 3 mA outflow as an inflow."
+   ],
+   "key": "PHY-U2-102"
+  },
+  {
+   "topic": "Ohm and Kirchhoff laws",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 12 V battery and a 5 V battery are connected in one series loop with their positive terminals facing each other (opposing), along with a total resistance of 700 ohm. What is the loop current?",
+   "code": "",
+   "options": [
+    "10 mA",
+    "24.3 mA",
+    "17.1 mA",
+    "7.1 mA"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "KVL around the loop: 12 - 5 - I x 700 = 0, so I = 7/700 = 10 mA. Opposing EMFs subtract.",
+   "why_wrong": [
+    "",
+    "Adds the EMFs (17 V) instead of subtracting for opposing sources.",
+    "Uses only the 12 V battery and ignores the opposing 5 V battery.",
+    "Uses only the 5 V battery's EMF."
+   ],
+   "key": "PHY-U2-103"
+  },
+  {
+   "topic": "Ohm and Kirchhoff laws",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 60 W, 240 V lamp (treat its operating resistance as constant) is connected by mistake to a 120 V supply. What power does it dissipate?",
+   "code": "",
+   "options": [
+    "30 W",
+    "60 W",
+    "15 W",
+    "7.5 W"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "R = V^2/P = 240^2/60 = 960 ohm. At 120 V, P = 120^2/960 = 15 W. Power scales with the square of voltage.",
+   "why_wrong": [
+    "Halves the power because the voltage is halved.",
+    "Ignores the change in supply voltage.",
+    "",
+    "Divides the power by 8, applying a cube law instead of V squared."
+   ],
+   "key": "PHY-U2-104"
+  },
+  {
+   "topic": "Ohm and Kirchhoff laws",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "In a Wheatstone bridge, the top arms are P = 100 ohm and Q = 200 ohm, and the bottom arms are R = 300 ohm (under P) and S (under Q). The galvanometer shows zero deflection. What is S?",
+   "code": "",
+   "options": [
+    "150 ohm",
+    "600 ohm",
+    "500 ohm",
+    "66.7 ohm"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Balance requires P/Q = R/S, so S = Q x R/P = 200 x 300/100 = 600 ohm.",
+   "why_wrong": [
+    "Inverts the ratio, using S = P x R/Q.",
+    "",
+    "Adds Q and R instead of using the ratio.",
+    "Uses S = P x Q/R, pairing the wrong arms."
+   ],
+   "key": "PHY-U2-105"
+  },
+  {
+   "topic": "Ohm and Kirchhoff laws",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 10 V source feeds a node through 2 kohm, a 4 V source feeds the same node through 3 kohm, and a 6 kohm resistor connects the node to ground. What is the node voltage?",
+   "code": "",
+   "options": [
+    "7.00 V",
+    "2.91 V",
+    "6.33 V",
+    "5.00 V"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "KCL at the node: (10-V)/2 + (4-V)/3 = V/6 (kohm). Multiplying by 6: 30 - 3V + 8 - 2V = V, so V = 38/6 = 6.33 V.",
+   "why_wrong": [
+    "Takes the simple average of the two source voltages.",
+    "Weights the sources by resistance instead of conductance.",
+    "",
+    "Ignores the 4 V branch's different series resistance and the load, taking half of 10 V."
+   ],
+   "key": "PHY-U2-106"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 12 V supply feeds a divider of R1 = 10 kohm (top) and R2 = 5 kohm (bottom). A 10 kohm load is connected across R2. What is the output voltage?",
+   "code": "",
+   "options": [
+    "4.0 V",
+    "6.0 V",
+    "2.4 V",
+    "3.0 V"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "R2 in parallel with the 10 kohm load = 3.33 kohm. Vout = 12 x 3.33/(10+3.33) = 3.0 V.",
+   "why_wrong": [
+    "Uses the unloaded divider formula and ignores the load.",
+    "Places the load across R1 instead of R2.",
+    "Adds the load in series with R2 in the denominator.",
+    ""
+   ],
+   "key": "PHY-U2-107"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 5 V supply feeds a 10 kohm fixed resistor on top and a light-dependent resistor (LDR) on the bottom. In darkness the LDR is 100 kohm. What is Vout across the LDR?",
+   "code": "",
+   "options": [
+    "4.55 V",
+    "0.45 V",
+    "2.50 V",
+    "5.00 V"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Vout = 5 x 100/(10+100) = 4.55 V. The larger resistance takes the larger share of the supply.",
+   "why_wrong": [
+    "",
+    "Takes the voltage across the 10 kohm resistor instead of the LDR.",
+    "Assumes an equal split between the two resistors.",
+    "Ignores the 10 kohm resistor, treating the LDR as the whole circuit."
+   ],
+   "key": "PHY-U2-108"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "You need an unloaded 3.3 V tap from a 5 V supply using a two-resistor divider with total resistance 10 kohm. What should the bottom resistor R2 (across the output) be?",
+   "code": "",
+   "options": [
+    "3.4 kohm",
+    "6.6 kohm",
+    "3.3 kohm",
+    "5.0 kohm"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Vout/Vin = R2/(R1+R2) = 3.3/5 = 0.66, so R2 = 0.66 x 10 = 6.6 kohm and R1 = 3.4 kohm.",
+   "why_wrong": [
+    "Calculates the top resistor R1 instead of R2.",
+    "",
+    "Reads the output voltage in volts as the resistance in kohm.",
+    "Chooses equal resistors, which gives 2.5 V."
+   ],
+   "key": "PHY-U2-109"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Two dividers are connected across the same 10 V supply. Left: 1 kohm on top, 3 kohm below. Right: 2 kohm on top, 2 kohm below. What is the magnitude of the voltage between the two midpoints?",
+   "code": "",
+   "options": [
+    "2.5 V",
+    "0 V",
+    "1.25 V",
+    "5.0 V"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Left midpoint = 10 x 3/4 = 7.5 V; right midpoint = 10 x 2/4 = 5 V. The difference is 2.5 V.",
+   "why_wrong": [
+    "",
+    "Assumes the two dividers always give identical midpoints.",
+    "Halves the difference between the midpoint voltages.",
+    "Uses only the right divider's midpoint voltage."
+   ],
+   "key": "PHY-U2-110"
+  },
+  {
+   "topic": "Voltage division rule",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 9 V source drives a divider with 6 kohm on top and 3 kohm on the bottom. What is the Thevenin (source) resistance seen by a load connected to the tap?",
+   "code": "",
+   "options": [
+    "9 kohm",
+    "4.5 kohm",
+    "3 kohm",
+    "2 kohm"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "With the source shorted, R1 and R2 are in parallel: 6x3/(6+3) = 2 kohm. The open-circuit tap voltage is 3 V.",
+   "why_wrong": [
+    "Adds the resistors as if in series.",
+    "Takes the average of the two resistors.",
+    "Takes only the lower resistor.",
+    ""
+   ],
+   "key": "PHY-U2-111"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 9 mA current enters a parallel pair of 6 kohm and 3 kohm resistors. What current flows through the 6 kohm resistor?",
+   "code": "",
+   "options": [
+    "6 mA",
+    "4.5 mA",
+    "3 mA",
+    "1.5 mA"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "I(6k) = 9 x 3/(6+3) = 3 mA. The smaller resistance carries the larger current (6 mA).",
+   "why_wrong": [
+    "Swaps the branches, giving the 3 kohm branch's current.",
+    "Assumes the current splits equally.",
+    "",
+    "Divides 9 mA by 6 directly."
+   ],
+   "key": "PHY-U2-112"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A total of 22 A divides among three parallel resistors of 12 ohm, 6 ohm and 4 ohm. What current flows in the 4 ohm branch?",
+   "code": "",
+   "options": [
+    "7.33 A",
+    "4.0 A",
+    "3.67 A",
+    "11 A"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Total conductance = 1/12+1/6+1/4 = 0.5 S. I(4 ohm) = 22 x (1/4)/0.5 = 11 A.",
+   "why_wrong": [
+    "Assumes the current is shared equally by the three branches.",
+    "Uses 22 x 4/(12+6+4), treating them as series.",
+    "Gives the 12 ohm branch's current instead.",
+    ""
+   ],
+   "key": "PHY-U2-113"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A moving-coil meter has Rg = 100 ohm and full-scale current 1 mA. To make it read 10 mA full scale, what shunt resistance is needed?",
+   "code": "",
+   "options": [
+    "10.0 ohm",
+    "9.09 ohm",
+    "11.1 ohm",
+    "900 ohm"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The shunt carries 9 mA at the same voltage as the meter: Rsh = Ig x Rg/(I - Ig) = 1 x 100/9 = 11.1 ohm.",
+   "why_wrong": [
+    "Uses Rg x Ig/I = 100 x 1/10, forgetting the meter's own current.",
+    "Divides by 11, using (I + Ig) as the shunt current.",
+    "",
+    "Uses Rg x (n - 1), the series multiplier formula."
+   ],
+   "key": "PHY-U2-114"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 20 V source is in series with an 8 ohm resistor, which feeds a 10 ohm and 40 ohm pair in parallel. What current flows through the 40 ohm resistor?",
+   "code": "",
+   "options": [
+    "0.25 A",
+    "1.00 A",
+    "0.50 A",
+    "1.25 A"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Parallel pair = 8 ohm, so total R = 16 ohm and I = 1.25 A. I(40 ohm) = 1.25 x 10/(10+40) = 0.25 A.",
+   "why_wrong": [
+    "",
+    "Swaps the branches, giving the 10 ohm resistor's current.",
+    "Applies 20 V directly across the 40 ohm resistor.",
+    "Reports the total circuit current."
+   ],
+   "key": "PHY-U2-115"
+  },
+  {
+   "topic": "Current division rule",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 2 ohm and an 8 ohm resistor are connected in parallel across an ideal source. What is the ratio of power dissipated in the 2 ohm to that in the 8 ohm?",
+   "code": "",
+   "options": [
+    "16 : 1",
+    "4 : 1",
+    "1 : 4",
+    "2 : 1"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Same V, so P = V^2/R: the ratio is 8/2 = 4. Check: currents are in ratio 4:1, so I^2 R gives 16 x 2 : 1 x 8 = 4 : 1.",
+   "why_wrong": [
+    "Squares the current ratio but forgets to weight by resistance.",
+    "",
+    "Inverts the ratio.",
+    "Takes the square root of the ratio."
+   ],
+   "key": "PHY-U2-116"
+  },
+  {
+   "topic": "PN junction diode characteristics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "At 300 K, an ideal Si diode (n = 1, Shockley equation) has its forward voltage raised by 60 mV in the exponential region. By what factor does the current rise?",
+   "code": "",
+   "options": [
+    "About 2.3",
+    "About 1.06",
+    "About 10.2",
+    "About 100"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "VT = kT/e = 0.02585 V. The factor is exp(0.060/0.02585) = exp(2.32) = 10.2, roughly one decade per 60 mV.",
+   "why_wrong": [
+    "Takes the exponent V/VT = 2.32 as the factor itself.",
+    "Evaluates exp(0.06) without dividing by VT.",
+    "",
+    "Assumes 60 mV per decade applies twice."
+   ],
+   "key": "PHY-U2-117"
+  },
+  {
+   "topic": "PN junction diode characteristics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A Si diode has a reverse saturation current of 2 nA at 25 C, which doubles for every 10 C rise. What is it at 65 C?",
+   "code": "",
+   "options": [
+    "32 nA",
+    "8 nA",
+    "16 nA",
+    "64 nA"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The rise of 40 C gives 4 doublings: 2 x 2^4 = 32 nA.",
+   "why_wrong": [
+    "",
+    "Applies only two doublings.",
+    "Applies only three doublings.",
+    "Applies five doublings."
+   ],
+   "key": "PHY-U2-118"
+  },
+  {
+   "topic": "PN junction diode characteristics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A Si diode drops 0.70 V at 25 C at a fixed current. Taking the forward drop to fall by 2 mV per C, what is the drop at 75 C?",
+   "code": "",
+   "options": [
+    "0.80 V",
+    "0.60 V",
+    "0.65 V",
+    "0.70 V"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Delta T = 50 C, so change = -2 mV x 50 = -100 mV. The drop becomes 0.70 - 0.10 = 0.60 V.",
+   "why_wrong": [
+    "Gets the sign wrong and adds the change.",
+    "",
+    "Uses 1 mV per C instead of 2 mV per C.",
+    "Assumes the forward drop is independent of temperature."
+   ],
+   "key": "PHY-U2-119"
+  },
+  {
+   "topic": "PN junction diode characteristics",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 5 V source feeds 470 ohm in series with a parallel pair: a Ge diode (0.3 V) and a Si diode (0.7 V), both forward biased. What is the total current?",
+   "code": "",
+   "options": [
+    "9.15 mA",
+    "19.1 mA",
+    "8.51 mA",
+    "10.0 mA"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The Ge diode conducts first and clamps the node at about 0.3 V, so the Si diode stays essentially off. I = (5 - 0.3)/470 = 10.0 mA.",
+   "why_wrong": [
+    "Uses the Si diode's 0.7 V drop for the whole current.",
+    "Adds the currents each diode would carry alone.",
+    "Subtracts both diode drops (1.0 V) in series.",
+    ""
+   ],
+   "key": "PHY-U2-120"
+  },
+  {
+   "topic": "PN junction diode characteristics",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which pairing correctly describes Zener and avalanche breakdown in a reverse-biased PN junction?",
+   "code": "",
+   "options": [
+    "Avalanche: heavy doping, narrow depletion, negative temperature coefficient",
+    "Zener: light doping, wide depletion, positive temperature coefficient",
+    "Zener: heavy doping, narrow depletion, tunnelling, negative temperature coefficient",
+    "Avalanche: occurs only below about 3 V through field emission"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Zener breakdown comes from field-assisted tunnelling in a heavily doped junction with a very narrow depletion layer, giving a negative temperature coefficient. Avalanche multiplication occurs in wider layers at higher voltages with a positive coefficient.",
+   "why_wrong": [
+    "Avalanche needs a wider depletion region so carriers can gain energy; its coefficient is positive.",
+    "Reverses the characteristics; this describes avalanche.",
+    "",
+    "Avalanche typically happens above about 6 V; field emission is the Zener mechanism."
+   ],
+   "key": "PHY-U2-121"
+  },
+  {
+   "topic": "PN junction diode characteristics",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about an unbiased PN junction is NOT true?",
+   "code": "",
+   "options": [
+    "Drift current exactly balances diffusion current, so net current is zero",
+    "Positive donor and negative acceptor ions are left uncovered in the depletion region",
+    "The barrier potential opposes the diffusion of majority carriers",
+    "A voltmeter across the diode terminals reads the barrier potential of about 0.7 V"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The barrier potential cannot be measured with a voltmeter, because contact potentials at the metal-semiconductor junctions cancel it, so the net open-circuit voltage is zero. The other three statements are standard facts.",
+   "why_wrong": [
+    "This is true: the equilibrium condition.",
+    "This is true: they create the built-in field.",
+    "This is true: it blocks majority carriers.",
+    ""
+   ],
+   "key": "PHY-U2-122"
+  },
+  {
+   "topic": "Rectifiers and diode switch",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A half-wave rectifier is fed from a 12 V rms secondary through a Si diode (0.7 V drop). What is the average (DC) load voltage?",
+   "code": "",
+   "options": [
+    "5.18 V",
+    "5.40 V",
+    "10.36 V",
+    "3.82 V"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Vp = 12 x sqrt2 = 16.97 V. Peak at the load = 16.97 - 0.7 = 16.27 V, so Vdc = 16.27/pi = 5.18 V.",
+   "why_wrong": [
+    "",
+    "Ignores the diode drop.",
+    "Uses the full-wave formula 2Vp/pi.",
+    "Treats the rms value as the peak value and ignores the drop."
+   ],
+   "key": "PHY-U2-123"
+  },
+  {
+   "topic": "Rectifiers and diode switch",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A bridge rectifier uses four Si diodes (0.7 V each) on a 12 V rms secondary. What is the average load voltage?",
+   "code": "",
+   "options": [
+    "10.80 V",
+    "9.91 V",
+    "10.36 V",
+    "4.96 V"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Vp = 16.97 V; two diodes conduct in each half-cycle, so the load peak = 16.97 - 1.4 = 15.57 V. Vdc = 2 x 15.57/pi = 9.91 V.",
+   "why_wrong": [
+    "Ignores the diode drops.",
+    "",
+    "Subtracts only one diode drop; two conduct at a time.",
+    "Applies the half-wave formula Vp/pi."
+   ],
+   "key": "PHY-U2-124"
+  },
+  {
+   "topic": "Rectifiers and diode switch",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A centre-tap full-wave rectifier uses a 12-0-12 V rms secondary (24 V rms end to end). Neglecting the diode drop, what peak inverse voltage must each diode withstand?",
+   "code": "",
+   "options": [
+    "17.0 V",
+    "33.9 V",
+    "24.0 V",
+    "67.9 V"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "In a centre-tap circuit the off diode sees both halves in series: PIV = 2 x Vm(half) = 2 x 12 x sqrt2 = 33.9 V.",
+   "why_wrong": [
+    "Uses only the peak of one half-winding.",
+    "",
+    "Uses the end-to-end rms value.",
+    "Uses twice the peak of the full 24 V winding."
+   ],
+   "key": "PHY-U2-125"
+  },
+  {
+   "topic": "Rectifiers and diode switch",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a two-input diode OR gate, inputs A = 5 V and B = 0 V drive the anodes of two Si diodes (0.7 V drop). Their cathodes join at the output, which has a resistor to ground. What is the output voltage?",
+   "code": "",
+   "options": [
+    "5.0 V",
+    "5.7 V",
+    "0.7 V",
+    "4.3 V"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The diode at the 5 V input conducts and the other is reverse biased. Vout = 5 - 0.7 = 4.3 V.",
+   "why_wrong": [
+    "Ignores the forward drop of the conducting diode.",
+    "Adds the diode drop instead of subtracting it.",
+    "Takes the diode drop as the output.",
+    ""
+   ],
+   "key": "PHY-U2-126"
+  },
+  {
+   "topic": "Rectifiers and diode switch",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A bridge rectifier is fed from 50 Hz mains and supplies 10 mA to a load through a 1000 uF filter capacitor. Using Vpp = I/(f C) with f the ripple frequency, what is the peak-to-peak ripple?",
+   "code": "",
+   "options": [
+    "0.2 V",
+    "0.05 V",
+    "0.1 V",
+    "1.0 V"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A full-wave rectifier doubles the ripple frequency to 100 Hz. Vpp = 0.01/(100 x 0.001) = 0.1 V.",
+   "why_wrong": [
+    "Uses 50 Hz as the ripple frequency, as for half-wave.",
+    "Halves the result by wrongly using 2 x f x C.",
+    "",
+    "Treats the capacitor as 100 uF."
+   ],
+   "key": "PHY-U2-127"
+  },
+  {
+   "topic": "Rectifiers and diode switch",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A rectifier output has Vrms = 11.1 V and Vdc = 10.0 V. What is its ripple factor, and which circuit does it match?",
+   "code": "",
+   "options": [
+    "0.48, full-wave",
+    "1.11, half-wave",
+    "1.21, half-wave",
+    "0.11, full-wave"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Ripple factor = sqrt((Vrms/Vdc)^2 - 1) = sqrt(1.232 - 1) = 0.48. This matches the ideal full-wave value of 0.482 (half-wave is 1.21).",
+   "why_wrong": [
+    "",
+    "Takes Vrms/Vdc without subtracting 1 under the root, and mislabels it.",
+    "Quotes the half-wave ripple factor without calculating.",
+    "Computes (Vrms - Vdc)/Vdc, which is not the definition."
+   ],
+   "key": "PHY-U2-128"
+  },
+  {
+   "topic": "BJT basic operation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An NPN transistor in the active region has base current 0.1 mA and beta = 50. What is the emitter current?",
+   "code": "",
+   "options": [
+    "5.0 mA",
+    "4.9 mA",
+    "0.51 mA",
+    "5.1 mA"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "IC = beta x IB = 50 x 0.1 = 5 mA. IE = IC + IB = 5.1 mA.",
+   "why_wrong": [
+    "Takes the emitter current equal to the collector current.",
+    "Subtracts the base current instead of adding.",
+    "Slips a decimal place in the calculation.",
+    ""
+   ],
+   "key": "PHY-U2-129"
+  },
+  {
+   "topic": "BJT basic operation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A fixed-bias NPN circuit has VCC = 12 V, RB = 565 kohm to the base, RC = 3 kohm, beta = 100, and VBE = 0.7 V. What is VCE?",
+   "code": "",
+   "options": [
+    "6.0 V",
+    "12.0 V",
+    "5.3 V",
+    "0.2 V"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "IB = (12 - 0.7)/565k = 20 uA, IC = 100 x 20 uA = 2 mA. VCE = 12 - 2 mA x 3 kohm = 6.0 V, so it is in the active region.",
+   "why_wrong": [
+    "",
+    "Assumes the transistor is cut off, so no drop across RC.",
+    "Subtracts a further 0.7 V from the result.",
+    "Assumes saturation, though IC x RC is only 6 V."
+   ],
+   "key": "PHY-U2-130"
+  },
+  {
+   "topic": "BJT basic operation",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An NPN switch drives an LED load of 1 kohm from VCC = 10 V. beta = 100, IB = 0.2 mA, and VCE(sat) = 0.2 V. What is the collector current?",
+   "code": "",
+   "options": [
+    "20 mA",
+    "10.2 mA",
+    "9.8 mA",
+    "0.2 mA"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "beta x IB would demand 20 mA, but the load limits IC to (10 - 0.2)/1 kohm = 9.8 mA. The transistor is saturated and acts as a closed switch.",
+   "why_wrong": [
+    "Applies beta x IB even though the transistor is saturated.",
+    "Adds VCE(sat) instead of subtracting.",
+    "",
+    "Reports the base current."
+   ],
+   "key": "PHY-U2-131"
+  },
+  {
+   "topic": "BJT basic operation",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A transistor has alpha = 0.99 and base current 50 uA. What is the collector current?",
+   "code": "",
+   "options": [
+    "5.00 mA",
+    "4.95 mA",
+    "49.5 uA",
+    "4.90 mA"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "beta = alpha/(1 - alpha) = 0.99/0.01 = 99. IC = 99 x 50 uA = 4.95 mA.",
+   "why_wrong": [
+    "Uses beta = 1/(1 - alpha) = 100.",
+    "",
+    "Multiplies the base current by alpha.",
+    "Uses beta = 98."
+   ],
+   "key": "PHY-U2-132"
+  },
+  {
+   "topic": "BJT basic operation",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which combination gives a BJT a high current gain (beta)?",
+   "code": "",
+   "options": [
+    "Lightly doped emitter, thick and heavily doped base",
+    "Heavily doped emitter, thin and lightly doped base",
+    "Equal doping in emitter and base, thick base",
+    "Lightly doped emitter, thin and heavily doped base"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A heavily doped emitter injects many carriers into the base. A thin, lightly doped base lets most reach the collector before recombining, so IC is much larger than IB.",
+   "why_wrong": [
+    "More recombination in the base loses carriers, lowering beta.",
+    "",
+    "Poor injection efficiency and heavy recombination reduce beta.",
+    "The weak emitter injects few carriers while the base recombines them."
+   ],
+   "key": "PHY-U2-133"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Why does an idle CMOS inverter draw almost no static current, whereas an NMOS inverter with a resistor load draws current when its output is low?",
+   "code": "",
+   "options": [
+    "Its PMOS and NMOS are both ON at once, so their currents cancel out exactly",
+    "The output node always floats at a voltage between the two supply rails",
+    "One complementary transistor is always off, so no DC path runs from VDD to ground",
+    "Its transistors have infinite resistance even while they are switched ON"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "For input high the NMOS is on and the PMOS is off, and vice versa for input low. There is never a steady conducting path, so only small leakage flows. The resistor-load version has a permanent path when the pull-down is on.",
+   "why_wrong": [
+    "Both being ON would create a direct VDD-to-ground path.",
+    "The output is actively driven to a rail, not floating.",
+    "",
+    "ON transistors have finite resistance; the key is that one is OFF."
+   ],
+   "key": "PHY-U2-134"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A CMOS chip's supply is lowered from 1.2 V to 0.9 V at the same clock frequency and switching activity. Its dynamic power becomes what fraction of the original?",
+   "code": "",
+   "options": [
+    "56.25 %",
+    "75 %",
+    "42.2 %",
+    "25 %"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Dynamic power = a C V^2 f, so it scales with V^2. (0.9/1.2)^2 = 0.5625 = 56.25 %.",
+   "why_wrong": [
+    "",
+    "Treats power as linear in supply voltage.",
+    "Applies a cubic dependence on voltage.",
+    "Reports the 25 % voltage cut as the remaining power, which is wrong."
+   ],
+   "key": "PHY-U2-135"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "You are building a 3-input CMOS NAND gate. Which description of its network is correct?",
+   "code": "",
+   "options": [
+    "6 transistors: 3 NMOS in parallel to ground and 3 PMOS in series to VDD",
+    "3 transistors: one NMOS, one PMOS and one pass gate",
+    "4 transistors: 2 NMOS in series and 2 PMOS in parallel",
+    "6 transistors: 3 NMOS in series to ground and 3 PMOS in parallel to VDD"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The output must go low only when all inputs are high, so the NMOS pull-down transistors are in series. The pull-up PMOS transistors are in parallel, so any low input pulls the output high.",
+   "why_wrong": [
+    "This is the 3-input NOR arrangement.",
+    "A static CMOS gate needs a complementary pair for every input.",
+    "This is a 2-input NAND, not 3-input.",
+    ""
+   ],
+   "key": "PHY-U2-136"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A CMOS inverter input is slowly ramped from 0 to VDD. Where is the supply current largest?",
+   "code": "",
+   "options": [
+    "At input = 0 V, where the NMOS is off and the PMOS is fully on",
+    "Near the threshold (about VDD/2), where both transistors conduct",
+    "At input = VDD, where the PMOS is off and the NMOS is fully on",
+    "It stays exactly the same value throughout the entire input ramp"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "At the extremes one transistor is off. Near VDD/2 both are in saturation, creating a brief direct path from VDD to ground. This is the short-circuit power component.",
+   "why_wrong": [
+    "Only leakage flows here, since the NMOS is off.",
+    "",
+    "Only leakage flows here, since the PMOS is off.",
+    "The current is near zero at the ends and peaks mid-ramp."
+   ],
+   "key": "PHY-U2-137"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "What is latch-up in a bulk CMOS chip?",
+   "code": "",
+   "options": [
+    "Gate-oxide breakdown caused by applying excess voltage to the gate",
+    "Output stuck permanently high because the transistor threshold voltage shifted",
+    "Slow output rise time caused by large interconnect wire capacitance",
+    "A parasitic PNPN thyristor triggers a low-resistance VDD-to-ground path"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The p-substrate, n-well and source/drain diffusions form parasitic PNP and NPN transistors in a thyristor. If triggered by a transient, it conducts heavily between the rails until power is cut.",
+   "why_wrong": [
+    "That is gate-oxide failure, which is a different mechanism.",
+    "Threshold drift is an ageing effect, not latch-up.",
+    "That is an interconnect delay, not a failure mode.",
+    ""
+   ],
+   "key": "PHY-U2-138"
+  },
+  {
+   "topic": "CMOS technology",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a balanced CMOS inverter designed for equal rise and fall times, why is the PMOS made wider than the NMOS?",
+   "code": "",
+   "options": [
+    "The PMOS always has a higher threshold voltage than the NMOS by definition",
+    "Electrons have lower mobility than holes in silicon, so the NMOS is weaker",
+    "Holes are less mobile than electrons, so PMOS gives less current per width",
+    "A wider PMOS reduces static power consumption by cutting leakage current"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Hole mobility in silicon is about two to three times lower than electron mobility. A PMOS of roughly 2-3 times the width gives matching drive current, so pull-up and pull-down delays are balanced.",
+   "why_wrong": [
+    "Thresholds are set separately; the width follows from mobility.",
+    "It is the other way round: electrons are more mobile.",
+    "",
+    "Width does not reduce static power; it increases capacitance."
+   ],
+   "key": "PHY-U2-139"
+  },
+  {
+   "topic": "Semiconductor memory (RAM, SSD)",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A CPU designer chooses SRAM rather than DRAM for the L1 cache. Which reason is correct?",
+   "code": "",
+   "options": [
+    "SRAM is faster, needs no refresh, and uses a 6-transistor cell",
+    "SRAM packs more bits per area and costs less per bit than DRAM",
+    "SRAM stores each bit as charge on a small leaky capacitor",
+    "SRAM keeps its stored data even after the power is removed"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "An SRAM cell is a cross-coupled latch (six transistors) that holds its state without refresh and is read quickly. The extra area and cost are acceptable for small, fast caches.",
+   "why_wrong": [
+    "",
+    "DRAM, with one transistor and one capacitor per cell, is denser and cheaper.",
+    "That describes DRAM, which must be refreshed.",
+    "SRAM is volatile just like DRAM."
+   ],
+   "key": "PHY-U2-140"
+  },
+  {
+   "topic": "Semiconductor memory (RAM, SSD)",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "How many address lines are required to address every byte of a 16 GB byte-addressable RAM?",
+   "code": "",
+   "options": [
+    "32",
+    "16",
+    "36",
+    "34"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "16 GB = 16 x 2^30 = 2^34 bytes, so 34 address lines are needed.",
+   "why_wrong": [
+    "Allows only 4 GB of address space.",
+    "Uses the capacity in GB as the number of lines.",
+    "Allows 64 GB, which is more than needed.",
+    ""
+   ],
+   "key": "PHY-U2-141"
+  },
+  {
+   "topic": "Semiconductor memory (RAM, SSD)",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A TLC NAND flash cell stores 3 bits. How many distinct threshold-voltage levels must the controller distinguish?",
+   "code": "",
+   "options": [
+    "8",
+    "3",
+    "6",
+    "16"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "n bits per cell need 2^n levels. For TLC, 2^3 = 8 levels, which is why TLC is slower and less durable than SLC.",
+   "why_wrong": [
+    "",
+    "Counts bits, not levels.",
+    "Doubles the bit count.",
+    "That is the level count for QLC, which stores 4 bits."
+   ],
+   "key": "PHY-U2-142"
+  },
+  {
+   "topic": "Semiconductor memory (RAM, SSD)",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A DDR4-3200 module has a 64-bit data bus and transfers on both clock edges. What is its peak bandwidth?",
+   "code": "",
+   "options": [
+    "12.8 GB/s",
+    "25.6 GB/s",
+    "51.2 GB/s",
+    "3.2 GB/s"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "DDR4-3200 means 3200 mega-transfers per second. Each transfer moves 8 bytes, so 3200 x 8 = 25,600 MB/s = 25.6 GB/s.",
+   "why_wrong": [
+    "Uses the 1600 MHz clock with no double-rate transfers.",
+    "",
+    "Doubles the rate again, as if there were two channels.",
+    "Counts one byte per transfer instead of eight."
+   ],
+   "key": "PHY-U2-143"
+  },
+  {
+   "topic": "Semiconductor memory (RAM, SSD)",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Why can an SSD not overwrite a flash page in place, and what does this cause?",
+   "code": "",
+   "options": [
+    "Pages cannot be read twice, so their data must be copied elsewhere first",
+    "Flash cells are volatile, so they need periodic refresh to keep their data",
+    "Erase works on whole blocks, causing garbage collection and write amplification",
+    "Writes are byte-sized while reads are block-sized, so mismatches occur"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "NAND is written in pages but erased in larger blocks. An update writes a new page and marks the old one stale, so the controller later runs garbage collection, which adds extra writes.",
+   "why_wrong": [
+    "Flash pages can be read repeatedly without issue.",
+    "NAND flash is non-volatile; refresh is a DRAM feature.",
+    "",
+    "Flash is written by page and erased by block."
+   ],
+   "key": "PHY-U2-144"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A first-generation TPU-style chip has a 256 x 256 systolic array of MAC units at 700 MHz. Counting each MAC as 2 operations, what is its peak throughput?",
+   "code": "",
+   "options": [
+    "About 46 TOPS",
+    "About 184 TOPS",
+    "About 0.09 TOPS",
+    "About 92 TOPS"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "There are 65,536 MACs, each completing every cycle: 65,536 x 700e6 = 45.9e12 MAC/s. With 2 ops per MAC that is about 92 TOPS.",
+   "why_wrong": [
+    "Counts each MAC as one operation.",
+    "Counts each MAC as four operations.",
+    "Misplaces the unit prefix by a factor of 1000.",
+    ""
+   ],
+   "key": "PHY-U2-145"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 7-billion-parameter model in FP16 is quantised to 4-bit integers (ignoring scaling overhead). What is the weight storage afterwards?",
+   "code": "",
+   "options": [
+    "7 GB",
+    "3.5 GB",
+    "1.75 GB",
+    "14 GB"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "FP16 uses 2 bytes: 7e9 x 2 = 14 GB. 4 bits is 0.5 byte: 7e9 x 0.5 = 3.5 GB, a 4x reduction.",
+   "why_wrong": [
+    "This is the size at 8 bits per weight.",
+    "",
+    "Assumes 2 bits per weight.",
+    "This is the original FP16 size."
+   ],
+   "key": "PHY-U2-146"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An edge camera runs object detection on a tiny NPU. Why do such accelerators typically use INT8 arithmetic instead of FP32?",
+   "code": "",
+   "options": [
+    "INT8 is always more accurate than FP32 for every kind of neural network",
+    "INT8 operations need no memory access at all, unlike floating point ones",
+    "Lower energy, smaller multipliers, less memory traffic, little accuracy loss",
+    "FP32 numbers cannot be used for matrix multiplication on any hardware"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Neural networks tolerate small rounding errors. INT8 multipliers are far smaller and use far less energy than FP32, and weights occupy a quarter of the memory, so more MACs fit in the same power budget.",
+   "why_wrong": [
+    "FP32 has more precision; networks merely tolerate the reduction.",
+    "Weights and activations still have to be loaded.",
+    "",
+    "FP32 works fine; it just costs more energy and area."
+   ],
+   "key": "PHY-U2-147"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "How does bfloat16 differ from IEEE FP16?",
+   "code": "",
+   "options": [
+    "It keeps FP32's 8-bit exponent, trading mantissa precision for range",
+    "It has more mantissa bits than FP16, giving it better precision",
+    "It uses a 5-bit exponent, like FP16, with a longer mantissa",
+    "It is an integer format that relies on a shared scale factor"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "bfloat16 has 1 sign, 8 exponent and 7 mantissa bits, so it covers the same range as FP32. FP16 has 5 exponent and 10 mantissa bits, so it has finer precision but narrower range.",
+   "why_wrong": [
+    "",
+    "bfloat16 has 7 mantissa bits, fewer than FP16's 10.",
+    "A 5-bit exponent is FP16's; bfloat16 uses 8.",
+    "It is a floating-point format, not integer."
+   ],
+   "key": "PHY-U2-148"
+  },
+  {
+   "topic": "AI accelerator chips",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Generating tokens one at a time (batch 1) from a 14 GB model needs every weight read once per token. With 1 TB/s of memory bandwidth, what is the best-case token rate?",
+   "code": "",
+   "options": [
+    "About 143 tokens/s",
+    "About 14 tokens/s",
+    "About 0.07 tokens/s",
+    "About 71 tokens/s"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Each token requires moving 14 GB. At 1000 GB/s the limit is 1000/14 = 71 tokens/s, regardless of the compute available. The workload is memory-bandwidth bound.",
+   "why_wrong": [
+    "Counts only half of the weights as read each token.",
+    "Uses the model size in GB as the rate.",
+    "Inverts the ratio.",
+    ""
+   ],
+   "key": "PHY-U2-149"
+  },
+  {
+   "topic": "Sensor technology in IoT",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An NTC thermistor (top, to VCC) and a fixed resistor (bottom, to ground) form a divider whose midpoint feeds an ADC. As temperature rises, what happens to the ADC reading?",
+   "code": "",
+   "options": [
+    "It falls, because the NTC resistance rises when the temperature goes up",
+    "It stays constant, because divider ratios do not depend on resistance",
+    "It rises: NTC resistance falls, so the fixed resistor takes more of VCC",
+    "It falls, because the fixed resistor's value drops as temperature rises"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "NTC resistance decreases with temperature. Vout = VCC x Rfixed/(Rntc + Rfixed), so a smaller Rntc raises Vout, and so does the ADC count.",
+   "why_wrong": [
+    "An NTC's resistance falls as temperature rises.",
+    "The ratio depends directly on the resistance values.",
+    "",
+    "The fixed resistor does not change."
+   ],
+   "key": "PHY-U2-150"
+  },
+  {
+   "topic": "Sensor technology in IoT",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 10-bit ADC with a 3.3 V reference measures a sensor output. What is the smallest voltage change it can resolve (1 LSB)?",
+   "code": "",
+   "options": [
+    "3.22 mV",
+    "12.9 mV",
+    "0.806 mV",
+    "3.30 mV"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A 10-bit ADC has 2^10 = 1024 steps. LSB = 3.3 V/1024 = 3.22 mV.",
+   "why_wrong": [
+    "",
+    "Uses an 8-bit ADC, dividing by 256.",
+    "Uses a 12-bit ADC, dividing by 4096.",
+    "Divides by 1000 instead of 1024."
+   ],
+   "key": "PHY-U2-151"
+  },
+  {
+   "topic": "Sensor technology in IoT",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An ultrasonic sensor sends a pulse and receives the echo 11.66 ms later. Taking the speed of sound as 343 m/s, how far is the object?",
+   "code": "",
+   "options": [
+    "4.00 m",
+    "2.00 m",
+    "1.00 m",
+    "0.20 m"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The pulse covers the distance twice: d = v x t/2 = 343 x 0.01166/2 = 2.00 m.",
+   "why_wrong": [
+    "Forgets that the pulse travels there and back.",
+    "",
+    "Divides by 4.",
+    "Mis-converts milliseconds to seconds, using 0.0001 s."
+   ],
+   "key": "PHY-U2-152"
+  },
+  {
+   "topic": "Sensor technology in IoT",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 120 Hz vibration is sampled by an ADC at 200 Hz with no anti-alias filter. At what frequency does it appear in the data?",
+   "code": "",
+   "options": [
+    "120 Hz",
+    "80 Hz",
+    "320 Hz",
+    "40 Hz"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Nyquist needs fs > 240 Hz, but fs = 200 Hz. The signal aliases to |120 - 200| = 80 Hz, which is indistinguishable from a real 80 Hz vibration.",
+   "why_wrong": [
+    "Assumes a correct reading even though fs is below 2 x 120 Hz.",
+    "",
+    "Adds the signal and sampling frequencies.",
+    "Arises from no valid folding of 120 Hz about the 200 Hz sampling rate."
+   ],
+   "key": "PHY-U2-153"
+  },
+  {
+   "topic": "Sensor technology in IoT",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A MEMS accelerometer lies flat and motionless on a table. What does its vertical axis read, and what does it read in free fall?",
+   "code": "",
+   "options": [
+    "About 0 g at rest, and about +1 g in free fall",
+    "About +1 g at rest and also about +1 g in free fall",
+    "About 0 g at rest and also about 0 g in free fall",
+    "About +1 g at rest, and about 0 g in free fall"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A MEMS accelerometer measures proper acceleration: the force per unit mass that acts on its proof mass. At rest the table pushes up, giving +1 g. In free fall nothing deflects the mass, so the output is about 0 g.",
+   "why_wrong": [
+    "Reverses the two cases.",
+    "Gravity does not appear as a reading during free fall.",
+    "The sensor reports 1 g from the table's reaction force at rest.",
+    ""
+   ],
+   "key": "PHY-U2-154"
+  },
+  {
+   "topic": "Computer network basics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 10 MB file (1 MB = 10^6 bytes) is sent over a 100 Mbps link of length 2000 km, with propagation speed 2 x 10^8 m/s. What is the total time to deliver it (transmission plus propagation)?",
+   "code": "",
+   "options": [
+    "0.81 s",
+    "0.80 s",
+    "0.18 s",
+    "8.01 s"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Transmission = 80e6 bits/100e6 bps = 0.8 s. Propagation = 2e6 m/2e8 m/s = 0.01 s. Total = 0.81 s.",
+   "why_wrong": [
+    "",
+    "Includes transmission delay but omits propagation delay.",
+    "Is smaller than the 0.8 s transmission time alone, so it cannot be the total.",
+    "Uses a 10 Mbps rate (ten times too slow) for the transmission time."
+   ],
+   "key": "PHY-U2-155"
+  },
+  {
+   "topic": "Computer network basics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A subnet is 192.168.10.0/26. How many usable host addresses does it provide?",
+   "code": "",
+   "options": [
+    "64",
+    "126",
+    "62",
+    "30"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A /26 leaves 6 host bits: 2^6 = 64 addresses. Subtracting the network and broadcast addresses gives 62 usable hosts.",
+   "why_wrong": [
+    "Forgets to subtract the network and broadcast addresses.",
+    "This is the figure for a /25.",
+    "",
+    "This is the figure for a /27."
+   ],
+   "key": "PHY-U2-156"
+  },
+  {
+   "topic": "Computer network basics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A live video-call app prefers UDP over TCP for its media stream. What is the best justification?",
+   "code": "",
+   "options": [
+    "UDP guarantees in-order delivery of every packet, so nothing is ever lost",
+    "Late retransmissions are useless and TCP's retransmit delays stall the stream",
+    "UDP encrypts all of the data by default, which makes it far more secure",
+    "TCP cannot carry audio and video data at all, only plain text and files"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "In real time, a packet that arrives late is useless. TCP would hold back later data while waiting for a lost one, creating stalls; UDP lets the app skip or conceal the gap.",
+   "why_wrong": [
+    "UDP offers no ordering or delivery guarantees.",
+    "",
+    "Encryption is not part of UDP.",
+    "TCP can carry any bytes; the issue is latency."
+   ],
+   "key": "PHY-U2-157"
+  },
+  {
+   "topic": "Computer network basics",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A path has 1 Gbps bandwidth and a round-trip time of 40 ms. To keep the pipe full, how much data must be in flight (the bandwidth-delay product)?",
+   "code": "",
+   "options": [
+    "40 MB",
+    "2.5 MB",
+    "0.5 MB",
+    "5 MB"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "BDP = 10^9 bps x 0.04 s = 4 x 10^7 bits = 5 x 10^6 bytes = 5 MB.",
+   "why_wrong": [
+    "Forgets to convert bits to bytes.",
+    "Uses the one-way delay, 20 ms, instead of the RTT.",
+    "Is a factor of ten too small; the bits-to-bytes conversion is applied wrongly.",
+    ""
+   ],
+   "key": "PHY-U2-158"
+  },
+  {
+   "topic": "Computer network basics",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A host has address 192.168.1.130/26. What is the broadcast address of its subnet?",
+   "code": "",
+   "options": [
+    "192.168.1.129",
+    "192.168.1.190",
+    "192.168.1.191",
+    "192.168.1.255"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A /26 has blocks of 64 addresses: .0-.63, .64-.127, .128-.191. The host .130 lies in the third block, whose broadcast address is .191.",
+   "why_wrong": [
+    "This is the first usable host address in the block.",
+    "This is the last usable host, one below the broadcast address.",
+    "",
+    "This is the broadcast address of the whole /24."
+   ],
+   "key": "PHY-U2-159"
+  },
+  {
+   "topic": "Optical fibre and wireless communication",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A step-index fibre has core index 1.48 and cladding index 1.46. What is its numerical aperture?",
+   "code": "",
+   "options": [
+    "0.24",
+    "0.02",
+    "0.059",
+    "2.08"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "NA = sqrt(n1^2 - n2^2) = sqrt(2.1904 - 2.1316) = sqrt(0.0588) = 0.24.",
+   "why_wrong": [
+    "",
+    "Takes the simple difference n1 - n2.",
+    "Forgets the square root.",
+    "Uses sqrt(n1^2 + n2^2)."
+   ],
+   "key": "PHY-U2-160"
+  },
+  {
+   "topic": "Optical fibre and wireless communication",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A fibre has attenuation 0.2 dB/km. A 1 mW signal travels 50 km with no amplifier. What power arrives?",
+   "code": "",
+   "options": [
+    "0.1 mW",
+    "0.5 mW",
+    "0.9 mW",
+    "0.01 mW"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Loss = 0.2 x 50 = 10 dB. Pout = Pin x 10^(-10/10) = 1 mW/10 = 0.1 mW.",
+   "why_wrong": [
+    "",
+    "Treats the 10 dB loss as a halving, as for 3 dB.",
+    "Treats 10 dB as a 10 % loss.",
+    "Treats 10 dB as a factor of 100."
+   ],
+   "key": "PHY-U2-161"
+  },
+  {
+   "topic": "Optical fibre and wireless communication",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A Wi-Fi router transmits at 2.4 GHz. Taking c = 3 x 10^8 m/s, what is the wavelength of the wave?",
+   "code": "",
+   "options": [
+    "1.25 m",
+    "12.5 cm",
+    "8 cm",
+    "12.5 mm"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "lambda = c/f = 3e8/2.4e9 = 0.125 m = 12.5 cm.",
+   "why_wrong": [
+    "Misplaces the decimal point by a factor of ten.",
+    "",
+    "Corresponds to a frequency of about 3.75 GHz, not 2.4 GHz.",
+    "Misplaces the decimal point by a factor of ten the other way."
+   ],
+   "key": "PHY-U2-162"
+  },
+  {
+   "topic": "Optical fibre and wireless communication",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a step-index multimode fibre, what happens if the core-cladding index difference is increased?",
+   "code": "",
+   "options": [
+    "The NA falls and the fibre then becomes a single-mode fibre",
+    "The NA rises and the intermodal dispersion falls as well",
+    "NA and acceptance angle rise, but intermodal dispersion grows too",
+    "Neither the NA nor the intermodal dispersion changes at all"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "NA = sqrt(n1^2 - n2^2) increases with the index difference, accepting more light. Steeper rays take much longer paths than axial rays, so pulse spreading grows and bandwidth falls.",
+   "why_wrong": [
+    "A larger index difference raises the NA, not lowers it.",
+    "Larger delta spreads ray path times, increasing dispersion.",
+    "",
+    "Both depend on the index difference."
+   ],
+   "key": "PHY-U2-163"
+  },
+  {
+   "topic": "Optical fibre and wireless communication",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 20 MHz wireless channel has an SNR of 30 dB. What is the Shannon capacity?",
+   "code": "",
+   "options": [
+    "About 600 Mbps",
+    "About 99 Mbps",
+    "About 80 Mbps",
+    "About 199 Mbps"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "30 dB = 10^3 = 1000 (linear). C = B log2(1 + SNR) = 20e6 x log2(1001) = 20e6 x 9.97 = 199 Mbps.",
+   "why_wrong": [
+    "Uses 30 (in dB) directly as the spectral efficiency.",
+    "Uses SNR = 30 in linear terms, giving log2(31).",
+    "Uses an SNR of 15, i.e., log2(16)=4 bits/s/Hz.",
+    ""
+   ],
+   "key": "PHY-U2-164"
+  },
+  {
+   "topic": "Optical fibre and wireless communication",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which statement about single-mode fibre is NOT true?",
+   "code": "",
+   "options": [
+    "Its core is wider than multimode's, so light couples more easily",
+    "Its core is only about 8-10 micrometres across, narrower than multimode",
+    "It has essentially no intermodal dispersion, as one mode propagates",
+    "It is normally driven by laser sources at 1310 or 1550 nm wavelengths"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Single-mode fibre has a much narrower core (about 9 um) than multimode (50-62.5 um), so light is harder to couple. The other three statements are standard.",
+   "why_wrong": [
+    "",
+    "This is true: it is a very narrow core.",
+    "This is true: only one mode propagates.",
+    "This is true: those are the low-loss windows."
+   ],
+   "key": "PHY-U2-165"
+  },
+  {
+   "topic": "CPU versus GPU",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Which workload would run better on a CPU than on a GPU?",
+   "code": "",
+   "options": [
+    "Multiplying two large 4096 x 4096 dense floating-point matrices",
+    "Applying the same blur kernel to every pixel of a 4K frame",
+    "Computing a large batch of dense neural-layer activations",
+    "An interpreter full of data-dependent branches and pointer chasing"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "CPUs have strong branch prediction, large caches and fast single threads, which suit irregular, serial, branch-heavy code. GPUs shine when thousands of threads execute the same operation on different data.",
+   "why_wrong": [
+    "Regular, data-parallel arithmetic favours the GPU.",
+    "Identical work on every pixel is ideal for a GPU.",
+    "Large uniform batches of arithmetic suit the GPU.",
+    ""
+   ],
+   "key": "PHY-U2-166"
+  },
+  {
+   "topic": "CPU versus GPU",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "95 % of a program's runtime can be parallelised perfectly. What speed-up does Amdahl's law give on 64 cores?",
+   "code": "",
+   "options": [
+    "About 20",
+    "About 15.4",
+    "About 60.8",
+    "64"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Speed-up = 1/((1 - p) + p/N) = 1/(0.05 + 0.95/64) = 1/0.0648 = 15.4.",
+   "why_wrong": [
+    "This is the limit for infinite cores.",
+    "",
+    "Multiplies 0.95 by 64.",
+    "Assumes perfect scaling of the whole program."
+   ],
+   "key": "PHY-U2-167"
+  },
+  {
+   "topic": "CPU versus GPU",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A GPU has 5000 simple cores at 1.5 GHz, and a CPU has 8 cores at 4 GHz. If each core issues one operation per cycle, how many times higher is the GPU's peak operation rate?",
+   "code": "",
+   "options": [
+    "About 625",
+    "About 1875",
+    "About 234",
+    "About 0.4"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "GPU: 5000 x 1.5e9 = 7.5e12 ops/s. CPU: 8 x 4e9 = 3.2e10 ops/s. The ratio is 234.",
+   "why_wrong": [
+    "Compares only the core counts.",
+    "Compares GPU throughput to a single CPU core.",
+    "",
+    "Compares the clock rates and inverts the ratio."
+   ],
+   "key": "PHY-U2-168"
+  },
+  {
+   "topic": "CPU versus GPU",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a GPU warp, 32 threads run in lockstep and half take an if-branch while half take the else-branch. What is the effect?",
+   "code": "",
+   "options": [
+    "Each half runs in parallel on its own separate warp scheduler unit",
+    "The branch has no cost at all, as the GPU predicts every branch perfectly",
+    "The warp stops and raises a hardware exception that the driver handles",
+    "Both paths run one after the other with half the threads idle each time"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A warp issues one instruction at a time to all 32 lanes. With divergence, the if-path runs with the else-lanes masked, then the else-path runs with the if-lanes masked, doubling the time.",
+   "why_wrong": [
+    "One warp executes one instruction stream at a time.",
+    "Prediction does not apply; the lanes must be masked.",
+    "Divergence is legal; it is only slower.",
+    ""
+   ],
+   "key": "PHY-U2-169"
+  },
+  {
+   "topic": "CPU versus GPU",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Which feature is NOT characteristic of a GPU compared with a CPU?",
+   "code": "",
+   "options": [
+    "Large per-core caches and deep out-of-order speculation for low latency",
+    "Thousands of lightweight cores that run very many threads at once",
+    "SIMT execution, where groups of threads share one instruction stream",
+    "Very high-bandwidth memory such as GDDR or HBM to feed many cores"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The first option describes a CPU, which spends its transistors on cutting the latency of one thread. A GPU instead spends them on many simple cores that hide latency by switching between thousands of threads.",
+   "why_wrong": [
+    "",
+    "This is a GPU trait.",
+    "This is a GPU trait.",
+    "This is a GPU trait."
+   ],
+   "key": "PHY-U2-170"
+  }
+ ]
+}

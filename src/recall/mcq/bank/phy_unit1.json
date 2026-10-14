@@ -1,0 +1,3687 @@
+{
+ "subject_code": "PHY",
+ "unit": 1,
+ "unit_label": "Solid State Physics",
+ "questions": [
+  {
+   "topic": "Free electron theory",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In the free electron theory of metals, the valence electrons are treated as:",
+   "code": "",
+   "options": [
+    "a free-particle gas in a uniform potential",
+    "electrons rigidly bound to individual ion cores",
+    "particles moving only along fixed lattice planes",
+    "a liquid that is at rest relative to the ions"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The model treats valence electrons as a gas of free particles, like gas molecules in a box, with a constant internal potential.",
+   "why_wrong": [
+    "",
+    "Bound electrons would not conduct; the model frees them.",
+    "The model has no lattice planes; motion is in all directions.",
+    "The electron gas moves and collides; it is not at rest."
+   ],
+   "key": "PHY-U1-001"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The classical free electron theory of metals was proposed by:",
+   "code": "",
+   "options": [
+    "Sommerfeld",
+    "Drude and Lorentz",
+    "Bloch",
+    "Kronig and Penney"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Drude proposed the classical electron gas model and Lorentz refined it using Maxwell-Boltzmann statistics.",
+   "why_wrong": [
+    "Sommerfeld gave the quantum version with Fermi-Dirac statistics.",
+    "",
+    "Bloch developed band theory for periodic potentials.",
+    "Kronig and Penney gave the periodic square-well band model."
+   ],
+   "key": "PHY-U1-002"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Sommerfeld's quantum free electron theory makes use of which statistics?",
+   "code": "",
+   "options": [
+    "Maxwell-Boltzmann statistics",
+    "Bose-Einstein statistics",
+    "Fermi-Dirac statistics",
+    "Classical Newtonian statistics"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Sommerfeld applied the Pauli exclusion principle, so electrons obey Fermi-Dirac statistics.",
+   "why_wrong": [
+    "Maxwell-Boltzmann is used in the classical Drude-Lorentz theory.",
+    "Bose-Einstein applies to bosons, not electrons.",
+    "",
+    "There is no such statistics; it is not a quantum distribution."
+   ],
+   "key": "PHY-U1-003"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Which property of metals is NOT correctly explained by the classical free electron theory?",
+   "code": "",
+   "options": [
+    "Ohm's law, the linear current-voltage relation",
+    "The high electrical conductivity of metals",
+    "Joule heating of a resistor carrying current",
+    "The electronic contribution to specific heat"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Classical theory predicts a large electronic specific heat (3/2 kB per electron) that is not observed; it does explain Ohm's law and conduction.",
+   "why_wrong": [
+    "Ohm's law follows from the classical drift model.",
+    "Conduction by free electrons is the core classical result.",
+    "Joule heating from collisions is explained classically.",
+    ""
+   ],
+   "key": "PHY-U1-004"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Drift current in a semiconductor is caused by:",
+   "code": "",
+   "options": [
+    "an applied electric field",
+    "a carrier concentration gradient",
+    "a temperature-independent magnetic field",
+    "a uniform carrier concentration with no field"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Carriers acquire a net drift velocity from an electric field, producing drift current.",
+   "why_wrong": [
+    "",
+    "A concentration gradient causes diffusion current.",
+    "A magnetic field alone causes no net current, only the Hall deflection.",
+    "With no field and no gradient there is no net current."
+   ],
+   "key": "PHY-U1-005"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Diffusion current in a semiconductor is caused by:",
+   "code": "",
+   "options": [
+    "an applied electric field",
+    "a carrier concentration gradient",
+    "the absorption of heat only",
+    "a constant carrier density"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Carriers move from regions of high concentration to low concentration, producing diffusion current.",
+   "why_wrong": [
+    "An electric field causes drift current.",
+    "",
+    "Heat alone does not set a direction of net current.",
+    "A uniform density has no gradient and so no diffusion."
+   ],
+   "key": "PHY-U1-006"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The drift velocity of carriers per unit applied electric field is called:",
+   "code": "",
+   "options": [
+    "conductivity",
+    "diffusivity",
+    "mobility",
+    "resistivity"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Mobility is defined as mu = v_d / E.",
+   "why_wrong": [
+    "Conductivity is current density per field, not velocity per field.",
+    "Diffusivity relates flux to concentration gradient.",
+    "",
+    "Resistivity is the reciprocal of conductivity."
+   ],
+   "key": "PHY-U1-007"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In diffusion, carriers tend to move from a region of:",
+   "code": "",
+   "options": [
+    "lower concentration to higher concentration",
+    "lower potential to higher potential only",
+    "higher temperature to higher concentration",
+    "higher concentration to lower concentration"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Random thermal motion gives a net flow of carriers down the concentration gradient.",
+   "why_wrong": [
+    "That would increase the gradient, opposite to diffusion.",
+    "Diffusion does not depend on potential.",
+    "Direction is set by concentration, not temperature.",
+    ""
+   ],
+   "key": "PHY-U1-008"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Fermi energy is defined as the:",
+   "code": "",
+   "options": [
+    "highest occupied energy level at 0 K",
+    "lowest unoccupied level at 300 K",
+    "energy of the first excited state",
+    "energy at which the band gap closes"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "At absolute zero all states up to the Fermi energy are filled and all above are empty.",
+   "why_wrong": [
+    "",
+    "It is defined at 0 K, not 300 K, and refers to the top of filled states.",
+    "The first excited state is a different level.",
+    "The Fermi energy has nothing to do with gap closing."
+   ],
+   "key": "PHY-U1-009"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "At 0 K, all electron states below the Fermi energy are:",
+   "code": "",
+   "options": [
+    "completely empty",
+    "completely filled",
+    "half filled",
+    "filled only for spin-up electrons"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "By the Pauli exclusion principle electrons fill the lowest levels, two per level, up to E_F.",
+   "why_wrong": [
+    "That would put electrons above E_F, which does not occur at 0 K.",
+    "",
+    "Only the level at E_F is ambiguous, not all states below.",
+    "Both spin directions fill each level."
+   ],
+   "key": "PHY-U1-010"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The Fermi energy of a metal depends mainly on its:",
+   "code": "",
+   "options": [
+    "geometric length of the sample",
+    "voltage applied across the sample",
+    "free electron concentration",
+    "visible colour of the sample surface"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "E_F = (h^2/8m)(3n/pi)^(2/3), so it is set by the electron concentration n.",
+   "why_wrong": [
+    "Size of the sample does not enter the formula.",
+    "Applied voltage does not change E_F of the bulk metal.",
+    "",
+    "Colour is not a variable in the formula."
+   ],
+   "key": "PHY-U1-011"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The Fermi energy of a metal increases when its free electron concentration:",
+   "code": "",
+   "options": [
+    "decreases",
+    "stays the same",
+    "becomes zero",
+    "increases"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "E_F is proportional to n^(2/3), so it rises with n.",
+   "why_wrong": [
+    "A lower n lowers E_F.",
+    "E_F depends on n, so it would change.",
+    "n = 0 would give E_F = 0, not an increase.",
+    ""
+   ],
+   "key": "PHY-U1-012"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "For T above 0 K, the Fermi-Dirac function at E = E_F has the value:",
+   "code": "",
+   "options": [
+    "1/2",
+    "0",
+    "1",
+    "1/e"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "At E = E_F the exponent is zero, so f = 1/(1+1) = 1/2.",
+   "why_wrong": [
+    "",
+    "f = 0 holds for E far above E_F.",
+    "f = 1 holds for E far below E_F.",
+    "1/e is not given by the formula at E_F."
+   ],
+   "key": "PHY-U1-013"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "At 0 K, the Fermi-Dirac function f(E) for E below E_F equals:",
+   "code": "",
+   "options": [
+    "0",
+    "1",
+    "1/2",
+    "infinity"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The exponent tends to minus infinity, so f = 1/(1+0) = 1.",
+   "why_wrong": [
+    "f = 0 applies to E above E_F.",
+    "",
+    "f = 1/2 applies only at E = E_F.",
+    "A probability can never exceed 1."
+   ],
+   "key": "PHY-U1-014"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The Fermi-Dirac function f(E) represents the:",
+   "code": "",
+   "options": [
+    "number of electrons per unit volume of metal",
+    "density of available states per unit energy",
+    "probability that a state of energy E is occupied",
+    "average speed of an electron in the metal"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "f(E) is the occupation probability of a state at energy E at temperature T.",
+   "why_wrong": [
+    "Electron concentration is found by integrating g(E)f(E).",
+    "The density of states is g(E), a separate function.",
+    "",
+    "Speed is not described by f(E)."
+   ],
+   "key": "PHY-U1-015"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "At 0 K, the Fermi-Dirac function f(E) for E above E_F equals:",
+   "code": "",
+   "options": [
+    "1",
+    "1/2",
+    "1/e",
+    "0"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The exponent tends to plus infinity, so f = 0 and these states are empty.",
+   "why_wrong": [
+    "f = 1 holds for E below E_F.",
+    "f = 1/2 holds only at E = E_F.",
+    "1/e is not obtained at 0 K.",
+    ""
+   ],
+   "key": "PHY-U1-016"
+  },
+  {
+   "topic": "Energy band formation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Energy bands in solids arise from the:",
+   "code": "",
+   "options": [
+    "splitting of atomic levels as atoms approach",
+    "absorption of photons by the lattice",
+    "motion of the nuclei",
+    "sudden closing of the forbidden gap"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Interaction between neighbouring atoms splits each discrete level into closely spaced levels forming a band.",
+   "why_wrong": [
+    "",
+    "Photon absorption causes transitions, not band formation.",
+    "Nuclear motion is not the origin of bands.",
+    "Gaps exist between bands; they do not close at formation."
+   ],
+   "key": "PHY-U1-017"
+  },
+  {
+   "topic": "Energy band formation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The energy range between the valence band and the conduction band, where no electron states exist, is called the:",
+   "code": "",
+   "options": [
+    "Fermi band",
+    "forbidden energy gap",
+    "donor band",
+    "drift region"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The forbidden gap Eg is the energy difference between the top of the valence band and the bottom of the conduction band.",
+   "why_wrong": [
+    "There is no such thing as a Fermi band.",
+    "",
+    "The donor level is an impurity level, not the gap.",
+    "Drift region is a term from device operation, not band theory."
+   ],
+   "key": "PHY-U1-018"
+  },
+  {
+   "topic": "Energy band formation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The model used to explain allowed and forbidden bands using a periodic array of potential wells and barriers is the:",
+   "code": "",
+   "options": [
+    "Drude model",
+    "Bohr model",
+    "Kronig-Penney model",
+    "Rutherford model"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The Kronig-Penney model solves the Schrodinger equation for a periodic rectangular potential and yields allowed and forbidden bands.",
+   "why_wrong": [
+    "Drude treats a free electron gas without a periodic potential.",
+    "The Bohr model treats a single atom.",
+    "",
+    "The Rutherford model describes atomic structure by scattering."
+   ],
+   "key": "PHY-U1-019"
+  },
+  {
+   "topic": "Energy band formation",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "When N identical atoms form a solid, each atomic energy level splits into:",
+   "code": "",
+   "options": [
+    "2 levels only",
+    "one level at double energy",
+    "an infinite continuum with no structure",
+    "N closely spaced levels"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "With N atoms the single level becomes N levels very close together, which form a band.",
+   "why_wrong": [
+    "Only two levels would occur for two atoms, not N.",
+    "There is no doubling of a level in band formation.",
+    "The levels are discrete (N of them), though very dense.",
+    ""
+   ],
+   "key": "PHY-U1-020"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The effective mass of an electron in a crystal is defined by:",
+   "code": "",
+   "options": [
+    "m* = hbar^2 / (d2E/dk2)",
+    "m* = hbar^2 x (d2E/dk2)",
+    "m* = dE/dk",
+    "m* = E / k"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Effective mass is inversely proportional to the curvature d2E/dk2 of the E-k curve.",
+   "why_wrong": [
+    "",
+    "That would make m* proportional to curvature, which is inverted.",
+    "dE/dk gives the group velocity (times hbar), not mass.",
+    "E/k has no meaning as mass."
+   ],
+   "key": "PHY-U1-021"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Near the top of a nearly filled band, the effective mass of an electron is:",
+   "code": "",
+   "options": [
+    "zero",
+    "negative",
+    "equal to the free electron mass",
+    "infinite"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "At the top of the band d2E/dk2 is negative, so m* is negative.",
+   "why_wrong": [
+    "Zero would need infinite curvature.",
+    "",
+    "m* differs from m in a crystal and varies with band shape.",
+    "Infinite m* needs zero curvature, which happens at an inflection."
+   ],
+   "key": "PHY-U1-022"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A hole in a semiconductor is best described as:",
+   "code": "",
+   "options": [
+    "a positively charged proton moving in the lattice",
+    "a free electron in the conduction band",
+    "a vacant electron state in the valence band, acting as +e",
+    "an immobile donor ion"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "A missing electron in the valence band behaves as a mobile particle of charge +e and positive effective mass.",
+   "why_wrong": [
+    "Protons are in the nucleus and do not move through the lattice.",
+    "A free conduction band electron is an electron, not a hole.",
+    "",
+    "A donor ion is fixed and cannot carry current."
+   ],
+   "key": "PHY-U1-023"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The concept of effective mass is introduced to account for the effect of:",
+   "code": "",
+   "options": [
+    "the gravitational pull on the electron",
+    "the intrinsic spin of the electron only",
+    "the mass of the atomic nuclei",
+    "the periodic lattice potential"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The lattice forces are absorbed into m*, so the electron can be treated as a free particle with mass m*.",
+   "why_wrong": [
+    "Gravity is negligible and not involved.",
+    "Spin does not define m*.",
+    "Nuclear mass plays no role in the definition.",
+    ""
+   ],
+   "key": "PHY-U1-024"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The Hall effect is the development of a transverse voltage across a current-carrying conductor when it is placed in:",
+   "code": "",
+   "options": [
+    "a magnetic field perpendicular to the current",
+    "a magnetic field parallel to the current",
+    "an electric field parallel to the current only",
+    "a gravitational field"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The magnetic force deflects carriers sideways, creating the Hall voltage across the width.",
+   "why_wrong": [
+    "",
+    "A field parallel to the current exerts no sideways force.",
+    "An electric field along the current only drives it, with no transverse voltage.",
+    "Gravity is irrelevant."
+   ],
+   "key": "PHY-U1-025"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The Hall voltage appears in the direction:",
+   "code": "",
+   "options": [
+    "parallel to the direction of the current",
+    "perpendicular to both current and field",
+    "parallel to the magnetic field lines",
+    "opposite to the direction of the current"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "F = q(v x B) acts perpendicular to both v and B, so charge piles up in that direction.",
+   "why_wrong": [
+    "The current direction is the longitudinal direction, not the Hall direction.",
+    "",
+    "The Hall field is perpendicular to B.",
+    "The Hall voltage is transverse, not along the current."
+   ],
+   "key": "PHY-U1-026"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The sign of the Hall coefficient for an n-type semiconductor is:",
+   "code": "",
+   "options": [
+    "positive",
+    "zero",
+    "negative",
+    "imaginary"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "For electrons R_H = -1/(ne), which is negative.",
+   "why_wrong": [
+    "Positive R_H indicates holes (p-type).",
+    "R_H is non-zero, equal in magnitude to 1/(ne).",
+    "",
+    "R_H is real."
+   ],
+   "key": "PHY-U1-027"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A Hall effect measurement can be used to find the:",
+   "code": "",
+   "options": [
+    "the width of the band gap only",
+    "melting point of the sample",
+    "atomic number of the dopant",
+    "carrier type and concentration"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The sign of R_H gives the carrier type and its magnitude gives concentration.",
+   "why_wrong": [
+    "The band gap is not directly measured by a simple Hall measurement.",
+    "The melting point is unrelated.",
+    "Atomic number is unrelated.",
+    ""
+   ],
+   "key": "PHY-U1-028"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "An intrinsic semiconductor is one that is:",
+   "code": "",
+   "options": [
+    "pure, with no deliberate doping",
+    "doped with donor atoms",
+    "doped with acceptor atoms",
+    "a metal with a high carrier density"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "An intrinsic semiconductor is a pure crystal in which electrons and holes are generated only thermally.",
+   "why_wrong": [
+    "",
+    "Donor doping gives n-type, which is extrinsic.",
+    "Acceptor doping gives p-type, which is extrinsic.",
+    "Intrinsic semiconductors are not metals."
+   ],
+   "key": "PHY-U1-029"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "An n-type semiconductor is made by doping silicon with:",
+   "code": "",
+   "options": [
+    "a trivalent impurity such as boron",
+    "a pentavalent impurity such as phosphorus",
+    "a tetravalent impurity such as germanium",
+    "an inert gas such as argon"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Pentavalent atoms have five valence electrons, giving one extra free electron each.",
+   "why_wrong": [
+    "Boron is trivalent and makes p-type.",
+    "",
+    "Germanium is also tetravalent and gives no net doping.",
+    "Argon does not bond in the lattice."
+   ],
+   "key": "PHY-U1-030"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A p-type semiconductor is made by doping silicon with:",
+   "code": "",
+   "options": [
+    "a pentavalent impurity such as arsenic",
+    "a pentavalent impurity such as phosphorus",
+    "a trivalent impurity such as boron",
+    "a tetravalent impurity such as carbon"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Trivalent atoms have three valence electrons and create a hole in the bond structure.",
+   "why_wrong": [
+    "Arsenic is pentavalent and gives n-type.",
+    "Phosphorus is pentavalent and gives n-type.",
+    "",
+    "Carbon is tetravalent and is not an acceptor."
+   ],
+   "key": "PHY-U1-031"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The majority carriers in a p-type semiconductor are:",
+   "code": "",
+   "options": [
+    "electrons",
+    "protons",
+    "donor ions",
+    "holes"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Acceptor doping makes holes far more numerous than electrons.",
+   "why_wrong": [
+    "Electrons are the minority carriers in p-type.",
+    "Protons are in nuclei and not mobile carriers.",
+    "Donor ions are fixed and are not carriers.",
+    ""
+   ],
+   "key": "PHY-U1-032"
+  },
+  {
+   "topic": "Insulators",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The energy gap of a typical insulator is:",
+   "code": "",
+   "options": [
+    "greater than about 3 eV",
+    "zero, bands just touching",
+    "about 0.1 eV or less",
+    "negative, bands overlapping"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In an insulator the forbidden gap is wide so thermal energy cannot lift electrons to the conduction band.",
+   "why_wrong": [
+    "",
+    "A zero gap means a metal.",
+    "A gap of about 0.1 eV would allow thermal excitation as in a narrow-gap semiconductor.",
+    "A negative gap is not physical; bands overlap in metals."
+   ],
+   "key": "PHY-U1-033"
+  },
+  {
+   "topic": "Insulators",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "At room temperature the conduction band of a good insulator is:",
+   "code": "",
+   "options": [
+    "completely full",
+    "empty",
+    "half full",
+    "full of holes"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The wide gap keeps electrons in the valence band, leaving the conduction band empty.",
+   "why_wrong": [
+    "A full conduction band would be a very unusual case.",
+    "",
+    "A half-filled band indicates a metal.",
+    "Holes exist in the valence band, not the conduction band."
+   ],
+   "key": "PHY-U1-034"
+  },
+  {
+   "topic": "Insulators",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In an insulator at 0 K the valence band is:",
+   "code": "",
+   "options": [
+    "half filled",
+    "completely empty",
+    "completely filled",
+    "partly overlapping the conduction band"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "All valence states are occupied while the conduction band is empty.",
+   "why_wrong": [
+    "Half-filled bands indicate metals.",
+    "If it were empty, there would be no valence electrons.",
+    "",
+    "Overlapping bands indicate metals."
+   ],
+   "key": "PHY-U1-035"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In an intrinsic semiconductor, the Fermi level lies:",
+   "code": "",
+   "options": [
+    "at the top of the valence band",
+    "at the bottom of the conduction band",
+    "inside the conduction band",
+    "near the middle of the forbidden gap"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Equal electron and hole concentrations place E_F close to the middle of the gap.",
+   "why_wrong": [
+    "That would give a degenerate p-type material.",
+    "That would make it degenerate n-type.",
+    "Inside the conduction band, it would be a metal-like material.",
+    ""
+   ],
+   "key": "PHY-U1-036"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In an n-type semiconductor at room temperature, the Fermi level lies:",
+   "code": "",
+   "options": [
+    "close to the conduction band, below it",
+    "close to the valence band",
+    "exactly at midgap",
+    "above the conduction band edge in all cases"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "More electrons push E_F up toward the conduction band.",
+   "why_wrong": [
+    "",
+    "That is the case for p-type.",
+    "Midgap is for intrinsic material.",
+    "That happens only in degenerate doping, not in general."
+   ],
+   "key": "PHY-U1-037"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In a p-type semiconductor, the Fermi level lies:",
+   "code": "",
+   "options": [
+    "close to the conduction band",
+    "close to the valence band, above it",
+    "exactly at midgap",
+    "well inside the conduction band"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "More holes shift E_F down toward the valence band.",
+   "why_wrong": [
+    "That is the case for n-type.",
+    "",
+    "Midgap is for intrinsic material.",
+    "Inside the conduction band would be a degenerate n-type."
+   ],
+   "key": "PHY-U1-038"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Gallium arsenide (GaAs) is an example of a:",
+   "code": "",
+   "options": [
+    "indirect band gap semiconductor",
+    "metal",
+    "direct band gap semiconductor",
+    "insulator"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "In GaAs the conduction band minimum and valence band maximum occur at the same k.",
+   "why_wrong": [
+    "Silicon and germanium are indirect, not GaAs.",
+    "GaAs has a gap of about 1.4 eV, so it is a semiconductor.",
+    "",
+    "The gap is too small for an insulator."
+   ],
+   "key": "PHY-U1-039"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Silicon is an example of a:",
+   "code": "",
+   "options": [
+    "direct band gap semiconductor",
+    "semimetal",
+    "superconductor",
+    "indirect band gap semiconductor"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "In silicon the conduction band minimum and valence band maximum are at different k values.",
+   "why_wrong": [
+    "Direct gap would be the case for GaAs.",
+    "Si has a gap of about 1.1 eV and is not a semimetal.",
+    "Si is not a superconductor at ordinary conditions.",
+    ""
+   ],
+   "key": "PHY-U1-040"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "In a direct band gap semiconductor, the conduction band minimum and the valence band maximum occur at:",
+   "code": "",
+   "options": [
+    "the same value of wave vector k",
+    "different values of wave vector k",
+    "zero energy at both extrema",
+    "k values far outside the zone"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A direct gap means both extrema have the same k, so a transition needs no change of momentum.",
+   "why_wrong": [
+    "",
+    "Different k values define an indirect gap.",
+    "Band extrema are at finite energies, not zero.",
+    "k is finite within the Brillouin zone."
+   ],
+   "key": "PHY-U1-041"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "A solar cell converts:",
+   "code": "",
+   "options": [
+    "electrical energy into light",
+    "light energy into electrical energy",
+    "heat into sound",
+    "chemical energy into light"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "It generates a voltage and current when illuminated.",
+   "why_wrong": [
+    "That describes an LED.",
+    "",
+    "Sound production is unrelated.",
+    "Conversion from chemical energy is a battery or fuel cell."
+   ],
+   "key": "PHY-U1-042"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The working of a solar cell is based on the:",
+   "code": "",
+   "options": [
+    "Hall effect",
+    "Zener effect",
+    "photovoltaic effect",
+    "Thermionic effect"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Photons create electron-hole pairs that the junction field separates to give a voltage.",
+   "why_wrong": [
+    "The Hall effect gives a transverse voltage in a magnetic field.",
+    "The Zener effect is a breakdown in reverse-biased diodes.",
+    "",
+    "Thermionic emission releases electrons from a heated metal."
+   ],
+   "key": "PHY-U1-043"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "Structurally, a solar cell is basically a:",
+   "code": "",
+   "options": [
+    "bare metal strip",
+    "pair of capacitors",
+    "vacuum tube",
+    "p-n junction"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The built-in electric field of the p-n junction separates the photogenerated carriers.",
+   "why_wrong": [
+    "A bare metal has no junction field.",
+    "Capacitors store charge but do not convert light.",
+    "Vacuum tubes do not form photovoltaic junctions.",
+    ""
+   ],
+   "key": "PHY-U1-044"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "easy",
+   "kind": "recall",
+   "q": "The material most widely used for commercial solar cells is:",
+   "code": "",
+   "options": [
+    "silicon",
+    "copper",
+    "aluminium",
+    "lead"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Silicon has a band gap of about 1.1 eV suited to the solar spectrum and is abundant.",
+   "why_wrong": [
+    "",
+    "Copper is a metal and not a photovoltaic semiconductor.",
+    "Aluminium is a metal, though used in contacts.",
+    "Lead is not used as the active material."
+   ],
+   "key": "PHY-U1-045"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT an assumption of the free electron model?",
+   "code": "",
+   "options": [
+    "Electrons move freely within the metal",
+    "Electrons feel a strong periodic lattice potential",
+    "The potential inside the metal is taken as constant",
+    "Electron-electron interactions are neglected"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The model ignores the periodic lattice potential and treats a uniform potential; strong binding to ion cores belongs to a different picture.",
+   "why_wrong": [
+    "This is a genuine assumption, so it is not the exception.",
+    "",
+    "A constant potential is indeed assumed.",
+    "Neglecting electron-electron interaction is assumed."
+   ],
+   "key": "PHY-U1-046"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The relaxation time of electrons in a metal is 2.5e-14 s. Taking m = 9.109e-31 kg and e = 1.6e-19 C, the mobility mu = e*tau/m is:",
+   "code": "",
+   "options": [
+    "44.0e-3 m2/Vs",
+    "2.20e-3 m2/Vs",
+    "4.39e-3 m2/Vs",
+    "8.78e-3 m2/Vs"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "mu = e tau / m = (1.6e-19 x 2.5e-14)/9.109e-31 = 4.391e-03 m2/Vs.",
+   "why_wrong": [
+    "Decimal-point slip by a factor of ten.",
+    "Dividing by 2m (adding a spurious factor 1/2) halves the result.",
+    "",
+    "Doubling the numerator (using 2e) doubles the result."
+   ],
+   "key": "PHY-U1-047"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the Drude model the electrical conductivity is given by:",
+   "code": "",
+   "options": [
+    "sigma = n e tau / m",
+    "sigma = n e^2 m / tau",
+    "sigma = e^2 tau / (n m)",
+    "sigma = n e^2 tau / m"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "J = n e v_d with v_d = e E tau / m gives sigma = n e^2 tau / m.",
+   "why_wrong": [
+    "One power of e is missing; both J and v_d each carry e.",
+    "Tau and m are interchanged; conductivity rises with tau.",
+    "n is in the denominator, but sigma rises with n.",
+    ""
+   ],
+   "key": "PHY-U1-048"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The Wiedemann-Franz law states that, for metals, the ratio of thermal conductivity to electrical conductivity is:",
+   "code": "",
+   "options": [
+    "proportional to absolute temperature",
+    "independent of absolute temperature",
+    "inversely proportional to T",
+    "proportional to the cube of T"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "K/sigma = L T, where L is the Lorenz number, a constant for all metals.",
+   "why_wrong": [
+    "",
+    "It rises with T, so it is not constant.",
+    "The ratio is directly proportional to T, not inverse.",
+    "The law gives a linear, not cubic, dependence."
+   ],
+   "key": "PHY-U1-049"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The Einstein relation connecting the diffusion coefficient D and mobility mu of carriers is:",
+   "code": "",
+   "options": [
+    "D/mu = e/kT",
+    "D/mu = kT/e",
+    "D x mu = kT/e",
+    "D/mu = kT x e"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Diffusion and drift both come from thermal random motion, giving D = mu kT / e.",
+   "why_wrong": [
+    "That is the inverse of the actual ratio.",
+    "",
+    "D times mu has no such constancy; the ratio D/mu is constant.",
+    "kT times e has the wrong dimensions for a potential."
+   ],
+   "key": "PHY-U1-050"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In which situation is there NO net current flow in a semiconductor bar?",
+   "code": "",
+   "options": [
+    "Non-uniform carrier concentration and zero field",
+    "Uniform concentration and a nonzero field",
+    "Uniform concentration and zero applied field",
+    "A concentration gradient and an applied field"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "With neither a gradient nor a field, neither diffusion nor drift occurs.",
+   "why_wrong": [
+    "A gradient drives diffusion current.",
+    "The field drives drift current.",
+    "",
+    "Both drift and diffusion are present."
+   ],
+   "key": "PHY-U1-051"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "At 300 K, the ratio D/mu for carriers in silicon (kT/e) is about:",
+   "code": "",
+   "options": [
+    "259 mV",
+    "2.59 mV",
+    "85 mV",
+    "25.9 mV"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "D/mu = kT/e = 8.617e-5 x 300 = 0.0259 V = 25.9 mV.",
+   "why_wrong": [
+    "Decimal slip by a factor of ten.",
+    "Decimal slip by a factor of ten the other way.",
+    "Using the Si junction scale instead of the thermal voltage.",
+    ""
+   ],
+   "key": "PHY-U1-052"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The diffusion current density of electrons is proportional to the:",
+   "code": "",
+   "options": [
+    "gradient of concentration, dn/dx",
+    "electron concentration itself, n",
+    "applied electric field E",
+    "absolute value of the band gap"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "J_diff = e D_n (dn/dx); uniform n gives none however large n is.",
+   "why_wrong": [
+    "",
+    "Even a large uniform n gives no diffusion current.",
+    "That is the drift term.",
+    "The gap does not appear in the expression."
+   ],
+   "key": "PHY-U1-053"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Copper has a free electron density of 8.5e28 per m3. Using E_F = (hbar^2/2m)(3 pi^2 n)^(2/3), its Fermi energy is about:",
+   "code": "",
+   "options": [
+    "14.12 eV",
+    "7.06 eV",
+    "3.53 eV",
+    "4.24 eV"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "E_F = (hbar^2/2m)(3 pi^2 n)^(2/3) = 1.130e-18 J = 7.06 eV.",
+   "why_wrong": [
+    "Missing factor 1/2 in hbar^2/2m doubles the value.",
+    "",
+    "Using hbar^2/4m or halving by mistake gives half the value.",
+    "That is 3/5 E_F, the mean energy at 0 K, not E_F."
+   ],
+   "key": "PHY-U1-054"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The mean energy of a free electron at 0 K, in terms of the Fermi energy, is:",
+   "code": "",
+   "options": [
+    "E_F",
+    "1/2 E_F",
+    "3/5 E_F",
+    "3/2 E_F"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Integrating E g(E) from 0 to E_F divided by the total number gives (3/5) E_F.",
+   "why_wrong": [
+    "E_F is the maximum, not the mean.",
+    "1/2 would be an arithmetic midpoint, ignoring the sqrt(E) density of states.",
+    "",
+    "3/2 E_F is more than the maximum, impossible at 0 K."
+   ],
+   "key": "PHY-U1-055"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is NOT true for a free electron gas at 0 K?",
+   "code": "",
+   "options": [
+    "All states below E_F are occupied",
+    "Each occupied level holds two electrons of opposite spin",
+    "The mean electron energy is non-zero",
+    "Some electrons have energy above E_F"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "At 0 K no state above E_F is occupied, so no electron has energy greater than E_F.",
+   "why_wrong": [
+    "This is a true statement.",
+    "This is true due to the Pauli principle.",
+    "Electrons keep a mean energy of 3E_F/5 even at 0 K.",
+    ""
+   ],
+   "key": "PHY-U1-056"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "If the free electron concentration of a metal is made four times as large, its Fermi energy increases by a factor of about:",
+   "code": "",
+   "options": [
+    "2.52",
+    "4.00",
+    "2.00",
+    "1.59"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "E_F is proportional to n^(2/3), so the factor is 4^(2/3) = 2.52.",
+   "why_wrong": [
+    "",
+    "Using E_F proportional to n gives 4.",
+    "Using E_F proportional to n^(1/2) gives 2.",
+    "Using n^(1/3) gives 1.59."
+   ],
+   "key": "PHY-U1-057"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The Fermi-Dirac distribution function is:",
+   "code": "",
+   "options": [
+    "f(E) = 1 / (1 - exp[(E - E_F)/kT])",
+    "f(E) = 1 / (1 + exp[(E - E_F)/kT])",
+    "f(E) = exp[-(E - E_F)/kT]",
+    "f(E) = 1 / exp[(E - E_F)/kT]"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "The +1 in the denominator is what keeps f between 0 and 1.",
+   "why_wrong": [
+    "The minus sign is the Bose-Einstein form and diverges at E = E_F.",
+    "",
+    "That is a pure Boltzmann factor, which exceeds 1 for E < E_F.",
+    "Without the +1 it gives the Boltzmann factor, not the FD function."
+   ],
+   "key": "PHY-U1-058"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "At 300 K, the probability of occupancy of a state 0.1 eV above the Fermi level is about (use kT = 0.0259 eV):",
+   "code": "",
+   "options": [
+    "0.980",
+    "0.500",
+    "0.0205",
+    "0.404"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "f = 1/(1 + exp(0.1/0.0259)) = 1/(1 + 47.9) = 0.0205.",
+   "why_wrong": [
+    "That is the probability for a state 0.1 eV below E_F (sign slip).",
+    "0.5 holds only at E = E_F.",
+    "",
+    "Using kT ten times too large (0.259 eV) gives this value."
+   ],
+   "key": "PHY-U1-059"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "At 300 K, if the occupancy of a state 0.05 eV above E_F is 0.13, the occupancy of the state 0.05 eV below E_F is:",
+   "code": "",
+   "options": [
+    "0.13",
+    "0.50",
+    "1.13",
+    "0.87"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "f(E_F + dE) + f(E_F - dE) = 1, so the second is 1 - 0.13 = 0.87.",
+   "why_wrong": [
+    "The two values are not equal; the function is symmetric about 0.5 as a complement.",
+    "0.5 is the value at E_F only.",
+    "A probability cannot exceed 1.",
+    ""
+   ],
+   "key": "PHY-U1-060"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "As temperature rises above 0 K, the Fermi-Dirac step function becomes smeared, and the electrons whose occupancy changes are mainly those:",
+   "code": "",
+   "options": [
+    "within a few kT of E_F",
+    "at the very bottom of the band",
+    "at all energies equally",
+    "far above E_F by several eV"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Only electrons near E_F can find empty states within thermal energy kT.",
+   "why_wrong": [
+    "",
+    "Deep electrons have no empty states nearby, so they are unaffected.",
+    "The change is limited to near E_F.",
+    "Probability of occupancy far above E_F stays essentially zero."
+   ],
+   "key": "PHY-U1-061"
+  },
+  {
+   "topic": "Energy band formation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The splitting of atomic levels into a band instead of N coincident levels is a direct consequence of the:",
+   "code": "",
+   "options": [
+    "Heisenberg uncertainty principle",
+    "Pauli exclusion principle",
+    "Law of conservation of charge",
+    "Ohm's law"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "No two electrons can occupy the same quantum state, so the levels must shift slightly, spreading into a band.",
+   "why_wrong": [
+    "Uncertainty explains level width but not the separation of N levels.",
+    "",
+    "Charge conservation does not enter.",
+    "Ohm's law is a macroscopic transport law."
+   ],
+   "key": "PHY-U1-062"
+  },
+  {
+   "topic": "Energy band formation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "At 0 K, which band of an intrinsic semiconductor is completely filled?",
+   "code": "",
+   "options": [
+    "the conduction band",
+    "the donor band",
+    "the valence band",
+    "the acceptor band"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "All valence electrons occupy the valence band, and the conduction band is empty.",
+   "why_wrong": [
+    "The conduction band is empty at 0 K.",
+    "Donor levels exist only in doped material.",
+    "",
+    "Acceptor levels exist only in doped material."
+   ],
+   "key": "PHY-U1-063"
+  },
+  {
+   "topic": "Energy band formation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In terms of band structure, a metal differs from an insulator because in a metal:",
+   "code": "",
+   "options": [
+    "the forbidden gap is very large",
+    "the valence band is completely filled with no overlap",
+    "the Fermi level lies in the middle of a wide gap",
+    "a band is partly filled or overlaps the next one"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A partially filled band (or overlapping bands) lets electrons move at any temperature, giving high conductivity.",
+   "why_wrong": [
+    "A large gap describes insulators.",
+    "A filled band without overlap describes an insulator or semiconductor.",
+    "This describes an intrinsic semiconductor or insulator.",
+    ""
+   ],
+   "key": "PHY-U1-064"
+  },
+  {
+   "topic": "Energy band formation",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "The Kronig-Penney model predicts that the allowed energy bands become wider for:",
+   "code": "",
+   "options": [
+    "higher energies",
+    "lower energies",
+    "negative energies only",
+    "the energies inside the gap"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "At higher energies electrons are less strongly bound by the barriers, so the bands widen and gaps narrow.",
+   "why_wrong": [
+    "",
+    "Lower-energy bands are narrower and tightly bound.",
+    "The model does not deal with negative-energy bands.",
+    "Energies in the gap are forbidden."
+   ],
+   "key": "PHY-U1-065"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A band whose E-k curve has a very small curvature (flat band) has an effective mass that is:",
+   "code": "",
+   "options": [
+    "small",
+    "large",
+    "zero",
+    "negative at all k"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "m* = hbar^2/(d2E/dk2), so small curvature gives large m*.",
+   "why_wrong": [
+    "Small m* needs strong curvature.",
+    "",
+    "Zero mass needs infinite curvature.",
+    "Sign depends on the sign of curvature, which is positive near the band minimum."
+   ],
+   "key": "PHY-U1-066"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "For a conduction band, d2E/dk2 = 2.0e-38 J m2 near the minimum. With hbar = 1.055e-34 J s, the effective mass is about:",
+   "code": "",
+   "options": [
+    "1.11e-30 kg",
+    "2.78e-31 kg",
+    "5.56e-31 kg",
+    "2.20e-29 kg"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "m* = hbar^2/(d2E/dk2) = (1.055e-34)^2/2.0e-38 = 5.56e-31 kg.",
+   "why_wrong": [
+    "A spurious factor 2 doubles the value.",
+    "A spurious factor 1/2 halves the value.",
+    "",
+    "Using h in place of hbar gives a mass larger by (2 pi)^2."
+   ],
+   "key": "PHY-U1-067"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement about effective mass is NOT correct?",
+   "code": "",
+   "options": [
+    "It depends on the curvature of the E-k curve",
+    "It can differ for electrons and holes",
+    "It can be negative near the top of a band",
+    "It is identical in every band and direction"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "m* depends on the band and crystal direction; it is not universal.",
+   "why_wrong": [
+    "Correct, m* is inversely related to curvature.",
+    "Correct, electron and hole masses differ.",
+    "Correct, curvature is negative at the band top.",
+    ""
+   ],
+   "key": "PHY-U1-068"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Band X has an E-k curvature twice as large as band Y. The effective mass in X compared with Y is:",
+   "code": "",
+   "options": [
+    "half",
+    "twice",
+    "equal",
+    "four times"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "m* is inversely proportional to curvature, so doubling the curvature halves m*.",
+   "why_wrong": [
+    "",
+    "Twice would hold if m* were proportional to curvature.",
+    "The masses differ when curvatures differ.",
+    "Four times does not follow from the inverse relation."
+   ],
+   "key": "PHY-U1-069"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In the steady state of the Hall effect, the Hall electric field is established so that it:",
+   "code": "",
+   "options": [
+    "adds to the magnetic force",
+    "balances the magnetic force on carriers",
+    "reverses the current",
+    "cancels the applied longitudinal field"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Equilibrium requires eE_H = e v_d B, so there is no further sideways drift.",
+   "why_wrong": [
+    "If added, carriers would keep deflecting.",
+    "",
+    "The current continues to flow along the bar.",
+    "The longitudinal field continues to drive the current."
+   ],
+   "key": "PHY-U1-070"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A semiconductor shows a Hall coefficient of 2.5e-3 m3/C. Taking e = 1.6e-19 C, the hole concentration is about:",
+   "code": "",
+   "options": [
+    "4.00e+02 m-3",
+    "4.00e-22 m-3",
+    "2.50e+21 m-3",
+    "2.50e+18 m-3"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "p = 1/(R_H e) = 1/(2.5e-3 x 1.6e-19) = 2.50e+21 m-3.",
+   "why_wrong": [
+    "Forgetting the charge e gives 1/R_H.",
+    "Multiplying R_H by e instead of dividing gives an extremely small value.",
+    "",
+    "A factor of 1000 slip, such as mixing units."
+   ],
+   "key": "PHY-U1-071"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A Hall probe carries I = 10 mA in a field B = 0.5 T. The carrier density is 5e22 m-3 and the thickness is 1 mm. Using V_H = IB/(n e t), the Hall voltage is:",
+   "code": "",
+   "options": [
+    "6.25 mV",
+    "0.0625 mV",
+    "62.5 mV",
+    "0.625 mV"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "V_H = (0.01 x 0.5)/(5e22 x 1.6e-19 x 1e-3) = 6.250e-04 V = 0.625 mV.",
+   "why_wrong": [
+    "Treating t as 0.1 mm gives ten times as much.",
+    "Treating t as 10 mm gives one tenth.",
+    "Treating t as 0.01 mm gives a hundred times as much.",
+    ""
+   ],
+   "key": "PHY-U1-072"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A Hall measurement on a semiconductor sample gives a positive Hall coefficient. The sample is:",
+   "code": "",
+   "options": [
+    "p-type, with holes as majority carriers",
+    "n-type, with electrons as the majority carriers",
+    "intrinsic, with R_H exactly zero",
+    "a metal with a very low carrier density"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "R_H = +1/(pe) for holes, so a positive sign indicates p-type material.",
+   "why_wrong": [
+    "",
+    "n-type would give a negative R_H.",
+    "In an intrinsic sample R_H depends on both carriers and mobility, not exactly zero.",
+    "Metals have negative R_H generally and very high carrier density."
+   ],
+   "key": "PHY-U1-073"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In an intrinsic semiconductor, which statement is true?",
+   "code": "",
+   "options": [
+    "Electrons greatly outnumber holes at 300 K",
+    "Electron and hole densities are equal, n = p = ni",
+    "Holes greatly outnumber electrons at 300 K",
+    "Both concentrations are exactly zero at 300 K"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Each thermally generated electron leaves behind one hole, so n = p = ni.",
+   "why_wrong": [
+    "That is true of n-type material.",
+    "",
+    "That is true of p-type material.",
+    "Thermal generation gives non-zero concentrations at 300 K."
+   ],
+   "key": "PHY-U1-074"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Silicon has ni = 1.5e10 cm-3 and is doped with ND = 1e16 cm-3 donors (all ionised). Using np = ni^2, the hole concentration is about:",
+   "code": "",
+   "options": [
+    "1.5e+10 cm-3",
+    "1.5e-06 cm-3",
+    "2.25e+04 cm-3",
+    "2.25e+36 cm-3"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "p = ni^2/n = (1.5e10)^2/1e16 = 2.25e+04 cm-3.",
+   "why_wrong": [
+    "That is ni itself, ignoring doping.",
+    "Dividing ni (not ni^2) by n gives an incorrect value.",
+    "",
+    "Multiplying ni^2 by ND is the wrong operation."
+   ],
+   "key": "PHY-U1-075"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which statement is NOT correct about extrinsic semiconductors?",
+   "code": "",
+   "options": [
+    "Donor atoms donate free electrons to the conduction band",
+    "Acceptor atoms create holes in the valence band",
+    "The product np remains equal to ni^2 at equilibrium",
+    "Acceptor atoms donate free electrons to the conduction band"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Acceptors accept electrons, creating holes; they do not donate electrons.",
+   "why_wrong": [
+    "This statement is true.",
+    "This statement is true.",
+    "This statement is true (mass action law).",
+    ""
+   ],
+   "key": "PHY-U1-076"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "With increase in temperature, the conductivity of an intrinsic semiconductor:",
+   "code": "",
+   "options": [
+    "increases, since more pairs are generated",
+    "decreases, because the lattice vibrates more",
+    "stays constant",
+    "becomes zero"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The carrier concentration rises exponentially with temperature and outweighs the small mobility drop.",
+   "why_wrong": [
+    "",
+    "Lattice scattering effect is smaller than the growth of carriers.",
+    "Conductivity depends strongly on temperature.",
+    "It does not vanish; it grows."
+   ],
+   "key": "PHY-U1-077"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which of the following is a typical pair of dopants, a donor first and an acceptor second, for silicon?",
+   "code": "",
+   "options": [
+    "boron and phosphorus",
+    "phosphorus and boron",
+    "aluminium and gallium",
+    "arsenic and antimony"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Phosphorus (group V) is a donor and boron (group III) is an acceptor.",
+   "why_wrong": [
+    "The order is reversed here.",
+    "",
+    "Aluminium and gallium are both group III acceptors.",
+    "Arsenic and antimony are both group V donors."
+   ],
+   "key": "PHY-U1-078"
+  },
+  {
+   "topic": "Insulators",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Among these materials, which has the largest energy band gap at room temperature?",
+   "code": "",
+   "options": [
+    "silicon (about 1.1 eV)",
+    "germanium (about 0.67 eV)",
+    "diamond (about 5.5 eV)",
+    "gallium arsenide (about 1.4 eV)"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Diamond is an insulator with a gap of about 5.5 eV, much larger than those of the semiconductors.",
+   "why_wrong": [
+    "Silicon's gap is about 1.1 eV.",
+    "Germanium's gap is the smallest at about 0.67 eV.",
+    "",
+    "GaAs has a gap of about 1.4 eV."
+   ],
+   "key": "PHY-U1-079"
+  },
+  {
+   "topic": "Insulators",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Why does an insulator not conduct at room temperature?",
+   "code": "",
+   "options": [
+    "It has no electrons in the valence band at all",
+    "Its valence band is only half filled with electrons",
+    "Its conduction band is already full of electrons",
+    "The gap far exceeds kT, so almost no electron is excited"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Thermal energy is far smaller than the gap, so the conduction band stays essentially empty.",
+   "why_wrong": [
+    "Insulators have plenty of electrons; they are just bound.",
+    "A half-filled band would give conduction.",
+    "A full conduction band would give conduction.",
+    ""
+   ],
+   "key": "PHY-U1-080"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "When the donor doping of an n-type semiconductor is increased, its Fermi level:",
+   "code": "",
+   "options": [
+    "moves closer to the conduction band edge",
+    "moves closer to the valence band",
+    "moves to the exact midgap",
+    "moves out of the gap into the valence band"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A higher electron concentration raises E_F towards E_c.",
+   "why_wrong": [
+    "",
+    "That would happen with more acceptor doping.",
+    "Midgap is for intrinsic material.",
+    "E_F moves up, away from the valence band."
+   ],
+   "key": "PHY-U1-081"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "At very low temperature (close to 0 K), the Fermi level of an n-type semiconductor lies:",
+   "code": "",
+   "options": [
+    "exactly at the middle of the forbidden gap",
+    "midway between donor level and conduction band",
+    "right at the top edge of the valence band",
+    "well below the donor level, towards midgap"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "At very low T the donors are only partly ionised and E_F sits halfway between E_d and E_c.",
+   "why_wrong": [
+    "Midgap is for intrinsic material at all T.",
+    "",
+    "The valence band edge is far from the donor-controlled E_F.",
+    "E_F lies above the donor level, not below it."
+   ],
+   "key": "PHY-U1-082"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "At 300 K an n-type sample has n = 100 ni. Using n = ni exp[(E_F - E_i)/kT] and kT = 0.0259 eV, E_F lies above E_i by about:",
+   "code": "",
+   "options": [
+    "0.052 eV",
+    "0.259 eV",
+    "0.119 eV",
+    "-0.119 eV"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "E_F - E_i = kT ln(100) = 0.0259 x 4.605 = 0.119 eV.",
+   "why_wrong": [
+    "Using log10 instead of ln.",
+    "Using n/ni = 10 or taking kT x 10.",
+    "",
+    "Sign slip: for n-type E_F is above E_i, not below."
+   ],
+   "key": "PHY-U1-083"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Compared with the intrinsic level E_i, the Fermi level of a p-type semiconductor lies:",
+   "code": "",
+   "options": [
+    "above E_i",
+    "exactly at E_i",
+    "above the conduction band edge",
+    "below E_i"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "More holes than electrons means E_F is lower than E_i.",
+   "why_wrong": [
+    "Above E_i is n-type.",
+    "Exactly at E_i is intrinsic.",
+    "That would be heavily degenerate n-type.",
+    ""
+   ],
+   "key": "PHY-U1-084"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which semiconductor is preferred for making light-emitting diodes and laser diodes?",
+   "code": "",
+   "options": [
+    "GaAs, a direct gap material",
+    "Si, an indirect gap material",
+    "Ge, an indirect gap material",
+    "Diamond, a large-gap insulator"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In a direct gap material electron-hole recombination emits a photon efficiently without needing a phonon.",
+   "why_wrong": [
+    "",
+    "Si is indirect, so radiative recombination is weak.",
+    "Ge is also indirect.",
+    "Diamond is an insulator, not used in standard LEDs."
+   ],
+   "key": "PHY-U1-085"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In an indirect band gap semiconductor, an electron making a transition across the gap must also involve a:",
+   "code": "",
+   "options": [
+    "neutron",
+    "phonon",
+    "positron",
+    "magnetic monopole"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "A photon carries almost no momentum, so a lattice vibration (phonon) must supply the difference in k.",
+   "why_wrong": [
+    "Neutrons do not take part in such transitions.",
+    "",
+    "Positrons are antiparticles, not part of the process.",
+    "Magnetic monopoles do not exist as relevant particles."
+   ],
+   "key": "PHY-U1-086"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Which one of the following is NOT a direct band gap semiconductor?",
+   "code": "",
+   "options": [
+    "GaAs",
+    "InP",
+    "Silicon",
+    "GaN"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Silicon has an indirect gap, while GaAs, InP and GaN are direct.",
+   "why_wrong": [
+    "GaAs is direct.",
+    "InP is direct.",
+    "",
+    "GaN is direct."
+   ],
+   "key": "PHY-U1-087"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "In a solar cell, photons whose energy is less than the band gap energy of the semiconductor:",
+   "code": "",
+   "options": [
+    "create two pairs each",
+    "are always reflected back",
+    "produce the maximum possible current",
+    "cannot create electron-hole pairs"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "A photon needs E >= Eg to lift an electron across the gap; lower energy photons pass through.",
+   "why_wrong": [
+    "Pairs need at least Eg per photon.",
+    "They are mostly transmitted, not necessarily reflected.",
+    "They contribute no photocurrent.",
+    ""
+   ],
+   "key": "PHY-U1-088"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "A solar cell has Voc = 0.6 V, Isc = 30 mA and a maximum output power of 13.5 mW. Its fill factor is:",
+   "code": "",
+   "options": [
+    "0.75",
+    "1.33",
+    "0.45",
+    "0.25"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "FF = Pmax/(Voc x Isc) = 13.5/(0.6 x 30) = 0.75.",
+   "why_wrong": [
+    "",
+    "That is the inverse ratio, which exceeds 1.",
+    "Dividing Pmax by Isc alone (without Voc) is wrong.",
+    "Ignoring a factor, giving a third of the true value."
+   ],
+   "key": "PHY-U1-089"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "medium",
+   "kind": "recall",
+   "q": "Taking Eg = 1.1 eV for silicon and lambda (nm) = 1240/E (eV), the longest wavelength that a silicon solar cell can absorb to create pairs is about:",
+   "code": "",
+   "options": [
+    "564 nm",
+    "1127 nm",
+    "1240 nm",
+    "1.1 nm"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "lambda = 1240/1.1 = 1127 nm, in the near-infrared.",
+   "why_wrong": [
+    "Halving the wavelength is equivalent to using 2.2 eV.",
+    "",
+    "1240 nm corresponds to E = 1 eV, ignoring the 1.1 eV gap.",
+    "1.1 is the energy in eV, not a wavelength."
+   ],
+   "key": "PHY-U1-090"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Copper has n = 8.5e28 electrons/m3 and resistivity 1.7e-8 ohm.m at room temperature. Using the Drude free-electron model, what is the relaxation time of its conduction electrons?",
+   "code": "",
+   "options": [
+    "3.9e-33 s",
+    "7.1e-30 s",
+    "2.5e-08 s",
+    "2.5e-14 s"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "sigma = n e^2 tau/m, so tau = m/(n e^2 rho) = 9.109e-31/(8.5e28 x (1.6e-19)^2 x 1.7e-8) = 2.5e-14 s.",
+   "why_wrong": [
+    "Left out one factor of e: used e instead of e^2 in the denominator.",
+    "Multiplied by rho instead of dividing by it.",
+    "Used n in cm^-3 (8.5e22) instead of m^-3.",
+    ""
+   ],
+   "key": "PHY-U1-101"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A classical free-electron model assumes a temperature-independent mean free path and a thermal speed that grows as the square root of T. A metal wire has resistivity rho at 300 K. What resistivity does this classical model predict at 1200 K?",
+   "code": "",
+   "options": [
+    "4 rho",
+    "rho/2",
+    "2 rho",
+    "16 rho"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "tau = lambda/v is proportional to T^(-1/2), so rho = m/(n e^2 tau) is proportional to T^(1/2). For T x4, rho x2.",
+   "why_wrong": [
+    "That is the experimentally observed linear-in-T behaviour, not the classical-model prediction.",
+    "Inverted the trend; scattering rises with speed so resistivity increases with T.",
+    "",
+    "Used rho proportional to T^2, which no free-electron model gives."
+   ],
+   "key": "PHY-U1-102"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "The relaxation time of conduction electrons in copper is 2.5e-14 s. Using the Drude model, what is their mobility?",
+   "code": "",
+   "options": [
+    "0.0044 m2/V.s",
+    "0.0022 m2/V.s",
+    "0.0088 m2/V.s",
+    "4.4e-05 m2/V.s"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "mu = e tau/m = 1.6e-19 x 2.5e-14/9.109e-31 = 0.0044 m2/V.s.",
+   "why_wrong": [
+    "",
+    "Included a factor 1/2 as if from kinetic energy; mu = e tau/m has none.",
+    "Included an extra factor 2.",
+    "Applied the m2 to cm2 conversion in the wrong direction."
+   ],
+   "key": "PHY-U1-103"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A copper wire of cross-section 1 mm2 carries a steady current of 1 A. Taking n = 8.5e28 m^-3, what is the electron drift velocity?",
+   "code": "",
+   "options": [
+    "7.4e-08 m/s",
+    "0.074 m/s",
+    "7.4e-07 m/s",
+    "7.4e-05 m/s"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "v_d = I/(n e A) = 1/(8.5e28 x 1.6e-19 x 1e-6) = 7.4e-05 m/s (a fraction of a millimetre per second).",
+   "why_wrong": [
+    "Took 1 mm2 as 1e-3 m2 instead of 1e-6 m2.",
+    "Took 1 mm2 as 1e-9 m2 (cubed the unit conversion).",
+    "Took 1 mm2 as 1e-4 m2 (confused with cm2).",
+    ""
+   ],
+   "key": "PHY-U1-104"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Classical free-electron theory predicts a large electronic contribution (3/2 k per electron) to a metal's specific heat, but experiment shows a tiny one. How does the quantum free-electron treatment resolve this?",
+   "code": "",
+   "options": [
+    "Conduction electrons are bound to ion cores and so cannot move at all",
+    "Lattice collisions absorb nearly all the heat before electrons do",
+    "Only electrons within about kT of E_F can absorb thermal energy",
+    "Electron-electron repulsion exactly cancels the thermal motion"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Because of the Pauli exclusion principle, only electrons within roughly kT of the Fermi level can be thermally excited into empty states. That is a small fraction (about T/T_F) of all electrons, so the electronic heat capacity is small.",
+   "why_wrong": [
+    "Conduction electrons are mobile; the problem is how few can absorb thermal energy.",
+    "Collisions do not remove the electrons' share; the exclusion principle restricts it.",
+    "",
+    "Free-electron theory neglects such interactions; exclusion, not repulsion, limits excitation."
+   ],
+   "key": "PHY-U1-105"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "For copper (E_F = 7.0 eV) the relaxation time is 2.5e-14 s. Electrons that actually undergo scattering in the quantum free-electron picture travel at the Fermi speed. What mean free path results?",
+   "code": "",
+   "options": [
+    "3.9e-08 m",
+    "2.9e-09 m",
+    "2.8e-08 m",
+    "5.5e-08 m"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "v_F = sqrt(2E_F/m) = sqrt(2 x 7.0 x 1.6e-19/9.109e-31) = 1.6e+06 m/s. lambda = v_F tau = 3.9e-08 m, about 39 nm.",
+   "why_wrong": [
+    "",
+    "Used the classical thermal speed sqrt(3kT/m) instead of the Fermi speed.",
+    "Dropped the factor 2 in v_F = sqrt(2E_F/m).",
+    "Used sqrt(4E_F/m), doubling the kinetic-energy factor."
+   ],
+   "key": "PHY-U1-106"
+  },
+  {
+   "topic": "Free electron theory",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "In a metal, the conduction-electron density is tripled by alloying while the relaxation time falls to one sixth of its value. By what factor does the conductivity change?",
+   "code": "",
+   "options": [
+    "2",
+    "0.5",
+    "18",
+    "0.167"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "sigma = n e^2 tau/m, so the factor is 3 x (1/6) = 0.5; conductivity halves.",
+   "why_wrong": [
+    "Inverted the result; sigma changes by the product 3 x 1/6, which is 0.5.",
+    "",
+    "Multiplied by 3 and by 6 instead of using 1/6 for tau.",
+    "Ignored the change in n and kept only the tau factor."
+   ],
+   "key": "PHY-U1-107"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Electron mobility in a silicon sample at 300 K is 1350 cm2/V.s. Using the Einstein relation, what is the electron diffusion coefficient?",
+   "code": "",
+   "options": [
+    "34.9 cm2/s",
+    "5.22e+04 cm2/s",
+    "17.4 cm2/s",
+    "69.8 cm2/s"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "D = mu kT/e = 1350 x 0.02585 V = 34.9 cm2/s.",
+   "why_wrong": [
+    "",
+    "Used mu/(kT/e), inverting the Einstein relation.",
+    "Inserted a spurious factor 1/2.",
+    "Inserted a spurious factor 2 (from kinetic energy)."
+   ],
+   "key": "PHY-U1-108"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In n-type silicon the electron concentration falls linearly from 1e16 to 1e15 cm^-3 over a distance of 1 micrometre. With D_n = 35 cm2/s, what is the magnitude of the electron diffusion current density?",
+   "code": "",
+   "options": [
+    "560 A/cm2",
+    "5.04e+04 A/cm2",
+    "50.4 A/cm2",
+    "504 A/cm2"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "J = e D (dn/dx) = 1.6e-19 x 35 x (9e15/1e-4 cm) = 504 A/cm2.",
+   "why_wrong": [
+    "Used the starting concentration instead of the difference (1e16 - 1e15).",
+    "Took 1 micrometre as 1e-6 cm instead of 1e-4 cm.",
+    "Took 1 micrometre as 1e-3 cm instead of 1e-4 cm.",
+    ""
+   ],
+   "key": "PHY-U1-109"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An n-type silicon bar has n = 1e16 cm^-3 and electron mobility 1350 cm2/V.s. A field of 100 V/cm is applied. What is the electron drift current density?",
+   "code": "",
+   "options": [
+    "76.8 A/cm2",
+    "216 A/cm2",
+    "0.16 A/cm2",
+    "2.16e+03 A/cm2"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "J = n e mu E = 1e16 x 1.6e-19 x 1350 x 100 = 216 A/cm2.",
+   "why_wrong": [
+    "Used the hole mobility (480) instead of the electron mobility.",
+    "",
+    "Left out the mobility.",
+    "Used E = 1000 V/cm."
+   ],
+   "key": "PHY-U1-110"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A silicon bar is doped non-uniformly (heavier at the left end) and sits in open circuit with no applied voltage. Electrons diffuse from the heavy to the light end, yet no net current flows. Why?",
+   "code": "",
+   "options": [
+    "An internal field builds up and its drift current cancels diffusion",
+    "Diffusion stops entirely because carriers stop moving thermally",
+    "No electric field can exist in the bar without an external battery",
+    "Only electrons diffuse, so holes carry the opposite current"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Diffusion separates charge and sets up an internal electric field. At equilibrium the drift current driven by this field exactly cancels the diffusion current for each carrier type, so net current is zero.",
+   "why_wrong": [
+    "",
+    "Carriers keep moving thermally at all T above 0 K; the flows balance rather than stop.",
+    "Non-uniform doping itself creates an internal field with no battery.",
+    "Both carriers diffuse; balance holds for each type separately."
+   ],
+   "key": "PHY-U1-111"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a bar with no applied field, the electron concentration increases toward +x. Which pair correctly gives the direction of electron motion and of the conventional diffusion current?",
+   "code": "",
+   "options": [
+    "Electrons move toward +x; conventional current toward +x",
+    "Electrons move toward +x; conventional current toward -x",
+    "Electrons move toward -x; conventional current toward +x",
+    "Electrons move toward -x; conventional current toward -x"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Electrons diffuse from high to low concentration, so they move toward -x. Because electrons are negative, the conventional current points opposite, toward +x.",
+   "why_wrong": [
+    "Particles diffuse down the gradient, not up it.",
+    "Diffusion goes from high to low concentration, so electrons move toward -x.",
+    "",
+    "Forgot the negative charge; conventional current is opposite to electron flow."
+   ],
+   "key": "PHY-U1-112"
+  },
+  {
+   "topic": "Drift and diffusion current",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "In a p-type semiconductor the hole concentration varies as p = p0 exp(x/L) with L = 10 micrometre at 300 K. What uniform field magnitude makes the net hole current zero?",
+   "code": "",
+   "options": [
+    "258.5 V/cm",
+    "25.85 V/cm",
+    "2.585 V/cm",
+    "0.0259 V/cm"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Zero net current needs drift = diffusion: p e mu E = e D dp/dx = e D p/L, so E = (D/mu)/L = (kT/e)/L = 0.02585/1e-3 cm = 25.85 V/cm.",
+   "why_wrong": [
+    "Took L as 1 micrometre instead of 10 micrometre.",
+    "",
+    "Took L as 100 micrometre.",
+    "Used kT/e without dividing by the length scale L."
+   ],
+   "key": "PHY-U1-113"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Copper has a free-electron density of 8.5e28 m^-3. Using the free-electron model at 0 K, what is its Fermi energy?",
+   "code": "",
+   "options": [
+    "14.1 eV",
+    "3.53 eV",
+    "3.29 eV",
+    "7.06 eV"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "E_F = (hbar^2/2m)(3 pi^2 n)^(2/3) = 7.06 eV.",
+   "why_wrong": [
+    "Dropped the factor 1/2 in hbar^2/2m.",
+    "Divided by an extra factor 2.",
+    "Used 3 pi n instead of 3 pi^2 n inside the bracket.",
+    ""
+   ],
+   "key": "PHY-U1-114"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A metal is compressed so that its conduction-electron density rises eightfold, with no change in the electron mass. By what factor does the Fermi energy change?",
+   "code": "",
+   "options": [
+    "8",
+    "2",
+    "4",
+    "2.83"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "E_F is proportional to n^(2/3), so 8^(2/3) = 4.",
+   "why_wrong": [
+    "Assumed E_F proportional to n.",
+    "Used n^(1/3) instead of n^(2/3).",
+    "",
+    "Used n^(1/2)."
+   ],
+   "key": "PHY-U1-115"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A metal has a Fermi energy of 5.0 eV. What is the average kinetic energy per conduction electron at 0 K?",
+   "code": "",
+   "options": [
+    "3.0 eV",
+    "2.5 eV",
+    "7.5 eV",
+    "5.0 eV"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "The mean energy at 0 K is (3/5) E_F = 3.0 eV.",
+   "why_wrong": [
+    "",
+    "Took E_F/2, the midpoint, but the density of states weights higher energies.",
+    "Used (3/2) E_F, the classical-style 3/2 factor.",
+    "Took the mean equal to E_F."
+   ],
+   "key": "PHY-U1-116"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Silver has a Fermi energy of 5.5 eV. What is the Fermi speed of its electrons?",
+   "code": "",
+   "options": [
+    "9.83e+05 m/s",
+    "1.97e+06 m/s",
+    "1.39e+06 m/s",
+    "1.17e+05 m/s"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "v_F = sqrt(2E_F/m) = sqrt(2 x 5.5 x 1.6e-19/9.109e-31) = 1.39e+06 m/s.",
+   "why_wrong": [
+    "Dropped the factor 2 in 2E_F/m.",
+    "Used 4E_F/m instead of 2E_F/m.",
+    "",
+    "Used the classical thermal speed at 300 K instead of E_F."
+   ],
+   "key": "PHY-U1-117"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Metal A has twice the Fermi energy of metal B (same electron mass). What is the ratio of their conduction-electron densities n_A/n_B?",
+   "code": "",
+   "options": [
+    "4",
+    "2.83",
+    "2",
+    "1.59"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "n is proportional to E_F^(3/2), so n_A/n_B = 2^(3/2) = 2.83.",
+   "why_wrong": [
+    "Used E_F proportional to n^(1/2), i.e. n proportional to E_F^2.",
+    "",
+    "Assumed n proportional to E_F.",
+    "Used the inverse exponent: 2^(2/3) is the E_F ratio for a given n ratio."
+   ],
+   "key": "PHY-U1-118"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Two metals have identical atomic density, but one atom contributes 2 free electrons and the other 1. Assuming free-electron behaviour, what is the ratio E_F(divalent)/E_F(monovalent)?",
+   "code": "",
+   "options": [
+    "1.59",
+    "2.00",
+    "2.83",
+    "1.41"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "n doubles, and E_F is proportional to n^(2/3), so the ratio is 2^(2/3) = 1.59.",
+   "why_wrong": [
+    "",
+    "Assumed E_F proportional to n.",
+    "Used n^(3/2) instead of n^(2/3).",
+    "Used n^(1/2)."
+   ],
+   "key": "PHY-U1-119"
+  },
+  {
+   "topic": "Fermi energy",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "At 300 K the mean energy of a classical free electron would be 3kT/2. For copper (E_F = 7.0 eV), roughly how many times larger is the actual mean energy of a conduction electron?",
+   "code": "",
+   "options": [
+    "181",
+    "90.3",
+    "108",
+    "271"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Actual mean energy ~ (3/5)(7.0) = 4.2 eV; classical 1.5 x 0.02585 = 0.0388 eV. Ratio = 108, about 108.",
+   "why_wrong": [
+    "Used E_F itself as the mean energy instead of (3/5)E_F.",
+    "Used E_F/2 as the mean energy.",
+    "",
+    "Used (3/2)E_F as the mean energy."
+   ],
+   "key": "PHY-U1-120"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "At 300 K, what is the Fermi-Dirac occupation probability of a state lying 0.10 eV above the Fermi level?",
+   "code": "",
+   "options": [
+    "0.0205",
+    "0.98",
+    "0.126",
+    "0.5"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "f = 1/(1 + exp(0.10/0.02585)) = 1/(1 + 47.8) = 0.0205.",
+   "why_wrong": [
+    "",
+    "Flipped the sign of the exponent (that is the value 0.10 eV below E_F).",
+    "Used an energy difference of 0.05 eV instead of 0.10 eV.",
+    "That is the occupation exactly at E_F, not 0.10 eV above it."
+   ],
+   "key": "PHY-U1-121"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "At 300 K, what is the probability that a state 0.05 eV below the Fermi level is occupied?",
+   "code": "",
+   "options": [
+    "0.126",
+    "0.5",
+    "0.98",
+    "0.874"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "f = 1/(1 + exp(-0.05/0.02585)) = 1/(1 + 0.1445) = 0.874.",
+   "why_wrong": [
+    "Gave the probability of the state being empty rather than occupied.",
+    "That is the occupation at E_F itself.",
+    "Used 0.10 eV below E_F instead of 0.05 eV.",
+    ""
+   ],
+   "key": "PHY-U1-122"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "At 300 K, how far above the Fermi level (in eV) is the energy at which the Fermi-Dirac occupation falls to 0.10?",
+   "code": "",
+   "options": [
+    "0.0595 eV",
+    "0.0568 eV",
+    "0.0259 eV",
+    "0.114 eV"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "0.1 = 1/(1+exp(x/kT)) gives exp(x/kT) = 9, so x = kT ln 9 = 0.02585 x 2.197 = 0.0568 eV.",
+   "why_wrong": [
+    "Used ln 10 by dropping the +1 (Boltzmann approximation).",
+    "",
+    "Took the energy as just kT.",
+    "Doubled the result by using exp(x/kT) = 81."
+   ],
+   "key": "PHY-U1-123"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "At a temperature T > 0, the Fermi-Dirac occupation of a state 0.08 eV above E_F is 0.05. What is the probability that the state 0.08 eV below E_F is empty?",
+   "code": "",
+   "options": [
+    "0.95",
+    "0.50",
+    "0.10",
+    "0.05"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "The distribution is symmetric about E_F: f(E_F - x) = 1 - f(E_F + x). So the probability that the lower state is empty is 1 - f(E_F - x) = f(E_F + x) = 0.05.",
+   "why_wrong": [
+    "That is the probability the lower state is occupied, not empty.",
+    "Assumed states equidistant from E_F are always half occupied.",
+    "Doubled the value; hole and electron probabilities are equal, not additive.",
+    ""
+   ],
+   "key": "PHY-U1-124"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A Boltzmann approximation f ~ exp(-(E - E_F)/kT) is used for a state 3kT above E_F. Roughly how large is its relative error compared with the exact Fermi-Dirac value?",
+   "code": "",
+   "options": [
+    "About 0.5%",
+    "About 20%",
+    "About 37%",
+    "About 5%"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Exact f = 1/(1+e^3) = 0.0474; approximation e^-3 = 0.0498. The ratio is 1 + e^-3 = 1.05, so the error is about 5%.",
+   "why_wrong": [
+    "That would hold only near 5kT; at 3kT e^-3 is 5%.",
+    "Too large; the error is e^-3, not e^-1.6.",
+    "Mistook the error for e^-1 rather than e^-3.",
+    ""
+   ],
+   "key": "PHY-U1-125"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "The Fermi-Dirac occupation of a state 0.05 eV above E_F is measured as 0.10. Taking E_F as fixed, what is the temperature?",
+   "code": "",
+   "options": [
+    "252 K",
+    "528 K",
+    "132 K",
+    "264 K"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "f = 0.1 gives exp(0.05/kT) = 9, so T = 0.05/(k ln 9) = 0.05/(8.617e-5 x 2.197) = 264 K.",
+   "why_wrong": [
+    "Used ln 10, ignoring the +1 in the denominator.",
+    "Used an energy gap of 0.10 eV.",
+    "Halved the energy gap.",
+    ""
+   ],
+   "key": "PHY-U1-126"
+  },
+  {
+   "topic": "Fermi-Dirac distribution",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "Fermi-Dirac curves f(E) for one metal at 300 K and at 600 K are drawn on the same axes (E_F taken as fixed). Where do they intersect?",
+   "code": "",
+   "options": [
+    "At E = E_F, where f = 0.5",
+    "At E = 0, where f = 1",
+    "At E = 2E_F, where f = 0.25",
+    "They never intersect"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "At any T > 0, f(E_F) = 1/2. Hotter curves lie above for E > E_F and below for E < E_F, so all curves cross at E = E_F where f = 0.5.",
+   "why_wrong": [
+    "",
+    "All curves approach 1 there but only asymptotically; they do not cross at a definite point.",
+    "f(2E_F) differs with temperature, so the curves do not meet there.",
+    "They do cross, because both pass through f = 0.5 at E_F."
+   ],
+   "key": "PHY-U1-127"
+  },
+  {
+   "topic": "Energy bands in solids",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "One mole of sodium (N = 6.0e23 atoms) forms a crystal. Each atom contributes a single 3s level. How many electrons can the resulting 3s band hold?",
+   "code": "",
+   "options": [
+    "6.0e23",
+    "3.0e23",
+    "1.2e24",
+    "2.4e24"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "N atomic levels merge into a band of N orbital states; each holds 2 electrons (spin), so capacity = 2N = 1.2e24. With only 6.0e23 valence electrons, the band is half filled.",
+   "why_wrong": [
+    "Counted N states but ignored the spin degeneracy of 2.",
+    "Divided by 2 instead of multiplying by 2.",
+    "",
+    "Counted 4 electrons per level."
+   ],
+   "key": "PHY-U1-128"
+  },
+  {
+   "topic": "Energy bands in solids",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Magnesium has two 3s electrons per atom, which would completely fill its 3s band, yet it conducts like a metal. What explains this?",
+   "code": "",
+   "options": [
+    "The 3s band holds 4 electrons per atom, so it is half full",
+    "A very large forbidden gap lies above the 3s band",
+    "The 3s band overlaps the empty 3p band, giving partly filled states",
+    "Mg atoms ionise completely, leaving no bands"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "The filled 3s band overlaps in energy with the empty 3p band, so electrons can move into empty states just above with almost no energy cost.",
+   "why_wrong": [
+    "A band holds 2 electrons per atom (spin), so 2 electrons fill it completely.",
+    "A large gap would make Mg an insulator.",
+    "",
+    "Bands persist in the solid; the explanation is the overlap."
+   ],
+   "key": "PHY-U1-129"
+  },
+  {
+   "topic": "Energy bands in solids",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Isolated identical atoms are gradually brought together to form a crystal. Which atomic energy levels broaden into bands first and most strongly?",
+   "code": "",
+   "options": [
+    "The innermost core levels, as they are the most tightly bound",
+    "All levels broaden equally",
+    "The outermost valence levels, whose wavefunctions overlap most",
+    "Only the highest unoccupied level broadens"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Broadening arises from overlap of wavefunctions of neighbouring atoms. Outer valence orbitals extend furthest, so they overlap first and broaden most. Core levels stay nearly sharp.",
+   "why_wrong": [
+    "Core wavefunctions barely overlap, so they remain nearly sharp.",
+    "Broadening depends on wavefunction overlap, which falls rapidly for inner orbitals.",
+    "",
+    "Occupied valence levels broaden too."
+   ],
+   "key": "PHY-U1-130"
+  },
+  {
+   "topic": "Energy bands in solids",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "In the Kronig-Penney picture, the first forbidden gap opens at the Bragg condition k = pi/a. For a lattice constant a = 0.50 nm, what is the wavevector of the first gap?",
+   "code": "",
+   "options": [
+    "1.26e+10 m^-1",
+    "3.14e+09 m^-1",
+    "6.28e+09 m^-1",
+    "2e+09 m^-1"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "k = pi/a = 3.1416/0.50e-9 = 6.28e+09 m^-1.",
+   "why_wrong": [
+    "Used 2 pi/a, the reciprocal-lattice vector rather than the zone edge.",
+    "Used pi/(2a).",
+    "",
+    "Used 1/a, omitting the factor pi."
+   ],
+   "key": "PHY-U1-131"
+  },
+  {
+   "topic": "Energy bands in solids",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A crystal has N primitive cells, each contributing 3 valence electrons (as in aluminium). Each band can hold 2N electrons. Which description is right?",
+   "code": "",
+   "options": [
+    "One band full, next band half full: a metal",
+    "Two bands exactly full: an insulator",
+    "One and a half bands, but all electrons stuck: an insulator",
+    "Three bands each one-third full: a semiconductor"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "3N electrons fill one band (2N) and put the remaining N electrons into the next band (capacity 2N), leaving it half filled. A partly filled band means metallic conduction.",
+   "why_wrong": [
+    "",
+    "That would need 4N electrons.",
+    "A partially filled band has empty states, so conduction occurs.",
+    "Bands fill from the bottom one at a time."
+   ],
+   "key": "PHY-U1-132"
+  },
+  {
+   "topic": "Energy bands in solids",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A Bloch wavefunction in a periodic lattice has the form psi_k(x) = u_k(x) exp(ikx), with u_k having the lattice period. Which property follows?",
+   "code": "",
+   "options": [
+    "psi(x) itself repeats exactly after one lattice period",
+    "The probability density |psi|^2 repeats with the lattice period",
+    "The amplitude decays exponentially through the crystal",
+    "u_k(x) is constant, so the electron is a plane wave"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Since u_k is periodic, |psi_k(x)|^2 = |u_k(x)|^2 repeats with the lattice period, while psi_k itself only picks up a phase exp(ika).",
+   "why_wrong": [
+    "psi(x+a) = exp(ika) psi(x), a phase factor, not identical.",
+    "",
+    "Bloch states are extended; allowed bands do not decay.",
+    "u_k is generally not constant; it follows the atomic potential."
+   ],
+   "key": "PHY-U1-133"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Near a conduction-band minimum, the energy is E = alpha k^2 with alpha = 7.62 eV.A^2. Given hbar^2/(2 m0) = 3.81 eV.A^2, what is the effective mass?",
+   "code": "",
+   "options": [
+    "1.0 m0",
+    "0.50 m0",
+    "2.0 m0",
+    "0.25 m0"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "m* = hbar^2/(d^2E/dk^2) = hbar^2/(2 alpha), so m*/m0 = 3.81/7.62 = 0.50.",
+   "why_wrong": [
+    "Forgot the factor 2 in d^2E/dk^2 = 2 alpha.",
+    "",
+    "Inverted the ratio.",
+    "Squared the ratio."
+   ],
+   "key": "PHY-U1-134"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An electron with effective mass m* = 0.26 m0 sits in an electric field of 1e3 V/m. What is its acceleration?",
+   "code": "",
+   "options": [
+    "1.76e+14 m/s2",
+    "2.6e+15 m/s2",
+    "4.57e+13 m/s2",
+    "6.76e+14 m/s2"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "a = eE/m* = 1.6e-19 x 1e3/(0.26 x 9.109e-31) = 6.76e+14 m/s2.",
+   "why_wrong": [
+    "Used the free-electron mass m0 instead of m*.",
+    "Squared the effective-mass ratio.",
+    "Multiplied by m*/m0 instead of dividing.",
+    ""
+   ],
+   "key": "PHY-U1-135"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Two energy bands in a solid have widths of 0.5 eV (band A) and 5 eV (band B). Which statement about carriers near their band edges is correct?",
+   "code": "",
+   "options": [
+    "Electrons in band A are heavier because of the smaller curvature",
+    "Electrons in band A are lighter because of the smaller width",
+    "Both have equal m* because charge is the same",
+    "Electrons in band B are heavier because B is wider"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "A narrow band is flat, so d^2E/dk^2 is small and m* = hbar^2/(d^2E/dk^2) is large. Electrons in the narrow band A are heavier.",
+   "why_wrong": [
+    "",
+    "Small curvature gives large, not small, effective mass.",
+    "m* depends on band curvature, not charge.",
+    "Wider bands have larger curvature and lighter carriers."
+   ],
+   "key": "PHY-U1-136"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "For a one-dimensional band E(k) = -Delta cos(ka), where does the effective mass of an electron diverge?",
+   "code": "",
+   "options": [
+    "At the band minimum k = 0",
+    "At the inflection point ka = pi/2",
+    "At the band maximum ka = pi",
+    "At every k in the band"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "d^2E/dk^2 = Delta a^2 cos(ka) vanishes at ka = pi/2, the inflection point. There m* = hbar^2/(d^2E/dk^2) diverges, and it changes sign beyond that point.",
+   "why_wrong": [
+    "Curvature is maximal there, giving a smallest finite mass.",
+    "",
+    "Curvature is negative there, giving a finite negative mass.",
+    "Mass is finite except at the inflection point."
+   ],
+   "key": "PHY-U1-137"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Electrons in GaAs have m* = 0.067 m0; those in Si have m* = 0.26 m0. For the same relaxation time, what is the ratio of GaAs to Si electron mobility?",
+   "code": "",
+   "options": [
+    "0.26",
+    "15.1",
+    "1.97",
+    "3.9"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "mu = e tau/m*, so mu_GaAs/mu_Si = 0.26/0.067 = 3.88.",
+   "why_wrong": [
+    "Inverted the ratio; lighter mass gives higher mobility.",
+    "Squared the mass ratio.",
+    "Took the square root of the mass ratio.",
+    ""
+   ],
+   "key": "PHY-U1-138"
+  },
+  {
+   "topic": "Effective mass",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "An electron near the top of a valence band has negative effective mass. A field E along +x acts on it. In which direction does that electron's state accelerate?",
+   "code": "",
+   "options": [
+    "Along +x, the same as a positive hole",
+    "Along -x, as a free electron would",
+    "Along -x but with a larger magnitude",
+    "It does not accelerate because the band is full"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Force on the electron is -eE (toward -x), but m* is negative, so a = F/m* = (-eE)/(-|m*|) = +eE/|m*|. The state accelerates along +x, as a positive hole would.",
+   "why_wrong": [
+    "",
+    "The negative effective mass reverses the acceleration relative to force.",
+    "Direction is wrong, and magnitude depends on |m*| only.",
+    "The balance of force and negative mass produces an acceleration of this state."
+   ],
+   "key": "PHY-U1-139"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An n-type slab (n = 5e21 m^-3) has thickness t = 0.5 mm along B, width 5 mm and length 2 cm. It carries I = 5 mA with B = 0.5 T applied normal to the face. What is the Hall voltage?",
+   "code": "",
+   "options": [
+    "0.625 mV",
+    "6.25 mV",
+    "62.5 mV",
+    "3.1 microvolt"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "V_H = I B/(n e t) = 5e-3 x 0.5/(5e21 x 1.6e-19 x 5e-4) = 0.00625 V = 6.25 mV.",
+   "why_wrong": [
+    "Used the width (5 mm) instead of the thickness along B.",
+    "",
+    "Used t = 0.05 mm instead of 0.5 mm.",
+    "Left out the thickness t in the denominator."
+   ],
+   "key": "PHY-U1-140"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "What is the Hall coefficient of copper, with one free electron per atom, n = 8.5e28 m^-3?",
+   "code": "",
+   "options": [
+    "-7.4e-11 m3/C",
+    "+7.4e-11 m3/C",
+    "-1.2e-29 m3/C",
+    "-7.4e-10 m3/C"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "R_H = -1/(n e) = -1/(8.5e28 x 1.6e-19) = -7.4e-11 m3/C (negative for electrons).",
+   "why_wrong": [
+    "",
+    "Positive sign applies to holes, not electrons.",
+    "Used 1/n without the charge e.",
+    "Used n = 8.5e27, an order-of-magnitude slip."
+   ],
+   "key": "PHY-U1-141"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In a Hall experiment, current flows along +x and B points along +z. The voltmeter shows that the -y face is at a lower potential than the +y face. What does this indicate?",
+   "code": "",
+   "options": [
+    "n-type; electrons are deflected toward the -y face",
+    "p-type; holes are deflected toward the -y face",
+    "n-type; electrons are deflected toward the +y face",
+    "p-type; holes are deflected toward the +y face"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "For electrons moving along -x, F = -e(v x B) points along -y, so electrons pile up on the -y face, making it negative (lower potential). The sample is n-type.",
+   "why_wrong": [
+    "",
+    "Holes also go to -y, but that would make -y higher in potential.",
+    "The force on electrons here points toward -y.",
+    "For holes moving along +x with B along +z, force is toward -y."
+   ],
+   "key": "PHY-U1-142"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A germanium sample has Hall coefficient magnitude 2.0e-3 m3/C and conductivity 100 S/m. What is the Hall mobility?",
+   "code": "",
+   "options": [
+    "5.0e4 m2/V.s",
+    "2.0e-5 m2/V.s",
+    "0.20 m2/V.s",
+    "0.020 m2/V.s"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "mu = |R_H| sigma = 2.0e-3 x 100 = 0.20 m2/V.s (2000 cm2/V.s).",
+   "why_wrong": [
+    "Used sigma/R_H instead of the product.",
+    "Used R_H/sigma instead of the product.",
+    "",
+    "Misread R_H as 2.0e-4 m3/C."
+   ],
+   "key": "PHY-U1-143"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A Hall measurement on a slab of thickness 1 mm gives V_H = 10 mV for I = 10 mA and B = 0.40 T. What is the carrier density?",
+   "code": "",
+   "options": [
+    "2.5e18 m^-3",
+    "2.5e+21 m^-3",
+    "2.5e24 m^-3",
+    "6.25e21 m^-3"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "R_H = V_H t/(I B) = 1e-2 x 1e-3/(1e-2 x 0.4) = 2.5e-3 m3/C, and n = 1/(e R_H) = 2.5e+21 m^-3.",
+   "why_wrong": [
+    "Used t = 1 (forgot to convert mm to m).",
+    "",
+    "Used t = 1e-6 m (micrometre slip).",
+    "Used B = 1 T instead of 0.40 T."
+   ],
+   "key": "PHY-U1-144"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "In a Hall probe, V_H is proportional to the product I B. If both the current direction and the field direction are reversed, what happens to the Hall voltage?",
+   "code": "",
+   "options": [
+    "It keeps its magnitude but reverses polarity",
+    "It keeps the same magnitude and polarity",
+    "It drops to zero",
+    "It doubles in magnitude"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "V_H = I B/(n e t). Reversing both I and B leaves the product I B unchanged, so V_H keeps both magnitude and polarity.",
+   "why_wrong": [
+    "That happens when only one of I or B is reversed.",
+    "",
+    "Reversing both does not cancel the effect.",
+    "Reversal does not change magnitude."
+   ],
+   "key": "PHY-U1-145"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A Hall plate is replaced by one of double the width but half the thickness (thickness along B), with the same I, B and material. How does the Hall voltage change?",
+   "code": "",
+   "options": [
+    "It is unchanged",
+    "It doubles",
+    "It quadruples",
+    "It halves"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "V_H = I B/(n e t) depends on thickness t, not width. Halving t doubles V_H.",
+   "why_wrong": [
+    "That would be true only if t were unchanged; width does not matter but t does.",
+    "",
+    "Counted both width doubling and thickness halving; only t matters.",
+    "Inverted the dependence on thickness."
+   ],
+   "key": "PHY-U1-146"
+  },
+  {
+   "topic": "Hall effect",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Identical Hall plates (same geometry, same I and B) are made of germanium with n = 1e21 m^-3 and copper with n = 8.5e28 m^-3. What is V_H(copper)/V_H(germanium)?",
+   "code": "",
+   "options": [
+    "8.5e+07",
+    "1.0",
+    "0.00011",
+    "1.2e-08"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "V_H is proportional to 1/n, so ratio = 1e21/8.5e28 = 1.2e-08.",
+   "why_wrong": [
+    "Inverted the ratio.",
+    "V_H does depend on carrier density; the plates differ.",
+    "Took the square root of the density ratio.",
+    ""
+   ],
+   "key": "PHY-U1-147"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors and insulators",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Intrinsic silicon (Eg = 1.1 eV) has n_i = 1.5e10 cm^-3 at 300 K. Using n_i proportional to T^(3/2) exp(-Eg/2kT), estimate n_i at 400 K.",
+   "code": "",
+   "options": [
+    "3.1e+12 cm^-3",
+    "4.7e+12 cm^-3",
+    "2.3e+10 cm^-3",
+    "9.6e+14 cm^-3"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Ratio = (400/300)^1.5 x exp[(1.1/2k)(1/300 - 1/400)] = 1.54 x 204 = 314, so n_i = 4.7e+12 cm^-3.",
+   "why_wrong": [
+    "Left out the T^(3/2) prefactor.",
+    "",
+    "Applied only the T^(3/2) factor and ignored the exponential.",
+    "Used exp(-Eg/kT) instead of exp(-Eg/2kT)."
+   ],
+   "key": "PHY-U1-148"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors and insulators",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Silicon at 300 K (n_i = 1.5e10 cm^-3) is doped with 1e16 cm^-3 donors, all ionised. What is the equilibrium hole concentration?",
+   "code": "",
+   "options": [
+    "1.5e10 cm^-3",
+    "2.25e20 cm^-3",
+    "2.25e4 cm^-3",
+    "1.0e16 cm^-3"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "n is about 1e16 cm^-3; mass action gives p = n_i^2/n = (1.5e10)^2/1e16 = 2.25e4 cm^-3.",
+   "why_wrong": [
+    "Took p = n_i, ignoring the doping.",
+    "Forgot to divide by n.",
+    "",
+    "Took p equal to the donor density."
+   ],
+   "key": "PHY-U1-149"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors and insulators",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A germanium crystal contains 3e16 cm^-3 acceptor atoms and 1e16 cm^-3 donor atoms (n_i ~ 2.4e13 cm^-3). What is its conductivity type and majority density?",
+   "code": "",
+   "options": [
+    "p-type, p about 4e16 cm^-3",
+    "n-type, n about 2e16 cm^-3",
+    "p-type, p about 2e16 cm^-3",
+    "Intrinsic, since opposite dopants cancel"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Donors are compensated by acceptors. Net acceptors = 3e16 - 1e16 = 2e16 cm^-3, far above n_i, so the material is p-type with p about 2e16 cm^-3.",
+   "why_wrong": [
+    "Added the dopant densities instead of subtracting them.",
+    "Reversed which dopant dominates; acceptors are in excess.",
+    "",
+    "Partial compensation leaves net 2e16 acceptors; it is not intrinsic."
+   ],
+   "key": "PHY-U1-150"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors and insulators",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Using only the exponential factor exp(-Eg/2kT), how does n_i for diamond (Eg = 5.5 eV) compare with silicon (1.1 eV) at 300 K?",
+   "code": "",
+   "options": [
+    "1.2e-74",
+    "0.012",
+    "1.1e-37",
+    "1.4e-148"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Ratio = exp[-(5.5 - 1.1)/(2 x 0.02585)] = exp(-85.1) = 1.1e-37. Diamond has essentially no thermally generated carriers at room temperature, which is why it is an insulator.",
+   "why_wrong": [
+    "Used exp(-dE/kT) instead of exp(-dE/2kT).",
+    "Forgot to divide by kT.",
+    "",
+    "Used kT/2 in place of 2kT in the denominator."
+   ],
+   "key": "PHY-U1-151"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors and insulators",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "An n-type semiconductor is heated from near 0 K to well above room temperature. In which order does it pass through the regimes?",
+   "code": "",
+   "options": [
+    "Freeze-out, then extrinsic, then intrinsic",
+    "Intrinsic, then extrinsic, then freeze-out",
+    "Extrinsic, then freeze-out, then intrinsic",
+    "Freeze-out, then intrinsic, then extrinsic"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "At very low T donors are not ionised (freeze-out). Moderate T gives full donor ionisation with n about N_D (extrinsic range). At high T, thermally generated pairs exceed N_D and the material turns intrinsic.",
+   "why_wrong": [
+    "",
+    "This is the reverse of the real order with rising temperature.",
+    "Freeze-out occurs at the lowest temperatures, before full ionisation.",
+    "Extrinsic behaviour occurs before thermal pair generation dominates."
+   ],
+   "key": "PHY-U1-152"
+  },
+  {
+   "topic": "Intrinsic and extrinsic semiconductors and insulators",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Germanium (n_i = 2.4e13 cm^-3) contains 4e16 cm^-3 donors and 1e16 cm^-3 acceptors, all ionised. What is the hole concentration?",
+   "code": "",
+   "options": [
+    "1.4e+10 cm^-3",
+    "5.8e+10 cm^-3",
+    "2.4e13 cm^-3",
+    "1.9e+10 cm^-3"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Net donors = 3e16, so n is about 3e16 cm^-3. p = n_i^2/n = (2.4e13)^2/3e16 = 1.9e+10 cm^-3.",
+   "why_wrong": [
+    "Ignored compensation and used n = N_D = 4e16.",
+    "Used the acceptor density in place of the net donor density.",
+    "Took p = n_i, ignoring doping.",
+    ""
+   ],
+   "key": "PHY-U1-153"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "In an intrinsic semiconductor at 300 K the hole effective mass is twice the electron effective mass. By how much does E_F lie above the midgap, using E_Fi = (Ec+Ev)/2 + (3/4) kT ln(m_h*/m_e*)?",
+   "code": "",
+   "options": [
+    "0.0134 eV below midgap",
+    "0.0269 eV above midgap",
+    "0.0134 eV above midgap",
+    "0.0179 eV above midgap"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "Shift = 0.75 x 0.02585 x ln 2 = 0.0134 eV, above midgap because the heavier-mass band (valence) has the larger density of states.",
+   "why_wrong": [
+    "Sign error; the heavier hole mass pushes E_F up.",
+    "Used 3/2 instead of 3/4.",
+    "",
+    "Omitted the factor 3/4."
+   ],
+   "key": "PHY-U1-154"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An n-type silicon sample at 300 K has N_D = 1e17 cm^-3 (fully ionised) and Nc = 2.8e19 cm^-3. How far below the conduction band edge is the Fermi level?",
+   "code": "",
+   "options": [
+    "0.0633 eV",
+    "0.146 eV",
+    "0.406 eV",
+    "0.552 eV"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Ec - E_F = kT ln(Nc/N_D) = 0.02585 x ln(280) = 0.146 eV.",
+   "why_wrong": [
+    "Used log10 in place of the natural log.",
+    "",
+    "Gave E_F - E_Fi (from midgap) rather than the distance from Ec.",
+    "Used Nc/n_i, which gives Ec - E_Fi (the gap to intrinsic level)."
+   ],
+   "key": "PHY-U1-155"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "An n-type silicon sample with N_D = 1e15 cm^-3 is heated well above 600 K, where n_i greatly exceeds N_D. Where does its Fermi level end up?",
+   "code": "",
+   "options": [
+    "It stays just below Ec because N_D is fixed",
+    "Near midgap, close to the intrinsic level",
+    "It moves into the valence band",
+    "It moves to the donor level"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "As n_i overtakes N_D, the electron and hole densities become nearly equal and the material behaves intrinsically, so E_F moves from near Ec to near midgap.",
+   "why_wrong": [
+    "The donor density is fixed but thermal pairs dominate, shifting E_F.",
+    "",
+    "E_F tends to midgap, not beyond the gap.",
+    "The donor level is irrelevant once n_i is much larger than N_D."
+   ],
+   "key": "PHY-U1-156"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "For a non-degenerate n-type semiconductor at 300 K, the donor concentration is increased tenfold. How does the Fermi level move?",
+   "code": "",
+   "options": [
+    "Up toward Ec by 0.0259 eV",
+    "Down toward midgap by 0.0595 eV",
+    "Up toward Ec by 0.259 eV",
+    "Up toward Ec by 0.0595 eV"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Ec - E_F = kT ln(Nc/N_D) decreases by kT ln 10 = 0.0595 eV, so E_F moves up toward Ec.",
+   "why_wrong": [
+    "Used kT without the ln 10.",
+    "More donors push E_F up toward Ec, not down.",
+    "Used 10 kT in place of kT ln 10.",
+    ""
+   ],
+   "key": "PHY-U1-157"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "max",
+   "kind": "recall",
+   "q": "A donor level lies 0.05 eV below Ec in an n-type semiconductor. As T approaches 0 K, where does the Fermi level lie?",
+   "code": "",
+   "options": [
+    "0.025 eV below Ec, midway to the donor level",
+    "At the donor level, 0.05 eV below Ec",
+    "At the middle of the forbidden band gap, far from Ec",
+    "Exactly at the conduction band edge Ec"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "At very low T the Fermi level sits midway between the donor level and the conduction band edge, 0.025 eV below Ec.",
+   "why_wrong": [
+    "",
+    "It lies midway between Ec and E_D, not on E_D.",
+    "At 0 K E_F sits in the donor region, not midgap.",
+    "E_F reaches Ec only for degenerate doping."
+   ],
+   "key": "PHY-U1-158"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Silicon (Nc = 2.8e19 cm^-3) is doped with 1e20 cm^-3 phosphorus and is held at 300 K. Where is its Fermi level relative to Ec?",
+   "code": "",
+   "options": [
+    "About 0.03 eV below Ec",
+    "At the donor level, about 0.045 eV below Ec",
+    "Above Ec, inside the conduction band",
+    "At midgap"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "When N_D exceeds Nc the semiconductor is degenerate: E_F moves above Ec into the conduction band, and the Boltzmann formula Ec - E_F = kT ln(Nc/N_D) no longer applies.",
+   "why_wrong": [
+    "Used the non-degenerate formula where it fails (Nc/N_D < 1).",
+    "Donor states merge into the band at such concentrations.",
+    "",
+    "Heavy n-type doping pushes E_F upward, not to midgap."
+   ],
+   "key": "PHY-U1-159"
+  },
+  {
+   "topic": "Fermi level in semiconductors",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Silicon (Eg = 1.1 eV, n_i = 1.5e10 cm^-3) has N_D = 1e16 cm^-3 at 300 K. Taking the intrinsic level at midgap, how far is E_F below the conduction band edge?",
+   "code": "",
+   "options": [
+    "0.347 eV",
+    "0.897 eV",
+    "0.55 eV",
+    "0.203 eV"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "E_F - E_Fi = kT ln(N_D/n_i) = 0.02585 x ln(6.67e5) = 0.347 eV. Ec - E_Fi = 0.55 eV, so Ec - E_F = 0.55 - 0.347 = 0.203 eV.",
+   "why_wrong": [
+    "That is E_F - E_Fi, the distance above midgap, not the distance below Ec.",
+    "Added instead of subtracting the shift from midgap.",
+    "That is the midgap-to-Ec distance, ignoring the doping shift.",
+    ""
+   ],
+   "key": "PHY-U1-160"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A designer needs a semiconductor for an efficient room-temperature laser diode that emits light without needing a lattice-vibration quantum to conserve momentum. Which should be chosen?",
+   "code": "",
+   "options": [
+    "Si, because its gap is the widest",
+    "Ge, because it has the smallest gap",
+    "GaAs, because its gap is direct",
+    "Si, since it is the most common"
+   ],
+   "options_mono": false,
+   "correct": 2,
+   "explain": "GaAs has a direct gap: conduction minimum and valence maximum lie at the same k, so recombination conserves momentum and emits a photon efficiently. Si and Ge are indirect.",
+   "why_wrong": [
+    "Si's gap is indirect and it is not a laser material; width is irrelevant.",
+    "Ge is indirect, so recombination needs a phonon.",
+    "",
+    "Abundance does not give a direct gap."
+   ],
+   "key": "PHY-U1-161"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "GaAs, a direct-gap semiconductor, has Eg = 1.42 eV. At what wavelength does it emit when electrons and holes recombine across the gap?",
+   "code": "",
+   "options": [
+    "1.76e+03 nm",
+    "437 nm",
+    "1240 nm",
+    "873 nm"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "lambda (nm) = 1240/E (eV) = 1240/1.42 = 873 nm, near-infrared.",
+   "why_wrong": [
+    "Multiplied hc by the energy instead of dividing.",
+    "Divided by 2Eg.",
+    "Used hc itself as the wavelength, ignoring Eg.",
+    ""
+   ],
+   "key": "PHY-U1-162"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "hard",
+   "kind": "recall",
+   "q": "Which statement about indirect band-gap semiconductors such as silicon is NOT correct?",
+   "code": "",
+   "options": [
+    "Electron-hole recombination emits a photon with high probability",
+    "The conduction minimum and valence maximum lie at different k",
+    "Transitions across the gap need a phonon for momentum conservation",
+    "Silicon and germanium are examples"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "In an indirect gap the conduction minimum and valence maximum sit at different k, so an electron-hole recombination needs a phonon to conserve momentum. That makes radiative recombination inefficient, so the statement claiming photon emission with high probability is false.",
+   "why_wrong": [
+    "",
+    "True: that is the definition of an indirect gap.",
+    "True: photons carry negligible crystal momentum.",
+    "True: both are indirect-gap semiconductors."
+   ],
+   "key": "PHY-U1-163"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Silicon has an indirect gap of 1.12 eV and a phonon of energy 0.05 eV is absorbed together with the photon. What is the minimum photon energy that can create an electron-hole pair?",
+   "code": "",
+   "options": [
+    "1.07 eV",
+    "1.17 eV",
+    "1.12 eV",
+    "0.05 eV"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "With phonon absorption, photon energy + phonon energy = Eg, so the threshold is 1.12 - 0.05 = 1.07 eV.",
+   "why_wrong": [
+    "",
+    "That is the threshold when a phonon is emitted, not absorbed.",
+    "That ignores the phonon's contribution altogether.",
+    "That is the phonon energy, not the photon threshold."
+   ],
+   "key": "PHY-U1-164"
+  },
+  {
+   "topic": "Direct and indirect band gap",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "Compare the wavevector of a 1.1 micrometre photon (2 pi/lambda) with the zone-edge crystal momentum pi/a of silicon (a = 0.543 nm). Roughly what percentage of the zone-edge wavevector is the photon's?",
+   "code": "",
+   "options": [
+    "About 0.01%",
+    "About 1%",
+    "About 10%",
+    "About 0.1%"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "2 pi/lambda = 5.71e6 m^-1; pi/a = 5.79e9 m^-1; ratio = 0.00099, about 0.1%. This is why an indirect transition cannot be driven by a photon alone.",
+   "why_wrong": [
+    "Off by a decade (unit slip in wavelength).",
+    "Off by a decade (unit slip in the lattice constant).",
+    "Off by two decades from the real ratio.",
+    ""
+   ],
+   "key": "PHY-U1-165"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "Why does a silicon solar cell need a p-n junction rather than a uniform piece of silicon?",
+   "code": "",
+   "options": [
+    "Its built-in field separates the photogenerated carriers",
+    "It increases the band gap so more light is absorbed",
+    "It prevents photons from reaching the lattice",
+    "It makes silicon a direct-gap material"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "Light creates electron-hole pairs in uniform silicon too, but they recombine. The junction's built-in field sweeps electrons to the n-side and holes to the p-side, producing a photocurrent and photovoltage.",
+   "why_wrong": [
+    "",
+    "The junction does not change the band gap.",
+    "Photons must reach the lattice to be absorbed.",
+    "Silicon stays indirect; the junction does not change that."
+   ],
+   "key": "PHY-U1-166"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A solar cell has Voc = 0.60 V and Isc = 3.0 A. At its maximum-power point Vmp = 0.50 V and Imp = 2.7 A. What is its fill factor?",
+   "code": "",
+   "options": [
+    "0.833",
+    "0.75",
+    "0.9",
+    "0.45"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Pmax = 0.50 x 2.7 = 1.35 W; FF = Pmax/(Voc x Isc) = 1.35/1.80 = 0.75.",
+   "why_wrong": [
+    "Used Vmp/Voc only.",
+    "",
+    "Used Imp/Isc only.",
+    "Divided Pmax by Isc instead of Voc x Isc."
+   ],
+   "key": "PHY-U1-167"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A 156 mm x 156 mm solar cell under 1000 W/m2 has Voc = 0.62 V, Isc = 9.0 A, Vmp = 0.50 V and Imp = 8.4 A. What is its efficiency?",
+   "code": "",
+   "options": [
+    "22.9%",
+    "17.3%",
+    "26.9%",
+    "8.63%"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Pmax = 0.50 x 8.4 = 4.2 W; Pin = 1000 x 0.156^2 = 24.34 W. Efficiency = 17.3%.",
+   "why_wrong": [
+    "Used Voc x Isc as the output instead of Pmax.",
+    "",
+    "Took the area as 156 cm2 instead of 156 mm x 156 mm.",
+    "Doubled the input power."
+   ],
+   "key": "PHY-U1-168"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "hard",
+   "kind": "situation",
+   "q": "A silicon solar cell (Eg = 1.1 eV) is illuminated by sunlight. Beyond roughly what wavelength can photons no longer create electron-hole pairs?",
+   "code": "",
+   "options": [
+    "About 1364 nm",
+    "About 564 nm",
+    "About 2255 nm",
+    "About 1127 nm"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Cutoff wavelength = 1240/1.1 = 1127 nm; longer-wavelength photons have energy below Eg.",
+   "why_wrong": [
+    "Multiplied hc by Eg instead of dividing.",
+    "Used 2Eg in the denominator.",
+    "Doubled the cutoff by dividing by Eg/2.",
+    ""
+   ],
+   "key": "PHY-U1-169"
+  },
+  {
+   "topic": "Solar cell basics",
+   "difficulty": "max",
+   "kind": "situation",
+   "q": "A 2.5 eV photon creates one electron-hole pair in silicon (Eg = 1.1 eV); the carriers quickly relax to the band edges. What fraction of the photon energy is lost as heat?",
+   "code": "",
+   "options": [
+    "44%",
+    "56%",
+    "28%",
+    "100%"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "Useful energy = Eg = 1.1 eV; lost = 2.5 - 1.1 = 1.4 eV; fraction = 1.4/2.5 = 56%.",
+   "why_wrong": [
+    "That is the fraction retained (1.1/2.5), not the fraction lost.",
+    "",
+    "Halved the thermalisation loss.",
+    "Assumed all photon energy is lost; a part is retained as Eg."
+   ],
+   "key": "PHY-U1-170"
+  }
+ ]
+}
