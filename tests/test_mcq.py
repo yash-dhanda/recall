@@ -338,8 +338,8 @@ def test_a_retired_question_comes_back_if_it_returns_to_the_json(tmp_path):
 
 def test_subjects_lists_every_unit_with_its_live_count(client):
     body = client.get("/api/mcq/subjects").json()
-    # All seven registered; CSE111 first because it is the one with questions.
-    assert len(body) == 7
+    # All eight registered; CSE111 first because it is the one with questions.
+    assert len(body) == 8
     assert body[0]["subject_code"] == "CSE111"
     subject = body[0]
     assert subject["label"] == "Orientation to Computing"
@@ -2043,15 +2043,15 @@ def test_a_database_without_the_code_columns_migrates_and_still_grades(
 
 # --- six subjects ----------------------------------------------------------
 
-SIX = ("MTH165", "CSE111", "INT108", "INT335", "MEC103", "CSE326", "EVS")
+SIX = ("MTH165", "CSE111", "INT108", "INT335", "MEC103", "CSE326", "EVS", "PHY")
 
 
 def test_the_registry_lists_all_six_subjects():
     from recall.lpu import SUBJECTS
     assert registry.MCQ_SUBJECTS == SIX
-    # EVS is not on the Sem-1 timetable in lpu.py; the other six are.
+    # EVS and PHY are not on the Sem-1 timetable in lpu.py; the other six are.
     assert set(registry.MCQ_UNITS) == set(SIX)
-    assert set(SIX) - {"EVS"} == set(SUBJECTS)
+    assert set(SIX) - {"EVS", "PHY"} == set(SUBJECTS)
 
 
 def test_the_order_does_not_depend_on_dict_insertion(db_path, monkeypatch):
@@ -2063,7 +2063,7 @@ def test_the_order_does_not_depend_on_dict_insertion(db_path, monkeypatch):
     monkeypatch.setitem(registry.MCQ_UNITS, "MTH165", entry)
     assert list(registry.MCQ_UNITS)[-1] == "MTH165"
     assert subject_order(db_path) == ["CSE111", "MTH165", "INT108", "INT335",
-                                      "MEC103", "CSE326", "EVS"]
+                                      "MEC103", "CSE326", "EVS", "PHY"]
 
 
 def test_cse111_keeps_its_own_ca1_units():
@@ -2078,7 +2078,7 @@ def test_cse111_keeps_its_own_ca1_units():
     }
 
 
-@pytest.mark.parametrize("code", [c for c in SIX if c not in ("CSE111", "EVS")])
+@pytest.mark.parametrize("code", [c for c in SIX if c not in ("CSE111", "EVS", "PHY")])
 def test_the_other_five_are_derived_from_lpu(code):
     from recall.lpu import SUBJECTS
     entry = registry.MCQ_UNITS[code]
@@ -2094,8 +2094,9 @@ def test_a_subject_with_no_bank_files_is_listed_with_every_count_zero(client):
     assert set(body) == set(SIX)
     zero = {"easy": 0, "medium": 0, "hard": 0, "max": 0, "hardest": 0}
     assert [u["unit"] for u in body["EVS"]["units"]] == [1, 2, 3]
+    assert [u["unit"] for u in body["PHY"]["units"]] == [1, 2, 3]
     for code in SIX:
-        if code in ("CSE111", "EVS"):
+        if code in ("CSE111", "EVS", "PHY"):
             continue
         subject = body[code]
         assert subject["label"] == SUBJECTS[code]["full_name"]
@@ -2132,7 +2133,7 @@ def subject_order(path: str) -> list[str]:
 def test_subjects_with_questions_come_first(db_path):
     # CSE111 holds the only questions; the rest wait in registry order.
     assert subject_order(db_path) == ["CSE111", "MTH165", "INT108", "INT335",
-                                      "MEC103", "CSE326", "EVS"]
+                                      "MEC103", "CSE326", "EVS", "PHY"]
 
 
 def test_subjects_are_ordered_by_how_many_questions_they_hold(tmp_path):
@@ -2141,12 +2142,12 @@ def test_subjects_are_ordered_by_how_many_questions_they_hold(tmp_path):
     # INT108 (4) then CSE326 (1) — CSE326 jumps MTH165, CSE111, INT335 and
     # MEC103, which all come before it in the registry but hold nothing.
     assert subject_order(only_code) == ["INT108", "CSE326", "MTH165",
-                                        "CSE111", "INT335", "MEC103", "EVS"]
+                                        "CSE111", "INT335", "MEC103", "EVS", "PHY"]
 
     both = str(tmp_path / "both.db")
     make_db(both, combined_bank(tmp_path))
     assert subject_order(both) == ["CSE111", "INT108", "CSE326", "MTH165",
-                                   "INT335", "MEC103", "EVS"]
+                                   "INT335", "MEC103", "EVS", "PHY"]
 
 
 def test_a_tie_keeps_registry_order(tmp_path):
@@ -2177,7 +2178,7 @@ def test_questions_nobody_can_sit_do_not_lift_a_subject(tmp_path):
     path = str(tmp_path / "stray.db")
     make_db(path, bank_dir)
     assert subject_order(path) == ["MEC103", "MTH165", "CSE111", "INT108",
-                                   "INT335", "CSE326", "EVS"]
+                                   "INT335", "CSE326", "EVS", "PHY"]
 
 
 def test_retired_questions_do_not_count_toward_the_order(tmp_path):

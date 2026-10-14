@@ -34,7 +34,7 @@ from recall.lpu import SUBJECTS as _LPU_SUBJECTS
 #: code that disappears from lpu.py should fail this import loudly rather than
 #: quietly drop a subject — and its attempts' labels — off the picker.
 MCQ_SUBJECTS: tuple = ("MTH165", "CSE111", "INT108", "INT335", "MEC103",
-                       "CSE326", "EVS")
+                       "CSE326", "EVS", "PHY")
 
 #: Subjects whose MCQ units do NOT follow lpu.py. See the module docstring.
 _OWN_UNITS: dict[str, dict] = {
@@ -53,6 +53,16 @@ _OWN_UNITS: dict[str, dict] = {
             1: "Introduction and Natural Resources",
             2: "Natural Resources and Ecosystem",
             3: "Biodiversity and Conservation",
+        },
+    },
+    # Course code and full title were not on the slides (only the outcomes and
+    # the "Contents Before MTE" list), so the code is a placeholder.
+    "PHY": {
+        "label": "Physics",
+        "units": {
+            1: "Solid State Physics",
+            2: "Fundamentals of Electricity and Devices",
+            3: "Introduction to Number System and Logic Gates",
         },
     },
 }
