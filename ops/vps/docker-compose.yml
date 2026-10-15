@@ -14,6 +14,11 @@ services:
       RECALL_MODEL: ${RECALL_MODEL:-deepseek-chat}
       RECALL_MAX_COST_USD: ${RECALL_MAX_COST_USD:-2.0}
       RECALL_UPLOAD_DIR: /uploads
+      # Social sign-in stays off until these are set in .env.
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      GITHUB_CLIENT_ID: ${GITHUB_CLIENT_ID:-}
+      GITHUB_CLIENT_SECRET: ${GITHUB_CLIENT_SECRET:-}
+      RECALL_PUBLIC_URL: ${RECALL_PUBLIC_URL:-}
     volumes:
       - /srv/recall/data:/data
       - /srv/recall/uploads:/uploads
