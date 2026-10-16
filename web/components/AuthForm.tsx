@@ -219,6 +219,11 @@ export function AuthForm({ mode }: { mode: "login" | "signup" }) {
             {signup ? "Sign in" : "Create one"}
           </Link>
         </p>
+        <p className="text-center text-[11.5px] text-fg-3 mt-3">
+          <Link href="/privacy" className="hover:text-fg-2">Privacy</Link>
+          {" · "}
+          <Link href="/terms" className="hover:text-fg-2">Terms</Link>
+        </p>
       </div>
     </main>
   );

@@ -14,7 +14,7 @@ import s from "./mcq.module.css";
 const LETTERS = ["A", "B", "C", "D"];
 
 /** The ladder, in order — how a difficulty breakdown is always printed. */
-const DIFFICULTY_ORDER: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest"];
+const DIFFICULTY_ORDER: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest", "important"];
 
 /** One line, and it has to be worth reading: what to do next, not praise. */
 function verdict(percent: number): string {

@@ -45,7 +45,7 @@ const LENGTH_PRESETS: McqLength[] = [10, 20, 30, 60, "full"];
 
 /** The ladder, in order. `null` is Mixed — a draw across all four, which is
  *  its own selection and its own board, not a merge of them. */
-const DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest"];
+const DIFFICULTIES: McqDifficulty[] = ["easy", "medium", "hard", "max", "hardest", "important"];
 
 const DIFFICULTY_LABEL: Record<McqDifficulty, string> = {
   easy: "Easy",
@@ -53,6 +53,7 @@ const DIFFICULTY_LABEL: Record<McqDifficulty, string> = {
   hard: "Hard",
   max: "Max",
   hardest: "Hardest",
+  important: "Most important",
 };
 
 /** An exam's clock: one minute per question drawn. The server sets it; this
@@ -159,6 +160,7 @@ function tierCountsOf(
     hard: 0,
     max: 0,
     hardest: 0,
+    important: 0,
   };
   let known = false;
   for (const u of subject?.units ?? []) {
@@ -1044,7 +1046,7 @@ export function YashMadeTest() {
               </div>
               <p className={s.note}>
                 Easy: straight definitions. Medium: telling similar things
-                apart. Hard: work out which idea applies. Max: the tricky ones. Hardest: every option is the same length.
+                apart. Hard: work out which idea applies. Max: the tricky ones. Hardest: every option is the same length. Most important: the questions that keep coming up.
               </p>
             </div>
           </div>

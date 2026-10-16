@@ -80,7 +80,7 @@ function NavState({ collapsed, drawerOpen }: {
 }
 
 /** The only screens that render without a session. */
-const PUBLIC_ROUTES = new Set(["/login", "/signup"]);
+const PUBLIC_ROUTES = new Set(["/login", "/signup", "/privacy", "/terms"]);
 
 const FocusContext = createContext<((on: boolean) => void) | null>(null);
 
