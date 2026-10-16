@@ -2078,7 +2078,7 @@ def test_cse111_keeps_its_own_ca1_units():
     }
 
 
-@pytest.mark.parametrize("code", [c for c in SIX if c not in ("CSE111", "EVS", "PHY")])
+@pytest.mark.parametrize("code", [c for c in SIX if c not in ("CSE111", "EVS", "PHY", "INT108")])
 def test_the_other_five_are_derived_from_lpu(code):
     from recall.lpu import SUBJECTS
     entry = registry.MCQ_UNITS[code]
@@ -2095,8 +2095,10 @@ def test_a_subject_with_no_bank_files_is_listed_with_every_count_zero(client):
     zero = {"easy": 0, "medium": 0, "hard": 0, "max": 0, "hardest": 0}
     assert [u["unit"] for u in body["EVS"]["units"]] == [1, 2, 3]
     assert [u["unit"] for u in body["PHY"]["units"]] == [1, 2, 3]
+    # INT108 is cut to the three units the mid-term covers.
+    assert [u["unit"] for u in body["INT108"]["units"]] == [1, 2, 3]
     for code in SIX:
-        if code in ("CSE111", "EVS", "PHY"):
+        if code in ("CSE111", "EVS", "PHY", "INT108"):
             continue
         subject = body[code]
         assert subject["label"] == SUBJECTS[code]["full_name"]

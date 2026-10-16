@@ -45,6 +45,17 @@ _OWN_UNITS: dict[str, dict] = {
             2: "Version Control & Cyber Security Basics",
         },
     },
+    # INT108 stops at unit 3: the mid-term practice sheet covers units 1-3
+    # and the later units (functions, classes, files) are not being sat, so
+    # the picker shows only the first three. lpu.py keeps all six.
+    "INT108": {
+        "label": "Python Programming",
+        "units": {
+            1: "Environment, Variables, Expressions and Statements",
+            2: "Conditional and Iterative Statements",
+            3: "Strings, Lists, Tuples and Dictionaries",
+        },
+    },
     # Not in recall.lpu (not on the Sem-1 timetable), so written out. Unit
     # names are the ones on the course slides.
     "EVS": {
