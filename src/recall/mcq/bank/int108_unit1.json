@@ -4349,6 +4349,1616 @@
     "An f-string with a trailing % sign is perfectly valid."
    ],
    "key": "INT108-U1-243"
+  },
+  {
+   "topic": "Types and type()",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(type(3 > 2))",
+   "options": [
+    "<class 'bool'>",
+    "<class 'int'>",
+    "True",
+    "<class 'str'>"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "3 > 2 is a comparison, and a comparison gives a bool. type(True) is the class bool, printed as <class 'bool'>.",
+   "why_wrong": [
+    "",
+    "True is a number, but type() reports its own class, bool.",
+    "type() returns a class, it does not print the value.",
+    "Comparison results are not text."
+   ],
+   "key": "INT108-U1-244"
+  },
+  {
+   "topic": "Type conversion",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(int(\"  42  \"))",
+   "options": [
+    "ValueError",
+    "42",
+    "  42  ",
+    "TypeError"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "int() strips leading and trailing whitespace before converting, so int(\"  42  \") is 42. Spaces inside the digits would be a ValueError.",
+   "why_wrong": [
+    "int() ignores spaces around the digits, so the string is accepted.",
+    "",
+    "int() returns a number, so the spaces are gone.",
+    "A str is a valid argument for int(); only the digits matter."
+   ],
+   "key": "INT108-U1-245"
+  },
+  {
+   "topic": "Type conversion",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(float(\"3\") + int(2.9))",
+   "options": [
+    "5",
+    "5.9",
+    "5.0",
+    "6.0"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "float(\"3\") is 3.0 and int(2.9) is 2 (decimal part dropped). 3.0 + 2 is the float 5.0.",
+   "why_wrong": [
+    "float + int always gives a float, so a .0 appears.",
+    "int(2.9) truncates to 2, it does not keep the .9.",
+    "",
+    "int() truncates, it does not round 2.9 up to 3."
+   ],
+   "key": "INT108-U1-246"
+  },
+  {
+   "topic": "Type conversion",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(str(3.0) + \"1\")",
+   "options": [
+    "4.0",
+    "31",
+    "TypeError",
+    "3.01"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "str(3.0) is the text \"3.0\". Adding \"1\" joins the strings, giving 3.01.",
+   "why_wrong": [
+    "+ between two strings joins them; it does not add.",
+    "str(3.0) is \"3.0\", the .0 is not dropped.",
+    "Both operands are str, so + is legal.",
+    ""
+   ],
+   "key": "INT108-U1-247"
+  },
+  {
+   "topic": "Type conversion",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(int(\"1010\", 2))",
+   "options": [
+    "10",
+    "1010",
+    "ValueError",
+    "2"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "int(text, base) reads text in the given base. 1010 in binary is 8 + 2 = 10.",
+   "why_wrong": [
+    "",
+    "The second argument 2 tells int() to read the text as binary.",
+    "int() accepts a base as second argument, so this is valid.",
+    "It converts the value of the binary number, it does not count the 1s."
+   ],
+   "key": "INT108-U1-248"
+  },
+  {
+   "topic": "Types and type()",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(type(1e3))",
+   "options": [
+    "<class 'int'>",
+    "<class 'float'>",
+    "<class 'str'>",
+    "1000"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "A literal written with e is a float: 1e3 means 1000.0. So type() shows <class 'float'>.",
+   "why_wrong": [
+    "Scientific notation always makes a float, even when the value looks whole.",
+    "",
+    "1e3 has no quotes, so it is a number.",
+    "type() prints the class, not the value."
+   ],
+   "key": "INT108-U1-249"
+  },
+  {
+   "topic": "Type conversion",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(True * 5, False + 2)",
+   "options": [
+    "5 0",
+    "TypeError",
+    "5 2",
+    "1 2"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "True counts as 1 and False as 0 in arithmetic. True * 5 is 5, and False + 2 is 2.",
+   "why_wrong": [
+    "False + 2 is 2: False counts as 0 and 0 + 2 = 2.",
+    "bool is a number type, so arithmetic is allowed.",
+    "",
+    "True * 5 is 1 * 5 = 5, not 1."
+   ],
+   "key": "INT108-U1-250"
+  },
+  {
+   "topic": "Type conversion",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(round(7 / 2), int(7 / 2), 7 // 2)",
+   "options": [
+    "3 3 3",
+    "4 4 3",
+    "3.5 3 3",
+    "4 3 3"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "7 / 2 is 3.5. round(3.5) rounds to the even neighbour 4, int(3.5) truncates to 3, and 7 // 2 is 3.",
+   "why_wrong": [
+    "round(3.5) goes to the even neighbour 4, not 3.",
+    "int() truncates 3.5 to 3, it does not round.",
+    "round() returns a whole number when no digits are given.",
+    ""
+   ],
+   "key": "INT108-U1-251"
+  },
+  {
+   "topic": "Comparison results",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(10 == \"10\", 10 == int(\"10\"))",
+   "options": [
+    "False True",
+    "True True",
+    "False False",
+    "True False"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "10 == \"10\" compares a number with text, so False. int(\"10\") turns the text into 10, so the second comparison is True.",
+   "why_wrong": [
+    "",
+    "An int never equals a str, even when they look alike.",
+    "int(\"10\") is the number 10, which does equal 10.",
+    "The two results are reversed."
+   ],
+   "key": "INT108-U1-252"
+  },
+  {
+   "topic": "Type conversion",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(len(str(2 ** 10)))",
+   "options": [
+    "1024",
+    "4",
+    "10",
+    "TypeError"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "2 ** 10 is 1024. str(1024) is \"1024\", which has 4 characters.",
+   "why_wrong": [
+    "len() counts digits, it does not return the number itself.",
+    "",
+    "The exponent 10 is not the length of the result.",
+    "str() makes the number text first, and len() accepts text."
+   ],
+   "key": "INT108-U1-253"
+  },
+  {
+   "topic": "Type conversion",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(str(10) * 2, int(\"10\") * 2)",
+   "options": [
+    "20 20",
+    "1010 1010",
+    "1010 20",
+    "20 1010"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "str(10) * 2 repeats the text: 1010. int(\"10\") * 2 multiplies the number: 20.",
+   "why_wrong": [
+    "str(10) * 2 repeats the text, it does not multiply.",
+    "int(\"10\") * 2 is real multiplication.",
+    "",
+    "The two results are swapped."
+   ],
+   "key": "INT108-U1-254"
+  },
+  {
+   "topic": "Strings and operators",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(\"3\" + \"4\", 3 + 4, \"3\" * 4)",
+   "options": [
+    "7 7 12",
+    "34 7 12",
+    "7 34 3333",
+    "34 7 3333"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "\"3\" + \"4\" joins to 34, 3 + 4 adds to 7, and \"3\" * 4 repeats to 3333.",
+   "why_wrong": [
+    "+ and * on strings join and repeat; they do not calculate.",
+    "\"3\" * 4 repeats the text four times, it is not 12.",
+    "The first and second results are swapped.",
+    ""
+   ],
+   "key": "INT108-U1-255"
+  },
+  {
+   "topic": "Arithmetic operators",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(9 ** 0.5, 2 ** -2)",
+   "options": [
+    "3.0 0.25",
+    "4.5 -4",
+    "3 0.25",
+    "3.0 -4"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "9 ** 0.5 is the square root, the float 3.0. 2 ** -2 is 1/4 = 0.25.",
+   "why_wrong": [
+    "",
+    "** is the power operator, not multiplication.",
+    "A float exponent gives a float, so 3.0.",
+    "2 ** -2 is 1 / (2 ** 2), not -4."
+   ],
+   "key": "INT108-U1-256"
+  },
+  {
+   "topic": "Operator precedence",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(5 + 3 * 2 ** 2 - 8 // 3)",
+   "options": [
+    "17",
+    "15",
+    "14",
+    "30"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Order: 2 ** 2 = 4, then 3 * 4 = 12, 8 // 3 = 2, then left to right: 5 + 12 - 2 = 15.",
+   "why_wrong": [
+    "The subtraction of 8 // 3 was dropped.",
+    "",
+    "8 // 3 is 2, not 3.",
+    "Addition was done before * and **."
+   ],
+   "key": "INT108-U1-257"
+  },
+  {
+   "topic": "Operator precedence",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(11 % 3 ** 2)",
+   "options": [
+    "4",
+    "9",
+    "2",
+    "1"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "3 ** 2 is evaluated first and gives 9. Then 11 % 9 is 2.",
+   "why_wrong": [
+    "** binds tighter than %, so 3 ** 2 comes first.",
+    "The % operation was ignored.",
+    "",
+    "11 // 9 would be 1; % gives the remainder."
+   ],
+   "key": "INT108-U1-258"
+  },
+  {
+   "topic": "Operator precedence",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(not True == False)",
+   "options": [
+    "False",
+    "None",
+    "0",
+    "True"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "== is evaluated before not. True == False is False, and not False is True.",
+   "why_wrong": [
+    "not has lower priority than ==, so it applies to the whole comparison.",
+    "A boolean expression gives True or False, never None.",
+    "The result is a bool, not the integer 0.",
+    ""
+   ],
+   "key": "INT108-U1-259"
+  },
+  {
+   "topic": "Operator precedence",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(1 > 2 and 3 > 2 or 5 > 4)",
+   "options": [
+    "True",
+    "False",
+    "None",
+    "0"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "and binds tighter: (1 > 2 and 3 > 2) is False, then False or (5 > 4) is True.",
+   "why_wrong": [
+    "",
+    "and is done before or, so the last term can still rescue the result.",
+    "Comparisons give True or False.",
+    "The result is a bool, not 0."
+   ],
+   "key": "INT108-U1-260"
+  },
+  {
+   "topic": "Comparison results",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(2 + 3 > 4 == True)",
+   "options": [
+    "True",
+    "False",
+    "1",
+    "TypeError"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "It means (2 + 3 > 4) and (4 == True). The first part is True but 4 == True is False (True equals 1), so the result is False.",
+   "why_wrong": [
+    "This is a chained comparison: it also tests 4 == True.",
+    "",
+    "Chained comparisons give a bool, not 1.",
+    "Comparing a number with True is allowed."
+   ],
+   "key": "INT108-U1-261"
+  },
+  {
+   "topic": "Arithmetic operators",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = 15\nprint(x % 2 == 1, x // 2, x / 2)",
+   "options": [
+    "1 7 7.5",
+    "True 7.5 7",
+    "True 7 7.5",
+    "True 7 7"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "15 % 2 is 1 so the comparison is True. 15 // 2 is 7 and 15 / 2 is 7.5.",
+   "why_wrong": [
+    "The == comparison gives a bool, not 1.",
+    "// and / are swapped.",
+    "",
+    "/ always gives a float with the decimal part."
+   ],
+   "key": "INT108-U1-262"
+  },
+  {
+   "topic": "Floor division and modulus",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A program converts 135 minutes into hours and minutes. What is the output?",
+   "code": "minutes = 135\nprint(minutes // 60, minutes % 60)",
+   "options": [
+    "2.25 15",
+    "15 2",
+    "2 75",
+    "2 15"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "135 // 60 is 2 whole hours. 135 % 60 is the 15 minutes left over.",
+   "why_wrong": [
+    "// gives a whole number, not 2.25.",
+    "The two values are swapped.",
+    "The remainder is 135 % 60 = 15, not 135 - 60.",
+    ""
+   ],
+   "key": "INT108-U1-263"
+  },
+  {
+   "topic": "Floor division and modulus",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(-7 % 3, 7 % -3)",
+   "options": [
+    "2 -2",
+    "-1 1",
+    "-1 -1",
+    "2 2"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "Python's % result has the sign of the right operand. -7 % 3 is 2 and 7 % -3 is -2.",
+   "why_wrong": [
+    "",
+    "The result of % takes the sign of the divisor in Python.",
+    "The first result is positive because the divisor 3 is positive.",
+    "The second result is negative because the divisor is -3."
+   ],
+   "key": "INT108-U1-264"
+  },
+  {
+   "topic": "Comparison results",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(0.5 + 0.25 == 0.75, 0.1 * 3 == 0.3)",
+   "options": [
+    "True True",
+    "True False",
+    "False False",
+    "False True"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "0.5, 0.25 and 0.75 are exact in binary, so the first comparison is True. 0.1 cannot be stored exactly, so 0.1 * 3 is not equal to 0.3.",
+   "why_wrong": [
+    "0.1 * 3 is 0.30000000000000004 in binary floating point.",
+    "",
+    "0.5 and 0.25 are exact in binary, so that sum is exact.",
+    "The two results are swapped."
+   ],
+   "key": "INT108-U1-265"
+  },
+  {
+   "topic": "Augmented assignment",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = 2\nx **= 3\nx %= 5\nprint(x)",
+   "options": [
+    "8",
+    "1",
+    "3",
+    "0"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "x **= 3 makes x 8. x %= 5 gives the remainder 8 % 5, which is 3.",
+   "why_wrong": [
+    "The x %= 5 step also runs.",
+    "8 % 5 is the remainder 3, not 8 // 5.",
+    "",
+    "8 is not divisible by 5."
+   ],
+   "key": "INT108-U1-266"
+  },
+  {
+   "topic": "abs, round, pow",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(abs(-3) ** 2, abs(-3 ** 2))",
+   "options": [
+    "9 -9",
+    "-9 9",
+    "3 9",
+    "9 9"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "abs(-3) is 3 and 3 ** 2 is 9. In the second, -3 ** 2 is -9 and abs(-9) is 9.",
+   "why_wrong": [
+    "abs() always returns a non-negative number.",
+    "abs(-3) is 3, so its square is 9.",
+    "The ** 2 step was skipped in the first value.",
+    ""
+   ],
+   "key": "INT108-U1-267"
+  },
+  {
+   "topic": "min and max",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(max(3, 7.0, 5), min(\"b\", \"a\"))",
+   "options": [
+    "7.0 a",
+    "7 a",
+    "7.0 b",
+    "TypeError"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "max returns the largest item as it is, 7.0 (a float). min of the strings picks the alphabetically smaller \"a\".",
+   "why_wrong": [
+    "",
+    "max returns the item itself, which is the float 7.0.",
+    "min of two strings is the alphabetically first, a.",
+    "Each call mixes only comparable values."
+   ],
+   "key": "INT108-U1-268"
+  },
+  {
+   "topic": "math module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "import math\nprint(math.sqrt(16), math.floor(-2.5), math.ceil(2.1))",
+   "options": [
+    "4 -2 3",
+    "4.0 -3 3",
+    "4.0 -2 3",
+    "4.0 -3 2"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "math.sqrt(16) is the float 4.0. floor(-2.5) rounds down to -3, ceil(2.1) rounds up to 3.",
+   "why_wrong": [
+    "math.sqrt always returns a float.",
+    "",
+    "floor goes down, so -2.5 becomes -3.",
+    "ceil goes up, so 2.1 becomes 3."
+   ],
+   "key": "INT108-U1-269"
+  },
+  {
+   "topic": "math module",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "import math\nprint(math.floor(7 / 2), math.ceil(7 / 2), math.ceil(-0.5))",
+   "options": [
+    "3 4 -1",
+    "3.0 4.0 0.0",
+    "3 4 0",
+    "4 3 0"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "7 / 2 is 3.5. floor gives 3, ceil gives 4, and ceil(-0.5) is 0.",
+   "why_wrong": [
+    "ceil rounds toward positive infinity, so -0.5 becomes 0.",
+    "floor and ceil return ints.",
+    "",
+    "floor and ceil are swapped."
+   ],
+   "key": "INT108-U1-270"
+  },
+  {
+   "topic": "math module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "import math\nprint(math.factorial(5), math.gcd(12, 18))",
+   "options": [
+    "25 6",
+    "120 36",
+    "120 3",
+    "120 6"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "5! is 120. The greatest common divisor of 12 and 18 is 6.",
+   "why_wrong": [
+    "factorial(5) is 5 * 4 * 3 * 2 * 1, not 5 squared.",
+    "gcd is the greatest common divisor, not the lcm.",
+    "The largest common factor of 12 and 18 is 6.",
+    ""
+   ],
+   "key": "INT108-U1-271"
+  },
+  {
+   "topic": "math module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "import math\nprint(math.pow(2, 3), 2 ** 3)",
+   "options": [
+    "8.0 8",
+    "8 8",
+    "8.0 8.0",
+    "8 8.0"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "math.pow always returns a float, so 8.0. The ** operator with two ints returns the int 8.",
+   "why_wrong": [
+    "",
+    "math.pow always returns a float.",
+    "The ** operator with two ints gives an int.",
+    "The two results are swapped."
+   ],
+   "key": "INT108-U1-272"
+  },
+  {
+   "topic": "math module",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What happens when this code runs?",
+   "code": "from math import sqrt\nprint(math.sqrt(49))",
+   "options": [
+    "7.0",
+    "NameError",
+    "7",
+    "ImportError"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "from math import sqrt brings in only the name sqrt. The name math is not defined, so math.sqrt raises NameError.",
+   "why_wrong": [
+    "Only sqrt was imported, so the name math does not exist.",
+    "",
+    "sqrt returns a float, but the call never runs.",
+    "The import itself succeeds."
+   ],
+   "key": "INT108-U1-273"
+  },
+  {
+   "topic": "math module",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What happens when this code runs?",
+   "code": "import math\nprint(math.sqrt(-1))",
+   "options": [
+    "nan",
+    "-1",
+    "ValueError",
+    "ZeroDivisionError"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "math.sqrt is not defined for negative numbers. It raises ValueError (math domain error).",
+   "why_wrong": [
+    "math.sqrt raises an error for negative input.",
+    "A square root of -1 is not -1.",
+    "",
+    "Nothing is divided by zero here."
+   ],
+   "key": "INT108-U1-274"
+  },
+  {
+   "topic": "math module",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A program finds the area of a circle with radius 2. What is the output?",
+   "code": "import math\nr = 2\nprint(round(math.pi * r ** 2, 2))",
+   "options": [
+    "25.13",
+    "50.27",
+    "12.6",
+    "12.57"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "r ** 2 is 4 and pi * 4 is 12.566.... Rounded to 2 decimals this is 12.57.",
+   "why_wrong": [
+    "This is 2 * pi * r, the circumference.",
+    "The radius was squared after doubling.",
+    "round(..., 2) keeps two decimals.",
+    ""
+   ],
+   "key": "INT108-U1-275"
+  },
+  {
+   "topic": "Variable naming rules",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "Which of these is NOT a valid variable name?",
+   "code": "",
+   "options": [
+    "my var",
+    "_count",
+    "count2",
+    "Count"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "Variable names cannot contain spaces. my var would be read as two separate names.",
+   "why_wrong": [
+    "",
+    "A leading underscore is allowed.",
+    "Digits are allowed after the first character.",
+    "Capital letters are allowed."
+   ],
+   "key": "INT108-U1-276"
+  },
+  {
+   "topic": "Variables and Keywords",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "Which of these is NOT a Python keyword?",
+   "code": "",
+   "options": [
+    "elif",
+    "input",
+    "import",
+    "None"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "input is a built-in function, not a keyword. elif, import and None are all reserved keywords.",
+   "why_wrong": [
+    "elif is a reserved keyword.",
+    "",
+    "import is a reserved keyword.",
+    "None is a reserved keyword."
+   ],
+   "key": "INT108-U1-277"
+  },
+  {
+   "topic": "Dynamic typing",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = 3\nx = x * \"2\"\nprint(x)",
+   "options": [
+    "6",
+    "TypeError",
+    "222",
+    "32"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "x * \"2\" repeats the text \"2\" three times. x becomes \"222\" and a variable can change type.",
+   "why_wrong": [
+    "The second operand is text, so * repeats it.",
+    "int * str is allowed and means repeat.",
+    "",
+    "Repetition gives the text three times."
+   ],
+   "key": "INT108-U1-278"
+  },
+  {
+   "topic": "Variables and Keywords",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "total += 5\nprint(total)",
+   "options": [
+    "5",
+    "0",
+    "TypeError",
+    "NameError"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "total += 5 means total = total + 5, which needs total to exist. It was never created, so NameError.",
+   "why_wrong": [
+    "total has no starting value.",
+    "Python does not give variables a default of 0.",
+    "The problem is a missing name, not a wrong type.",
+    ""
+   ],
+   "key": "INT108-U1-279"
+  },
+  {
+   "topic": "Variables and Keywords",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "print(a)\na = 3",
+   "options": [
+    "NameError",
+    "3",
+    "None",
+    "0"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "Code runs top to bottom. print(a) runs before a = 3, so the name does not exist yet and NameError is raised.",
+   "why_wrong": [
+    "",
+    "The print line runs before a is created.",
+    "An undefined name is not None.",
+    "Python does not give names a default of 0."
+   ],
+   "key": "INT108-U1-280"
+  },
+  {
+   "topic": "Multiple assignment and swapping",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "a, b = 2, 3\na, b = a * b, a + b\nprint(a, b)",
+   "options": [
+    "6 9",
+    "6 5",
+    "5 6",
+    "6 6"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "The right side is computed first with a = 2 and b = 3: (6, 5). Then both names are assigned.",
+   "why_wrong": [
+    "b uses the old a, not the new product.",
+    "",
+    "The two values are swapped.",
+    "The right side is evaluated fully with the old a and b."
+   ],
+   "key": "INT108-U1-281"
+  },
+  {
+   "topic": "Environment and Statements",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "x = 5\n10 = x\nprint(x)",
+   "options": [
+    "10",
+    "5",
+    "SyntaxError",
+    "NameError"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "The left of = must be a name. 10 = x is a SyntaxError found before running, so nothing is printed.",
+   "why_wrong": [
+    "A number cannot be assigned to.",
+    "The whole file fails to compile, so even line 1 never runs.",
+    "",
+    "The error is found by the parser before anything runs."
+   ],
+   "key": "INT108-U1-282"
+  },
+  {
+   "topic": "Arithmetic operators",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(2 ^ 3)",
+   "options": [
+    "8",
+    "6",
+    "9",
+    "1"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "In Python ^ is bitwise XOR, not power. 2 is 10 and 3 is 11 in binary; XOR gives 01, which is 1. Use ** for power.",
+   "why_wrong": [
+    "^ is not the power operator in Python.",
+    "^ is not multiplication.",
+    "^ is not exponent either.",
+    ""
+   ],
+   "key": "INT108-U1-283"
+  },
+  {
+   "topic": "Dynamic typing",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = 5\nx = x / 2\nprint(x, type(x))",
+   "options": [
+    "2.5 <class 'float'>",
+    "2 <class 'int'>",
+    "2.5 <class 'int'>",
+    "2.5 <class 'str'>"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "5 / 2 is 2.5, a float. The variable x now refers to a float.",
+   "why_wrong": [
+    "",
+    "/ always gives a float.",
+    "The value 2.5 is a float.",
+    "No quotes, so no text."
+   ],
+   "key": "INT108-U1-284"
+  },
+  {
+   "topic": "Errors",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "print(\"5\" * \"5\")",
+   "options": [
+    "25",
+    "TypeError",
+    "55555",
+    "ValueError"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Repetition needs a str and an int. Two strings cannot be multiplied, so TypeError.",
+   "why_wrong": [
+    "Text cannot be multiplied by text.",
+    "",
+    "Only text * int repeats.",
+    "The problem is the wrong type, not a bad value."
+   ],
+   "key": "INT108-U1-285"
+  },
+  {
+   "topic": "Errors",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "print(10 % 0)",
+   "options": [
+    "0",
+    "10",
+    "ZeroDivisionError",
+    "inf"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "The modulus operator also divides, so 10 % 0 raises ZeroDivisionError just like 10 / 0.",
+   "why_wrong": [
+    "Division by zero is never allowed.",
+    "The remainder is undefined.",
+    "",
+    "Python raises an error instead of giving infinity."
+   ],
+   "key": "INT108-U1-286"
+  },
+  {
+   "topic": "Errors",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "x = 5\n    print(x)",
+   "options": [
+    "5",
+    "NameError",
+    "TypeError",
+    "IndentationError"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "A line cannot be indented without a block above it. Python raises IndentationError before running anything.",
+   "why_wrong": [
+    "The unexpected indent stops the program before it runs.",
+    "x exists; the problem is the spacing.",
+    "No operation has a wrong type.",
+    ""
+   ],
+   "key": "INT108-U1-287"
+  },
+  {
+   "topic": "Errors",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "print(\"Hello)",
+   "options": [
+    "SyntaxError",
+    "Hello",
+    "NameError",
+    "Hello)"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "The string starts with a quote but is never closed. Python reports SyntaxError.",
+   "why_wrong": [
+    "",
+    "The string is never closed.",
+    "This is a syntax problem, not a missing name.",
+    "The closing quote is missing, so the line is invalid."
+   ],
+   "key": "INT108-U1-288"
+  },
+  {
+   "topic": "Errors",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "print(len(5))",
+   "options": [
+    "1",
+    "TypeError",
+    "0",
+    "ValueError"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "len() needs a string or collection. An int has no length, so TypeError.",
+   "why_wrong": [
+    "len() works only on things that have a length.",
+    "",
+    "An int has no length.",
+    "A wrong type gives TypeError, not ValueError."
+   ],
+   "key": "INT108-U1-289"
+  },
+  {
+   "topic": "print sep/end",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What does the code print?",
+   "code": "print(\"a\", \"b\", end=\"\")\nprint(\"c\")",
+   "options": [
+    "a b\nc",
+    "ab c",
+    "a bc",
+    "abc"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "The first print ends with nothing instead of a newline, so c continues on the same line: a bc.",
+   "why_wrong": [
+    "end=\"\" removes the newline after b.",
+    "The default sep still puts a space between a and b.",
+    "",
+    "sep is still a space between a and b."
+   ],
+   "key": "INT108-U1-290"
+  },
+  {
+   "topic": "print sep/end",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(\"Name:\", \"Ria\", sep=\"\")",
+   "options": [
+    "Name: Ria",
+    "Name:\nRia",
+    "Ria:Name",
+    "Name:Ria"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "sep is the text placed between items. With an empty sep they are joined directly: Name:Ria.",
+   "why_wrong": [
+    "sep=\"\" removes the space between items.",
+    "sep is an empty string, not a newline.",
+    "The order is not reversed.",
+    ""
+   ],
+   "key": "INT108-U1-291"
+  },
+  {
+   "topic": "escape sequences",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(\"a\\\\tb\", len(\"a\\tb\"))",
+   "options": [
+    "a\\tb 3",
+    "a    b 3",
+    "a\\tb 4",
+    "a\\\\tb 3"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "\"a\\\\tb\" is a, a backslash, t, b: it prints a\\tb. In \"a\\tb\" the \\t is one tab character, so the length is 3.",
+   "why_wrong": [
+    "",
+    "\\\\ prints one backslash, so there is no tab here.",
+    "\\t is a single character, so the length is 3.",
+    "\\\\ prints a single backslash."
+   ],
+   "key": "INT108-U1-292"
+  },
+  {
+   "topic": "f-strings",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(f\"{1234567:,}\", f\"{10:b}\", f\"{255:x}\")",
+   "options": [
+    "1234567 10 255",
+    "1,234,567 1010 ff",
+    "1,234,567 10 ff",
+    "1,234,567 1010 FF"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": ", adds thousands separators, b is binary and x is lowercase hexadecimal: 1,234,567 1010 ff.",
+   "why_wrong": [
+    "The format codes change how each number is shown.",
+    "",
+    "b formats in binary, so 10 is 1010.",
+    "x gives lowercase hex digits."
+   ],
+   "key": "INT108-U1-293"
+  },
+  {
+   "topic": "f-strings",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "x = 4\nprint(f\"{{x}} = {x}\")",
+   "options": [
+    "4 = 4",
+    "{4} = 4",
+    "{x} = 4",
+    "{x} = {x}"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "{{ and }} give literal braces, so {{x}} prints {x}. The second {x} is replaced by 4.",
+   "why_wrong": [
+    "Doubled braces print a literal brace.",
+    "{{x}} does not substitute the variable.",
+    "",
+    "The single braces are replaced by the value."
+   ],
+   "key": "INT108-U1-294"
+  },
+  {
+   "topic": "f-strings",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(f\"{17 / 4:.0f} {17 // 4} {17 % 4}\")",
+   "options": [
+    "4.25 4 1",
+    "5 4 1",
+    "4 4.25 1",
+    "4 4 1"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "17 / 4 is 4.25 and .0f shows it with no decimals: 4. 17 // 4 is 4 and 17 % 4 is 1.",
+   "why_wrong": [
+    ".0f shows no decimals, so 4.25 becomes 4.",
+    "4.25 rounds to the nearest whole number, 4.",
+    "// gives a whole number.",
+    ""
+   ],
+   "key": "INT108-U1-295"
+  },
+  {
+   "topic": "% and format",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(\"%s is %d years\" % (\"Ria\", 19.9))",
+   "options": [
+    "Ria is 19 years",
+    "Ria is 20 years",
+    "Ria is 19.9 years",
+    "TypeError"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "%d formats an integer. A float is truncated to its whole part, so 19.9 becomes 19.",
+   "why_wrong": [
+    "",
+    "%d truncates, it does not round.",
+    "%d shows an integer.",
+    "%d accepts a float and truncates it."
+   ],
+   "key": "INT108-U1-296"
+  },
+  {
+   "topic": "% and format",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(\"%05.1f\" % 3.14159)",
+   "options": [
+    "3.1",
+    "003.1",
+    "003.14",
+    "00003.1"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "%05.1f means total width 5, zero padded, one decimal: 3.1 padded to 003.1.",
+   "why_wrong": [
+    "The 0 and width 5 pad the number with zeros.",
+    "",
+    ".1 means one decimal digit.",
+    "Width 5 is the total width, not the digits before the point."
+   ],
+   "key": "INT108-U1-297"
+  },
+  {
+   "topic": "print sep/end",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "How is the output laid out?",
+   "code": "print(\"a\")\nprint()\nprint(\"b\")",
+   "options": [
+    "a\nb",
+    "a b",
+    "a\n\nb",
+    "a\nNone\nb"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "print() with no arguments outputs just a newline, giving a blank line between a and b.",
+   "why_wrong": [
+    "print() with nothing prints an empty line.",
+    "Each print ends with a newline.",
+    "",
+    "print() with no arguments prints a blank line, not None."
+   ],
+   "key": "INT108-U1-298"
+  },
+  {
+   "topic": "print sep/end",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(\"Total = \" + str(3 * 4) + \"!\")",
+   "options": [
+    "Total = 12 * 4!",
+    "TypeError",
+    "Total = 12 !",
+    "Total = 12!"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "3 * 4 is 12 and str(12) is \"12\". The three strings are then joined, giving Total = 12!.",
+   "why_wrong": [
+    "The expression is evaluated, not printed as text.",
+    "The number was converted to text first.",
+    "+ joins without adding a space.",
+    ""
+   ],
+   "key": "INT108-U1-299"
+  },
+  {
+   "topic": "input() returns str",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "n = \"5\"   # value returned by input()\nprint(n + 1)",
+   "options": [
+    "TypeError",
+    "6",
+    "51",
+    "5 1"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "input() always returns a str. \"5\" + 1 mixes text and a number, which raises TypeError.",
+   "why_wrong": [
+    "",
+    "input() gives text, so + 1 is not addition.",
+    "Joining needs both sides to be text.",
+    "+ never adds a space."
+   ],
+   "key": "INT108-U1-300"
+  },
+  {
+   "topic": "input() returns str",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "a, b = \"3 4\".split()\nprint(a + b, int(a) + int(b))",
+   "options": [
+    "7 7",
+    "34 7",
+    "34 34",
+    "7 34"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "split() gives the text pieces \"3\" and \"4\". a + b joins them to 34, while int(a) + int(b) adds to 7.",
+   "why_wrong": [
+    "a and b are still text, so a + b joins them.",
+    "",
+    "int(a) + int(b) adds real numbers.",
+    "The two results are swapped."
+   ],
+   "key": "INT108-U1-301"
+  },
+  {
+   "topic": "input() returns str",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "name = \"  Rao  \"   # as typed\nprint(len(name), len(name.strip()))",
+   "options": [
+    "3 3",
+    "7 7",
+    "7 3",
+    "5 3"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "The text has 2 spaces, Rao and 2 spaces: 7 characters. strip() removes the spaces, leaving 3.",
+   "why_wrong": [
+    "len counts the spaces too unless strip() is used.",
+    "strip() removes the spaces at both ends.",
+    "",
+    "Both spaces on each side count: 7 characters, not 5."
+   ],
+   "key": "INT108-U1-302"
+  },
+  {
+   "topic": "int(input()) pattern",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when this code runs?",
+   "code": "age = int(\"17.0\")   # the user typed 17.0\nprint(age)",
+   "options": [
+    "17",
+    "17.0",
+    "TypeError",
+    "ValueError"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "int() accepts only whole-number text. \"17.0\" has a decimal point, so ValueError. Use int(float(\"17.0\")) instead.",
+   "why_wrong": [
+    "int() cannot read text with a decimal point.",
+    "int() would never return a float.",
+    "The type is fine (a str); the content is invalid.",
+    ""
+   ],
+   "key": "INT108-U1-303"
+  },
+  {
+   "topic": "input() returns str",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A teacher reads two marks as text. What is the output?",
+   "code": "m1 = \"80\"\nm2 = \"90\"\nprint(int(m1) + int(m2) / 2)",
+   "options": [
+    "125.0",
+    "85.0",
+    "85",
+    "125"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "/ is evaluated first: 90 / 2 is 45.0. Then 80 + 45.0 is 125.0. The average needs brackets: (80 + 90) / 2.",
+   "why_wrong": [
+    "",
+    "Division is done before the addition.",
+    "/ gives a float, and the average needs brackets.",
+    "/ always gives a float, so the result has .0."
+   ],
+   "key": "INT108-U1-304"
+  },
+  {
+   "topic": "int(input()) pattern",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = float(\"4\")\nprint(x, int(x), x == 4)",
+   "options": [
+    "4 4 True",
+    "4.0 4 True",
+    "4.0 4.0 True",
+    "4.0 4 False"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "float(\"4\") is 4.0. int(4.0) is 4. The values 4.0 and 4 compare equal, so True.",
+   "why_wrong": [
+    "float() gives a number with .0.",
+    "",
+    "int(x) is a whole number.",
+    "4.0 equals 4 in Python."
+   ],
+   "key": "INT108-U1-305"
+  },
+  {
+   "topic": "Environment and Statements",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the file extension of a Python source file?",
+   "code": "",
+   "options": [
+    ".pyc",
+    ".python",
+    ".py",
+    ".pt"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "Python source files are saved with the .py extension.",
+   "why_wrong": [
+    "This is compiled bytecode, not source.",
+    "Python files do not use this extension.",
+    "",
+    "This is not a Python source extension."
+   ],
+   "key": "INT108-U1-306"
+  },
+  {
+   "topic": "Types and type()",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "Which built-in function tells you the type of a value?",
+   "code": "",
+   "options": [
+    "typeof()",
+    "kind()",
+    "datatype()",
+    "type()"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "type(x) returns the class of x, such as <class 'int'>.",
+   "why_wrong": [
+    "typeof is JavaScript, not Python.",
+    "Python has no built-in called kind.",
+    "Python has no built-in called datatype.",
+    ""
+   ],
+   "key": "INT108-U1-307"
+  },
+  {
+   "topic": "String Operations",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "s = \"Hello\"\nprint(s[1], s[-2], s[1:3])",
+   "options": [
+    "e l el",
+    "H l He",
+    "e l ell",
+    "e l lo"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "s[1] is e, s[-2] is the second last letter l, and s[1:3] is el (stop excluded).",
+   "why_wrong": [
+    "",
+    "Indexing starts at 0, so s[1] is e.",
+    "The slice stop index is excluded.",
+    "s[-2] is l and s[1:3] starts at e."
+   ],
+   "key": "INT108-U1-308"
+  },
+  {
+   "topic": "Immutability",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "s = \"hello\"\ns.upper()\nprint(s)",
+   "options": [
+    "HELLO",
+    "hello",
+    "None",
+    "TypeError"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Strings are immutable. s.upper() builds a new string which is thrown away, so s is still hello.",
+   "why_wrong": [
+    "upper() returns a new string; s itself is unchanged.",
+    "",
+    "upper() returns the new string, but it was not stored.",
+    "Calling upper() is allowed; it just does not change s."
+   ],
+   "key": "INT108-U1-309"
+  },
+  {
+   "topic": "String Operations",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(\"py\" in \"python\", \"PY\" in \"python\")",
+   "options": [
+    "True True",
+    "False False",
+    "True False",
+    "False True"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "in checks for a substring and is case sensitive. py is inside python, but PY is not.",
+   "why_wrong": [
+    "Matching is case sensitive.",
+    "py does appear in python.",
+    "",
+    "The two results are swapped."
+   ],
+   "key": "INT108-U1-310"
+  },
+  {
+   "topic": "Comparison results",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(\"abc\" < \"abd\", \"Z\" < \"a\")",
+   "options": [
+    "False True",
+    "True False",
+    "False False",
+    "True True"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "\"abc\" < \"abd\" is True because c comes before d. \"Z\" < \"a\" is True because the code of Z (90) is less than a (97).",
+   "why_wrong": [
+    "Comparison goes letter by letter, c comes before d.",
+    "Capital letters have smaller codes than small letters.",
+    "Both comparisons are True.",
+    ""
+   ],
+   "key": "INT108-U1-311"
+  },
+  {
+   "topic": "Comparison results",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "print(1 == 1.0 == True)",
+   "options": [
+    "True",
+    "False",
+    "1",
+    "TypeError"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "It is a chain: 1 == 1.0 is True and 1.0 == True is True (True equals 1). So the result is True.",
+   "why_wrong": [
+    "",
+    "Chained: 1 == 1.0 and 1.0 == True, both True.",
+    "A comparison gives a bool, not 1.",
+    "Numbers and bool can be compared."
+   ],
+   "key": "INT108-U1-312"
+  },
+  {
+   "topic": "Arithmetic operators",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = 10\ny = 3\nprint(x / y == x // y, x // y == int(x / y))",
+   "options": [
+    "True True",
+    "False True",
+    "False False",
+    "True False"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "10 / 3 is 3.333... but 10 // 3 is 3, so the first comparison is False. int(10 / 3) is 3, equal to 10 // 3, so the second is True.",
+   "why_wrong": [
+    "10 / 3 is 3.333..., which is not equal to the whole number 3.",
+    "",
+    "int(3.333...) truncates to 3, which equals 10 // 3.",
+    "The first comparison is False since 3.33 != 3."
+   ],
+   "key": "INT108-U1-313"
   }
  ]
 }

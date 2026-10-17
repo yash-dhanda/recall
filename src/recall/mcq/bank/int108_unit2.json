@@ -5706,6 +5706,1846 @@
     "choice() takes a single sequence, not two numbers."
    ],
    "key": "INT108-U2-302"
+  },
+  {
+   "topic": "if/elif/else",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A shop sets the delivery fee with the code below. What is printed?",
+   "code": "total = 450\nif total >= 500:\n    fee = 0\nelif total >= 200:\n    fee = 40\nelse:\n    fee = 80\nprint(fee)",
+   "options": [
+    "40",
+    "0",
+    "80",
+    "120"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "450 >= 500 is False, so the first branch is skipped. 450 >= 200 is True, so fee becomes 40 and the rest of the chain is skipped.",
+   "why_wrong": [
+    "",
+    "That is the fee for totals of 500 or more; 450 does not reach it.",
+    "That is the else branch, skipped because 450 >= 200 already matched.",
+    "Only one branch of an if/elif/else chain runs, so the fees are never added."
+   ],
+   "key": "INT108-U2-303"
+  },
+  {
+   "topic": "separate if statements",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = 6\nn = 0\nif x > 2:\n    n += 1\nif x > 4:\n    n += 1\nif x > 6:\n    n += 1\nprint(n)",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "6"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Each if is tested on its own. 6 > 2 and 6 > 4 are True so n becomes 2; 6 > 6 is False, so n stays 2.",
+   "why_wrong": [
+    "Treats the three ifs like an if/elif chain; separate ifs are each tested.",
+    "",
+    "Counts the last test too, but 6 > 6 is False.",
+    "Prints x instead of the counter n."
+   ],
+   "key": "INT108-U2-304"
+  },
+  {
+   "topic": "nested conditionals",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "age = 16\nticket = True\nif age >= 18:\n    print(\"adult\")\nelse:\n    if ticket:\n        print(\"minor with ticket\")\n    else:\n        print(\"denied\")",
+   "options": [
+    "adult",
+    "denied",
+    "minor with ticket",
+    "minor with ticket\ndenied"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "16 >= 18 is False so Python enters the outer else. There ticket is True, so only 'minor with ticket' prints.",
+   "why_wrong": [
+    "16 >= 18 is False, so the first branch does not run.",
+    "The inner test is ticket, which is True, so denied is not reached.",
+    "",
+    "Inner if/else runs exactly one branch, never both."
+   ],
+   "key": "INT108-U2-305"
+  },
+  {
+   "topic": "conditional expression",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A voting kiosk uses the line below. What is printed?",
+   "code": "age = 17\ncitizen = True\nprint(\"vote\" if age >= 18 and citizen else \"wait\")",
+   "options": [
+    "vote",
+    "False",
+    "None",
+    "wait"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "age >= 18 is False, so and gives False without needing citizen. The else part is chosen and wait is printed.",
+   "why_wrong": [
+    "Treats and like or; both conditions must be True and 17 >= 18 is False.",
+    "The conditional expression picks one of the two strings, it does not print a bool.",
+    "print shows the chosen string; nothing here produces None.",
+    ""
+   ],
+   "key": "INT108-U2-306"
+  },
+  {
+   "topic": "precedence",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "a = True\nb = False\nc = True\nprint(a and b or c, a and (b or c), not a or b)",
+   "options": [
+    "True True False",
+    "False True False",
+    "True False False",
+    "True True True"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "and binds tighter than or: (a and b) or c = False or True = True. Then a and (False or True) = True. not a is False, False or False is False.",
+   "why_wrong": [
+    "",
+    "a and b is False, but then 'or c' makes the first value True.",
+    "a and (b or c) is True and True, so the middle value is True.",
+    "not a or b is False or False, which is False."
+   ],
+   "key": "INT108-U2-307"
+  },
+  {
+   "topic": "precedence",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(not 3 > 2 or 4 > 1)",
+   "options": [
+    "False",
+    "True",
+    "1",
+    "None"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Comparisons run first, then not, then or. not (3 > 2) is False, and False or (4 > 1) is True.",
+   "why_wrong": [
+    "Applies not to the whole expression; not binds only to 3 > 2.",
+    "",
+    "Comparisons and logic give True or False, not 1.",
+    "The expression always evaluates to a bool, never None."
+   ],
+   "key": "INT108-U2-308"
+  },
+  {
+   "topic": "and / or values",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(len(\"ab\") and 5, 3 and 0 or 9)",
+   "options": [
+    "2 9",
+    "5 0",
+    "5 9",
+    "True 9"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "len('ab') is 2 (truthy) so and returns 5. 3 and 0 returns 0, and 0 or 9 returns 9.",
+   "why_wrong": [
+    "and returns its right operand when the left is truthy, so the first value is 5, not 2.",
+    "3 and 0 is 0, which is falsy, so 'or 9' returns 9.",
+    "",
+    "and/or return an operand, not a True/False."
+   ],
+   "key": "INT108-U2-309"
+  },
+  {
+   "topic": "if/elif/else",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "A calendar program uses the code below. What is printed?",
+   "code": "month = 2\nif month in (4, 6, 9, 11):\n    days = 30\nelif month == 2:\n    days = 28\nelse:\n    days = 31\nprint(days)",
+   "options": [
+    "30",
+    "31",
+    "29",
+    "28"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "2 is not in (4, 6, 9, 11), so the first test fails. month == 2 is True, so days is 28.",
+   "why_wrong": [
+    "2 is not in the tuple (4, 6, 9, 11).",
+    "The else branch runs only when no earlier test matched; month == 2 did.",
+    "The code has no leap-year test; the branch sets 28.",
+    ""
+   ],
+   "key": "INT108-U2-310"
+  },
+  {
+   "topic": "or with a constant",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "x = 3\nif x == 3 or 4:\n    print(\"hit\")\nx = 9\nif x == 3 or 4:\n    print(\"hit2\")",
+   "options": [
+    "hit\nhit2",
+    "hit",
+    "Nothing is printed",
+    "SyntaxError"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "x == 3 or 4 is read as (x == 3) or 4. The number 4 is truthy, so the condition is True for every x and both lines print.",
+   "why_wrong": [
+    "",
+    "Ignores that 'or 4' is always truthy, so the second if also runs.",
+    "The first condition is True, so at least hit prints.",
+    "The code is valid Python; it just does not test what it looks like."
+   ],
+   "key": "INT108-U2-311"
+  },
+  {
+   "topic": "and / or values",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = 15\nif 10 < x < 20 and x % 5:\n    print(\"a\")\nelse:\n    print(\"b\")",
+   "options": [
+    "a",
+    "b",
+    "True",
+    "False"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "10 < x < 20 is True, but 15 % 5 is 0 which is falsy. True and 0 is falsy, so the else prints b.",
+   "why_wrong": [
+    "x % 5 is 0 (falsy), so the and fails.",
+    "",
+    "The if prints one of the two strings, not the condition.",
+    "The if prints one of the two strings, not the condition."
+   ],
+   "key": "INT108-U2-312"
+  },
+  {
+   "topic": "conditional expression",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "score = 45\nprint(\"pass\" if score >= 40 else \"fail\", \"!\")",
+   "options": [
+    "pass!",
+    "fail !",
+    "pass !",
+    "pass if score >= 40 else fail !"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "The conditional expression evaluates to 'pass' since 45 >= 40. print separates its two arguments with a space, giving 'pass !'.",
+   "why_wrong": [
+    "print puts a space between its arguments.",
+    "45 >= 40 is True, so the first string is chosen.",
+    "",
+    "The conditional expression is evaluated, not printed as text."
+   ],
+   "key": "INT108-U2-313"
+  },
+  {
+   "topic": "modulus",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "A clock shows 22 hours. Five hours pass. What does the code print?",
+   "code": "hour = 22\nprint((hour + 5) % 24, (hour + 5) // 24)",
+   "options": [
+    "27 1",
+    "3 0",
+    "5 3",
+    "3 1"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "22 + 5 is 27. 27 % 24 is the remainder 3 and 27 // 24 is the quotient 1, so the clock shows 3 on the next day.",
+   "why_wrong": [
+    "27 is hour + 5; % 24 wraps it around the clock.",
+    "27 // 24 is 1, one full day passed.",
+    "Swaps hour and the wrap values; 27 % 24 is 3.",
+    ""
+   ],
+   "key": "INT108-U2-314"
+  },
+  {
+   "topic": "logical operators",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A scholarship form is checked by the code below. What is printed?",
+   "code": "age = 22\nmarks = 55\nhas_form = True\nif age >= 18 and (marks >= 60 or has_form):\n    print(\"apply\")\nelse:\n    print(\"reject\")",
+   "options": [
+    "apply",
+    "reject",
+    "True",
+    "None"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "Inside the brackets False or True is True. Then 22 >= 18 and True is True, so apply prints.",
+   "why_wrong": [
+    "",
+    "marks >= 60 is False, but the parentheses let has_form (True) rescue the or.",
+    "The if prints a word, not the condition.",
+    "The if prints a word; nothing makes the output None."
+   ],
+   "key": "INT108-U2-315"
+  },
+  {
+   "topic": "comparison",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(\"apple\" < \"banana\", \"Zed\" < \"abc\", \"10\" < \"9\")",
+   "options": [
+    "True False False",
+    "True True True",
+    "True True False",
+    "False True True"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Strings compare character by character using character codes. 'a' < 'b'; 'Z' (90) < 'a' (97); '1' < '9' so '10' < '9' is True.",
+   "why_wrong": [
+    "Zed < abc is True since uppercase letters come before lowercase, and strings compare character by character.",
+    "",
+    "'10' < '9' compares '1' with '9', so it is True, not a number comparison.",
+    "apple < banana is True because 'a' comes before 'b'."
+   ],
+   "key": "INT108-U2-316"
+  },
+  {
+   "topic": "if/elif/else",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "grades = []\nfor m in [91, 74, 55]:\n    if m >= 90:\n        grades.append(\"A\")\n    elif m >= 70:\n        grades.append(\"B\")\n    else:\n        grades.append(\"C\")\nprint(grades)",
+   "options": [
+    "['A', 'A', 'A']",
+    "['A', 'B', 'B']",
+    "['A', 'B', 'C']",
+    "['C', 'B', 'A']"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "91 matches the first test (A). 74 fails it but passes >= 70 (B). 55 fails both, so C.",
+   "why_wrong": [
+    "Each mark is tested separately, so the grade changes with the mark.",
+    "55 >= 70 is False, so the else branch gives C.",
+    "",
+    "The list keeps the order of the marks: 91 first, so A first."
+   ],
+   "key": "INT108-U2-317"
+  },
+  {
+   "topic": "type error in comparison",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What happens when the code below runs?",
+   "code": "value = \"7\"\nif value > 5:\n    print(\"big\")\nelse:\n    print(\"small\")",
+   "options": [
+    "It prints big",
+    "It prints small",
+    "It prints False",
+    "TypeError: str and int cannot be compared with >"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "Python 3 will not order a str against an int, so '7' > 5 raises TypeError and neither branch runs.",
+   "why_wrong": [
+    "Python does not turn the string '7' into a number.",
+    "The comparison does not give False; it fails with an error.",
+    "The if statement prints a word or raises an error, never False.",
+    ""
+   ],
+   "key": "INT108-U2-318"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "for i in range(2, 20, 5):\n    print(i, end=\" \")",
+   "options": [
+    "2 7 12 17",
+    "2 7 12 17 22",
+    "7 12 17",
+    "2 7 12 17 20"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "Values are 2, 7, 12, 17; the next would be 22 which is not below 20, so the loop stops.",
+   "why_wrong": [
+    "",
+    "22 is past the stop value 20.",
+    "The first value is the start, 2.",
+    "The step is 5, so 20 is never reached."
+   ],
+   "key": "INT108-U2-319"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(list(range(-3, 3, 2)))",
+   "options": [
+    "[-3, -1, 1, 3]",
+    "[-3, -1, 1]",
+    "[-2, 0, 2]",
+    "[-3, -2, -1, 0, 1, 2]"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Start -3, step 2: -3, -1, 1; the next value 3 equals the stop, so it is excluded.",
+   "why_wrong": [
+    "3 is the stop value and is never included.",
+    "",
+    "The sequence starts at -3, not -2.",
+    "The step is 2, so only every second number is kept."
+   ],
+   "key": "INT108-U2-320"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(len(range(0, 100, 10)), max(range(0, 100, 10)))",
+   "options": [
+    "11 100",
+    "10 100",
+    "10 90",
+    "9 90"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "range(0, 100, 10) is 0, 10, ..., 90: ten values, the largest being 90.",
+   "why_wrong": [
+    "Stop 100 is excluded, so there are 10 values ending at 90.",
+    "The count is right but the largest value is 90, not 100.",
+    "",
+    "0 is included, so there are 10 values, not 9."
+   ],
+   "key": "INT108-U2-321"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(sum(range(1, 6)), sum(range(5)))",
+   "options": [
+    "21 15",
+    "15 15",
+    "15 5",
+    "15 10"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "range(1, 6) is 1..5 with sum 15. range(5) is 0..4 with sum 10.",
+   "why_wrong": [
+    "range(1, 6) adds 1 to 5 (15), not up to 6; range(5) is 0..4.",
+    "range(5) is 0 to 4, so its sum is 10.",
+    "sum(range(5)) adds all of 0..4, not just the last term.",
+    ""
+   ],
+   "key": "INT108-U2-322"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "r = range(3)\nprint(r)",
+   "options": [
+    "range(0, 3)",
+    "[0, 1, 2]",
+    "(0, 1, 2)",
+    "range(3)"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "range returns a range object, and its text form always shows start and stop, so range(3) prints as range(0, 3).",
+   "why_wrong": [
+    "",
+    "range does not produce a list; print shows the range object.",
+    "range does not produce a tuple.",
+    "print shows the full form with the start filled in."
+   ],
+   "key": "INT108-U2-323"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "for i in range(len(\"data\")):\n    print(i, end=\"\")",
+   "options": [
+    "1234",
+    "0123",
+    "01234",
+    "123"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "len('data') is 4, so range(4) gives 0, 1, 2, 3 which print together as 0123.",
+   "why_wrong": [
+    "Indexes start at 0, not 1.",
+    "",
+    "len('data') is 4, so the stop is 4 and 4 is excluded.",
+    "Indexes start at 0 and stop at 3."
+   ],
+   "key": "INT108-U2-324"
+  },
+  {
+   "topic": "range negative step",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What does the code below print?",
+   "code": "n = 0\nfor i in range(10, 0, -1):\n    n += 1\nprint(n)",
+   "options": [
+    "9",
+    "11",
+    "10",
+    "0"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "range(10, 0, -1) is 10, 9, ..., 1: ten values, because stop 0 is excluded.",
+   "why_wrong": [
+    "0 is excluded but 10 is included, so 10 values run.",
+    "The stop 0 is excluded, so 0 does not count.",
+    "",
+    "A negative step counts down; the loop does run."
+   ],
+   "key": "INT108-U2-325"
+  },
+  {
+   "topic": "loop body indentation",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "for i in range(3):\n    print(\"Hi\", end=\" \")\nprint(\"Bye\")",
+   "options": [
+    "Hi Bye Hi Bye Hi Bye",
+    "Hi Hi Hi",
+    "Bye Hi Hi Hi",
+    "Hi Hi Hi Bye"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "Only the indented print is in the loop body, so Hi prints three times. The final print runs once afterwards.",
+   "why_wrong": [
+    "Bye is not indented, so it is outside the loop and prints once.",
+    "The unindented print runs after the loop, so Bye also prints.",
+    "Bye is printed after the loop, not before.",
+    ""
+   ],
+   "key": "INT108-U2-326"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output of the code below?",
+   "code": "total = 0\nfor i in range(1, 11, 2):\n    total += i\nprint(total)",
+   "options": [
+    "25",
+    "30",
+    "36",
+    "55"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "range(1, 11, 2) is 1, 3, 5, 7, 9 and 1+3+5+7+9 = 25.",
+   "why_wrong": [
+    "",
+    "That adds 2+4+6+8+10; the start is 1 so the odd numbers are used.",
+    "That would need 11, but the stop value is never included.",
+    "That is the sum of every number 1 to 10; the step is 2."
+   ],
+   "key": "INT108-U2-327"
+  },
+  {
+   "topic": "while loop",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "n = 100\nc = 0\nwhile n > 1:\n    n //= 2\n    c += 1\nprint(c)",
+   "options": [
+    "5",
+    "6",
+    "7",
+    "50"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "n goes 100, 50, 25, 12, 6, 3, 1 using floor division: six halvings, so c is 6.",
+   "why_wrong": [
+    "Stops one halving early; 3 // 2 is 1, so one more pass is needed.",
+    "",
+    "One halving too many: the loop stops as soon as n reaches 1.",
+    "That is the value of n after the first halving, not the counter."
+   ],
+   "key": "INT108-U2-328"
+  },
+  {
+   "topic": "while loop",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "i = 10\nwhile i < 10:\n    print(i)\n    i += 1\nprint(\"done\")",
+   "options": [
+    "10\ndone",
+    "9\ndone",
+    "done",
+    "No output"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "The condition is False on the first test, so the loop body never runs and only done prints.",
+   "why_wrong": [
+    "The condition 10 < 10 is False at the start, so the body never runs.",
+    "The body is skipped entirely, nothing is printed inside.",
+    "",
+    "The print after the loop is outside it and still runs."
+   ],
+   "key": "INT108-U2-329"
+  },
+  {
+   "topic": "while loop",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "n = 5\nwhile n > 0:\n    n -= 2\n    print(n, end=\" \")",
+   "options": [
+    "5 3 1",
+    "3 1",
+    "5 3 1 -1",
+    "3 1 -1"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "n becomes 3, 1, then -1 (each printed after the subtraction). After -1 the test -1 > 0 fails.",
+   "why_wrong": [
+    "The subtraction happens before print, so the first value shown is 3.",
+    "The loop continues while n > 0 and 1 > 0 still passes, so -1 also prints.",
+    "The first print happens after n -= 2, so 5 is never printed.",
+    ""
+   ],
+   "key": "INT108-U2-330"
+  },
+  {
+   "topic": "while loop",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What does the code print?",
+   "code": "n = 70500\nc = 0\nwhile n > 0:\n    n //= 10\n    c += 1\nprint(c)",
+   "options": [
+    "5",
+    "3",
+    "4",
+    "7"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "70500 -> 7050 -> 705 -> 70 -> 7 -> 0: five divisions by 10, so c is 5.",
+   "why_wrong": [
+    "",
+    "Counts only the non-zero digits; zeros are digits too.",
+    "Drops one digit; 70500 // 10 repeated takes five steps.",
+    "7 is the first digit, not the digit count."
+   ],
+   "key": "INT108-U2-331"
+  },
+  {
+   "topic": "while loop",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "n = 8\nwhile n > 1:\n    n = n / 2\nprint(n)",
+   "options": [
+    "1",
+    "1.0",
+    "0.5",
+    "2.0"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "n goes 8 -> 4.0 -> 2.0 -> 1.0 and stops. Because / returns a float, the answer prints as 1.0.",
+   "why_wrong": [
+    "/ always gives a float, so the result prints as 1.0.",
+    "",
+    "The loop stops when n is 1.0, it does not divide again.",
+    "The loop continues until n is not greater than 1."
+   ],
+   "key": "INT108-U2-332"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "for i in range(1, 4):\n    print(5 * i, end=\" \")",
+   "options": [
+    "5 10 15 20",
+    "1 2 3",
+    "5 10 15",
+    "5 15 30"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "i takes 1, 2, 3, so the products are 5, 10, 15.",
+   "why_wrong": [
+    "i runs only to 3 because the stop 4 is excluded.",
+    "The loop multiplies each i by 5.",
+    "",
+    "That adds up as it goes; each term is just 5 * i."
+   ],
+   "key": "INT108-U2-333"
+  },
+  {
+   "topic": "nested loops / patterns",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What pattern is printed?",
+   "code": "for r in range(4):\n    print(\"#\" * (4 - r) + \".\" * r)",
+   "options": [
+    "#\n##\n###\n####",
+    "####\n####\n####\n####",
+    "....\n...#\n..##\n.###",
+    "####\n###.\n##..\n#..."
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "Row r has 4 - r hash signs followed by r dots: ####, ###., ##.., #...",
+   "why_wrong": [
+    "The number of # shrinks each row; 4 - r is 4, 3, 2, 1.",
+    "The total length is always 4 but # decreases as r grows.",
+    "The # characters come first, then the dots.",
+    ""
+   ],
+   "key": "INT108-U2-334"
+  },
+  {
+   "topic": "nested loops",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "How many times does n += 1 run in total?",
+   "code": "n = 0\nfor a in range(2):\n    for b in range(3):\n        for c in range(2):\n            n += 1\nprint(n)",
+   "options": [
+    "12",
+    "7",
+    "6",
+    "10"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "Nested loop counts multiply: 2 * 3 * 2 = 12.",
+   "why_wrong": [
+    "",
+    "Adds the loop counts instead of multiplying them.",
+    "Multiplies only two of the three loops.",
+    "Adds 2 + 3 + 2 + 3; nested loop counts multiply."
+   ],
+   "key": "INT108-U2-335"
+  },
+  {
+   "topic": "nested loops",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "for i in range(3):\n    for j in range(3):\n        if i < j:\n            print(i, j)",
+   "options": [
+    "0 0\n1 1\n2 2",
+    "0 1\n0 2\n1 2",
+    "1 0\n2 0\n2 1",
+    "0 1\n0 2\n1 2\n2 2"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Pairs with i < j are (0,1), (0,2), (1,2), printed in loop order.",
+   "why_wrong": [
+    "That is the i == j case.",
+    "",
+    "That is the i > j case.",
+    "2 2 does not satisfy i < j."
+   ],
+   "key": "INT108-U2-336"
+  },
+  {
+   "topic": "nested loops / sep and end",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "for i in range(2):\n    for j in range(2):\n        print(i, j, sep=\"-\", end=\" \")",
+   "options": [
+    "0-0 1-1",
+    "0 0 0 1 1 0 1 1",
+    "0-0 0-1 1-0 1-1",
+    "00 01 10 11"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "Four pairs print as i-j with a space after each: 0-0 0-1 1-0 1-1.",
+   "why_wrong": [
+    "The inner loop also runs for j = 1 and j = 0 for every i.",
+    "sep='-' replaces the default space between i and j.",
+    "",
+    "sep='-' puts a hyphen between the two values."
+   ],
+   "key": "INT108-U2-337"
+  },
+  {
+   "topic": "nested break",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "How many times does found increase?",
+   "code": "found = 0\nfor a in range(1, 5):\n    for b in range(1, 5):\n        if a * b == 6:\n            found += 1\n            break\nprint(found)",
+   "options": [
+    "1",
+    "3",
+    "6",
+    "2"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "a = 2 matches with b = 3 and a = 3 with b = 2. break stops the inner loop only, and a = 1 and a = 4 never reach 6, so found is 2.",
+   "why_wrong": [
+    "break leaves only the inner loop; the outer loop continues.",
+    "Each a can match at most once because of the break.",
+    "That is the product value, not the number of matches.",
+    ""
+   ],
+   "key": "INT108-U2-338"
+  },
+  {
+   "topic": "nested loops / patterns",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What pattern is printed?",
+   "code": "for i in range(3):\n    row = \"\"\n    for j in range(3):\n        row += \"X\" if i == j else \"-\"\n    print(row)",
+   "options": [
+    "X--\n-X-\n--X",
+    "XXX\nXXX\nXXX",
+    "---\n---\n---",
+    "--X\n-X-\nX--"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "X is placed where the row number equals the column number, drawing the main diagonal.",
+   "why_wrong": [
+    "",
+    "X appears only when i == j.",
+    "The diagonal positions give X.",
+    "That is the other diagonal; i == j is the main diagonal."
+   ],
+   "key": "INT108-U2-339"
+  },
+  {
+   "topic": "nested loops",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "count = 0\nfor i in range(1, 6):\n    for j in range(i, 6):\n        if (i + j) % 2 == 0:\n            count += 1\nprint(count)",
+   "options": [
+    "15",
+    "9",
+    "10",
+    "5"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "Pairs with j >= i and i + j even: (1,1),(1,3),(1,5),(2,2),(2,4),(3,3),(3,5),(4,4),(5,5) = 9.",
+   "why_wrong": [
+    "That is the number of (i, j) pairs, before the parity test.",
+    "",
+    "Counts only the pairs with i == j or similar; the sum must be even.",
+    "Counts only the pairs with i == j."
+   ],
+   "key": "INT108-U2-340"
+  },
+  {
+   "topic": "nested loops",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is printed?",
+   "code": "total = 0\nfor i in range(1, 4):\n    j = i\n    while j > 0:\n        total += 1\n        j -= 1\nprint(total)",
+   "options": [
+    "3",
+    "9",
+    "6",
+    "4"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "The inner loop runs 1, then 2, then 3 times: 1 + 2 + 3 = 6.",
+   "why_wrong": [
+    "The inner while runs i times, not once.",
+    "That would be 3 * 3; the inner loop runs 1, 2 and 3 times.",
+    "",
+    "The inner loop runs i times for each i."
+   ],
+   "key": "INT108-U2-341"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "Which output is printed?",
+   "code": "n = 12\nfor d in range(1, n + 1):\n    if n % d == 0:\n        print(d, end=\" \")",
+   "options": [
+    "2 3 4 6",
+    "1 2 3 4 6",
+    "1 2 4 6",
+    "1 2 3 4 6 12"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "range(1, 13) tests 1 to 12. The divisors of 12 are 1, 2, 3, 4, 6 and 12.",
+   "why_wrong": [
+    "1 and 12 also divide 12.",
+    "12 is included because the stop n + 1 is 13.",
+    "3 also divides 12.",
+    ""
+   ],
+   "key": "INT108-U2-342"
+  },
+  {
+   "topic": "for-else",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A weather log is searched with the code below. What is printed?",
+   "code": "temps = [3, 5, -2, 7, -1]\nfor t in temps:\n    if t < 0:\n        print(\"first below zero:\", t)\n        break\nelse:\n    print(\"none below zero\")",
+   "options": [
+    "first below zero: -2",
+    "none below zero",
+    "first below zero: -1",
+    "first below zero: -2\nfirst below zero: -1"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "The loop hits -2 first, prints it and breaks. A broken loop skips its else, so only one line prints.",
+   "why_wrong": [
+    "",
+    "The else runs only if the loop finished without break; break executed.",
+    "break stops at the first negative value, -2.",
+    "break ends the loop after the first match."
+   ],
+   "key": "INT108-U2-343"
+  },
+  {
+   "topic": "continue",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "i = 0\nwhile i < 6:\n    i += 1\n    if i % 3 == 0:\n        continue\n    print(i, end=\" \")",
+   "options": [
+    "1 2 3 4 5 6",
+    "1 2 4 5",
+    "1 2 4 5 6",
+    "0 1 2 4 5"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "i goes 1..6. Whenever i is 3 or 6, continue skips the print, leaving 1 2 4 5.",
+   "why_wrong": [
+    "Multiples of 3 are skipped by continue.",
+    "",
+    "6 is a multiple of 3 and is skipped too.",
+    "i is incremented before print, so 0 is never printed."
+   ],
+   "key": "INT108-U2-344"
+  },
+  {
+   "topic": "while-else",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "n = 0\nwhile n < 5:\n    n += 1\n    if n == 3:\n        break\nelse:\n    n = 100\nprint(n)",
+   "options": [
+    "100",
+    "5",
+    "3",
+    "4"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "n reaches 3 and break exits the loop, so the else block is skipped and n stays 3.",
+   "why_wrong": [
+    "The else part runs only if the loop ends without break.",
+    "The loop stops at 3 because of break.",
+    "",
+    "The loop ends when n reaches 3, not later."
+   ],
+   "key": "INT108-U2-345"
+  },
+  {
+   "topic": "for-else",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What does this print?",
+   "code": "for x in []:\n    print(x)\nelse:\n    print(\"empty\")",
+   "options": [
+    "Nothing is printed",
+    "[]",
+    "An error",
+    "empty"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "The else block of a for loop runs when the loop ends without break, including when there is nothing to loop over.",
+   "why_wrong": [
+    "A loop that never runs and never breaks still runs its else.",
+    "The loop body never runs, so x is never printed.",
+    "Looping over an empty list is legal.",
+    ""
+   ],
+   "key": "INT108-U2-346"
+  },
+  {
+   "topic": "loop else",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "for i in range(2, 5):\n    for j in range(2, i):\n        if i % j == 0:\n            break\n    else:\n        print(i, end=\" \")",
+   "options": [
+    "2 3",
+    "3",
+    "2 3 4",
+    "4"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "For i = 2 the inner range is empty so the else runs and 2 prints; for 3, j = 2 does not divide it, so 3 prints; for 4, j = 2 breaks. Result: 2 3.",
+   "why_wrong": [
+    "",
+    "2 also gets printed because range(2, 2) is empty and the else runs.",
+    "4 % 2 == 0 triggers the inner break, so 4 is skipped.",
+    "4 is the one that breaks, so its else is skipped."
+   ],
+   "key": "INT108-U2-347"
+  },
+  {
+   "topic": "break vs continue",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "c = 0\nfor n in range(1, 11):\n    if n % 4 == 0:\n        break\n    if n % 2 == 0:\n        continue\n    c += n\nprint(c)",
+   "options": [
+    "25",
+    "4",
+    "6",
+    "16"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "n=1 adds 1; n=2 is skipped by continue; n=3 adds 3 (c = 4); n=4 hits break. c is 4.",
+   "why_wrong": [
+    "break stops the loop at 4, so 5, 7, 9 are never added.",
+    "",
+    "The even numbers are skipped by continue, not added.",
+    "Loop ends at n = 4 because of break."
+   ],
+   "key": "INT108-U2-348"
+  },
+  {
+   "topic": "pass",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "for i in range(3):\n    if i == 1:\n        pass\n    print(i, end=\" \")",
+   "options": [
+    "0 2",
+    "0",
+    "0 1 2",
+    "0 1"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "pass is a do-nothing placeholder. The print is still reached for every i, so 0 1 2 prints.",
+   "why_wrong": [
+    "pass does nothing; it does not skip the rest of the body.",
+    "pass does not stop the loop.",
+    "",
+    "The loop runs all the way to 2."
+   ],
+   "key": "INT108-U2-349"
+  },
+  {
+   "topic": "loop variable",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What value is printed?",
+   "code": "for i in range(10):\n    if i * i > 20:\n        break\nprint(i)",
+   "options": [
+    "4",
+    "6",
+    "25",
+    "5"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "4 * 4 = 16 does not break, 5 * 5 = 25 does. i keeps the value it had at the break, 5.",
+   "why_wrong": [
+    "4 * 4 is 16, which is not above 20.",
+    "The loop breaks at the first i with i * i > 20, which is 5.",
+    "That is i * i; the code prints i.",
+    ""
+   ],
+   "key": "INT108-U2-350"
+  },
+  {
+   "topic": "break",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A cart adds items until the budget would be exceeded. What is printed?",
+   "code": "budget = 100\nspent = 0\nfor p in [40, 35, 30, 20]:\n    if spent + p > budget:\n        break\n    spent += p\nprint(spent)",
+   "options": [
+    "75",
+    "105",
+    "125",
+    "95"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "40 and 35 fit (75). 75 + 30 = 105 > 100, so break ends the loop and 20 is never considered.",
+   "why_wrong": [
+    "",
+    "30 would push the total over 100, so it is never added.",
+    "break stops the loop as soon as an item does not fit, so 20 is not added.",
+    "That would be the answer with continue; break stops the loop for good."
+   ],
+   "key": "INT108-U2-351"
+  },
+  {
+   "topic": "accumulator",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "A teacher averages marks with the code below. What is printed?",
+   "code": "marks = [70, 80, 90]\ntotal = 0\nfor m in marks:\n    total += m\nprint(total / len(marks))",
+   "options": [
+    "80",
+    "80.0",
+    "240",
+    "90.0"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "The total is 240 and 240 / 3 is 80.0; / gives a float.",
+   "why_wrong": [
+    "/ always returns a float, so the result prints as 80.0.",
+    "",
+    "That is the total, not the average.",
+    "That is the last mark; the average divides the total by 3."
+   ],
+   "key": "INT108-U2-352"
+  },
+  {
+   "topic": "accumulator",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "total = 1\nfor n in [2, 4]:\n    total += n\nprint(total)",
+   "options": [
+    "6",
+    "8",
+    "7",
+    "2"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "Starting from 1: 1 + 2 = 3, then 3 + 4 = 7.",
+   "why_wrong": [
+    "The accumulator starts at 1, not 0, so the extra 1 stays in the sum.",
+    "That multiplies the numbers; the loop uses +=.",
+    "",
+    "Adds nothing to the starting value of 1 for only the first item."
+   ],
+   "key": "INT108-U2-353"
+  },
+  {
+   "topic": "accumulator",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "p = 0\nfor i in range(1, 4):\n    p *= i\nprint(p)",
+   "options": [
+    "6",
+    "1",
+    "3",
+    "0"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "A product accumulator must start at 1. Starting at 0 means every multiplication gives 0.",
+   "why_wrong": [
+    "The product stays 0 because it starts from 0.",
+    "The accumulator starts at 0, not 1.",
+    "Last value of i is not the result.",
+    ""
+   ],
+   "key": "INT108-U2-354"
+  },
+  {
+   "topic": "accumulator list",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "evens = []\nfor n in range(1, 8):\n    if n % 2 == 0:\n        evens.append(n)\nprint(evens)",
+   "options": [
+    "[2, 4, 6]",
+    "[2, 4, 6, 8]",
+    "[1, 3, 5, 7]",
+    "[0, 2, 4, 6]"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "n runs from 1 to 7 and only 2, 4 and 6 are even.",
+   "why_wrong": [
+    "",
+    "The stop value 8 is never reached; range(1, 8) ends at 7.",
+    "Those are the odd numbers; n % 2 == 0 selects even ones.",
+    "range starts at 1, so 0 is never tested."
+   ],
+   "key": "INT108-U2-355"
+  },
+  {
+   "topic": "accumulator",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A bank adds 10% interest (integer part) each year. What is printed?",
+   "code": "bal = 1000\nfor yr in range(3):\n    bal += bal // 10\nprint(bal)",
+   "options": [
+    "1300",
+    "1331",
+    "1100",
+    "1210"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "1000 -> 1100 -> 1210 -> 1331 as each year adds a tenth of the current balance.",
+   "why_wrong": [
+    "Interest is added on the growing balance, not on 1000 every year.",
+    "",
+    "That is only the first year.",
+    "That is after two years; the loop runs three times."
+   ],
+   "key": "INT108-U2-356"
+  },
+  {
+   "topic": "accumulator",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "s = \"a1b22c333\"\nd = 0\nfor ch in s:\n    if ch.isdigit():\n        d += int(ch)\nprint(d)",
+   "options": [
+    "6",
+    "9",
+    "14",
+    "123"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "The digits are 1, 2, 2, 3, 3, 3 and they add up to 14.",
+   "why_wrong": [
+    "That counts the digits; the code adds their values.",
+    "That is the length of the string.",
+    "",
+    "Digits are added as numbers, not joined as text."
+   ],
+   "key": "INT108-U2-357"
+  },
+  {
+   "topic": "tracking max index",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "scores = [40, 90, 55]\nbest = 0\nfor i in range(len(scores)):\n    if scores[i] > scores[best]:\n        best = i\nprint(best, scores[best])",
+   "options": [
+    "90 1",
+    "2 55",
+    "0 40",
+    "1 90"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "At i = 1, 90 > 40 so best becomes 1. At i = 2, 55 > 90 is False. It prints the index 1 and the score 90.",
+   "why_wrong": [
+    "The order is index first, then the score.",
+    "55 is not larger than 90.",
+    "best moves to index 1 when 90 > 40.",
+    ""
+   ],
+   "key": "INT108-U2-358"
+  },
+  {
+   "topic": "flag variable",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "has_neg = False\nfor v in [3, -1, 4]:\n    if v < 0:\n        has_neg = True\n    else:\n        has_neg = False\nprint(has_neg)",
+   "options": [
+    "False",
+    "True",
+    "None",
+    "1"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "The else branch resets the flag for every non-negative item, so after 4 it is False again.",
+   "why_wrong": [
+    "",
+    "The flag is set to True at -1, but the next item resets it to False.",
+    "has_neg is always assigned a bool.",
+    "Python prints the bool False as False."
+   ],
+   "key": "INT108-U2-359"
+  },
+  {
+   "topic": "accumulator",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "total = 0\nfor i in range(1, 4):\n    total = total + i\n    print(total, end=\" \")",
+   "options": [
+    "6",
+    "1 3 6",
+    "1 2 3",
+    "1 3 6 10"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "The running total is 1, then 3, then 6, printed inside the loop.",
+   "why_wrong": [
+    "print is inside the loop, so every running total shows.",
+    "",
+    "That prints i; the code prints the running total.",
+    "The loop stops at i = 3."
+   ],
+   "key": "INT108-U2-360"
+  },
+  {
+   "topic": "accumulator",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "c = 0\nfor ch in \"Hello World\":\n    if ch.isupper():\n        c += 1\nprint(c)",
+   "options": [
+    "1",
+    "10",
+    "2",
+    "11"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "Only H and W are uppercase letters, so c is 2.",
+   "why_wrong": [
+    "Both H and W are uppercase.",
+    "That counts the letters; only uppercase ones count.",
+    "",
+    "That is the length of the string."
+   ],
+   "key": "INT108-U2-361"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A game simulates a coin toss giving H or T. Which line is correct?",
+   "code": "",
+   "options": [
+    "random.choice(\"H\", \"T\")",
+    "random.randint(\"H\", \"T\")",
+    "random.random(\"HT\")",
+    "random.choice([\"H\", \"T\"])"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "choice picks one item from the list ['H','T'] passed as a single argument.",
+   "why_wrong": [
+    "choice takes ONE sequence, so two arguments raise TypeError.",
+    "randint needs two whole numbers, not letters.",
+    "random() takes no arguments.",
+    ""
+   ],
+   "key": "INT108-U2-362"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "A teacher wants a random multiple of 5 from 5 to 100 (both included). Which call does this?",
+   "code": "",
+   "options": [
+    "random.randrange(5, 101, 5)",
+    "random.randrange(5, 100, 5)",
+    "random.randint(5, 100)",
+    "random.random() * 100"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "randrange(5, 101, 5) gives 5, 10, ..., 100: the stop 101 is excluded but 100 is reached.",
+   "why_wrong": [
+    "",
+    "randrange excludes the stop, so 100 can never appear.",
+    "randint allows numbers like 7 that are not multiples of 5.",
+    "That gives a float below 100, not a multiple of 5."
+   ],
+   "key": "INT108-U2-363"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "import random\nx = random.randint(1, 3)\nprint(x in [1, 2, 3])",
+   "options": [
+    "False",
+    "True",
+    "1",
+    "0"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "randint includes both ends and returns only 1, 2 or 3, so the test is always True.",
+   "why_wrong": [
+    "randint(1, 3) can only return 1, 2 or 3, all in the list.",
+    "",
+    "The expression prints a bool, not the random value.",
+    "The expression prints a bool, not 0."
+   ],
+   "key": "INT108-U2-364"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "import random\nmarks = [50, 60, 70]\npick = random.choice(marks)\nprint(pick in marks, type(pick).__name__)",
+   "options": [
+    "True list",
+    "False int",
+    "True int",
+    "True float"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "choice returns one element of the list, so it is in the list and has the element's type, int.",
+   "why_wrong": [
+    "choice returns one element, not the list.",
+    "The chosen element is always from the list.",
+    "",
+    "The list holds ints, so the element is an int."
+   ],
+   "key": "INT108-U2-365"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "import random\nprint(sorted(random.sample(range(1, 4), 3)))",
+   "options": [
+    "[1, 2, 3, 4]",
+    "[0, 1, 2]",
+    "[1, 1, 2]",
+    "[1, 2, 3]"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "Sampling 3 items from a population of 3 uses every item once; sorted puts them in order.",
+   "why_wrong": [
+    "range(1, 4) stops at 3, so the numbers are 1, 2, 3.",
+    "range starts at 1.",
+    "sample picks without repeats, so duplicates cannot appear.",
+    ""
+   ],
+   "key": "INT108-U2-366"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "Which value is IMPOSSIBLE for roll?",
+   "code": "import random\nroll = random.randint(1, 6) * 2",
+   "options": [
+    "7",
+    "2",
+    "12",
+    "6"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "randint(1, 6) is 1 to 6, so doubling gives only even numbers 2 to 12. 7 is odd and can never occur.",
+   "why_wrong": [
+    "",
+    "Possible when randint returns 1.",
+    "Possible when randint returns 6.",
+    "Possible when randint returns 3."
+   ],
+   "key": "INT108-U2-367"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What values can x take?",
+   "code": "import random\nx = random.randint(0, 9) // 5",
+   "options": [
+    "0 to 9",
+    "0 and 1 only",
+    "0 to 5",
+    "1 and 2 only"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "0 to 4 give 0 and 5 to 9 give 1, so x is only 0 or 1.",
+   "why_wrong": [
+    "// 5 shrinks the range.",
+    "",
+    "The result of // 5 is at most 1.",
+    "0 // 5 is 0, so 0 is possible."
+   ],
+   "key": "INT108-U2-368"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "import random\nletters = \"abc\"\nc = random.choice(letters)\nprint(len(c))",
+   "options": [
+    "3",
+    "0",
+    "1",
+    "c"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "choice on a string returns one character, whose length is 1.",
+   "why_wrong": [
+    "choice returns one character, not the whole string.",
+    "choice never returns an empty string here.",
+    "",
+    "print shows the length, not a letter."
+   ],
+   "key": "INT108-U2-369"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What happens when the code runs?",
+   "code": "import random\nrandom.shuffle((1, 2, 3))",
+   "options": [
+    "It prints a shuffled tuple",
+    "It returns a new shuffled tuple",
+    "It prints None",
+    "TypeError, because a tuple cannot be changed in place"
+   ],
+   "options_mono": false,
+   "correct": 3,
+   "explain": "shuffle works in place, which needs a changeable sequence. A tuple is immutable, so TypeError is raised.",
+   "why_wrong": [
+    "shuffle prints nothing.",
+    "shuffle changes its argument in place and returns None.",
+    "Nothing is printed; the code raises an error.",
+    ""
+   ],
+   "key": "INT108-U2-370"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What happens when the code runs?",
+   "code": "import random\nprint(random.randint(5))",
+   "options": [
+    "TypeError, because randint needs two arguments",
+    "It prints a number from 1 to 5",
+    "It prints a number from 0 to 5",
+    "It prints a number from 0 to 4"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "randint(a, b) requires two arguments, so calling it with only 5 raises TypeError.",
+   "why_wrong": [
+    "",
+    "randint needs both ends.",
+    "randint needs both ends.",
+    "randint needs both ends; randrange(5) would give 0-4."
+   ],
+   "key": "INT108-U2-371"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "A lottery needs 6 DIFFERENT numbers from 1 to 49. Which line is best?",
+   "code": "",
+   "options": [
+    "[random.randint(1, 49) for _ in range(6)]",
+    "random.sample(range(1, 50), 6)",
+    "random.choice(range(1, 50), 6)",
+    "random.shuffle(range(1, 50))"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "random.sample picks distinct items without repeats from a population; range(1, 50) covers 1 to 49.",
+   "why_wrong": [
+    "Each call is independent, so numbers can repeat.",
+    "",
+    "choice takes one argument; the extra 6 raises TypeError.",
+    "shuffle returns None and a range cannot be shuffled."
+   ],
+   "key": "INT108-U2-372"
+  },
+  {
+   "topic": "random module",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "from random import randint\nprint(randint(1, 1))",
+   "options": [
+    "0",
+    "1.0",
+    "1",
+    "NameError"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "from random import randint allows calling randint directly, and a range of 1 to 1 leaves only 1.",
+   "why_wrong": [
+    "randint(1, 1) can only return 1.",
+    "randint returns an int, not a float.",
+    "",
+    "from random import randint makes randint available directly."
+   ],
+   "key": "INT108-U2-373"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(list(range(3, 3)), list(range(3, 0)))",
+   "options": [
+    "[3] []",
+    "[] [3, 2, 1]",
+    "[3] [3, 2, 1]",
+    "[] []"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "range(3, 3) has no values below its stop, and range(3, 0) with the default step +1 never gets to 0, so both lists are empty.",
+   "why_wrong": [
+    "range(3, 3) starts at the stop value, so it is empty.",
+    "The default step is +1, so it cannot count down.",
+    "Both ranges are empty: no values below the stop and no counting down.",
+    ""
+   ],
+   "key": "INT108-U2-374"
+  },
+  {
+   "topic": "range negative step",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "print(list(range(20, 0, -5)))",
+   "options": [
+    "[20, 15, 10, 5]",
+    "[20, 15, 10, 5, 0]",
+    "[15, 10, 5, 0]",
+    "[5, 10, 15, 20]"
+   ],
+   "options_mono": true,
+   "correct": 0,
+   "explain": "Start at 20 and subtract 5 each time: 20, 15, 10, 5; 0 equals the stop, so it is excluded.",
+   "why_wrong": [
+    "",
+    "The stop value 0 is excluded.",
+    "The start 20 is included.",
+    "A negative step counts down."
+   ],
+   "key": "INT108-U2-375"
+  },
+  {
+   "topic": "while loop",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What is the output?",
+   "code": "a, b = 1, 10\nwhile a < b:\n    a += 2\n    b -= 1\nprint(a, b)",
+   "options": [
+    "5 8",
+    "7 7",
+    "7 8",
+    "9 6"
+   ],
+   "options_mono": true,
+   "correct": 1,
+   "explain": "(1,10) -> (3,9) -> (5,8) -> (7,7); now 7 < 7 is False, so the loop ends.",
+   "why_wrong": [
+    "The loop continues while a < b; at 5 and 8 it is still True.",
+    "",
+    "Both values change on each pass.",
+    "The loop stops as soon as a < b is False."
+   ],
+   "key": "INT108-U2-376"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "s = 0\nfor i in range(1, 6):\n    if i % 2:\n        s += i\n    else:\n        s -= i\nprint(s)",
+   "options": [
+    "15",
+    "9",
+    "3",
+    "-3"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "i%2 is truthy for odd i. 1 - 2 + 3 - 4 + 5 = 3.",
+   "why_wrong": [
+    "Even numbers are subtracted, not added.",
+    "That is 1+3+5; the even numbers are subtracted.",
+    "",
+    "1 is added first, then 2 is subtracted, and so on."
+   ],
+   "key": "INT108-U2-377"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "word = \"loops\"\nfor i in range(0, len(word), 2):\n    print(word[i], end=\"\")",
+   "options": [
+    "lop",
+    "oos",
+    "loops",
+    "los"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "Indexes 0, 2, 4 of 'loops' are 'l', 'o', 's'.",
+   "why_wrong": [
+    "Indexes are 0, 2, 4, so the letters are l, o, s.",
+    "Indexes 0, 2 and 4 are used, starting with the first letter.",
+    "The step is 2, so every second letter is used.",
+    ""
+   ],
+   "key": "INT108-U2-378"
+  },
+  {
+   "topic": "range",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What happens when the code runs?",
+   "code": "for i in range(2.5):\n    print(i)",
+   "options": [
+    "TypeError, range needs integer arguments",
+    "It prints 0, 1, 2",
+    "It prints 0, 1",
+    "It prints 2.5"
+   ],
+   "options_mono": false,
+   "correct": 0,
+   "explain": "range accepts only integers. A float argument raises TypeError before the loop body runs.",
+   "why_wrong": [
+    "",
+    "range does not round floats.",
+    "range does not round floats.",
+    "range never repeats its argument."
+   ],
+   "key": "INT108-U2-379"
+  },
+  {
+   "topic": "infinite loop",
+   "difficulty": "important",
+   "kind": "situation",
+   "q": "What happens when the code runs?",
+   "code": "i = 0\nwhile i < 3:\n    print(i)\ni += 1",
+   "options": [
+    "It prints 0 1 2",
+    "It prints 0 forever",
+    "It prints 0 and stops",
+    "It raises IndentationError"
+   ],
+   "options_mono": false,
+   "correct": 1,
+   "explain": "i += 1 is outside the while body, so i stays 0 and the loop prints 0 forever.",
+   "why_wrong": [
+    "i += 1 is not indented, so it is outside the loop.",
+    "",
+    "The condition is never changed inside the loop, so it never ends.",
+    "The code is valid Python, but the loop never ends."
+   ],
+   "key": "INT108-U2-380"
+  },
+  {
+   "topic": "end and sep",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "for i in range(1, 4):\n    print(i, end=\", \")\nprint(\"end\")",
+   "options": [
+    "1\n2\n3\nend",
+    "1, 2, 3end",
+    "1, 2, 3, end",
+    "1 2 3 end"
+   ],
+   "options_mono": true,
+   "correct": 2,
+   "explain": "Each number is followed by ', ' instead of a newline, and the last print adds end after the final ', '.",
+   "why_wrong": [
+    "end=', ' replaces the newline, so output stays on one line.",
+    "The second print starts after the last ', '.",
+    "",
+    "end=', ' sets the separator, not a space."
+   ],
+   "key": "INT108-U2-381"
+  },
+  {
+   "topic": "logical operators",
+   "difficulty": "important",
+   "kind": "recall",
+   "q": "What is the output?",
+   "code": "x = 5\nprint(x > 3 and x < 10, x > 3 or x < 0, not x == 5)",
+   "options": [
+    "True False False",
+    "True True True",
+    "False True False",
+    "True True False"
+   ],
+   "options_mono": true,
+   "correct": 3,
+   "explain": "5 > 3 and 5 < 10 is True. 5 > 3 or 5 < 0 is True. not (5 == 5) is False.",
+   "why_wrong": [
+    "x > 3 or x < 0 is True because the first side is True.",
+    "not x == 5 is not (x == 5) which is False.",
+    "x > 3 and x < 10 is True.",
+    ""
+   ],
+   "key": "INT108-U2-382"
   }
  ]
 }
