@@ -94,8 +94,8 @@ def start(client: TestClient, units=(1,), length="full",
 
 #: What each fixture unit holds per tier. Written out rather than counted from
 #: the files so a test fails when the fixture changes under it.
-TIERS = {1: {"easy": 4, "medium": 3, "hard": 3, "max": 2, "hardest": 0},
-         2: {"easy": 2, "medium": 1, "hard": 1, "max": 0, "hardest": 0}}
+TIERS = {1: {"easy": 4, "medium": 3, "hard": 3, "max": 2, "hardest": 0, "important": 0},
+         2: {"easy": 2, "medium": 1, "hard": 1, "max": 0, "hardest": 0, "important": 0}}
 
 
 def correct_shown(question: dict) -> int:
@@ -165,7 +165,7 @@ def test_a_question_with_no_difficulty_is_refused_by_key():
 
 
 def test_the_ladder_is_the_registrys():
-    assert registry.DIFFICULTIES == ("easy", "medium", "hard", "max", "hardest")
+    assert registry.DIFFICULTIES == ("easy", "medium", "hard", "max", "hardest", "important")
     assert bank.DIFFICULTIES == registry.DIFFICULTIES
 
 
@@ -344,7 +344,7 @@ def test_subjects_lists_every_unit_with_its_live_count(client):
     subject = body[0]
     assert subject["label"] == "Orientation to Computing"
     assert subject["lengths"] == [30, 60, "full"]
-    assert subject["difficulties"] == ["easy", "medium", "hard", "max", "hardest"]
+    assert subject["difficulties"] == ["easy", "medium", "hard", "max", "hardest", "important"]
     assert (subject["length_min"], subject["length_max"]) == (5, 200)
     assert [(u["unit"], u["count"]) for u in subject["units"]] == [(1, 12), (2, 4)]
     assert subject["units"][0]["label"].startswith("Computational Thinking")
@@ -357,7 +357,7 @@ def test_subjects_breaks_every_unit_down_by_tier(client):
     assert {u["unit"]: u["difficulties"] for u in units} == TIERS
     for unit in units:
         assert sum(unit["difficulties"].values()) == unit["count"]
-        assert list(unit["difficulties"]) == ["easy", "medium", "hard", "max", "hardest"]
+        assert list(unit["difficulties"]) == ["easy", "medium", "hard", "max", "hardest", "important"]
 
 
 def test_a_unit_with_no_questions_still_appears_with_a_count_of_zero(tmp_path):
@@ -369,7 +369,7 @@ def test_a_unit_with_no_questions_still_appears_with_a_count_of_zero(tmp_path):
     units = client_as(path, OWNER).get("/api/mcq/subjects").json()[0]["units"]
     assert [(u["unit"], u["count"]) for u in units] == [(1, 12), (2, 0)]
     assert units[1]["difficulties"] == {"easy": 0, "medium": 0, "hard": 0,
-                                        "max": 0, "hardest": 0}
+                                        "max": 0, "hardest": 0, "important": 0}
 
 
 # --- creating an attempt ---------------------------------------------------
@@ -645,7 +645,7 @@ def test_by_difficulty_covers_every_tier_drawn_and_no_other(client):
     assert [t["difficulty"] for t in result["by_difficulty"]] == \
         ["easy", "medium", "hard", "max"], "the fixture bank has no hardest"
     assert {t["difficulty"]: t["total"] for t in result["by_difficulty"]} == \
-        {k: v for k, v in TIERS[1].items() if k != "hardest"}
+        {k: v for k, v in TIERS[1].items() if k not in ("hardest", "important")}
     assert sum(t["total"] for t in result["by_difficulty"]) == result["total"]
     assert sum(t["correct"] for t in result["by_difficulty"]) == result["score"]
 
@@ -2092,7 +2092,7 @@ def test_a_subject_with_no_bank_files_is_listed_with_every_count_zero(client):
     body = {s["subject_code"]: s for s in
             client.get("/api/mcq/subjects").json()}
     assert set(body) == set(SIX)
-    zero = {"easy": 0, "medium": 0, "hard": 0, "max": 0, "hardest": 0}
+    zero = {"easy": 0, "medium": 0, "hard": 0, "max": 0, "hardest": 0, "important": 0}
     assert [u["unit"] for u in body["EVS"]["units"]] == [1, 2, 3]
     assert [u["unit"] for u in body["PHY"]["units"]] == [1, 2, 3]
     # INT108 is cut to the three units the mid-term covers.
@@ -2108,7 +2108,7 @@ def test_a_subject_with_no_bank_files_is_listed_with_every_count_zero(client):
                    for u in subject["units"]), code
         # The sitting controls are the same for every subject.
         assert subject["lengths"] == [30, 60, "full"]
-        assert subject["difficulties"] == ["easy", "medium", "hard", "max", "hardest"]
+        assert subject["difficulties"] == ["easy", "medium", "hard", "max", "hardest", "important"]
 
 
 @pytest.mark.parametrize("body,needle", [
@@ -2760,7 +2760,7 @@ def test_the_pool_is_filtered_like_any_selection(client, frozen):
     assert summary["CSE111"] == {
         "subject_code": "CSE111", "total": 6,
         "by_unit": {"1": 4, "2": 2},
-        "by_difficulty": {"easy": 3, "medium": 0, "hard": 2, "max": 1, "hardest": 0}}
+        "by_difficulty": {"easy": 3, "medium": 0, "hard": 2, "max": 1, "hardest": 0, "important": 0}}
 
     assert pool_keys(client) == set(wrong)
     assert pool_keys(client, units=[2]) == {"CSE111-U2-001", "CSE111-U2-004"}

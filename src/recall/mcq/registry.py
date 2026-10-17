@@ -109,7 +109,11 @@ MCQ_UNITS: dict[str, dict] = {
 #:   hardest — max-level questions whose four options are EXACTLY the same
 #:            length in characters, so the longest answer is never the tell.
 #:            Enforced at load by bank.validate_question.
-DIFFICULTIES: tuple = ("easy", "medium", "hard", "max", "hardest")
+#:   important — the questions a mid-term keeps coming back to: the classic
+#:            traps and must-know facts of a unit. Orthogonal to difficulty
+#:            (an easy fact can be important), so it is its own tier and its
+#:            own selection and board rather than a flag on the others.
+DIFFICULTIES: tuple = ("easy", "medium", "hard", "max", "hardest", "important")
 
 #: The lengths the picker offers as one-tap presets. Not the limit: a student
 #: may ask for any whole number between LENGTH_MIN and LENGTH_MAX, or "full"
